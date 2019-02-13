@@ -587,6 +587,8 @@
 | :--------: | :----: | :--: | :--: | :------: |
 |   limit    |  int   |  15  |  否  | 每页条数 |
 |    name    | string |  无  |  否  |   名称   |
+| order_status | int | -1 | 否 | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭|
+| order_no | string |  无  |  否  | 订单号 |
 | start_time | string |  无  |  否  | 开始时间 |
 |  end_time  | string |  无  |  否  | 结束时间 |
 
@@ -704,3 +706,32 @@
   }
 ]
 ```
+
+## 上传
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/merchant/upload`
+
+**参数**
+
+| 名称 | 类型 | 必须 | 说明 |
+| :--: | :--: | :--: | :--: |
+| file | file |  是  | 文件 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "filename": "fcc9effd7b645167633169bba4ee7651.jpeg", // 文件名
+  "file_url": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg", // 文件地址
+  "file_id": 1 // 文件id
+}
+```
+
