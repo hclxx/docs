@@ -91,6 +91,7 @@ function getAdminSider(title, introduction) {
         "administrator",
         "roles",
         "currency",
+        "discount",
         "sms",
         "system",
         "order",
