@@ -1,0 +1,130 @@
+module.exports = {
+  title: "Docs",
+  base: "/docs/",
+  locales: {
+    "/": {
+      lang: "zh-CN",
+      title: "Docs",
+      description: "COMC 接口文档"
+    }
+  },
+  markdown: {
+    lineNumbers: true
+  },
+  themeConfig: {
+    repo: "COMCFE/docs",
+    nav: require("./nav"),
+    lastUpdated: "上次更新",
+    searchMaxSuggestions: 10,
+    sidebar: {
+      "/api/": getAppSider("移动端", "规范"),
+      "/admin/": getAdminSider("后台管理", "说明"),
+      "/web/": getWebSider("PC端", "说明", "H5端", "说明")
+    }
+  },
+  plugins: [
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
+    [
+      "@vuepress/last-updated",
+      {
+        transformer: (timestamp, lang) => {
+          const moment = require("moment");
+          moment.locale(lang);
+          return moment(timestamp).fromNow();
+        }
+      }
+    ],
+    ["@vuepress/back-to-top", true],
+    ["@vuepress/notification", true]
+  ]
+};
+
+/**
+ * 移动端 sidebar
+ * @param {String} title 标题
+ * @param {String} introduction 描述
+ */
+function getAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "user",
+        "code",
+        "goods",
+        "poster",
+        "consignees",
+        "order",
+        "base",
+        "help",
+        "message",
+        "yz-auth",
+        "feedback",
+        "wallet",
+        "ifuture",
+        "ad",
+        "application"
+      ]
+    }
+  ];
+}
+
+// 后台管理 sidebar
+function getAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "upload",
+        "goods",
+        "goods-cate",
+        "administrator",
+        "roles",
+        "currency",
+        "sms",
+        "system",
+        "order",
+        "goods_orders",
+        "help",
+        "task",
+        "feedback",
+        "ad",
+        "express",
+        "message",
+        "user",
+        "poster",
+        "special",
+        "youzan",
+        "merchant",
+        "config",
+        "app-version"
+      ]
+    }
+  ];
+}
+
+// web端 sidebar
+function getWebSider(title1, introduction1, title2, introduction2) {
+  return [
+    {
+      title: title1,
+      collapsable: true,
+      children: [["", introduction1], "pc-demo"]
+    },
+    {
+      title: title2,
+      collapsable: true,
+      children: [["", introduction2], "h5-demo"]
+    }
+  ];
+}

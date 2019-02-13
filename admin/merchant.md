@@ -1,0 +1,706 @@
+# 商家
+
+## 商家列表
+
+`admin/merchant`
+
+**请求方式**
+
+`admin/merchant`
+
+**请求参数**
+
+| 名称  |  类型  | 默认 | 必须 |   说明   |
+| :---: | :----: | :--: | :--: | :------: |
+| limit |  int   |  15  |  否  | 每页条数 |
+| phone | string |  无  |  否  |  手机号  |
+| email | string |  无  |  否  |   邮箱   |
+| name  | string |  无  |  是  |   名称   |
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "current_page": 1,
+  "data": [
+    {
+      "id": 1,
+      "name": "名称",
+      "email": null,
+      "phone": "18728624682",
+      "avatar_id": null,
+      "status": "1",
+      "last_ip": null,
+      "last_time": null,
+      "created_at": "2019-01-18 18:25:24",
+      "updated_at": "2019-01-18 18:25:24"
+    }
+  ],
+  "first_page_url": "http://comc.com/admin/merchant?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "http://comc.com/admin/merchant?page=1",
+  "next_page_url": null,
+  "path": "http://comc.com/admin/merchant",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 1,
+  "total": 1
+}
+```
+
+**ERROR 返回体**
+
+`无`
+
+## 添加
+
+`admin/merchant`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |                   说明                   |
+| :------: | :----: | :--: | :--: | :--------------------------------------: |
+|   name   | string |  无  |  是  |                   名称                   |
+|  phone   | string |  无  |  否  | 手机号, email 字段不存在时, 此字段不为空 |
+|  email   | string |  无  |  否  |  邮箱, phone 字段不存在时, 此字段不为空  |
+|  status  |  int   |  1   |  否  |             1: 正常 2: 禁用              |
+| password | string |  无  |  是  |                   密码                   |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "创建成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "邮箱不存在"
+}
+```
+
+## 修改商家状态
+
+`/admin/merchant/{merchant}/status`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|  名称  | 类型 | 默认 | 必须 |  说明  |
+| :----: | :--: | :--: | :--: | :----: |
+| status | int  |  无  |  是  | 状态值 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "状态值错误"
+}
+```
+
+## 商家删除
+
+`admin/merchant/{merchant}`
+
+**请求方式**
+
+`DELETE`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`204`
+
+**SUCCESS 返回体**
+
+`无`
+
+**ERROR 返回体**
+
+`无`
+
+## 商家登入
+
+`merchant/auth/login`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |                   说明                   |
+| :------: | :----: | :--: | :--: | :--------------------------------------: |
+|  phone   | string |  无  |  否  | 手机号, email 字段不存在时, 此字段不为空 |
+|  email   | string |  无  |  否  |  邮箱, phone 字段不存在时, 此字段不为空  |
+| password | string |  无  |  是  |                   密码                   |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "登入成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "账号或者密码错误"
+}
+```
+
+## 商家信息
+
+`/merchant/info`
+
+**请求方式**
+
+`get`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "id": 2,
+  "name": "名称" /*名称*/,
+  "email": "1986513441@qq.com" /*邮箱*/,
+  "phone": 18728624681 /*手机号*/,
+  "avatar_id": 9 /*头像ID*/,
+  "status": "1" /*1: 正常 2: 禁止*/,
+  "last_ip": "127.0.0.1",
+  "last_time": "2019-01-18 19:18:08",
+  "created_at": "2019-01-18 18:34:47",
+  "updated_at": "2019-01-18 19:18:08",
+  "avatar": {
+    "id": 9,
+    "file_url": "http://p59l6s1jm.bkt.clouddn.com/16a5bba33d12b7ae7d15c6a87542d43d.jpeg"
+  }
+}
+```
+
+**ERROR 返回体**
+
+`无`
+
+## 商家登出
+
+`merchant/auth/logout`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "退出成功"
+}
+```
+
+**ERROR 返回体**
+
+`无`
+
+## 商家修改基本信息
+
+`merchant/info`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|   名称    |  类型  | 默认 | 必须 |   说明   |
+| :-------: | :----: | :--: | :--: | :------: |
+|   name    | string |  无  |  否  | 用户名称 |
+|   email   | string |  无  |  否  |   邮箱   |
+|   phone   | string |  无  |  是  |  手机号  |
+| avatar_id |  int   |  无  |  否  | 头像 ID  |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "头像已存在"
+}
+```
+
+## 商家修改登入密码
+
+`merchant/update/login/password`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|         名称          |  类型  | 默认 | 必须 |   说明   |
+| :-------------------: | :----: | :--: | :--: | :------: |
+|     old_password      | string |  无  |  是  |  旧密码  |
+|       password        | string |  无  |  是  |  新密码  |
+| password_confirmation | string |  无  |  是  | 确认密码 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "新密码不能为空"
+}
+```
+
+## 商家修改支付密码
+
+`merchant/update/pay/password`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|         名称          |  类型  | 默认 | 必须 |                 说明                  |
+| :-------------------: | :----: | :--: | :--: | :-----------------------------------: |
+|     old_password      | string |  无  |  是  | 旧密码 `eg: 无支付密码 该字段为 NULL` |
+|       password        | string |  无  |  是  |                新密码                 |
+| password_confirmation | string |  无  |  是  |               确认密码                |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "新密码不能为空"
+}
+```
+
+## 找回登入密码
+
+`merchant/find/login/password`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |              说明              |
+| :------: | :----: | :--: | :--: | :----------------------------: |
+|  phone   | string |  无  |  否  | 手机号 `type = sms 此字段必须` |
+|  email   | string |  无  |  否  | 邮箱 `type = email 此字段必须` |
+|   type   | string |  无  |  是  | sms-手机号验证 email-邮箱验证  |
+| password | string |  无  |  是  |              密码              |
+|   code   | string |  无  |  是  |             验证码             |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "验证码错误"
+}
+```
+
+## 找回支付密码
+
+`merchant/find/pay/password`
+
+**请求方式**
+
+`PATCH`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |              说明              |
+| :------: | :----: | :--: | :--: | :----------------------------: |
+|  phone   | string |  无  |  否  | 手机号 `type = sms 此字段必须` |
+|  email   | string |  无  |  否  | 邮箱 `type = email 此字段必须` |
+|   type   | string |  无  |  是  | sms-手机号验证 email-邮箱验证  |
+| password | string |  无  |  是  |              密码              |
+|   code   | string |  无  |  是  |             验证码             |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "验证码错误"
+}
+```
+
+## 提现地址列表
+
+`merchant/withdraw/address`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+[
+  {
+    "id": 2,
+    "merchant_id": 2,
+    "name": "微信" /*地址名称*/,
+    "address": "18728624682" /*地址*/,
+    "created_at": "2019-01-21 16:31:05",
+    "updated_at": "2019-01-21 16:31:05"
+  }
+]
+```
+
+**ERROR 返回体**
+
+`无`
+
+## 提现地址创建
+
+`merchant/withdraw/address`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|  名称   |  类型  | 默认 | 必须 |   说明   |
+| :-----: | :----: | :--: | :--: | :------: |
+|  name   | string |  无  |  是  |   名称   |
+| address | string |  无  |  是  |   地址   |
+|  type   |  int   |  无  |  是  | 地址分类 | 0: 微信 1: 支付宝 2: 银行卡 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "创建成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "名称不能为空"
+}
+```
+
+## 提现地址修改
+
+`merchant/withdraw/address/{address}`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|  名称   |  类型  | 默认 | 必须 | 说明 |
+| :-----: | :----: | :--: | :--: | :--: |
+|  name   | string |  无  |  是  | 名称 |
+| address | string |  无  |  是  | 地址 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "名称不能为空"
+}
+```
+
+## 提现地址删除
+
+`merchant/withdraw/address/{address}`
+
+**请求方式**
+
+`DELETE`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`204`
+
+**SUCCESS 返回体**
+
+`无`
+
+**ERROR 返回体**
+
+`无`
+
+## 商家商品订单
+
+`/merchant/orders`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+|    名称    |  类型  | 默认 | 必须 |   说明   |
+| :--------: | :----: | :--: | :--: | :------: |
+|   limit    |  int   |  15  |  否  | 每页条数 |
+|    name    | string |  无  |  否  |   名称   |
+| start_time | string |  无  |  否  | 开始时间 |
+|  end_time  | string |  无  |  否  | 结束时间 |
+
+**SUCCESS 状态码**
+
+```json
+{
+  "current_page": 1,
+  "data": [
+    {
+      "goods_name": "商品名称", // 商品名称
+      "goods_image": 1, // 商品图片
+      "num": 1, // 数量
+      "specs_properties": null, // 规格
+      "id": 1, // ID
+      "order_id": 1, // 订单ID
+      "goods_price": "100.00000000", // 价钱
+      "order_no": "E123123", // 订单号
+      "total_price": "1000.00000000", // 总价钱
+      "pay_price": "1000.00000000", // 支付价钱
+      "pay_time": "2019-01-21 19:33:01", // 支付时间
+      "express_name": null, // 快递名称
+      "express_code": null, // 快递code
+      "express_no": "exdsadsa", // 运单号
+      "delivery_time": "2019-01-21 19:48:26", // 发货时间
+      "pay_type": null, // 支付类型
+      "created_at": "2019-01-21 19:48:26", // 支付时间
+      "order_status": 0, // 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭
+      "currency": "comc" // 货币类型
+    }
+  ],
+  "first_page_url": "http://comc.com/merchant/orders?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "http://comc.com/merchant/orders?page=1",
+  "next_page_url": null,
+  "path": "http://comc.com/merchant/orders",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 1,
+  "total": 1
+}
+```
+
+## 发货
+
+`merchant/order/{goodsOrder}`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|    名称    |  类型  | 默认 | 必须 |  说明   |
+| :--------: | :----: | :--: | :--: | :-----: |
+| express_id |  int   |  无  |  是  | 快递 ID |
+| express_no | string |  是  |  是  | 运单号  |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "发货成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "请填写运单号"
+}
+```
+
+## 获取快递公司列表
+
+`/merchant/express`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+| 名称 |  类型  | 默认 | 必须 |   说明   |
+| :--: | :----: | :--: | :--: | :------: |
+| name | string |  无  |  否  | 快递名称 |
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+[
+  {
+    "id": 1, // ID
+    "name": "京东", // 名称
+    "code": "jindong", // code
+    "created_at": "2019-01-28 17:32:34",
+    "updated_at": "2019-01-28 17:32:34"
+  },
+  {
+    "id": 2,
+    "name": "爱沙尼亚",
+    "code": "omniva",
+    "created_at": "2019-01-28 17:32:34",
+    "updated_at": "2019-01-28 17:32:34"
+  }
+]
+```

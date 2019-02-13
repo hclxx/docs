@@ -1,0 +1,46 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Docs for COMC",
+  "main": "index.js",
+  "repository": "git@github.com:CommunityChain/docs.git",
+  "author": "jsonleex <jsonleex@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "deploy": "bash ./deploy.sh"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
+    "@vuepress/plugin-notification": "^1.0.0-alpha.5",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
+    "@vuepress/plugin-search": "^1.0.0-alpha.0",
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "eslint": "^5.12.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-vue": "^5.1.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "vuepress": "^1.0.0-alpha.32"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "node verify-commit-msg.js -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "moment": "^2.23.0"
+  }
+}
