@@ -98,14 +98,7 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |                    说明                    |
-| :------: | :----: | :--: | :----------------------------------------: |
-|  limit   |  int   |  是  |               条目数 默认 10               |
-|  offset  |  int   |  是  |              偏移量 默认为 0               |
-| keyword  | string |  否  |                 关键词检索                 |
-| category |  int   |  否  |                  分类 id                   |
-|   type   | string |  否  | 默认所有,recommend-热门推荐 day_new-日上新 |
-| currency | string |  否  |        货币类型: comc-comc,ore-矿石        |
+无
 
 **响应**
 
