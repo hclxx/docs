@@ -8,7 +8,7 @@
 
 **路径**
 
-`admin/sms/`
+`admin/sms/config`
 
 **参数**
 
@@ -34,7 +34,7 @@
 
 **路径**
 
-`admin/sms/update`
+`admin/sms/config`
 
 **参数**
 | 名称 | 类型 | 默认 | 必须 | 说明 |

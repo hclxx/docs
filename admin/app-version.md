@@ -2,7 +2,7 @@
 
 ## 获取版本管理状态
 
-`/admin/app/version/control/status`
+`/admin/app/version/status`
 
 **请求方法**
 
@@ -26,7 +26,7 @@
 
 ## 获取历史版本
 
-`admin/app/version/history`
+`admin/app/version`
 
 **请求方法**
 
@@ -148,7 +148,7 @@
 
 ## 修改版本控制状态
 
-`/admin/app/version/control/status`
+`/admin/app/version/status`
 
 **请求方法**
 
@@ -176,7 +176,7 @@
 
 ## 删除
 
-`admin/app//version/{id}`
+`admin/app/version/{id}`
 
 **请求方式**
 
