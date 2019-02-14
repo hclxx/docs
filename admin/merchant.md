@@ -735,7 +735,7 @@
 }
 ```
 
-## 支出记录
+## 商家钱包
 
 `merchant/log`
 
@@ -788,5 +788,33 @@ action | int | 否 | 1-收入 2-支出
     "prev_page_url": null,
     "to": 1,
     "total": 1
+}
+```
+
+## 提现
+
+`merchant/withdraw`
+
+**请求方法**
+
+`POST`
+
+**请求参数**
+
+| 名称 | 类型 | 必须 | 说明 |
+| :--------: | :--------: | :--------: | :--------: |
+|   amount    |  float  |  是  | 提现金额 |
+wallet_address_id | int | 否 | 钱包地址ID
+pay_password | string | 是 | 支付密码
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "提现成功"
 }
 ```
