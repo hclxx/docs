@@ -138,3 +138,39 @@
   }
 }
 ```
+
+## 任务开启和关闭
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/admin/tasks/:task/state`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "message": "开启任务成功",
+  "task": {
+    "name": "资讯点赞",
+    "desc": "资讯点赞",
+    "trigger": "news:like1",
+    "type": "daily",
+    "number": 100,
+    "state": 0,
+    "sort_by": 10,
+    "mold": "comc",
+    "reward": 100,
+    "id": 3
+  }
+}
+```
