@@ -71,7 +71,8 @@ function getAppSider(title, introduction) {
         "wallet",
         "ifuture",
         "ad",
-        "application"
+        "application",
+        "task"
       ]
     }
   ];
