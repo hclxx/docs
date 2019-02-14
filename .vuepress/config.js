@@ -101,6 +101,7 @@ function getAdminSider(title, introduction) {
         "feedback",
         "ad",
         "express",
+        "withdraw",
         "message",
         "user",
         "poster",
