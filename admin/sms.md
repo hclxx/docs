@@ -78,26 +78,26 @@
 
 ```json
 {
-  //订单支付成功
-  "sms_pay": {
-    "code": "SMS_126640183", //模板ID
-    "switch": true //开关
-  },
-  //发货通知
-  "sms_send": {
-    "code": "SMS_126640183",
-    "switch": true
-  },
-  //通知模板
-  "sms_notify": {
-    "code": "SMS_126640183",
-    "switch": true
-  },
-  //短信注册模板
-  "sms_register": {
-    "code": "SMS_126640183",
-    "switch": true
-  }
+    // 短信登录模版
+    "login": {
+        "code": "SMS_sdsa",
+        "switch": true
+    },
+    // 设置支付密码验证码
+    "pay-pass": {
+        "code": "SMS_sdsa",
+        "switch": true
+    },
+    // 获取注册验证码
+    "register": {
+        "code": "SMS_sdsa",
+        "switch": true
+    },
+    // 忘记密码验证码
+    "forget-pass": {
+        "code": "SMS_sdsa",
+        "switch": true
+    }
 }
 ```
 
@@ -116,19 +116,19 @@
 ```json
 {
   "sms_pay": {
-    "code": "SMS_126640183",
+    "code": "SMS_1sdas",
     "switch": false
   },
   "sms_send": {
-    "code": "SMS_126640183",
+    "code": "SMS_ssa",
     "switch": true
   },
   "sms_notify": {
-    "code": "SMS_126640183",
+    "code": "SMS_sads",
     "switch": false
   },
   "sms_register": {
-    "code": "SMS_126640183",
+    "code": "SMS_sdsa",
     "switch": true
   }
 }
@@ -143,19 +143,19 @@
   "message": "修改成功",
   "data": {
     "sms_pay": {
-      "code": "SMS_126640183",
+      "code": "SMS_sdsa",
       "switch": false
     },
     "sms_send": {
-      "code": "SMS_126640183",
+      "code": "SMS_sdsa",
       "switch": true
     },
     "sms_notify": {
-      "code": "SMS_126640183",
+      "code": "SMS_sdsa",
       "switch": false
     },
     "sms_register": {
-      "code": "SMS_126640183",
+      "code": "SMS_sdsa",
       "switch": true
     }
   }
