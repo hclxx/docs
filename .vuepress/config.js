@@ -70,6 +70,7 @@ function getAppSider(title, introduction) {
         "feedback",
         "wallet",
         "ifuture",
+        "discounts",
         "ad",
         "application",
         "task"
