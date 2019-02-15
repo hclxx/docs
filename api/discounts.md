@@ -86,6 +86,7 @@
       "used_value": 0 /* 实际优惠金额（单位：分）*/,
       "used_at": "0000-00-00 00:00:00" /*使用时间*/,
       "used_in_order_no": "" /*用于订单号*/,
+      "name": "优惠卷名称",
       "used_in_order_nos": [],
       "max_discount": 0 /*最大优惠 分*/,
       "condition": 12300 /*满减 分*/,
