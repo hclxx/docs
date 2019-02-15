@@ -74,7 +74,8 @@ function getAppSider(title, introduction) {
         "ad",
         "application",
         "task",
-        "certification"
+        "certification",
+        "file",
       ]
     }
   ];
