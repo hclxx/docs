@@ -51,7 +51,7 @@
 |  keyword   | string |  否  |                                      关键词检索                                      |
 |  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             |
 | special_id |  int   |  否  |                                       专题 id                                        |
-| order_by |  string   |  排序  |                                       排序：id_desc-最新 pirce_asc-价格升序 price_desc-价格降序                                        |
+| order_by |  string   |  排序  |                                       排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序                                        |
 
 **响应**
 
