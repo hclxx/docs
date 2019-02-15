@@ -48,11 +48,8 @@
 | :--------: | :----: | :--: | :----------------------------------------------------------------------------------: |
 |   limit    |  int   |  是  |                                    条目数 默认 10                                    |
 |   offset   |  int   |  是  |                                   偏移量 默认为 0                                    |
-|    type    | string |  否  |                      类型：recommend-热门推荐 day_new-每日上新                       |
 |  keyword   | string |  否  |                                      关键词检索                                      |
-|  category  |  int   |  否  | 分类 id，如 category 为-1 需传 type=recommend,如为-2 需传 type=new_day,如为-3 不需传 |
 |  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             |
-| limit_type | string |  否  |                                 限制类型: time-限时                                  |
 | special_id |  int   |  否  |                                       专题 id                                        |
 | order_by |  string   |  排序  |                                       排序：id_desc-最新 pirce_asc-价格升序 price_desc-价格降序                                        |
 
