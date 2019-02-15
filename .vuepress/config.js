@@ -73,7 +73,8 @@ function getAppSider(title, introduction) {
         "discounts",
         "ad",
         "application",
-        "task"
+        "task",
+        "certification"
       ]
     }
   ];
