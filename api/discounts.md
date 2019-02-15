@@ -70,37 +70,48 @@
 **返回体**
 
 ```json
-[
-  {
-    "id": 2000348704,
-    "kdt_id": 42440305,
-    "coupon_group_id": 3723625 /*优惠卷ID*/,
-    "preferential_type": 1 /*1：现金，2：折扣*/,
-    "value": 100 /*金额*/,
-    "discount": 0 /*折扣 8.8折 => 88*/,
-    "is_used": 0 /*0: 未使用 1: 已使用*/,
-    "take_at": "2019-02-15 10:44:57" /*领取时间*/,
-    "used_value": 0 /* 实际优惠金额（单位：分）*/,
-    "used_at": "0000-00-00 00:00:00" /*使用时间*/,
-    "used_in_order_no": "" /*用于订单号*/,
-    "used_in_order_nos": [],
-    "max_discount": 0 /*最大优惠 分*/,
-    "condition": 12300 /*满减 分*/,
-    "verify_code": "",
-    "valid_start_at": "2019-02-14 19:04:20" /*优惠开始时间*/,
-    "expire_at": "2019-02-21 00:00:00" /*expire_at*/,
-    "is_sync_card": 0
-  }
-]
+{
+  "msg": "",
+  "code": 0,
+  "date": [
+    {
+      "id": 2000348704,
+      "kdt_id": 42440305,
+      "coupon_group_id": 3723625 /*优惠卷ID*/,
+      "preferential_type": 1 /*1：现金，2：折扣*/,
+      "value": 100 /*金额*/,
+      "discount": 0 /*折扣 8.8折 => 88*/,
+      "is_used": 0 /*0: 未使用 1: 已使用*/,
+      "take_at": "2019-02-15 10:44:57" /*领取时间*/,
+      "used_value": 0 /* 实际优惠金额（单位：分）*/,
+      "used_at": "0000-00-00 00:00:00" /*使用时间*/,
+      "used_in_order_no": "" /*用于订单号*/,
+      "used_in_order_nos": [],
+      "max_discount": 0 /*最大优惠 分*/,
+      "condition": 12300 /*满减 分*/,
+      "apply_type": 0 /*适用类型 0-全部可用 1-部分可用*/,
+      "verify_code": "",
+      "valid_start_at": "2019-02-14 19:04:20" /*优惠开始时间*/,
+      "expire_at": "2019-02-21 00:00:00" /*expire_at*/,
+      "is_sync_card": 0
+    }
+  ]
+}
 ```
 
 ## 优惠卷详情
 
-`api/v1/discount/{discount}`
+`api/v1/discount/details`
 
 **请求方式**
 
 `GET`
+
+**请求参数**
+
+|    名称     | 类型 | 默认 | 必须 |   说明    |
+| :---------: | :--: | :--: | :--: | :-------: |
+| discount_id | int  |  无  |  是  | 优惠卷 id |
 
 **返回体**
 
