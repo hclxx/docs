@@ -39,7 +39,9 @@
             "hand": "http://fffsss.id-card.com/asdasdsadas.jpg",/*手持照*/
             "number": "5137221993",/*证件号码*/
             "name": "章三",/*证件人姓名*/
-            "type": "id-card"/*证件类型:id-card 身份证*/
+            "type": "id-card",/*证件类型:id-card 身份证*/
+            "desc": "认证通过描述",/*status为1存在该字段*/
+            "reason": "正确",/*status为2存在该字段*/
         },
         "status": 0,/*状态: 0-待审核 1-审核通过 2-被驳回，状态在0或1情况下，不能进行更改*/
         "updated_at": "2019-02-15 16:07:44",

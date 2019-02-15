@@ -113,7 +113,8 @@ function getAdminSider(title, introduction) {
         "youzan",
         "merchant",
         "config",
-        "app-version"
+        "app-version",
+        "certification"
       ]
     }
   ];
