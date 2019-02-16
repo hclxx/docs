@@ -229,7 +229,7 @@
 }
 ```
 
-## 绑定价格
+## 绑定商家
 
 `admin/yz/goods/{goods}/merchant`
 
