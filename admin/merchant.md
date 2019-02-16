@@ -583,14 +583,14 @@
 
 **请求参数**
 
-|    名称    |  类型  | 默认 | 必须 |   说明   |
-| :--------: | :----: | :--: | :--: | :------: |
-|   limit    |  int   |  15  |  否  | 每页条数 |
-|    name    | string |  无  |  否  |   名称   |
-| order_status | int | -1 | 否 | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭|
-| order_no | string |  无  |  否  | 订单号 |
-| start_time | string |  无  |  否  | 开始时间 |
-|  end_time  | string |  无  |  否  | 结束时间 |
+|     名称     |  类型  | 默认 | 必须 |                                  说明                                   |
+| :----------: | :----: | :--: | :--: | :---------------------------------------------------------------------: |
+|    limit     |  int   |  15  |  否  |                                每页条数                                 |
+|     name     | string |  无  |  否  |                                  名称                                   |
+| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 |
+|   order_no   | string |  无  |  否  |                                 订单号                                  |
+|  start_time  | string |  无  |  否  |                                开始时间                                 |
+|   end_time   | string |  无  |  否  |                                结束时间                                 |
 
 **SUCCESS 状态码**
 
@@ -611,6 +611,8 @@
       "pay_price": "1000.00000000", // 支付价钱
       "pay_time": "2019-01-21 19:33:01", // 支付时间
       "express_name": null, // 快递名称
+      "phone": "18728624682", // 买家手机号
+      "name": "放纵", // 买家昵称
       "express_code": null, // 快递code
       "express_no": "exdsadsa", // 运单号
       "delivery_time": "2019-01-21 19:48:26", // 发货时间
@@ -745,11 +747,11 @@
 
 **请求参数**
 
-| 名称 | 类型 | 必须 | 说明 |
-| :--------: | :--------: | :--------: | :--------: |
-|   limit    |  int  |  否  | 每页条数 |
-status | int | 否 | 0-等待 1-完成 2-失败
-action | int | 否 | 1-收入 2-支出
+|  名称  | 类型 | 必须 |         说明         |
+| :----: | :--: | :--: | :------------------: |
+| limit  | int  |  否  |       每页条数       |
+| status | int  |  否  | 0-等待 1-完成 2-失败 |
+| action | int  |  否  |    1-收入 2-支出     |
 
 **SUCCESS 状态码**
 
@@ -759,35 +761,61 @@ action | int | 否 | 1-收入 2-支出
 
 ```json
 {
-    "current_page": 1,
-    "data": [
-        {
-            "id": 1,
-            "title": "测试", // 名称
-            "merchant_id": 1, // 店铺ID
-            "wallet_id": 1, // 钱包ID
-            "amount": "100.00000000", // 获取奖励（元）
-            "curr_balance": "0.00000000", // 加之前的金额（元）
-            "balance": "0.00000000", // 加之后的金额（元）
-            "currency": "cash", 
-            "type": 2, // 日志类型 1-提现 2-商品收益
-            "state": 1, // 1-收入 2-支出
-            "status": 1, // 0-等待 1-完成 2-失败
-            "data": "[]",
-            "created_at": "2019-02-14 10:08:09", // 创建时间
-            "updated_at": "2019-02-14 10:08:09"
-        }
-    ],
-    "first_page_url": "http://comc.com/merchant/log?page=1",
-    "from": 1,
-    "last_page": 1,
-    "last_page_url": "http://comc.com/merchant/log?page=1",
-    "next_page_url": null,
-    "path": "http://comc.com/merchant/log",
-    "per_page": 15,
-    "prev_page_url": null,
-    "to": 1,
-    "total": 1
+  "current_page": 1,
+  "data": [
+    {
+      "id": 1,
+      "title": "测试", // 名称
+      "merchant_id": 1, // 店铺ID
+      "wallet_id": 1, // 钱包ID
+      "amount": "100.00000000", // 获取奖励（元）
+      "curr_balance": "0.00000000", // 加之前的金额（元）
+      "balance": "0.00000000", // 加之后的金额（元）
+      "currency": "cash",
+      "type": 2, // 日志类型 1-提现 2-商品收益
+      "state": 1, // 1-收入 2-支出
+      "status": 1, // 0-等待 1-完成 2-失败
+      "data": {
+        "address": {
+          "account_number": "18728624682",
+          "name": "支付宝"
+        },
+        "remark": null
+      },
+      "created_at": "2019-02-14 10:08:09", // 创建时间
+      "updated_at": "2019-02-14 10:08:09"
+    }
+  ],
+  "first_page_url": "http://comc.com/merchant/log?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "http://comc.com/merchant/log?page=1",
+  "next_page_url": null,
+  "path": "http://comc.com/merchant/log",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 1,
+  "total": 1
+}
+```
+
+`ps: data值 当type == 1`
+
+```json
+{
+  "address": {
+    "account_number": "18728624682",
+    "name": "支付宝"
+  },
+  "remark": null
+}
+```
+
+`ps: data值 当type == 2`
+
+```json
+{
+  "goods_name": "商品名称"
 }
 ```
 
@@ -801,11 +829,11 @@ action | int | 否 | 1-收入 2-支出
 
 **请求参数**
 
-| 名称 | 类型 | 必须 | 说明 |
-| :--------: | :--------: | :--------: | :--------: |
-|   amount    |  float  |  是  | 提现金额 |
-wallet_address_id | int | 否 | 钱包地址ID
-pay_password | string | 是 | 支付密码
+|       名称        |  类型  | 必须 |    说明     |
+| :---------------: | :----: | :--: | :---------: |
+|      amount       | float  |  是  |  提现金额   |
+| wallet_address_id |  int   |  否  | 钱包地址 ID |
+|   pay_password    | string |  是  |  支付密码   |
 
 **SUCCESS 状态码**
 
@@ -831,9 +859,9 @@ pay_password | string | 是 | 支付密码
 
 **参数**
 
-|  名称  |  类型  | 必须 |                                   说明                                    |
-| :----: | :----: | :--: | :-----------------------------------------------------------------------: |
-| number | string |  是  |                   仅支持手机号,已授权用户不需要传手机号                   |
+|  名称  |  类型  | 必须 |                  说明                   |
+| :----: | :----: | :--: | :-------------------------------------: |
+| number | string |  是  |  仅支持手机号,已授权用户不需要传手机号  |
 | scene  | string |  是  | 场景: merchant-forget-password-忘记密码 |
 
 **响应**
@@ -842,7 +870,6 @@ pay_password | string | 是 | 支付密码
 
 ```json
 {
-  "message": "发送成功",
+  "message": "发送成功"
 }
 ```
-
