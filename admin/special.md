@@ -208,3 +208,130 @@
   "total": 2
 }
 ```
+
+## 添加专栏广告
+
+`admin/special/{special}/ad`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+| 名称  |  类型  | 默认 | 必须 |   说明   |
+| :---: | :----: | :--: | :--: | :------: |
+| ad_ids |  array   |  无  |  是  | 广告id数组 |
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+    "message": "添加成功"
+}
+```
+
+## 移除专栏广告
+
+`admin/special/{special}/ad`
+
+**请求方式**
+
+`DELETE`
+
+**请求参数**
+
+| 名称  |  类型  | 默认 | 必须 |   说明   |
+| :---: | :----: | :--: | :--: | :------: |
+| ad_ids |  array   |  无  |  是  | 广告id数组 |
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+    "message": "移除成功"
+}
+```
+
+## 获取专栏广告
+
+`admin/special/{special}/ad`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+无
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+[
+    {
+        "id": 5,
+        "title": "测试",
+        "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+        "time": 20,
+        "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+        "link_type": "inside",
+        "space_id": 11,
+        "sort": 12,
+        "target_type": "special",
+        "target_id": 2,
+        "created_at": "2019-01-25 14:55:08",
+        "updated_at": "2019-01-25 14:55:08",
+        "pivot": {
+            "relation_id": 1,
+            "ad_id": 5
+        },
+        "space": {
+            "id": 11,
+            "alias": "COMC专栏题顶部广告",
+            "space": "app:comc:special:top",
+            "img_size": "100x100px",
+            "created_at": "2019-02-15 09:54:26",
+            "updated_at": "2019-02-15 09:54:26"
+        }
+    },
+    {
+        "id": 3,
+        "title": "测试",
+        "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+        "time": 0,
+        "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+        "link_type": "inside",
+        "space_id": 10,
+        "sort": 12,
+        "target_type": "special",
+        "target_id": 1,
+        "created_at": "2019-01-25 14:45:15",
+        "updated_at": "2019-01-25 14:45:15",
+        "pivot": {
+            "relation_id": 1,
+            "ad_id": 3
+        },
+        "space": {
+            "id": 10,
+            "alias": "矿石专栏顶部广告",
+            "space": "app:ore:special:top",
+            "img_size": "100x100px",
+            "created_at": "2019-02-15 09:54:26",
+            "updated_at": "2019-02-15 09:54:26"
+        }
+    }
+]
+```
