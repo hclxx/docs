@@ -73,10 +73,11 @@ function getAppSider(title, introduction) {
         "discounts",
         "ad",
         "application",
+        "version",
         "task",
         "certification",
         "file",
-        "share",
+        "share"
       ]
     }
   ];
