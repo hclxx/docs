@@ -117,92 +117,100 @@
 
 ```json
 {
-  "comc": {
-    "2019-02-10": {
+  "2019-02-12": {
+    "comc": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-11": {
+    "ore": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-12": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-13": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-14": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-15": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-16": {
+    "cash": {
       "amount": 0,
       "count": 0
     }
   },
-  "ore": {
-    "2019-02-10": {
+  "2019-02-13": {
+    "comc": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-11": {
+    "ore": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-12": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-13": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-14": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-15": {
-      "amount": 0,
-      "count": 0
-    },
-    "2019-02-16": {
+    "cash": {
       "amount": 0,
       "count": 0
     }
   },
-  "cash": {
-    "2019-02-10": {
+  "2019-02-14": {
+    "comc": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-11": {
+    "ore": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-12": {
+    "cash": {
+      "amount": 0,
+      "count": 0
+    }
+  },
+  "2019-02-15": {
+    "comc": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-13": {
+    "ore": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-14": {
+    "cash": {
+      "amount": 0,
+      "count": 0
+    }
+  },
+  "2019-02-16": {
+    "comc": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-15": {
+    "ore": {
       "amount": 0,
       "count": 0
     },
-    "2019-02-16": {
+    "cash": {
+      "amount": 0,
+      "count": 0
+    }
+  },
+  "2019-02-17": {
+    "comc": {
+      "amount": 0,
+      "count": 0
+    },
+    "ore": {
+      "amount": 0,
+      "count": 0
+    },
+    "cash": {
+      "amount": 0,
+      "count": 0
+    }
+  },
+  "2019-02-18": {
+    "comc": {
+      "amount": 0,
+      "count": 0
+    },
+    "ore": {
+      "amount": 0,
+      "count": 0
+    },
+    "cash": {
       "amount": 0,
       "count": 0
     }
