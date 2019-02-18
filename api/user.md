@@ -201,6 +201,7 @@
 | name | string |  否  |          呢称          |
 | sex  |  int   |  否  | 性别: 0-保密 1-男 2-女 |
 | bio  | string |  否  |        个性签名        |
+| birthday  | string |  否  |        生日        |
 
 **响应**
 
