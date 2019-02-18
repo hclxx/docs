@@ -16,7 +16,7 @@
 | :------: | :----: | :--: | :-----------------: |
 |  limit   |  int   |  是  |       条目数        |
 |  offset  |  int   |  是  |       偏移量        |
-|  action  |  int   |  否  | 动作 1-收入 2-支出  |
+|  action  |  int   |  否  | 动作 0-全部 1-收入 2-支出  |
 | currency | string |  否  | ore-矿石, comc-comc |
 |  start   | string |  否  |      开始日期       |
 |   end    | string |  否  |      结束日期       |
