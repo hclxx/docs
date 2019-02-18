@@ -40,57 +40,40 @@
 
 ```json
 {
-  "sale": {
-    // 成交额
-    "cash": {
-      // 现金
-      "today": 0,
-      "yesterday": 0
+  "today": {
+    "sale": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     },
-    "comc": {
-      // comc
-      "today": 0,
-      "yesterday": 0
+    "pay_order_count": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     },
-    "ore": {
-      // 矿石
-      "today": 0,
-      "yesterday": 0
+    "new_user_count": 1,
+    "order_user_count": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     }
   },
-  "pay_order_count": {
-    // 支付订单
-    "cash": {
-      "today": 0,
-      "yesterday": 0
+  "yesterday": {
+    "sale": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     },
-    "comc": {
-      "today": 0,
-      "yesterday": 0
+    "pay_order_count": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     },
-    "ore": {
-      "today": 0,
-      "yesterday": 0
-    }
-  },
-  "new_user_count": {
-    // 新增用户数
-    "today": 0,
-    "yesterday": 0
-  },
-  "order_user_count": {
-    // 下单用户数
-    "cash": {
-      "today": 0,
-      "yesterday": 0
-    },
-    "comc": {
-      "today": 0,
-      "yesterday": 0
-    },
-    "ore": {
-      "today": 0,
-      "yesterday": 0
+    "new_user_count": 0,
+    "order_user_count": {
+      "cash": 0,
+      "ore": 0,
+      "comc": 0
     }
   }
 }
