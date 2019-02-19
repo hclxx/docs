@@ -873,3 +873,98 @@
   "message": "发送成功"
 }
 ```
+
+## 获取有赞订单详情
+
+`/merchant/yz/order`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+| 名称 |  类型  | 必须 |   说明   |
+| :--: | :----: | :--: | :------: |
+| oid  | string |  是  | 唯一标示 |
+
+**返回体**
+
+```json
+{
+  "user_id": 9, // 用户ID
+  "address_info": {
+    // 收货地址信息
+    "receiver_tel": "18284583308",
+    "address_extra": "{\"areaCode\":\"510107\",\"lon\":104.06982984985923,\"lat\":30.575055523764153}",
+    "delivery_city": "成都市",
+    "receiver_name": "杨覃",
+    "self_fetch_info": "",
+    "delivery_address": "天府大道北段1700号 新世纪环球购物中心 E2.    15楼1-3-1508",
+    "delivery_district": "武侯区",
+    "delivery_province": "四川省",
+    "delivery_postal_code": ""
+  },
+  "goods_name": "福建莆田桂圆干 |  桂圆中的霸王 肉质细腻  甜而不腻 益脾开胃  泡茶 干吃 都不错", // 商品名称
+  "cover_img_url": "https://img.yzcdn.cn/upload_files/2018/10/06/FqBcb7LwgEYaUoMOM66XtobcFTWm.jpg", // 商品图片
+  "num": 1, // 商品数量
+  "tid": "E20190214143853006300039", // 订单号
+  "created_time": "2019-02-14 14:38:53", // 创建时间
+  "pay_time": "2019-02-14 14:39:09", // 支付时间
+  "send_time": "2019-02-15 18:12:31", // 发货时间
+  "success_time": null, // 收货时间
+  "sku": "[{\"k\": \"规格\", \"v\": \"250g试吃装（4A级）\", \"k_id\": 14, \"v_id\": 26530463}]", // 规格
+  "express": {
+    "id": 1,
+    "no": "3397911642496" // 运单号
+  },
+  "user": {
+    "id": 9,
+    "name": "用户名称",
+    "phone": "18728612345"
+  }
+}
+```
+
+## 获取订单信息
+
+`/merchant/exchange/order`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+| 名称 |  类型  | 必须 |  说明  |
+| :--: | :----: | :--: | :----: |
+| tid  | string |  是  | 订单号 |
+
+**返回体**
+
+```json
+{
+  "id": 16,
+  "order_no": "70291550558515550", // 订单号
+  "pay_time": "2019-02-19 14:41:55",
+  "express_name": null, // 快递名称
+  "express_code": null, // 快递code
+  "express_no": null, // 运单号
+  "delivery_time": null, // 发货时间
+  "receipt_time": null, // 收货时间
+  "user_id": 13,
+  "goods_order": {
+    "id": 14,
+    "goods_name": "小米6X 全网通 4GB+32GB 流沙金 移动联通电信4G手机 双卡双待 智能手机", // 商品名称
+    "goods_image": "http://pm12qeuu3.bkt.clouddn.com/15273966abc3ba3ed4bfdc70cd580fac.jpeg", //商品图片
+    "num": 1, // 数量
+    "order_id": 16,
+    "specs_properties": "[{\"p_id\": 121, \"s_id\": 50, \"p_name\": \"曜石黑\", \"s_name\": \"颜色\"}, {\"p_id\": 126, \"s_id\": 51, \"p_name\": \"4GB 32GB\", \"s_name\": \"版本\"}]" // sku
+  },
+  "user": {
+    "id": 9,
+    "name": "用户名称",
+    "phone": "18728612345"
+  }
+}
+```
