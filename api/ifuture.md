@@ -31,6 +31,34 @@
 }
 ```
 
+## 解除 iFuture 账号
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/ifuture/cancel/bind`
+
+**参数**
+
+|   名称   |  类型  | 必须 |     说明     |
+| :------: | :----: | :--: | :----------: |
+|  mobile  | string |  是  | ifuture 账号 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "解除绑定成功",
+  "code": 0,
+  "data": null
+}
+```
+
 ## 获取 ifuture 用户信息
 
 **方式**
