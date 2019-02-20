@@ -20,7 +20,10 @@
   "pay_link": "https://cashier.youzan.com/pay/wsctrade_pay",
   "client_id": "http://p59l6s1jm.dsadadabkt.clouddn.com",
   "order_detail": "https://h5.youzan.com/wsctrade/order/detail",
-  "client_secret": "http://p59l6s1jm.dsadadabkt.clouddn.com"
+  "client_secret": "http://p59l6s1jm.dsadadabkt.clouddn.com",
+  "kf_link": "http://baidu.com",
+  "channel": "频道",
+  "version": 2 // 版本
 }
 ```
 
@@ -41,6 +44,10 @@
 | client_secret | string |  无  |  否  | client_secret |
 |   pay_link    | string |  无  |  否  |   支付链接    |
 | order_detail  | string |  无  |  否  |   订单详情    |
+| order_detail  | string |  无  |  否  |   订单详情    |
+|    kf_link    | string |  无  |  否  |   客服链接    |
+|    channel    | string |  无  |  否  |   客服频道    |
+|    version    | string |  无  |  否  |   客服版本    |
 
 **SUCCESS 状态码**
 
