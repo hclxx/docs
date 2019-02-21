@@ -47,52 +47,6 @@
 ]
 ```
 
-## 添加
-
-**方式**
-
-`POST`
-
-**路径**
-
-`/admin/tasks`
-
-**参数**
-
-|  名称   |  类型  | 必须 |                    说明                    |
-| :-----: | :----: | :--: | :----------------------------------------: |
-|  name   | string |  是  |                  任务名称                  |
-|  desc   |  int   |  是  |                  任务描述                  |
-| trigger | string |  是  |                  触发勾子                  |
-|  type   | string |  是  |                  任务类型                  |
-| number  |  int   |  是  |  可完成次数 `type为one-off number只能为1`  |
-| sort_by |  int   |  是  |                  任务排序                  |
-|  state  |  int   |  是  |            状态：0-开启 1-关闭             |
-|  mold   | string |  是  | 任务奖励类型 comc-comc ore-矿石 power-矿力 |
-| reward  |  int   |  是  |                任务奖励数量                |
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "message": "添加成功",
-  "task": {
-    "name": "资讯点赞",
-    "desc": "资讯点赞",
-    "trigger": "news:like1",
-    "type": "daily",
-    "number": 100,
-    "state": 0,
-    "sort_by": 10,
-    "mold": "comc",
-    "reward": 100,
-    "id": 3
-  }
-}
-```
-
 ## 更新
 
 **方式**
