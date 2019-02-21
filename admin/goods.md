@@ -108,7 +108,7 @@
   "limit_num": 12, // 购买限量 非必填
   "limit_time": "2019-01-30 12:12:11", // 购买限时 非必填
   "category_id": 1, // 分类id 必须
-  "currency": 1, // 货币名称
+  "currency": "ore", // ore-矿石 comc-comc
   "stock_num": 0, // 总库存 非必须
   "recommend": 0, // 推荐 0-否 1-是
   "power": 100, // 矿力 必须填写
