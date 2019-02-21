@@ -29,7 +29,7 @@
     "number": 1, // 任务可完成次数
     "sort_by": 10, // 排序
     "state": 0, // 状态 0-开启 1-关闭
-    "mold": "comc", // 任务奖励类型 como-comc ore-矿石 power-算力
+    "currency": "comc", // 任务奖励类型 como-comc ore-矿石 power-算力
     "reward": 100 // 任务完成奖励
   },
   {
@@ -41,7 +41,7 @@
     "number": 100,
     "sort_by": 10,
     "state": 0,
-    "mold": "comc",
+    "currency": "comc",
     "reward": 100
   }
 ]
