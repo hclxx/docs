@@ -771,7 +771,7 @@
       "amount": "100.00000000", // 获取奖励（元）
       "curr_balance": "0.00000000", // 加之前的金额（元）
       "balance": "0.00000000", // 加之后的金额（元）
-      "currency": "cash",
+      "currency": "cash", // cash 现金 exchange 兑换
       "type": 2, // 日志类型 1-提现 2-商品收益
       "state": 1, // 1-收入 2-支出
       "status": 1, // 0-等待 1-完成 2-失败
