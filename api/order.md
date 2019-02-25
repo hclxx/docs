@@ -441,7 +441,7 @@
 
 **路径**
 
-`/yz/affirm/{order}/order`
+`/api/v1//yz/affirm/{order}/order`
 
 **参数**
 
