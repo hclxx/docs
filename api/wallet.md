@@ -38,7 +38,13 @@
       "user_id": 1 /*用户id*/,
       "target_user_id": 2 /*贡献的用户*/,
       "action": 1 /*动作: 1-收入 2-支出*/,
-      "extend": null /*扩展字段*/,
+      "extend": {
+          "goods": {
+              "id": 6,/*商品id*/
+              "name": "俞兆林保暖内衣男女士情侣加绒加厚黄金绒圆领套装秋衣秋裤棉质 男-深灰色 XL", /*商品名称*/
+              "image": "http://pm12qeuu3.bkt.clouddn.com/fb2a26b37dc871e6f6f9e00df7decb51.jpeg" /*商品图片*/
+          }
+      },
       "status": 1 /*0-待处理 1-成功 2-失败*/,
       "created_at": "2019-01-24 16:28:36" /*时间*/,
       "currency": "ore" /*币种*/,
