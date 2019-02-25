@@ -117,6 +117,7 @@
     "limit_num": 0 /*int 限量:0-不限制*/,
     "type": 2 /* int 1-虚拟 2-实体*/,
     "spec_type": 2 /*int 1-单规格 2-多规格*/,
+    "price": "12312", /*单价*/
     "virt_num": 0,
     "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg" /*商品主图地址*/,
     "sales_num": 8 /*int 销量*/,
