@@ -18,6 +18,7 @@
 |   status    |  int   |  无  |  否  | 商品状态 0-待审核 1-上架 2-下架 |
 | category_id |  int   |  无  |  否  |            分类名称             |
 |    limit    |  int   |  15  |  否  |            每页条数             |
+|    currency    |  string   |  所有  |  否  |            货币:comc-comc,ore-矿石             |
 
 **响应**
 

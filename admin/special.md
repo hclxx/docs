@@ -52,6 +52,7 @@
 |  sort  |  int   |  0   |  否  |                  排序                  |
 | image  | string |  无  |  否  |                图片链接                |
 |  type  | string |  无  |  是  | 专题类型:image-图片专题 goods-商品专栏 |
+|  region  | string |  无  |  是  | 专栏所属区:comc-comc区域 ore-矿石区域  |
 
 **SUCCESS 装填码**
 
@@ -81,7 +82,7 @@
 | hidden |  int   |  1   |  否  |          显示: 0-隐藏 1-显示           |
 |  sort  |  int   |  0   |  否  |                  排序                  |
 | image  | string |  无  |  否  |                图片链接                |
-|  type  | string |  无  |  是  | 专题类型:image-图片专题 goods-商品专栏 |
+|  type  | string |  无  |  是  | 专题类型:goods-商品专栏 |
 
 **SUCCESS 装填码**
 
