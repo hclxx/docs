@@ -254,7 +254,7 @@
 
 ## 同步有赞商品到兑换区
 
-`admin/yz/yzgoods/:goods`
+`admin/yzgoods/:goods/sync`
 
 **请求方式**
 
