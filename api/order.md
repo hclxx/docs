@@ -441,7 +441,9 @@
 
 **路径**
 
-`/api/v1//yz/affirm/{order}/order`
+`/api/v1/yz/affirm/{order}/order`
+
+`order: 订单ID`
 
 **参数**
 
@@ -465,11 +467,13 @@
 
 **方式**
 
-`GET`
+`POST`
 
 **路径**
 
-`/yz/affirm/{order}/express`
+`/api/v1/yz/affirm/{order}/express`
+
+`order: 订单ID`
 
 **响应**
 
