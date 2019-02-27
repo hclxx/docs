@@ -591,6 +591,7 @@
 |   order_no   | string |  无  |  否  |                                 订单号                                  |
 |  start_time  | string |  无  |  否  |                                开始时间                                 |
 |   end_time   | string |  无  |  否  |                                结束时间                                 |
+|   currency   | string | comc |  否  |                            货币类型 comc,ore                            |
 
 **SUCCESS 状态码**
 
