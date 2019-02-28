@@ -25,10 +25,10 @@
   "data": [
     {
       "id": 1 /* 教程id */,
-      "type": 1 /* 0-图文 1-视频*/,
+      "type": 1 /* 1-图文 2-视频*/,
       "name": "图文" /*教程标题*/,
       "image": "http://youbinglian.static.com/01.jepg" /*教程封面地址*/,
-      "content": "图文介绍" /*内容，type=0 content为html文本内容,type=1 content为视频链接地址*/
+      "content": "图文介绍" /*内容，type=1 content为html文本内容,type=2 content为视频链接地址*/
     },
     {
       "id": 2,
