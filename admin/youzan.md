@@ -10,10 +10,11 @@
 
 **请求参数**
 
-| 名称  |  类型  | 默认 | 必须 | 说明     |
-| :---: | :----: | :--: | :--: | -------- |
-| limit |  int   |  15  |  否  | 每页条数 |
-| title | string |  无  |  否  | 名称     |
+|  名称  |  类型  | 默认 | 必须 | 说明     |
+| :----: | :----: | :--: | :--: | -------- |
+| limit  |  int   |  15  |  否  | 每页条数 |
+| title  | string |  无  |  否  | 名称     |
+| tag_id | string |  无  |  否  | 标签 ID  |
 
 **SUCCESS 状态码**
 
@@ -262,140 +263,185 @@
 
 **请求参数**
 
-|    名称     | 类型 | 默认 | 必须 | 说明    |
-| :---------: | :--: | :--: | :--: | ------- |
-| currency | string  |  无   |  是  | 兑换区: comc-comc兑换区 ore-矿石兑换区 |
+|   名称   |  类型  | 默认 | 必须 | 说明                                    |
+| :------: | :----: | :--: | :--: | --------------------------------------- |
+| currency | string |  无  |  是  | 兑换区: comc-comc 兑换区 ore-矿石兑换区 |
 
 **返回体**
 
 ```json
 {
-    "currency": "comc",
-    "power": 0,
-    "ore": 0,
-    "type": 2,
-    "sort": 0,
-    "hot": 0,
-    "recommend": 0,
-    "virt_num": 0,
-    "return_goods": 0,
-    "merchant_id": 0,
-    "spec_type": 2,
-    "status": 1,
-    "limit_num": 0,
-    "limit_time": null,
-    "cost_price": 0,
-    "name": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
-    "detail": "测试",
-    "price": 1366,
-    "image": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
-    "stock_num": 949,
-    "sales_num": 4162,
-    "skus": [
+  "currency": "comc",
+  "power": 0,
+  "ore": 0,
+  "type": 2,
+  "sort": 0,
+  "hot": 0,
+  "recommend": 0,
+  "virt_num": 0,
+  "return_goods": 0,
+  "merchant_id": 0,
+  "spec_type": 2,
+  "status": 1,
+  "limit_num": 0,
+  "limit_time": null,
+  "cost_price": 0,
+  "name": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
+  "detail": "测试",
+  "price": 1366,
+  "image": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
+  "stock_num": 949,
+  "sales_num": 4162,
+  "skus": [
+    {
+      "weight": 0,
+      "line_price": 0,
+      "image": "",
+      "price": 2481,
+      "stock_num": 49,
+      "sales_num": 2716,
+      "properties": ["单卷5M"],
+      "number": "45394814236276198",
+      "specs_properties": [
         {
-            "weight": 0,
-            "line_price": 0,
-            "image": "",
-            "price": 2481,
-            "stock_num": 49,
-            "sales_num": 2716,
-            "properties": [
-                "单卷5M"
-            ],
-            "number": "45394814236276198",
-            "specs_properties": [
-                {
-                    "s_name": "规格",
-                    "p_name": "单卷5M"
-                }
-            ]
-        },
-        {
-            "weight": 0,
-            "line_price": 0,
-            "image": "",
-            "price": 1366,
-            "stock_num": 900,
-            "sales_num": 1446,
-            "properties": [
-                "单卷1M"
-            ],
-            "number": "45394814236276199",
-            "specs_properties": [
-                {
-                    "s_name": "规格",
-                    "p_name": "单卷1M"
-                }
-            ]
+          "s_name": "规格",
+          "p_name": "单卷5M"
         }
-    ],
-    "intro": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
-    "category_id": 0,
-    "images": [
+      ]
+    },
+    {
+      "weight": 0,
+      "line_price": 0,
+      "image": "",
+      "price": 1366,
+      "stock_num": 900,
+      "sales_num": 1446,
+      "properties": ["单卷1M"],
+      "number": "45394814236276199",
+      "specs_properties": [
         {
-            "id": 204,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg"
-        },
-        {
-            "id": 205,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg"
-        },
-        {
-            "id": 206,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg"
-        },
-        {
-            "id": 207,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg"
-        },
-        {
-            "id": 208,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg"
-        },
-        {
-            "id": 209,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg"
-        },
-        {
-            "id": 210,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg"
-        },
-        {
-            "id": 211,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg"
-        },
-        {
-            "id": 212,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg"
-        },
-        {
-            "id": 213,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg"
-        },
-        {
-            "id": 214,
-            "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg"
+          "s_name": "规格",
+          "p_name": "单卷1M"
         }
-    ],
-    "specs_properties": [
-        {
-            "name": "规格",
-            "properties": [
-                "单卷5M",
-                "单卷1M"
-            ]
-        }
-    ]
+      ]
+    }
+  ],
+  "intro": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
+  "category_id": 0,
+  "images": [
+    {
+      "id": 204,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg"
+    },
+    {
+      "id": 205,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg"
+    },
+    {
+      "id": 206,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg"
+    },
+    {
+      "id": 207,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg"
+    },
+    {
+      "id": 208,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg"
+    },
+    {
+      "id": 209,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg"
+    },
+    {
+      "id": 210,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg"
+    },
+    {
+      "id": 211,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg"
+    },
+    {
+      "id": 212,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg"
+    },
+    {
+      "id": 213,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg"
+    },
+    {
+      "id": 214,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg"
+    }
+  ],
+  "specs_properties": [
+    {
+      "name": "规格",
+      "properties": ["单卷5M", "单卷1M"]
+    }
+  ]
 }
+```
+
+## 获取有赞分组
+
+`/admin/yz/goods/tags`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**返回体**
+
+```json
+[
+  {
+    "created": "2019-02-28 11:30:26", // 创建时间
+    "share_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=wuz8kngg",
+    "name": "添加一个分组", // 分组名
+    "alias": "wuz8kngg", // 分组别名
+    "id": 106148470, // 分组ID
+    "tag_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=wuz8kngg",
+    "type": 0,
+    "item_num": 0, // 商品数量
+    "desc": ""
+  },
+  {
+    "created": "2019-02-23 12:50:01",
+    "share_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=kk85xs1a",
+    "name": "新品上市",
+    "alias": "kk85xs1a",
+    "id": 106065386,
+    "tag_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=kk85xs1a",
+    "type": 0,
+    "item_num": 26,
+    "desc": ""
+  },
+  {
+    "created": "2019-02-23 12:49:45",
+    "share_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=o1r232jx",
+    "name": "链优爆款",
+    "alias": "o1r232jx",
+    "id": 106065383,
+    "tag_url": "https://shop42632473.youzan.com/v2/showcase/tag?alias=o1r232jx",
+    "type": 0,
+    "item_num": 16,
+    "desc": ""
+  }
+]
 ```
