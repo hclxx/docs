@@ -364,3 +364,166 @@
 **响应**
 
 `Status code 204`
+
+## 获取comc价格
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/admin/comc/price`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "price": "0.2954" /*comc单价单位元*/
+}
+```
+
+## 同步有赞商品到兑换区
+
+`admin/yzgoods/:goods/sync`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 | 说明                                    |
+| :------: | :----: | :--: | :--: | --------------------------------------- |
+| currency | string |  无  |  是  | 兑换区: comc-comc 兑换区 ore-矿石兑换区 |
+
+**返回体**
+
+```json
+{
+  "currency": "comc",
+  "power": 0,
+  "ore": 0,
+  "type": 2,
+  "sort": 0,
+  "hot": 0,
+  "recommend": 0,
+  "virt_num": 0,
+  "return_goods": 0,
+  "merchant_id": 0,
+  "spec_type": 2,
+  "status": 1,
+  "limit_num": 0,
+  "limit_time": null,
+  "cost_price": 0,
+  "name": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
+  "detail": "测试",
+  "price": 1366,
+  "image": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
+  "stock_num": 949,
+  "sales_num": 4162,
+  "skus": [
+    {
+      "weight": 0,
+      "line_price": 0,
+      "image": "",
+      "price": 2481,
+      "stock_num": 49,
+      "sales_num": 2716,
+      "properties": ["单卷5M"],
+      "number": "45394814236276198",
+      "specs_properties": [
+        {
+          "s_name": "规格",
+          "p_name": "单卷5M"
+        }
+      ]
+    },
+    {
+      "weight": 0,
+      "line_price": 0,
+      "image": "",
+      "price": 1366,
+      "stock_num": 900,
+      "sales_num": 1446,
+      "properties": ["单卷1M"],
+      "number": "45394814236276199",
+      "specs_properties": [
+        {
+          "s_name": "规格",
+          "p_name": "单卷1M"
+        }
+      ]
+    }
+  ],
+  "intro": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
+  "category_id": 0,
+  "images": [
+    {
+      "id": 204,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg"
+    },
+    {
+      "id": 205,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg"
+    },
+    {
+      "id": 206,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg"
+    },
+    {
+      "id": 207,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg"
+    },
+    {
+      "id": 208,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg"
+    },
+    {
+      "id": 209,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg"
+    },
+    {
+      "id": 210,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg"
+    },
+    {
+      "id": 211,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg"
+    },
+    {
+      "id": 212,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg"
+    },
+    {
+      "id": 213,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg"
+    },
+    {
+      "id": 214,
+      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg"
+    }
+  ],
+  "specs_properties": [
+    {
+      "name": "规格",
+      "properties": ["单卷5M", "单卷1M"]
+    }
+  ]
+}
+```
+
+
