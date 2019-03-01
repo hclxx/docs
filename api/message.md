@@ -18,6 +18,8 @@
 
 `Status code 200`
 
+`code 4001 请求繁忙不做任何处理`
+
 ```json
 {
   "msg": "",
