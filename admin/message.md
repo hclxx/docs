@@ -81,3 +81,90 @@
   "message": "发送成功"
 }
 ```
+
+## 商品价格通知
+
+`/admin/message/notices`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+| 名称  | 类型 | 默认 | 必须 |   说明   |
+| :---: | :--: | :--: | :--: | :------: |
+| limit | int  |  20  |  否  | 每页条数 |
+
+**返回体**
+
+```json
+{
+  "current_page": 1,
+  "data": [
+    {
+      "id": 1,
+      "title": "商品价格变更通知", //  消息标题
+      "type": "goods", // 消息类型
+      "content": "商城现金区商品“dasda”价格已更新成1元，为了避免利润的损失，请及时更新兑换区所对应的商品价格。", // 消息内容
+      "target": "goods", // 消息目标
+      "target_id": 2, // 目标ID
+      "read_status": 0, // 阅读状态 0: 未阅读
+      "created_at": "2019-03-01 10:08:23", // 创建时间
+      "updated_at": "2019-03-01 10:08:23"
+    }
+  ],
+  "first_page_url": "http://comc.com/admin/message/notices?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "http://comc.com/admin/message/notices?page=1",
+  "next_page_url": null,
+  "path": "http://comc.com/admin/message/notices",
+  "per_page": 20,
+  "prev_page_url": null,
+  "to": 1,
+  "total": 1
+}
+```
+
+## 获取消息未阅读数量
+
+`admin/message/notice/count`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**返回体**
+
+```json
+{
+  "count": 1 // 未读数量
+}
+```
+
+## 阅读消息
+
+`admin/message/notice/read`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+名称 | 类型 | 默认 | 必须 | 说明
+
+notice_ids | `string|array` | 无 | 是 | `all`: 全部表明月的 `array`: 部分表明阅读
+
+**返回体**
+
+```json
+{
+  "message": "操作成功"
+}
+```
