@@ -1,4 +1,4 @@
-# 钱包流水
+# 钱包
 
 ## 流水列表
 
@@ -58,3 +58,138 @@
   ]
 }
 ```
+
+## 地址列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/wallet/addresses`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": [
+        {
+            "hash": "0x53f3cfcc9ace1d93faebe7fcdeda9998795bc57e1", /*hash地址*/
+            "tag": "COMC" /*标签*/
+        },
+        {
+            "hash": "0x53f3cfcc9ace1d93faebe7fcdeda9998795bc57e1",
+            "tag": "ORE"
+        }
+    ]
+}
+```
+
+## 地址添加
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/wallet/addresses`
+
+**参数**
+
+|   名称   |  类型  | 必须 |        说明         |
+| :------: | :----: | :--: | :-----------------: |
+|  hash   |  string   |  是  |       hash地址        |
+|  tag  |  string   |  是  |       标签        |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "添加成功",
+    "code": 0,
+    "data": {
+        "tag": "ORE",
+        "hash": "0x53f3cfcc9ace1d93faebe7fcdeda9998795bc57e1",
+        "user_id": 5,
+        "updated_at": "2019-03-02 11:37:46",
+        "created_at": "2019-03-02 11:37:46",
+        "id": 4
+    }
+}
+```
+
+## 地址更新
+
+**方式**
+
+`PUT`
+
+**路径**
+
+`/api/v1/wallet/addresses/:address`
+
+**参数**
+
+|   名称   |  类型  | 必须 |        说明         |
+| :------: | :----: | :--: | :-----------------: |
+|  hash   |  string   |  是  |       hash地址        |
+|  tag  |  string   |  是  |       标签        |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "更新成功",
+    "code": 0,
+    "data": {
+        "tag": "ORE",
+        "hash": "0x53f3cfcc9ace1d93faebe7fcdeda9998795bc57e1",
+        "user_id": 5,
+        "updated_at": "2019-03-02 11:37:46",
+        "created_at": "2019-03-02 11:37:46",
+        "id": 4
+    }
+}
+```
+
+## 地址更新
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/v1/wallet/addresses/:address`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
+    "code": 0,
+    "data": null
+}
+```
+
+
