@@ -25,7 +25,7 @@
   {
     "id": 1,
     "name": "专栏一",
-    "type": "image",
+    "type": "time",
     "image": null,
     "sort": 0,
     "hidden": true,
@@ -51,7 +51,7 @@
 | hidden |  int   |  1   |  否  |          显示: 0-隐藏 1-显示           |
 |  sort  |  int   |  0   |  否  |                  排序                  |
 | image  | string |  无  |  否  |                图片链接                |
-|  type  | string |  无  |  是  | 专题类型:image-图片专题 goods-商品专栏 |
+|  type  | string |  无  |  是  | 专题类型:time-限时专栏 number-限量专栏 |
 |  region  | string |  无  |  是  | 专栏所属区:comc-comc区域 ore-矿石区域  |
 
 **SUCCESS 装填码**
@@ -81,8 +81,7 @@
 |  name  | string |  无  |  否  |                专栏名称                |
 | hidden |  int   |  1   |  否  |          显示: 0-隐藏 1-显示           |
 |  sort  |  int   |  0   |  否  |                  排序                  |
-| image  | string |  无  |  否  |                图片链接                |
-|  type  | string |  无  |  是  | 专题类型:goods-商品专栏 |
+|  type  | string |  无  |  是  | 专题类型:time-限时专栏 number-限量专栏 |
 
 **SUCCESS 装填码**
 
@@ -124,7 +123,8 @@
 
 | 名称  | 类型 | 默认 | 必须 |  说明   |
 | :---: | :--: | :--: | :--: | :-----: |
-| goods | int  |  无  |  否  | 商品 ID |
+| items | array  |  无  |  是  | 商品id数组如[1,2,3]，多个进行批量添加 |
+| limit | string  |  无  | 是  | 根据专栏类型传递: 限时专栏需传时间(时间不能小于当前时间 格式:2019-01-02 12:12:12) 限量专栏需传数字(数字只能大于0，) |
 
 **SUCCESS 状态码**
 
@@ -150,7 +150,7 @@
 
 | 名称  | 类型 | 默认 | 必须 |  说明   |
 | :---: | :--: | :--: | :--: | :-----: |
-| goods | int  |  无  |  否  | 商品 ID |
+| items | array  |  无  |  否  | 商品ID数组如[1,2,3]、如果多个进行批量删除 |
 
 **SUCCESS 状态码**
 
