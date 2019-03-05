@@ -52,7 +52,7 @@
 |  sort  |  int   |  0   |  否  |                  排序                  |
 | image  | string |  无  |  否  |                图片链接                |
 |  type  | string |  无  |  是  | 专题类型:time-限时专栏 number-限量专栏 |
-|  region  | string |  无  |  是  | 专栏所属区:comc-comc区域 ore-矿石区域  |
+| region | string |  无  |  是  | 专栏所属区:comc-comc 区域 ore-矿石区域 |
 
 **SUCCESS 装填码**
 
@@ -111,7 +111,7 @@
 
 `无`
 
-## 设置专栏商品
+## 设置专栏商品[重写]
 
 `admin/special/{special}/goods`
 
@@ -121,10 +121,10 @@
 
 **请求参数**
 
-| 名称  | 类型 | 默认 | 必须 |  说明   |
-| :---: | :--: | :--: | :--: | :-----: |
-| items | array  |  无  |  是  | 商品id数组如[1,2,3]，多个进行批量添加 |
-| limit | string  |  无  | 是  | 根据专栏类型传递: 限时专栏需传时间(时间不能小于当前时间 格式:2019-01-02 12:12:12) 限量专栏需传数字(数字只能大于0，) |
+| 名称  |  类型  | 默认 | 必须 |                                                         说明                                                         |
+| :---: | :----: | :--: | :--: | :------------------------------------------------------------------------------------------------------------------: |
+| items | array  |  无  |  是  |                                       商品 id 数组如[1,2,3]，多个进行批量添加                                        |
+| limit | string |  无  |  是  | 根据专栏类型传递: 限时专栏需传时间(时间不能小于当前时间 格式:2019-01-02 12:12:12) 限量专栏需传数字(数字只能大于 0，) |
 
 **SUCCESS 状态码**
 
@@ -138,7 +138,7 @@
 }
 ```
 
-## 取消专栏商品
+## 取消专栏商品[重写]
 
 `admin/special/{special}/goods`
 
@@ -148,9 +148,9 @@
 
 **请求参数**
 
-| 名称  | 类型 | 默认 | 必须 |  说明   |
-| :---: | :--: | :--: | :--: | :-----: |
-| items | array  |  无  |  否  | 商品ID数组如[1,2,3]、如果多个进行批量删除 |
+| 名称  | 类型  | 默认 | 必须 |                    说明                     |
+| :---: | :---: | :--: | :--: | :-----------------------------------------: |
+| items | array |  无  |  否  | 商品 ID 数组如[1,2,3]、如果多个进行批量删除 |
 
 **SUCCESS 状态码**
 
@@ -164,7 +164,7 @@
 }
 ```
 
-## 获取专栏商品
+## 获取专栏商品[重写]
 
 `admin/special/{special}/goods`
 
@@ -220,9 +220,9 @@
 
 **请求参数**
 
-| 名称  |  类型  | 默认 | 必须 |   说明   |
-| :---: | :----: | :--: | :--: | :------: |
-| ad_ids |  array   |  无  |  是  | 广告id数组 |
+|  名称  | 类型  | 默认 | 必须 |     说明     |
+| :----: | :---: | :--: | :--: | :----------: |
+| ad_ids | array |  无  |  是  | 广告 id 数组 |
 
 **SUCCESS 状态码**
 
@@ -232,7 +232,7 @@
 
 ```json
 {
-    "message": "添加成功"
+  "message": "添加成功"
 }
 ```
 
@@ -246,9 +246,9 @@
 
 **请求参数**
 
-| 名称  |  类型  | 默认 | 必须 |   说明   |
-| :---: | :----: | :--: | :--: | :------: |
-| ad_ids |  array   |  无  |  是  | 广告id数组 |
+|  名称  | 类型  | 默认 | 必须 |     说明     |
+| :----: | :---: | :--: | :--: | :----------: |
+| ad_ids | array |  无  |  是  | 广告 id 数组 |
 
 **SUCCESS 状态码**
 
@@ -258,7 +258,7 @@
 
 ```json
 {
-    "message": "移除成功"
+  "message": "移除成功"
 }
 ```
 
@@ -282,57 +282,57 @@
 
 ```json
 [
-    {
-        "id": 5,
-        "title": "测试",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "time": 20,
-        "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "link_type": "inside",
-        "space_id": 11,
-        "sort": 12,
-        "target_type": "special",
-        "target_id": 2,
-        "created_at": "2019-01-25 14:55:08",
-        "updated_at": "2019-01-25 14:55:08",
-        "pivot": {
-            "relation_id": 1,
-            "ad_id": 5
-        },
-        "space": {
-            "id": 11,
-            "alias": "COMC专栏题顶部广告",
-            "space": "app:comc:special:top",
-            "img_size": "100x100px",
-            "created_at": "2019-02-15 09:54:26",
-            "updated_at": "2019-02-15 09:54:26"
-        }
+  {
+    "id": 5,
+    "title": "测试",
+    "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+    "time": 20,
+    "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+    "link_type": "inside",
+    "space_id": 11,
+    "sort": 12,
+    "target_type": "special",
+    "target_id": 2,
+    "created_at": "2019-01-25 14:55:08",
+    "updated_at": "2019-01-25 14:55:08",
+    "pivot": {
+      "relation_id": 1,
+      "ad_id": 5
     },
-    {
-        "id": 3,
-        "title": "测试",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "time": 0,
-        "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "link_type": "inside",
-        "space_id": 10,
-        "sort": 12,
-        "target_type": "special",
-        "target_id": 1,
-        "created_at": "2019-01-25 14:45:15",
-        "updated_at": "2019-01-25 14:45:15",
-        "pivot": {
-            "relation_id": 1,
-            "ad_id": 3
-        },
-        "space": {
-            "id": 10,
-            "alias": "矿石专栏顶部广告",
-            "space": "app:ore:special:top",
-            "img_size": "100x100px",
-            "created_at": "2019-02-15 09:54:26",
-            "updated_at": "2019-02-15 09:54:26"
-        }
+    "space": {
+      "id": 11,
+      "alias": "COMC专栏题顶部广告",
+      "space": "app:comc:special:top",
+      "img_size": "100x100px",
+      "created_at": "2019-02-15 09:54:26",
+      "updated_at": "2019-02-15 09:54:26"
     }
+  },
+  {
+    "id": 3,
+    "title": "测试",
+    "image": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+    "time": 0,
+    "link": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+    "link_type": "inside",
+    "space_id": 10,
+    "sort": 12,
+    "target_type": "special",
+    "target_id": 1,
+    "created_at": "2019-01-25 14:45:15",
+    "updated_at": "2019-01-25 14:45:15",
+    "pivot": {
+      "relation_id": 1,
+      "ad_id": 3
+    },
+    "space": {
+      "id": 10,
+      "alias": "矿石专栏顶部广告",
+      "space": "app:ore:special:top",
+      "img_size": "100x100px",
+      "created_at": "2019-02-15 09:54:26",
+      "updated_at": "2019-02-15 09:54:26"
+    }
+  }
 ]
 ```
