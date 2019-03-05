@@ -116,6 +116,7 @@ function getAdminSider(title, introduction) {
         "youzan",
         "merchant",
         "config",
+        "item",
         "app-version",
         "certification"
       ]
