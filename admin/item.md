@@ -240,7 +240,8 @@
   "limit_num": 0, // 限量
   "limit_time": null, // 限时
   "price": 200, // 兑换价
-
+  "power": "0", // 矿力奖励(整数)
+  "ore": "0", // 矿石奖励(小数后两位)
   "skus": [
     // sku
     {
