@@ -50,14 +50,18 @@
 
 **参数**
 
-|  名称   |  类型  | 必须 |      说明       |
-| :-----: | :----: | :--: | :-------------: |
-|  name   | string |  是  |   收货人姓名    |
-|  phone  | string |  是  |      手机       |
-|  area   | string |  是  |      区域       |
-| detail  | string |  是  |    地址详情     |
-|   tag   | string |  否  |      标签       |
-| default |  int   |  是  | 默认: 0-否 1-是 |
+|   名称    |  类型  | 必须 |      说明       |
+| :-------: | :----: | :--: | :-------------: |
+|   name    | string |  是  |   收货人姓名    |
+|   phone   | string |  是  |      手机       |
+|   area    | string |  是  |      区域       |
+|  detail   | string |  是  |    地址详情     |
+|    tag    | string |  否  |      标签       |
+|  default  |  int   |  是  | 默认: 0-否 1-是 |
+| province  | string |  是  |      省份       |
+|   city    | string |  是  |       市        |
+|  county   | string |  是  |       区        |
+| area_code | string |  是  |     区域码      |
 
 **响应**
 
