@@ -106,25 +106,11 @@
   "name": "花花公子 高领毛衣 2018秋季新款", // 商品名称 必填
   "intro": "花花公子 高领毛衣 2018秋季新款", // 商品简述或卖点 必填
   "detail": "花花公子 高领毛衣 2018秋季新款", // 商品详情 必填
-  "limit_num": 12, // 购买限量 非必填
-  "limit_time": "2019-01-30 12:12:11", // 购买限时 非必填
   "category_id": 1, // 分类id 必须
-  "currency": "ore", // ore-矿石 comc-comc
-  "stock_num": 0, // 总库存 非必须
-  "recommend": 0, // 推荐 0-否 1-是
-  "power": 100, // 矿力 必须填写
-  "ore": 10, // 矿石 非必须 如currency_id为2必须填写
   "type": 2, // 1-虚拟商品 2-实体商品
   "spec_type": 1, // 1-单规格 2-多规格
-  "virt_num": 0, // 虚拟销售量 非必填
-  "sales_num": 0, // 真实销售量 非必须
-  "status": 0, // 状态 0-待审核 1-上架 2-下架 必填
-  "sort": 0, // 排序 必填
   "cost_price": 111.1, // 成本价
-  "hot": 0, // 是否热门 0-否 1-是 必填
-  "price": "100", // 商品价格 多个sku取最小值，单个sku取sku price值
   "image": 0, // 商品主图地址, 获取第一张商品图片地址
-  "return_goods": 1, // 是否支持退换货 1-支持 0-否
   "images": [1, 2, 3, 4], // 图片id
   "merchant_id": 0, // 商家ID
   "specs_properties": [
@@ -140,13 +126,7 @@
   ],
   "skus": [
     {
-      "price": 100, // 单个sku价格
-      "weight": 10, // 重量 非必填
-      "stock_num": 1000, // 库存 必填
-      "number": "SSSNNNN", // 单个sku编号 非必填
-      "sales_num": 0, // 销售量 非必填
-      "line_price": 90, // 划线价格 非必填
-      "properties": "红色-S", // 单个sku的属性串 如spec_type为2必传，按照此格式传递
+      "sale_price": 100, // 销售价,单位人民币元
       "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg", // 图片地址
       "specs_properties": [
         // 单个sku的规格属性 如spec_type为2必传，按照此格式传递
@@ -161,14 +141,8 @@
       ]
     },
     {
-      "price": 100,
-      "weight": 10,
-      "stock_num": 1000,
-      "number": "SSSNNNN",
-      "sales_num": 0,
-      "line_price": 90,
-      "properties": "红色-M",
-      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg",
+      "sale_price": 100, // 销售价,单位人民币元
+      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg", // 图片地址
       "specs_properties": [
         {
           "s_name": "颜色",
@@ -181,14 +155,8 @@
       ]
     },
     {
-      "price": 100,
-      "weight": 10,
-      "stock_num": 1000,
-      "number": "SSSNNNN",
-      "sales_num": 0,
-      "line_price": 90,
-      "properties": "蓝色-S",
-      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg",
+      "sale_price": 100, // 销售价,单位人民币元
+      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg", // 图片地址
       "specs_properties": [
         {
           "s_name": "颜色",
@@ -201,14 +169,8 @@
       ]
     },
     {
-      "price": 100,
-      "weight": 10,
-      "stock_num": 1000,
-      "number": "SSSNNNN",
-      "sales_num": 0,
-      "line_price": 90,
-      "properties": "蓝色-M",
-      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg",
+      "sale_price": 100, // 销售价,单位人民币元
+      "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg", // 图片地址
       "specs_properties": [
         {
           "s_name": "颜色",
@@ -403,126 +365,303 @@
 
 ```json
 {
-  "currency": "comc",
-  "power": 0,
-  "ore": 0,
-  "type": 2,
-  "sort": 0,
-  "hot": 0,
-  "recommend": 0,
-  "virt_num": 0,
-  "return_goods": 0,
-  "merchant_id": 0,
-  "spec_type": 2,
-  "status": 1,
-  "limit_num": 0,
-  "limit_time": null,
-  "cost_price": 0,
-  "name": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
-  "detail": "测试",
-  "price": 1366,
-  "image": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
-  "stock_num": 949,
-  "sales_num": 4162,
-  "skus": [
-    {
-      "weight": 0,
-      "line_price": 0,
-      "image": "",
-      "price": 2481,
-      "stock_num": 49,
-      "sales_num": 2716,
-      "properties": ["单卷5M"],
-      "number": "45394814236276198",
-      "specs_properties": [
+    "type": 2,
+    "cost_price": 0,
+    "merchant_id": null,
+    "category_id": null,
+    "spec_type": 2,
+    "yz_item_id": 454046399,
+    "name": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
+    "detail": "详情",
+    "skus": [
         {
-          "s_name": "规格",
-          "p_name": "单卷5M"
-        }
-      ]
-    },
-    {
-      "weight": 0,
-      "line_price": 0,
-      "image": "",
-      "price": 1366,
-      "stock_num": 900,
-      "sales_num": 1446,
-      "properties": ["单卷1M"],
-      "number": "45394814236276199",
-      "specs_properties": [
+            "image": "",
+            "sale_price": 129,
+            "price": 0,
+            "stock_num": 1424,
+            "sales_num": 576,
+            "properties": [
+                "光魔方紫色",
+                "标配款（USB接头）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方紫色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "标配款（USB接头）"
+                }
+            ]
+        },
         {
-          "s_name": "规格",
-          "p_name": "单卷1M"
+            "image": "",
+            "sale_price": 139,
+            "price": 0,
+            "stock_num": 1144,
+            "sales_num": 856,
+            "properties": [
+                "光魔方紫色",
+                "升级款（USB接头+适配器）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方紫色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "升级款（USB接头+适配器）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 129,
+            "price": 0,
+            "stock_num": 1265,
+            "sales_num": 729,
+            "properties": [
+                "光魔方白色",
+                "标配款（USB接头）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方白色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "标配款（USB接头）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 139,
+            "price": 0,
+            "stock_num": 836,
+            "sales_num": 1160,
+            "properties": [
+                "光魔方白色",
+                "升级款（USB接头+适配器）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方白色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "升级款（USB接头+适配器）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 129,
+            "price": 0,
+            "stock_num": 940,
+            "sales_num": 1059,
+            "properties": [
+                "光魔方蓝色",
+                "标配款（USB接头）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方蓝色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "标配款（USB接头）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 139,
+            "price": 0,
+            "stock_num": 507,
+            "sales_num": 1602,
+            "properties": [
+                "光魔方蓝色",
+                "升级款（USB接头+适配器）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方蓝色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "升级款（USB接头+适配器）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 129,
+            "price": 0,
+            "stock_num": 1760,
+            "sales_num": 240,
+            "properties": [
+                "光魔方黄色",
+                "标配款（USB接头）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方黄色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "标配款（USB接头）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 139,
+            "price": 0,
+            "stock_num": 1670,
+            "sales_num": 328,
+            "properties": [
+                "光魔方黄色",
+                "升级款（USB接头+适配器）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方黄色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "升级款（USB接头+适配器）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 129,
+            "price": 0,
+            "stock_num": 1549,
+            "sales_num": 452,
+            "properties": [
+                "光魔方粉色",
+                "标配款（USB接头）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方粉色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "标配款（USB接头）"
+                }
+            ]
+        },
+        {
+            "image": "",
+            "sale_price": 139,
+            "price": 0,
+            "stock_num": 1232,
+            "sales_num": 767,
+            "properties": [
+                "光魔方粉色",
+                "升级款（USB接头+适配器）"
+            ],
+            "specs_properties": [
+                {
+                    "s_name": "款式",
+                    "p_name": "光魔方粉色"
+                },
+                {
+                    "s_name": "配置",
+                    "p_name": "升级款（USB接头+适配器）"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "intro": "【随手一贴 解放双手】Monkey Grip 魔力胶卷  强力防滑 纳米无痕 不伤墙面",
-  "category_id": 0,
-  "images": [
-    {
-      "id": 204,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FtUDwmnFz-f3ym-eM673w4zOqfin.jpg"
-    },
-    {
-      "id": 205,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FlgzRG5VmVlhc6KPb-MxeUDz4JIb.jpg"
-    },
-    {
-      "id": 206,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fmxa0BWV7hKVaBNwVX1gDifWhcy6.jpg"
-    },
-    {
-      "id": 207,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FvbMHgw9saF5HrUmMZOhXqLmAjaG.jpg"
-    },
-    {
-      "id": 208,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FulR1VgGTa0_69BechdqxW5wBwo6.jpg"
-    },
-    {
-      "id": 209,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FqCuKFE04-Is6Wo4jmOpIXNmH2i3.jpg"
-    },
-    {
-      "id": 210,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fh8UAQ_M_GMRXKFnLK8FXiue-Ro2.jpg"
-    },
-    {
-      "id": 211,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/Fof-b8R8Tgv_a5UN59_aLtEJz_J6.jpg"
-    },
-    {
-      "id": 212,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FhvaE7x2BPwbW4pDhbJUGS2GpqFa.jpg"
-    },
-    {
-      "id": 213,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FsvQWi13EuzVbqmuVPJEZdYkG5Io.jpg"
-    },
-    {
-      "id": 214,
-      "filename": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg",
-      "file_url": "https://img.yzcdn.cn/upload_files/2019/02/25/FszehFY-0ieowPYxcbGBSUK3De0T.jpg"
-    }
-  ],
-  "specs_properties": [
-    {
-      "name": "规格",
-      "properties": ["单卷5M", "单卷1M"]
-    }
-  ]
+    ],
+    "intro": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
+    "specs_properties": [
+        {
+            "name": "款式",
+            "properties": [
+                "光魔方紫色",
+                "光魔方白色",
+                "光魔方蓝色",
+                "光魔方黄色",
+                "光魔方粉色"
+            ]
+        },
+        {
+            "name": "配置",
+            "properties": [
+                "标配款（USB接头）",
+                "升级款（USB接头+适配器）"
+            ]
+        }
+    ],
+    "images": [
+        {
+            "id": 410,
+            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg"
+        },
+        {
+            "id": 411,
+            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg"
+        },
+        {
+            "id": 412,
+            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg"
+        },
+        {
+            "id": 413,
+            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg"
+        },
+        {
+            "id": 414,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg"
+        },
+        {
+            "id": 415,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg"
+        },
+        {
+            "id": 416,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg"
+        },
+        {
+            "id": 417,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg"
+        },
+        {
+            "id": 418,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg"
+        },
+        {
+            "id": 419,
+            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg"
+        },
+        {
+            "id": 420,
+            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg",
+            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg"
+        }
+    ]
 }
 ```
 
