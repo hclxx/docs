@@ -15,10 +15,8 @@
 |    名称     |  类型  | 默认 | 必须 |              说明               |
 | :---------: | :----: | :--: | :--: | :-----------------------------: |
 |    name     | string |  无  |  否  |              名称               |
-|   status    |  int   |  无  |  否  | 商品状态 0-待审核 1-上架 2-下架 |
 | category_id |  int   |  无  |  否  |            分类名称             |
 |    limit    |  int   |  15  |  否  |            每页条数             |
-|  currency   | string | 所有 |  否  |     货币:comc-comc,ore-矿石     |
 
 **响应**
 
@@ -26,66 +24,71 @@
 
 ```json
 {
-  "current_page": 1,
-  "data": [
-    {
-      "id": 1,
-      "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-      "intro": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-      "detail": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-      "category_id": 1,
-      "currency": "comc",
-      "merchant_id": 0,
-      "power": 100,
-      "ore": "10.000000000",
-      "limit_time": null,
-      "limit_num": 0,
-      "type": 2,
-      "spec_type": 2,
-      "virt_num": 0,
-      "sales_num": 0,
-      "cost_price": 1.1,
-      "stock_num": 0,
-      "comment_count": 0,
-      "collect_count": 0,
-      "weight": null,
-      "share_url": null,
-      "sort": 0,
-      "hot": 0,
-      "recommend": null,
-      "status": 0,
-      "return_goods": 1,
-      "created_at": "2019-01-16 13:43:45",
-      "updated_at": "2019-01-16 14:01:41",
-      "category": {
-        "id": 1,
-        "name": "数码",
-        "image": null,
-        "pid": 0,
-        "level": 0,
-        "path": "",
-        "paths": "",
-        "sort": 0
-      }
-      /**"currency": {
-        "id": 1,
-        "name": "矿石",
-        "alias": "ore",
-        "icon": "",
-        "state": 0
-      }**/
-    }
-  ],
-  "first_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
-  "from": 1,
-  "last_page": 1,
-  "last_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
-  "next_page_url": null,
-  "path": "http://comc-mall-amin.test/admin/goods",
-  "per_page": 15,
-  "prev_page_url": null,
-  "to": 5,
-  "total": 5
+    "current_page": 1,
+    "data": [
+        {
+            "id": 10,
+            "name": "商品名1称",
+            "intro": "商品卖点2",
+            "detail": "1231233",
+            "image": "https://www.baidu.com/",
+            "cost_price": "20.00",
+            "category_id": 1,
+            "yz_item_id": 0,
+            "merchant_id": 0,
+            "type": 2,
+            "spec_type": 2,
+            "is_delete": 0,
+            "created_at": "2019-03-04 18:22:02",
+            "updated_at": "2019-03-04 18:22:11",
+            "category": {
+                "id": 1,
+                "name": "手机数码",
+                "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+                "pid": 0,
+                "level": 0,
+                "path": "",
+                "paths": "0,1",
+                "sort": 0
+            }
+        },
+        {
+            "id": 9,
+            "name": "商品名1称",
+            "intro": "商品卖点2",
+            "detail": "1231233",
+            "image": "https://www.baidu.com/",
+            "cost_price": "20.00",
+            "category_id": 1,
+            "yz_item_id": 0,
+            "merchant_id": 0,
+            "type": 2,
+            "spec_type": 2,
+            "is_delete": 0,
+            "created_at": "2019-03-04 18:14:09",
+            "updated_at": "2019-03-04 18:20:30",
+            "category": {
+                "id": 1,
+                "name": "手机数码",
+                "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+                "pid": 0,
+                "level": 0,
+                "path": "",
+                "paths": "0,1",
+                "sort": 0
+            }
+        }
+    ],
+    "first_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
+    "next_page_url": null,
+    "path": "http://comc-mall-amin.test/admin/goods",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 2,
+    "total": 2
 }
 ```
 
