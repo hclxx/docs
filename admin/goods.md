@@ -656,7 +656,7 @@
 }
 ```
 
-## 修改商品上下架
+## 修改商品成本价
 
 `/admin/goods/{goods}/cost-price`
 
