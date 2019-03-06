@@ -636,7 +636,7 @@
 
 ## 修改商品上下架
 
-`/admin/goods/{goods}/status`
+`/admin/goods/status`
 
 **请求方法**
 
