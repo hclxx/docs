@@ -17,6 +17,8 @@
 |    name     | string |  无  |  否  |              名称               |
 | category_id |  int   |  无  |  否  |            分类名称             |
 |    limit    |  int   |  15  |  否  |            每页条数             |
+|    status    |  int   |  无  |  否  |            上下架 可选参数: 1-上架 2-下架             |
+|    delete    |  int   |  无  |  否  |            回收站 可选参数: 0-正常 2-删除             |
 
 **响应**
 
