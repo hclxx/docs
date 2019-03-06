@@ -1,6 +1,6 @@
 # 商品管理
 
-## 列表
+## 列表[重写]
 
 **方式**
 
@@ -92,7 +92,7 @@
 }
 ```
 
-## 添加
+## 添加[重写]
 
 **方式**
 
@@ -199,7 +199,7 @@
 }
 ```
 
-## 详情
+## 详情[重写]
 
 **方式**
 
@@ -211,92 +211,58 @@
 
 ```json
 {
-  "id": 3,
-  "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-  "intro": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-  "detail": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-  "category_id": 1,
-  "currency": 1,
-  "merchant_id": 0,
-  "power": 100,
-  "ore": "10.000000000",
-  "limit_time": null,
-  "limit_num": 0,
-  "type": 2,
-  "spec_type": 1,
-  "virt_num": 0,
-  "sales_num": 0,
-  "cost_price": 11.1,
-  "stock_num": 0,
-  "comment_count": 0,
-  "collect_count": 0,
-  "weight": null,
-  "share_url": null,
-  "sort": 0,
-  "hot": 0,
-  "recommend": 0,
-  "status": 0,
-  "return_goods": 1,
-  "created_at": "2019-01-16 15:03:26",
-  "updated_at": "2019-01-16 15:16:21",
-  "images": [
-    {
-      "id": 1,
-      "filename": "0fa1d338bbc64caf5b57d61af9db167a.jpeg",
-      "file_url": "http://p59l6s1jm.bkt.clouddn.com/0fa1d338bbc64caf5b57d61af9db167a.jpeg"
-    },
-    {
-      "id": 2,
-      "filename": "7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
-      "file_url": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg"
-    },
-    {
-      "id": 3,
-      "filename": "16ddf9eef740c6585a219908dbb2b791.jpeg",
-      "file_url": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg"
-    },
-    {
-      "id": 4,
-      "filename": "8cbff1aee9397d5ad535d6476cd76c18.jpeg",
-      "file_url": "http://p59l6s1jm.bkt.clouddn.com/8cbff1aee9397d5ad535d6476cd76c18.jpeg"
+    "id": 10,
+    "name": "商品名1称",
+    "intro": "商品卖点2",
+    "detail": "1231233",
+    "image": "https://www.baidu.com/",
+    "cost_price": "20.00",
+    "category_id": 1,
+    "yz_item_id": 0,
+    "merchant_id": 0,
+    "type": 2,
+    "spec_type": 2,
+    "is_delete": 0,
+    "created_at": "2019-03-04 18:22:02",
+    "updated_at": "2019-03-04 18:22:11",
+    "specs_properties": [],
+    "images": [
+        {
+            "id": 1,
+            "filename": "fcc9effd7b645167633169bba4ee7651.jpeg",
+            "file_url": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg"
+        },
+        {
+            "id": 2,
+            "filename": "24449e53dcdf4a7e848e893ae6554749.jpeg",
+            "file_url": "http://p59l6s1jm.bkt.clouddn.com/24449e53dcdf4a7e848e893ae6554749.jpeg"
+        },
+        {
+            "id": 3,
+            "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+            "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
+        },
+        {
+            "id": 4,
+            "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+            "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
+        }
+    ],
+    "skus": [],
+    "category": {
+        "id": 1,
+        "name": "手机数码",
+        "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+        "pid": 0,
+        "level": 0,
+        "path": "",
+        "paths": "0,1",
+        "sort": 0
     }
-  ],
-  "skus": [
-    {
-      "id": 9,
-      "goods_id": 3,
-      "number": "GB123213",
-      "stock_num": 1000,
-      "sales_num": 0,
-      "price": "100.00000000",
-      "line_price": "90.00000000",
-      "image_id": 1,
-      "weight": null,
-      "properties": null,
-      "specs_properties": null
-    }
-  ],
-  /**"currency": {
-    "id": 1,
-    "name": "矿石",
-    "alias": "ore",
-    "icon": "",
-    "state": 0
-  },**/
-  "category": {
-    "id": 1,
-    "name": "数码",
-    "image": null,
-    "pid": 0,
-    "level": 0,
-    "path": "",
-    "paths": "",
-    "sort": 0
-  }
 }
 ```
 
-## 编辑
+## 编辑[重写]
 
 **方式**
 
@@ -316,7 +282,7 @@
 }
 ```
 
-## 删除
+## 删除[重写]
 
 **方式**
 
@@ -681,6 +647,28 @@
 |  名称  | 类型 | 必须 | 默认 |      说明       |
 | :----: | :--: | :--: | :--: | :-------------: |
 | status | int  |  是  |  无  | 1: 上架 2: 下架 |
+
+**返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+## 修改商品上下架
+
+`/admin/goods/{goods}/cost-price`
+
+**请求方法**
+
+`PATCH`
+
+**请求参数**
+
+|  名称  | 类型 | 必须 | 默认 |      说明       |
+| :----: | :--: | :--: | :--: | :-------------: |
+| price | numeric  |  是  |  无  | 成本价 |
 
 **返回体**
 
