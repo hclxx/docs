@@ -16,7 +16,6 @@
 |    name     | string |  无  |  否  |               商品名称               |
 |  currency   | string |  无  |  是  | 专区类型 comc-comc 专区 ore-矿石专区 |
 | special_id  |  int   |  无  |  否  |               专栏 ID                |
-| id_display  |  int   |  无  |  否  |           1: 上架 2: 下架            |
 | category_id |  int   |  无  |  否  |               分类 ID                |
 
 **返回参数**
