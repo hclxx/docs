@@ -53,7 +53,7 @@
           "price": "30.00000000",
           "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
           "limit_time": "2019-01-21 16:30:24",
-          "surplu_second": -69651 /*限购结束秒数: null-无限购*/
+          "end_second": -69651 /*结束秒数*/
         },
         {
           "id": 10,
@@ -63,7 +63,7 @@
           "price": "30.00000000",
           "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
           "limit_time": null,
-          "surplu_second": null
+          "end_second": null
         }
       ]
     }

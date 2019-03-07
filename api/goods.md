@@ -125,6 +125,7 @@
     "share_url": null /**/,
     "return_goods": 1 /*是否支持退还货*/,
     "power": 100 /*int 矿力奖励*/,
+    "end_second": 1000,/*结束秒数*/
     "images": [
       /*商品图片集合*/
       {
