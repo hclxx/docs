@@ -35,6 +35,7 @@
       "limit_time": null, // 限时
       "limit_num": 0, // 限量
       "stock_num": 4000, // 总库存
+      "category_name": "分类名称", // 总库存
       "sales_num": 0 // 销售量
     }
   ],
