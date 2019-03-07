@@ -128,7 +128,7 @@
       "updated_at": "2019-01-20 20:28:21",
       "buy_status": true /*bool 再次购买状态 true-是 false-否*/,
       "buy_reason": null /*null|string 不能再次购买原因*/,
-      "goods_order": {
+      "item_order": {
         "id": 6,
         "user_id": 1,
         "goods_id": 1,
