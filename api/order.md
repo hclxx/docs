@@ -131,7 +131,7 @@
       "item_order": {
         "id": 6,
         "user_id": 1,
-        "goods_id": 1,
+        "item_id": 1,
         "sku_id": 11 /*sku_id*/,
         "merchant_id": 0,
         "order_id": 6,
@@ -211,10 +211,10 @@
         "is_delete": 0,
         "created_at": "2019-01-21 04:20:44",
         "updated_at": "2019-01-21 04:20:44",
-        "goods_order": {
+        "item_order": {
           "id": 6,
           "user_id": 1,
-          "goods_id": 1,
+          "item_id": 1,
           "merchant_id": 0,
           "order_id": 6,
           "goods_name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
