@@ -75,6 +75,7 @@
   "limit_num": 0,
   "stock_num": 4000, // 总库存
   "sales_num": 0, // 销量
+  "cost_price": 100, // 成本价
   "created_at": "2019-03-04 19:17:45",
   "updated_at": "2019-03-04 19:17:45",
   "is_delete": 0,
