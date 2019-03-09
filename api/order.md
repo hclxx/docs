@@ -119,7 +119,7 @@
       "delivery_time": null /*string 发货时间*/,
       "receipt_status": 0 /*int 收货状态 0-待收货 1-已收货*/,
       "receipt_time": null /*string 收货时间*/,
-      "order_status": 1 /*int 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭*/,
+      "order_status": 1 /*int 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已关闭*/,
       "pay_type": "comc" /*string 支付类型*/,
       "currency": "comc" /*string 货币:comoc-comc ore-矿石*/,
       "user_id": 1,
