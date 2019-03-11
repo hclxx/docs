@@ -130,9 +130,11 @@
 
 **请求参数**
 
-| 名称  | 类型  | 默认 | 必须 | 说明 |
-| :---: | :---: | :--: | :--: | ---- |
-| price | float |  0   |  否  | 值   |
+|       名称        | 类型  | 默认 | 必须 | 说明            |
+| :---------------: | :---: | :--: | :--: | --------------- |
+|    cost_price     | float |  0   |  否  | 值(元) `单规格` |
+| cost_price.price  | float |  0   |  否  | 值(元) `多规格` |
+| cost_price.sku_id |  int  |  0   |  否  | sku_id `多规格` |
 
 **SUCCESS 状态码**
 
@@ -303,4 +305,71 @@
     "desc": ""
   }
 ]
+```
+
+## 获取商品详情
+
+`admin/yz/goods/{goods}`
+
+**请求方式**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "id": 584,
+  "yz_good_id": 455983605,
+  "cid": null,
+  "merchant_id": 0,
+  "alias": "1ybh8g3pebpdd",
+  "title": "同步有赞sku1", // 商品名称
+  "price": 1, // 单价( 元)
+  "cover_url": "https://img.yzcdn.cn/upload_files/2019/03/08/FqEhKlo8QjTIx-JZnMla-R4dRCnS.png!120x120.jpg", // 封面图
+  "comc_num": 0,
+  "comc_rate": "0.000",
+  "cost_price": "0.00", // 成本价
+  "power": 0,
+  "is_display": 1, // 1 上架 2 下架
+  "created_at": "2019-03-11 20:51:53", // 创建时间
+  "updated_at": "2019-03-11 20:51:53",
+  "spec_type": 2, // 1: 单规格 2: 多规格
+  "skus": [
+    // sku
+    {
+      "id": 2,
+      "item_id": "455983605",
+      "sku_id": "36277526",
+      "properties_name_json": "[{\"k\": \"cc\", \"v\": \"cc1\", \"kid\": 6555, \"vid\": 22666272}]",
+      "yz_sku_info": "{\"price\": \"1.00\", \"sku_id\": 36277526, \"created\": \"2019-03-11 20:40:15\", \"item_id\": 455983605, \"item_no\": \"1\", \"num_iid\": 455983605, \"modified\": \"2019-03-11 20:40:15\", \"outer_id\": \"1\", \"quantity\": 1, \"properties_name\": \"6555:22666272:cc:cc1\", \"sku_unique_code\": \"45598360536277526\", \"with_hold_quantity\": 0, \"properties_name_json\": \"[{\\\"k\\\":\\\"cc\\\",\\\"kid\\\":6555,\\\"v\\\":\\\"cc1\\\",\\\"vid\\\":22666272}]\"}",
+      "price": "1.00", // 售价
+      "cost_price": "1.00", // 成本价
+      "created_at": "2019-03-11 20:40:16",
+      "updated_at": "2019-03-11 20:40:16"
+    },
+    {
+      "id": 3,
+      "item_id": "455983605",
+      "sku_id": "36277527",
+      "properties_name_json": "[{\"k\": \"cc\", \"v\": \"cc4\", \"kid\": 6555, \"vid\": 28794750}]",
+      "yz_sku_info": "{\"price\": \"2.00\", \"sku_id\": 36277527, \"created\": \"2019-03-11 20:40:15\", \"item_id\": 455983605, \"item_no\": \"2\", \"num_iid\": 455983605, \"modified\": \"2019-03-11 20:40:15\", \"outer_id\": \"2\", \"quantity\": 2, \"properties_name\": \"6555:28794750:cc:cc4\", \"sku_unique_code\": \"45598360536277527\", \"with_hold_quantity\": 0, \"properties_name_json\": \"[{\\\"k\\\":\\\"cc\\\",\\\"kid\\\":6555,\\\"v\\\":\\\"cc4\\\",\\\"vid\\\":28794750}]\"}",
+      "price": "2.00",
+      "cost_price": "2.00",
+      "created_at": "2019-03-11 20:40:16",
+      "updated_at": "2019-03-11 20:40:16"
+    },
+    {
+      "id": 4,
+      "item_id": "455983605",
+      "sku_id": "36277528",
+      "properties_name_json": "[{\"k\": \"cc\", \"v\": \"cc5\", \"kid\": 6555, \"vid\": 28794756}]",
+      "yz_sku_info": "{\"price\": \"3.00\", \"sku_id\": 36277528, \"created\": \"2019-03-11 20:40:15\", \"item_id\": 455983605, \"item_no\": \"33\", \"num_iid\": 455983605, \"modified\": \"2019-03-11 20:40:15\", \"outer_id\": \"33\", \"quantity\": 3, \"properties_name\": \"6555:28794756:cc:cc5\", \"sku_unique_code\": \"45598360536277528\", \"with_hold_quantity\": 0, \"properties_name_json\": \"[{\\\"k\\\":\\\"cc\\\",\\\"kid\\\":6555,\\\"v\\\":\\\"cc5\\\",\\\"vid\\\":28794756}]\"}",
+      "price": "3.00",
+      "cost_price": "3.00",
+      "created_at": "2019-03-11 20:40:16",
+      "updated_at": "2019-03-11 20:40:16"
+    }
+  ]
+}
 ```
