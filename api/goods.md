@@ -40,7 +40,7 @@
 
 **路径**
 
-`/api/v1/goods`
+`/api/v1/items`
 
 **参数**
 
@@ -48,9 +48,7 @@
 | :--------: | :----: | :--: | :----------------------------------------------------------------------------------: |
 |   limit    |  int   |  是  |                                    条目数 默认 10                                    |
 |   offset   |  int   |  是  |                                   偏移量 默认为 0                                    |
-|  keyword   | string |  否  |                                      关键词检索                                      |
-|  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             |
-| special_id |  int   |  否  |                                       专题 id                                        |
+|  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             ||
 | order_by |  string   |  排序  |                                       排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序                                        |
 
 **响应**
@@ -68,6 +66,7 @@
       "currency": "ore" /*货币类型: comc-comc,ore-矿石*/,
       "category_id": 1 /*分类id*/,
       "price": "30.00000000" /*价格*/,
+      "stock_num": 0,/*总库存:  0-售罄*/
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
       "surplu_second": -76694 /*限购结束秒数*/
@@ -78,6 +77,7 @@
       "currency": "ore",
       "category_id": 1,
       "price": "30.00000000",
+      "stock_num": 0,/*总库存:  0-售罄*/
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": null,
       "surplu_second": null
@@ -92,7 +92,7 @@
 
 **路径**
 
-`/api/v1/goods/{id}`
+`/api/v1/items/{id}`
 
 **参数**
 
@@ -121,7 +121,7 @@
     "virt_num": 0,
     "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg" /*商品主图地址*/,
     "sales_num": 8 /*int 销量*/,
-    "stock_num": 0 /*int 总库存*/,
+    "stock_num": 0,/*总库存:  0-售罄*/
     "share_url": null /**/,
     "return_goods": 1 /*是否支持退还货*/,
     "power": 100 /*int 矿力奖励*/,
@@ -305,5 +305,58 @@
       }
     ]
   }
+}
+```
+
+## 获取某个专栏商品列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/special/{id}/items`
+
+**参数**
+
+|    名称    |  类型  | 必须 |                                         说明                                         |
+| :--------: | :----: | :--: | :----------------------------------------------------------------------------------: |
+|   limit    |  int   |  是  |                                    条目数 默认 10                                    |
+|   offset   |  int   |  是  |                                   偏移量 默认为 0                                    |
+| order_by |  string   |  排序  | 排序：id_desc-最新 price_asc-价格升序price_desc-价格降序|
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": [
+    {
+      "id": 9,
+      "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL" /*商品名称*/,
+      "currency": "ore" /*货币类型: comc-comc,ore-矿石*/,
+      "category_id": 1 /*分类id*/,
+      "price": "30.00000000" /*价格*/,
+      "stock_num": 0,/*总库存:  0-售罄*/
+      "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
+      "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
+      "surplu_second": -76694 /*限购结束秒数*/
+    },
+    {
+      "id": 10,
+      "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
+      "currency": "ore",
+      "category_id": 1,
+      "price": "30.00000000",
+      "stock_num": 0,/*总库存:  0-售罄*/
+      "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
+      "limit_time": null,
+      "surplu_second": null
+    }
+  ]
 }
 ```
