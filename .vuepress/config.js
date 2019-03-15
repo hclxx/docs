@@ -119,7 +119,8 @@ function getAdminSider(title, introduction) {
         "config",
         "item",
         "app-version",
-        "certification"
+        "certification",
+        "ore"
       ]
     }
   ];
