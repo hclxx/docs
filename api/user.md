@@ -512,10 +512,11 @@
 
 **参数**
 
-|  名称  | 类型 | 必须 |      说明       |
-| :----: | :--: | :--: | :-------------: |
-| limit  | int  |  是  | 条目数 默认 10  |
-| offset | int  |  是  | 偏移量 默认为 0 |
+|  名称  | 类型 | 必须 |         说明          |
+| :----: | :--: | :--: | :-------------------: |
+| limit  | int  |  是  |    条目数 默认 10     |
+| offset | int  |  是  |    偏移量 默认为 0    |
+|  tier  | int  |  是  | 1: 一级好友 2: 级好友 |
 
 **响应**
 
@@ -527,14 +528,14 @@
   "code": 0,
   "data": [
     {
-      "amount": "100.00000000",
-      "target_user_id": 2,
-      "created_at": "2019-01-02 12:12:12",
-      "currency": "ore" /*string 货币: ore-矿石 comc-comc*/,
-      "target_user": {
-        "id": 2 /*string 被邀请人信息*/,
-        "name": "帅哥" /*string 被邀请人姓名*/,
-        "avatar": "http://p59l6s1jm.bkt.clouddn.com/user/avatar/be1d946cc8f89689bf29ff73588f35c0.jpeg" /*string 被邀请人头像*/
+      "user_id": 82, // 用户ID
+      "count": 5, // 奖励数量
+      "created_at": "2019-03-15 18:46:38", // 邀请时间
+      "user": {
+        // 用户信息
+        "id": 82,
+        "name": "Y721U6",
+        "avatar": null
       }
     }
   ]
@@ -683,7 +684,7 @@
 }
 ```
 
-## 获取排行榜
+## 获取矿石排行榜
 
 `api/v1/rank`
 
@@ -711,5 +712,32 @@
       "created_at": "2019-03-08 17:23:59" /*注册时间*/
     }
   ]
+}
+```
+
+## 获取邀请数
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/invite/count`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+**返回体**
+
+```json
+{
+  "one_friend": 4 /*一级好友*/,
+  "two_friend": 12 /*二级好友*/
 }
 ```
