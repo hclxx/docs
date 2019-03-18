@@ -33,7 +33,7 @@
     {
       "id": 1,
       "title": "邀请好友" /*标题*/,
-      "type": 1 /*类型: 1-邀请用户 2-兑换商品 3-兑换商品奖励 4-任务奖励 5-现金销售奖励 6-现金市场奖励 7-ifuture转入*/,
+      "type": 1 /*类型: 1-邀请用户 2-兑换商品 3-兑换商品奖励 4-任务奖励 5-现金销售奖励 6-现金市场奖励 7-ifuture转入 8-兑换优惠卷 9-取消订单(兑换区) 10-代币提现 12-代币充值 13-代币提现挖矿奖励*/,
       "amount": "100.00000000" /*金额*/,
       "user_id": 1 /*用户id*/,
       "target_user_id": 2 /*贡献的用户*/,
@@ -53,6 +53,23 @@
         "id": 2,
         "name": "帅哥",
         "avatar": "http://p59l6s1jm.bkt.clouddn.com/user/avatar/be1d946cc8f89689bf29ff73588f35c0.jpeg"
+      },
+      /*type=10 该对象存在*/
+      "cash": {
+          "id": 29,
+          "user_id": 95,
+          "from": "0x21c2c51f71fc56bbba427d6b2239e9c1f4ca581e",
+          "to": "0x1E2F8c2b4B659732b9D4989Dc28B5EdF1EB213e0",
+          "charge": "0.10000000",
+          "amount": "10.00000000",
+          "status": 4,/*0-待审核 1-审核通过 2-驳回 3-待确认 4-成功*/
+          "currency": "comc",
+          "transaction_id": 51,
+          "confirm": 12,/*确认节点数量*/
+          "txid": "0xa1c00c8d378178432c3cff472d0a9ec712145fec7297cceef0d35b3714c96be85",
+          "remark": "和客户退款",
+          "created_at": "2019-03-18 22:53:47",
+          "updated_at": "2019-03-18 22:57:03"
       }
     }
   ]
