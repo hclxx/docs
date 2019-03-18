@@ -15,7 +15,7 @@
 |  名称  |  类型  | 必须 |                                   说明                                    |
 | :----: | :----: | :--: | :-----------------------------------------------------------------------: |
 | number | string |  是  |                   仅支持手机号,已授权用户不需要传手机号                   |
-| scene  | string |  是  | 场景: register-注册 forget-pass-忘记密码 login-登录 pay-pass-设置支付密码 |
+| scene  | string |  是  | 场景: register-注册 forget-pass-忘记密码 login-登录 pay-pass-设置支付密码 cash-提现 |
 
 **响应**
 
