@@ -304,7 +304,7 @@
 
 **路径**
 
-`/api/v1/api/v1/wallet/{currency}/info`
+`/api/v1/wallet/{currency}/info`
 
 **参数**
 
