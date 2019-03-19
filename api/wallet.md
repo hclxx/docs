@@ -296,4 +296,32 @@
 }
 ```
 
+## 生成Token地址
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/comc/address`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": {
+    "address": "asdasdasdasdasdasdasdasdas",
+  }
+}
+```
+
 
