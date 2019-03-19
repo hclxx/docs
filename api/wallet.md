@@ -296,19 +296,19 @@
 }
 ```
 
-## 生成Token地址
+## 获取单个钱包详情
 
 **方式**
 
-`POST`
+`GET`
 
 **路径**
 
-`/api/v1/comc/address`
+`/api/v1/api/v1/wallet/{currency}/info`
 
 **参数**
 
-无
+`currency 可选 ['comc', 'ore']`
 
 **响应**
 
@@ -316,11 +316,18 @@
 
 ```json
 {
-  "msg": "",
-  "code": 0,
-  "data": {
-    "address": "asdasdasdasdasdasdasdasdas",
-  }
+    "msg": "",
+    "code": 0,
+    "data": {
+        "id": 19,
+        "user_id": 10,
+        "amount": "94188.00000009",/* 余额*/
+        "expend_total": "7812.00000000",
+        "income_total": "1100.00000000",
+        "waited_total": "0.00000001",
+        "currency": "comc",
+        "address": "0x2f996d3813919ccb5ca979fbf0504f79221efc9b",/*钱包地址*/
+    }
 }
 ```
 
