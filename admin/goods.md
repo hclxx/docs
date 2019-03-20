@@ -12,13 +12,13 @@
 
 **参数**
 
-|    名称     |  类型  | 默认 | 必须 |              说明               |
-| :---------: | :----: | :--: | :--: | :-----------------------------: |
-|    name     | string |  无  |  否  |              名称               |
-| category_id |  int   |  无  |  否  |            分类名称             |
-|    limit    |  int   |  15  |  否  |            每页条数             |
-|    status    |  int   |  无  |  否  |            上下架 可选参数: 1-上架 2-下架             |
-|    delete    |  int   |  无  |  否  |            回收站 可选参数: 0-正常 2-删除             |
+|    名称     |  类型  | 默认 | 必须 |              说明              |
+| :---------: | :----: | :--: | :--: | :----------------------------: |
+|    name     | string |  无  |  否  |              名称              |
+| category_id |  int   |  无  |  否  |            分类名称            |
+|    limit    |  int   |  15  |  否  |            每页条数            |
+|   status    |  int   |  无  |  否  | 上下架 可选参数: 1-上架 2-下架 |
+|   delete    |  int   |  无  |  否  | 回收站 可选参数: 0-正常 2-删除 |
 
 **响应**
 
@@ -26,71 +26,71 @@
 
 ```json
 {
-    "current_page": 1,
-    "data": [
-        {
-            "id": 10,
-            "name": "商品名1称",
-            "intro": "商品卖点2",
-            "detail": "1231233",
-            "image": "https://www.baidu.com/",
-            "cost_price": "20.00",
-            "category_id": 1,
-            "yz_item_id": 0,
-            "merchant_id": 0,
-            "type": 2,
-            "spec_type": 2,
-            "is_delete": 0,
-            "created_at": "2019-03-04 18:22:02",
-            "updated_at": "2019-03-04 18:22:11",
-            "category": {
-                "id": 1,
-                "name": "手机数码",
-                "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
-                "pid": 0,
-                "level": 0,
-                "path": "",
-                "paths": "0,1",
-                "sort": 0
-            }
-        },
-        {
-            "id": 9,
-            "name": "商品名1称",
-            "intro": "商品卖点2",
-            "detail": "1231233",
-            "image": "https://www.baidu.com/",
-            "cost_price": "20.00",
-            "category_id": 1,
-            "yz_item_id": 0,
-            "merchant_id": 0,
-            "type": 2,
-            "spec_type": 2,
-            "is_delete": 0,
-            "created_at": "2019-03-04 18:14:09",
-            "updated_at": "2019-03-04 18:20:30",
-            "category": {
-                "id": 1,
-                "name": "手机数码",
-                "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
-                "pid": 0,
-                "level": 0,
-                "path": "",
-                "paths": "0,1",
-                "sort": 0
-            }
-        }
-    ],
-    "first_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
-    "from": 1,
-    "last_page": 1,
-    "last_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
-    "next_page_url": null,
-    "path": "http://comc-mall-amin.test/admin/goods",
-    "per_page": 15,
-    "prev_page_url": null,
-    "to": 2,
-    "total": 2
+  "current_page": 1,
+  "data": [
+    {
+      "id": 10,
+      "name": "商品名1称",
+      "intro": "商品卖点2",
+      "detail": "1231233",
+      "image": "https://www.baidu.com/",
+      "cost_price": "20.00",
+      "category_id": 1,
+      "yz_item_id": 0,
+      "merchant_id": 0,
+      "type": 2,
+      "spec_type": 2,
+      "is_delete": 0,
+      "created_at": "2019-03-04 18:22:02",
+      "updated_at": "2019-03-04 18:22:11",
+      "category": {
+        "id": 1,
+        "name": "手机数码",
+        "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+        "pid": 0,
+        "level": 0,
+        "path": "",
+        "paths": "0,1",
+        "sort": 0
+      }
+    },
+    {
+      "id": 9,
+      "name": "商品名1称",
+      "intro": "商品卖点2",
+      "detail": "1231233",
+      "image": "https://www.baidu.com/",
+      "cost_price": "20.00",
+      "category_id": 1,
+      "yz_item_id": 0,
+      "merchant_id": 0,
+      "type": 2,
+      "spec_type": 2,
+      "is_delete": 0,
+      "created_at": "2019-03-04 18:14:09",
+      "updated_at": "2019-03-04 18:20:30",
+      "category": {
+        "id": 1,
+        "name": "手机数码",
+        "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+        "pid": 0,
+        "level": 0,
+        "path": "",
+        "paths": "0,1",
+        "sort": 0
+      }
+    }
+  ],
+  "first_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
+  "from": 1,
+  "last_page": 1,
+  "last_page_url": "http://comc-mall-amin.test/admin/goods?page=1",
+  "next_page_url": null,
+  "path": "http://comc-mall-amin.test/admin/goods",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 2,
+  "total": 2
 }
 ```
 
@@ -213,54 +213,54 @@
 
 ```json
 {
-    "id": 10,
-    "name": "商品名1称",
-    "intro": "商品卖点2",
-    "detail": "1231233",
-    "image": "https://www.baidu.com/",
-    "cost_price": "20.00",
-    "category_id": 1,
-    "yz_item_id": 0,
-    "merchant_id": 0,
-    "type": 2,
-    "spec_type": 2,
-    "is_delete": 0,
-    "created_at": "2019-03-04 18:22:02",
-    "updated_at": "2019-03-04 18:22:11",
-    "specs_properties": [],
-    "images": [
-        {
-            "id": 1,
-            "filename": "fcc9effd7b645167633169bba4ee7651.jpeg",
-            "file_url": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg"
-        },
-        {
-            "id": 2,
-            "filename": "24449e53dcdf4a7e848e893ae6554749.jpeg",
-            "file_url": "http://p59l6s1jm.bkt.clouddn.com/24449e53dcdf4a7e848e893ae6554749.jpeg"
-        },
-        {
-            "id": 3,
-            "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-            "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
-        },
-        {
-            "id": 4,
-            "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-            "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
-        }
-    ],
-    "skus": [],
-    "category": {
-        "id": 1,
-        "name": "手机数码",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
-        "pid": 0,
-        "level": 0,
-        "path": "",
-        "paths": "0,1",
-        "sort": 0
+  "id": 10,
+  "name": "商品名1称",
+  "intro": "商品卖点2",
+  "detail": "1231233",
+  "image": "https://www.baidu.com/",
+  "cost_price": "20.00",
+  "category_id": 1,
+  "yz_item_id": 0,
+  "merchant_id": 0,
+  "type": 2,
+  "spec_type": 2,
+  "is_delete": 0,
+  "created_at": "2019-03-04 18:22:02",
+  "updated_at": "2019-03-04 18:22:11",
+  "specs_properties": [],
+  "images": [
+    {
+      "id": 1,
+      "filename": "fcc9effd7b645167633169bba4ee7651.jpeg",
+      "file_url": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg"
+    },
+    {
+      "id": 2,
+      "filename": "24449e53dcdf4a7e848e893ae6554749.jpeg",
+      "file_url": "http://p59l6s1jm.bkt.clouddn.com/24449e53dcdf4a7e848e893ae6554749.jpeg"
+    },
+    {
+      "id": 3,
+      "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+      "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
+    },
+    {
+      "id": 4,
+      "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
+      "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
     }
+  ],
+  "skus": [],
+  "category": {
+    "id": 1,
+    "name": "手机数码",
+    "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg",
+    "pid": 0,
+    "level": 0,
+    "path": "",
+    "paths": "0,1",
+    "sort": 0
+  }
 }
 ```
 
@@ -314,7 +314,8 @@
 
 ```json
 {
-  "price": "0.2954" /*comc单价单位元*/
+  "ore": 0.3004001,
+  "comc": 0.3007002
 }
 ```
 
@@ -336,303 +337,270 @@
 
 ```json
 {
-    "type": 2,
-    "cost_price": 0,
-    "merchant_id": null,
-    "category_id": null,
-    "spec_type": 2,
-    "yz_item_id": 454046399,
-    "name": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
-    "detail": "详情",
-    "skus": [
+  "type": 2,
+  "cost_price": 0,
+  "merchant_id": null,
+  "category_id": null,
+  "spec_type": 2,
+  "yz_item_id": 454046399,
+  "name": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
+  "detail": "详情",
+  "skus": [
+    {
+      "image": "",
+      "sale_price": 129,
+      "price": 0,
+      "stock_num": 1424,
+      "sales_num": 576,
+      "properties": ["光魔方紫色", "标配款（USB接头）"],
+      "specs_properties": [
         {
-            "image": "",
-            "sale_price": 129,
-            "price": 0,
-            "stock_num": 1424,
-            "sales_num": 576,
-            "properties": [
-                "光魔方紫色",
-                "标配款（USB接头）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方紫色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "标配款（USB接头）"
-                }
-            ]
+          "s_name": "款式",
+          "p_name": "光魔方紫色"
         },
         {
-            "image": "",
-            "sale_price": 139,
-            "price": 0,
-            "stock_num": 1144,
-            "sales_num": 856,
-            "properties": [
-                "光魔方紫色",
-                "升级款（USB接头+适配器）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方紫色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "升级款（USB接头+适配器）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 129,
-            "price": 0,
-            "stock_num": 1265,
-            "sales_num": 729,
-            "properties": [
-                "光魔方白色",
-                "标配款（USB接头）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方白色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "标配款（USB接头）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 139,
-            "price": 0,
-            "stock_num": 836,
-            "sales_num": 1160,
-            "properties": [
-                "光魔方白色",
-                "升级款（USB接头+适配器）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方白色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "升级款（USB接头+适配器）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 129,
-            "price": 0,
-            "stock_num": 940,
-            "sales_num": 1059,
-            "properties": [
-                "光魔方蓝色",
-                "标配款（USB接头）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方蓝色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "标配款（USB接头）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 139,
-            "price": 0,
-            "stock_num": 507,
-            "sales_num": 1602,
-            "properties": [
-                "光魔方蓝色",
-                "升级款（USB接头+适配器）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方蓝色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "升级款（USB接头+适配器）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 129,
-            "price": 0,
-            "stock_num": 1760,
-            "sales_num": 240,
-            "properties": [
-                "光魔方黄色",
-                "标配款（USB接头）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方黄色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "标配款（USB接头）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 139,
-            "price": 0,
-            "stock_num": 1670,
-            "sales_num": 328,
-            "properties": [
-                "光魔方黄色",
-                "升级款（USB接头+适配器）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方黄色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "升级款（USB接头+适配器）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 129,
-            "price": 0,
-            "stock_num": 1549,
-            "sales_num": 452,
-            "properties": [
-                "光魔方粉色",
-                "标配款（USB接头）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方粉色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "标配款（USB接头）"
-                }
-            ]
-        },
-        {
-            "image": "",
-            "sale_price": 139,
-            "price": 0,
-            "stock_num": 1232,
-            "sales_num": 767,
-            "properties": [
-                "光魔方粉色",
-                "升级款（USB接头+适配器）"
-            ],
-            "specs_properties": [
-                {
-                    "s_name": "款式",
-                    "p_name": "光魔方粉色"
-                },
-                {
-                    "s_name": "配置",
-                    "p_name": "升级款（USB接头+适配器）"
-                }
-            ]
+          "s_name": "配置",
+          "p_name": "标配款（USB接头）"
         }
-    ],
-    "intro": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
-    "specs_properties": [
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 139,
+      "price": 0,
+      "stock_num": 1144,
+      "sales_num": 856,
+      "properties": ["光魔方紫色", "升级款（USB接头+适配器）"],
+      "specs_properties": [
         {
-            "name": "款式",
-            "properties": [
-                "光魔方紫色",
-                "光魔方白色",
-                "光魔方蓝色",
-                "光魔方黄色",
-                "光魔方粉色"
-            ]
+          "s_name": "款式",
+          "p_name": "光魔方紫色"
         },
         {
-            "name": "配置",
-            "properties": [
-                "标配款（USB接头）",
-                "升级款（USB接头+适配器）"
-            ]
+          "s_name": "配置",
+          "p_name": "升级款（USB接头+适配器）"
         }
-    ],
-    "images": [
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 129,
+      "price": 0,
+      "stock_num": 1265,
+      "sales_num": 729,
+      "properties": ["光魔方白色", "标配款（USB接头）"],
+      "specs_properties": [
         {
-            "id": 410,
-            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg"
+          "s_name": "款式",
+          "p_name": "光魔方白色"
         },
         {
-            "id": 411,
-            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg"
-        },
-        {
-            "id": 412,
-            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg"
-        },
-        {
-            "id": 413,
-            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg"
-        },
-        {
-            "id": 414,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg"
-        },
-        {
-            "id": 415,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg"
-        },
-        {
-            "id": 416,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg"
-        },
-        {
-            "id": 417,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg"
-        },
-        {
-            "id": 418,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg"
-        },
-        {
-            "id": 419,
-            "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg"
-        },
-        {
-            "id": 420,
-            "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg",
-            "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg"
+          "s_name": "配置",
+          "p_name": "标配款（USB接头）"
         }
-    ]
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 139,
+      "price": 0,
+      "stock_num": 836,
+      "sales_num": 1160,
+      "properties": ["光魔方白色", "升级款（USB接头+适配器）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方白色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "升级款（USB接头+适配器）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 129,
+      "price": 0,
+      "stock_num": 940,
+      "sales_num": 1059,
+      "properties": ["光魔方蓝色", "标配款（USB接头）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方蓝色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "标配款（USB接头）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 139,
+      "price": 0,
+      "stock_num": 507,
+      "sales_num": 1602,
+      "properties": ["光魔方蓝色", "升级款（USB接头+适配器）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方蓝色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "升级款（USB接头+适配器）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 129,
+      "price": 0,
+      "stock_num": 1760,
+      "sales_num": 240,
+      "properties": ["光魔方黄色", "标配款（USB接头）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方黄色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "标配款（USB接头）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 139,
+      "price": 0,
+      "stock_num": 1670,
+      "sales_num": 328,
+      "properties": ["光魔方黄色", "升级款（USB接头+适配器）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方黄色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "升级款（USB接头+适配器）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 129,
+      "price": 0,
+      "stock_num": 1549,
+      "sales_num": 452,
+      "properties": ["光魔方粉色", "标配款（USB接头）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方粉色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "标配款（USB接头）"
+        }
+      ]
+    },
+    {
+      "image": "",
+      "sale_price": 139,
+      "price": 0,
+      "stock_num": 1232,
+      "sales_num": 767,
+      "properties": ["光魔方粉色", "升级款（USB接头+适配器）"],
+      "specs_properties": [
+        {
+          "s_name": "款式",
+          "p_name": "光魔方粉色"
+        },
+        {
+          "s_name": "配置",
+          "p_name": "升级款（USB接头+适配器）"
+        }
+      ]
+    }
+  ],
+  "intro": "【网红爆款光魔方灭蚊灯】智能光控  强力物理灭蚊  无辐射婴儿孕妇可用 1年质保、无效全额退款",
+  "specs_properties": [
+    {
+      "name": "款式",
+      "properties": [
+        "光魔方紫色",
+        "光魔方白色",
+        "光魔方蓝色",
+        "光魔方黄色",
+        "光魔方粉色"
+      ]
+    },
+    {
+      "name": "配置",
+      "properties": ["标配款（USB接头）", "升级款（USB接头+适配器）"]
+    }
+  ],
+  "images": [
+    {
+      "id": 410,
+      "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FgP7SBAWVtHQa2F3j8VgAvZO1zCn.jpg"
+    },
+    {
+      "id": 411,
+      "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FkLjrJgw024ef00qK17kf2f9nNmM.jpg"
+    },
+    {
+      "id": 412,
+      "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fgb6G9tu3CYHVS7ROOuongOQtNSS.jpg"
+    },
+    {
+      "id": 413,
+      "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/Fp5TbCFa3RaHR31K1Lmjq2rRyNtE.jpg"
+    },
+    {
+      "id": 414,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/12/Fn7eE13uk1DHQ4yBw3aWzfUXp8Yi.jpg"
+    },
+    {
+      "id": 415,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fj71XOFa3oJCQRyzpQ6LbHa-2Q4A.jpg"
+    },
+    {
+      "id": 416,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FjL-I60p23sZso3JMR0lE5-9MpSb.jpg"
+    },
+    {
+      "id": 417,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FrJDLslbpse1J9tiZhdnQMKtKUbA.jpg"
+    },
+    {
+      "id": 418,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/FkE9KOqGjZWMAWxkvF5ZOMtmX0fC.jpg"
+    },
+    {
+      "id": 419,
+      "filename": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2017/04/01/Fk4ijOwKfNQbxxW7Y_3S_ughZeyc.jpg"
+    },
+    {
+      "id": 420,
+      "filename": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg",
+      "file_url": "https://img.yzcdn.cn/upload_files/2018/02/24/FltSlVOUwDLBAUpaEpC2mpRMM5aK.jpg"
+    }
+  ]
 }
 ```
 
@@ -646,10 +614,10 @@
 
 **请求参数**
 
-|  名称  | 类型 | 必须 | 默认 |      说明       |
-| :----: | :--: | :--: | :--: | :-------------: |
-| status | int  |  是  |  无  | 1: 上架 2: 下架 |
-| goods_id | array  |  是  |  无  | 需要操作的商品集合 例如：批量-[1, 2] 单个-[1] |
+|   名称   | 类型  | 必须 | 默认 |                     说明                      |
+| :------: | :---: | :--: | :--: | :-------------------------------------------: |
+|  status  |  int  |  是  |  无  |                1: 上架 2: 下架                |
+| goods_id | array |  是  |  无  | 需要操作的商品集合 例如：批量-[1, 2] 单个-[1] |
 
 **返回体**
 
@@ -669,9 +637,9 @@
 
 **请求参数**
 
-|  名称  | 类型 | 必须 | 默认 |      说明       |
-| :----: | :--: | :--: | :--: | :-------------: |
-| price | numeric  |  是  |  无  | 成本价 |
+| 名称  |  类型   | 必须 | 默认 |  说明  |
+| :---: | :-----: | :--: | :--: | :----: |
+| price | numeric |  是  |  无  | 成本价 |
 
 **返回体**
 
