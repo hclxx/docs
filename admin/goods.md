@@ -306,7 +306,7 @@
 
 **路径**
 
-`/admin/comc/price`
+`/admin/currency/price`
 
 **响应**
 

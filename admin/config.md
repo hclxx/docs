@@ -531,7 +531,7 @@
 
 ## 获取 comc/ore 单价增加点数
 
-`admin/system/float`
+`admin/system/currency/float`
 
 **请求方式**
 
@@ -548,7 +548,7 @@
 
 ## 设置 comc/ore 单价增加点数
 
-`admin/system/float`
+`admin/system/currency/float`
 
 **请求方式**
 
