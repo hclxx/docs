@@ -171,6 +171,8 @@
 | :----: | :----: | :--: | :--: | :-------------------: |
 | status |  int   |  无  |  是  |    1: 通过 2: 驳回    |
 | remark | string |  无  |  否  | 说明 status 为 2 必须 |
+| txid | string |  无  |  否  | 审核状态:audit_type为manual必传，auto无需传 |
+
 
 **返回体**
 
