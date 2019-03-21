@@ -870,7 +870,7 @@
 |  名称  |  类型  | 必须 |                  说明                   |
 | :----: | :----: | :--: | :-------------------------------------: |
 | number | string |  是  |  仅支持手机号,已授权用户不需要传手机号  |
-| scene  | string |  是  | 场景: merchant-forget-password-忘记密码 |
+| scene  | string |  是  | 场景: merchant-forget-password-忘记密码 add-wallet-address：添加结算账户 |
 
 **响应**
 
