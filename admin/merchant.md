@@ -95,7 +95,7 @@
 }
 ```
 
-## 修改商家状态
+## 修改商家信息
 
 `/admin/merchant/{merchant}/status`
 
@@ -107,6 +107,10 @@
 
 |  名称  | 类型 | 默认 | 必须 |  说明  |
 | :----: | :--: | :--: | :--: | :----: |
+| name | string  |  无  |  是  | 商家名词  |
+| phone | string  |  无  |  是  | 电话号码 |
+| email | string  |  无  |  是  | 邮箱 |
+| password | string  |  无  |  是  | 密码 |
 | status | int  |  无  |  是  | 状态值 |
 
 **SUCCESS 状态码**
@@ -492,6 +496,7 @@
 | :-----: | :----: | :--: | :--: | :------: |
 |  name   | string |  无  |  是  |   名称   |
 | address | string |  无  |  是  |   地址   |
+| verifiy_code | string |  无  |  是  |   短信验证码   |
 |  type   |  int   |  无  |  是  | 地址分类 | 0: 微信 1: 支付宝 2: 银行卡 |
 
 **SUCCESS 状态码**
