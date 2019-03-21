@@ -856,7 +856,9 @@
 
 **路径**
 
-`/verification/code`
+`/verification/code/{namespace?}`
+
+`namespace: 商家后台 merchant 管理后台 admin`
 
 **参数**
 
