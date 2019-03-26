@@ -169,3 +169,108 @@
   "message": "创建成功"
 }
 ```
+
+## 用户钱包流水
+
+`/admin/wallets/:user/logs`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |          说明          |
+| :------: | :----: | :--: | :--: | :--------------------: |
+|   limit   | int |  无  |  否  |          条目数          |
+|  action   | int |  无  |  否  |         1-收入 2-支出         |
+|  currency   | string |  无  |  否  |         代币类型: comc, ore |
+|  start   | string |  无  |  否  |         时间筛选 开始时间 |
+|  end   | string |  无  |  否  |         时间筛选 结束时间 |
+
+**返回体**
+
+```json
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 1,
+            "title": "提现", /*标题*/
+            "user_id": 2,
+            "target_user_id": 2,
+            "target_type": "cash",
+            "target_id": 0,
+            "amount": "110.00000000", /*金额*/
+            "balance": "9890.00000000",
+            "curr_balance": "10000.00000000",
+            "currency": "comc",/*代币: comc  ore*/
+            "action": 2,/* 1-收入 2-支出*/
+            "status": 0, /* 0-待处理 1-已处理 2-失败*/
+            "type": 10,
+            "extend": null,
+            "created_at": "2019-03-15 10:11:11",/*时间*/
+            "updated_at": "2019-03-15 10:11:11"
+        }
+    ],
+    "first_page_url": "http://comc-mall-amin.test/admin/wallets/2/logs?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://comc-mall-amin.test/admin/wallets/2/logs?page=1",
+    "next_page_url": null,
+    "path": "http://comc-mall-amin.test/admin/wallets/2/logs",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 1,
+    "total": 1
+}
+```
+
+## 用户钱包资产明细
+
+`/admin/wallets/:user/detail`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+无
+
+**返回体**
+
+```json
+{
+    "comc": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "amount": "9890.00000000", /*COMC钱包金额*/
+            "expend_total": "110.00000000",/*COMC钱包总支出*/
+            "income_total": "0.00000000",/*COMC钱包总收入*/
+            "waited_total": "0.00000000",/*COMC钱包待反还*/
+            "currency": "comc",
+            "status": 0,
+            "address": "0x1E2F8c2b4B659732b9D4989Dc28B5EdF1EB253e0",
+            "created_at": "2019-03-13 18:43:48",
+            "updated_at": "2019-03-15 10:11:11"
+        }
+    ],
+    "ore": [
+        {
+            "id": 2,
+            "user_id": 2,
+            "amount": "9890.00000000", /*矿石钱包金额*/
+            "expend_total": "110.00000000",/*矿石钱包总支出*/
+            "income_total": "0.00000000",/*矿石钱包总收入*/
+            "waited_total": "0.00000000",/*矿石钱包待反还*/
+            "currency": "ore",
+            "status": 0,
+            "address": "",
+            "created_at": "2019-03-13 18:44:04",
+            "updated_at": "2019-03-13 18:44:04"
+        }
+    ]
+}
+```
