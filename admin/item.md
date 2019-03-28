@@ -406,3 +406,26 @@
   "message": "修改成功"
 }
 ```
+
+## 更新商品限制
+
+`/admin/items/{item}/limit`
+
+**请求方法**
+
+`PATCH`
+
+**请求方法**
+
+| 名称 | 类型 | 默认 | 必须 |     说明      |
+| :--: | :--: | :--: | :--: | :-----------: |
+| type | string  |  0   |  是  | 限制类型: number-数量 time-时间 |
+| limit | string  |  0   |  是  | 如 type 为 number, limit 必须是整数,type 为time, limit 是时间|
+
+**返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
