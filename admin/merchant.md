@@ -157,6 +157,42 @@
 
 `无`
 
+## 同步商品的商家ID
+
+`/admin/merchant/sync`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|  名称  | 类型 | 默认 | 必须 |  说明  |
+| :----: | :--: | :--: | :--: | :----: |
+| good_ids | array  |  无  |  是  | 商品IDs  |
+| merchant_id | int  |  无  |  是  | 商家ID |
+| type | int  |  无  |  是  | 1:goods同步到yz_goods; 2:yz_goods同步到goods |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "同步成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "同步商户失败"
+}
+```
+
 ## 商家登入
 
 `merchant/auth/login`
