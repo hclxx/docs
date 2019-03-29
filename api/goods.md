@@ -104,207 +104,291 @@
 
 ```json
 {
-  "msg": "",
-  "code": 0,
-  "data": {
-    "id": 1,
-    "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL" /*string 商品名称*/,
-    "intro": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL" /*string 商品简介*/,
-    "detail": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL" /*string 商品详情 富文本 html格式*/,
-    "currency": "comc" /*货币: comc-comc,ore-矿石*/,
-    "ore": "10.000000000" /*矿石奖励*/,
-    "limit_time": null /*限购时间 null-不限制*/,
-    "limit_num": 0 /*int 限量:0-不限制*/,
-    "type": 2 /* int 1-虚拟 2-实体*/,
-    "spec_type": 2 /*int 1-单规格 2-多规格*/,
-    "price": "12312", /*单价*/
-    "virt_num": 0,
-    "image": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg" /*商品主图地址*/,
-    "sales_num": 8 /*int 销量*/,
-    "stock_num": 0,/*总库存:  0-售罄*/
-    "share_url": null /**/,
-    "return_goods": 1 /*是否支持退还货*/,
-    "power": 100 /*int 矿力奖励*/,
-    "end_second": 1000,/*结束秒数*/
-    "images": [
-      /*商品图片集合*/
-      {
-        "id": 1 /*int 文件id*/,
-        "filename": "fcc9effd7b645167633169bba4ee7651.jpeg" /*string 文件名称*/,
-        "file_url": "http://p59l6s1jm.bkt.clouddn.com/fcc9effd7b645167633169bba4ee7651.jpeg" /*string 文件地址*/
-      },
-      {
-        "id": 2,
-        "filename": "24449e53dcdf4a7e848e893ae6554749.jpeg",
-        "file_url": "http://p59l6s1jm.bkt.clouddn.com/24449e53dcdf4a7e848e893ae6554749.jpeg"
-      },
-      {
-        "id": 3,
-        "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
-      },
-      {
-        "id": 4,
-        "filename": "7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg",
-        "file_url": "http://p59l6s1jm.bkt.clouddn.com/7a1b0aef4f91ee7f1ecd9a569d766df6.jpeg"
-      }
-    ],
-    "skus": [
-      {
-        "id": 1 /*int sku*/,
-        "goods_id": 1 /*int 商品id*/,
-        "number": "SSSNNNN" /*string 商品编号*/,
-        "stock_num": 992 /*int SKU库存*/,
-        "sales_num": 8 /*int 销量*/,
-        "price": "100.00000000" /*string 单价*/,
-        "line_price": "90.00000000" /*string 划线价格*/,
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg" /*string sku图片*/,
-        "weight": null,
-        "properties": {
-          "ids": "1-3",
-          "names": "红色-S"
-        },
-        "specs_properties": [
-          {
-            "p_id": 1,
-            "s_id": 1,
-            "p_name": "红色",
-            "s_name": "颜色"
-          },
-          {
-            "p_id": 3,
-            "s_id": 2,
-            "p_name": "S",
-            "s_name": "尺寸"
-          }
+    "msg": "",
+    "code": 0,
+    "data": {
+        "id": 5,
+        "name": "【懒人必备 全能扫地机 轻松清扫】二合一手推式 扫地拖地机 家用扫把簸箕一体机 懒人扫帚 无线不用电",
+        "image": "https://img.yzcdn.cn/upload_files/2018/03/02/FhSHwiFk0WnOE9OUwQYYgtmd9RO_.jpg",
+        "ore": "0.00",
+        "power": 0,
+        "spec_type": 2,
+        "detail": "这个是商品介绍 沙雕",
+        "price": "200.00",
+        "limit_num": 0,
+        "goods_id": 5,
+        "limit_time": null,
+        "currency": "comc",
+        "stock_num": 898,
+        "end_second": null,
+        "share_url": "https://api.igoods.io/share/quick/register/O1L8K5",
+        "images": [
+            {
+                "id": 84,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FhSHwiFk0WnOE9OUwQYYgtmd9RO_.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FhSHwiFk0WnOE9OUwQYYgtmd9RO_.jpg"
+            },
+            {
+                "id": 85,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FtKXFsrzZKcjTBsUunCRztyM3qXb.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FtKXFsrzZKcjTBsUunCRztyM3qXb.jpg"
+            },
+            {
+                "id": 86,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FgdZEED4ofIesl-Cr3gltA8KK0Vs.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FgdZEED4ofIesl-Cr3gltA8KK0Vs.jpg"
+            },
+            {
+                "id": 87,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FpM4Mx6u1MSHxs_ccOI0S_CFQnRA.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FpM4Mx6u1MSHxs_ccOI0S_CFQnRA.jpg"
+            },
+            {
+                "id": 88,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FqqHwdvezPWjm62MsGbLT1IDnf9L.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FqqHwdvezPWjm62MsGbLT1IDnf9L.jpg"
+            },
+            {
+                "id": 89,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FqgkQK8iLvpAwKyePme4rz4aomsT.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FqgkQK8iLvpAwKyePme4rz4aomsT.jpg"
+            },
+            {
+                "id": 90,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FpJnQAKRPi3K5rrH9C_zc0xpkBwF.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FpJnQAKRPi3K5rrH9C_zc0xpkBwF.jpg"
+            },
+            {
+                "id": 91,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FuRRIqV8eYKQOyrk6Xo54bh-v5YP.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FuRRIqV8eYKQOyrk6Xo54bh-v5YP.jpg"
+            },
+            {
+                "id": 92,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FrgnSDqxuQF9ksN0EgBOONvraW4E.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FrgnSDqxuQF9ksN0EgBOONvraW4E.jpg"
+            },
+            {
+                "id": 93,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/Fj_1XT5Z9WNuiLglYVBez4zskrl1.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/Fj_1XT5Z9WNuiLglYVBez4zskrl1.jpg"
+            },
+            {
+                "id": 94,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/Fq55jefSfk2fJGKAKJ_HA6tyrG4S.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/Fq55jefSfk2fJGKAKJ_HA6tyrG4S.jpg"
+            },
+            {
+                "id": 95,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FkfM_ytX3Pa1jf_13o4uWZHlHEEp.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FkfM_ytX3Pa1jf_13o4uWZHlHEEp.jpg"
+            },
+            {
+                "id": 96,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/Ftc7fGwaSURWN4x-jTmvSajJcXcA.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/Ftc7fGwaSURWN4x-jTmvSajJcXcA.jpg"
+            },
+            {
+                "id": 97,
+                "filename": "https://img.yzcdn.cn/upload_files/2018/03/02/FntvPiTiLQEPx-XTTWdCG-EGm8fz.jpg",
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/03/02/FntvPiTiLQEPx-XTTWdCG-EGm8fz.jpg"
+            }
+        ],
+        "skus": [
+            {
+                "id": 46,
+                "stock_num": 198,
+                "sales_num": 2,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "46",
+                "specs_properties": [
+                    {
+                        "p_id": 46,
+                        "s_id": 10,
+                        "p_name": "柠檬黄",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 47,
+                "stock_num": 100,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "47",
+                "specs_properties": [
+                    {
+                        "p_id": 47,
+                        "s_id": 10,
+                        "p_name": "孔雀蓝",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 48,
+                "stock_num": 0,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "48",
+                "specs_properties": [
+                    {
+                        "p_id": 48,
+                        "s_id": 10,
+                        "p_name": "玫瑰金黑面",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 49,
+                "stock_num": 200,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "49",
+                "specs_properties": [
+                    {
+                        "p_id": 49,
+                        "s_id": 10,
+                        "p_name": "黑色黑面",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 50,
+                "stock_num": 200,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "50",
+                "specs_properties": [
+                    {
+                        "p_id": 50,
+                        "s_id": 10,
+                        "p_name": "白色黑面",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 51,
+                "stock_num": 100,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "51",
+                "specs_properties": [
+                    {
+                        "p_id": 51,
+                        "s_id": 10,
+                        "p_name": "玫红黑面",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            },
+            {
+                "id": 52,
+                "stock_num": 100,
+                "sales_num": 0,
+                "cost_price": "39.00",
+                "price": "200.00000000",
+                "sale_price": "0.00",
+                "image": null,
+                "properties": "52",
+                "specs_properties": [
+                    {
+                        "p_id": 52,
+                        "s_id": 10,
+                        "p_name": "高端灰黑面",
+                        "s_name": "颜色"
+                    }
+                ],
+                "target_type": "item",
+                "target_id": 5
+            }
+        ],
+        "specs": [
+            {
+                "id": 10,
+                "name": "颜色",
+                "target_id": 5,
+                "target_type": "item",
+                "properties": [
+                    {
+                        "id": 46,
+                        "target_type": "item",
+                        "name": "柠檬黄",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 47,
+                        "target_type": "item",
+                        "name": "孔雀蓝",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 48,
+                        "target_type": "item",
+                        "name": "玫瑰金黑面",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 49,
+                        "target_type": "item",
+                        "name": "黑色黑面",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 50,
+                        "target_type": "item",
+                        "name": "白色黑面",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 51,
+                        "target_type": "item",
+                        "name": "玫红黑面",
+                        "specs_id": 10
+                    },
+                    {
+                        "id": 52,
+                        "target_type": "item",
+                        "name": "高端灰黑面",
+                        "specs_id": 10
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "id": 2,
-        "goods_id": 1,
-        "number": "SSSNNNN",
-        "stock_num": 1000,
-        "sales_num": 0,
-        "price": "100.00000000",
-        "line_price": "90.00000000",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
-        "weight": null,
-        "properties": {
-          "ids": "1-4",
-          "names": "红色-M"
-        },
-        "specs_properties": [
-          {
-            "p_id": 1,
-            "s_id": 1,
-            "p_name": "红色",
-            "s_name": "颜色"
-          },
-          {
-            "p_id": 4,
-            "s_id": 2,
-            "p_name": "M",
-            "s_name": "尺寸"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "goods_id": 1,
-        "number": "SSSNNNN",
-        "stock_num": 1000,
-        "sales_num": 0,
-        "price": "100.00000000",
-        "line_price": "90.00000000",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
-        "weight": null,
-        "properties": {
-          "ids": "2-3",
-          "names": "蓝色-S"
-        },
-        "specs_properties": [
-          {
-            "p_id": 2,
-            "s_id": 1,
-            "p_name": "蓝色",
-            "s_name": "颜色"
-          },
-          {
-            "p_id": 3,
-            "s_id": 2,
-            "p_name": "S",
-            "s_name": "尺寸"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "goods_id": 1,
-        "number": "SSSNNNN",
-        "stock_num": 1000,
-        "sales_num": 0,
-        "price": "100.00000000",
-        "line_price": "90.00000000",
-        "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
-        "weight": null,
-        "properties": {
-          "ids": "2-4",
-          "names": "蓝色-M"
-        },
-        "specs_properties": [
-          {
-            "p_id": 2,
-            "s_id": 1,
-            "p_name": "蓝色",
-            "s_name": "颜色"
-          },
-          {
-            "p_id": 4,
-            "s_id": 2,
-            "p_name": "M",
-            "s_name": "尺寸"
-          }
-        ]
-      }
-    ],
-    /*规格属性集合*/
-    "specs": [
-      {
-        "id": 1 /*int 规格id*/,
-        "goods_id": 1 /*int 商品id*/,
-        "name": "颜色" /*string 规格颜色*/,
-        "properties": [
-          {
-            "id": 1 /*string 属性*/,
-            "goods_specs_id": 1 /*int 商品规格id*/,
-            "name": "红色" /*string 属性名称*/
-          },
-          {
-            "id": 2,
-            "goods_specs_id": 1,
-            "name": "蓝色"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "goods_id": 1,
-        "name": "尺寸",
-        "properties": [
-          {
-            "id": 3,
-            "goods_specs_id": 2,
-            "name": "S"
-          },
-          {
-            "id": 4,
-            "goods_specs_id": 2,
-            "name": "M"
-          }
-        ]
-      }
-    ]
-  }
+    }
 }
 ```
 
