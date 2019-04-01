@@ -170,6 +170,90 @@
 }
 ```
 
+## 查询父级user
+
+`/admin/users/{user}/parent`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**返回体**
+
+```json
+{
+    "id": 2,
+    "name": "13",
+    "sex": 0,
+    "email": "1986513441@qq.com",
+    "phone": "18728624683",
+    "avatar": null,
+    "code": "123",
+    "bio": null,
+    "power": 3300,
+    "last_time": "2019-03-08 17:23:55",
+    "last_ip": null,
+    "status": 0,
+    "created_at": "2019-03-08 17:23:59",
+    "updated_at": "2019-03-08 17:27:39"
+}
+```
+
+## 查询子集user
+
+`/admin/users/{user}/subset`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**返回体**
+
+```json
+[
+    {
+        "id": 2,
+        "name": "1222",
+        "sex": 0,
+        "email": "1986513441@qq.com",
+        "phone": "18728624683",
+        "avatar": null,
+        "code": "123",
+        "bio": null,
+        "power": 3300,
+        "last_time": "2019-03-08 17:23:55",
+        "last_ip": null,
+        "status": 0,
+        "created_at": "2019-03-08 17:23:59",
+        "updated_at": "2019-03-08 17:27:39"
+    },
+    {
+        "id": 3,
+        "name": "1333",
+        "sex": 0,
+        "email": "1986513441@qq.com",
+        "phone": "18728624684",
+        "avatar": null,
+        "code": "123",
+        "bio": null,
+        "power": 3300,
+        "last_time": "2019-03-08 17:23:55",
+        "last_ip": null,
+        "status": 0,
+        "created_at": "2019-03-08 17:23:59",
+        "updated_at": "2019-03-08 17:27:39"
+    }
+]
+```
+
 ## 用户钱包流水
 
 `/admin/wallets/:user/logs`
