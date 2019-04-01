@@ -19,6 +19,7 @@ module.exports = {
     sidebar: {
       "/api/": getAppSider("移动端", "规范"),
       "/admin/": getAdminSider("后台管理", "说明"),
+      "/merchant/": getMerchantSider("商户管理", "说明"),
       "/web/": getWebSider("PC端", "说明", "H5端", "说明")
     }
   },
@@ -127,6 +128,18 @@ function getAdminSider(title, introduction) {
   ];
 }
 
+function getMerchantSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "merchant",
+      ]
+    }
+  ];
+}
 // web端 sidebar
 function getWebSider(title1, introduction1, title2, introduction2) {
   return [
