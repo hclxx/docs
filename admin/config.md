@@ -627,6 +627,7 @@
   "comc_min": 1, // 最小提comc数量
   "comc_ratio": 0.01, //  提como手续费
   "audit_type": "auth" // 提现审核方式: auto-自动，manual-手动
+  "cycle"：2，//  提现周期
 }
 ```
 
@@ -645,6 +646,7 @@
 |  comc_min  |  int   |  无  |  是  |         最小值(最小为 0)         |
 | comc_ratio | float  |  无  |  是  |   比例(保留两位小数, 最大值 1)   |
 | audit_type | string |  无  |  是  | 审核方式: auto-自动, manual-手动 |
+|  cycle  |  int   |  0  |  是  |         提现周期         |
 
 **返回体**
 
