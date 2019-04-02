@@ -55,3 +55,32 @@
   }
 }
 ```
+
+## 订单导出
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/admin/order/export`
+
+**参数**
+
+|     名称     | 类型 | 默认 | 必须 |        说明        |
+| :----------: | :--: | :--: | :--: | :----------------: |
+|   start_time   | int  |  无  |  否  |    开始时间    |
+| end_time | int  |  无  |  否  | 结束时间 |
+| order_no | int  |  无  |  否  | 订单号 |
+| order_status | int  |  无  |  否  | 订单状态 |
+
+**响应**
+
+`Status code 201`
+
+```json
+{
+  "download_url": "https://www.test.com/order.xlsx"
+}
+```
