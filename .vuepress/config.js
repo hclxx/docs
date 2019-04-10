@@ -68,7 +68,6 @@ function getAppSider(title, introduction) {
         "help",
         "message",
         "yz-auth",
-        "feedback",
         "wallet",
         "ifuture",
         "discounts",
