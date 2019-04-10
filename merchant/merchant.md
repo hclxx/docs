@@ -83,7 +83,7 @@
 
 ## 修改商家登入密码
 
-`merchant/update/login/password`
+`merchant/login/password`
 
 **请求方式**
 
@@ -129,7 +129,7 @@
 
 |         名称          |  类型  | 默认 | 必须 |                 说明                  |
 | :-------------------: | :----: | :--: | :--: | :-----------------------------------: |
-|       password        | string |  无  |  是  |                新密码                 |
+|       pay_password        | string |  无  |  是  |                新密码                 |
 |       verify_code     | int |  无  |  是  |               短信验证码                |
 
 **SUCCESS 状态码**
