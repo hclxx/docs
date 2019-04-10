@@ -136,6 +136,12 @@ function getMerchantSider(title, introduction) {
       children: [
         ["", introduction],
         "merchant",
+          "common",
+          "login",
+          "order",
+          "wallet",
+          "withdraw",
+          "yzOrder",
       ]
     }
   ];
