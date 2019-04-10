@@ -1,4 +1,6 @@
-## 商家商品订单
+# 商家商品订单
+
+## 商家商品订单列表
 
 `/merchant/orders`
 
@@ -61,7 +63,7 @@
 }
 ```
 
-## 发货
+## 商家商品订单发货
 
 `merchant/order/{goodsOrder}`
 
