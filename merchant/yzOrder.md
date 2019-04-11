@@ -284,3 +284,41 @@
     }
   }
   ```
+  
+  
+  ## 导出订单
+   
+   `merchant/export`
+   
+   **请求方式**
+   
+   `POST`
+   
+   **请求参数**
+   
+   |   名称   |  类型  | 默认 | 必须 |                   说明                   |
+   | :------: | :----: | :--: | :--: | :--------------------------------------: |
+   |   tid   | string |  无  |  否  |                   有赞订单号                   |
+   |  goods_name   | string |  无  |  否  | 商品名称 |
+   |  user_name_phone   | string |  无  |  否  |  买家的姓名或手机号  |
+   |  type  |  int   |  -1   |  否  |  0: 待支付 1: 待发货 2: 已发货 3: 已收货 4: 交易失败 5: 申请退款 6: 退款成功  |
+   | start_time | datetime |  无  |  否  |                   开始日期                  |
+   | end_time | datetime |  无  |  否  |                   结束日期                  |
+   | day | string |  无  |  否  |     今天：today ；昨天：1；近7天：7；近30天：30 （与start_time、end_time互斥）   |
+   
+   **SUCCESS 状态码**
+   
+   `201`
+   
+   **SUCCESS 返回体**
+   
+   ```json
+   
+ {
+     "download_url": "http://comc.com/storage/(2019-04-11)-有赞订单导出.xlsx"
+ }
+   ```
+   
+   **ERROR 返回体**
+    
+    `无`
