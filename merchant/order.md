@@ -180,3 +180,40 @@
   }
 }
 ```
+
+ ## 导出订单
+   
+   `merchant/export`
+   
+   **请求方式**
+   
+   `POST`
+   
+   **请求参数**
+   
+   |   名称   |  类型  | 默认 | 必须 |                   说明                   |
+   | :------: | :----: | :--: | :--: | :--------------------------------------: |
+   |   order_no   | string |  无  |  否  |                   订单号                   |
+   |   order_nos  | array |  无  |  否  |                   订单号(批量)                   |
+   |  name   | string |  无  |  否  | 商品名称 |
+   |  currency   | string |  无  |  否  |  comc-comc ore-矿石  |
+   |  order_status  |  int   |  -1   |  否  |  0: 待支付 1: 待发货 2: 已发货 3: 已收货 4: 交易失败 5: 申请退款 6: 退款成功  |
+   | start_time | datetime |  无  |  否  |                   开始日期                  |
+   | end_time | datetime |  无  |  否  |                   结束日期                  |
+   
+   **SUCCESS 状态码**
+   
+   `201`
+   
+   **SUCCESS 返回体**
+   
+   ```json
+   
+ {
+     "download_url": "http://comc.com/storage/(2019-04-11)-订单导出.xlsx"
+ }
+   ```
+   
+   **ERROR 返回体**
+    
+    `无`
