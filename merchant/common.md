@@ -17,9 +17,7 @@
 |  名称  |  类型  | 必须 |                  说明                   |
 | :----: | :----: | :--: | :-------------------------------------: |
 | number | string |  是  |  仅支持手机号,已授权用户不需要传手机号  |
-| scene  | string |  是  | 场景: mer-forget-pass 找回密码,mer-add-account 新增账户，
-                                mer-delete-account 删除账户,mer-update-account 更新账户,
-                                mer-forget-pay-pass 找回支付密码,mer-setting-pay-pass 设置支付密码|
+| scene  | string |  是  | 场景: mer-forget-pass 找回密码,mer-add-account 新增账户，mer-delete-account 删除账户,mer-update-account 更新账户,mer-forget-pay-pass 找回支付密码,mer-setting-pay-pass 设置支付密码|
 
 **响应**
 
