@@ -63,7 +63,7 @@
  
  ##  确认发货
  
- `merchant/order/{yzOrder}`
+ `merchant/yz/order/{yzOrder}`
  
  **请求方式**
  
