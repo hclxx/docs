@@ -742,6 +742,66 @@
 }
 ```
 
+## 获取邀请未读数
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/invite/unread`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+**返回体**
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": {
+        "one_level_unread": 0,
+        "two_level_unread": 0,
+        "total_unread": 0
+    }
+}
+```
+
+## 重置邀请未读数
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/v1/invite/unread`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
 ## 任务签到
 
 **方式**
