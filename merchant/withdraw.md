@@ -168,9 +168,9 @@
 }
 ```
 
-## 获取提现周期
+## 获取提现配置
 
-`merchant/withdraw/cycle`
+`merchant/withdraw/config`
 
 **请求方式**
 
@@ -188,7 +188,8 @@
 
 ```json
 {
-     "cycle": 2
+    "cash_min": 4,    //  提现最小金额
+    "cash_cycle": 2   //  提现周期
 }
 ```
 
