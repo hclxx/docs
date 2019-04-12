@@ -167,3 +167,31 @@
   "message": "提现成功"
 }
 ```
+
+## 获取提现周期
+
+`merchant/withdraw/cycle`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+`无`
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+     "cycle": 2
+}
+```
+
+**ERROR 返回体**
+
+`无`
