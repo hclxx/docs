@@ -218,40 +218,44 @@
 **返回体**
 
 ```json
-[
-    {
-        "id": 2,
-        "name": "1222",
-        "sex": 0,
-        "email": "1986513441@qq.com",
-        "phone": "18728624683",
-        "avatar": null,
-        "code": "123",
-        "bio": null,
-        "power": 3300,
-        "last_time": "2019-03-08 17:23:55",
-        "last_ip": null,
-        "status": 0,
-        "created_at": "2019-03-08 17:23:59",
-        "updated_at": "2019-03-08 17:27:39"
+{
+    "items": {
+        "pid": 0,
+        "pname": "",
+        "child": [
+            {
+                "id": 2,
+                "name": "13",
+                "phone": "18728624685",
+                "avatar": null,
+                "status": 0
+            },
+            {
+                "id": 3,
+                "name": "13",
+                "phone": "18728624686",
+                "avatar": null,
+                "status": 0
+            },
+            {
+                "id": 4,
+                "name": "13",
+                "phone": "18728624683",
+                "avatar": null,
+                "status": 0
+            },
+            {
+                "id": 5,
+                "name": "13",
+                "phone": "18728624611",
+                "avatar": null,
+                "status": 0
+            }
+        ]
     },
-    {
-        "id": 3,
-        "name": "1333",
-        "sex": 0,
-        "email": "1986513441@qq.com",
-        "phone": "18728624684",
-        "avatar": null,
-        "code": "123",
-        "bio": null,
-        "power": 3300,
-        "last_time": "2019-03-08 17:23:55",
-        "last_ip": null,
-        "status": 0,
-        "created_at": "2019-03-08 17:23:59",
-        "updated_at": "2019-03-08 17:27:39"
-    }
-]
+    "count": 4,
+    "total_count": 10
+}
 ```
 
 ## 用户钱包流水
