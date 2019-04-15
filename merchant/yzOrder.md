@@ -138,7 +138,7 @@
  
  ## 订单列表
  
- `merchant/yzOrders`
+ `merchant/yz/orders`
  
  **请求方式**
  
