@@ -112,11 +112,11 @@
 ```json
 [
     {
-        "money": 10,  //  金额
+        "comc": 10,  //  金额(comc)
         "month": 1    //  时间(月)
     },
     {
-        "money": 18,
+        "comc": 18,
         "month": 2
     }
 ]
