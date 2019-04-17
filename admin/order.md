@@ -185,6 +185,7 @@
             "id": 33,
             "title": "购买一键挖矿权限",
             "currency": "comc",
+            "amount": "18.00000000",
             "extend": {
                 "month": 3,
                 "buy_type": "购买",
