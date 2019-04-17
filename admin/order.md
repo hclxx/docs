@@ -155,3 +155,64 @@
     "total": 3
 }
 ```
+
+
+## 用户购买一键挖矿流水明细
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/order/{user}/collection`
+
+**参数**
+
+|     名称     | 类型 | 默认 | 必须 |        说明        |
+| :----------: | :--: | :--: | :--: | :----------------: |
+|   limit        | int  |  无  |  是  | 当前页面展示数据条数 |
+
+**响应**
+
+`Status code 201`
+
+```json
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 33,
+            "title": "购买一键挖矿权限",
+            "currency": "comc",
+            "extend": {
+                "month": 3,
+                "buy_type": "购买",
+                "collect_time": "2019-10-17 11:21:55"
+            },
+            "created_at": "2019-04-17 13:39:57"
+        },
+        {
+            "id": 33,
+            "title": "购买一键挖矿权限",
+            "currency": "comc",
+            "extend": {
+                "month": 1,
+                "buy_type": "续费",
+                "collect_time": "2019-10-17 11:21:55"
+            },
+            "created_at": "2019-04-17 13:39:57"
+        }
+    ],
+    "first_page_url": "http://comc.com/admin/order/16/collection?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://comc.com/admin/order/16/collection?page=1",
+    "next_page_url": null,
+    "path": "http://comc.com/admin/order/16/collection",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 4,
+    "total": 4
+}
+```
