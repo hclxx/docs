@@ -227,7 +227,7 @@
 
 **路径**
 
-`/admin/collection/amount`
+`/admin/order/collection/amount`
 
 **参数**
 
