@@ -238,14 +238,8 @@
 `Status code 201`
 
 ```json
-[
-    {
-        "currency": "comc",               //  币种
-        "total_amount": "64.00000000"     //  总收入
-    },
-    {
-        "currency": "rmb",
-        "total_amount": "18.00000000"
-    }
-]
+{
+    "cash": "18.00000000",  //  现金
+    "comc": "64.00000000"   //  comc
+}
 ```
