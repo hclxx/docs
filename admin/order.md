@@ -217,3 +217,35 @@
     "total": 4
 }
 ```
+
+
+## 购买一键挖矿总计收入
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/collection/amount`
+
+**参数**
+
+`无`
+
+**响应**
+
+`Status code 201`
+
+```json
+[
+    {
+        "currency": "comc",               //  币种
+        "total_amount": "64.00000000"     //  总收入
+    },
+    {
+        "currency": "rmb",
+        "total_amount": "18.00000000"
+    }
+]
+```
