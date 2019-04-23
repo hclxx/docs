@@ -239,7 +239,21 @@
               "s_name": "尺寸"
             }
           ],
-          "extend": null,
+          //  兑换电子卡券时返回的券码
+         "extend": [
+             {
+                 "card_no": 20190412001,  //  激活卡号
+                 "card_url": "https://card.dushu.io/generalize/entityCard/card.html?id=97f5cfd39e0c1346501"
+             },
+             {
+                 "card_no": 20190412002,
+                 "card_url": "https://www.baidu.com"  //  激活地址
+             },
+             {
+                 "card_no": 20190412003,
+                 "card_url": "https://www.baidu.com"
+             }
+                     ],
           "remark": null,
           "created_at": "2019-01-20 20:28:21",
           "updated_at": "2019-01-20 20:28:21"
