@@ -1,4 +1,4 @@
-# 电子卡券无
+# 电子卡券
 
 ## 查看电子券分类列表
 
@@ -194,28 +194,40 @@
         {
             "id": 21,
             "coupon_data": {
+                /*电子卡券激活码*/
                 "card_no": 20190412021,
+                /*电子卡券编号*/
                 "card_num": "N5143",
+                /*电子卡券激活链接*/
                 "card_url": "https://card.dushu.io/generalize/entityCard/card.html?id=******"
             },
+            /*电子卡券分类Id*/
             "coupon_category_id": 1,
+            /*电子卡券使用状态 0：未使用 1：已使用*/
             "use_status": 0,
+            /*电子卡券使用的用户ID*/
             "used_id": 0,
             "created_at": null,
-            "updated_at": null
+            "updated_at": null,
+            "user": {
+                   "id": 16,
+                   /*使用用户的名称*/
+                   "name": "123"
+                    }
         },
         {
-            "id": 20,
-            "coupon_data": {
-                "card_no": 20190412020,
-                "card_num": "N5142",
-                "card_url": "https://card.dushu.io/generalize/entityCard/card.html?id=******"
-            },
-            "coupon_category_id": 1,
-            "use_status": 0,
-            "used_id": 0,
-            "created_at": null,
-            "updated_at": "2019-04-23 17:43:54"
+           "id": 13,
+           "coupon_data": {
+               "card_no": 20190412013,
+               "card_num": "N5135",
+               "card_url": "ht******"
+           },
+           "coupon_category_id": 1,
+           "use_status": 1,
+           "used_id": 16,
+           "created_at": null,
+           "updated_at": "2019-04-23 17:43:54",
+           "user": null
         }
     ],
     "first_page_url": "http://comc.com/admin/coupon/1?page=1",
