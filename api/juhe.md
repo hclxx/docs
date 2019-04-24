@@ -192,12 +192,7 @@
 
 **参数**
 
-| 名称  |  类型  | 必须 |              说明              |
-| :---: | :----: | :--: | :----------------------------: |
-| phone | string |  是  | 手机号 |
-| proid | string |  是  | 套餐ID |
-| comc_price | string |  是  | 根据面额计算出来的COMC价格 `含小数向上取整` 公式 `价格 / COMC` 结果向上取整    |
-| type | string |  是  | 充值类型，可选：cmcc-traffic[移动流量充值],cucc-traffic[联通流量充值],ctcc-traffic[电信流量充值] |
+无
 
 **响应**
 
