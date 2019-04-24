@@ -121,7 +121,8 @@ function getAdminSider(title, introduction) {
         "app-version",
         "certification",
         "ore",
-        "recharge"
+        "recharge",
+        "coupon"
       ]
     }
   ];
