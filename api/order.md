@@ -276,6 +276,132 @@
 }
 ```
 
+**流量订单详情**
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": {
+        "id": 429,
+        "order_no": "99671556087002629",
+        "total_price": "6.00000000",
+        "pay_price": "6.00000000",
+        "pay_status": 1,
+        "pay_time": "2019-04-24 14:23:22",
+        "delivery_status": 0,
+        "delivery_time": null,
+        "receipt_status": 0,
+        "receipt_time": null,
+        "express_code": null,
+        "express_name": null,
+        "express_no": null,
+        "order_status": 3,
+        "pay_type": "comc",
+        "currency": "comc",
+        "user_id": 4,
+        "is_delete": 0,
+        "created_at": "2019-04-24 14:23:22",
+        "updated_at": "2019-04-24 14:23:22",
+        "reason": null,
+        "buy_status": false,
+        "buy_reason": "商品已下架",
+        "item_order": {
+            "id": 398,
+            "user_id": 4,
+            "item_id": 0,
+            "cost_price": "0.00",
+            "order_id": 429,
+            "goods_name": "中国电信全国流量套餐10M",/*商品名称*/
+            "goods_type": 4, /*商品类型: 1-虚拟 2-实体 3-卡券 4-聚合充值*/
+            "goods_image": "",
+            "num": 1,
+            "goods_price": "6.00000000",
+            "total_price": "6.00000000",
+            "specs_properties": [],
+            "extend": {
+                "type": "ctcc-traffic",/*充值目标类型，例如：中国移动流量，中国移动话费 用于图片呈现*/
+                "phone": "17345773103", 
+                "number": "17345773103",/* 充值的账号*/
+                "orderid": "99671556087002629",/*订单号*/
+                "game_state": "0", /*0:充值中 9:充值失败*/
+                "cardname": "中国电信全国流量套餐10M",
+                "ordercash": "1.860",/*订单金额单位元*/
+                "error_code": 0,/*0-成功 10014-网络异常需特殊处理*/
+                "sporder_id": "F19042414232270400877124", /*聚合订单号*/
+                "recharge_type": 2 /*1-话费充值 2-流量充值 3-文娱充值*/
+            },
+            "remark": null
+        },
+        "consignee": null
+    }
+}
+```
+
+**话费订单详情**
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": {
+        "id": 427,
+        "order_no": "63621556085801236",
+        "total_price": "4.00000000",
+        "pay_price": "4.00000000",
+        "pay_status": 1,
+        "pay_time": "2019-04-24 14:03:21",
+        "delivery_status": 0,
+        "delivery_time": null,
+        "receipt_status": 0,
+        "receipt_time": null,
+        "express_code": null,
+        "express_name": null,
+        "express_no": null,
+        "order_status": 1,
+        "pay_type": "comc",
+        "currency": "comc",
+        "user_id": 4,
+        "is_delete": 0,
+        "created_at": "2019-04-24 14:03:21",
+        "updated_at": "2019-04-24 14:03:21",
+        "reason": null,
+        "buy_status": false,
+        "buy_reason": "商品已下架",
+        "item_order": {
+            "id": 397,
+            "user_id": 4,
+            "item_id": 0,
+            "cost_price": "0.00",
+            "order_id": 427,
+            "goods_name": "四川移动话费1元",
+            "goods_type": 4, /*商品类型: 1-虚拟 2-实体 3-卡券 4-聚合充值*/
+            "goods_image": "",
+            "num": 1,
+            "goods_price": "4.00000000",
+            "total_price": "4.00000000",
+            "specs_properties": [],
+            "extend": {
+                "type": "cmcc-rate", /*移动话费充值*/
+                "cardid": "10691",/*聚合套餐id*/
+                "number": "13458589353",/*充值账号*/
+                "cardnum": "1",/*套餐面额*/
+                "cardname": "四川移动话费1元",
+                "uorderid": "63621556085801236",
+                "ordercash": 1.06,
+                "error_code": 0,/*0-成功 10014-网络异常需特殊处理*/
+                "game_state": "0",/*0:充值中 9:充值失败*/
+                "sporder_id": "J19042414032125273074526",
+                "game_userid": "13458589353",
+                "recharge_type": 1 /*1-话费充值 2-流量充值 3-文娱充值*/
+            },
+            "remark": null
+        },
+        "consignee": null
+    }
+}
+```
+
 ## 兑换区确认收货
 
 **方式**
