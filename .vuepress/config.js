@@ -78,7 +78,8 @@ function getAppSider(title, introduction) {
         "certification",
         "file",
         "share",
-        "ore"
+        "ore",
+        "juhe"
       ]
     }
   ];
