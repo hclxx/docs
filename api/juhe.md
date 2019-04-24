@@ -53,6 +53,7 @@
 | cardnum  | string |  是  |             充值的面额             |
 | comc_price  | string |  是  |             根据面额计算出来的COMC价格 `含小数向上取整` 公式 `面额 / COMC` 结果向上取整           |
 | type  | string |  是  |             充值类型，可选：cmcc-rate[移动充值],cucc-rate[联通充值],ctcc-rate[电信]             |
+| pay_pass  | string |  是  |             支付密码             |
 
 **响应**
 
@@ -169,6 +170,7 @@
 | proid | string |  是  | 套餐ID |
 | comc_price | string |  是  | 根据面额计算出来的COMC价格 `含小数向上取整` 公式 `价格 / COMC` 结果向上取整    |
 | type | string |  是  | 充值类型，可选：cmcc-traffic[移动流量充值],cucc-traffic[联通流量充值],ctcc-traffic[电信流量充值] |
+| pay_pass  | string |  是  |             支付密码             |
 
 **响应**
 
@@ -429,6 +431,7 @@
 | proid | string |  是  | 套餐ID |
 | comc_price | string |  是  | 根据面额计算出来的COMC价格 `含小数向上取整` 公式 `价格 / COMC` 结果向上取整    |
 | type | string |  是  | 充值类型 |
+| pay_pass  | string |  是  |             支付密码             |
 
 **响应**
 
