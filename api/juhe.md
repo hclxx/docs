@@ -62,7 +62,9 @@
 {
   "msg": "充值成功",
   "code": 0,
-  "data": null
+  "data": {
+    "order_id": 1,
+  }
 }
 ```
 
@@ -176,7 +178,9 @@
 {
   "msg": "充值成功",
   "code": 0,
-  "data": null
+  "data": {
+    "order_id": 1,
+  }
 }
 ```
 
@@ -434,6 +438,8 @@
 {
   "msg": "充值成功",
   "code": 0,
-  "data": null
+  "data": {
+    "order_id": 1,
+  }
 }
 ```
