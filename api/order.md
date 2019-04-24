@@ -139,6 +139,7 @@
         "power": 100,
         "ore": "10.00000000",
         "goods_image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
+        "goods_type": 3,
         "spec_type": 2,
         "num": 3,
         "goods_price": "100.00000000",
@@ -241,21 +242,7 @@
               "s_name": "尺寸"
             }
           ],
-          //  兑换电子卡券时返回的券码
-         "extend": [
-             {
-                 "card_no": 20190412001,  //  激活卡号
-                 "card_url": "https://card.dushu.io/generalize/entityCard/card.html?id=97f5cfd39e0c1346501"
-             },
-             {
-                 "card_no": 20190412002,
-                 "card_url": "https://www.baidu.com"  //  激活地址
-             },
-             {
-                 "card_no": 20190412003,
-                 "card_url": "https://www.baidu.com"
-             }
-                     ],
+          "extend": null,
           "remark": null,
           "created_at": "2019-01-20 20:28:21",
           "updated_at": "2019-01-20 20:28:21"
@@ -397,6 +384,66 @@
                 "game_userid": "13458589353",
                 "recharge_type": 1 /*1-话费充值 2-流量充值 3-文娱充值*/
             },
+            "remark": null
+        },
+        "consignee": null
+    }
+}
+```
+
+**话费订单详情**
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": {
+        "id": 28,
+        "order_no": "37502147483647",
+        "total_price": "189.00000000",
+        "pay_price": "189.00000000",
+        "pay_status": 1,
+        "pay_time": "2019-04-23 17:43:54",
+        "delivery_status": 1,
+        "delivery_time": "2019-04-23 17:43:54",
+        "receipt_status": 1,
+        "receipt_time": "2019-04-23 17:43:54",
+        "order_status": 3,
+        "pay_type": "comc",
+        "currency": "comc",
+        "user_id": 16,
+        "express_name": null,
+        "express_code": null,
+        "express_no": null,
+        "is_delete": 0,
+        "created_at": "2019-04-23 17:43:54",
+        "updated_at": "2019-04-23 17:43:54",
+        "reason": null,
+        "buy_status": true,
+        "buy_reason": null,
+        "item_order": {
+            "id": 16,
+            "user_id": 16,
+            "item_id": 76,
+            "cost_price": "5.00",
+            "order_id": 28,
+            "goods_name": "樊登读书卡",
+            "goods_type": 3,
+            "goods_image": "http://szl.qingchuanren.com/4cba9cbb9479b8e09b7d6dab6f3fd51b.png",
+            "num": 9,
+            "goods_price": "21.00000000",
+            "total_price": "189.00000000",
+            "specs_properties": [],
+            "extend": [
+                {
+                    "card_no": 20190412005, //  激活卡号
+                    "card_url": "https://www.baidu.com"   //  激活地址
+                },
+                {
+                    "card_no": 20190412006,
+                    "card_url": "https://www.baidu.com"
+                }
+            ],
             "remark": null
         },
         "consignee": null
