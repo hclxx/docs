@@ -391,7 +391,7 @@
 }
 ```
 
-**话费订单详情**
+**电子卡券订单详情**
 
 ```json
 {
@@ -434,16 +434,18 @@
             "goods_price": "21.00000000",
             "total_price": "189.00000000",
             "specs_properties": [],
-            "extend": [
-                {
-                    "card_no": 20190412005, //  激活卡号
-                    "card_url": "https://www.baidu.com"   //  激活地址
-                },
-                {
-                    "card_no": 20190412006,
-                    "card_url": "https://www.baidu.com"
-                }
-            ],
+            "extend": {
+                   "items": [
+                   {
+                       "card_no": 20190412001,  
+                       "card_url": "https://card.dushu.io/generalize/entityCard/card.html?id=97f5cfd39e0c1346501"
+                   },
+                   {
+                       "card_no": 20190412002,  //  激活卡号
+                       "card_url": "https://www.baidu.com"  //  激活地址
+                   }
+                            ]
+                   },
             "remark": null
         },
         "consignee": null
