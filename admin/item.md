@@ -219,7 +219,13 @@
       "target_type": "item",
       "target_id": 12
     }
-  ]
+  ],
+    /* 当商品为电子卡券时，返回卡券分类信息 */
+   "coupon_category": {
+          "id": 1,
+          "title": "樊登阅读卡11",
+          "used_item_id": 76
+      }
 }
 ```
 
