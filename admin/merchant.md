@@ -193,6 +193,42 @@
 }
 ```
 
+## 商家绑定商品
+
+`/admin/merchant/bind`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|  名称  | 类型 | 默认 | 必须 |  说明  |
+| :----: | :--: | :--: | :--: | :----: |
+| good_ids | array  |  无  |  是  | 商品IDs  |
+| merchant_id | int  |  无  |  是  | 商家ID |
+| yz_goods_ids | array  |  无  |  是  | 有赞商品IDs |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "绑定成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "绑定失败"
+}
+```
+
 ## 商家登入
 
 `merchant/auth/login`

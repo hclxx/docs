@@ -14,7 +14,8 @@
 | :----: | :----: | :--: | :--: | -------- |
 | limit  |  int   |  15  |  否  | 每页条数 |
 | title  | string |  无  |  否  | 名称     |
-| tag_id | string |  无  |  否  | 标签 ID  |
+| tag_id | string |  无  |  否  | 标签 ID  |usable
+| usable | string |  无  |  否  | 传1时表示获取未绑定商户的商品 |
 
 **SUCCESS 状态码**
 

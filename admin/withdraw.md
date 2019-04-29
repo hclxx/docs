@@ -36,11 +36,17 @@
       "charge": "0", // 手续费
       "type": 1,
       "status": "1", // 0: 待处理 1: 成功 2: 失败
+      "handle_time": "2019-04-29 16:20:58", //  审核人审核时间
       "created_at": "2019-02-14 15:16:18",
       "updated_at": "2019-02-14 15:16:18",
       "name": "商家", // 商家名称
       "phone": "18728624682", // 商家手机号
       "email": "1986513441@qq.com" // 邮箱
+      "handler": {  //  审核人信息
+          "id": 1,
+          "name": "超级管理员",
+          "phone": "13111111111"
+      }
     }
   ],
   "first_page_url": "http://comc.com/admin/withdraw?page=1",
