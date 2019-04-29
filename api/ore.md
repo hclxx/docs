@@ -95,12 +95,19 @@
     "code": 0,
     "data": [
         {
-            "comc": 10,
-            "month": 1
+            "comc": "30", /*COMC价格*/
+            "month": 1, /*月份*/
+            "price": "20"/*人民币价格*/
         },
         {
-            "comc": 18,
-            "month": 2
+            "comc": "30",
+            "month": 3,
+            "price": "60"
+        },
+        {
+            "comc": "60",
+            "month": 6,
+            "price": "80"
         }
     ]
 }
