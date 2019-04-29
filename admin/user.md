@@ -222,6 +222,7 @@
     "items": {
         "pid": 0,
         "pname": "",
+        "avatar": null,
         "child": [
             {
                 "id": 2,

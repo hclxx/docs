@@ -218,6 +218,9 @@
       "details_url": "https://h5.youzan.com/v2/showcase/goods?alias=361q1jgw9qey9" /*商品详情*/,
       "name": "放纵" /*昵称*/,
       "phone": "18728624682" /*手机号*/
+      "merchant_name": "商家",/*商家名称*/
+      "merchant_phone": "18781601158",/*商家电话*/
+      "merchant_avatar": "http://szl.qingchuanren.com/cacd83a7ac4ac6a2e173c0b5adf24c8e.png"/*商家头像*/
     }
   ],
   "first_page_url": "http://shop.igoods.io/admin/yz/orders?page=1",

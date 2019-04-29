@@ -12,13 +12,16 @@
 
 |     名称     |  类型  | 默认 | 必须 |                                     说明                                     |
 | :----------: | :----: | :--: | :--: | :--------------------------------------------------------------------------: |
-|    limit     |  int   |  15  |  否  |                                   每页条数                                   |
-|  target_id   |  int   |  无  |  否  |                                   用户 ID                                    |
-|  shop_name   | string |  无  |  否  |                                   商品名称                                   |
-|   currency   |  int   |  无  |  否  |                                   货币 ID                                    |
-|   express    | string |  无  |  否  |                                    运单号                                    |
-|   order_no   | string |  无  |  否  |                                    订单号                                    |
-| order_status |  int   |  无  |  否  | 订单状态: 0-等待付款 1-等待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已作废 |
+|    limit     |  int   |  15  |  否  |                                每页条数                                 |
+|     goods_name     | string |  无  |  否  |                                  商品名称                          |
+|     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
+|     merchant_name     | string |  无  |  否  |                         商家姓名                                |
+| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 |
+|   order_no   | string |  无  |  否  |                                 订单号                                  |
+|  start_time  | string |  无  |  否  |                                开始时间                                 |
+|   end_time   | string |  无  |  否  |                                结束时间                                 |
+|   currency   | string | comc |  否  |                            货币类型 comc,ore                             |
+|   order_nos   | string |  无  |  否  |                                 订单号号(批量)                           |
 
 **SUCCESS 状态码**
 
@@ -60,7 +63,15 @@
       "currency": "comc" /*货币名称*/,
       "name": "T" /*用户名称*/,
       "phone": "18728624682" /*用户手机号*/,
-      "express": null /*快递信息*/
+     "consignee_name": null,
+     "consignee_phone": null,
+     "consignee_tag": null,
+     "consignee_other": null,
+     "consignee_area": null,
+     "consignee_detail": null,
+     "merchant_name": "商家",/*商家名称*/
+     "merchant_phone": "18781601158",/*商家电话*/
+     "merchant_avatar": "http://szl.qingchuanren.com/cacd83a7ac4ac6a2e173c0b5adf24c8e.png"/*商家头像*/
     }
   ],
   "first_page_url": "http://comc.com/admin/order?page=1",
@@ -79,6 +90,41 @@
 ## 发货
 
 `admin/order/{goodsOrder}`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|    名称    |  类型  | 默认 | 必须 |  说明   |
+| :--------: | :----: | :--: | :--: | :-----: |
+| express_id |  int   |  无  |  是  | 快递 ID |
+| express_no | string |  是  |  是  | 运单号  |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "发货成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "请填写运单号"
+}
+```
+
+## 修改物流信息
+
+`admin/order/{itemOrder}/express`
 
 **请求方式**
 
@@ -181,5 +227,40 @@
 ```json
 {
   "message": "取消订单成功"
+}
+```
+
+## 导出订单
+
+`admin/order/export`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|     名称     |  类型  | 默认 | 必须 |                                     说明                                     |
+| :----------: | :----: | :--: | :--: | :--------------------------------------------------------------------------: |
+|    limit     |  int   |  15  |  否  |                                每页条数                                 |
+|     goods_name     | string |  无  |  否  |                                  商品名称                          |
+|     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
+|     merchant_name     | string |  无  |  否  |                         商家姓名                                |
+| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 |
+|   order_no   | string |  无  |  否  |                                 订单号                                  |
+|  start_time  | string |  无  |  否  |                                开始时间                                 |
+|   end_time   | string |  无  |  否  |                                结束时间                                 |
+|   currency   | string | comc |  否  |                            货币类型 comc,ore                             |
+|   order_nos   | string |  无  |  否  |                                 订单号号(批量)                           |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+    "download_url": "http://comc.com/storage/2019-04-29-现金区订单导出.xlsx"
 }
 ```
