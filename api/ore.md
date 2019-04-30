@@ -229,17 +229,18 @@
     "code": 0,
     "data": {
         "wxpay": {
-            "appid": "12312321",
-            "mch_id": "asd12312",
-            "nonce_str": "tiaI2rVI4o1PE9Ko",
-            "sign": "F62BCF95CF7F55A516420B501A6C83C4",
-            "prepay_id": "wx3016453569758097ca23b8dc1205254413",
-            "trade_type": "APP"
+            "appid": "123123213213",
+            "partnerid": "2131231232",
+            "prepayid": "wx3017553928957484bf409f272920327045",
+            "package": "Sign=WXPay",
+            "noncestr": "f7iPw378C36FBL96",
+            "timestamp": 1556618139,
+            "sign": "6EE2B495EDEDF5B0EC425CF0F6C4522E"
         },
         "alipay": {
             "order_info": ""
         },
-        "order_no": "61"
+        "order_no": "63"
     }
 }
 ```
