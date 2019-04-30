@@ -221,6 +221,29 @@
 }
 ```
 
+**微信支付**
+
+```json
+{
+    "msg": "",
+    "code": 0,
+    "data": {
+        "wxpay": {
+            "appid": "12312321",
+            "mch_id": "asd12312",
+            "nonce_str": "tiaI2rVI4o1PE9Ko",
+            "sign": "F62BCF95CF7F55A516420B501A6C83C4",
+            "prepay_id": "wx3016453569758097ca23b8dc1205254413",
+            "trade_type": "APP"
+        },
+        "alipay": {
+            "order_info": ""
+        },
+        "order_no": "61"
+    }
+}
+```
+
 ## 检查现金购买一键收矿特权支付状态
 
 `api/v1/collection-orders/{orderNo}/status`
