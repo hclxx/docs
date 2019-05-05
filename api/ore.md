@@ -97,21 +97,21 @@
         "items": {
             "comc": [     /*comc价格*/
                 {
-                    "price": "34.3",
+                    "price": 34.3,
                     "month": 1
                 },
                 {
-                    "price": "41.1",
+                    "price": 41.1,
                     "month": 3
                 }
             ],
             "cash": [   /*现金价格*/
                 {
-                    "price": "0.1",
+                    "price": 0.1,
                     "month": 1
                 },
                 {
-                    "price": "0.3",
+                    "price": 0.3,
                     "month": 3
                 }
             ]

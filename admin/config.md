@@ -693,3 +693,46 @@
   "message": "设置成功"
 }
 ```
+
+## 获取一键收取支付方式开关配置
+
+`admin/system/collection/switch`
+
+**请求方式**
+
+`GET`
+
+**返回体**
+
+```json
+{
+    "key": "one:key:switch",
+    "value": {
+        "comc": "off",  /*comc  off 关闭  on 开启*/
+        "alipay": "off",  /*支付宝  off 关闭  on 开启*/
+        "wechat": "off" /*微信  off 关闭  on 开启*/
+    }
+}
+```
+
+## 设置协议配置
+
+`admin/system/collection/switch`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|   名称   |  类型  | 默认 | 必须 |   说明   |
+| :------: | :----: | :--: | :--: | :------: |
+| switch | array |  无  |  是  | ['comc' => 'on', 'wechat' => 'off', 'alipay' => 'on'] |
+
+**返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
