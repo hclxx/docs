@@ -91,25 +91,37 @@
 
 ```json
 {
-    "msg": "",
+    "msg": "ok",
     "code": 0,
-    "data": [
-        {
-            "comc": "30", /*COMC价格*/
-            "month": 1, /*月份*/
-            "price": "20"/*人民币价格*/
+    "data": {
+        "items": {
+            "comc": [     /*comc价格*/
+                {
+                    "price": "34.3",
+                    "month": 1
+                },
+                {
+                    "price": "41.1",
+                    "month": 3
+                }
+            ],
+            "cash": [   /*现金价格*/
+                {
+                    "price": "0.1",
+                    "month": 1
+                },
+                {
+                    "price": "0.3",
+                    "month": 3
+                }
+            ]
         },
-        {
-            "comc": "30",
-            "month": 3,
-            "price": "60"
-        },
-        {
-            "comc": "60",
-            "month": 6,
-            "price": "80"
+        "switch": {   /*支付开关*/
+            "comc": "off",  /*comc支付 off 关闭  on 开启*/
+            "alipay": "off",  /*支付宝支付 off 关闭  on 开启*/
+            "wechat": "off" /*微信支付 off 关闭  on 开启*/
         }
-    ]
+    }
 }
 ```
 
