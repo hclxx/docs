@@ -268,3 +268,41 @@
     }
 }
 ```
+
+## 购买一键挖矿记录
+
+`api/v1/collection/buy-records`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+| 名称 | 类型  | 默认 | 必须 | 说明 |
+| :--: | :---: | :--: | :--: | :--: |
+| limit | integer |  20  |  是  |  条目数  |
+| offset | integer |  0  |  是  |  偏移量  |
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 66,
+            "amount": "20.00000000", /*金额*/
+            "currency": "cny",/*币种类型:cny-现金人民币、comc-COMC*/
+            "target_type": "wxpay:buy:collection", /*wxpay:buy:collection-微信支付、alipay:buy:collection-支付宝支付、comc:buy:collection-comc支付*//
+            "extend": {
+                "month": 1, /*月份*/
+                "buy_type": "续费",
+                "collect_time": "2019-08-16 15:06:36"
+            },
+            "created_at": "2019-05-05 10:29:37"/*购买时间*/
+        }
+    ]
+}
+```
