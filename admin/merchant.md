@@ -205,7 +205,7 @@
 
 |  名称  | 类型 | 默认 | 必须 |  说明  |
 | :----: | :--: | :--: | :--: | :----: |
-| good_ids | array  |  无  |  是  | 商品IDs  |
+| goods_ids | array  |  无  |  是  | 商品IDs  |
 | merchant_id | int  |  无  |  是  | 商家ID |
 | yz_goods_ids | array  |  无  |  是  | 有赞商品IDs |
 

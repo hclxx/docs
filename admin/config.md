@@ -715,7 +715,7 @@
 }
 ```
 
-## 设置协议配置
+## 设置一键收取支付方式开关
 
 `admin/system/collection/switch`
 
