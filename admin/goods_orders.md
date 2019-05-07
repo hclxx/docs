@@ -134,7 +134,8 @@
 
 |    名称    |  类型  | 默认 | 必须 |  说明   |
 | :--------: | :----: | :--: | :--: | :-----: |
-| express_id |  int   |  无  |  是  | 快递 ID |
+| express_name |  string   |  无  |  是  | 快递名称 |
+| express_code |  string   |  无  |  是  | 快递编号 |
 | express_no | string |  是  |  是  | 运单号  |
 
 **SUCCESS 状态码**

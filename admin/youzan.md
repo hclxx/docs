@@ -216,7 +216,9 @@
       "sku": "[{\"k\": \"规格\", \"v\": \"250g试吃装（4A级）\", \"k_id\": 14, \"v_id\": 26530463}]" /*选择的SKU*/,
       "express": {
         "id": 0,
-        "no": "" /*运单号*/
+        "no": "", /*运单号*/
+        "name": "", /*快递名称*/
+        "dist_id":"" /*配送单号*/
       },
       "details_url": "https://h5.youzan.com/v2/showcase/goods?alias=361q1jgw9qey9" /*商品详情*/,
       "name": "放纵" /*昵称*/,
