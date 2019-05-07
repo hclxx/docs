@@ -305,7 +305,6 @@
    |  type  |  int   |  -1   |  否  |  0: 待支付 1: 待发货 2: 已发货 3: 已收货 4: 交易失败 5: 申请退款 6: 退款成功  |
    | start_time | datetime |  无  |  否  |                   开始日期                  |
    | end_time | datetime |  无  |  否  |                   结束日期                  |
-   | day | string |  无  |  否  |     今天：today ；昨天：1；近7天：7；近30天：30 （与start_time、end_time互斥）   |
    
    **SUCCESS 状态码**
    

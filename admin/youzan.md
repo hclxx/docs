@@ -379,3 +379,202 @@
   ]
 }
 ```
+
+## 获取快递公司的列表
+
+`admin/yz/orders/express`
+
+**请求方式**
+
+`GET`
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+
+[
+    {
+        "display": 1,
+        "name": "申通快递",
+        "id": 1
+    },
+    {
+        "display": 1,
+        "name": "圆通速递",
+        "id": 2
+    },
+    {
+        "display": 1,
+        "name": "中通快递",
+        "id": 3
+    },
+    {
+        "display": 1,
+        "name": "韵达快递",
+        "id": 4
+    },
+    {
+        "display": 1,
+        "name": "天天快递",
+        "id": 5
+    },
+    {
+        "display": 1,
+        "name": "百世快递",
+        "id": 6
+    },
+    {
+        "display": 1,
+        "name": "顺丰速运",
+        "id": 7
+    }
+]
+```
+
+ ##  确认发货
+ 
+ `admin/yz/orders/express/{yzOrder}`
+ 
+ **请求方式**
+ 
+ `POST`
+ 
+ **请求参数**
+ 
+ |   名称   |  类型  | 默认 | 必须 |                   说明                   |
+ | :------: | :----: | :--: | :--: | :--------------------------------------: |
+ |  out_sid   | int |  无  |  是  |                   快递单号                   |
+ |  out_stype   | int |  无  |  是  | 物流公司编号 |
+ |  express_name   | string |  无  |  是  |  快递名称  |
+
+ 
+ **SUCCESS 状态码**
+ 
+ `201`
+ 
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "发货成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "发货失败"
+}
+
+```
+
+ ##  修改物流信息
+ 
+ `admin/yz/orders/express/{yzOrder}`
+ 
+ **请求方式**
+ 
+ `PUT`
+ 
+ **请求参数**
+ 
+ |   名称   |  类型  | 默认 | 必须 |                   说明                   |
+ | :------: | :----: | :--: | :--: | :--------------------------------------: |
+ |  dist_id   | int |  无  |  是  |                   快递单号                   |
+ |  express_id   | int |  无  |  是  | 物流公司ID |
+ |  express_no   | int |  无  |  是  | 物流单号 |
+ |  express_name   | string |  无  |  是  |  快递名称  |
+
+ 
+ **SUCCESS 状态码**
+ 
+ `201`
+ 
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "修改成功"
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "message": "修改失败"
+}
+```
+
+## 查询物流信息
+
+`admin/yz/orders/express/{yzOrder}`
+
+  **请求方式**
+  
+  `GET`
+  
+  **SUCCESS 状态码**
+  
+  `200`
+  
+  **SUCCESS 返回体**
+  
+  ```json
+  {
+      "com": "shentong",
+      "created_time": 1493293856,
+      "express_id": 9,
+      "data": "[{\"context\":\"浙江省杭州市市场部公司已收件\",\"time\":\"2013-12-22 15:20:23\",\"status\":\"收件\"},{\"context\":\"杭州转运中心公司已收入\",\"time\":\"2013-12-22 21:09:53\",\"status\":\"在途\"},{\"context\":\"杭州转运中心公司已打包\",\"time\":\"2013-12-22 21:23:54\",\"status\":\"在途\"}]",
+      "nu": "203500315479",
+      "ep_condition": "",
+      "id": 17,
+      "state": 3,
+      "message": "已签收",
+      "status": ""
+  }
+ ```
+ 
+## 导出订单
+     
+`admin/yz/orders/export`
+     
+**请求方式**
+     
+`POST`
+     
+**请求参数**
+     
+|    名称    |  类型  | 默认 | 必须 | 说明                                                                             |
+| :--------: | :----: | :--: | :--: | -------------------------------------------------------------------------------- |
+|   limit    |  int   |  15  |  否  | 每页条数                                                                         |
+|     goods_name     | string |  无  |  否  |                                  商品名称                          |
+|     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
+|     merchant_name     | string |  无  |  否  |                         商家姓名                                |
+|    tid     | string |  无  |  否  | 订单号                                                                           |
+| start_time | string |  无  |  否  | 开始时间                                                                         |
+|  end_time  | string |  无  |  否  | 结束时间                                                                         |
+|    type    |  int   |  无  |  否  | 状态 0: 待支付 1: 待发货 2: 已发货 3: 已收货 4: 交易失败 5: 申请退款 6: 退款成功 |
+|   tides   | string |  无  |  否  |                                 订单号号(批量)                           |
+     
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+     
+   {
+       "download_url": "http://comc.com/storage/(2019-04-11)-有赞订单导出.xlsx"
+   }
+ ```
+     
+**ERROR 返回体**
+      
+      `无`
