@@ -17,10 +17,13 @@ module.exports = {
     lastUpdated: "上次更新",
     searchMaxSuggestions: 10,
     sidebar: {
-      "/api/": getAppSider("移动端", "规范"),
-      "/admin/": getAdminSider("后台管理", "说明"),
-      "/merchant/": getMerchantSider("商户管理", "说明"),
-      "/web/": getWebSider("PC端", "说明", "H5端", "说明")
+      // 链优品
+      "/api/lianyoupin/": getLypinAppSider("移动端", "规范"),
+      "/admin/lianyoupin/": getLypAdminSider("后台管理", "说明"),
+      "/merchant/": getLypMerchantSider("商户管理", "说明"),
+      // Imeet
+      "/api/imeet": getImeetAppSider("移动端", "规范"),
+      "/admin/imeet": getImeetAppSider("后台管理", "说明"),
     }
   },
   plugins: [
@@ -46,12 +49,8 @@ module.exports = {
   ]
 };
 
-/**
- * 移动端 sidebar
- * @param {String} title 标题
- * @param {String} introduction 描述
- */
-function getAppSider(title, introduction) {
+// 链优品APP接口文档
+function getLypinAppSider(title, introduction) {
   return [
     {
       title,
@@ -85,8 +84,8 @@ function getAppSider(title, introduction) {
   ];
 }
 
-// 后台管理 sidebar
-function getAdminSider(title, introduction) {
+// 链优品后台接口文档
+function getLypAdminSider(title, introduction) {
   return [
     {
       title,
@@ -129,7 +128,8 @@ function getAdminSider(title, introduction) {
   ];
 }
 
-function getMerchantSider(title, introduction) {
+// 链优品商户接口文档
+function getLypMerchantSider(title, introduction) {
   return [
     {
       title,
@@ -159,6 +159,33 @@ function getWebSider(title1, introduction1, title2, introduction2) {
       title: title2,
       collapsable: true,
       children: [["", introduction2], "h5-demo"]
+    }
+  ];
+}
+
+
+// Imeet APP接口文档
+function getImeetAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+      ]
+    }
+  ];
+}
+
+// Imeet 后台接口文档
+function getImeetAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+      ]
     }
   ];
 }
