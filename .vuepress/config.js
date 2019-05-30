@@ -194,6 +194,7 @@ function getImeetAdminSider(title, introduction) {
           "poster",
           "role",
           "version",
+          "config",
       ]
     }
   ];
