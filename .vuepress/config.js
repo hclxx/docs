@@ -22,8 +22,8 @@ module.exports = {
       "/admin/lianyoupin/": getLypAdminSider("后台管理", "说明"),
       "/merchant/": getLypMerchantSider("商户管理", "说明"),
       // Imeet
-      "/api/imeet": getImeetAppSider("移动端", "规范"),
-      "/admin/imeet": getImeetAppSider("后台管理", "说明"),
+      "/api/imeet/": getImeetAppSider("移动端", "规范"),
+      "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
     }
   },
   plugins: [
@@ -185,6 +185,7 @@ function getImeetAdminSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "user"
       ]
     }
   ];
