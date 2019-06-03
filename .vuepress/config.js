@@ -172,6 +172,7 @@ function getImeetAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "user"
       ]
     }
   ];
@@ -185,16 +186,7 @@ function getImeetAdminSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-          "user",
-          "ad",
-          "admin",
-          "authority",
-          "certification",
-          "login",
-          "poster",
-          "role",
-          "version",
-          "config",
+        "user"
       ]
     }
   ];
