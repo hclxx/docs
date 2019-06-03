@@ -173,3 +173,66 @@
     "data": null
 }
 ```
+
+## 管理员菜单管理
+
+`admin/nav`
+
+**请求方法**
+
+`GET`
+
+**SUCCESS 返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "menus": [
+            {
+                "id": 1,
+                "name": "角色列表",
+                "alias": "role:list",
+                "icon": null,
+                "url": "/role",
+                "order": 0,
+                "type": 1,
+                "pid": 0,
+                "show": 1,
+                "list": null
+            },
+            {
+                "id": 3,
+                "name": "权限列表",
+                "alias": "authority:list",
+                "icon": "image",
+                "url": "/authority",
+                "order": 0,
+                "type": 1,
+                "pid": 0,
+                "show": 1,
+                "list": null
+            },
+            {
+                "id": 2,
+                "name": "管理员列表",
+                "alias": "admin:list",
+                "icon": null,
+                "url": "/admin",
+                "order": 0,
+                "type": 1,
+                "pid": 0,
+                "show": 1,
+                "list": null
+            }
+        ],
+        "perms": [
+            "role:list",
+            "authority:list",
+            "authority:deleye",
+            "admin:list"
+        ]
+    }
+}
+```

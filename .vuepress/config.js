@@ -186,7 +186,19 @@ function getImeetAdminSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "user"
+        "user",
+        "tag-cate",
+        "topic-tag",
+        "user-tag",
+        "ad",
+        "admin",
+        "authority",
+        "certification",
+        "login",
+        "poster",
+        "role",
+        "version",
+        "config",
       ]
     }
   ];
