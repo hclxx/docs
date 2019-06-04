@@ -167,6 +167,7 @@
 |  名称   |  类型  | 必须 |  说明  |
 | :-----: | :----: | :--: | :----: |
 | bio | string |  否  |  个性签名  |
+| avatar | string |  否  |  用户头像  |
 | sex | int |  否  | 性别: 0-未知 1-男 2-女 |
 | birthday | string |  否  | 出生日期 |
 | tags | array |  否  |  用户标签 `[1,2,3]`  |
@@ -279,3 +280,154 @@
     ]
 }
 ```
+
+## 用户设置
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/setting`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "user_id": 5,
+        "message": {
+            /*Imeet 开启*/
+            "opened": {
+                /*语音提示*/
+                "shock": true,
+                /*视频提示*/
+                "voice": true
+            },
+            /*Imeet 未开启*/
+            "unopened": {
+                "new_msg_notify": false,/*新消息通知*/
+                "voice_video_remind": true,/*语音和视频提示*/
+                "notify_display_details": true/*通知消息显示详情*/
+            }
+        },
+        "privacy": {
+            "add_mode": [],/*添加我为好友的方式*/
+            "dynamic_range": 0,/*允许朋友查看我的状态 0-全部 3-3天 30-近一个月 180-近半年*/
+            "allow_recommend": false,/*是否允许被推荐*/
+            "add_friend_check": true/*添加好友是否需要验证*/
+        },
+        "common": {
+            "chat_bgd": null,/*聊天背景*/
+            "language": "中文",/*语言*/
+            "font_size": 1,/*文字大小*/
+            "receiver_mode": false/*听筒模式*/
+        }
+    }
+}
+```
+
+## 用户设置修改
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/setting`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| setting_type | string |  是  |  修改类型：common-通用 privacy-隐私 message-消息 |
+| content | object |  是  | 如下 |
+
+**参照如下传参**
+
+```json
+{
+	"setting_type": "common",
+	"content": {
+            "chat_bgd": null,
+            "language": "中文",
+            "font_size": 1,
+            "receiver_mode": false
+    }
+}
+{
+	"setting_type": "message",
+	"content": {
+        "opened": {
+            "shock": true,
+            "voice": true
+        },
+        "unopened": {
+            "new_msg_notify": false,
+            "voice_video_remind": true,
+            "notify_display_details": true
+        }
+    }
+}
+{
+	"setting_type": "privacy",
+	"content": {
+        "add_mode": [],
+        "dynamic_range": 0,
+        "allow_recommend": false,
+        "add_friend_check": true
+    }
+}
+```
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": {
+        "user_id": 5,
+        "message": {
+            "opened": {
+                "shock": true,
+                "voice": true
+            },
+            "unopened": {
+                "new_msg_notify": false,
+                "voice_video_remind": true,
+                "notify_display_details": true
+            }
+        },
+        "privacy": {
+            "add_mode": [],
+            "dynamic_range": 0,
+            "allow_recommend": false,
+            "add_friend_check": true
+        },
+        "common": {
+            "chat_bgd": null,
+            "language": "中文",
+            "font_size": 1,
+            "receiver_mode": false
+        }
+    }
+}
+```
+
+
+
+
+
