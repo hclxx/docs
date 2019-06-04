@@ -35,13 +35,12 @@
                     "friend_id": 6,
                     "group_id": 1,
                     "alias": "备注",
-                    "name_letter": "Z",
                     "chat_bgd": null,
                     "dynamic_setting": {
                         "look_me": false,
                         "look_him": false
                     },
-                    "user": {
+                    "friend": {
                         "id": 6,
                         "name": "章三",
                         "avatar": null
