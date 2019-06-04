@@ -82,24 +82,21 @@
 {
     "msg": "ok",
     "code": 0,
-    "data": {
-        "Z": [
-            {
-                "id": 1,
-                "alias": "备注",/*好友备注*/
-                "name_letter": "Z",/*好友备注首字母*/
-                "friend_id": 6,/*好友id 也是用户id*/
-                "dynamic_setting": {
-                    "look_me": false,/*不让他看我的动态*/
-                    "look_him": false/*不看他的动态*/
-                },
-                "user": {
-                    "id": 6,
-                    "name": "章三",/*好友名称*/
-                    "avatar": null/*好友头像*/
-                }
+    "data": [
+        {
+            "id": 1,
+            "alias": null,/*好友备注*/
+            "friend_id": 2,/*好友id 也是用户id*/
+            "dynamic_setting": {
+                "look_me": false,/*不让他看我的动态*/
+                "look_him": false/*不看他的动态*/
+            },
+            "friend": {
+                "id": 2,/**/
+                "name": "章三",/*好友名称*/
+                "avatar": null/*好友头像*/
             }
-        ]
-    }
+        }
+    ]
 }
 ```
