@@ -175,7 +175,8 @@ function getImeetAppSider(title, introduction) {
         "user",
         "attachment",
         "code",
-        "tag"
+        "tag",
+        "friend"
       ]
     }
   ];
