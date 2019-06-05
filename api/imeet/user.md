@@ -568,6 +568,54 @@
 }
 ```
 
+## 用户矿力排行
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/power/rank`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        /*排行列表*/
+        "list": [
+            {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "power": 198,/*矿力值*/
+                "rank": 1/*名次*/
+            },
+            {
+                "id": 4,
+                "name": "章三",
+                "avatar": null,
+                "power": 14,
+                "rank": 2
+            }
+        ],
+        /*自己的排行*/
+        "self": {
+            "id": 5,
+            "name": "Z63482",
+            "avatar": null,
+            "power": 198,
+            "rank": 1
+        }
+    }
+}
+```
+
 
 
 
