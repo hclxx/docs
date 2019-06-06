@@ -525,3 +525,47 @@
     "data": null
 }
 ```
+
+## 动态点赞
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/dynamics/{id}/like`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "点赞成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 动态取消点赞
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/dynamics/{id}/like`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "取消点赞成功",
+    "code": 0,
+    "data": null
+}
+```
