@@ -387,7 +387,13 @@
 
 **路径**
 
-`/api/friend/groups/{id}/sort/{targetId}`
+`/api/friend/groups/sort`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| groups | array |  是  | `[{"id": 1,"sort": 10},{"id": 2,"sort": 0}]` id-分组id sort-排序值 |
 
 **响应**
 
