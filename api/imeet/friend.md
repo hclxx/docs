@@ -400,3 +400,36 @@
     "data": null
 }
 ```
+
+## 获取分组
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/friend-groups`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "name": "我的好友",
+            "sort": 1
+        },
+        {
+            "id": 2,
+            "name": "黑名单",
+            "sort": 0
+        }
+    ]
+}
+```
