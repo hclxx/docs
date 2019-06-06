@@ -287,3 +287,116 @@
     }
 }
 ```
+
+## 创建好友分组
+
+**方式**
+`POST`
+
+**路径**
+
+`/api/friend/groups`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| name | string |  是  | 分组名称 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "移动成功",
+    "code": 0,
+    "data": {
+        "id": 1,/*分组id*/
+        "name": "自定义分组",/*分组名称*/
+        "alias": "custom",/*分组别名*/
+        "user_id": 5,/*用户id*/
+        "user_count": 1,/*用户数量*/
+        "friends": []
+    }
+}
+```
+
+## 更新分组名称
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/friend/groups/{id}`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| name | string |  是  | 分组名称 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "移动成功",
+    "code": 0,
+    "data": {
+        "id": 1,/*分组id*/
+        "name": "自定义分组",/*分组名称*/
+        "alias": "custom",/*分组别名*/
+        "user_id": 5,/*用户id*/
+        "user_count": 1,/*用户数量*/
+        "friends": []
+    }
+}
+```
+
+## 删除分组
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/friend/groups/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 分组排序
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/friend/groups/{id}/sort/{targetId}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "排序成功",
+    "code": 0,
+    "data": null
+}
+```
