@@ -372,7 +372,7 @@
 | content | object |  否  | 动态内容 |
 | tags | array |  否  | 话题标签 `[1,2,3]` |
 
-**content参数说明***
+**content参数说明**
 
 纯文本
 
