@@ -647,6 +647,56 @@
 }
 ```
 
+## 获取单个用户信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/users/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 5,/*用户id*/
+        "name": "Z63482",/*名字*/
+        "number": "1295634",/*IMeet账号*/
+        "avatar": null,/*头像*/
+        "background": null,/*主页背景*/
+        "sex": 0,/*性别*/
+        "birthday": null,/*生日*/
+        "invite_code": "Z63482",/*邀请码*/
+        "power": 206,/*矿力值*/
+        "grade": {
+            "icon": "xxxxx.png",
+            "name": "初级矿工"
+        },/**/
+        "extra": {
+            "id": 5,
+            "user_id": 5,
+            "group_count": 0,/*社群数*/
+            "collect_count": 0,
+            "comment_count": 0,
+            "like_count": 0,
+            "dynamic_count": 36,/*动态数*/
+            "one_level_invite_count": 0,
+            "two_level_invite_count": 0,
+            "obtain_like_count": 3,/*被点赞数*/
+            "extend": null/*扩展字段*/
+        },
+        "tags": []
+    }
+}
+```
+
 
 
 
