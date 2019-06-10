@@ -1,4 +1,4 @@
-# IMeet API 使用介绍
+# iMeet API 使用介绍
 
 ## HTTP 响应状态
 

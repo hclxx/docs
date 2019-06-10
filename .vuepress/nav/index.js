@@ -8,7 +8,7 @@ module.exports = [
     ]
   },
   {
-    text: "Imeet",
+    text: "iMeet",
     items: [
       { text: "移动端", link: "/api/imeet/" },
       { text: "后台管理", link: "/admin/imeet/" },
