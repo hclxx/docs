@@ -173,6 +173,7 @@
 | birthday | string |  否  | 出生日期 |
 | tags | array |  否  |  用户标签 `[1,2,3]`  |
 | name | string |  否  | 名称 |
+| avatar | string |  否  | 头像 |
 
 **响应**
 
@@ -196,6 +197,35 @@
         "power": 0,
         "tags": []
     }
+}
+```
+
+## 设置支付密码
+
+**方式**
+
+`patch`
+
+**路径**
+
+`/api/user/pay-pass`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| pay_pass | string |  是  |  支付密码  |
+| code | string |  是  |  验证码  |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "设置成功",
+    "code": 0,
+    "data": null
 }
 ```
 
