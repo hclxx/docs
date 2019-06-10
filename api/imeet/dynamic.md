@@ -569,3 +569,236 @@
     "data": null
 }
 ```
+
+## 动态评论
+
+**方式**
+
+`POST`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| content | string |  是  | 评论内容|
+| comment_id | int |  否  | 如是回复 该id为顶级评论id |
+| reply_user | int |  否  | 回复人id |
+
+**路径**
+
+`/api/dynamics/{id}/comments`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "评论成功",
+    "code": 0,
+    "data": {
+        "like_count": 0,
+        "user_id": 5,
+        "target_id": 17,
+        "target_type": "dynamic",
+        "content": "测试哈",
+        "comment_id": 0,
+        "reply_user_id": 0,
+        "updated_at": "2019-06-10 11:40:48",
+        "created_at": "2019-06-10 11:40:48",
+        "id": 15,
+        "user": {
+            "id": 5,
+            "name": "Z63482",
+            "avatar": null
+        },
+        "reply_user": null
+    }
+}
+```
+
+## 评论列表
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| limit | int |  是  | 条目数|
+| after | int |  否  | 最后一条数据的id |
+
+**路径**
+
+`/api/dynamics/{id}/comments`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 12,
+            "content": "测试哈",/*评论内容*/
+            "user_id": 5,/*用户id*/
+            "target_id": 17,
+            "reply_user_id": 0,
+            "like_count": 0,/*点赞统计*/
+            "reply_count": 0,/*回复统计*/
+            "created_at": "2019-06-10 10:53:03",/*时间*/
+            "is_liked": false,/*是否点赞*/
+            "replies": [/*回复列表*/
+                {
+                    "id": 13,
+                    "content": "asdasd",/*回复内容*/
+                    "user_id": 5,
+                    "target_id": 17,
+                    "reply_user_id": 0,
+                    "comment_id": 12,
+                    "like_count": 0,/*点赞统计*/
+                    "created_at": "2019-06-10 10:53:03",/*时间*/
+                    /*回复人信息*/
+                    "user": {
+                        "id": 5,
+                        "name": "Z63482",
+                        "avatar": null
+                    },
+                    /*被回复人*/
+                    "reply_user": null
+                }
+            ],
+            "user": {/*评论人信息*/
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null
+            },
+            "reply_user": null
+        }
+    ]
+}
+```
+
+## 评论回复列表
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| limit | int |  是  | 条目数|
+| after | int |  否  | 最后一条数据的id |
+
+**路径**
+
+`/api/dynamics/{id}/comments/{id}/replies`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 13,
+            "content": "asdasd",
+            "user_id": 5,
+            "target_id": 17,
+            "reply_user_id": 0,
+            "like_count": 0,
+            "created_at": null,
+            "is_liked": false,
+            /*回复人*/
+            "user": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null
+            },
+            /*被回复的用户*/
+            "reply_user": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null
+            }
+        }
+    ]
+}
+```
+
+## 评论详情
+
+**方式**
+
+`POST`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/dynamics/{id}/comments/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 12,
+        "content": "测试哈",
+        "user_id": 5,
+        "target_id": 17,
+        "reply_user_id": 0,
+        "like_count": 0,
+        "reply_count": 0,
+        "created_at": "2019-06-10 10:53:03",
+        "is_liked": false,
+        "user": {
+            "id": 5,
+            "name": "Z63482",
+            "avatar": null
+        }
+    }
+}
+```
+
+## 评论删除
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/dynamics/{id}/comments/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
