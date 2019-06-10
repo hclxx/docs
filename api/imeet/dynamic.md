@@ -803,3 +803,56 @@
     "data": null
 }
 ```
+
+## 评论点赞
+
+**方式**
+
+`POST`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/comments/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
+## 评论点赞取消
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/comments/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
