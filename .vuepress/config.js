@@ -178,7 +178,8 @@ function getImeetAppSider(title, introduction) {
         "tag",
         "friend",
         "task",
-        "dynamic"
+        "dynamic",
+        "ads"
       ]
     }
   ];
