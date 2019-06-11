@@ -371,7 +371,7 @@
 | lng | string |  否  | 经度 |
 | location | string |  否  | 位置 |
 | content | object |  否  | 动态内容 |
-| tags | array |  否  | 话题标签 `[1,2,3]` |
+| tags | array |  否  | 话题标签 `["测试","测试1","测试"]` |
 
 **content参数说明**
 
