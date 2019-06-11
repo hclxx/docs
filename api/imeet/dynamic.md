@@ -33,45 +33,21 @@
         {
             "id": 11,
             "user_id": 5,
-            "content": {
-                "mime": "png",
-                "text": "这是视频文本动态",
-                "type": 5,
-                "cover": "xxxx.png",
-                "video": "xxxx.mp4",
-                "width": 100,
-                "height": 100
-            },
+            "content": "视频文本动态",
             "location": null,
+            "images": null,
+            "video": {
+                "mime": "png",/*文件MimeType*/
+                "cover": "xxxxxx.png",/*视频封面*/
+                "video": "xxxxxx.mp4",/*视频地址*/
+                "width": 200,/*封面宽*/
+                "height": 100/*封面高*/
+            },
+            "type": 5,/*内容,类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-06 12:21:15",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        {
-            "id": 10,
-            "user_id": 5,
-            "content": {
-                "mime": "png",
-                "type": 3,
-                "cover": "xxxx.png",
-                "video": "xxxx.mp4",
-                "width": 100,
-                "height": 100
-            },
-            "location": null,
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-06 12:20:53",
+            "created_at": "2019-06-11 15:23:41",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
@@ -84,76 +60,22 @@
         {
             "id": 9,
             "user_id": 5,
-            "content": {
-                "text": "这是图片文本动态",
-                "type": 4,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
+            "content": "图文动态",
             "location": null,
+            "images": [
+                {
+                    "mime": "png",
+                    "width": 100,
+                    "height": 200,
+                    "filename": "xxxxx.png"
+                }
+            ],
+            "video": null,
+            "type": 4,
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-06 12:19:41",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        {
-            "id": 8,
-            "user_id": 5,
-            "content": {
-                "text": "这是图片文本动态",
-                "type": 4,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
-            "location": null,
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-06 12:19:40",
+            "created_at": "2019-06-11 15:20:54",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
@@ -166,76 +88,21 @@
         {
             "id": 7,
             "user_id": 5,
-            "content": {
-                "text": "这是图片文本动态",
-                "type": 4,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
+            "content": "",
             "location": null,
+            "images": null,
+            "video": {
+                "mime": "png",
+                "cover": "xxxxxx.png",
+                "video": "xxxxxx.mp4",
+                "width": 200,
+                "height": 100
+            },
+            "type": 3,
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-06 12:19:39",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        {
-            "id": 6,
-            "user_id": 5,
-            "content": {
-                "text": "这是图片文本动态",
-                "type": 4,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
-            "location": null,
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-06 12:19:28",
+            "created_at": "2019-06-11 15:19:44",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
@@ -248,34 +115,22 @@
         {
             "id": 5,
             "user_id": 5,
-            "content": {
-                "type": 2,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
+            "content": "",
             "location": null,
+            "images": [
+                {
+                    "mime": "png",
+                    "width": 100,
+                    "height": 200,
+                    "filename": "xxxxx.png"
+                }
+            ],
+            "video": null,
+            "type": 2,
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-06 12:18:54",
+            "created_at": "2019-06-11 15:15:16",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
@@ -286,59 +141,17 @@
             }
         },
         {
-            "id": 4,
+            "id": 3,
             "user_id": 5,
-            "content": {
-                "text": "这是图片和文本动态",
-                "type": 4,
-                "images": [
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    },
-                    {
-                        "mime": "png",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxxx.png"
-                    }
-                ]
-            },
+            "content": "这是纯文本动态",
             "location": null,
+            "images": null,
+            "video": null,
+            "type": 1,/*内容,类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-06 12:17:31",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        /*纯文本动态*/
-        {
-            "id": 1,
-            "user_id": 5,
-            "content": {
-                "text": "这是纯文本动态",/*动态内容*/
-                "type": 1/*纯文本z*/
-            },
-            "location": null,
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-06 12:12:59",
+            "created_at": "2019-06-11 15:06:01",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
@@ -477,22 +290,23 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "id": 17,
+        "id": 11,
         "user_id": 5,
-        "content": {
+        "content": "视频文本动态",
+        "location": null,
+        "images": null,
+        "video": {
             "mime": "png",
-            "text": "这是视频文本动态",
-            "type": 5,
-            "cover": "xxxx.png",
-            "video": "xxxx.mp4",
-            "width": 100,
+            "cover": "xxxxxx.png",
+            "video": "xxxxxx.mp4",
+            "width": 200,
             "height": 100
         },
-        "location": null,
+        "type": 5,
         "comment_count": 0,
         "like_count": 0,
         "collect_count": 0,
-        "created_at": "2019-06-06 14:44:21",
+        "created_at": "2019-06-11 15:23:41",
         "is_liked": false,
         "is_collected": false,
         "tags": [],
