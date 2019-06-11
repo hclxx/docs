@@ -57,7 +57,7 @@
 
 **路径**
 
-`/api/user/tags`
+`/api/dynamic/tags`
 
 **参数**
 
