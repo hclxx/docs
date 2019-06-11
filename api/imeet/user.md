@@ -17,6 +17,8 @@
 | phone | string |  是  |                  手机号                   |
 | password | string |  否  |                 密码 如`type`为`pass`必须                  |
 | code | string |  否  |                 验证码 如`type`为`code`必须                  |
+| ticket | string |  否  |                 防水墙票据 如`type`为`pass`必须                  |
+| randstr | string |  否  |                 防水墙随机串 如`type`为`pass`必须                  |
 | type | string |  是  |                 登录方式: `pass`,`code`             |
 
 **响应**
