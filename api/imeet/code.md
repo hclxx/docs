@@ -15,7 +15,7 @@
 |  名称  |  类型  | 必须 |                                   说明                                    |
 | :----: | :----: | :--: | :-----------------------------------------------------------------------: |
 | phone | string |  是  |                  手机号                   |
-| scene | string |  是  |                 发送场景,可选:app-login,app-register,app-login-pass                  |
+| scene | string |  是  |                 发送场景,可选:app-pass-login密码登录,app-code-login短信验证码登录,app-register注册,app-login-pass忘记密码                  |
 | ticket | string |  是  |                防水墙票据        |
 | randstr | string |  是  |                 防水墙随机串             |
 
