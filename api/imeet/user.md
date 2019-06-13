@@ -733,6 +733,65 @@
 }
 ```
 
+## 修改登录密码
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| old_password | string |  是  | 旧密码 |
+| password | string |  是  | 新密码 |
+| password_confirmation | string |  是  | 确认新密码 |
+
+**路径**
+
+`/api/user/pass`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## [设置|修改] 支付密码
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| pay_pass | string |  是  | 密码 |
+| code | string |  是  | 验证码 |
+
+**路径**
+
+`/api/user/pay-pass`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "操作成功",
+    "code": 0,
+    "data": null
+}
+```
+
 
 
 
