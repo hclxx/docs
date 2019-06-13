@@ -4,7 +4,7 @@
 
 **方式**
 
-`POST`
+`GET`
 
 **路径**
 
@@ -62,7 +62,7 @@
 |  名称  |  类型  | 必须 |                                   说明                                    |
 | :----: | :----: | :--: | :-----------------------------------------------------------------------: |
 | data | object |  是  |             收藏的内容                      |
-| type | int |  是  |             收藏类型: dynamic-动态,image-图片,text-文本,chat-聊天记录,location-位置,video-视频,file-文件,link-连接                      |
+| type | string |  是  |             收藏类型: dynamic-动态,image-图片,text-文本,chat-聊天记录,location-位置,video-视频,file-文件,link-连接                      |
 | keywords | string |  是  |          关键词搜索                         |
 | target_user | string |  是  |          目标用户                         |
 
