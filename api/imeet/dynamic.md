@@ -554,7 +554,7 @@
 
 **路径**
 
-`/api/commets/{id}`
+`/api/comments/{id}`
 
 **响应**
 
