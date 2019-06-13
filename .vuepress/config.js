@@ -180,7 +180,8 @@ function getImeetAppSider(title, introduction) {
         "friend",
         "task",
         "dynamic",
-        "ads"
+        "ads",
+        "collect"
       ]
     }
   ];
