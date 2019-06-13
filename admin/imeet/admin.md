@@ -15,7 +15,7 @@
 |  name  | string |  无  |  否  |         名称         |
 | phone  | string |  无  |  否  |        手机号        |
 | email  | string |  无  |  否  |         邮箱         |
-| state |  int   |  无  |  否  | 状态 1: 正常 0: 禁用 |
+| state |  int   |  无  |  否  | 状态 0: 正常 1: 禁用 |
 | after  |  int   |  无  |  否  |       从第几条开始取       |
 | limit  |  int   |  15  |   是 |       每页条数       |
 
@@ -78,7 +78,7 @@
 |   name   | string |  无  |  是  |                名称                 |
 |  phone   | string |  无  |  否  | 手机号, email 字段不出现,此字段必须 |
 |  email   | string |  无  |  否  | 邮箱 , phone 字段不出现,此字段必须  |
-|  state  |  int   |  无  |  是  |        状态 1: 正常 0: 禁用         |
+|  state  |  int   |  无  |  是  |        状态 0: 正常 1: 禁用         |
 | password | string |  无  |  是  |           密码 长度 6-16            |
 
 **SUCCESS 返回体**
@@ -140,7 +140,7 @@
 |   name   | string |  无  |  否  |                名称                 |
 |  phone   | string |  无  |  否  | 手机号, email 字段不出现,此字段必须 |
 |  email   | string |  无  |  否  | 邮箱 , phone 字段不出现,此字段必须  |
-|  state  |  int   |  无  |  否  |        状态 1: 正常 0: 禁用         |
+|  state  |  int   |  无  |  否  |        状态 0: 正常 1: 禁用         |
 | password | string |  无  |  否  |           密码 长度 6-16            |
 
 **SUCCESS 返回体**
