@@ -172,6 +172,7 @@ function getImeetAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "base",
         "user",
         "attachment",
         "code",
