@@ -391,16 +391,17 @@
 
 `POST`
 
+**路径**
+
+`/api/comments`
+
 **参数**
 
 |  名称  |  类型  | 必须 | 说明  |
 | :----: | :----: | :--: | :----: |
 | content | string |  是  | 评论内容|
-| comment_id | int |  否  | 如回复 必须 回复的评论`id` |
-
-**路径**
-
-`/api/dynamics/{id}/comments`
+| topic_id | int |  是  | 主题id |
+| topic_type | string |  是  | 主题类型，可选：dynamic-动态 |
 
 **响应**
 
@@ -411,22 +412,21 @@
     "msg": "评论成功",
     "code": 0,
     "data": {
+        "is_delete": 0,
         "like_count": 0,
+        "reply_count": 0,
+        "content": "测试呢",
+        "topic_id": 9,
         "user_id": 5,
-        "target_id": 17,
-        "target_type": "dynamic",
-        "content": "测试哈",
-        "comment_id": 0,
-        "reply_user_id": 0,
-        "updated_at": "2019-06-10 11:40:48",
-        "created_at": "2019-06-10 11:40:48",
-        "id": 15,
+        "topic_type": "dynamic",
+        "updated_at": "2019-06-13 10:52:29",
+        "created_at": "2019-06-13 10:52:29",
+        "id": 5,
         "user": {
             "id": 5,
             "name": "Z63482",
             "avatar": null
-        },
-        "reply_user": null
+        }
     }
 }
 ```
@@ -443,10 +443,12 @@
 | :----: | :----: | :--: | :----: |
 | limit | int |  是  | 条目数|
 | after | int |  否  | 最后一条数据的id |
+| topic_id | int |  是  | 主题id |
+| topic_type | string |  是  | 主题类型,可选:dynamic-动态 |
 
 **路径**
 
-`/api/dynamics/{id}/comments`
+`/api/comments`
 
 **响应**
 
@@ -457,137 +459,59 @@
     "msg": "ok",
     "code": 0,
     "data": [
+ {
+    "msg": "ok",
+    "code": 0,
+    "data": [
         {
-            "id": 12,
-            "content": "测试哈",/*评论内容*/
-            "user_id": 5,/*用户id*/
-            "target_id": 17,
-            "reply_user_id": 0,
-            "like_count": 0,/*点赞统计*/
-            "reply_count": 0,/*回复统计*/
-            "created_at": "2019-06-10 10:53:03",/*时间*/
-            "is_liked": false,/*是否点赞*/
-            "replies": [/*回复列表*/
+            "id": 4,
+            "content": "测试呢",
+            "user_id": 5,
+            "like_count": 1,
+            "reply_count": 0,
+            "created_at": "2019-06-12 21:53:23",
+            "is_like": false,
+            "replies": [
                 {
-                    "id": 13,
-                    "content": "asdasd",/*回复内容*/
+                    "id": 2,
+                    "content": "测 sad sad",
                     "user_id": 5,
-                    "target_id": 17,
                     "reply_user_id": 0,
-                    "comment_id": 12,
-                    "like_count": 0,/*点赞统计*/
-                    "created_at": "2019-06-10 10:53:03",/*时间*/
-                    /*回复人信息*/
+                    "like_count": 0,
+                    "created_at": "2019-06-12 21:52:22",
                     "user": {
                         "id": 5,
                         "name": "Z63482",
                         "avatar": null
                     },
-                    /*被回复人*/
                     "reply_user": null
+                },
+                {
+                    "id": 1,
+                    "content": "测试测试",
+                    "user_id": 5,
+                    "reply_user_id": 0,
+                    "like_count": 0,
+                    "created_at": "2019-06-12 21:52:22",
+                    "user": {
+                        "id": 5,
+                        "name": "Z63482",
+                        "avatar": null
+                    },
+                    "reply_user": {
+                        "id": 5,
+                        "name": "Z63482",
+                        "avatar": null
+                    }
                 }
             ],
-            "user": {/*评论人信息*/
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            },
-            "reply_user": null
-        }
-    ]
-}
-```
-
-## 评论回复列表
-
-**方式**
-
-`GET`
-
-**参数**
-
-|  名称  |  类型  | 必须 | 说明  |
-| :----: | :----: | :--: | :----: |
-| limit | int |  是  | 条目数|
-| after | int |  否  | 最后一条数据的id |
-
-**路径**
-
-`/api/dynamics/{id}/comments/{id}/replies`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 13,
-            "content": "asdasd",
-            "user_id": 5,
-            "target_id": 17,
-            "reply_user_id": 0,
-            "like_count": 0,
-            "created_at": null,
-            "is_liked": false,
-            /*回复人*/
             "user": {
                 "id": 5,
                 "name": "Z63482",
                 "avatar": null
-            },
-            /*被回复的用户*/
-            "reply_user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
             }
-        }
+        },
     ]
-}
-```
-
-## 评论详情
-
-**方式**
-
-`GET`
-
-**参数**
-
-无
-
-**路径**
-
-`/api/dynamics/{id}/comments/{id}`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 12,
-        "content": "测试哈",
-        "user_id": 5,
-        "target_id": 17,
-        "reply_user_id": 0,
-        "like_count": 0,
-        "reply_count": 0,
-        "created_at": "2019-06-10 10:53:03",
-        "is_liked": false,
-        "user": {
-            "id": 5,
-            "name": "Z63482",
-            "avatar": null
-        }
-    }
 }
 ```
 
@@ -603,7 +527,33 @@
 
 **路径**
 
-`/api/dynamics/{id}/comments/{id}`
+`/api/comments/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 评论详情
+
+**方式**
+
+`GET`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/commets/{id}`
 
 **响应**
 
@@ -613,7 +563,20 @@
 {
     "msg": "ok",
     "code": 0,
-    "data": null
+    "data": {
+        "id": 4,
+        "content": "测试呢",/*评论内容*/
+        "user_id": 5,
+        "like_count": 1,
+        "reply_count": 0,
+        "created_at": "2019-06-12 21:53:23",
+        "is_like": false,
+        "user": {
+            "id": 5,
+            "name": "Z63482",
+            "avatar": null
+        }
+    }
 }
 ```
 
@@ -629,7 +592,7 @@
 
 **路径**
 
-`/api/comments/{id}`
+`/api/comments/{id}/like`
 
 **响应**
 
@@ -637,13 +600,13 @@
 
 ```json
 {
-    "msg": "ok",
+    "msg": "点赞成功",
     "code": 0,
     "data": null
 }
 ```
 
-## 评论点赞取消
+## 评论取消点赞
 
 **方式**
 
@@ -655,7 +618,37 @@
 
 **路径**
 
-`/api/comments/{id}`
+`/api/comments/{id}/like`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "取消点赞成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 评论回复列表
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| limit | int |  是  | 条目数|
+| after | int |  否  | 最后一条数据的id |
+| comment_id | int |  是  | 评论id |
+
+**路径**
+
+`/api/replies`
 
 **响应**
 
@@ -664,6 +657,139 @@
 ```json
 {
     "msg": "ok",
+    "code": 0,
+    "data":         {
+            "id": 11,
+            "user_id": 5,
+            "reply_user_id": 5,
+            "content": "测试呢",
+            "like_count": 0,/*点赞数*/
+            "created_at": "2019-06-13 10:13:20",
+            "is_like": false,
+            "user": {/*回复人*/
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null
+            },
+            /*被回复人，不为null则为回复的回复*/
+            "reply_user": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null
+            }
+        },
+}
+```
+
+## 回复评论
+
+**方式**
+
+`POST`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| content | 内容 |  是  | 回复内容|
+| topic_id | int |  是  | 回复主题ID，如`topic_type`为`comment`,则为评论的ID，反则为回复的ID |
+| topic_type | string |  是  | 主题类型,可选：`comment`-针对评论的回复 `reply`-针对回复的回复  |
+
+**路径**
+
+`/api/replies`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "回复成功",
+    "code": 0,
+    "data": {
+        "is_delete": 0,
+        "like_count": 0,
+        "user_id": 5,
+        "content": "测试呢",
+        "topic_id": 4,
+        "topic_type": "comment",
+        "reply_user_id": 0,
+        "comment_id": 4,
+        "updated_at": "2019-06-13 11:34:21",
+        "created_at": "2019-06-13 11:34:21",
+        "id": 12
+    }
+}
+```
+
+## 回复删除
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+**路径**
+
+`/api/replies/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 回复点赞
+
+**方式**
+
+`POST`
+
+**参数**
+
+**路径**
+
+`/api/replies/{id}/like`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 取消回复点赞
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+**路径**
+
+`/api/replies/{id}/like`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除成功",
     "code": 0,
     "data": null
 }
