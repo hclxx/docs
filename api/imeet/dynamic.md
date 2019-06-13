@@ -19,7 +19,8 @@
 | type | string |  否  | 类型:`plaza`-广场 `top`-推荐 `follow`-关注 |
 | user_id | string |  否  | 某个用户的动态 |
 | tag_id | int |  否  | 根绝标签查询动态 |
-| hot | int |  否  | 是否热门 |
+| hot | int |  否  | 是否推荐 |
+| group_id | int |  否  | 查看社群下面所有用户动态 |
 
 **响应**
 
