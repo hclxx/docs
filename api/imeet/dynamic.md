@@ -218,13 +218,18 @@
 
 ```json
 {
-  "type": 3,
-  "video": "xxxxxx.mp4",/*视频文件名*/
-  "cover": "xxxxxx.png",/*封面图文件名*/
-  "height": 100,
-  "width": 200,
-  "mime": "png"
-}
+		"type": 3,
+		"video": {
+			"filename": "xxxx.png",
+			"mime": "video/mp4"
+		},
+		"cover": {
+			"filename": "xxx.png",
+			"width": 100,
+			"height": 200,
+			"mime": "png"
+		}
+	}
 ```
 
 图片文本
@@ -248,14 +253,19 @@
 
 ```json
 {
-  "type":5,
-  "text":"这是视频文本动态",
-  "video": "xxxxxx.mp4",/*视频文件名*/
-  "cover": "xxxxxx.png",/*封面图文件名*/
-  "height": 100,
-  "width": 200,
-  "mime": "png"
-}
+        "text": "test",
+		"type": 3,
+		"video": {
+			"filename": "xxxx.png",
+			"mime": "video/mp4"
+		},
+		"cover": {
+			"filename": "xxx.png",
+			"width": 100,
+			"height": 200,
+			"mime": "png"
+		}
+	}
 ```
 
 **响应**
