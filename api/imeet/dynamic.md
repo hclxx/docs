@@ -32,89 +32,36 @@
     "code": 0,
     "data": [
         {
-            "id": 11,
+            "id": 5,
             "user_id": 5,
-            "content": "视频文本动态",
-            "location": null,
-            "images": null,
-            "video": {
-                "mime": "png",/*文件MimeType*/
-                "cover": "xxxxxx.png",/*视频封面*/
-                "video": "xxxxxx.mp4",/*视频地址*/
-                "width": 200,/*封面宽*/
-                "height": 100/*封面高*/
-            },
-            "type": 5,/*内容,类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-11 15:23:41",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        {
-            "id": 9,
-            "user_id": 5,
-            "content": "图文动态",
+            "content": "文本图片动态",
             "location": null,
             "images": [
                 {
                     "mime": "png",
                     "width": 100,
                     "height": 200,
-                    "filename": "xxxxx.png"
+                    "filename": "xxx.png"
                 }
             ],
             "video": null,
-            "type": 4,
+            "type": 4,/*类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-11 15:20:54",
+            "created_at": "2019-06-16 15:30:37",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
             "user": {
                 "id": 5,
                 "name": "Z63482",
-                "avatar": null
+                "avatar": null,
+                "sex": 0
             }
         },
         {
-            "id": 7,
-            "user_id": 5,
-            "content": "",
-            "location": null,
-            "images": null,
-            "video": {
-                "mime": "png",
-                "cover": "xxxxxx.png",
-                "video": "xxxxxx.mp4",
-                "width": 200,
-                "height": 100
-            },
-            "type": 3,
-            "comment_count": 0,
-            "like_count": 0,
-            "collect_count": 0,
-            "created_at": "2019-06-11 15:19:44",
-            "is_liked": false,
-            "is_collected": false,
-            "tags": [],
-            "user": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
-            }
-        },
-        {
-            "id": 5,
+            "id": 4,
             "user_id": 5,
             "content": "",
             "location": null,
@@ -123,7 +70,7 @@
                     "mime": "png",
                     "width": 100,
                     "height": 200,
-                    "filename": "xxxxx.png"
+                    "filename": "xxx.png"
                 }
             ],
             "video": null,
@@ -131,35 +78,103 @@
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-11 15:15:16",
+            "created_at": "2019-06-16 15:30:16",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
             "user": {
                 "id": 5,
                 "name": "Z63482",
-                "avatar": null
+                "avatar": null,
+                "sex": 0
             }
         },
         {
             "id": 3,
             "user_id": 5,
-            "content": "这是纯文本动态",
+            "content": "纯文本动态",
             "location": null,
             "images": null,
             "video": null,
-            "type": 1,/*内容,类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
+            "type": 1,
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
-            "created_at": "2019-06-11 15:06:01",
+            "created_at": "2019-06-16 15:29:42",
+            "is_liked": false,
+            "is_collected": true,
+            "tags": [],
+            "user": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0
+            }
+        },
+        {
+            "id": 2,
+            "user_id": 5,
+            "content": "",
+            "location": null,
+            "images": null,
+            "video": {
+                "cover": {
+                    "mime": "png",
+                    "width": 100,
+                    "height": 200,
+                    "filename": "xxx.png"
+                },
+                "video": {
+                    "mime": "video/mp4",
+                    "filename": "xxxx.png"
+                }
+            },
+            "type": 3,
+            "comment_count": 0,
+            "like_count": 0,
+            "collect_count": 0,
+            "created_at": "2019-06-16 15:29:27",
             "is_liked": false,
             "is_collected": false,
             "tags": [],
             "user": {
                 "id": 5,
                 "name": "Z63482",
-                "avatar": null
+                "avatar": null,
+                "sex": 0
+            }
+        },
+        {
+            "id": 1,
+            "user_id": 5,
+            "content": "这是文字视频动态",
+            "location": null,
+            "images": null,
+            "video": {
+                "cover": {
+                    "mime": "png",
+                    "width": 100,
+                    "height": 200,
+                    "filename": "xxx.png"
+                },
+                "video": {
+                    "mime": "video/mp4",
+                    "filename": "xxxx.png"
+                }
+            },
+            "type": 5,
+            "comment_count": 0,
+            "like_count": 0,
+            "collect_count": 0,
+            "created_at": "2019-06-16 15:29:21",
+            "is_liked": false,
+            "is_collected": false,
+            "tags": [],
+            "user": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0
             }
         }
     ]
