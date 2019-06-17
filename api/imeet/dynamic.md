@@ -497,7 +497,7 @@
             "like_count": 1,
             "reply_count": 0,
             "created_at": "2019-06-12 21:53:23",
-            "is_like": false,
+            "is_liked": false,
             "replies": [
                 {
                     "id": 2,
@@ -597,7 +597,7 @@
         "like_count": 1,
         "reply_count": 0,
         "created_at": "2019-06-12 21:53:23",
-        "is_like": false,
+        "is_liked": false,
         "user": {
             "id": 5,
             "name": "Z63482",
@@ -692,7 +692,7 @@
             "content": "测试呢",
             "like_count": 0,/*点赞数*/
             "created_at": "2019-06-13 10:13:20",
-            "is_like": false,
+            "is_liked": false,
             "user": {/*回复人*/
                 "id": 5,
                 "name": "Z63482",
