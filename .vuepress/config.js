@@ -182,7 +182,8 @@ function getImeetAppSider(title, introduction) {
         "dynamic",
         "ads",
         "collect",
-        "shielding"
+        "shielding",
+        "recommend"
       ]
     }
   ];
