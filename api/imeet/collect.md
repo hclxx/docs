@@ -66,6 +66,103 @@
 | keywords | string |  是  |          关键词搜索                         |
 | target_user | string |  是  |          目标用户                         |
 
+**(data)参数说明**
+
+`动态`
+
+```json
+{
+    "id": 37,
+    "user_id": 10,
+    "content": "分享你的想法",
+    "location": null,
+    "images": [
+        {
+            "mime": "png",
+            "width": "106",
+            "height": "106",
+            "filename": "20190617102734576.png"
+        }
+    ],
+    "video": null,
+    "type": 4,
+    "comment_count": 0,
+    "like_count": 1,
+    "collect_count": 0,
+    "created_at": "2019-06-17 02:28:04",
+    "is_liked": false,
+    "is_collected": false,
+    "tags": [],
+    "user": {
+        "id": 10,
+        "name": "V5G32O",
+        "avatar": null,
+        "sex": 0
+    }
+}
+```
+
+`图片`
+
+```json
+{
+    "url": "xxxxxx.png"
+}
+```
+
+`文本`
+
+```json
+{
+    "text": "xxxxxxxxxxxxx"
+}
+```
+
+`聊天记录`
+
+```json
+{
+    "content": "待定"
+}
+```
+
+`地理位置`
+
+```json
+{
+    "lat": "xxx",
+    "lng": "xxx",
+    "location": "xxxxxxx"
+}
+```
+
+`视频`
+
+```json
+{
+    "video": "xxx",
+    "cover": "xxx"
+}
+```
+
+`文件`
+
+```json
+{
+    "file": "xxx",
+}
+```
+
+`连接`
+
+```json
+{
+    "url": "xxx",
+}
+```
+
+
+
 **响应**
 
 `Status code 200`
@@ -94,7 +191,7 @@
 
 ```json
 {
-    "msg": "收藏成功",
+    "msg": "取消收藏成功",
     "code": 0,
     "data": null
 }
