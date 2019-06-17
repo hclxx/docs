@@ -21,6 +21,7 @@
 | tag_id | int |  否  | 根绝标签查询动态 |
 | hot | int |  否  | 是否推荐 |
 | group_id | int |  否  | 查看社群下面所有用户动态 |
+| keywords | string |  否  | 关键词检索 |
 
 **响应**
 
