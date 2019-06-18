@@ -32,6 +32,7 @@
             "id": 3,
             "name": "eric",
             "avatar": null,
+            "apply_status": false,/*type 为 dynamic 才会存在此字段 好友申请状态: true-申请 false-未申请*/
             "sex": 0
         },
         {
