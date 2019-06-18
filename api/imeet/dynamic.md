@@ -822,3 +822,27 @@
 }
 ```
 
+## 取消动态收藏
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+**路径**
+
+`/api/dynamics/{id}/collect`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "取消收藏成功",
+    "code": 0,
+    "data": null
+}
+```
+
