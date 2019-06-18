@@ -186,7 +186,8 @@ function getImeetAppSider(title, introduction) {
         "recommend",
         "count",
         "wallet",
-        "report"
+        "report",
+        "notice"
       ]
     }
   ];
