@@ -15,7 +15,7 @@
 |  名称  |  类型  | 必须 | 说明  |
 | :----: | :----: | :--: | :----: |
 | type | string |  是  | remind-动态通知, message-消息通知, system-系统通知] |
-| remind_type | int |  否  | 1-回复评论提醒 2-点赞收藏提醒 |
+| remind_type | int |  否  | 1-回复评论提醒 2-点赞收藏提醒,如 `type` 为 `remind` 必传  |
 | offset | string |  是  | 偏移量 默认0 |
 | limit | string |  是  | 条目数 默认20|
 
