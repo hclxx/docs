@@ -8,7 +8,7 @@
 
 **路径**
 
-`/api/search`
+`/api/search/user`
 
 **参数**
 
@@ -40,7 +40,7 @@
 
 **路径**
 
-`/api/search/group`
+`/api/search/groups`
 
 **参数**
 
