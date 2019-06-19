@@ -101,47 +101,6 @@
 }
 ```
 
-## 添加好友
-
-**方式**
-
-`POST`
-
-**路径**
-
-`/api/friends/{friendId}`
-
-**参数**
-
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-    "msg": "添加好友成功",
-    "code": 0,
-    "data": {
-        "id": 1,
-        "user_id": 5,
-        "friend_id": 6,
-        "group_id": 1,
-        "alias": null,
-        "chat_bgd": null,
-        "dynamic_setting": {
-            "look_me": 0,
-            "look_him": 0
-        },
-        "friend": {
-            "id": 6,
-            "name": "章三",
-            "avatar": null
-        }
-    }
-}
-```
-
 ## 删除好友
 
 **方式**
@@ -457,7 +416,7 @@
         {
             "id": 1,
             "target_user_id": 5,
-            "status": 0,/*状态: 0-待处理 1-已同意 2-已拒绝*/
+            "status": 0,/*状态: 0-待处理 1-已同意*/
             "extend": {
                 "alias": "骚军",
                 "group": 1,
