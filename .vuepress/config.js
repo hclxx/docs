@@ -188,7 +188,8 @@ function getImeetAppSider(title, introduction) {
         "wallet",
         "report",
         "notice",
-        "certification"
+        "certification",
+        "search"
       ]
     }
   ];
