@@ -506,3 +506,34 @@
     "data": null
 }
 ```
+
+## 审核好友申请
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| status | int |  是  | 审核状态: 1-通过 2-拒绝 |
+| alias | integer |  否  | 备注 |
+| group_id | integer |  是  | 分组id |
+| look_me | string |  是  | 不让他/她看我动态：0-否 1-是 |
+
+**路径**
+
+`/api/friend/apply/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "操作成功",
+    "code": 0,
+    "data": null
+}
+```
