@@ -486,9 +486,10 @@
 |  名称  |  类型  | 必须 | 说明 |
 | :----: | :----: | :--: | :-----: |
 | alias | string |  否  | 备注 |
-| group | integer |  是  | 分组ID |
+| group_id | integer |  是  | 分组ID |
 | lookme | integer |  是  | 不让他/她看我动态：0-否 1-是 |
 | remark | string |  否  | 验证信息 |
+| user_id | integer |  是  | 用户id |
 
 **路径**
 
