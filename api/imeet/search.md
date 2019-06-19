@@ -56,6 +56,25 @@
 {
     "msg": "ok",
     "code": 0,
-    "data": null
+    "data": [
+        {
+            "id": 1,
+            "name": "社群名",
+            "avatar": "avarar.png",
+            "describe": "描述"
+        },
+        {
+            "id": 2,
+            "name": "社群名",
+            "avatar": "avarar.png",
+            "describe": "描述"
+        },
+        {
+            "id": 3,
+            "name": "社群名",
+            "avatar": "avarar.png",
+            "describe": "描述"
+        }
+    ]
 }
 ```
