@@ -47,6 +47,7 @@
             ],
             "video": null,
             "type": 4,/*类型:1-纯文本、2-图片、3-视频、4-图片文本、5-视频文本*/
+            "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
@@ -76,6 +77,7 @@
             ],
             "video": null,
             "type": 2,
+            "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
@@ -98,6 +100,7 @@
             "images": null,
             "video": null,
             "type": 1,
+            "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
@@ -131,6 +134,7 @@
                 }
             },
             "type": 3,
+            "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
@@ -164,6 +168,7 @@
                 }
             },
             "type": 5,
+            "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
             "comment_count": 0,
             "like_count": 0,
             "collect_count": 0,
@@ -330,6 +335,7 @@
             "height": 100
         },
         "type": 5,
+        "sync_plaza": 0,/*是否同步到广场: 0-否 1-是*/
         "comment_count": 0,
         "like_count": 0,
         "collect_count": 0,
