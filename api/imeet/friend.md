@@ -402,7 +402,7 @@
 
 **路径**
 
-`/api/apply`
+`/api/friend/apply`
 
 **响应**
 
@@ -452,7 +452,7 @@
 
 **路径**
 
-`/api/apply`
+`/api/friend/apply`
 
 **响应**
 
@@ -482,7 +482,7 @@
 | :----: | :----: | :--: | :-----: |
 | alias | integer |  否  | 备注 |
 | group_id | integer |  是  | 分组id |
-| look_me | integer |  是  | 不让他/她看我动态：0-否 1-是 |
+| lookme | integer |  是  | 不让他/她看我动态：0-否 1-是 |
 
 **响应**
 
