@@ -1,6 +1,6 @@
-# 用户好友
+# 好友
 
-## 好友
+## 分组好友
 
 **方式**
 
@@ -123,7 +123,7 @@
 }
 ```
 
-## 设置好友备注
+## 更新备注
 
 **方式**
 `PATCH`
@@ -149,17 +149,21 @@
     "data": {
         "id": 1,
         "user_id": 5,
-        "friend_id": 6,
-        "group_id": 1,
-        "alias": "备注",
+        "friend_id": 3,
+        "group_id": 8,
+        "alias": "骚军",
+        "tags": null,
+        "desc": null,
+        "phone": null,
         "chat_bgd": null,
-        "dynamic_setting": {
-            "look_me": 0,
-            "look_him": 0
+        "chat_setting": {
+            "msg_top": 0,
+            "msg_disturb": 0,
+            "msg_shielding": 0
         },
         "friend": {
-            "id": 6,
-            "name": "章三",
+            "id": 3,
+            "name": "eric",
             "avatar": null
         }
     }
@@ -218,7 +222,7 @@
 }
 ```
 
-## 好友分组移动
+## 分组移动
 
 **方式**
 `PATCH`
@@ -255,7 +259,7 @@
 }
 ```
 
-## 好友聊天背景设置
+## 背景设置
 
 **方式**
 
@@ -277,29 +281,33 @@
 
 ```json
 {
-    "msg": "ok",
+    "msg": "更新成功",
     "code": 0,
     "data": {
-        "id": 2,
+        "id": 1,
         "user_id": 5,
-        "friend_id": 6,
-        "group_id": 1,
-        "alias": "章三",
-        "chat_bgd": "chat-background/xxxxx.png",/*背景图地址*/
-        "dynamic_setting": {
-            "look_me": false,
-            "look_him": false
+        "friend_id": 3,
+        "group_id": 8,
+        "alias": "骚军",
+        "tags": null,
+        "desc": null,
+        "phone": null,
+        "chat_bgd": "xxxxxxx.png",/*背景*/
+        "chat_setting": {
+            "msg_top": 0,
+            "msg_disturb": 0,
+            "msg_shielding": 0
         },
         "friend": {
-            "id": 6,
-            "name": "章三",
+            "id": 3,
+            "name": "eric",
             "avatar": null
         }
     }
 }
 ```
 
-## 创建好友分组
+## 创建分组
 
 **方式**
 `POST`
@@ -333,7 +341,7 @@
 }
 ```
 
-## 更新分组名称
+## 更新分组
 
 **方式**
 
@@ -446,7 +454,7 @@
 }
 ```
 
-## 好友申请列表
+## 申请列表
 
 **方式**
 
@@ -493,7 +501,7 @@
 }
 ```
 
-## 申请添加好友
+## 申请添加
 
 **方式**
 
@@ -525,7 +533,7 @@
 }
 ```
 
-## 同意添加好友
+## 同意添加
 
 **方式**
 
@@ -547,7 +555,7 @@
 }
 ```
 
-## 好友申请删除
+## 申请删除
 
 **方式**
 
@@ -575,7 +583,7 @@
 }
 ```
 
-## 重置好友申请未读数
+## 重置申请未读数
 
 **方式**
 
@@ -597,7 +605,7 @@
 }
 ```
 
-## 好友申请未读数
+## 申请未读数
 
 **方式**
 
