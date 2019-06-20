@@ -483,14 +483,6 @@
 
 `/api/friend/apply/{id}/pass`
 
-**参数**
-
-|  名称  |  类型  | 必须 | 说明 |
-| :----: | :----: | :--: | :-----: |
-| alias | integer |  否  | 备注 |
-| group_id | integer |  是  | 分组id |
-| lookme | integer |  是  | 不让他/她看我动态：0-否 1-是 |
-
 **响应**
 
 `Status code 200`
