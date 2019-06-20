@@ -1,4 +1,4 @@
-# 好友/通讯录/社群/社区
+# 用户好友
 
 ## 好友
 
@@ -160,6 +160,58 @@
         "friend": {
             "id": 6,
             "name": "章三",
+            "avatar": null
+        }
+    }
+}
+```
+
+## 更新好友信息
+
+**方式**
+
+`PUT`
+
+**路径**
+
+`/api/friends/{friendId}`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+|  alias| string |  否  | 备注名称 |
+|  group_id| int |  否  | 分组ID |
+|  desc| string |  否  | 好友描述 |
+|  phone| string |  否  | 好友电话 |
+|  tags| string |  否  | 好友标签 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "更新成功",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "user_id": 5,
+        "friend_id": 3,
+        "group_id": 8,
+        "alias": "骚军",
+        "tags": null,
+        "desc": null,
+        "phone": null,
+        "chat_bgd": null,
+        "chat_setting": {
+            "msg_top": 0,
+            "msg_disturb": 0,
+            "msg_shielding": 0
+        },
+        "friend": {
+            "id": 3,
+            "name": "eric",
             "avatar": null
         }
     }
