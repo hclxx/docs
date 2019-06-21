@@ -681,3 +681,99 @@
     }
 }
 ```
+
+## 黑名单列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/blacklist`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "user_id": 5,
+            "friend_id": 3,
+            "group_id": 2,
+            "alias": "章三",
+            "tags": null,
+            "desc": null,
+            "phone": null,
+            "chat_bgd": null,
+            "chat_setting": null,
+            "friend": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null
+            }
+        }
+    ]
+}
+```
+
+## 加入黑名单
+
+**方式**
+
+`POST`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| friend_id | int |  是  | 好友id |
+
+**路径**
+
+`/api/blacklist`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "加如黑名单成功",
+    "code": 0,
+    "data": null
+}
+```
+
+## 移除黑名单
+
+**方式**
+
+`DELETE`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| friend_id | int |  是  | ID |
+
+**路径**
+
+`/api/blacklist`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "加如黑名单成功",
+    "code": 0,
+    "data": null
+}
+```
