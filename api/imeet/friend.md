@@ -133,7 +133,7 @@
 
 **路径**
 
-`/api/friends/{friendId}`
+`/api/friends/{userId}`
 
 **响应**
 
@@ -144,25 +144,31 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "id": 1,
-        "user_id": 5,
-        "friend_id": 3,
+        "id": 20,
+        "user_id": 1,
+        "friend_id": 20,
         "group_id": 1,
-        "alias": "章三",
-        "tags": "学生,明星",
-        "desc": "测试描述",
-        "phone": "18382274309",
-        "chat_bgd": "xxx.png",
-        "chat_setting": null,
+        "alias": "备注",
+        "chat_bgd": "xxxx.png",
+        "tags": "篮球,测试",
+        "desc": "这是好友描述",
+        "phone": "好友电话",
+        "chat_setting": {
+            "msg_top": 0,/*消息置顶 0-否 1-是*/
+            "msg_disturb": 0,/*消息免打扰 0-否 1-是*/
+            "msg_shielding": 0/*消息屏蔽 0-否 1-是*/
+        },
+        /*好友信息*/
         "friend": {
-            "id": 3,
-            "name": "eric",
+            "id": 20,
+            "name": "26CSRU",
             "avatar": null
         },
+        /*分组信息*/
         "group": {
             "id": 1,
             "name": "我的好友",
-            "user_count": 1
+            "user_count": 2
         }
     }
 }
