@@ -125,6 +125,49 @@
 }
 ```
 
+## 好友详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/friends/{friendId}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "user_id": 5,
+        "friend_id": 3,
+        "group_id": 1,
+        "alias": "章三",
+        "tags": "学生,明星",
+        "desc": "测试描述",
+        "phone": "18382274309",
+        "chat_bgd": "xxx.png",
+        "chat_setting": null,
+        "friend": {
+            "id": 3,
+            "name": "eric",
+            "avatar": null
+        },
+        "group": {
+            "id": 1,
+            "name": "我的好友",
+            "user_count": 1
+        }
+    }
+}
+```
+
 ## 删除好友
 
 **方式**
