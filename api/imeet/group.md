@@ -2,6 +2,53 @@
 
 ## 创建社群/社区
 
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/groups/conditions`
+
+**参数**
+
+| 名称  |  类型  | 必须 |              说明              |
+| :---: | :----: | :--: | :----------------------------: |
+| type | string |  是  | 群类型: group-社群 community-社区 |
+| members | array |  否  | 群成员ID，如 `[1, 2, 3]`,不包含用户本身 |
+| name | string |  否  | 群名称 |
+| avatar | string |  否  | 群头像 |
+| describe | string |  否  | 群描述 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "群创建成功",
+    "code": 0,
+    "data": {
+        "name": null,
+        "type": "group",
+        "avatar": null,
+        "number": 57330844,
+        "describe": null,
+        "background": null,
+        "grade": 1,
+        "comm_id": 0,
+        "maxadmins": 4,
+        "group_count": 0,
+        "maxmembers": 500,
+        "member_count": 1,
+        "owner": 5,
+        "updated_at": "2019-06-21 16:00:41",
+        "created_at": "2019-06-21 16:00:41",
+        "id": 16,
+        "groupid": "85674574282753"
+    }
+}
+```
 
 ## 更新社群/社区信息
 
