@@ -94,7 +94,7 @@
 |  名称  |  类型  | 必须 | 说明 |
 | :----: | :----: | :--: | :----: |
 | keywords | string |  是  | 搜索关键词，支持模糊搜索 |
-| includes | string |  是  | 搜索范围 可选:frinend-好友,group-我所在社群用户,community-我所在社区用户,多个使用逗号分隔 `frinend,group,community` |
+| includes | string |  是  | 搜索范围 可选:friend-好友,group-我所在社群用户,community-我所在社区用户,多个使用逗号分隔 `friend,group,community` |
 
 **响应**
 
