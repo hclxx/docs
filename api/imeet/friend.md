@@ -213,6 +213,7 @@
 |  desc| string |  否  | 好友描述 |
 |  phone| string |  否  | 好友电话 |
 |  tags| string |  否  | 好友标签 |
+|  lookme| int|  是  | 不让他/她看我的动态 可选 0-否 1-是 |
 
 **响应**
 
