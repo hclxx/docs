@@ -155,6 +155,48 @@
 }
 ```
 
+## 获取社群/社区详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/groups/{id}`
+
+::: tip
+ id 必须是环信 groupid
+:::
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 4,
+        "name": "IMeet圈",
+        "avatar": "xxxx.png",/*头像*/
+        "describe": "描述",
+        "background": "xxxxx.png",/*背景*/
+        "comm_id": 0,
+        "group_count": 0,/*如是社区，该字段表示社群数里那个*/
+        "member_count": 1,/*成员数*/
+        "dynamic_count": 16,/*动态数*/
+        /*群主信息*/
+        "owner": {
+            "id": 5,
+            "name": "Z63482",
+            "avatar": null
+        }
+    }
+}
+```
+
 
 ## 解散社群/社区
 
