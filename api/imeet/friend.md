@@ -839,3 +839,60 @@
     "data": null
 }
 ```
+
+## 获取动态设置
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/friends/{friendId}/shieldings`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "look_me": 1, /*不让他看我的动态 0-否 1-是*/
+        "look_him": 1/*不看他的动态 0-否 1-是*/
+    }
+}
+```
+
+## 更新动态设置
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| lookme | int |  是  | 不让他看我的动态 0-否 1-是 |
+| lookhim | int |  是  | 不看他的动态 0-否 1-是 |
+
+**路径**
+
+`/api/friends/{friendId}/shieldings`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "look_me": 1, /*不让他看我的动态 0-否 1-是*/
+        "look_him": 1/*不看他的动态 0-否 1-是*/
+    }
+}
+```
