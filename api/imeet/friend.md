@@ -619,7 +619,7 @@
     "data": [
         {
             "id": 1,
-            "target_user_id": 5,
+            "user_id": 5,
             "status": 0,/*状态: 0-待处理 1-已同意*/
             "extend": {
                 "alias": "骚军",
@@ -628,7 +628,7 @@
                 "remark": "同意下我的申请啊"/*申请备注*/
             },
             "created_at": "2019-06-19 10:53:14",/*申请时间*/
-            "target_user": {/*申请人信息*/
+            "user": {/*申请人信息*/
                 "id": 5,
                 "name": "Z63482",
                 "avatar": null
