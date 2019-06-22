@@ -243,6 +243,56 @@
 }
 ```
 
+## 更新消息设置
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/friends/{friendId}/chat-setting`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明 |
+| :----: | :----: | :--: | :-----: |
+| msg_top | int |  是  | 消息置顶:0-否 1-是 |
+| msg_disturb | int |  是  | 消息免打扰:0-否 1-是 |
+| msg_shielding | int |  是  | 消息屏蔽:0-否 1-是 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "更新成功",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "user_id": 5,
+        "friend_id": 3,
+        "group_id": 1,
+        "alias": "章三",
+        "tags": "学生,明星",
+        "desc": "测试描述",
+        "phone": "18382274309",
+        "chat_bgd": "xxx.png",
+        "chat_setting": {
+            "msg_top": 1,
+            "msg_disturb": 1,
+            "msg_shielding": 1
+        },
+        "friend": {
+            "id": 3,
+            "name": "eric",
+            "avatar": null
+        }
+    }
+}
+```
+
 ## 更新信息
 
 **方式**
