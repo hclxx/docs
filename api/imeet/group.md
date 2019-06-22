@@ -467,3 +467,94 @@
 }
 ```
 
+## 社群升级规则列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/group/upgrade/rule`
+
+**参数**
+
+| 名称  |  类型  | 必须 |              说明              |
+| :---: | :----: | :--: | :----------------------------: |
+| limit | int |  是  | 条目数 默认20 |
+| offset | int |  是  | 偏移量 默认0 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "rules": [
+            {
+                "id": 1,                    //  升级配置id
+                "level": 2,                 //  升级配置对应的等级
+                "max_members": 1000,        //  社群成员上限
+                "max_admins": 10,           //  社群管理员上限
+                "coin": "ore",              //  代币类型
+                "price": 1000               //  价格
+            },
+            {
+                "id": 2,
+                "level": 3,
+                "max_members": 1500,
+                "max_admins": 15,
+                "coin": "ore",
+                "price": 1500
+            },
+            {
+                "id": 3,
+                "level": 4,
+                "max_members": 2000,
+                "max_admins": 20,
+                "coin": "ore",
+                "price": 2000
+            }
+        ],
+        "desc": {
+            "value": {
+                "upgrade_desc": "this is upgrade rule",       //  升级社群规则描述
+                "transfer_desc": "this is transfer rule"      //  转让社群规则描述
+            }
+        }
+    }
+}
+```
+
+## 升级社群
+
+**方式**
+
+`post`
+
+**路径**
+
+`/api/group/{id}/upgrade`
+
+**参数**
+
+| 名称  |  类型  | 必须 |              说明              |
+| :---: | :----: | :--: | :----------------------------: |
+|    id    | int |  是  | 升级社群配置id |
+| pay_pass | int |  是  | 用户支付密码   |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
