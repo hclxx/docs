@@ -520,10 +520,8 @@
             }
         ],
         "desc": {
-            "value": {
-                "upgrade_desc": "this is upgrade rule",       //  升级社群规则描述
-                "transfer_desc": "this is transfer rule"      //  转让社群规则描述
-            }
+             "upgrade_desc": "this is upgrade rule",       //  升级社群规则描述
+             "transfer_desc": "this is transfer rule"      //  转让社群规则描述
         }
     }
 }
