@@ -190,7 +190,8 @@ function getImeetAppSider(title, introduction) {
         "notice",
         "certification",
         "search",
-        "group"
+        "group",
+        "helper
       ]
     }
   ];
