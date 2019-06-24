@@ -222,7 +222,30 @@
             "id": 5,
             "name": "Z63482",
             "avatar": null
-        }
+        },
+        "is_member": false, /*是否是该成员的成员(true-是 0-否)*/
+        /*成员列表 固定8格成员 按照群主/管理员/成员进行排序*/
+        "members": [
+            {
+                "id": 15,
+                "user_id": 5,
+                "grade": 0,
+                "group_id": 17,
+                "nickname": null,
+                "chat_bgd": null,
+                "status": 0,
+                "role": 2,
+                "message": null,
+                "top": 0,
+                "created_at": "2019-06-21 16:03:52",
+                "updated_at": "2019-06-21 16:03:52",
+                "user": {
+                    "id": 5,
+                    "name": "Z63482",
+                    "avatar": null
+                }
+            }
+        ]
     }
 }
 ```
