@@ -128,7 +128,13 @@
         "easemob_pass": "xxx",/*环信登录密码*/
         "invite_code": "Z63482",/*邀请码*/
         "power": 0,
-        "grade": null,
+        "grade": {
+            "name": "火星",       //  当前等级名称
+            "icon": "3",          //  当前等级大图标
+            "min": 50,            //  当前等级最小值
+            "max": 100,           //  当前等级最大值
+            "next_name": "金星"   //  下个等级名称（当下个等级为最大等级时候返回null）
+        },
         "parent": null,/*邀请人*/
         "extra": {
             "id": 5,
@@ -734,6 +740,54 @@
     "msg": "修改成功",
     "code": 0,
     "data": null
+}
+```
+
+## 用户等级规则
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/grade`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "grade_intro": "this is user grade intro",    //  等级介绍
+        "grade_power": [                              //  等级所对应的矿力值
+            {
+                "id": 1,
+                "name": "白银",         //  等级名称
+                "small_icon": "",       //  等级小图标
+                "min": 10,              //  等级矿力最小值
+                "max": 20               //  等级矿力最大值
+            },
+            {
+                "id": 2,
+                "name": "黄金",
+                "small_icon": "",
+                "min": 20,
+                "max": 50
+            },
+            {
+                "id": 3,
+                "name": "超凡入圣",
+                "small_icon": "",
+                "min": 50,
+                "max": 100
+            }
+        ],
+        "grade_desc": "this is user grade desc"         //  等级其他描述
+    }
 }
 ```
 
