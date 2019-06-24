@@ -286,23 +286,26 @@
 {
     "msg": "ok",
     "code": 0,
-    "data": [
-        {
-            "name": "实名认证",/*条件名称*/
-            "status": true,/*完成状态*/
-            "key": "certification"/*标示 方便客户端做引导跳转使用*/
-        },
-        {
-            "name": "自身等级达到5级",
-            "status": true,
-            "key": "level"
-        },
-        {
-            "name": "邀请注册至少5名好友建立的社群人数不低于200人",
-            "status": true,
-            "key": "invite"
-        }
-    ]
+    "data": {
+        "conditions": [
+            {
+                "name": "实名认证",/*条件名称*/
+                "status": true,/*完成状态*/
+                "key": "certification"/*标示 方便客户端做引导跳转使用*/
+            },
+            {
+                "name": "自身等级达到5级",
+                "status": true,
+                "key": "level"
+            },
+            {
+                "name": "邀请注册至少5名好友建立的社群人数不低于200人",
+                "status": true,
+                "key": "invite"
+            }
+        ],
+        "status": true /*是否能创建状态*/
+    }
 }
 ```
 
@@ -613,6 +616,14 @@
             "nickname": null,/*群呢称*/
             "chat_bgd": null,/*聊天背景*/
             "role": 2,/*0-成员 1-管理员 2-群主*/
+            "chat_setting": {
+                "msg_top": 0,/*消息置顶 0-否 1-是*/
+                "msg_disturb": 0,/*消息免打扰 0-否 1-是*/
+                "msg_disturb_options": {
+                    "accept": 0,/*接受但不提醒 0-否 1-是 */
+                    "shielding": 0/*屏蔽群消息 0-否 1-是 */
+                }
+            }
             /*成员用户信息 如nickname不存在 使用user.name值作为呢称*/
             "user": {
                 "id": 5,
