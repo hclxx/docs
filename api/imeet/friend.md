@@ -162,7 +162,8 @@
         "friend": {
             "id": 20,
             "name": "26CSRU",
-            "avatar": null
+            "avatar": null,
+            "numner": "123123213"/*用户IMeet账号*/
         },
         /*分组信息*/
         "group": {
