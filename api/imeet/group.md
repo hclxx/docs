@@ -713,7 +713,7 @@
 
 **方式**
 
-`PATCH`
+`DELETE`
 
 **参数**
 
@@ -732,6 +732,35 @@
 ```json
 {
     "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
+## 移除成员
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+| 名称  |  类型  | 必须 |              说明              |
+| :---: | :----: | :--: | :----------------------------: |
+| group_id | int |  是  | 群id |
+| members | array |  是  | 用户id集合 |
+
+**路径**
+
+`/api/members/remove`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "移除成功",
     "code": 0,
     "data": null
 }
