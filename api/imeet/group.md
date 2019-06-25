@@ -224,7 +224,6 @@
             "name": "Z63482",
             "avatar": null
         },
-        "is_member": false, /*是否是该成员的成员(true-是 false-否)*/
         "number": "123123213", /*群号*/
         /*成员列表 固定8个成员 按照群主/管理员/成员进行排序*/
         "members": [
@@ -233,11 +232,18 @@
                 "user_id": 5,
                 "grade": 0,
                 "group_id": 17,
-                "nickname": null,
-                "chat_bgd": null,
+                "nickname": null,/*群呢称 未null 使用user对象的name作为群呢称*/
+                "chat_bgd": null,/*背景图*/
                 "status": 0,
-                "role": 2,
-                "message": null,
+                "role": 2,/*0-普通成员 1-管理员 2-群主*/
+                "chat_setting": {
+                    "msg_top": 0,
+                    "msg_disturb": 0,
+                    "msg_disturb_options": {
+                        "accept": 0,
+                        "shielding": 0
+                    }
+                },
                 "top": 0,
                 "created_at": "2019-06-21 16:03:52",
                 "updated_at": "2019-06-21 16:03:52",
@@ -247,7 +253,27 @@
                     "avatar": null
                 }
             }
-        ]
+        ],
+        /*自身群资料信息 为NULL标示未加入群*/
+        "member": {
+            "id": 16,
+            "user_id": 5,
+            "group_id": 34,
+            "nickname": null,
+            "chat_bgd": null,
+            "status": 0,
+            "role": 2,
+            "chat_setting": {
+                "msg_top": 0,
+                "msg_disturb": 0,
+                "msg_disturb_options": {
+                    "accept": 0,
+                    "shielding": 0
+                }
+            },
+            "created_at": "2019-06-25 14:33:14",
+            "updated_at": "2019-06-25 14:33:14"
+        }
     }
 }
 ```
@@ -652,52 +678,6 @@
             }
         }
     ]
-}
-```
-
-## 获取用户群聊资料信息
-
-**方式**
-
-`GET`
-
-**参数**
-
-| 名称  |  类型  | 必须 |              说明              |
-| :---: | :----: | :--: | :----------------------------: |
-| group_id | int |  是  | 社区/社群ID,注：主键ID |
-
-**路径**
-
-`/api/members/info`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 2,/*成员id*/
-        "user_id": 5,/*用户id*/
-        "group_id": 28,/*群id*/
-        "nickname": null,/*呢称*/
-        "chat_bgd": null,/*聊天背景*/
-        "status": 0,
-        "role": 2,/*0-普通成员 1-管理员 2-群主*/
-        "chat_setting": {
-            "msg_top": 0,/*消息置顶 0-否 1-是*/
-            "msg_disturb": 0,/*消息免打扰 0-否 1-是*/
-            "msg_disturb_options": {
-                "accept": 0,/*接受但不提醒 0-否 1-是 */
-                "shielding": 0/*屏蔽群消息 0-否 1-是 */
-            }
-        },
-        "created_at": "2019-06-24 12:07:09",
-        "updated_at": "2019-06-24 12:07:09"
-    }
 }
 ```
 
