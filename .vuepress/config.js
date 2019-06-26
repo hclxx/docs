@@ -192,7 +192,9 @@ function getImeetAppSider(title, introduction) {
         "search",
         "group",
         "helper",
-        "star"
+        "star",
+        "about",
+        "version"
       ]
     }
   ];
