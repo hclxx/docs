@@ -105,52 +105,88 @@
 {
     "msg": "ok",
     "code": 0,
-    "data": {
-        /*置顶*/
-        "tops": [
-            {
-                "id": 15,
-                "groupid": "85674142269441",/*环信群号*/
-                "name": "群名称",/*群名*/
-                "avatar": "xxxxx.png",/*头像*/
-                "top": 0,
-                "role": 2
-            }
-        ],
-        /*创建*/
-        "creates": [
-            {
-                "id": 15,
-                "groupid": "85674142269441",/*环信群号*/
-                "name": "群名称",/*群名*/
-                "avatar": "xxxxx.png",/*头像*/
-                "top": 0,
-                "role": 2
-            }
-        ],
-        /*管理*/
-        "manages": [
-            {
-                "id": 1,
-                "groupid": "85674142269441",/*环信群号*/
-                "name": "群名称",/*群名*/
-                "avatar": "xxxxx.png",/*头像*/
-                "top": 0,
-                "role": 1
-            }
-        ],
-        /*加入*/
-        "joins": [
-            {
-                "id": 1,
-                "groupid": "85674142269441",/*环信群号*/
-                "name": "群名称",/*群名*/
-                "avatar": "xxxxx.png",/*头像*/
-                "top": 0,
-                "role": 1
-            }
-        ]
-    }
+    "data": [
+        {
+            "name": "置顶社群",
+            "list": [
+                {
+                    "id": 32,
+                    "groupid": "85931794169857",
+                    "name": "Z63482创建的群聊",/*名称*/
+                    "avatar": null,/*头像*/
+                    "chat_setting": {
+                        "msg_top": 1,/*是否置顶 0-否 1-是*/
+                        "msg_disturb": 1,/*消息免打扰 0-否 1-是*/
+                        "msg_disturb_options": {
+                            "accept": 0,/*接受消息但不提提醒 0-否 1-是*/
+                            "shielding": 1/*屏蔽消息 0-否 1-是*/
+                        }
+                    },
+                    "role": 2
+                }
+            ]
+        },
+        {
+            "name": "我创建的社群",
+            "list": [
+                {
+                    "id": 28,
+                    "groupid": "85931672535042",
+                    "name": "Z63482创建的群聊",
+                    "avatar": null,
+                    "chat_setting": {
+                        "msg_top": 0,
+                        "msg_disturb": 0,
+                        "msg_disturb_options": {
+                            "accept": 0,
+                            "shielding": 0
+                        }
+                    },
+                    "role": 2
+                }
+            ]
+        },
+        {
+            "name": "我管理的社群",
+            "list": [
+                {
+                    "id": 28,
+                    "groupid": "85931672535042",
+                    "name": "Z63482创建的群聊",
+                    "avatar": null,
+                    "chat_setting": {
+                        "msg_top": 0,
+                        "msg_disturb": 0,
+                        "msg_disturb_options": {
+                            "accept": 0,
+                            "shielding": 0
+                        }
+                    },
+                    "role": 2
+                }
+            ]
+        },
+        {
+            "name": "我加入的社群",
+            "list": [
+                {
+                    "id": 28,
+                    "groupid": "85931672535042",
+                    "name": "Z63482创建的群聊",
+                    "avatar": null,
+                    "chat_setting": {
+                        "msg_top": 0,
+                        "msg_disturb": 0,
+                        "msg_disturb_options": {
+                            "accept": 0,
+                            "shielding": 0
+                        }
+                    },
+                    "role": 2
+                }
+            ]
+        }
+    ]
 }
 ```
 
