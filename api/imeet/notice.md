@@ -1,4 +1,4 @@
-# 动态通知/系统通知/消息通知
+# 消息通知
 
 ## 消息列表
 
@@ -31,116 +31,41 @@
     "code": 0,
     "data": [
         {
-            "id": 3,
+            "id": 1,
             "content": "",
             "type": "remind",
-            "body": {
-                /*评论信息*/
-                "comment": {
-                    "id": 15,
-                    "content": "sadasd",
-                    "user_id": 3,
-                    "topic_id": 11,
-                    "is_delete": 0,
-                    "comment_id": 11,
-                    "created_at": "2019-06-18 10:43:02",
-                    "like_count": 1,
-                    "topic_type": "comment",
-                    "updated_at": "2019-06-18 11:53:40",
-                    "reply_user_id": 0
-                }
+            /*如 action 在 [reply:like,comment:like] 中 body 为点赞主题内容 */
+            "body":{
+                "id": 2,
+                "content": "hello world", /*内容*/
+                "user_id": 5,
+                "reply_user_id": 0,
+                "like_count": 0,
+                "updated_at": "2019-06-12 21:52:22",
+                "created_at": "2019-06-12 21:52:22",
             },
             "target_type": "dynamic",
-            "action": "reply:like",/*评论点赞*/
-            "action_id": 7,
-            "target_id": 9,
-            "sender_id": 3,
+            "action": "dynamic:like",/*reply:like-回复点赞, comment:like-回复点赞, dynamic:like-动态点赞, dynamic:collect-动态收藏*/
+            "target_id": 1,
+            "sender_id": 5,
             "sender_type": "user",
             "is_read": 0,
-            "user_id": 5,
-            "created_at": "2019-06-18 11:53:40",
-            "updated_at": "2019-06-18 11:53:40",
-            /*评论人信息*/
+            "user_id": 3,
+            "created_at": "2019-06-27 14:26:24",
+            "updated_at": "2019-06-27 14:26:24",
+            /*点赞人信息*/
             "sender": {
-                "id": 3,
-                "name": "eric",
+                "id": 5,
+                "name": "Z63482",
                 "avatar": null
             },
             /*动态信息*/
             "target": {
-                "id": 9,
-                "type": 2,
-                "content": "",
+                "id": 1,
+                "type": 1,
+                "content": "哈哈哈哈",
                 "video": null,
-                "images": [
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    },
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 1,
-            "content": "",
-            "type": "remind",
-            "body": {
-                "comment": {
-                    "id": 18,
-                    "content": "哈哈哈",
-                    "user_id": 3,
-                    "topic_id": 15,
-                    "is_delete": 0,
-                    "comment_id": 11,
-                    "created_at": "2019-06-18 10:46:27",
-                    "like_count": 1,
-                    "topic_type": "reply",
-                    "updated_at": "2019-06-18 11:49:13",
-                    "reply_user_id": 3
-                }
-            },
-            "target_type": "dynamic",
-            "action": "reply:like",
-            "action_id": 6,
-            "target_id": 9,
-            "sender_id": 3,
-            "sender_type": "user",
-            "is_read": 0,
-            "user_id": 5,
-            "created_at": "2019-06-18 11:49:13",
-            "updated_at": "2019-06-18 11:49:13",
-            "sender": {
-                "id": 3,
-                "name": "eric",
-                "avatar": null
-            },
-            "target": {
-                "id": 9,
-                "type": 2,
-                "content": "",
-                "video": null,
-                "images": [
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    },
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    }
-                ]
+                "images": null
             }
         }
     ]
@@ -155,127 +80,62 @@
     "code": 0,
     "data": [
         {
-            "id": 4,
+            "id": 1,
             "content": "",
             "type": "remind",
+            /*如 action 为 dynamic:comment，body信息为评论信息*/
             "body": {
-                "reply": {
-                    "id": 19,
-                    "content": "测试呢",
+                "id": 2,
+                "content": "hello world", /*内容*/
+                "user_id": 5,
+                "reply_user_id": 0,
+                "like_count": 0,
+                "updated_at": "2019-06-12 21:52:22",
+                "created_at": "2019-06-12 21:52:22",
+            },
+            /*如 action 为 reply:comment，body.commnt为评论内容，body.reply为回复内容*/
+            "body": {
+                "comment": {
+                    "id": 2,
+                    "content": "hello world", /*内容*/
                     "user_id": 5,
-                    "topic_id": "18",
-                    "is_delete": 0,
-                    "comment_id": 11,
-                    "created_at": "2019-06-18 14:45:27",
+                    "reply_user_id": 0,
                     "like_count": 0,
-                    "topic_type": "reply",
-                    "updated_at": "2019-06-18 14:45:27",
-                    "reply_user_id": 3
+                    "updated_at": "2019-06-12 21:52:22",
+                    "created_at": "2019-06-12 21:52:22",
                 },
-                "comment": {
-                    "id": 18,
-                    "content": "哈哈哈",
-                    "user_id": 3,
-                    "topic_id": 15,
-                    "is_delete": 0,
-                    "comment_id": 11,
-                    "created_at": "2019-06-18 10:46:27",
-                    "like_count": 1,
-                    "topic_type": "reply",
-                    "updated_at": "2019-06-18 11:49:13",
-                    "reply_user_id": 3
-                }
-            },
-            "target_type": "dynamic",
-            "action": "reply",
-            "action_id": 19,
-            "target_id": 9,
-            "sender_id": 3,
-            "sender_type": "user",
-            "is_read": 0,
-            "user_id": 5,
-            "created_at": "2019-06-18 14:45:27",
-            "updated_at": "2019-06-18 14:45:27",
-            "is_liked": false,
-            "sender": {
-                "id": 3,
-                "name": "eric",
-                "avatar": null
-            },
-            "target": {
-                "id": 9,
-                "type": 2,
-                "content": "",
-                "video": null,
-                "images": [
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    },
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 2,
-            "content": "",
-            "type": "remind",
-            "body": {
-                "comment": {
-                    "id": 12,
-                    "content": "哈哈哈",
+                "reply": {
+                    "id": 2,
+                    "content": "hello world", /*内容*/
                     "user_id": 5,
-                    "topic_id": "9",
-                    "is_delete": 0,
-                    "created_at": "2019-06-18 11:50:05",
+                    "reply_user_id": 0,
                     "like_count": 0,
-                    "topic_type": "dynamic",
-                    "updated_at": "2019-06-18 11:50:05",
-                    "reply_count": 0
+                    "updated_at": "2019-06-12 21:52:22",
+                    "created_at": "2019-06-12 21:52:22",
                 }
             },
             "target_type": "dynamic",
-            "action": "comment",
-            "action_id": 12,
-            "target_id": 9,
-            "sender_id": 3,
+            "action": "dynamic:like",/*reply:comment-回复评论, dynamic:comment-回复动态*/
+            "target_id": 1,
+            "sender_id": 5,
             "sender_type": "user",
             "is_read": 0,
-            "user_id": 5,
-            "created_at": "2019-06-18 11:50:05",
-            "updated_at": "2019-06-18 11:50:05",
-            "is_liked": false,
+            "user_id": 3,
+            "created_at": "2019-06-27 14:26:24",
+            "updated_at": "2019-06-27 14:26:24",
+            /*点赞人信息*/
             "sender": {
-                "id": 3,
-                "name": "eric",
+                "id": 5,
+                "name": "Z63482",
                 "avatar": null
             },
+            /*动态信息*/
             "target": {
-                "id": 9,
-                "type": 2,
-                "content": "",
+                "id": 1,
+                "type": 1,
+                "content": "哈哈哈哈",
                 "video": null,
-                "images": [
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    },
-                    {
-                        "mime": "mp4",
-                        "width": 100,
-                        "height": 200,
-                        "filename": "xxxx.png"
-                    }
-                ]
+                "images": null
             }
         }
     ]
