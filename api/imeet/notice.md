@@ -222,7 +222,7 @@
 }
 ```
 
-**消息提醒**
+**消息通知**
 
 ```json
 {
@@ -255,6 +255,30 @@
                 "sex": 0,
                 "number": "1295634"
             }
+        }
+    ]
+}
+```
+
+
+**系统通知**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 5,
+            "target_id": 0,
+            "body": {
+                "title": "哈哈啊哈",/*通知标题*/
+                "content": "asdasdasdsadsadasda"/*通知类型*/
+            },
+            "read_id": 5,
+            "target_type": "system",
+            "sender_id": 0,
+            "created_at": "2019-06-29 10:13:59"
         }
     ]
 }
