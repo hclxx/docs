@@ -485,20 +485,7 @@
 | :---: | :----: | :--: | :----------------------------: |
 | title | int |  是  | 标题 |
 | content | int |  是  | 内容 |
-| images | object |  是  | 图片附件 |
-
-`images` 参数说明
-
-```json
-[
-    {
-        "mime": "png",/*文件mimetype*/
-        "width": 100,/*图片宽度*/
-        "height": 200,/*图片高度*/
-        "filename": "xxxxx.png"/*文件名*/
-    },
-]
-```
+| image | string |  否  | 图片名称 |
 
 **响应**
 
@@ -511,14 +498,9 @@
     "data": {
         "user_id": 5,
         "title": "测试呢",
-        "data": [
-            {
-                "filename": "xxxxx.png",
-                "height": 100,
-                "width": 200,
-                "mime": "image/png"
-            }
-        ],
+        "data": {
+            "image": "xxxxxxx.png"
+        },
         "content": "测试测试测试",
         "group_id": 1,
         "updated_at": "2019-06-21 13:51:57",
