@@ -481,6 +481,7 @@
 | title | int |  是  | 标题 |
 | content | int |  是  | 内容 |
 | image | string |  否  | 图片名称 |
+| group_id | int |  是  | 群id |
 
 **响应**
 
