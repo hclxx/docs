@@ -422,14 +422,9 @@
             "id": 3,
             "title": "测试呢",/*公告标题*/
             "content": "测试测试测试",/*公告内容*/
-            "data": [
-                {
-                    "mime": "image/png",
-                    "width": 200,
-                    "height": 100,
-                    "filename": "xxxxx.png"
-                }
-            ],
+            "data": {
+                "image": "xxxxxxx.png"
+            },
             "group_id": 1,
             "user_id": 5,
             "read_count": 0,/*阅读数量*/
