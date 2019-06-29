@@ -23,7 +23,7 @@
 
 `Status code 200`
 
-点赞收藏提醒
+**动态提醒**
 
 ```json
 {
@@ -31,48 +31,198 @@
     "code": 0,
     "data": [
         {
-            "id": 1,
-            "content": "",
-            "type": "remind",
-            /*如 action 在 [reply:like,comment:like] 中 body 为点赞主题内容 */
-            "body":{
-                "id": 2,
-                "content": "hello world", /*内容*/
-                "user_id": 5,
-                "reply_user_id": 0,
-                "like_count": 0,
-                "updated_at": "2019-06-12 21:52:22",
-                "created_at": "2019-06-12 21:52:22",
+            "id": 3,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:collect",/*动态收藏*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                }
             },
             "target_type": "dynamic",
-            "action": "dynamic:like",/*reply:like-回复点赞, comment:like-回复点赞, dynamic:like-动态点赞, dynamic:collect-动态收藏*/
-            "target_id": 1,
-            "sender_id": 5,
-            "sender_type": "user",
-            "is_read": 0,
-            "user_id": 3,
-            "created_at": "2019-06-27 14:26:24",
-            "updated_at": "2019-06-27 14:26:24",
-            /*点赞人信息*/
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:13:59",
             "sender": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
+            }
+        },
+        {
+            "id": 2,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:like",/*动态点赞*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                }
             },
-            /*动态信息*/
-            "target": {
-                "id": 1,
-                "type": 1,
-                "content": "哈哈哈哈",
-                "video": null,
-                "images": null
+            "target_type": "dynamic",
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:12:59",
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
+            }
+        },
+        {
+            "id": 2,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:comment",/*动态评论*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                },
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                }
+            },
+            "target_type": "dynamic",
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:12:59",/*时间*/
+            /*评论人*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
+            }
+        },
+        {
+            "id": 2,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:comment:reply",/*动态评论回复*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                },
+                /*评论内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                },
+                /*回复内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                }
+            },
+            "target_type": "dynamic",
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:12:59",/*时间*/
+            /*评论人*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
+            }
+        },
+        {
+            "id": 2,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:reply:like",/*动态回复点赞*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                },
+                /*评论内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                },
+                /*回复内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                }
+            },
+            "target_type": "dynamic",
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:12:59",/*时间*/
+            /*评论人*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
+            }
+        },
+        {
+            "id": 2,
+            "target_id": 1,
+            "body": {
+                "action": "dynamic:comment:like",/*动态评论点赞*/
+                "dynamic": {
+                    "id": 1,
+                    "content": "哈哈哈哈",
+                    "video": null,
+                    "images": null,
+                    "location": null,
+                    "type": 1
+                },
+                /*评论内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                },
+                /*回复内容*/
+                "comment": {
+                    "id": 1,
+                    "content": "哈哈哈哈"/*评论内容*/
+                }
+            },
+            "target_type": "dynamic",
+            "sender_id": 3,
+            "created_at": "2019-06-29 10:12:59",/*时间*/
+            /*评论人*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null
             }
         }
     ]
 }
 ```
 
-回复评论提醒
+**消息提醒**
 
 ```json
 {
@@ -81,61 +231,29 @@
     "data": [
         {
             "id": 1,
-            "content": "",
-            "type": "remind",
-            /*如 action 为 dynamic:comment，body信息为评论信息*/
+            "target_id": 34,
             "body": {
-                "id": 2,
-                "content": "hello world", /*内容*/
-                "user_id": 5,
-                "reply_user_id": 0,
-                "like_count": 0,
-                "updated_at": "2019-06-12 21:52:22",
-                "created_at": "2019-06-12 21:52:22",
-            },
-            /*如 action 为 reply:comment，body.commnt为评论内容，body.reply为回复内容*/
-            "body": {
-                "comment": {
-                    "id": 2,
-                    "content": "hello world", /*内容*/
-                    "user_id": 5,
-                    "reply_user_id": 0,
-                    "like_count": 0,
-                    "updated_at": "2019-06-12 21:52:22",
-                    "created_at": "2019-06-12 21:52:22",
-                },
-                "reply": {
-                    "id": 2,
-                    "content": "hello world", /*内容*/
-                    "user_id": 5,
-                    "reply_user_id": 0,
-                    "like_count": 0,
-                    "updated_at": "2019-06-12 21:52:22",
-                    "created_at": "2019-06-12 21:52:22",
+                "from": null,/*来自：邀请/搜索*/
+                "action": "apply:add:group",/*申请加群*/
+                "remark": null,/*个人介绍*/
+                "status": 0,/*0-待处理 1-同意加群 2-拒绝*/
+                /*群信息*/
+                "group": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
                 }
             },
-            "target_type": "dynamic",
-            "action": "dynamic:like",/*reply:comment-回复评论, dynamic:comment-回复动态*/
-            "target_id": 1,
+            "target_type": "group",
             "sender_id": 5,
-            "sender_type": "user",
-            "is_read": 0,
-            "user_id": 3,
-            "created_at": "2019-06-27 14:26:24",
-            "updated_at": "2019-06-27 14:26:24",
-            /*点赞人信息*/
+            "created_at": "2019-06-28 18:28:44",
+            /*申请人信息*/
             "sender": {
                 "id": 5,
                 "name": "Z63482",
-                "avatar": null
-            },
-            /*动态信息*/
-            "target": {
-                "id": 1,
-                "type": 1,
-                "content": "哈哈哈哈",
-                "video": null,
-                "images": null
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634"
             }
         }
     ]
