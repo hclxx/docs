@@ -229,14 +229,41 @@
     "msg": "ok",
     "code": 0,
     "data": [
+        /* 申请加群 */
         {
             "id": 1,
             "target_id": 34,
             "body": {
                 "from": null,/*来自：邀请/搜索*/
-                "action": "apply:add:group",/*申请加群*/
+                "type": "apply:add:group",/*申请加群*/
                 "remark": null,/*个人介绍*/
                 "status": 0,/*0-待处理 1-同意加群 2-拒绝*/
+                /*群信息*/
+                "group": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                }
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "created_at": "2019-06-28 18:28:44",
+            /*申请人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634"
+            }
+        },
+        /* 拒绝加群/社区申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:add:group",/*申请加群*/
+                "remark": null,/*拒绝备注*/
                 /*群信息*/
                 "group": {
                     "id": 34,
