@@ -194,7 +194,8 @@ function getImeetAppSider(title, introduction) {
         "helper",
         "star",
         "about",
-        "version"
+        "version",
+        "plaza-task"
       ]
     }
   ];
