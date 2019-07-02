@@ -75,9 +75,12 @@
     "data": [
         {
             "id": 123,
-            "name": "我的第一个群", /*名称*/
-            "number": "93154254", /*群组号*/
-            "avatar": "xxxx.png"/*头像*/
+            "name": "Rrrr",
+            "number": "21831965",
+            "avatar": "20190629154638713.png",
+            "describe": "",
+            "member_count": 1,
+            "member": []
         }
     ]
 }
