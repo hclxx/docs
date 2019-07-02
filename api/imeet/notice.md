@@ -14,7 +14,7 @@
 
 |  名称  |  类型  | 必须 | 说明  |
 | :----: | :----: | :--: | :----: |
-| type | string |  是  | remind-动态通知, message-消息通知, system-系统通知] |
+| type | string |  是  | remind-动态通知, message-消息通知, system-系统通知, new:dynamic-新动态提醒消息 |
 | remind_type | int |  否  | 1-回复评论提醒 2-点赞收藏提醒,如 `type` 为 `remind` 必传  |
 | offset | string |  是  | 偏移量 默认0 |
 | limit | string |  是  | 条目数 默认20|
@@ -308,5 +308,41 @@
             "created_at": "2019-06-29 10:13:59"
         }
     ]
+}
+```
+
+**新动态提醒消息**
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "status": 0            //  0-不需要提醒用户 1-需要提醒用户
+    }
+}
+```
+
+## 重置新动态提醒消息
+
+**方式**
+
+`PUT`
+
+**路径**
+
+`/api/notify/messages`
+
+**参数**
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
 }
 ```
