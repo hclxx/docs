@@ -308,7 +308,17 @@
             },
             "created_at": "2019-06-25 14:33:14",
             "updated_at": "2019-06-25 14:33:14"
-        }
+        },
+        "type": "group",/*群类型:group-社群 community-社区*/
+        /*用户旗下可以申请加入的社群列表，当 `type` 为 `community` 时 `may_apply_groups` 该字段存在*/
+        "may_apply_groups": [
+            {
+                "id": 86398924292097,/*群id*/
+                "name": "我的第一个群",/*群名称*/
+                "avatar": null,/*头像*/
+                "member_count": 5/*当前成员数*/
+            }
+        ],
     }
 }
 ```
