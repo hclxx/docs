@@ -319,6 +319,15 @@
                 "member_count": 5/*当前成员数*/
             }
         ],
+        /*社区下社群列表 当 `type` 为 `community` 时 `groups` 字段存在 */
+         "groups": [
+            {
+                "id": 123123,
+                "comm_id": 123123,
+                "name": "zhaoweideaddadasd",
+                "avatar": "20190702142933205.png"
+            },
+        ]
     }
 }
 ```
