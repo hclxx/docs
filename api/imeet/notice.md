@@ -346,3 +346,102 @@
     "data": null
 }
 ```
+
+## 系统消息列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/notify/messages/top`
+
+**参数**
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "system": {
+            "id": 111111,
+            "name": "系统通知",
+            "top": 1                                  //  1-置顶  0-未置顶
+        },
+        "message": {
+            "id": 222222,
+            "name": "消息通知",
+            "top": 1
+        },
+        "dynamic": {
+            "id": 333333,
+            "name": "动态通知",
+            "top": 0
+        }
+    }
+}
+```
+
+## 系统消息置顶
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/notify/messages/top`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| system_id | int |  是  | 系统消息通知id |
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
+## 系统消息取消置顶
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/notify/messages/down`
+
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| system_id | int |  是  | 系统消息通知id |
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
