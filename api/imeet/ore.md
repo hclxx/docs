@@ -77,7 +77,7 @@
 
 ## 获取一键收取矿石价格
 
-`/api/collection/price`
+`/api/ores/collection/price`
 
 **请求方式**
 
@@ -116,7 +116,7 @@
 
 ## 获取一键收取矿石特权剩余天数
 
-`/api/collection/days`
+`/api/ores/collection/days`
 
 **请求方式**
 
@@ -138,30 +138,6 @@
 }
 ```
 
-## 购买一键收矿特权
-
-`/api/collection`
-
-**请求方式**
-
-`POST`
-
-**请求参数**
-
-| 名称 | 类型  | 默认 | 必须 | 说明 |
-| :--: | :---: | :--: | :--: | :--: |
-| month | integer |  无  |  是  |  购买月数  |
-| pay_pass | string |  无  |  是  |  支付密码  |
-
-**返回体**
-
-```json
-{
-  "msg": "购买成功，使用日期截止 2019-04-15 16:00:00",
-  "code": 0,
-  "data": null
-}
-```
 
 ## 一键收取矿石
 
@@ -248,7 +224,7 @@
 
 ## 检查现金购买一键收矿特权支付状态
 
-`api/collection-orders/{orderNo}/status`
+`api/ores/collection-orders/{orderNo}/status`
 
 **请求方式**
 
@@ -272,7 +248,7 @@
 
 ## 购买一键挖矿记录
 
-`api/collection/buy-records`
+`api/ores/collection/buy-records`
 
 **请求方式**
 
