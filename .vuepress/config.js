@@ -195,7 +195,8 @@ function getImeetAppSider(title, introduction) {
         "star",
         "about",
         "version",
-        "plaza-task"
+        "plaza-task",
+        "ore"
       ]
     }
   ];
