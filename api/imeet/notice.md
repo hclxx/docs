@@ -280,9 +280,64 @@
                 "name": "Z63482",
                 "avatar": null,
                 "sex": 0,
-                "number": "1295634"
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
             }
-        }
+        },
+        {
+            "id": 18,
+            "target_id": 11,
+            "body": {
+                "from": null,/*来源*/
+                "type": "apply:add:community",/*申请加入社区*/
+                "remark": null,/*申请备注*/
+                "status": 1,/*0-待处理 1-同意加群 2-拒绝*/
+                "group_ids": [22],
+                /*社区信息*/
+                "community": {
+                    "id": 11,
+                    "name": "我是社区",
+                    "avatar": null
+                },
+                /*带入的社群信息*/
+                "groups": [
+                    {
+                        "id": 22,
+                        "name": "我是社群",
+                        "avatar": null
+                    }
+                ]
+            },
+            "target_type": "group",
+            "read_id": 7,
+            "sender_id": 3,
+            "created_at": "2019-07-03 11:31:35",/*时间*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null,
+                /*申请人等级信息*/
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
     ]
 }
 ```
