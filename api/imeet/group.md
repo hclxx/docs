@@ -441,7 +441,12 @@
             "title": "测试呢",/*公告标题*/
             "content": "测试测试测试",/*公告内容*/
             "data": {
-                "image": "xxxxxxx.png"
+                "image": {
+                    "height": 1,
+                    "width": 2,
+                    "mime": "png",
+                    "filename": "xxxxx.png"
+                }
             },
             "group_id": 1,
             "user_id": 5,
@@ -513,7 +518,12 @@
         "user_id": 5,
         "title": "测试呢",
         "data": {
-            "image": "xxxxxxx.png"
+            "image": {
+                "height": 1,
+                "width": 2,
+                "mime": "png",
+                "filename": "xxxxx.png"
+            }
         },
         "content": "测试测试测试",
         "group_id": 1,
@@ -601,7 +611,12 @@
         "title": "xxxxx",
         "content": "xxxxxx",
         "data": {
-            "image": "xxxxx"
+            "image": {
+                "height": 1,
+                "width": 2,
+                "mime": "png",
+                "filename": "xxxxx.png"
+            }
         },
         "group_id": 86398924292097,
         "user_id": 5,
