@@ -136,6 +136,27 @@
             "next_name": "金星"   //  下个等级名称（当下个等级为最大等级时候返回null）
         },
         "parent": null,/*邀请人*/
+        "pay_pass_status": false,/*获取支付密码设置状态*/
+        "system_notice": [          /*系统消息列表*/
+            {
+                "id": "111111",
+                "name": "系统通知",/*系统消息名称*/
+                "type": "system",/*系统消息类型*/
+                "top": 1 /*置顶状态 1-置顶 0-未置顶*/ 
+            },
+            {
+                "id": "222222",
+                "name": "消息通知",
+                "type": "message",
+                "top": 1
+            },
+            {
+                "id": "333333",
+                "name": "动态通知",
+                "type": "dynamic",
+                "top": 0
+            }
+        ],
         "extra": {
             "id": 5,
             "user_id": 5,
