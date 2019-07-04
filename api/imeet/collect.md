@@ -61,7 +61,7 @@
 
 |  名称  |  类型  | 必须 |                                   说明                                    |
 | :----: | :----: | :--: | :-----------------------------------------------------------------------: |
-| data | object |  是  |             收藏的内容                      |
+| data | object or string |  是  |             收藏的内容                      |
 | type | string |  是  |             收藏类型: dynamic-动态,image-图片,text-文本,chat-聊天记录,location-位置,video-视频,file-文件,link-连接                      |
 | keywords | string |  是  |          关键词搜索                         |
 | target_user | string |  是  |          目标用户                         |
@@ -71,7 +71,7 @@
 `动态`
 
 ```json
-{
+data: {
     "id": 37,
     "user_id": 10,
     "content": "分享你的想法",
@@ -104,63 +104,11 @@
 
 `图片`
 
-```json
-{
-    "url": "xxxxxx.png"
-}
-```
+data: "xxxxxx.png"
 
 `文本`
 
-```json
-{
-    "text": "xxxxxxxxxxxxx"
-}
-```
-
-`聊天记录`
-
-```json
-{
-    "content": "待定"
-}
-```
-
-`地理位置`
-
-```json
-{
-    "lat": "xxx",
-    "lng": "xxx",
-    "location": "xxxxxxx"
-}
-```
-
-`视频`
-
-```json
-{
-    "video": "xxx",
-    "cover": "xxx"
-}
-```
-
-`文件`
-
-```json
-{
-    "file": "xxx",
-}
-```
-
-`连接`
-
-```json
-{
-    "url": "xxx",
-}
-```
-
+data: "xxxxxxxxxxx"
 
 
 **响应**
