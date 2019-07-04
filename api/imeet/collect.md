@@ -17,6 +17,7 @@
 | limit | int |  是  |             条目数 默认20                      |
 | offset | int |  是  |             偏移量                      |
 | keywords | string |  是  |          关键词搜索                         |
+| type | string |  否  |             收藏类型: dynamic-动态,image-图片,text-文本|
 
 **响应**
 
