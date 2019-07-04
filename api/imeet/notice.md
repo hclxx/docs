@@ -247,6 +247,7 @@
             },
             "target_type": "group",
             "sender_id": 5,
+            "read_id": 1,
             "created_at": "2019-06-28 18:28:44",
             /*申请人信息*/
             "sender": {
@@ -273,6 +274,7 @@
             },
             "target_type": "group",
             "sender_id": 5,
+            "read_id": 1,
             "created_at": "2019-06-28 18:28:44",
             /*申请人信息*/
             "sender": {
