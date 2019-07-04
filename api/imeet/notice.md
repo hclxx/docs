@@ -350,7 +350,8 @@
                     {
                         "id": 22,
                         "name": "我是社群",
-                        "avatar": null
+                        "avatar": null,
+                        "member_count": 0/*成员数*/
                     }
                 ]
             },
