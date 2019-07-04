@@ -527,6 +527,12 @@
 
 `DELETE`
 
+**参数**
+
+|  名称  |  类型  | 必须 | 说明  |
+| :----: | :----: | :--: | :----: |
+| type | string |  是  | `remind`-动态通知 `message`-消息通知 `system`-系统通知 |
+
 **路径**
 
 `/api/notify/messages/clear`
