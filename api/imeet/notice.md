@@ -258,13 +258,13 @@
                 "number": "1295634"
             }
         },
-        /* 拒绝加群/社区申请 */
+        /* 拒绝加群申请 */
         {
             "id": 1,
             "target_id": 34,
             "body": {
                 "type": "reject:add:group",/*申请加群*/
-                "remark": null,/*拒绝备注*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
                 /*群信息*/
                 "group": {
                     "id": 34,
@@ -276,7 +276,43 @@
             "sender_id": 5,
             "read_id": 1,
             "created_at": "2019-06-28 18:28:44",
-            /*申请人信息*/
+            /*审核人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
+        /* 拒绝加入社区申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:add:community",/*申请加社区*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
+                /*社区信息*/
+                "community": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                }
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*审核人信息*/
             "sender": {
                 "id": 5,
                 "name": "Z63482",
