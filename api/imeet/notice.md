@@ -461,3 +461,47 @@
     "data": null
 }
 ```
+
+## 删除消息
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/notify/messages/{readId}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "Success",
+    "code": 0,
+    "data": null
+}
+```
+
+## 清空消息
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/notify/messages/clear`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "Success",
+    "code": 0,
+    "data": null
+}
+```
