@@ -564,30 +564,61 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        /*排行列表*/
         "list": [
             {
                 "id": 5,
                 "name": "Z63482",
                 "avatar": null,
-                "power": 198,/*矿力值*/
-                "rank": 1/*名次*/
+                "sex": 0,/*性别 0-未知 1-男 2-女*/
+                "power": 232,/*矿力值*/
+                "rank": 1,/*名次*/
+                /*等级信息*/
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
             },
             {
                 "id": 4,
                 "name": "章三",
                 "avatar": null,
+                "sex": 0,
                 "power": 14,
-                "rank": 2
+                "rank": 2,
+                /*等级信息*/
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
             }
         ],
-        /*自己的排行*/
+        /*自身排行信息*/
         "self": {
-            "id": 5,
-            "name": "Z63482",
+            "id": 3,
+            "name": "eric",
             "avatar": null,
-            "power": 198,
-            "rank": 1
+            "power": 0,
+            "sex": 0,
+            "rank": 3,
+            "grade": {
+                "name": "青铜",
+                "level": "1",
+                "icon": "NULL",
+                "small_icon": "NULL",
+                "min": 0,
+                "max": 500,
+                "next_name": "白银"
+            }
         }
     }
 }
