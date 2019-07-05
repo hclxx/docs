@@ -377,6 +377,20 @@
                 }
             }
         },
+        /*一键挖矿特权到期提醒*/
+        {
+            "id": 18,
+            "target_id": 0,
+            "body": { 
+                "type": "one:key:collection",/*一键挖矿特权*/
+                "content":"您的一键挖矿特权即将到期，如需继续使用，请及时续费!",
+            },
+            "target_type": null,
+            "read_id": 7,
+            "sender_id": 0,
+            "created_at": "2019-07-03 11:31:35",/*时间*/
+            "sender": null
+        }
     ]
 }
 ```
