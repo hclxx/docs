@@ -196,7 +196,8 @@ function getImeetAppSider(title, introduction) {
         "about",
         "version",
         "plaza-task",
-        "ore"
+        "ore",
+        "share-image"
       ]
     }
   ];
