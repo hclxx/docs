@@ -28,6 +28,11 @@
             "id": 2,
             "name": "APP-推荐广告",
             "alias": "app:recommend:top"/*广告位标示*/
+        },
+        {
+            "id": 3,
+            "name": "APP-广场任务广告",
+            "alias": "app:plaza:task:top"/*广告位标示*/
         }
     ]
 }
