@@ -149,6 +149,7 @@
         "limit_expire": 72,/*任务完成期限*/
         "limit_check_time": 72,/*任务完成后的审核时间*/ 
         "residue_times": 2,/*任务剩余次数*/
+        "audit_time": 0,/*自动审核时长(s)*/
         "describe": {/*任务描述*/ 
             "text": "任务描述", /*任务描述内容*/
             "images": [/*任务描述图片*/
@@ -347,7 +348,7 @@
 |     role   |     string    |  是  |     comm-社区统计 group-群主统计        |
 |    status  |      int      |  是  |     任务状态：1-进行中 2-已结束          |
 |   cate_id  |      int      |  否  |              任务分类id                 |
-|   end_time |    datetime   |  否  |              任务结束最大时间            |
+|    end_time |   string  |  否  |    desc 降序 asc 升序          |
 
 **响应**
 
@@ -559,10 +560,10 @@
 
 |  名称  |  类型  | 必须 | 说明 |
 | :----: | :----: | :--: | :----: |
-|     group_id   |     int    |  是  |     社群id        |
-|      remark    |   string   |  否  |     备注说明       |
+|     group_id   |     int    |  是  |     社群id                              |
+|      remark    |   string   |  否  |     备注说明                            |
 |       type     |     int    |  是  |     提交方式 1-手动提交  2-自动审核       |
-|       data     |   array    |  是  |     备注说明       
+|       data     |   array    |  否  |     当type=1时为必传                    |      
 
 
 ```json
