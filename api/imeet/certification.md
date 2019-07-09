@@ -8,7 +8,7 @@
 
 **路径**
 
-`/api/v1/certification`
+`/api/certification`
 
 **参数**
 
@@ -59,7 +59,7 @@
 
 **路径**
 
-`/api/v1/certification`
+`/api/certification`
 
 **参数**
 
@@ -108,7 +108,7 @@
 
 **路径**
 
-`/api/v1/certification`
+`/api/certification`
 
 **参数**
 

@@ -78,6 +78,7 @@
 | offset | int |  是  | 偏移量 |
 | coin | strig |  是  | 流水类型:ore-矿石  |
 | action | int |  是  | 收支类型:0-所有 1-支出 2-收入  |
+| type | string |  否  | 交易类型:transfer-转账记录  |
 
 **响应**
 
