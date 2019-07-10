@@ -868,6 +868,37 @@
 }
 ```
 
+## 忘记密码
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/user/forget-pass`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| phone | string |  是  | 手机号 |
+| code | string |  是  | 验证码 |
+| password | string |  是  | 新密码 |
+| password_confirmation | string |  是  | 确认密码 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": null
+}
+```
+
 
 
 
