@@ -79,7 +79,8 @@
 |  cate_id   |   int  |  是  |                   广场任务分类id                                 |
 |  order_by  | string |  是  | 排序字段 created_at-发布时间 end_time-结束时间 unit_price-任务单价 |
 | sort_order | string |  是  |               字段排序方式 desc-降序 asc-升序                     |
-|    limit   |   int  |  否  |                       当页取出的数量                             |
+|   offset   | string |  是  |                          偏移量 默认0                            |
+|   limit    | string |  是  |                          条目数 默认5                           |
 
 **响应**
 
@@ -294,8 +295,10 @@
 | :----: | :----: | :--: | :----: |
 |     type   |   int  |  是  |                   1-待完成 2-已完成(提交)                                |
 |    status  |   int  |  否  |    当type=2时候需传该字段  提交审核状态：0-审核中 1-已完成 2-已驳回          |
-|    cate_id |   int  |  否  |          广场分类id     |
-|    end_time |   string  |  否  |    desc 降序 asc 升序          |
+|    cate_id |   int  |  否  |                       广场分类id                                          |
+|  end_time  |string  |  否  |                       desc 降序 asc 升序                                  |
+|   offset   | string |  是  |                          偏移量 默认0                                      |
+|   limit    | string |  是  |                          条目数 默认5                                      |
 
 **响应**
 
@@ -349,7 +352,9 @@
 |     role   |     string    |  是  |     comm-社区统计 group-群主统计        |
 |    status  |      int      |  是  |     任务状态：1-进行中 2-已结束          |
 |   cate_id  |      int      |  否  |              任务分类id                 |
-|    end_time |   string  |  否  |    desc 降序 asc 升序          |
+|    end_time |     string   |   否 |    desc 降序 asc 升序                    |
+|   offset   |      string   |  是  |            偏移量 默认0                 |
+|   limit    |      string   |  是  |             条目数 默认5                |
 
 **响应**
 
