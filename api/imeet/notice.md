@@ -9,6 +9,7 @@
 |  333333  |    动态消息环信id    |
 | ADD:FRIEND:APPLY   |  透传消息：添加好友   |
 | UPDATE:GROUP:NOTIFY |    透传消息：修改社群信息  |
+| PASS:FRIEND:APPLY |    透传消息：同意好友申请  |
 
 
 ## 消息列表
@@ -401,6 +402,70 @@
             "sender_id": 0,
             "created_at": "2019-07-03 11:31:35",/*时间*/
             "sender": null
+        },
+        /*转账成功消息*/
+        {
+            "id": 41,
+            "target_id": 5,
+            "body": {
+                "coin": "ore",/*转账代币类型: ore-矿石*/
+                "type": "transfer:success",/*转账成功*/
+                "title": "转账成功",/*标题*/
+                "amount": "1"/*支付金额*/
+            },
+            "target_type": "user",
+            "read_id": 20,
+            "sender_id": 3,
+            "created_at": "2019-07-17 14:42:21",
+            /*转账目标用户信息*/
+            "sender": {
+                "id": 3,
+                "name": "eric",
+                "avatar": null,
+                "sex": 0,
+                "number": null,
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        }
+        /*收到转账消息*/
+        {
+            "id": 44,
+            "target_id": 5,
+            "body": {
+                "coin": "ore",/*收到转账代币类型: ore-矿石*/
+                "type": "received:transfer",/*收到转账*/
+                "title": "你收到一笔转账",/*标题*/
+                "amount": "1"/*收入金额*/
+            },
+            "target_type": "user",
+            "read_id": 23,
+            "sender_id": 5,
+            "created_at": "2019-07-17 14:44:00",
+            /*转账人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
         }
     ]
 }
