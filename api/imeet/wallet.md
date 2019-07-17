@@ -47,6 +47,7 @@
 | amount | string |  是  |  转账金额 |
 | pay_pass | string |  是  | 支付密码 |
 | user | int |  是  | 目标用户  |
+| remark | string |  否  | 转账留言  |
 
 **响应**
 
