@@ -653,7 +653,7 @@
 | group_id | integer |  是  | 分组ID |
 | lookme | integer |  是  | 不让他/她看我动态：0-否 1-是 |
 | remark | string |  否  | 验证信息 |
-| user_id | integer |  是  | 用户id |
+| numer | string |  是  | 用户IMeet账号 |
 
 **路径**
 
@@ -681,7 +681,7 @@
 
 |  名称  |  类型  | 必须 | 说明 |
 | :----: | :----: | :--: | :-----: |
-| users | array |  是  | 目标用户,格式 `[2, 3, 4]` |
+| numbers | array |  是  | 用户Imeet账号集合,格式 `[2123213, 3123123, 4123213]` |
 
 **路径**
 
