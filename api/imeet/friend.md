@@ -653,7 +653,7 @@
 | group_id | integer |  是  | 分组ID |
 | lookme | integer |  是  | 不让他/她看我动态：0-否 1-是 |
 | remark | string |  否  | 验证信息 |
-| numer | string |  是  | 用户IMeet账号 |
+| number | string |  是  | 用户IMeet账号 |
 
 **路径**
 
