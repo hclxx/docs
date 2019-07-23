@@ -63,7 +63,8 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "token": "xxxxxxxxxx..."
+        "token": "xxxxxxxxxx...",
+        "sync_status": true /*同步老DAPP资产状态 false-未同步 true-同步*/
     }
 }
 ```
