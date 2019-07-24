@@ -11,6 +11,10 @@
 | UPDATE:GROUP:NOTIFY |    透传消息：修改社群信息  |
 | PASS:FRIEND:APPLY |    透传消息：同意好友申请  |
 | DELETE:FRIEND |    透传消息：删除好友通知  扩展字段 `body` 为目标用户 `id` |
+| ADD:TOTAL:SILENCE   |  透传消息：群内全员设置禁言   |
+| DELETE:TOTAL:SILENCE   |  透传消息：群内全员取消禁言   |
+| ADD:PART:SILENCE   |  透传消息：批量设置禁言   `body` 为目标用户 `id`|
+| DELETE:PART:SILENCE   |  透传消息：取消禁言设置  `body` 为目标用户 `id` |
 
 
 ## 消息列表
