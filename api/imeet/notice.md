@@ -474,11 +474,12 @@
             "id": 310,
             "target_id": 10,
             "body": {
-                "type": "report:reject",
-                "content": {
-                    "target_id": 88476767813633,/*id 投诉目标ID*/
-                    "target_type": "group",/*投诉类型:user-用户 task-任务 dynamic-动态 group-群组*/
-                    "reason": "驳回原因"
+                "type": "report:pass",
+                "report_info": {
+                    "reason": "投诉被驳回",
+                    "content": "用户您好，您投诉的内容已通过审!请等待处理结果，感谢您的支持和反馈",/*内容*/
+                    "target_id": 88655674802178,
+                    "target_type": "group"/*投诉类型:user-用户 task-任务 dynamic-动态 group-群组*/
                 }
             },
             "target_type": "report",
@@ -491,12 +492,13 @@
         {
             "id": 309,
             "target_id": 11,
-           "body": {
+            "body": {
                 "type": "report:pass",
-                "content": {
-                    "target_id": 88476767813633,/*id 投诉目标ID*/
-                    "target_type": "group",/*投诉类型:user-用户 task-任务 dynamic-动态 group-群组*/
-                    "reason": null
+                "report_info": {
+                    "reason": null,
+                    "content": "用户您好，您投诉的内容已通过审!请等待处理结果，感谢您的支持和反馈",
+                    "target_id": 88655674802178,
+                    "target_type": "group"
                 }
             },
             "target_type": "report",
