@@ -474,7 +474,7 @@
             "id": 310,
             "target_id": 10,
             "body": {
-                "type": "report:pass",
+                "type": "report:reject",
                 "report_info": {
                     "reason": "投诉被驳回",
                     "content": "用户您好，您投诉的内容已通过审!请等待处理结果，感谢您的支持和反馈",/*内容*/
