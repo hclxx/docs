@@ -468,7 +468,43 @@
                     "next_name": "白银"
                 }
             }
-        }
+        },
+        /*投诉被驳回*/
+        {
+            "id": 310,
+            "target_id": 10,
+            "body": {
+                "type": "report:reject",
+                "content": {
+                    "target_id": 88476767813633,/*id 投诉目标ID*/
+                    "target_type": "group",/*投诉类型:user-用户 task-任务 dynamic-动态 group-群组*/
+                    "reason": "驳回原因"
+                }
+            },
+            "target_type": "report",
+            "read_id": 482,
+            "sender_id": 0,
+            "created_at": "2019-07-26 13:54:40",
+            "sender": null
+        },
+        /*投诉被处理*/
+        {
+            "id": 309,
+            "target_id": 11,
+           "body": {
+                "type": "report:pass",
+                "content": {
+                    "target_id": 88476767813633,/*id 投诉目标ID*/
+                    "target_type": "group",/*投诉类型:user-用户 task-任务 dynamic-动态 group-群组*/
+                    "reason": null
+                }
+            },
+            "target_type": "report",
+            "read_id": 481,
+            "sender_id": 0,
+            "created_at": "2019-07-26 13:54:34",
+            "sender": null
+        },
     ]
 }
 ```
