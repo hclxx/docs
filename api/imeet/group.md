@@ -392,22 +392,53 @@
     "data": {
         "conditions": [
             {
-                "name": "实名认证",/*条件名称*/
-                "status": true,/*完成状态*/
-                "key": "certification"/*标示 方便客户端做引导跳转使用*/
+                "key": "invite",/*标示 方便客户端做引导跳转使用*/
+                "name": "直接推荐注册用户5人",/*条件名称*/
+                "extra": {
+                    "num": 5
+                },
+                "rate": "0/3",/*完成进度*/
+                "status": false,/*完成状态*/
             },
             {
-                "name": "自身等级达到5级",
-                "status": true,
-                "key": "level"
+                "key": "level",
+                "name": "链乎等级达到白金",
+                "extra": {
+                    "level": 4
+                },
+                "rate": "",
+                "status": false
             },
             {
-                "name": "邀请注册至少5名好友建立的社群人数不低于200人",
-                "status": true,
-                "key": "invite"
+                "key": "invite:group",
+                "name": "直接推荐的注册用户中至少有30人成功创建社群",
+                "extra": {
+                    "num": 30
+                },
+                "rate": "0/30",
+                "status": false
+            },
+            {
+                "key": "invite:group:member",
+                "name": "至少有3个社群符合每个群超过1人",
+                "extra": {
+                    "num": 3,
+                    "members": 1
+                },
+                "rate": "0/3",
+                "status": false
+            },
+            {
+                "key": "invite:user:member",
+                "name": "推荐用户创建的社群总人数达到200人",
+                "extra": {
+                    "num": 200
+                },
+                "rate": "0/200",
+                "status": false
             }
         ],
-        "status": true /*是否能创建状态*/
+        "status": false
     }
 }
 ```
