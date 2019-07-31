@@ -395,46 +395,46 @@
                 "key": "invite",/*标示 方便客户端做引导跳转使用*/
                 "name": "直接推荐注册用户5人",/*条件名称*/
                 "extra": {
-                    "num": 5
+                    "rate": 0 ,/*已完成数量*/
+                    "num": 5  /*总要求数量*/
                 },
-                "rate": "0/3",/*完成进度*/
                 "status": false,/*完成状态*/
             },
             {
                 "key": "level",
                 "name": "链乎等级达到白金",
                 "extra": {
+                    "rate": 0 ,
                     "level": 4
-                },
-                "rate": "",
+                },            
                 "status": false
             },
             {
                 "key": "invite:group",
                 "name": "直接推荐的注册用户中至少有30人成功创建社群",
                 "extra": {
+                    "rate": 0 ,
                     "num": 30
-                },
-                "rate": "0/30",
+                }, 
                 "status": false
             },
             {
                 "key": "invite:group:member",
                 "name": "至少有3个社群符合每个群超过1人",
                 "extra": {
+                    "rate": "0/3",
                     "num": 3,
                     "members": 1
-                },
-                "rate": "0/3",
+                },       
                 "status": false
             },
             {
                 "key": "invite:user:member",
                 "name": "推荐用户创建的社群总人数达到200人",
                 "extra": {
+                    "rate": "0/200",
                     "num": 200
                 },
-                "rate": "0/200",
                 "status": false
             }
         ],
