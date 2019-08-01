@@ -80,6 +80,7 @@
             "avatar": "20190629154638713.png",
             "describe": "",
             "member_count": 1,
+            "join_status": 1,/*0-不呈现操作 1-可加入 2-已加入*/
             "member": []
         }
     ]

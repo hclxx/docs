@@ -322,6 +322,15 @@
                 "member_count": 5/*当前成员数*/
             }
         ],
+        /*用户已加入的社群列表*/
+        "has_joined_groups": [
+            {
+                "id": 86398924292097,/*群id*/
+                "name": "我的第一个群",/*群名称*/
+                "avatar": null,/*头像*/
+                "member_count": 5/*当前成员数*/
+            }
+        ],
         /*社区下社群列表 当 `type` 为 `community` 时 `groups` 字段存在 */
          "groups": [
             {
