@@ -17,7 +17,7 @@
 | :----: | :----: | :--: | :----: |
 | offset | int |  是  | 偏移量 默认 0 |
 | limit | int |  是  | 条目数 默认 20 |
-| type | string |  否  | 类型:`tag`-用户标签 `dynamic`-动态 |
+| type | string |  否  | 类型:`tag`-用户标签 `dv`-大咖用户 |
 
 **响应**
 
@@ -32,7 +32,6 @@
             "id": 3,
             "name": "eric",
             "avatar": null,
-            "apply_status": false,/*type 为 dynamic 才会存在此字段 好友申请状态: true-申请 false-未申请*/
             "sex": 0
         },
         {
