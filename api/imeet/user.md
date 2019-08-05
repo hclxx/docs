@@ -900,6 +900,53 @@
 }
 ```
 
+## 用户列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/users`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| limit | int |  是  | 手机号 |
+| offset | int |  是  | 验证码 |
+| type | string |  是  | dv-大咖 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 3,
+            "name": "351057",
+            "sex": 0,
+            "avatar": null,
+            "big_name": 1,
+            "number": null,
+            "grade": {
+                "name": "青铜",
+                "level": "1",
+                "icon": "NULL",
+                "small_icon": "NULL",
+                "min": 0,
+                "max": 500,
+                "next_name": "白银"
+            }
+        }
+    ]
+}
+```
 
 
 
