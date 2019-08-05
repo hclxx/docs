@@ -63,6 +63,8 @@
 | offset | int |  是  | 偏移量 默认 0 |
 | limit | int |  是  | 条目数 默认 20 |
 | type | string |  否  | 类型:`group`-社群 `community`-社区 |
+| name | string |  否  | 社区(群)名称  支持模糊查询 |
+| sign | string |  否  | `recommend` 推荐  `excellent` 优秀  `from` 官方  查询全部改字段不传或者为空 |
 
 **响应**
 
@@ -79,6 +81,9 @@
             "number": "21831965",
             "avatar": "20190629154638713.png",
             "describe": "",
+            "from": 2,/*来源:1-用户自身创建,2-后台创建,3-第三方创建*/
+            "recommend": 1, /*1-推荐 0-未推荐*/
+            "excellent": 1,/*1-优秀社区 0-非优秀*/
             "member_count": 1,
             "join_status": 1,/*0-不呈现操作 1-可加入 2-已加入*/
             "member": []
