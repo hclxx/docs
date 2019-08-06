@@ -78,7 +78,8 @@ function getLypinAppSider(title, introduction) {
         "file",
         "share",
         "ore",
-        "juhe"
+        "juhe",
+        "imeet"
       ]
     }
   ];
