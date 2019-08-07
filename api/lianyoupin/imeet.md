@@ -91,7 +91,7 @@
 
 **路径**
 
-`/api/v1/imeet/tanrs`
+`/api/v1/imeet/trans`
 
 **参数**
 
