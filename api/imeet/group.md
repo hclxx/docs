@@ -415,8 +415,9 @@
                 "key": "level",
                 "name": "链乎等级达到白金",
                 "extra": {
-                    "rate": 0 ,
-                    "level": 4
+                    "level": 4,
+                    "num": 5000,/*矿力总量*/
+                    "rate": 158,/*当前矿力*/
                 },            
                 "status": false
             },
