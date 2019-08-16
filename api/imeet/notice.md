@@ -12,6 +12,7 @@
 | PASS:FRIEND:APPLY |    透传消息：同意好友申请  |
 | DELETE:FRIEND |    透传消息：删除好友通知  扩展字段 `body` 为目标用户 `id` |
 | SILENCE   |  透传消息：群内设置禁言   |
+| group:quitCommunity   |  消息通知：社群退出社区   |
 
 
 ## 消息列表
