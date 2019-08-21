@@ -1,6 +1,6 @@
-# iMeet
+# iFuture2
 
-## 绑定 iMeet 账号
+## 绑定 iFuture2 账号
 
 **方式**
 
@@ -8,14 +8,15 @@
 
 **路径**
 
-`/api/v1/imeet/bind`
+`/api/v1/ifuture2/bind`
 
 **参数**
 
 |   名称   |  类型  | 必须 |     说明     |
 | :------: | :----: | :--: | :----------: |
-|  mobile  | string |  是  | imeet 账号 |
-| password | string |  是  | imeet 密码 |
+|  mobile  | string |  是  | ifuture2 账号 |
+| password | string |  是  | ifuture2 密码 |
+| session_id | string |  是  | ifuture2 密码 |
 | captcha | string |  是  | 短信验证码 |
 
 **响应**
@@ -30,7 +31,7 @@
 }
 ```
 
-## 解除 iMeet 账号
+## 解除 iFuture2 账号
 
 **方式**
 
@@ -38,12 +39,13 @@
 
 **路径**
 
-`/api/v1/imeet/unbind`
+`/api/v1/ifuture2/unbind`
 
 **参数**
 
 |   名称   |  类型  | 必须 |     说明     |
 | :------: | :----: | :--: | :----------: |
+|  mobile  | string |  是  | ifuture2 账号 |
 
 **响应**
 
@@ -57,7 +59,7 @@
 }
 ```
 
-## 获取 imeet 用户信息
+## 获取 ifuture2 用户信息
 
 **方式**
 
@@ -65,7 +67,7 @@
 
 **路径**
 
-`/api/v1/imeet/user`
+`/api/v1/ifuture2/user`
 
 **响应**
 
@@ -76,8 +78,8 @@
   "msg": "获取成功",
   "code": 0,
   "data": {
-    "username": "泥石流", //imeet昵称
-    "mobile": "13547899124", //imeet账号
+    "username": "泥石流", //ifuture2昵称
+    "mobile": "13547899124", //ifuture2账号
     "balance": "997.000000" //矿石余额
   }
 }
@@ -91,7 +93,7 @@
 
 **路径**
 
-`/api/v1/imeet/trans`
+`/api/v1/ifuture2/trans`
 
 **参数**
 
@@ -108,7 +110,11 @@
 {
   "msg": "转入成功",
   "code": 0,
-  "data": null
+  "data": {
+    "uid": "1", //用户ID
+    "mobile ": "13547899124", //ifuture 账号
+    "balance ": "997.0000" //矿石余额
+  }
 }
 ```
 
@@ -120,14 +126,13 @@
 
 **路径**
 
-`/api/v1/imeet/sms`
+`/api/v1/ifuture2/sms`
 
 **参数**
 
 | 名称 | 类型 | 必须 |   说明   |
 | :--: | :--: | :--: | :------: |
 | mobile  | string  |  是  | 手机号 |
-| scene  | string  |  是  | 默认值为：third_bind |
 
 **响应**
 
@@ -137,6 +142,8 @@
 {
     "msg": "请求成功",
     "code": 0,
-    "data":null
+    "data": {
+        "session_id": "dsadasdasdsa"/*会话id*/
+    }
 }
 ```

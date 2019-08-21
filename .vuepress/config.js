@@ -79,7 +79,8 @@ function getLypinAppSider(title, introduction) {
         "share",
         "ore",
         "juhe",
-        "imeet"
+        "imeet",
+        "ifuture2"
       ]
     }
   ];
