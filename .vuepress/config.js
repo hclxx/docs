@@ -68,7 +68,6 @@ function getLypinAppSider(title, introduction) {
         "message",
         "yz-auth",
         "wallet",
-        "ifuture",
         "discounts",
         "ad",
         "application",
@@ -79,8 +78,7 @@ function getLypinAppSider(title, introduction) {
         "share",
         "ore",
         "juhe",
-        "imeet",
-        "ifuture2"
+        "bind-apps"
       ]
     }
   ];
