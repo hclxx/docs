@@ -1,5 +1,48 @@
 # iFuture2
 
+## 链优品绑定生态应用列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`api/v1/bind`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "bind": 0,/*0-未绑定 1-已绑定*/
+            "name": "",
+            "phone": "",
+            "from": "iMeet"
+        },
+        {
+            "bind": 0,
+            "name": "",
+            "phone": "",
+            "from": "iFuture1"
+        },
+        {
+            "bind": 1,
+            "name": "BWIN0002",
+            "phone": "17602915225",
+            "from": "iFuture2"
+        }
+    ]
+}
+
+```
+
+
 ## 绑定 iFuture2 账号
 
 **方式**
