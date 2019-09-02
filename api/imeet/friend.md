@@ -803,6 +803,28 @@
 }
 ```
 
+## 申请阅读
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/friend/apply/{id}/read`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
+
 ## 黑名单列表
 
 **方式**
