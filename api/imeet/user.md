@@ -670,7 +670,17 @@
             "obtain_like_count": 3,/*被点赞数*/
             "extend": null/*扩展字段*/
         },
-        "tags": []
+        "tags": [],
+        /*屏蔽信息*/
+        "shielding": {
+            "id": 1,
+            "user_id": 4,
+            "target_user_id": 5,
+            "look_him": 0, /*不看他动态 0-否 1-是*/
+            "look_me": 0,/*不让他看我动态 0-否 1-是*/
+            "created_at": null,
+            "updated_at": null
+        }
     }
 }
 ```
