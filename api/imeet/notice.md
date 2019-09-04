@@ -13,6 +13,7 @@
 | DELETE:FRIEND |    透传消息：删除好友通知  扩展字段 `body` 为目标用户 `id` |
 | SILENCE   |  透传消息：群内设置禁言   |
 | group:quitCommunity   |  消息通知：社群退出社区   |
+| plaza:submit:reject   |  消息通知：驳回广场任务提交   |
 
 
 ## 消息列表
@@ -506,6 +507,25 @@
             "read_id": 481,
             "sender_id": 0,
             "created_at": "2019-07-26 13:54:34",
+            "sender": null
+        },
+         /*驳回广场任务提交*/
+        {
+            "id": 10,
+            "target_id": 12,
+            "body": {
+                "type": "plaza:submit:reject",
+                "report_info": {
+                    "reason": null,
+                    "content": "用户您好，您提交的广场任务《xxx》未通过审核，驳回原因: xxx。",
+                    "target_id": 13,
+                    "target_type": "task"
+                }
+            },
+            "target_type": "task",
+            "read_id": 481,
+            "sender_id": 0,
+            "created_at": "2019-09-04 13:54:34",
             "sender": null
         },
     ]
