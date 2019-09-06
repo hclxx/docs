@@ -60,7 +60,10 @@
             "target_user": {
                 "id": 3,
                 "name": "eric",
-                "avatar": null
+                "avatar": null,
+                "sex": 1,
+                "number": "123",
+                "big_name": 1
             }
         }
     ]
