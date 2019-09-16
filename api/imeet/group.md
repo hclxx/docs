@@ -1266,6 +1266,8 @@
 | status | int |  是  |     审核状态: 1-通过 2-拒绝 |
 | read_id | int |  是  |     消息read_id |
 | group_ids | array |  否  |    审核社群加入社区必传 允许通过的社群id集合 |
+| allow_apply | int |  否  | 拒绝填写必须 拒绝在申请: 0-允许 1-不允许 |
+| reason | string |  否  | 拒绝填写必须 拒绝理由|
 
 **响应**
 
