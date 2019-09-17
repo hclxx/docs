@@ -701,33 +701,30 @@
     "data": {
         "rules": [
             {
-                "id": 1,                    //  升级配置id
-                "level": 2,                 //  升级配置对应的等级
-                "max_members": 1000,        //  社群成员上限
-                "max_admins": 10,           //  社群管理员上限
-                "coin": "ore",              //  代币类型
-                "price": 1000               //  价格
+                "id": 6,
+                "level": 2,
+                "max_members": 1000,/*成员上限*/
+                "max_admins": 10,/*管理员上限*/
+                "price": {
+                    "ct": "100",/*矿石价格*/
+                    "cny": "10"/*人民币价格单位y元*/
+                }
             },
             {
-                "id": 2,
+                "id": 7,
                 "level": 3,
                 "max_members": 1500,
                 "max_admins": 15,
-                "coin": "ore",
-                "price": 1500
-            },
-            {
-                "id": 3,
-                "level": 4,
-                "max_members": 2000,
-                "max_admins": 20,
-                "coin": "ore",
-                "price": 2000
+                "price": {
+                    "ct": "200",
+                    "cny": "20"
+                }
             }
         ],
         "desc": {
-             "upgrade_desc": "this is upgrade rule",       //  升级社群规则描述
-             "transfer_desc": "this is transfer rule"      //  转让社群规则描述
+            "upgrade_desc": "社群升级描述",/*升级描述*/
+            "demotion_desc": "没钱我就要降你级了",/*降级描述*/
+            "transfer_desc": "社群转让描述"/*转让描述*/
         }
     }
 }

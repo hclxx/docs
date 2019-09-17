@@ -317,6 +317,8 @@
             "body": {
                 "type": "reject:add:community",/*申请加社区*/
                 "remark": "拒绝你的加入",/*拒绝备注*/
+                "reason": "拒绝原因",
+                "allow_apply": 0,/*是否允许在申请 0-允许 1-不允许*/
                 /*社区信息*/
                 "community": {
                     "id": 34,
@@ -354,6 +356,8 @@
                 "type": "apply:add:community",/*申请加入社区*/
                 "remark": null,/*申请备注*/
                 "status": 1,/*0-待处理 1-同意加群 2-拒绝*/
+                "reason": "拒绝原因",
+                "allow_apply": 0,/*是否允许在申请 0-允许 1-不允许*/
                 "group_ids": [22],
                 /*社区信息*/
                 "community": {
