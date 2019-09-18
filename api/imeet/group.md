@@ -737,7 +737,7 @@
 
 **路径**
 
-`/api/group/{id}/upgrade/ct`
+`/api/group/{groupId}/upgrade/ct`
 
 **参数**
 
@@ -766,7 +766,7 @@
 
 **路径**
 
-`/api/group/{id}/upgrade/cash`
+`/api/group/{groupId}/upgrade/cash`
 
 **参数**
 
@@ -815,6 +815,32 @@
             "order_info": ""
         },
         "order_no": "12312321"
+    }
+}
+```
+
+## 现金升级群查询支付状态
+
+**方式**
+
+`get`
+
+**路径**
+
+`/api/api/group/{groupId}/upgrade/{order_no}/status`
+
+**响应**
+
+`Status code 200`
+
+`支付宝支付响应`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "status": 0/*订单状态: 0-未支付 1-支付成功*/
     }
 }
 ```
