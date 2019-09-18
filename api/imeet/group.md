@@ -758,6 +758,68 @@
 }
 ```
 
+## 现金升级社群
+
+**方式**
+
+`post`
+
+**路径**
+
+`/api/group/{id}/upgrade/cash`
+
+**参数**
+
+| 名称  |  类型  | 必须 |              说明              |
+| :---: | :----: | :--: | :----------------------------: |
+| upgrade_id| int |  是  | 升级社群配置id |
+| pay_pass | string |  是  | 用户支付密码   |
+| pay_mode | string |  是  | 支付方式，可选 `wxpay` `alipay`   |
+
+**响应**
+
+`Status code 200`
+
+`支付宝支付响应`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "alipay": {
+            "order_info": "xxxxxxxxx"/*支付宝支付参数*/
+        },
+        "order_no": "12321321312",/*订单号*/
+        "wxpay": {}
+    }
+}
+```
+
+`微信支付响应`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "wxpay": {
+            "appid": "123123",
+            "partnerid": "123213",
+            "prepayid": "12321",
+            "package": "Sign=WXPay",
+            "noncestr": "12321",
+            "timestamp": "12321",
+            "sign": "12312"
+        },
+        "alipay": {
+            "order_info": ""
+        },
+        "order_no": "12312321"
+    }
+}
+```
+
 ## 社群/社区成员列表
 
 **方式**
