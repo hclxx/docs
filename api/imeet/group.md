@@ -681,7 +681,7 @@
 
 **路径**
 
-`/api/group/upgrade/rule`
+`/api/group/:id/upgrade/rule`
 
 **参数**
 
@@ -725,6 +725,12 @@
             "upgrade_desc": "社群升级描述",/*升级描述*/
             "demotion_desc": "没钱我就要降你级了",/*降级描述*/
             "transfer_desc": "社群转让描述"/*转让描述*/
+        },
+        "group": {
+            "id": 12312321,
+            "maxmembers": 500,/*最大成员数*/
+            "level": 1,/*当前等级*/
+            "expired_at": null/*过期时间 null 未开通过*/
         }
     }
 }
