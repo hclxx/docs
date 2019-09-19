@@ -532,6 +532,27 @@
             "created_at": "2019-09-04 13:54:34",
             "sender": null
         },
+        /*社群升级特权即将过期通知*/
+        {
+            "id": 3,
+            "target_id": 0,
+            "body": {
+                "type": "group:upgrade:expired",
+                "group": {
+                    "id": 1,
+                    "day": 0,
+                    "name": "社群啊",
+                    "type": "group",
+                    "level": 1
+                },
+                "content": "您的社群「社群啊」升级到LV1等级特权即将到期，为保障您部分群功能正常使用，请及时续费!"
+            },
+            "target_type": null,
+            "read_id": 3,
+            "sender_id": 0,
+            "created_at": "2019-09-19 11:00:00",
+            "sender": null
+        },
     ]
 }
 ```
