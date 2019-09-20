@@ -245,7 +245,7 @@
     "msg": "ok",
     "code": 0,
     "data": [
-        /* 申请加群 */
+        /* 自主申请加群 */
         {
             "id": 1,
             "target_id": 34,
@@ -259,7 +259,7 @@
                     "id": 34,
                     "name": "Z63482创建的群聊",
                     "avatar": null
-                }
+                },
             },
             "target_type": "group",
             "sender_id": 5,
@@ -274,80 +274,7 @@
                 "number": "1295634"
             }
         },
-        /* 拒绝加群申请 */
-        {
-            "id": 1,
-            "target_id": 34,
-            "body": {
-                "type": "reject:add:group",/*申请加群*/
-                "remark": "拒绝你的加入",/*拒绝备注*/
-                /*群信息*/
-                "group": {
-                    "id": 34,
-                    "name": "Z63482创建的群聊",
-                    "avatar": null
-                }
-            },
-            "target_type": "group",
-            "sender_id": 5,
-            "read_id": 1,
-            "created_at": "2019-06-28 18:28:44",
-            /*审核人信息*/
-            "sender": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null,
-                "sex": 0,
-                "number": "1295634",
-                "grade": {
-                    "name": "青铜",
-                    "level": "1",
-                    "icon": "NULL",
-                    "small_icon": "NULL",
-                    "min": 0,
-                    "max": 500,
-                    "next_name": "白银"
-                }
-            }
-        },
-        /* 拒绝加入社区申请 */
-        {
-            "id": 1,
-            "target_id": 34,
-            "body": {
-                "type": "reject:add:community",/*申请加社区*/
-                "remark": "拒绝你的加入",/*拒绝备注*/
-                "reason": "拒绝原因",
-                "allow_apply": 0,/*是否允许在申请 0-允许 1-不允许*/
-                /*社区信息*/
-                "community": {
-                    "id": 34,
-                    "name": "Z63482创建的群聊",
-                    "avatar": null
-                }
-            },
-            "target_type": "group",
-            "sender_id": 5,
-            "read_id": 1,
-            "created_at": "2019-06-28 18:28:44",
-            /*审核人信息*/
-            "sender": {
-                "id": 5,
-                "name": "Z63482",
-                "avatar": null,
-                "sex": 0,
-                "number": "1295634",
-                "grade": {
-                    "name": "青铜",
-                    "level": "1",
-                    "icon": "NULL",
-                    "small_icon": "NULL",
-                    "min": 0,
-                    "max": 500,
-                    "next_name": "白银"
-                }
-            }
-        },
+        /* 自主申请加社区 */
         {
             "id": 18,
             "target_id": 11,
@@ -356,7 +283,6 @@
                 "type": "apply:add:community",/*申请加入社区*/
                 "remark": null,/*申请备注*/
                 "status": 1,/*0-待处理 1-同意加群 2-拒绝*/
-                "reason": "拒绝原因",
                 "allow_apply": 0,/*是否允许在申请 0-允许 1-不允许*/
                 "group_ids": [22],
                 /*社区信息*/
@@ -386,6 +312,220 @@
                 "sex": 0,
                 "number": null,
                 /*申请人等级信息*/
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
+        /* 邀请加入社群 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "from": null,/*来自：邀请/搜索*/
+                "type": "invite:apply:add:group",/*申请加群*/
+                "remark": "申请加入社区",/*个人介绍*/
+                "status": 0,/*0-待处理 1-同意加群 2-拒绝*/
+                /*群信息*/
+                "community": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                },
+                "inviter_name": "邀请人名称",/*邀请人名称*/
+                "inviter_id": 111,/*邀请人id*/
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*申请人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634"
+            }
+        },
+        /* 邀请加入社区 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "from": null,/*来自：邀请/搜索*/
+                "type": "invite:apply:add:community",/*申请加群*/
+                "remark": "申请加入社区",/*个人介绍*/
+                "status": 0,/*0-待处理 1-同意加群 2-拒绝*/
+                /*群信息*/
+                "community": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                },
+                "inviter_name": "邀请人名称",/*邀请人名称*/
+                "inviter_id": 111,/*邀请人id*/
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*申请人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634"
+            }
+        },
+        /* 拒绝自重加入社群申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:apply:add:group",/*拒绝自主申请加群*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
+                "reason": "拒绝的理由",/*字段存在并且不为空做呈现*/
+                /*群信息*/
+                "group": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                }
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*审核人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
+        /* 拒绝自主加入社区申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:apply:add:community",/*拒绝自主申请加群*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
+                "reason": "拒绝原因",
+                /*社区信息*/
+                "community": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                }
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*审核人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
+       /* 拒绝邀请加入社群群申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:invite:apply:add:group",/*拒绝自主申请加群*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
+                "reason": "拒绝的理由",/*字段存在并且不为空做呈现*/
+                /*群信息*/
+                "group": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                },
+                "inviter_name": "邀请人名称",/*邀请人名称*/
+                "inviter_id": 1,/*邀请人id*/
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*审核人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
+                "grade": {
+                    "name": "青铜",
+                    "level": "1",
+                    "icon": "NULL",
+                    "small_icon": "NULL",
+                    "min": 0,
+                    "max": 500,
+                    "next_name": "白银"
+                }
+            }
+        },
+        /* 拒绝邀请加入社区申请 */
+        {
+            "id": 1,
+            "target_id": 34,
+            "body": {
+                "type": "reject:invite:apply:add:community",/*拒绝邀请申请加群*/
+                "remark": "拒绝你的加入",/*拒绝备注*/
+                "reason": "拒绝原因",
+                /*社区信息*/
+                "community": {
+                    "id": 34,
+                    "name": "Z63482创建的群聊",
+                    "avatar": null
+                },
+                "inviter_name": "邀请人名称",/*邀请人名称*/
+                "inviter_id": 1,/*邀请人id*/
+            },
+            "target_type": "group",
+            "sender_id": 5,
+            "read_id": 1,
+            "created_at": "2019-06-28 18:28:44",
+            /*审核人信息*/
+            "sender": {
+                "id": 5,
+                "name": "Z63482",
+                "avatar": null,
+                "sex": 0,
+                "number": "1295634",
                 "grade": {
                     "name": "青铜",
                     "level": "1",
