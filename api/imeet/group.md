@@ -754,7 +754,11 @@
 {
     "msg": "升级成功",
     "code": 0,
-    "data": null
+    "data": {
+        "status": 0,/*订单状态: 0-未支付 1-支付成功*/
+        "level": 2,/*升级后的群等级*/
+        "expired_at": "2020-09-12 12:22:11",/*过期时间*/
+    }
 }
 ```
 
@@ -827,7 +831,7 @@
 
 **路径**
 
-`/api/api/group/{groupId}/upgrade/{order_no}/status`
+`/api/group/{groupId}/upgrade/{order_no}/status`
 
 **响应**
 
@@ -840,7 +844,9 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "status": 0/*订单状态: 0-未支付 1-支付成功*/
+        "status": 0,/*订单状态: 0-未支付 1-支付成功*/
+        "level": 2,/*升级后的群等级*/
+        "expired_at": "2020-09-12 12:22:11",/*过期时间*/
     }
 }
 ```
