@@ -77,9 +77,10 @@
 | :----: | :----: | :--: | :----: |
 | limit | int |  是  | 条目数 |
 | offset | int |  是  | 偏移量 |
+| target_id | strig |  否  | 目标id  |
 | coin | strig |  是  | 流水类型:ct-矿石  |
 | action | int |  是  | 收支类型:0-所有 1-收入 2-支出  |
-| type | string |  否  | 交易类型:transfer-转账记录  |
+| type | string |  否  | 交易类型:transfer-转账记录,upgrade:group-升级社群记录  |
 
 **响应**
 
