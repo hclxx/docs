@@ -103,7 +103,14 @@
             "coin": "ore",
             "action": 1,
             "status": 1,
-            "extend": null,
+            "extend": {
+                "pay_mode":"ctpay",/*支付方式ctpay-矿石支付 alipay-支付宝 wxpay-微信支付*/
+                "upgrade_id": 111,/*升级套餐ID*/
+                "upgrade_type":"year",/*套餐类型*/
+                "upgrade_level": 3,/*套餐等级*/
+                "start_date": "2019-01-01 11:20:23",/*有效开始日期*/
+                "end_date": "2019-01-01 11:20:23",/*有效结束日期*/
+            },
             "created_at": "2019-06-17 13:44:45",
             "updated_at": "2019-06-17 13:44:45",
             "user": {
