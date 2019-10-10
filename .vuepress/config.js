@@ -199,7 +199,8 @@ function getImeetAppSider(title, introduction) {
         "ore",
         "share-image",
         "config",
-        "news"
+        "news",
+        "bonus"
       ]
     }
   ];
