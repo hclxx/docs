@@ -15,6 +15,7 @@
 |  名称  |  类型  | 必须 | 说明 |
 | :----: | :----: | :--: | :-----------: |
 | pay_pass | string |  是  | 支付密码  |
+| amount | string |  是  | 红包金额  |
 | num | integer |  否  | 红包个数 仅当 `channel` 为 `group` 必填写 |
 | channel | string |  是  | 发放渠道: `personal`-个人 `group`-群 |
 | target_id | string |  是  | 目标ID，如  `channel` 为  `personal` 为用户id, 如  `channel` 为  `group` 是群id  |
