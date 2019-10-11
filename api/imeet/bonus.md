@@ -179,7 +179,7 @@
 
 **路径**
 
-`/api/bonus/received/records`
+`/api/bonus/records`
 
 **参数**
 
@@ -188,6 +188,7 @@
 | limit | integer |  是  | 条目数 默认20  |
 | offset | integer |  是  | 偏移量 |
 | year | string |  是  | 默认取当前时间年份 |
+| action | string |  是  | 动作: send-发出的 receive-收到的 |
 
 **响应**
 
@@ -195,120 +196,44 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 4,
-            "user_id": 4,
-            "amount": "50.00",/*金额 单位CT*/
-            "bonus_id": 6,
-            "created_at": "2019-10-10 13:45:58",/*时间*/
-            "bonus": {
-                "id": 6,
-                "user_id": 4,
-                "amount": "100.00",
-                "num": 2,/*红包总数*/
-                "receive_num": 1,/*已领取数量*/
-                "receive_amount": "50.00",/*已领取金额*/
-                "best_id": 0,
-                "target_id": 3,
-                "channel": "group",/*渠道: group-群 personal-个人*/
-                "type": "common",/*红包类型: common-普通红包 luck-拼手气红包*/
-                "coin": "ct", /*红包代币类型: ct-矿石*/
-                "remark": "恭喜发财，大吉大利",
-                "status": 0,/*状态： 0-代领取 1-已完成 2-已过期*/
-                "expired_at": "2019-10-10 13:45:58",
-                "created_at": "2019-10-10 13:45:28",
-                "updated_at": "2019-10-10 13:45:28",
-                /*红包发送人信息*/
-                "user": {
-                    "id": 4,
-                    "name": "11",
-                    "avatar": null,
-                    "sex": 0,
-                    "big_name": 0,
-                    "grade": {
-                        "name": "懵懂小白",
-                        "level": "1",
-                        "icon": "aptwckzeh.png",
-                        "small_icon": "tcacsimxf.png",
-                        "min": 0,
-                        "max": 100,
-                        "next_name": "晶莹玻璃"
-                    }
-                }
-            }
+    "id": 6,
+    "user_id": 4,
+    "amount": "100.00",/*红包总金额*/
+    "num": 2,/*红包总数*/
+    "receive_num": 1,/*已领取数量*/
+    "receive_amount": "50.00",/*已领取金额*/
+    "best_id": 0,
+    "target_id": 3,/*目标id*/
+    "channel": "group",/*渠道:group-群 personal-个人*/
+    "type": "common",/*类型： common-普通 luck-手气*/
+    "coin": "ct",
+    "remark": "恭喜发财，大吉大利",
+    "status": 0,/*0-未领取完 1-已领取完成 2-过期*/
+    "expired_at": "2019-10-10 13:45:58",
+    "created_at": "2019-10-10 13:45:28",/*发送红包时间*/
+    "updated_at": "2019-10-10 13:45:28",
+    "received_amount": "50.00",/*收到红包的金额 仅当 action 为 receive 才会存在该字段*/
+    "received_at": "2019-10-10 13:45:58",/*收到红包的时间 仅当 action 为 receive 才会存在该字段*/
+    /*红包发放人信息*/
+    "user": {
+        "id": 4,
+        "name": "11",
+        "avatar": null,
+        "sex": 0,
+        "big_name": 0,
+        "grade": {
+            "name": "懵懂小白",
+            "level": "1",
+            "icon": "aptwckzeh.png",
+            "small_icon": "tcacsimxf.png",
+            "min": 0,
+            "max": 100,
+            "next_name": "晶莹玻璃"
         }
-    ]
+    }
 }
 ```
 
-## 发放红包记录
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/api/bonus/send/records`
-
-**参数**
-
-|  名称  |  类型  | 必须 | 说明 |
-| :----: | :----: | :--: | :-----------: |
-| limit | integer |  是  | 条目数 默认20  |
-| offset | integer |  是  | 偏移量 |
-| year | string |  是  | 默认取当前时间年份 |
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-        "id": 6,
-        "user_id": 4,
-        "amount": "100.00",/*红包总额*/
-        "num": 2,/*红包总数*/
-        "receive_num": 1,/*已领取数量*/
-        "receive_amount": "50.00",/*已领取金额*/
-        "best_id": 0,
-        "target_id": 3,
-        "channel": "group",/*渠道: group-群 personal-个人*/
-        "type": "common",/*红包类型: common-普通红包 luck-拼手气红包*/
-        "coin": "ct", /*红包代币类型: ct-矿石*/
-        "remark": "恭喜发财，大吉大利",
-        "status": 0,/*状态： 0-代领取 1-已完成 2-已过期*/
-        "expired_at": "2019-10-10 13:45:58",
-        "created_at": "2019-10-10 13:45:28",
-        "updated_at": "2019-10-10 13:45:28",
-        /*红包发送人信息*/
-        "user": {
-            "id": 4,
-            "name": "11",
-            "avatar": null,
-            "sex": 0,
-            "big_name": 0,
-            "grade": {
-                "name": "懵懂小白",
-                "level": "1",
-                "icon": "aptwckzeh.png",
-                "small_icon": "tcacsimxf.png",
-                "min": 0,
-                "max": 100,
-                "next_name": "晶莹玻璃"
-            }
-        }
-        }
-    ]
-}
-```
 
 ## 红包统计
 
