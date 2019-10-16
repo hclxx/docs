@@ -200,7 +200,8 @@ function getImeetAppSider(title, introduction) {
         "share-image",
         "config",
         "news",
-        "bonus"
+        "bonus",
+        "activity"
       ]
     }
   ];
