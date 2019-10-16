@@ -44,41 +44,38 @@
         "updated_at": "2019-10-15 13:48:40",
         "rank": 1,/*当前用户当前排行*/
         "effective_num": 6,/*当前用户邀请到有限用户数*/
+        "regsiter_num": 123123,/**/
         "is_participate": true,/*是否参与*/
         "awards": [
             {
                 "id": 1,
-                "attr": "yjsq",/*奖励类型:yjsq-一键收取 ct-矿石*/
-                "title": "奖励11",/*奖励标题*/
-                "cate": "num",/*奖励分类: num-邀请数奖励,rank-排行奖励*/
+                "attr": "yjsq",
+                "title": "付费活动免费领取",
+                "cate": "num",/*奖励类型: num-邀请数 rank-排行*/
                 "total_num": 1000,
                 "receive_num": 1,
                 "activity_id": 1,
+                /*图标*/
                 "icon": {
-                    "mime": "image/jpeg",
-                    "width": 720,
-                    "height": 1280,
-                    "filename": "20190808104048749.jpg"
+                    "mime": "image/png",
+                    "width": 96,
+                    "height": 96,
+                    "filename": "2019/10/16/f6fe642ba4201270db7b8da9e647acf3.png"
                 },
-                "condition": [
-                    {
-                        "num": 5,/*邀请数*/
-                        "month": 1/*奖励个月数*/
-                    },
-                    {
-                        "num": 10,/*邀请数*/
-                        "month": 3/*奖励个月数*/
-                    },
-                    {
-                        "num": 20,/*邀请数*/
-                        "month": 6/*奖励个月数*/
-                    }
-                ],
                 "created_at": "2019-10-15 11:57:59",
-                "updated_at": "2019-10-15 16:15:58"
+                "updated_at": "2019-10-15 16:15:58",
+                "attr_name": "一键收取",/*奖励属性名称*/
+                /*总进度*/
+                "progress": [
+                    5,
+                    10,
+                    20
+                ],
+                "curr_progress": 6,/*当前进度*/
+                "status": 0/*状态: 0-再接再厉 1-待领取 2-已领取 3-还差一点*/
             },
             {
-                "id": 3,
+                "id": 2,
                 "attr": "ct",
                 "title": "奖励11",
                 "cate": "rank",
@@ -91,33 +88,11 @@
                     "height": 1280,
                     "filename": "20190808104048749.jpg"
                 },
-                "condition": {
-                    "valid_num": 5,
-                    "partin_rule": [
-                        {
-                            "num": 10000,
-                            "rank": "1",
-                            "type": "ranking"
-                        },
-                        {
-                            "num": 5000,
-                            "rank": "2",
-                            "type": "ranking"
-                        },
-                        {
-                            "num": 3000,
-                            "rank": "3",
-                            "type": "ranking"
-                        },
-                        {
-                            "num": 1000,
-                            "rank": "4,10",
-                            "type": "ranking:scope"
-                        }
-                    ]
-                },
                 "created_at": "2019-10-15 14:07:35",
-                "updated_at": "2019-10-15 16:31:54"
+                "updated_at": "2019-10-16 11:31:50",
+                "attr_name": "大额CT",/*奖励属性名称*/
+                "curr_rank": 1,/*当前排行*/
+                "status": 0
             }
         ]
     }
