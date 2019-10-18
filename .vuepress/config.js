@@ -122,7 +122,8 @@ function getLypAdminSider(title, introduction) {
         "certification",
         "ore",
         "recharge",
-        "coupon"
+        "coupon",
+        "token"
       ]
     }
   ];

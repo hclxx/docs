@@ -57,7 +57,7 @@
 
 `无`
 
-## 添加
+## 添加[变动]
 
 `admin/merchant`
 
@@ -74,6 +74,9 @@
 |  email   | string |  无  |  否  |  邮箱, phone 字段不存在时, 此字段不为空  |
 |  status  |  int   |  1   |  否  |             1: 正常 2: 禁用              |
 | password | string |  无  |  是  |                   密码                   |
+| role | string |  无  |  是  |                  角色: merchant-商户 project-项目方 |
+| token_id | integer |  无  |  是  | 通证id, `role` 为 `project` 必须 |
+| back_id | integer |  无  |  是  | 背景id,`role` 为 `project` 必须 |
 
 **SUCCESS 状态码**
 
