@@ -2,7 +2,7 @@
 
 ## 通证列表
 
-`/admin/users`
+`/admin/project-tokens`
 
 **请求方式**
 
@@ -55,7 +55,7 @@
 
 ## 通证添加
 
-`/admin/users`
+`/admin/project-tokens`
 
 **请求方式**
 
