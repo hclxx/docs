@@ -79,6 +79,7 @@ function getLypinAppSider(title, introduction) {
         "ore",
         "juhe",
         "bind-apps",
+        "token",
         "project-goods"
       ]
     }
