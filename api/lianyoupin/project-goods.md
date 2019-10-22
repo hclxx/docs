@@ -1,7 +1,7 @@
 # 项目方商品[新增]
 
 
-## 商品列表
+## 商品列表[现金新增]
 
 **方式**
 
@@ -9,16 +9,12 @@
 
 **路径**
 
-`/api/v1/project/goods`
+`/api/v1/project/items`
 
 **参数**
 
-|    名称    |  类型  | 必须 |                                         说明                                         |
-| :--------: | :----: | :--: | :----------------------------------------------------------------------------------: |
-|   limit    |  int   |  是  |                                    条目数 默认 10                                    |
-|   offset   |  int   |  是  |                                   偏移量 默认为 0                                    |
-|  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             ||
-| order_by |  string   |  排序  |                                       排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序                                        |
+无
+
 
 **响应**
 
@@ -31,23 +27,24 @@
     "data": [
         {
             "id": 3,
-            "name": "测试项目方",/*项目方名称*/
+            "name": "测试项目方",
             "back_id": 2,
             "goods": [
                 {
-                    "id": 2,
-                    "name": "耐克球鞋",/*商品名称*/
-                    "intro": "耐克球鞋",/*商品介绍*/
-                    "image": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg",/*商品图*/
-                    "stock_num": 0,/*库存: 0-售罄*/
-                    "price": "20.00000000",/*现金价格*/
+                    "id": 6,
+                    "name": "花花公子 高领毛衣 2019秋季新款",/*商品名称*/
+                    "image": "http://www.baidu.com",/*商品图*/
+                    "price": "100.00000000",/*商品价格*/
                     "token_award": {
-                        "token_award": "20",/*奖励的通证数量*/
-                        "token_symbol": "btc"/*通证符号*/
-                    }
+                        "token_award": "50",
+                        "token_symbol": "btc"
+                    },
+                    "limit_time": null,
+                    "currency": "cny",/*现金*/
+                    "stock_num": 61/*库存*/
                 }
             ],
-            /*背景图*/
+            /*背景*/
             "bgd": {
                 "id": 2,
                 "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg"
@@ -57,17 +54,25 @@
 }
 ```
 
-## 商品详情
+## 商品下单[现金新增]
 
-`GET`
+**方式**
+
+`POST`
 
 **路径**
 
-`/api/v1/project/goods/{id}`
+`/api/v1/project/items/{id}/order`
 
 **参数**
 
-无
+| 名称  | 类型 | 默认 | 必须 | 说明 |
+| :---: | :--: | :--: | :--: | :--: |
+| sku_id | int  |  无  |  是  | 商品 sku_id |
+| pay_type | string  |  无  |  是  | 支付类型: wxpay-微信 alipay-支付宝 |
+| consignee_id | int  |  无  |  是  | 收获地址id |
+| num | int  |  无  |  是  | 购买数量 |
+
 
 **响应**
 
@@ -75,75 +80,25 @@
 
 ```json
 {
-    "msg": "ok",
+    "msg": "",
     "code": 0,
     "data": {
-        "id": 1,
-        "name": "鼠标键盘",
-        "intro": "鼠标键盘",
-        "image": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg",
-        "skus": [
-            {
-                "id": 1,
-                "stock_num": 10,
-                "sales_num": 5,
-                "price": "100.00000000",
-                "sale_price": "10.00",
-                "image": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg",
-                "properties": "50",
-                "specs_properties": [
-                    {
-                        "p_id": 50,
-                        "s_id": 10,
-                        "p_name": "白色黑面",
-                        "s_name": "颜色"
-                    }
-                ],
-                "token_award": {
-                    "token_award": "20",
-                    "token_symbol": "btc"
-                },
-                "target_type": "goods",
-                "target_id": 1
-            }
-        ],
-        "images": [
-            {
-                "id": 1,
-                "filename": "https://img.yzcdn.cn/upload_files/2018/11/13/FnfnVa3bMngMOBUhDy_It8KjdwuW.jpg",
-                "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FnfnVa3bMngMOBUhDy_It8KjdwuW.jpg"
-            }
-        ],
-        "specs": [
-            {
-                "id": 1,
-                "name": "颜色",
-                "target_id": 1,
-                "target_type": "goods",
-                "properties": [
-                    {
-                        "id": 1,
-                        "target_type": "goods",
-                        "name": "红",
-                        "specs_id": 1
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "尺寸",
-                "target_id": 1,
-                "target_type": "goods",
-                "properties": [
-                    {
-                        "id": 2,
-                        "target_type": "goods",
-                        "name": "大",
-                        "specs_id": 2
-                    }
-                ]
-            }
-        ]
+      /*支付宝订单信息*/
+        "alipay": {
+            "order_info": "xxxx"
+        },
+        /*微信订单信息*/
+        "wxpay": {
+            "appid": "123123213213",
+            "partnerid": "2131231232",
+            "prepayid": "asdasd",
+            "package": "Sign=WXPay",
+            "noncestr": "asdsa",
+            "timestamp": 12321323,
+            "sign": "asdas"
+        },
+        /*订单号*/
+        "order_no": "19818"
     }
 }
 ```

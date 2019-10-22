@@ -32,7 +32,7 @@
 }
 ```
 
-## 商品列表
+## 商品列表[现金修改]
 
 **方式**
 
@@ -69,7 +69,11 @@
       "stock_num": 0,/*总库存:  0-售罄*/
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
-      "surplu_second": -76694 /*限购结束秒数*/
+      "surplu_second": -76694, /*限购结束秒数*/
+      "token_award": {
+        "token_award": "50",
+        "token_symbol": "btc"
+      },
     },
     {
       "id": 10,
@@ -80,13 +84,17 @@
       "stock_num": 0,/*总库存:  0-售罄*/
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": null,
-      "surplu_second": null
+      "surplu_second": null,
+      "token_award": {
+        "token_award": "50",
+        "token_symbol": "btc"
+      },
     }
   ]
 }
 ```
 
-## 商品详情
+## 商品详情[现金修改]
 
 `GET`
 
@@ -212,6 +220,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             },
@@ -232,6 +244,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             },
@@ -252,6 +268,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             },
@@ -292,6 +312,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             },
@@ -312,6 +336,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             },
@@ -332,6 +360,10 @@
                         "s_name": "颜色"
                     }
                 ],
+                "token_award": {
+                    "token_award": "50",
+                    "token_symbol": "btc"
+                },
                 "target_type": "item",
                 "target_id": 5
             }
