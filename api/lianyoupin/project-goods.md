@@ -142,3 +142,28 @@
     ]
 }
 ```
+
+## 检查订单状态接口
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/orders/{orderNo}/status`
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "status": 0 /*0-待支付 1-已支付*/
+    }
+}
+```
