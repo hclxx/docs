@@ -29,6 +29,7 @@
             "id": 3,
             "name": "测试项目方",
             "back_id": 2,
+            "avatar_id": 2,
             "items": [
                 {
                     "id": 6,
@@ -48,6 +49,11 @@
             "bgd": {
                 "id": 2,
                 "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg"
+            },
+            /*头像*/
+            "avatar": {
+                "id": 1,
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FnfnVa3bMngMOBUhDy_It8KjdwuW.jpg"
             }
         }
     ]
