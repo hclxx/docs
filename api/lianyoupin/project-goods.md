@@ -36,8 +36,8 @@
                     "image": "http://www.baidu.com",/*商品图*/
                     "price": "100.00000000",/*商品价格*/
                     "token_award": {
-                        "token_award": "50",
-                        "token_symbol": "btc"
+                        "token_award": "50",/*奖励的通证数量*/
+                        "token_symbol": "btc"/*奖励的通证符*/
                     },
                     "limit_time": null,
                     "currency": "cny",/*现金*/

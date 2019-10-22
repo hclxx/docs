@@ -44,12 +44,13 @@
 
 **参数**
 
-|    名称    |  类型  | 必须 |                                         说明                                         |
-| :--------: | :----: | :--: | :----------------------------------------------------------------------------------: |
-|   limit    |  int   |  是  |                                    条目数 默认 10                                    |
-|   offset   |  int   |  是  |                                   偏移量 默认为 0                                    |
-|  currency  | string |  是  |                             货币类型: comc-comc,ore-矿石                             ||
-| order_by |  string   |  排序  |                                       排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序                                        |
+|    名称    |  类型  | 必须 |  说明    |
+| :--------: | :----: | :--: | :----: |
+|   limit    |  int   |  是  | 条目数 默认 10 |
+|   offset   |  int   |  是  | 偏移量 默认为 0 |
+|  currency  | string |  是  | 货币类型: comc-comc,ore-矿石,cny-现金 |
+|  merchant_id  | int |  否  | 商户id |
+| order_by |  string   |  排序  | 排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序 |
 
 **响应**
 
@@ -71,8 +72,8 @@
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
       "surplu_second": -76694, /*限购结束秒数*/
       "token_award": {
-        "token_award": "50",
-        "token_symbol": "btc"
+        "token_award": "50",/*奖励的通证数量*/
+        "token_symbol": "btc"/*奖励的通证符*/
       },
     },
     {
