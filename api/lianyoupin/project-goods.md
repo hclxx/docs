@@ -108,3 +108,37 @@
     }
 }
 ```
+
+## 通证列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/tokens`
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "name": "比特币",/*通证名称*/
+            "icon": {
+                "id": 2,
+                "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg"/*通证图标*/
+            },
+            "symbol": "btc",/*通证符号*/
+            "balance": "10.00000000"/*通证余额*/
+        }
+    ]
+}
+```
