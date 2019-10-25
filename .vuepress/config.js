@@ -203,7 +203,8 @@ function getImeetAppSider(title, introduction) {
         "config",
         "news",
         "bonus",
-        "activity"
+        "activity",
+        "waithdrawal"
       ]
     }
   ];
