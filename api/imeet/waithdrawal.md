@@ -39,6 +39,22 @@
 | pay_pass | string |  是  |       支付密码               |
 | account_info | object |  是  |       账户信息              |
 
+**account_info**
+
+```json
+{
+    "sex": "", 
+    "city": "", 
+    "openid": "123123213", 
+    "country": "", 
+    "nickname": "", 
+    "province": "", 
+    "privilege": [], 
+    "headimgurl": ""
+}
+```
+
+
 **返回体**
 
 ```json
