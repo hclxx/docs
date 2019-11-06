@@ -84,6 +84,7 @@
         "receive_num": 1,/*已领取数量*/
         "received": false,/*是否领取: true-是 false-否*/
         "receive_amount": "13.50",/*已领取金额*/
+        "user_receive_amount": "0.11", /*用户领取的金额 未领取为 null */
         "best_id": 4,/*最佳手气用户id*/
         "target_id": 3,
         "channel": "group",/*发放渠道: group-群 personal-个人*/
@@ -214,7 +215,6 @@
     "updated_at": "2019-10-10 13:45:28",
     "received_amount": "50.00",/*收到红包的金额 仅当 action 为 receive 才会存在该字段*/
     "received_at": "2019-10-10 13:45:58",/*收到红包的时间 仅当 action 为 receive 才会存在该字段*/
-    "user_receive_amount": "0.11", /*用户领取的金额 未领取为 null */
     /*红包发放人信息*/
     "user": {
         "id": 4,
