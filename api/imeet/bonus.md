@@ -214,6 +214,7 @@
     "updated_at": "2019-10-10 13:45:28",
     "received_amount": "50.00",/*收到红包的金额 仅当 action 为 receive 才会存在该字段*/
     "received_at": "2019-10-10 13:45:58",/*收到红包的时间 仅当 action 为 receive 才会存在该字段*/
+    "user_receive_amount": "0.11", /*用户领取的金额 未领取为 null */
     /*红包发放人信息*/
     "user": {
         "id": 4,
