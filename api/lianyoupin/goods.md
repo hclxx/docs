@@ -50,7 +50,8 @@
 |   offset    |  int   |  是  |                           偏移量 默认为 0                            |
 |  currency   | string |  是  | 货币类型: comc-comc,ore-矿石,cny-现金 mix-混合(token+cny) token-通证 |
 | merchant_id |  int   |  否  |                               商户 id                                |
-|  order_by   | string | 排序 |      排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序       |
+|  order_by   | string |  否  |      排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序       |
+|    name     | string |  否  |                          名称筛选,模糊搜索                           |
 
 **响应**
 
@@ -82,7 +83,7 @@
               "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FoZuIPpBi2jzgcwUojmxJm0G5O0L.jpg" /*【新增】通证icon*/
             }
           }}
-      }
+      },
       "token_award": {
         "token_award": "50",/*奖励的通证数量*/
         "token_symbol": "btc"/*奖励的通证符*/
