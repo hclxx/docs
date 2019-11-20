@@ -70,24 +70,23 @@
       "price": "30.00000000" /*价格*/,
       "token_price": "0.00000000" /*【新增】通证价格，注意当支付类型为mix或token时该才存在有效价格*/,
       "power": 0 /*【新增】矿力奖励*/,
-      "stock_num": 0,/*总库存:  0-售罄*/
+      "stock_num": 0 /*总库存:  0-售罄*/,
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
-      "surplu_second": -76694, /*限购结束秒数*/
-          "token": {
-            "id": 4,
-            "name": "以太坊" /*【新增】通证名称*/,
-            "symbol": "BTC" /*【新增】通证符*/,
-            "icon": {
-              "id": 3,
-              "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FoZuIPpBi2jzgcwUojmxJm0G5O0L.jpg" /*【新增】通证icon*/
-            }
-          }}
+      "surplu_second": -76694 /*限购结束秒数*/,
+      "token": {
+        "id": 4,
+        "name": "以太坊" /*【新增】通证名称*/,
+        "symbol": "BTC" /*【新增】通证符*/,
+        "icon": {
+          "id": 3,
+          "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FoZuIPpBi2jzgcwUojmxJm0G5O0L.jpg" /*【新增】通证icon*/
+        }
       },
       "token_award": {
-        "token_award": "50",/*奖励的通证数量*/
-        "token_symbol": "btc"/*奖励的通证符*/
-      },
+        "token_award": "50" /*奖励的通证数量*/,
+        "token_symbol": "btc" /*奖励的通证符*/
+      }
     },
     {
       "id": 10,
@@ -95,14 +94,14 @@
       "currency": "ore",
       "category_id": 1,
       "price": "30.00000000",
-      "stock_num": 0,/*总库存:  0-售罄*/
+      "stock_num": 0 /*总库存:  0-售罄*/,
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": null,
       "surplu_second": null,
       "token_award": {
         "token_award": "50",
         "token_symbol": "btc"
-      },
+      }
     }
   ]
 }
@@ -135,6 +134,7 @@
     "ore": "0.00",
     "power": 0,
     "spec_type": 2,
+    "token_price": "123123" /*【新增】通证价格*/,
     "detail": "这个是商品介绍 沙雕",
     "price": "200.00",
     "limit_num": 0,
@@ -226,151 +226,13 @@
         "sale_price": "0.00",
         "image": null,
         "properties": "46",
+        "power": 1 /*【新增】矿力奖励*/,
+        "token_price": "123123" /*【新增】通证价格*/,
         "specs_properties": [
           {
             "p_id": 46,
             "s_id": 10,
             "p_name": "柠檬黄",
-            "s_name": "颜色"
-          }
-        ],
-        "token_award": {
-          "token_award": "50",
-          "token_symbol": "btc"
-        },
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 47,
-        "stock_num": 100,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "47",
-        "specs_properties": [
-          {
-            "p_id": 47,
-            "s_id": 10,
-            "p_name": "孔雀蓝",
-            "s_name": "颜色"
-          }
-        ],
-        "token_award": {
-          "token_award": "50",
-          "token_symbol": "btc"
-        },
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 48,
-        "stock_num": 0,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "48",
-        "specs_properties": [
-          {
-            "p_id": 48,
-            "s_id": 10,
-            "p_name": "玫瑰金黑面",
-            "s_name": "颜色"
-          }
-        ],
-        "token_award": {
-          "token_award": "50",
-          "token_symbol": "btc"
-        },
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 49,
-        "stock_num": 200,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "49",
-        "specs_properties": [
-          {
-            "p_id": 49,
-            "s_id": 10,
-            "p_name": "黑色黑面",
-            "s_name": "颜色"
-          }
-        ],
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 50,
-        "stock_num": 200,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "50",
-        "specs_properties": [
-          {
-            "p_id": 50,
-            "s_id": 10,
-            "p_name": "白色黑面",
-            "s_name": "颜色"
-          }
-        ],
-        "token_award": {
-          "token_award": "50",
-          "token_symbol": "btc"
-        },
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 51,
-        "stock_num": 100,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "51",
-        "specs_properties": [
-          {
-            "p_id": 51,
-            "s_id": 10,
-            "p_name": "玫红黑面",
-            "s_name": "颜色"
-          }
-        ],
-        "token_award": {
-          "token_award": "50",
-          "token_symbol": "btc"
-        },
-        "target_type": "item",
-        "target_id": 5
-      },
-      {
-        "id": 52,
-        "stock_num": 100,
-        "sales_num": 0,
-        "cost_price": "39.00",
-        "price": "200.00000000",
-        "sale_price": "0.00",
-        "image": null,
-        "properties": "52",
-        "specs_properties": [
-          {
-            "p_id": 52,
-            "s_id": 10,
-            "p_name": "高端灰黑面",
             "s_name": "颜色"
           }
         ],
