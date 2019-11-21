@@ -18,56 +18,23 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 55,
-            "num": "0.25520000",/*数量*/
-            "ad": {/*该矿石存在广告*/
-                "id": 4,
-                "title": "22",/*广告标题*/
-                "image": "22",/*广告图片*/
-                "link": null,/*跳转地址（outside：http://www.baidu.com  inside：goods|5）*/
-                "link_type": null，/*跳转类型:inside-内部跳转，app内模块跳转,outside-外部跳转*/
-            }
-        },
-        {
-            "id": 56,
-            "num": "0.25520000",
-            "ad": {
-                "id": 3,
-                "title": "22",
-                "image": "22",
-                "link": null,
-                "link_type": null
-            }
-        },
-        {
-            "id": 57,
-            "num": "0.25520000"
-        },
-        {
-            "id": 58,
-            "num": "0.25520000"
-        },
-        {
-            "id": 59,
-            "num": "0.25520000"
-        },
-        {
-            "id": 60,
-            "num": "0.25520000"
-        },
-        {
-            "id": 61,
-            "num": "0.25520000"
-        },
-        {
-            "id": 62,
-            "num": "0.25520000"
-        }
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 55,
+      "num": "0.25520000" /*数量*/,
+      "ad": {
+        /*该矿石存在广告*/
+        "id": 4,
+        "title": "22" /*广告标题*/,
+        "image": "22" /*广告图片*/,
+        "link": null /*跳转地址（outside：http://www.baidu.com  inside：goods|5）*/,
+        "link_type": null /*跳转类型:inside-内部跳转，app内模块跳转,outside-外部跳转*/,
+        "symbol": "CT" /*矿石符号*/
+      }
+    }
+  ]
 }
 ```
 
@@ -133,37 +100,40 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "items": {
-            "comc": [     /*comc价格*/
-                {
-                    "price": 34.3,
-                    "month": 1
-                },
-                {
-                    "price": 41.1,
-                    "month": 3
-                }
-            ],
-            "cash": [   /*现金价格*/
-                {
-                    "price": 0.1,
-                    "month": 1
-                },
-                {
-                    "price": 0.3,
-                    "month": 3
-                }
-            ]
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "items": {
+      "comc": [
+        /*comc价格*/
+        {
+          "price": 34.3,
+          "month": 1
         },
-        "switch": {   /*支付开关*/
-            "comc": "off",  /*comc支付 off 关闭  on 开启*/
-            "alipay": "off",  /*支付宝支付 off 关闭  on 开启*/
-            "wechat": "off" /*微信支付 off 关闭  on 开启*/
+        {
+          "price": 41.1,
+          "month": 3
         }
+      ],
+      "cash": [
+        /*现金价格*/
+        {
+          "price": 0.1,
+          "month": 1
+        },
+        {
+          "price": 0.3,
+          "month": 3
+        }
+      ]
+    },
+    "switch": {
+      /*支付开关*/
+      "comc": "off" /*comc支付 off 关闭  on 开启*/,
+      "alipay": "off" /*支付宝支付 off 关闭  on 开启*/,
+      "wechat": "off" /*微信支付 off 关闭  on 开启*/
     }
+  }
 }
 ```
 
@@ -183,11 +153,11 @@
 
 ```json
 {
-    "msg": "",
-    "code": 0,
-    "data": {
-        "day": -1   //(int)  -1为体验1次，其他为正常显示天数
-    }
+  "msg": "",
+  "code": 0,
+  "data": {
+    "day": -1 //(int)  -1为体验1次，其他为正常显示天数
+  }
 }
 ```
 
@@ -201,10 +171,10 @@
 
 **请求参数**
 
-| 名称 | 类型  | 默认 | 必须 | 说明 |
-| :--: | :---: | :--: | :--: | :--: |
-| month | integer |  无  |  是  |  购买月数  |
-| pay_pass | string |  无  |  是  |  支付密码  |
+|   名称   |  类型   | 默认 | 必须 |   说明   |
+| :------: | :-----: | :--: | :--: | :------: |
+|  month   | integer |  无  |  是  | 购买月数 |
+| pay_pass | string  |  无  |  是  | 支付密码 |
 
 **返回体**
 
@@ -234,7 +204,7 @@
   "msg": "",
   "code": 0,
   "data": {
-      "sum":100 //  (string)
+    "sum": 100 //  (string)
   }
 }
 ```
@@ -249,29 +219,29 @@
 
 **请求参数**
 
-| 名称 | 类型  | 默认 | 必须 | 说明 |
-| :--: | :---: | :--: | :--: | :--: |
-| month | integer |  无  |  是  |  购买月数  |
-| pay_type | string |  无  |  是  |  支付方式: wxpay-微信支付 alipay-支付宝支付  |
+|   名称   |  类型   | 默认 | 必须 |                    说明                    |
+| :------: | :-----: | :--: | :--: | :----------------------------------------: |
+|  month   | integer |  无  |  是  |                  购买月数                  |
+| pay_type | string  |  无  |  是  | 支付方式: wxpay-微信支付 alipay-支付宝支付 |
 
 **返回体**
 
 ```json
 {
-    "msg": "",
-    "code": 0,
-    "data": {
-      /*支付宝订单信息*/
-        "alipay": {
-            "order_info": "alipay_sdk=alipay-sdk-php-20180705&app_id=123123&biz_content=%7B%22timeout_express%22%3A%225m%22%2C%22out_trade_no%22%3A%22W19818%22%2C%22subject%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu6536%5Cu53d6%5Cu77ff%5Cu77f3%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.01%22%2C%22body%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu16536%5Cu53d6%5Cu77ff%5Cu77f3%5Cu7279%5Cu67431%5Cu4e2a%5Cu6708%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&sign_type=RSA2&timestamp=2019-04-29+13%3A39%3A38&version=1.0&sign=NGWBZUzLq%2BA60WEFoxET8lKnLIQGelz%2FBYX7u8dj%2BsYgvQzvSsDK2jPlu6IAR0bYRBrziaisLebst5DLBCsjkNZofEjyBopUfPIVA7FHHXpUQ5qPAcTC6Q5n0fNWC6%2BEJpG8Ly1tJhaMOl6Z3H8nwoITH%2BPah3%2Bh%2F5Mm26XOwU0jhC60ogUKgtWFrDsuIhspcAVmv6Xf%2FHO%2Ftxu4lCet6zJGBgcOUw3Obtiq1uTBWIziWecH1FW%2BGpCSWCrbDU2AEaAGjbMMYmaMIBNyGzxFqr8tkhe3Q47nzkWOrmYYzkgMBRBzc2FuJ%2BwWH5cezI6L3nrJJVFOPLclM2KJ1BQHww%3D%3D"
-        },
-        /*微信订单信息*/
-        "wxpay": {
-            "app_id": ""
-        },
-        /*订单号*/
-        "order_no": "19818"
-    }
+  "msg": "",
+  "code": 0,
+  "data": {
+    /*支付宝订单信息*/
+    "alipay": {
+      "order_info": "alipay_sdk=alipay-sdk-php-20180705&app_id=123123&biz_content=%7B%22timeout_express%22%3A%225m%22%2C%22out_trade_no%22%3A%22W19818%22%2C%22subject%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu6536%5Cu53d6%5Cu77ff%5Cu77f3%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.01%22%2C%22body%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu16536%5Cu53d6%5Cu77ff%5Cu77f3%5Cu7279%5Cu67431%5Cu4e2a%5Cu6708%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&sign_type=RSA2&timestamp=2019-04-29+13%3A39%3A38&version=1.0&sign=NGWBZUzLq%2BA60WEFoxET8lKnLIQGelz%2FBYX7u8dj%2BsYgvQzvSsDK2jPlu6IAR0bYRBrziaisLebst5DLBCsjkNZofEjyBopUfPIVA7FHHXpUQ5qPAcTC6Q5n0fNWC6%2BEJpG8Ly1tJhaMOl6Z3H8nwoITH%2BPah3%2Bh%2F5Mm26XOwU0jhC60ogUKgtWFrDsuIhspcAVmv6Xf%2FHO%2Ftxu4lCet6zJGBgcOUw3Obtiq1uTBWIziWecH1FW%2BGpCSWCrbDU2AEaAGjbMMYmaMIBNyGzxFqr8tkhe3Q47nzkWOrmYYzkgMBRBzc2FuJ%2BwWH5cezI6L3nrJJVFOPLclM2KJ1BQHww%3D%3D"
+    },
+    /*微信订单信息*/
+    "wxpay": {
+      "app_id": ""
+    },
+    /*订单号*/
+    "order_no": "19818"
+  }
 }
 ```
 
@@ -279,23 +249,23 @@
 
 ```json
 {
-    "msg": "",
-    "code": 0,
-    "data": {
-        "wxpay": {
-            "appid": "123123213213",
-            "partnerid": "2131231232",
-            "prepayid": "wx3017553928957484bf409f272920327045",
-            "package": "Sign=WXPay",
-            "noncestr": "f7iPw378C36FBL96",
-            "timestamp": 1556618139,
-            "sign": "6EE2B495EDEDF5B0EC425CF0F6C4522E"
-        },
-        "alipay": {
-            "order_info": ""
-        },
-        "order_no": "63"
-    }
+  "msg": "",
+  "code": 0,
+  "data": {
+    "wxpay": {
+      "appid": "123123213213",
+      "partnerid": "2131231232",
+      "prepayid": "wx3017553928957484bf409f272920327045",
+      "package": "Sign=WXPay",
+      "noncestr": "f7iPw378C36FBL96",
+      "timestamp": 1556618139,
+      "sign": "6EE2B495EDEDF5B0EC425CF0F6C4522E"
+    },
+    "alipay": {
+      "order_info": ""
+    },
+    "order_no": "63"
+  }
 }
 ```
 
@@ -315,11 +285,11 @@
 
 ```json
 {
-    "msg": "",
-    "code": 0,
-    "data": {
-        "status": 0 /*支付状态: 0-未支付 1-已支付 2-支付失败*/
-    }
+  "msg": "",
+  "code": 0,
+  "data": {
+    "status": 0 /*支付状态: 0-未支付 1-已支付 2-支付失败*/
+  }
 }
 ```
 
@@ -333,10 +303,10 @@
 
 **请求参数**
 
-| 名称 | 类型  | 默认 | 必须 | 说明 |
-| :--: | :---: | :--: | :--: | :--: |
-| limit | integer |  20  |  是  |  条目数  |
-| offset | integer |  0  |  是  |  偏移量  |
+|  名称  |  类型   | 默认 | 必须 |  说明  |
+| :----: | :-----: | :--: | :--: | :----: |
+| limit  | integer |  20  |  是  | 条目数 |
+| offset | integer |  0   |  是  | 偏移量 |
 
 **返回体**
 
