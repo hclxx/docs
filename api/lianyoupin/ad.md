@@ -87,3 +87,28 @@
   ]
 }
 ```
+
+## 挖矿广告点击量
+
+**方式**
+
+`post`
+
+**路径**
+
+`/api/v1/advertising/{ad}`
+
+**参数**
+
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": null
+}
+```
