@@ -30,9 +30,9 @@
         "title": "22" /*广告标题*/,
         "image": "22" /*广告图片*/,
         "link": null /*跳转地址（outside：http://www.baidu.com  inside：goods|5）*/,
-        "link_type": null /*跳转类型:inside-内部跳转，app内模块跳转,outside-外部跳转*/,
-        "symbol": "CT" /*矿石符号*/
-      }
+        "link_type": null /*跳转类型:inside-内部跳转，app内模块跳转,outside-外部跳转*/
+      },
+      "symbol": "CT" /*矿石符号*/
     }
   ]
 }
