@@ -144,6 +144,15 @@
     "stock_num": 898,
     "end_second": null,
     "share_url": "https://api.igoods.io/share/quick/register/O1L8K5",
+    "token": {
+      "id": 4,
+      "name": "以太坊" /*【新增】通证名称*/,
+      "symbol": "BTC" /*【新增】通证符*/,
+      "icon": {
+        "id": 3,
+        "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FoZuIPpBi2jzgcwUojmxJm0G5O0L.jpg" /*【新增】通证icon*/
+      }
+    },
     "images": [
       {
         "id": 84,

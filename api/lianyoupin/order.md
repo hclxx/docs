@@ -259,7 +259,16 @@
           "extend": null,
           "remark": null,
           "created_at": "2019-01-20 20:28:21",
-          "updated_at": "2019-01-20 20:28:21"
+          "updated_at": "2019-01-20 20:28:21",
+          "token": {
+            "id": 4,
+            "name": "以太坊" /*【新增】通证名称*/,
+            "symbol": "BTC" /*【新增】通证符*/,
+            "icon": {
+              "id": 3,
+              "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FoZuIPpBi2jzgcwUojmxJm0G5O0L.jpg" /*【新增】通证icon*/
+            }
+          }
         }
       },
         "consignee": {
