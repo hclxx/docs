@@ -184,7 +184,7 @@
 
 **路径**
 
-`/api/v1/project/items/{id}/cancle/order`
+`/api/v1/project/items/{id}/cancel/order`
 
 **响应**
 
