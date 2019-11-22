@@ -175,3 +175,25 @@
   }
 }
 ```
+
+## 手动取消订单
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/project/items/{id}/cancle/order`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
