@@ -197,3 +197,42 @@
   "data": null
 }
 ```
+
+## 【新增】项目方发起再次支付
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/orders/{id}/pay`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": {
+    /*支付宝订单信息*/
+    "alipay": {
+      "order_info": "xxxx"
+    },
+    /*微信订单信息*/
+    "wxpay": {
+      "appid": "123123213213",
+      "partnerid": "2131231232",
+      "prepayid": "asdasd",
+      "package": "Sign=WXPay",
+      "noncestr": "asdsa",
+      "timestamp": 12321323,
+      "sign": "asdas"
+    },
+    /*订单号*/
+    "order_no": "19818"
+  }
+}
+```
