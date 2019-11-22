@@ -145,8 +145,8 @@
         "goods_type": 3,
         "spec_type": 2,
         "num": 3,
-        "token_total_price": "10.00000000" /*【新增】string 单个商品所需消耗通证数量*/,
-        "token_price": "10.00000000" /*【新增】string 商品通证消耗总数量*/,
+        "token_total_price": "10.00000000" /*【新增】string 商品通证消耗总数量*/,
+        "token_price": "10.00000000" /*【新增】string 单个商品所需消耗通证数量*/,
         "goods_price": "100.00000000" /* string 单个商品所需花费现金金额*/,
         "total_price": "300.00000000" /* string 商品所需花费现金总金额*/,
         "token": {
