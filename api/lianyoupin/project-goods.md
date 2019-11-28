@@ -251,7 +251,8 @@
 |     desc     | string |  无  |  否  |                   退款说明                        |
 | refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
 | express_name | string |  无  |  否  |                     物流公司名称                   |
-| express_code | string |  无  |  否  |                     物流订单号                   |
+| express_code | string |  无  |  否  |                     物流公司代码                   |
+| express_no   | string |  无  |  否  |                     物流订单号                     |
 | express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
 
 **路径**
@@ -284,7 +285,8 @@
 |     desc     | string |  无  |  否  |                   退款说明                        |
 | refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
 | express_name | string |  无  |  否  |                     物流公司名称                   |
-| express_code | string |  无  |  否  |                     物流订单号                   |
+| express_code | string |  无  |  否  |                     物流公司代码                   |
+| express_no   | string |  无  |  否  |                     物流订单号                     |
 | express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
 
 **路径**
@@ -388,5 +390,43 @@
         "created_at": "2019-11-28 11:25:32",
         "updated_at": "2019-11-28 11:31:55"
     }
+}
+```
+
+## 获取快递公司列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/express`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "name": "京东",/*物流公司名称*/
+            "code": "jindong"/*物流公司代码 */
+        },
+        {
+            "id": 2,
+            "name": "ACS雅仕快递",
+            "code": "acs"
+        },
+        {
+            "id": 3,
+            "name": "安能快运",
+            "code": "annengwuliu"
+        }
+    ]
 }
 ```
