@@ -236,3 +236,157 @@
   }
 }
 ```
+
+## 申请退款
+
+**方式**
+
+`POST`
+
+**参数**
+
+|     名称     |  类型  | 默认 | 必须 |                       说明                        |
+| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
+|    reason    |  string|  无  |  是  |                    退款原因                       |
+|     desc     | string |  无  |  否  |                   退款说明                        |
+| refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
+| express_name | string |  无  |  否  |                     物流公司名称                   |
+| express_code | string |  无  |  否  |                     物流订单号                   |
+| express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
+
+**路径**
+
+`/api/v1/refund/order/{order_id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": null
+}
+```
+
+## 修改申请退款信息
+
+**方式**
+
+`PUT`
+
+**参数**
+
+|     名称     |  类型  | 默认 | 必须 |                       说明                        |
+| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
+|    reason    |  string|  无  |  是  |                    退款原因                       |
+|     desc     | string |  无  |  否  |                   退款说明                        |
+| refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
+| express_name | string |  无  |  否  |                     物流公司名称                   |
+| express_code | string |  无  |  否  |                     物流订单号                   |
+| express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
+
+**路径**
+
+`/api/v1/refund/order/{order_id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": null
+}
+```
+
+## 取消申请退款
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/v1/cancel/refund/order/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": null
+}
+```
+
+## 获取订单退款原因
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/refund/order/reason`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        "尺寸不符",
+        "颜色与商品不符",
+        "做工粗糙/有瑕疵",
+        "质量问题",
+        "少发/漏发",
+        "就是想退"
+    ]
+}
+```
+
+## 获取项目方退货地址
+
+**方式**
+
+`GET`
+
+**参数**
+
+|     名称     |  类型  | 默认 | 必须 |                       说明                        |
+| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
+|    merchant_id    |  int  |  无  |  是  |                    商户id                       |
+
+**路径**
+
+`/api/v1/refund/order/address`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "merchant_id": 1,
+        "consignee": "BBB",/*收货人*/
+        "tel": "18781601153",/*电话*/
+        "address": "123",/*地址*/
+        "description": "description",/*注意事项*/
+        "created_at": "2019-11-28 11:25:32",
+        "updated_at": "2019-11-28 11:31:55"
+    }
+}
+```
