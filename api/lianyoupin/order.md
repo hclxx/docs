@@ -130,6 +130,7 @@
       "updated_at": "2019-01-20 20:28:21",
       "buy_status": true /*bool 再次购买状态 true-是 false-否*/,
       "buy_reason": null /*null|string 不能再次购买原因*/,
+      "allow_refund":0,/*【新增】是否允许退款 0-不允许 1-允许*/
       "item_order": {
         "id": 6,
         "user_id": 1,
@@ -228,6 +229,20 @@
         "is_delete": 0,
         "created_at": "2019-01-21 04:20:44",
         "updated_at": "2019-01-21 04:20:44",
+        "auto_refund_date":128700,/*自动处理退款倒计时 单位(s)*/
+        "apply_refund_status": 1,		//	申请退款状态 0-未申请 1-已申请 2-已驳回 3-已撤销 4-已完成
+        "apply_refund_reason": {	//	申请退款原因
+                    "desc": "123",			//	申请退款描述
+                    "reason": "不想要了",		//	申请退款原因
+                    "express_no": "2344",		//	快递单号
+                    "express_code": "jindong",	//	快递公司编号
+                    "express_name": "京东",	//	快递公司名称
+                    "refund_image": [],		//	退款凭证
+                    "express_image": []		//	快递凭证	
+                },
+        "apply_refund_time": "2019-11-29 16:04:51",	//	申请退款时间
+        "reject_refund_reason": null,			//	驳回退款原因
+        "handle_refund_time": "2019-12-02 10:50:13",		//	驳回退款时间
         "item_order": {
           "id": 6,
           "user_id": 1,
