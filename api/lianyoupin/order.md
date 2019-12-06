@@ -40,6 +40,11 @@
       "exchange": 1 /*兑换区待收货数订单数量*/,
       "cash": 0 /*现金区待收货数订单数量*/,
       "total": 1 /*待收货订单数量*/
+    },
+    /*退货售后*/
+    "apply_refund": {
+      "exchange": 0,
+      "total": 0 /*退货售后订单数量*/
     }
   }
 }
@@ -130,7 +135,7 @@
       "updated_at": "2019-01-20 20:28:21",
       "buy_status": true /*bool 再次购买状态 true-是 false-否*/,
       "buy_reason": null /*null|string 不能再次购买原因*/,
-      "allow_refund":0,/*【新增】是否允许退款 0-不允许 1-允许*/
+      "allow_refund": 0 /*【新增】是否允许退款 0-不允许 1-允许*/,
       "item_order": {
         "id": 6,
         "user_id": 1,
@@ -238,7 +243,7 @@
                     "express_code": "jindong",	//	快递公司编号
                     "express_name": "京东",	//	快递公司名称
                     "refund_image": [],		//	退款凭证
-                    "express_image": []		//	快递凭证	
+                    "express_image": []		//	快递凭证
                 },
         "apply_refund_time": "2019-11-29 16:04:51",	//	申请退款时间
         "reject_refund_reason": null,			//	驳回退款原因
