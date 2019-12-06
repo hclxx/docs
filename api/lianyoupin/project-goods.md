@@ -245,15 +245,15 @@
 
 **参数**
 
-|     名称     |  类型  | 默认 | 必须 |                       说明                        |
-| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
-|    reason    |  string|  无  |  是  |                    退款原因                       |
-|     desc     | string |  无  |  否  |                   退款说明                        |
-| refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
-| express_name | string |  无  |  否  |                     物流公司名称                   |
-| express_code | string |  无  |  否  |                     物流公司代码                   |
-| express_no   | string |  无  |  否  |                     物流订单号                     |
-| express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
+|     名称      |  类型  | 默认 | 必须 |           说明           |
+| :-----------: | :----: | :--: | :--: | :----------------------: |
+|    reason     | string |  无  |  是  |         退款原因         |
+|     desc      | string |  无  |  否  |         退款说明         |
+| refund_image  | array  |  无  |  否  |    上传凭证(图片 url)    |
+| express_name  | string |  无  |  否  |       物流公司名称       |
+| express_code  | string |  无  |  否  |       物流公司代码       |
+|  express_no   | string |  无  |  否  |        物流订单号        |
+| express_image | array  |  无  |  否  | 上传快递凭证单(图片 url) |
 
 **路径**
 
@@ -279,15 +279,15 @@
 
 **参数**
 
-|     名称     |  类型  | 默认 | 必须 |                       说明                        |
-| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
-|    reason    |  string|  无  |  是  |                    退款原因                       |
-|     desc     | string |  无  |  否  |                   退款说明                        |
-| refund_image |  array |  无  |  否  |                    上传凭证(图片url)               |
-| express_name | string |  无  |  否  |                     物流公司名称                   |
-| express_code | string |  无  |  否  |                     物流公司代码                   |
-| express_no   | string |  无  |  否  |                     物流订单号                     |
-| express_image| array  |  无  |  否  |                 上传快递凭证单(图片url)            |
+|     名称      |  类型  | 默认 | 必须 |           说明           |
+| :-----------: | :----: | :--: | :--: | :----------------------: |
+|    reason     | string |  无  |  是  |         退款原因         |
+|     desc      | string |  无  |  否  |         退款说明         |
+| refund_image  | array  |  无  |  否  |    上传凭证(图片 url)    |
+| express_name  | string |  无  |  否  |       物流公司名称       |
+| express_code  | string |  无  |  否  |       物流公司代码       |
+|  express_no   | string |  无  |  否  |        物流订单号        |
+| express_image | array  |  无  |  否  | 上传快递凭证单(图片 url) |
 
 **路径**
 
@@ -343,16 +343,16 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        "尺寸不符",
-        "颜色与商品不符",
-        "做工粗糙/有瑕疵",
-        "质量问题",
-        "少发/漏发",
-        "就是想退"
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    "尺寸不符",
+    "颜色与商品不符",
+    "做工粗糙/有瑕疵",
+    "质量问题",
+    "少发/漏发",
+    "就是想退"
+  ]
 }
 ```
 
@@ -364,9 +364,9 @@
 
 **参数**
 
-|     名称     |  类型  | 默认 | 必须 |                       说明                        |
-| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
-|    merchant_id    |  int  |  无  |  是  |                    商户id                       |
+|    名称     | 类型 | 默认 | 必须 |  说明   |
+| :---------: | :--: | :--: | :--: | :-----: |
+| merchant_id | int  |  无  |  是  | 商户 id |
 
 **路径**
 
@@ -378,18 +378,18 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 1,
-        "merchant_id": 1,
-        "consignee": "BBB",/*收货人*/
-        "tel": "18781601153",/*电话*/
-        "address": "123",/*地址*/
-        "description": "description",/*注意事项*/
-        "created_at": "2019-11-28 11:25:32",
-        "updated_at": "2019-11-28 11:31:55"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "merchant_id": 1,
+    "consignee": "BBB" /*收货人*/,
+    "tel": "18781601153" /*电话*/,
+    "address": "123" /*地址*/,
+    "description": "description" /*注意事项*/,
+    "created_at": "2019-11-28 11:25:32",
+    "updated_at": "2019-11-28 11:31:55"
+  }
 }
 ```
 
@@ -409,24 +409,65 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 1,
-            "name": "京东",/*物流公司名称*/
-            "code": "jindong"/*物流公司代码 */
-        },
-        {
-            "id": 2,
-            "name": "ACS雅仕快递",
-            "code": "acs"
-        },
-        {
-            "id": 3,
-            "name": "安能快运",
-            "code": "annengwuliu"
-        }
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "name": "京东" /*物流公司名称*/,
+      "code": "jindong" /*物流公司代码 */
+    },
+    {
+      "id": 2,
+      "name": "ACS雅仕快递",
+      "code": "acs"
+    },
+    {
+      "id": 3,
+      "name": "安能快运",
+      "code": "annengwuliu"
+    }
+  ]
+}
+```
+
+## 项目方专区列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/api/v1/project/goods/types`
+
+**参数**
+
+|    名称     | 类型 | 默认 | 必须 |   说明    |
+| :---------: | :--: | :--: | :--: | :-------: |
+| merchant_id | int  |  无  |  是  | 项目方 id |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "name": "现金专区",
+      "currency": "cny"
+    },
+    {
+      "name": "通证专区",
+      "currency": "token"
+    },
+    {
+      "name": "混合支付专区",
+      "currency": "mix"
+    }
+  ]
 }
 ```
