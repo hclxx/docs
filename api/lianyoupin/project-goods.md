@@ -439,7 +439,7 @@
 
 **路径**
 
-`/api/v1/api/v1/project/goods/types`
+`/api/v1/project/goods/types`
 
 **参数**
 
