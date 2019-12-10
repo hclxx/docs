@@ -79,8 +79,8 @@ function getLypinAppSider(title, introduction) {
         "ore",
         "juhe",
         "bind-apps",
-        "project-goods",
-        "tbk"
+        "tbk",
+        "project-goods"
       ]
     }
   ];
