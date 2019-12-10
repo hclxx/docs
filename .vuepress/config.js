@@ -23,7 +23,7 @@ module.exports = {
       "/merchant/": getLypMerchantSider("商户管理", "说明"),
       // Imeet
       "/api/imeet/": getImeetAppSider("移动端", "规范"),
-      "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
+      "/admin/imeet/": getImeetAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -79,7 +79,8 @@ function getLypinAppSider(title, introduction) {
         "ore",
         "juhe",
         "bind-apps",
-        "project-goods"
+        "project-goods",
+        "tbk"
       ]
     }
   ];
@@ -139,12 +140,12 @@ function getLypMerchantSider(title, introduction) {
       children: [
         ["", introduction],
         "merchant",
-          "common",
-          "login",
-          "order",
-          "wallet",
-          "withdraw",
-          "yzOrder",
+        "common",
+        "login",
+        "order",
+        "wallet",
+        "withdraw",
+        "yzOrder"
       ]
     }
   ];
@@ -164,7 +165,6 @@ function getWebSider(title1, introduction1, title2, introduction2) {
     }
   ];
 }
-
 
 // Imeet APP接口文档
 function getImeetAppSider(title, introduction) {
@@ -230,7 +230,7 @@ function getImeetAdminSider(title, introduction) {
         "poster",
         "role",
         "version",
-        "config",
+        "config"
       ]
     }
   ];
