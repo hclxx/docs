@@ -958,6 +958,68 @@
 }
 ```
 
+## 用户信息上链请求
 
+**方式**
+
+`post`
+
+**路径**
+
+`/api/up/fisco`
+
+**参数**
+
+|  名称   |  类型  | 必须 |  说明  |
+| :-----: | :----: | :--: | :----: |
+| tags | string |  是  | 用户标签 |
+| grade | int |  是  | 用户等级 |
+| nick_name | string |  是  | 用户昵称 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "上链成功",
+    "code": 0,
+    "data": {
+        "count": 1,   /*位数*/
+        "private_key": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba" /*私钥*/
+    }
+}
+```
+
+## 获取上链信息
+
+**方式**
+
+`get`
+
+**路径**
+
+`/api/get/fisco`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "获取成功",
+    "code": 0,
+    "data": {
+        "nick_name": "大帅比",  /*昵称*/
+        "tags": "社区 完美 大师",/*身份标签*/
+        "grade": "2",/*会员等级*/
+        "privateKey": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba"/*私钥*/
+    }
+}
+```
 
 
