@@ -178,7 +178,14 @@
                 "name": "测试一",/*标签名称*/
                 "cate_id": 3/*分类id*/
             }
-        ]
+        ],
+        /*上链信息*/
+        "upper_chain": {
+                    "user_id": 50,
+                    "private_key": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba",
+                    "address": "0x193682ea1cae64754e1c1fa7f4d802dc9a91b2be",
+                    "contract_address": "0x98257676888f7aa04107d66cb3a229002b69615c"
+                }
     }
 }
 ```
