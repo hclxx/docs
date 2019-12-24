@@ -980,7 +980,7 @@
 |  名称   |  类型  | 必须 |  说明  |
 | :-----: | :----: | :--: | :----: |
 | tags | string |  是  | 用户标签:各标签间用空格隔开(社区 完美 大师) |
-| grade | int |  是  | 用户等级 |
+| grade | string |  是  | 用户等级小图URL |
 | nick_name | string |  是  | 用户昵称 |
 
 **响应**
@@ -1023,7 +1023,7 @@
     "data": {
         "nick_name": "大帅比",  /*昵称*/
         "tags": "社区 完美 大师",/*身份标签*/
-        "grade": "2",/*会员等级*/
+        "grade": "http://resource.immeet.com/7ofyc1fur.png",/*用户等级小图URL*/
         "privateKey": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba"/*私钥*/
     }
 }
