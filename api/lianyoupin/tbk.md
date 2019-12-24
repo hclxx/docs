@@ -172,3 +172,130 @@
   ]
 }
 ```
+
+## 商品详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/goods/detail`
+
+**参数**
+
+|   名称   |  类型  | 必须 |               说明               |
+| :------: | :----: | :--: | :------------------------------: |
+|   para   | string |  是  | 商品 ID，商品列表中的 `num_iid`  |
+| shoptype | string |  是  | 店铺类型:B 天猫 C-淘宝，必须大写 |
+
+**shoptype 说明**
+
+商品列表中 当 `user_type` 值为 0 表示是淘宝商品，对应 `shoptype=C`
+
+商品列表中 如果 `user_type` 值为 1 表示天猫商城，则 `shoptype=B`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "item_detail": [
+      "http://img.alicdn.com/imgextra/i1/1653945210/O1CN01nR58N51oME30nhnP9_!!1653945210.jpg" /*商品详情图片集合 没有则为空数组*/
+    ],
+    "video": [
+      "http://img.alicdn.com/imgextra/i1/1653945210/O1CN01nR58N51oME30nhnP9_!!1653945210.jpg" /*商品详情视频集合 没有则为空数组*/
+    ]
+  }
+}
+```
+
+## 通用转链
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/tbkl/exchange`
+
+**参数**
+
+| 名称 |  类型  | 必须 |                 说明                 |
+| :--: | :----: | :--: | :----------------------------------: |
+| para | string |  是  | 支持产品 ID 或淘口令或链接等各种参数 |
+
+**para 说明**
+
+（1）淘宝产品 id：比如 557662422568 或直接产品链接 //item.taobao.com/item.htm?id=...
+
+（2）二合一链接：比如 https://uland.taobao.com/coupon/edetail?e=...
+
+（3）s.click.taobao.com 长和短链接，比如 https://s.click.taobao.com/M9CMYLw
+
+（4）天猫的喵口令 如 http://zmnxbc.com/s/YJk6Z
+
+（5）手淘 APP 的分享链接：http://m.tb.cn/h.WDXp8bv
+
+（6）别人的淘口令：如 ￥ 40pM0yyztET ￥，或手淘分享链接文本直接传参数。
+
+（7）新浪短网址，百度短网址封装的淘宝链接：http://t.cn/E6jP2DJ
+
+（8）其它十几种不常见的淘客链接，如淘小铺、以及多类型的点击串解析：如 $j5WW1aZsqQi$
+
+（9）手淘上分享的内容直接做参数传参数。 如：
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "category_id": "50016349" /*商品信息-叶子类目id*/,
+    "coupon_click_url": "https://uland.taobao.com/coupon/edetail?asdasd" /*商品优惠券推广链接*/,
+    "coupon_end_time": "2019-12-30" /*优惠券结束时间*/,
+    "coupon_info": "满11元减10元" /*优惠券面额*/,
+    "coupon_remain_count": "99876" /*优惠券剩余量*/,
+    "coupon_start_time": "2019-12-23" /*优惠券开始时间*/,
+    "coupon_total_count": "100000" /*优惠券总量*/,
+    "coupon_type": "3",
+    "commission_rate": "6.00" /*商品信息-佣金比率。1550表示15.5%*/,
+    "num_iid": "597268451113" /*商品ID*/,
+    "zk_final_price": "18.9" /*商品折扣价格*/,
+    "volume": "320" /*30天销量*/,
+    "user_type": "0" /*卖家类型，0表示集市，1表示商城*/,
+    "tmall_play_activity_start_time": "0",
+    "tmall_play_activity_end_time": "0",
+    "title": "【防烫夹+取碗器】厨房夹盘器防烫夹取碗夹菜蒸夹端提盘子碟夹子0" /*商品标题*/,
+    "small_images": [
+      "https://img.alicdn.com/i4/1653945210/O1CN01skUhyI1oME3A49OXj_!!1653945210.jpg" /*商品小图列表*/,
+      "https://img.alicdn.com/i2/1653945210/O1CN012SiQJv1oME30UgTZp_!!1653945210.jpg",
+      "https://img.alicdn.com/i1/1653945210/O1CN01YBvYLe1oME4OrcYO9_!!1653945210.jpg",
+      "https://img.alicdn.com/i4/1653945210/O1CN01qMyeEH1oME4NL4UvT_!!1653945210.jpg"
+    ],
+    "seller_id": "1653945210",
+    "reserve_price": "18.9" /*商品一口价格*/,
+    "presale_tail_start_time": "0",
+    "presale_tail_end_time": "0",
+    "presale_start_time": "0",
+    "presale_end_time": "0",
+    "presale_deposit": "0",
+    "pict_url": "https://img.alicdn.com/bao/uploaded/i3/1653945210/O1CN017EVULL1oME4Km79fP_!!1653945210.jpg" /*商品主图*/,
+    "nick": "瞬间心动的多情喵" /*卖家昵称*/,
+    "item_url": "https://item.taobao.com/item.htm?id=597268451113" /*商品地址*/,
+    "cat_name": "厨房/烹饪用具",
+    "cat_leaf_name": "微波炉手套",
+    "tbk_pwd": "￥adkd10YkmYQ￥" /*淘口令*/,
+    "coupon_short_url": "https://s.click.taobao.com/iose5sv" /*优惠卷短链接*/
+  }
+}
+```
