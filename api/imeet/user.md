@@ -993,7 +993,7 @@
     "code": 0,
     "data": {
         "count": 1,   /*位数*/
-        "private_key": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba" /*私钥*/
+        "hash": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba" /*交易hash*/
     }
 }
 ```
@@ -1025,6 +1025,8 @@
         "tags": "社区 完美 大师",/*身份标签*/
         "grade": "http://resource.immeet.com/7ofyc1fur.png",/*用户等级小图URL*/
         "privateKey": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba"/*私钥*/
+        "hash": "8ff7bee7c96b3236a7b2772cfe0eb02dff5e3e6e26d22add17be1090b43d8aba"/*交易hash*/
+        "url": "http://block.immeet.com"/*区块链浏览器地址*/
     }
 }
 ```
