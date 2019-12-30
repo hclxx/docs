@@ -357,12 +357,13 @@
     {
       "pub_share_pre_fee": "0.05" /*佣金金额:订单结算前使用*/,
       "pub_share_fee": "0.00" /*佣金金额:订单结算后使用*/,
-      "tk_status": 12 /*12-付款，13-关闭，14-确认收货，3-结算成功;*/,
+      "tk_status": 12 /*12-付款，13-关闭，14-确认收货，3-结算成功; [12,14 即将到账] [13 失效] [3 已到账]*/,
       "item_link": "http://item.taobao.com/item.htm?id=600076287632" /*商品地址*/,
       "item_id": "600076287632" /*商品id*/,
       "item_title": "加厚塑料面包箱收纳大方盘浅盘子长方形白色食品盘面包盆豆腐盒" /*商品名称*/,
       "tb_paid_time": "2019-12-26 14:05:46" /*商品下单时间*/,
       "item_num": 1 /*购买数量*/,
+      "trade_id": "782606306800805316" /*订单号*/,
       "item_price": "10" /*商品单价，总价 item_num * item_price*/,
       "item_img": "//img.alicdn.com/bao/uploaded/i4/2201050586712/O1CN01jEjRFQ1zS8wWIanI4_!!0-item_pic.jpg" /*商品图地址*/,
       "id": 1 /*订单id*/
