@@ -231,7 +231,7 @@
 | :----: | :----: | :--: | :------------------------------------------------------------: |
 |  para  | string |  是  |              支持产品 ID 或淘口令或链接等各种参数              |
 | detail | string |  否  | 是否需要商品详情信息包含(主图、标题等信息) 1-需要 不需要则不传 |
-| client | string |  是  | 客户端标识：android，ios |
+| client | string |  是  |                    客户端标识：android，ios                    |
 
 **para 说明**
 
@@ -299,5 +299,96 @@
     "tbk_pwd": "￥adkd10YkmYQ￥" /*淘口令*/,
     "coupon_short_url": "https://s.click.taobao.com/iose5sv" /*优惠卷短链接*/
   }
+}
+```
+
+## 收入信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/wallet`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "wait": "0.00" /*即将到账*/,
+    "income": "0.00" /*累积到账*/
+  }
+}
+```
+
+## 订单列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/orders`
+
+**参数**
+
+|  名称  |  类型  | 必须 |                                  说明                                  |
+| :----: | :----: | :--: | :--------------------------------------------------------------------: |
+| limit  |  int   |  是  |                                 条目数                                 |
+| offset |  int   |  是  |                                 偏移量                                 |
+| status | string |  是  | `wait`-即将到账、 `invalid`-无效、 `arrive`-已到账、 全部不传 `status` |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "pub_share_pre_fee": "0.05" /*佣金金额:订单结算前使用*/,
+      "pub_share_fee": "0.00" /*佣金金额:订单结算后使用*/,
+      "tk_status": 12 /*12-付款，13-关闭，14-确认收货，3-结算成功;*/,
+      "item_link": "http://item.taobao.com/item.htm?id=600076287632" /*商品地址*/,
+      "item_id": "600076287632" /*商品id*/,
+      "item_title": "加厚塑料面包箱收纳大方盘浅盘子长方形白色食品盘面包盆豆腐盒" /*商品名称*/,
+      "tb_paid_time": "2019-12-26 14:05:46" /*商品下单时间*/,
+      "item_num": 1 /*购买数量*/,
+      "item_price": "10" /*商品单价，总价 item_num * item_price*/,
+      "item_img": "//img.alicdn.com/bao/uploaded/i4/2201050586712/O1CN01jEjRFQ1zS8wWIanI4_!!0-item_pic.jpg" /*商品图地址*/,
+      "id": 1 /*订单id*/
+    }
+  ]
+}
+```
+
+## 订单删除
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/v1/taobaoke/orders/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
 }
 ```
