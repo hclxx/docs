@@ -125,7 +125,8 @@ function getLypAdminSider(title, introduction) {
         "ore",
         "recharge",
         "coupon",
-        "token"
+        "token",
+        "tbk-favorites"
       ]
     }
   ];
