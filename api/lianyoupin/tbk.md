@@ -31,7 +31,9 @@
             "favorites_title": "男装",
             "type": 1,                  /*1：购物区 2：严选区*/
             "status": 1,                /*状态：1：正常 0：关闭*/
-            "sort": 5
+            "sort": 5,
+             "position": 0,             /*展示位置：0：top 1：mid*/
+             "icon": null               /*图标URL*/
         },
         {
             "id": 3,
@@ -39,7 +41,9 @@
             "favorites_title": "童装",
             "type": 1,
             "status": 1,
-            "sort": 2
+            "sort": 2,
+            "position": 0,
+            "icon": null
         }
     ]
 }
