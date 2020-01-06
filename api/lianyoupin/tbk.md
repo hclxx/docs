@@ -1,5 +1,46 @@
 # 淘宝客
 
+## 根据ID获取分组详情
+
+**方式**
+
+`GET`
+
+**参数**
+
+无
+
+**路径**
+
+`/api/v1/taobaoke/favorites/{id}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 4,                                    /*记录ID*/
+        "favorites_id": 20086185,                   /*选品库id*/
+        "favorites_title": "女装",                   /*选品库名称*/
+        "type": 1,                               /*类型 1：爆品 2：优选*/
+        "status": 1,                         /*状态：1-开启 0-关闭*/
+        "sort": 5,                         /*排序：数字越大越靠前*/
+        "position": 1,                    /*位置：0:top 1:mid*/
+        "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
+        "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
+        "lable": "女装大佬",            /*标签*/
+        "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
+        "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
+    }
+}
+```
+
+
+
 ## 分组列表
 
 **方式**
@@ -10,7 +51,7 @@
 
 |  名称  |  类型  | 必须 |                  说明                   |
 | :----: | :----: | :--: | :-------------------------------------: |
-| type | int |  是  | 类型 1：购物区 2：严选区 默认为：1|
+| type | int |  是  | 类型 1：爆品 2：优选 默认为：1|
 
 **路径**
 
@@ -26,24 +67,32 @@
     "code": 0,
     "data": [
         {
-            "id": 2,
-            "favorites_id": 20071263,
-            "favorites_title": "男装",
-            "type": 1,                  /*1：购物区 2：严选区*/
-            "status": 1,                /*状态：1：正常 0：关闭*/
-            "sort": 5,
-             "position": 0,             /*展示位置：0：top 1：mid*/
-             "icon": null               /*图标URL*/
+            "id": 3,                                    /*记录ID*/
+                   "favorites_id": 20086185,                   /*选品库id*/
+                   "favorites_title": "女装",                   /*选品库名称*/
+                   "type": 1,                               /*类型 1：爆品 2：优选*/
+                   "status": 1,                         /*状态：1-开启 0-关闭*/
+                   "sort": 5,                         /*排序：数字越大越靠前*/
+                   "position": 1,                    /*位置：0:top 1:mid*/
+                   "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
+                   "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
+                   "lable": "女装大佬",            /*标签*/
+                   "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
+                   "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
         },
         {
-            "id": 3,
-            "favorites_id": 200712638,
-            "favorites_title": "童装",
-            "type": 1,
-            "status": 1,
-            "sort": 2,
-            "position": 0,
-            "icon": null
+             "id": 4,                                    /*记录ID*/
+                    "favorites_id": 20086185,                   /*选品库id*/
+                    "favorites_title": "女装",                   /*选品库名称*/
+                    "type": 1,                               /*类型 1：爆品 2：优选*/
+                    "status": 1,                         /*状态：1-开启 0-关闭*/
+                    "sort": 5,                         /*排序：数字越大越靠前*/
+                    "position": 1,                    /*位置：0:top 1:mid*/
+                    "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
+                    "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
+                    "lable": "女装大佬",            /*标签*/
+                    "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
+                    "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
         }
     ]
 }
