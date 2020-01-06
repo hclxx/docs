@@ -1,5 +1,41 @@
 # 帮助中心
 
+## 根据ID获取详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/help/courses/{id}`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 5,
+        "name": "如何获得更多矿石？",
+        "image": "http://szl.qingchuanren.com/5f29815d806ae66c12eeab8dcd16f510.jpg",
+        "content": "<p><img src=\"http://szl.qingchuanren.com/0e4bcb50ebb95f1e70304ef094e2c949.jpg\" title=\"\" alt=\"\"/></p>",
+        "type": 1,
+        "sort": 6,
+        "created_at": null,
+        "updated_at": "2019-03-26 02:45:47"
+    }
+}
+```
+
+
 ## 新手教程
 
 **方式**
