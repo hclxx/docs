@@ -97,15 +97,18 @@
 | :-----: | :----: | :--: | :----------------------------------------: |
 | type  |  int   |  是  |  类型 1：购物区 2：严选区  |
 |  status  |  int   |  是  |            状态：1-开启 0-关闭            |
+|  page_size  |  int   |  否  |            每页条数 默认为：20            |
 
 **响应**
 
 `Status code 200`
 
 ```json
-[
-    {
-       "id": 1,                                /*记录ID*/
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 1,                                /*记录ID*/
            "favorites_id": 20086185,               /*选品库id*/
            "favorites_title": "女装",              /*选品库名称*/
            "type": 1,                             /*类型 1：爆品 2：优选*/
@@ -117,36 +120,47 @@
            "lable": "女装大佬",                    /*标签*/
            "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
            "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
-    },
-    {
-       "id": 2,                                /*记录ID*/
-           "favorites_id": 20086185,               /*选品库id*/
-           "favorites_title": "女装",              /*选品库名称*/
-           "type": 1,                             /*类型 1：爆品 2：优选*/
-           "status": 1,                           /*状态：1-开启 0-关闭*/
-           "sort": 5,                            /*排序：数字越大越靠前*/
-           "position": 1,                        /*位置：0:top 1:mid*/
-           "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318", /*图标地址*/
-           "attribute": "hot",                     /*属性：normal:正常列表  special:专题  hot:热销榜*/
-           "lable": "女装大佬",                    /*标签*/
-           "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
-           "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
-    },
-    {
-        "id": 3,                                /*记录ID*/
-            "favorites_id": 20086185,               /*选品库id*/
-            "favorites_title": "女装",              /*选品库名称*/
-            "type": 1,                             /*类型 1：爆品 2：优选*/
-            "status": 1,                           /*状态：1-开启 0-关闭*/
-            "sort": 5,                            /*排序：数字越大越靠前*/
-            "position": 1,                        /*位置：0:top 1:mid*/
-            "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318", /*图标地址*/
-            "attribute": "hot",                     /*属性：normal:正常列表  special:专题  hot:热销榜*/
-            "lable": "女装大佬",                    /*标签*/
-            "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
-            "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
-    }
-]
+        },
+        {
+            "id": 3,
+            "favorites_id": 200712638,
+            "favorites_title": "童装",
+            "type": 1,
+            "status": 1,
+            "sort": 2,
+            "position": 0,
+            "icon": null,
+            "attribute": "normal",
+            "lable": null,
+            "bgurl": null,
+            "bgcolour": null
+        },
+        {
+            "id": 4,
+            "favorites_id": 20086185,
+            "favorites_title": "女装",
+            "type": 1,
+            "status": 1,
+            "sort": 5,
+            "position": 1,
+            "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",
+            "attribute": "hot",
+            "lable": "女装大佬",
+            "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",
+            "bgcolour": "#123456"
+        }
+    ],
+    "first_page_url": "http://shop.igoods.com/admin/tbk/list?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://shop.igoods.com/admin/tbk/list?page=1",
+    "next_page_url": null,
+    "path": "http://shop.igoods.com/admin/tbk/list",
+    "per_page": 20,
+    "prev_page_url": null,
+    "to": 3,
+    "total": 3
+}
 ```
 
 ## 更新（编辑）选品库
