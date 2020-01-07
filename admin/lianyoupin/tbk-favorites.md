@@ -52,10 +52,10 @@
 | :-----: | :----: | :--: | :----------------------------------------: |
 |  favorites_id   | int |  是  |                  选品库ID             |
 |  favorites_title   |  string   |  是  |                  选品库名称  |
-| type  |  int   |  是  |  类型 1：购物区 2：严选区  |
+| type  |  int   |  是  |  类型 1：爆品 2：优选  |
 | sort |  int   |  是  |                 排序  默认为0                |
 |  status  |  int   |  是  |            状态：1-开启 0-关闭            |
-|  position  |  int   |  是  |            位置：0:top 1:mid            |
+|  position  |  int   |  是  |            位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示*         |
 |  icon  |  string   |  否  |           图标地址：爆品区， position等于1 需要上传icon地址        |
 |  attribute  |  string   |  是  |            属性：normal:正常列表  special:专题  hot:热销榜            |
 |  lable  |  string   |  否  |            标签            |
@@ -98,7 +98,7 @@
 
 |  名称   |  类型  | 必须 |                    说明                    |
 | :-----: | :----: | :--: | :----------------------------------------: |
-| type  |  int   |  是  |  类型 1：购物区 2：严选区  |
+| type  |  int   |  是  |  类型 1：爆品 2：优选  |
 |  status  |  int   |  是  |            状态：1-开启 0-关闭            |
 |  page_size  |  int   |  否  |            每页条数 默认为：20            |
 
@@ -182,7 +182,7 @@
 | :-----: | :----: | :--: | :----------------------------------------: |
 |  favorites_id   | int |  是  |                  选品库ID             |
 |  favorites_title   |  string   |  是  |                  选品库名称  |
-| type  |  int   |  是  |  类型 1：购物区 2：严选区  |
+| type  |  int   |  是  |  类型 1：爆品 2：优选  |
 | sort |  int   |  是  |                 排序  默认为0                |
 |  status  |  int   |  是  |            状态：1-开启 0-关闭            |
 |  position  |  int   |  是  |            位置：0:top 1:mid            |
