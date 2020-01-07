@@ -39,7 +39,40 @@
 }
 ```
 
+## 新手引导
 
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/guide`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 7,
+        "name": "如何充值提现COMC？",
+        "image": "http://szl.qingchuanren.com/7bc8b9371efccc057ed5047c05b2c1ba.png",
+        "content": "<p><img src=\"http://szl.qingchuanren.com/08ecd16b3ffa9154d2fc0687239abe3e.png\" title=\"\" alt=\"\"/></p>",
+        "type": 1,
+        "sort": 4,
+        "created_at": null,
+        "updated_at": null
+    }
+}
+```
 
 ## 分组列表
 
