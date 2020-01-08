@@ -80,7 +80,8 @@ function getLypinAppSider(title, introduction) {
         "juhe",
         "bind-apps",
         "tbk",
-        "project-goods"
+        "project-goods",
+        "withdrawal"
       ]
     }
   ];
@@ -127,7 +128,8 @@ function getLypAdminSider(title, introduction) {
         "coupon",
         "token",
         "tbk-favorites",
-        "tbk-member"
+        "tbk-member",
+        "cash-withdrawal"
       ]
     }
   ];
