@@ -58,7 +58,7 @@
 |  position  |  int   |  是  |            位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示*         |
 |  icon  |  string   |  否  |           图标地址：爆品区， position等于1 需要上传icon地址        |
 |  attribute  |  string   |  是  |            属性：normal:正常列表  special:专题  hot:热销榜            |
-|  lable  |  string   |  否  |            标签            |
+|  label  |  string   |  否  |            标签            |
 |  bgurl  |  string   |  是  |            背景图:属性为专题需要上传背景图            |
 |  bgcolour  |  string   |  是  |            背景色:属性为专题需要上传背景色为rgb值            |
 
@@ -78,7 +78,7 @@
     "position": 1,                        /*位置：0:top 1:mid*/
     "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318", /*图标地址*/
     "attribute": "hot",                     /*属性：normal:正常列表  special:专题  hot:热销榜*/
-    "lable": "女装大佬",                    /*标签*/
+    "label": "女装大佬",                    /*标签*/
     "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
     "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
 }
@@ -120,7 +120,7 @@
            "position": 1,                        /*位置：0:top 1:mid*/
            "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318", /*图标地址*/
            "attribute": "hot",                     /*属性：normal:正常列表  special:专题  hot:热销榜*/
-           "lable": "女装大佬",                    /*标签*/
+           "label": "女装大佬",                    /*标签*/
            "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
            "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
         },
@@ -134,7 +134,7 @@
             "position": 0,
             "icon": null,
             "attribute": "normal",
-            "lable": null,
+            "label": null,
             "bgurl": null,
             "bgcolour": null
         },
@@ -148,7 +148,7 @@
             "position": 1,
             "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",
             "attribute": "hot",
-            "lable": "女装大佬",
+            "label": "女装大佬",
             "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",
             "bgcolour": "#123456"
         }
@@ -188,7 +188,7 @@
 |  position  |  int   |  是  |            位置：0:top 1:mid            |
 |  icon  |  string   |  否  |           图标地址：爆品区， position等于1 需要上传icon地址        |
 |  attribute  |  string   |  是  |            属性：normal:正常列表  special:专题  hot:热销榜            |
-|  lable  |  string   |  否  |            标签            |
+|  label  |  string   |  否  |            标签            |
 |  bgurl  |  string   |  是  |            背景图:属性为专题需要上传背景图            |
 |  bgcolour  |  string   |  是  |            背景色:属性为专题需要上传背景色为rgb值            |
 
@@ -208,7 +208,7 @@
             "position": 1,                        /*位置：0:top 1:mid*/
             "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318", /*图标地址*/
             "attribute": "hot",                     /*属性：normal:正常列表  special:专题  hot:热销榜*/
-            "lable": "女装大佬",                    /*标签*/
+            "label": "女装大佬",                    /*标签*/
             "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",  /*背景图:属性为专题需要上传背景图*/
             "bgcolour": "#123456"   /*背景色:属性为专题需要上传背景色为rgb值*/
     }
