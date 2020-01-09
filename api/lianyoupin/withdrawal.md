@@ -72,40 +72,42 @@
 }
 ```
 
+## 提现列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/withdrawal`
+
+**参数**
+
+|  名称  |  类型  | 必须 |                                   说明                                    |
+| :----: | :----: | :--: | :-----------------------------------------------------------------------: |
+| limit | int |  是  | 条目数 |
+| offset | int |  是  | 偏移量 |
+
 
 **返回体**
 
 ```json
 {
-    "msg": "申请成功",
+    "msg": "ok",
     "code": 0,
-    "data": {
-        "id": 6,
-        "user_id": 4,
-        "amount": "200",/*申请提现的RMB金额*/
-        "service_charge": "20",/*服务费*/
-        "account_type": "wechat",
-        "account_info": {
-            "openid": "OPENID",
-            "nickname": "asdasd",
-            "sex": "1",
-            "province": "PROVINCE",
-            "city": "CITY",
-            "country": "COUNTRY",
-            "headimgurl": "adasdsa",
-            "privilege": [
-                "sadasd",
-                "asdsad"
-            ],
-            "unionid": "o6_bmasdasdsad6_2sgVt7hMZOPfL"
-        },
-        "handler_id": 0,
-        "status": 0,
-        "reason": null,
-        "updated_at": "2019-10-25 16:40:42",/*申请时间*/
-        "created_at": "2019-10-25 16:40:42"
-       
-    }
+    "data": [
+        {
+            "id": 1,
+            "user_id": 20,
+            "amount": "100.00",/*金额*/
+            "service_charge": "10.00",/*服务费*/
+            "account_type": "wechat",/*提现方式*/
+            "status": 0,/*流水状态:0-待处理 1-完成 2-失败*/
+            "reason": null,/*驳回原因*/
+            "created_at": "2020-01-08 14:46:46"
+        }
+    ]
 }
 ```
 
