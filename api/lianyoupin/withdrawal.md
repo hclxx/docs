@@ -112,7 +112,7 @@
 
 ## 申请提现流水记录列表
 
-`api/tbk/wallet/logs`
+`api/v1/tbk/wallet/logs`
 
 **请求方法**
 
@@ -155,7 +155,7 @@
 
 ## 获取单个现金钱包
 
-`api/tbk/wallet`
+`api/v1/tbk/wallet`
 
 **请求方法**
 
