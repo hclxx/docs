@@ -8,7 +8,7 @@
 
 **路径**
 
-`/api/v1/withdrawal/config`
+`/api/v1/taobaoke/withdrawal/config`
 
 **参数**
 
@@ -47,7 +47,7 @@
 
 **路径**
 
-`/api/v1/withdrawal`
+`/api/v1/taobaoke/withdrawal`
 
 **参数**
 
@@ -112,7 +112,7 @@
 
 ## 申请提现流水记录列表
 
-`api/v1/tbk/wallet/logs`
+`api/v1/taobaoke/wallet/logs`
 
 **请求方法**
 
@@ -155,7 +155,7 @@
 
 ## 获取单个现金钱包
 
-`api/v1/tbk/wallet`
+`api/v1/taobaoke/wallet`
 
 **请求方法**
 
