@@ -81,7 +81,8 @@ function getLypinAppSider(title, introduction) {
         "bind-apps",
         "tbk",
         "project-goods",
-        "withdrawal"
+        "withdrawal",
+        "tbk-wallet"
       ]
     }
   ];
@@ -129,8 +130,7 @@ function getLypAdminSider(title, introduction) {
         "token",
         "tbk-favorites",
         "tbk-member",
-        "cash-withdrawal",
-        "tbk-wallet"
+        "cash-withdrawal"
       ]
     }
   ];
