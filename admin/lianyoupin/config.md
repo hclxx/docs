@@ -856,9 +856,9 @@
 }
 ```
 
-## 修改提现规则配置
+## 修改会员规则配置
 
-`admin/system/withdrawal`
+`admin/system/members`
 
 **请求方式**
 
