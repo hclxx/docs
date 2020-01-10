@@ -694,3 +694,40 @@
   ]
 }
 ```
+
+## 会员礼包领取
+
+`api/v1/taobaoke/members/gift`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "领取成功",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "user_id": 2,
+    "member_id": 2,
+    "consignee": null,
+    "gift_info": {
+      "name": "礼品一",
+      "cover": "",
+      "content": ["礼包1", "礼包二"],
+      "receive": {
+        "url": "",
+        "code": ""
+      }
+    },
+    "mode": "",
+    "order_no": null,
+    "status": 0,
+    "created_at": null,
+    "updated_at": "2020-01-10 16:07:13"
+  }
+}
+```
