@@ -49,11 +49,21 @@
   "code": 0,
   "data": [
     {
-      "count": 4 /*贡献值*/,
-      "id": 3,
-      "name": "哈哈哈" /*姓名*/,
-      "avatar": null /*头像*/,
-      "icon": "11" /*等级图标*/
+      "user_id": 3,
+      "parent_user_id": 2,
+      "count": "4" /*贡献值*/,
+      "user": {
+        "id": 3,
+        "name": "哈哈哈" /*粉丝名称*/,
+        "avatar": null /*头像*/,
+        "member_id": 1,
+        "member": {
+          "id": 1,
+          "icon": "http://avatar.comc/user1_avatar.png" /*会员图标*/,
+          "name": "普通会员" /*会员名称*/,
+          "level": "common" /*会员等级*/
+        }
+      }
     }
   ]
 }
