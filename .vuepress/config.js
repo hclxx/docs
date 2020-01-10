@@ -82,7 +82,8 @@ function getLypinAppSider(title, introduction) {
         "tbk",
         "project-goods",
         "withdrawal",
-        "tbk-wallet"
+        "tbk-wallet",
+        "tbk-member"
       ]
     }
   ];
