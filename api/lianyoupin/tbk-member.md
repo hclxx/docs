@@ -662,3 +662,35 @@
   ]
 }
 ```
+
+## 会员商品购买列表
+
+`api/v1/taobaoke/members/goods`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 2,
+      "name": "青铜会员" /*会员名称*/,
+      "icon": "http://image.xxx.com/asds.png" /*会员图标*/,
+      "level": "bronze" /*会员等级标示*/,
+      "cover": "http://image.xxx.com/asds.png" /*封面*/,
+      "condition": {
+        "direct": {
+          "price": "99" /*价格单位(元)*/
+        },
+        "indirect": null
+      }
+    }
+  ]
+}
+```
