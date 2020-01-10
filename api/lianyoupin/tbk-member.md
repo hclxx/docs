@@ -45,7 +45,10 @@
             "key": "coupons",
             "value": 0
           }
-        ]
+        ],
+        "owned": true,
+        "received": true,
+        "days": 50
       },
       {
         "id": 2,
@@ -117,7 +120,10 @@
             "key": "direct:diamond:reward",
             "value": "99"
           }
-        ]
+        ],
+        "owned": false,
+        "received": false,
+        "days": 0
       },
       {
         "id": 3,
@@ -197,7 +203,10 @@
             "key": "platform:twice:bonus",
             "value": null
           }
-        ]
+        ],
+        "owned": true,
+        "received": true,
+        "days": 3
       },
       {
         "id": 4,
@@ -277,7 +286,10 @@
             "key": "platform:twice:bonus",
             "value": null
           }
-        ]
+        ],
+        "owned": false,
+        "received": false,
+        "days": 0
       },
       {
         "id": 5,
@@ -357,7 +369,10 @@
             "key": "platform:twice:bonus",
             "value": null
           }
-        ]
+        ],
+        "owned": false,
+        "received": false,
+        "days": 0
       },
       {
         "id": 6,
@@ -437,7 +452,10 @@
             "key": "platform:twice:bonus",
             "value": null
           }
-        ]
+        ],
+        "owned": false,
+        "received": false,
+        "days": 0
       }
     ],
     "equities": [
