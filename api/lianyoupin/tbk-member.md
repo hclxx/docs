@@ -1,5 +1,563 @@
 # 淘宝客会员
 
+## 会员权益列表
+
+`api/v1/taobaoke/members`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "members": [
+      {
+        "id": 1,
+        "name": "普通会员",
+        "icon": "11",
+        "level": "common",
+        "cover": " ",
+        "condition": null,
+        "gift_info": null,
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "35%"
+          },
+          {
+            "key": "elc:amount",
+            "value": 0
+          },
+          {
+            "key": "elc:experience",
+            "value": 0
+          },
+          {
+            "key": "coupons",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "青铜会员",
+        "icon": null,
+        "level": "bronze",
+        "cover": " ",
+        "condition": {
+          "direct": {
+            "price": "99"
+          },
+          "indirect": null
+        },
+        "gift_info": {
+          "name": "礼品一",
+          "cover": "",
+          "content": ["礼包1", "礼包二"],
+          "receive": {
+            "url": "",
+            "code": ""
+          }
+        },
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "22%"
+          },
+          {
+            "key": "elc:amount",
+            "value": null
+          },
+          {
+            "key": "elc:experience",
+            "value": null
+          },
+          {
+            "key": "coupons",
+            "value": null
+          },
+          {
+            "key": "member:gift",
+            "value": null
+          },
+          {
+            "key": "direct:reward",
+            "value": null
+          },
+          {
+            "key": "direct:bronze:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:gold:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:platina:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:platinum:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:diamond:reward",
+            "value": "99"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "黄金会员",
+        "icon": null,
+        "level": "gold",
+        "cover": " ",
+        "condition": {
+          "direct": {
+            "price": "888"
+          },
+          "indirect": {
+            "num": 100,
+            "level": "bronze"
+          }
+        },
+        "gift_info": {
+          "name": "礼品一",
+          "cover": "",
+          "content": ["礼包1", "礼包二"],
+          "receive": null
+        },
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "18%"
+          },
+          {
+            "key": "elc:amount",
+            "value": null
+          },
+          {
+            "key": "elc:experience",
+            "value": null
+          },
+          {
+            "key": "coupons",
+            "value": null
+          },
+          {
+            "key": "member:gift",
+            "value": null
+          },
+          {
+            "key": "direct:reward",
+            "value": null
+          },
+          {
+            "key": "direct:bronze:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:gold:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:platina:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:platinum:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:diamond:reward",
+            "value": "500"
+          },
+          {
+            "key": "platform:once:bonus",
+            "value": null
+          },
+          {
+            "key": "platform:twice:bonus",
+            "value": null
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "白金会员",
+        "icon": null,
+        "level": "platina",
+        "cover": " ",
+        "condition": {
+          "direct": {
+            "price": "3499"
+          },
+          "indirect": {
+            "num": 100,
+            "level": "gold"
+          }
+        },
+        "gift_info": {
+          "name": "礼品一",
+          "cover": "",
+          "content": ["礼包1", "礼包二"],
+          "receive": null
+        },
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "15%"
+          },
+          {
+            "key": "elc:amount",
+            "value": null
+          },
+          {
+            "key": "elc:experience",
+            "value": null
+          },
+          {
+            "key": "coupons",
+            "value": null
+          },
+          {
+            "key": "member:gift",
+            "value": null
+          },
+          {
+            "key": "direct:reward",
+            "value": null
+          },
+          {
+            "key": "direct:bronze:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:gold:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:platina:reward",
+            "value": "2500"
+          },
+          {
+            "key": "direct:platinum:reward",
+            "value": "2500"
+          },
+          {
+            "key": "direct:diamond:reward",
+            "value": "2500"
+          },
+          {
+            "key": "platform:once:bonus",
+            "value": null
+          },
+          {
+            "key": "platform:twice:bonus",
+            "value": null
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "铂金会员",
+        "icon": null,
+        "level": "platinum",
+        "cover": " ",
+        "condition": {
+          "direct": {
+            "price": "19999"
+          },
+          "indirect": {
+            "num": 30,
+            "level": "platina"
+          }
+        },
+        "gift_info": {
+          "name": "礼品一",
+          "cover": "",
+          "content": ["礼包1", "礼包二"],
+          "receive": null
+        },
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "10%"
+          },
+          {
+            "key": "elc:amount",
+            "value": null
+          },
+          {
+            "key": "elc:experience",
+            "value": null
+          },
+          {
+            "key": "coupons",
+            "value": null
+          },
+          {
+            "key": "member:gift",
+            "value": null
+          },
+          {
+            "key": "direct:reward",
+            "value": null
+          },
+          {
+            "key": "direct:bronze:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:gold:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:platina:reward",
+            "value": "2500"
+          },
+          {
+            "key": "direct:platinum:reward",
+            "value": "12000"
+          },
+          {
+            "key": "direct:diamond:reward",
+            "value": "12000"
+          },
+          {
+            "key": "platform:once:bonus",
+            "value": null
+          },
+          {
+            "key": "platform:twice:bonus",
+            "value": null
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "钻石会员",
+        "icon": null,
+        "level": "diamond",
+        "cover": " ",
+        "condition": {
+          "direct": {
+            "price": "39999"
+          },
+          "indirect": {
+            "num": 20,
+            "level": "platinum"
+          }
+        },
+        "gift_info": {
+          "name": "礼品一",
+          "cover": "",
+          "content": ["礼包1", "礼包二"],
+          "receive": null
+        },
+        "equities": [
+          {
+            "key": "return:commission",
+            "value": null
+          },
+          {
+            "key": "platform:services",
+            "value": "5%"
+          },
+          {
+            "key": "elc:amount",
+            "value": null
+          },
+          {
+            "key": "elc:experience",
+            "value": null
+          },
+          {
+            "key": "coupons",
+            "value": null
+          },
+          {
+            "key": "member:gift",
+            "value": null
+          },
+          {
+            "key": "direct:reward",
+            "value": null
+          },
+          {
+            "key": "direct:bronze:reward",
+            "value": "99"
+          },
+          {
+            "key": "direct:gold:reward",
+            "value": "500"
+          },
+          {
+            "key": "direct:platina:reward",
+            "value": "2500"
+          },
+          {
+            "key": "direct:platinum:reward",
+            "value": "12000"
+          },
+          {
+            "key": "direct:diamond:reward",
+            "value": "24000"
+          },
+          {
+            "key": "platform:once:bonus",
+            "value": null
+          },
+          {
+            "key": "platform:twice:bonus",
+            "value": null
+          }
+        ]
+      }
+    ],
+    "equities": [
+      {
+        "id": 1,
+        "desc": "购物返佣",
+        "key": "return:commission",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 2,
+        "desc": "平台服务",
+        "key": "platform:services",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 3,
+        "desc": "ELC发车额度",
+        "key": "elc:amount",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 4,
+        "desc": "ELC发车体验金",
+        "key": "elc:experience",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 5,
+        "desc": "海量优惠卷",
+        "key": "coupons",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 6,
+        "desc": "会员大礼包",
+        "key": "member:gift",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 7,
+        "desc": "一级推荐奖",
+        "key": "direct:reward",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 8,
+        "desc": "推青铜会员奖励",
+        "key": "direct:bronze:reward",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 9,
+        "desc": "推黄金会员奖励",
+        "key": "direct:gold:reward",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 10,
+        "desc": "推白金会员奖励",
+        "key": "direct:platina:reward",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 11,
+        "desc": "推白铂金员奖励",
+        "key": "direct:platinum:reward",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 12,
+        "desc": "推白钻石员奖励",
+        "key": "direct:diamond:reward",
+        "value": 1,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 13,
+        "desc": "享平台一次分红",
+        "key": "platform:once:bonus",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      },
+      {
+        "id": 14,
+        "desc": "享平台二次分红",
+        "key": "platform:twice:bonus",
+        "value": 0,
+        "use_icon": null,
+        "unused_icon": null
+      }
+    ]
+  }
+}
+```
+
 ## 购买会员
 
 `api/v1/taobaoke/members`
@@ -9,10 +567,10 @@
 `POST`
 
 **参数**
-|  名称  | 类型 | 必须 |                         说明                         |
+| 名称 | 类型 | 必须 | 说明 |
 | :----: | :--: | :--: | :--------------------------------------------------: |
-| member_id  | int  |  是  |                    会员类型id                   |
-|  pay_type  | string  |  是  | 支付方式： wxpay-微信,alipay-支付宝 |
+| member_id | int | 是 | 会员类型 id |
+| pay_type | string | 是 | 支付方式： wxpay-微信,alipay-支付宝 |
 
 **返回体**
 
