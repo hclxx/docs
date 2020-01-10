@@ -20,6 +20,7 @@
 | currency | string |  否  | ore-矿石, comc-comc |
 |  start   | string |  否  |      开始日期       |
 |   end    | string |  否  |      结束日期       |
+|   status |   int  |  否  | 获取体验金流水时：收入传1 支出传1 待结算传0 |
 
 **响应**
 

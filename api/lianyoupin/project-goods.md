@@ -146,7 +146,9 @@
         "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg" /*通证图标*/
       },
       "symbol": "btc" /*通证符号*/,
-      "balance": "10.00000000" /*通证余额*/
+      "balance": "10.00000000", /*通证余额*/
+      "power": "0",/*矿力*/
+      "waited_total": "10.0000000",/*未结算*/
     }
   ]
 }
