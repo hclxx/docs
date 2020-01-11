@@ -589,8 +589,8 @@
 | :----: | :--: | :--: | :--------------------------------------------------: |
 | member_id | int | 是 | 会员类型 id |
 | pay_type | string | 是 | 支付类型： wxpay-微信,alipay-支付宝 |
-| pay_mode | string | 是 | 支付方式： cash-纯现金,mixed-现金/EOC混合支付 |
-| eoc_num | string | 否 | 混合支付EOC数量 |
+| pay_mode | string | 是 | 支付方式： cash-纯现金,mixed-现金/EOC 混合支付 |
+| eoc_num | string | 否 | 混合支付 EOC 数量 |
 
 **返回体**
 
@@ -706,7 +706,14 @@
       "cover": "http://image.xxx.com/asds.png" /*封面*/,
       "condition": {
         "direct": {
-          "price": "99" /*价格单位(元)*/
+          "limit": "500" /*抵扣上限阀值*/,
+          "price": "888" /*直接购买价格*/,
+          /*抵扣信息*/
+          "deduction": {
+            "num": "100.00000000" /*可抵扣的 eoc 数量*/,
+            "amount": "3" /*可抵扣金额*/,
+            "price": "885" /*抵扣后的价格*/
+          }
         },
         "indirect": null
       }
