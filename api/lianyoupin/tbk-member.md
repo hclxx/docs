@@ -588,7 +588,9 @@
 | 名称 | 类型 | 必须 | 说明 |
 | :----: | :--: | :--: | :--------------------------------------------------: |
 | member_id | int | 是 | 会员类型 id |
-| pay_type | string | 是 | 支付方式： wxpay-微信,alipay-支付宝 |
+| pay_type | string | 是 | 支付类型： wxpay-微信,alipay-支付宝 |
+| pay_mode | string | 是 | 支付方式： cash-纯现金,mixed-现金/EOC混合支付 |
+| eoc_num | string | 否 | 混合支付EOC数量 |
 
 **返回体**
 
