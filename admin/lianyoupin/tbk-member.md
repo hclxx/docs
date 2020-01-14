@@ -2,6 +2,17 @@
 
 ## 会员权益信息
 
+```
+keys 说明:
+
+platform:services 需要填写 rate(提现收取手续费比例 整型),
+direct:bronze:reward，
+direct:gold:reward，
+direct:platinum:reward，
+direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m_zrate(混合购买奖励比例 整型)
+
+```
+
 **方式**
 
 `GET`
