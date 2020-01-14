@@ -506,7 +506,10 @@
 {
     "msg": "绑定成功",
     "code": 0,
-    "data": null
+    "data": {
+        "userName": "泥石流",
+        "account": "13547899124"
+    }
 }
 ```
 
