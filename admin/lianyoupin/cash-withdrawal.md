@@ -8,7 +8,7 @@
 
 **路径**
 
-`/admin/withdrawal`
+`/admin/cash/withdrawal`
 
 **请求参数**
 | 名称  |  类型  | 默认 | 必须 |   说明   |
@@ -88,7 +88,7 @@
 
 **路径**
 
-`/admin/withdrawal/{withdrawal}/agree`
+`/admin/cash/withdrawal/{withdrawal}/agree`
 
 **请求参数**
 无
@@ -113,7 +113,7 @@
 
 **路径**
 
-`/admin/withdrawal/{withdrawal}/reject`
+`/admin/cash/withdrawal/{withdrawal}/reject`
 
 **请求参数**
 | 名称  |  类型  | 默认 | 必须 |   说明   |
