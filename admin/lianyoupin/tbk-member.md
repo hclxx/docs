@@ -689,6 +689,17 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
 
 **参数**
 
+```
+keys 说明:
+
+platform:services 需要填写 rate(提现收取手续费比例 整型),
+direct:bronze:reward，
+direct:gold:reward，
+direct:platinum:reward，
+direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m_zrate(混合购买奖励比例 整型)
+
+```
+
 ```json
 {
   "name": "青铜会员" /*会员名称 string*/,
@@ -698,8 +709,11 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
   "equities": [
     {
       "key": "return:commission" /*权益key*/,
-      "desc": "权益描述"/*权益描述*/
-      "value": null /*权益奖励数值*/
+      "desc": "权益描述" /*权益描述*/,
+      "rate": null /*当key为 platform:services 需要提交 rate 参数，当 direct:bronze:reward，
+direct:gold:reward，
+direct:platinum:reward，
+direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
     }
   ],
   /*礼包信息 注意普通会员无礼包，青铜和青铜以上存在礼品*/
@@ -713,11 +727,12 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
       "code": "领取码"
     }
   },
-  /**升级到该会员的条 注意普通会员无条件**/
+  /**普通会员此字为null，升级到该会员的条件**/
   "condition": {
     /*直接条件*/
     "direct": {
-      "price": "3499" /*会员(RMB)价格单位元*/
+      "price": "3499" /*会员(RMB)价格单位元*/,
+      "limit": "2000" /*混合支付可以抵扣 eoc 数量上限值*/
     },
     /*间接条件 注青铜会员无间接升级条件*/
     "indirect": {
