@@ -490,3 +490,34 @@
   }
 }
 ```
+## 检查授权状态
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/check`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "status": true
+    }
+}
+```
+**授权失败返回**
+```json
+{
+    "code": 422,
+    "msg": "授权绑定失败",
+    "errors": null
+}
+```
