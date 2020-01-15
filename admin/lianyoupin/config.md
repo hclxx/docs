@@ -923,9 +923,9 @@
 }
 ```
 
-## 获取EOC兑换RMB比例规则
+## 获取EOC兑换RMB单价
 
-`admin/system/eoc/ratio`
+`admin/system/eoc/price`
 
 **请求方式**
 
@@ -935,14 +935,14 @@
 
 ```json
 {
-    "key": "eoc:ratio",
+    "key": "eoc:to:cny:price",
     "value": "0.05",/*兑换比例*/
 }
 ```
 
-## 修改EOC兑换RMB比例规则
+## 修改EOC兑换RMB单价
 
-`admin/system/eoc/ratio`
+`admin/system/eoc/price`
 
 **请求方式**
 
@@ -952,7 +952,7 @@
 
 |   名称   |  类型  | 默认 | 必须 |   说明   |
 | :------: | :----: | :--: | :--: | :------: |
-| ratio | string |  无  |  是  | 兑换比例 |
+| price | string |  无  |  是  | 兑换比例 |
 
 **返回体**
 
