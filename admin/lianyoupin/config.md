@@ -935,7 +935,7 @@
 
 ```json
 {
-    "key": "eco:ratio",
+    "key": "eoc:ratio",
     "value": "0.05",/*兑换比例*/
 }
 ```
