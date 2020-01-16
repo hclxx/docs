@@ -826,7 +826,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
 | limit | int | 是 | 条目数 |
 | page | int | 是 | 页码 |
 | level | string | 否 | 购买会员等级筛选,可选(bronze-青铜 gold-黄金 platina-白金 platinum-铂金 diamond-钻石) |
-| user_id | int | 否 | 用户id |
+| user_id | int | 否 | 用户 id |
 | express_status | int | 否 | 快递发货状态 (物流状态 0-待发货 1-已发货)|
 
 **响应**
@@ -874,7 +874,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
   },
   "express_name": "顺丰" /*物流公司*/,
   "express_number": "T12312312312" /*物流单号*/,
-  "express_status": 0 /*物流状态 0-待发货 1-已发货 注:  青铜礼包无需发货 level 为 bronze*/,
+  "express_status": 0 /*物流状态 0-待发货 1-已发货 2-无需发货 注:  青铜礼包无需发货 level 为 bronze*/,
   "created_at": "2020-01-15 16:06:58",
   "updated_at": "2020-01-15 16:10:33",
   /*购买的会员信息*/
