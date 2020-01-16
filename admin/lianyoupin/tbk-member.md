@@ -718,10 +718,10 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
   ],
   /*礼包信息 注意普通会员无礼包，青铜和青铜以上存在礼品*/
   "gift_info": {
-    "name": "测试礼包" /*礼包名称*/,
-    "cover": "礼包封面" /*礼包封面*/,
-    "content": ["课程一", "课程二", "课程三"] /*奖品集合*/,
-    /*青铜会员才会存在该字段 其他不存在 receive */
+    "name": "测试礼包" /*礼包名称 必须*/,
+    "cover": "礼包封面" /*礼包封面 必须*/,
+    "content": ["课程一", "课程二", "课程三"] /*奖品集合 必须*/,
+    /*青铜会员才会存在该字段 其他不存在 receive 必须*/
     "receive": {
       "url": "http://wwww.receive.com/sadas",
       "code": "领取码"
@@ -807,5 +807,105 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
 ```json
 {
   "message": "更新成功"
+}
+```
+
+## 会员购买日志
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/tbk/members/logs`
+
+**参数**
+| 名称 | 类型 | 必须 | 说明 |
+| :----: | :--: | :--: | :--------------------------------------------------: |
+| limit | int | 是 | 条目数 |
+| page | int | 是 | 页码 |
+
+**响应**
+
+`Status code 200`
+
+**响应参数**
+
+```json
+{
+  "id": 100,
+  "user_id": 314,
+  "member_id": 3,
+  /*收货人信息注:gift_info 为 null consignee 也为 null*/
+  "consignee": {
+    "id": 317,
+    "tag": "",
+    "area": "陕西省西安市雁塔区",
+    "name": "孙皓",
+    "other": "13649283569",
+    "phone": "13649283569",
+    "detail": "陕西省西安市高新区科技二路中天花园南门",
+    "default": true,
+    "user_id": 314,
+    "yz_address_id": "208120799"
+  },
+  /*礼包信息 未领取为 null*/
+  "gift_info": {
+    "name": "黄金会员专属礼包",
+    "cover": "http://szl.qingchuanren.com/5b7bd84c46efaff25235a8ef7f8d6f51.png",
+    "content": [
+      "黄金会员专属礼包1、",
+      "黄金会员专属礼包２、",
+      "黄金会员专属礼包３"
+    ],
+    "receive": null
+  },
+  "mode": "mixed" /*购买方式:mixed-混合支付(eoc+现金) direct-现金购买 indirect-间接晋升*/,
+  "order_no": "M91331579075618970",
+  "status": 1,
+  /*当 mode 为 indirect extend 为 null*/
+  "extend": {
+    "eoc": "500" /*eoc支付数量*/,
+    "cash": "0.10" /*现金支付数量*/
+  },
+  "created_at": "2020-01-15 16:06:58",
+  "updated_at": "2020-01-15 16:10:33",
+  /*购买的会员信息*/
+  "member": {
+    "id": 3,
+    "name": "黄金会员" /*名称*/,
+    "level": "gold" /*等级标示*/,
+    "icon": "http://szl.qingchuanren.com/bc947b9a049ef8d0421d7c08c66595f1.png" /*图标地址*/,
+    "condition": {
+      "direct": {
+        "limit": "500",
+        "price": "495.1"
+      },
+      "indirect": {
+        "num": 100,
+        "level": "bronze"
+      }
+    }
+  },
+  /*购买者信息*/
+  "user": {
+    "id": 314,
+    "name": "赵伟",
+    "sex": 0,
+    "email": null,
+    "phone": "15680769628",
+    "avatar": "http://szl.qingchuanren.com/5185686baed4c9987bb243d276e10f83.jpeg",
+    "code": "8GQ759",
+    "bio": null,
+    "power": 102,
+    "last_time": "2020-01-16 09:49:42",
+    "last_ip": "182.148.15.177",
+    "status": 0,
+    "member_id": 4,
+    "join_time": "2020-01-16 09:54:13",
+    "created_at": "2019-08-21 11:22:11",
+    "updated_at": "2020-01-16 09:54:13"
+  }
 }
 ```
