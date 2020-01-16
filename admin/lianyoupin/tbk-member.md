@@ -825,6 +825,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
 | :----: | :--: | :--: | :--------------------------------------------------: |
 | limit | int | 是 | 条目数 |
 | page | int | 是 | 页码 |
+| level | string | 否 | 购买会员等级筛选,可选(bronze-青铜 gold-黄金 platina-白金 platinum-铂金 diamond-钻石) |
 
 **响应**
 
