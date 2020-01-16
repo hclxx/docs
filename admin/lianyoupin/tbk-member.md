@@ -870,6 +870,9 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
     "eoc": "500" /*eoc支付数量*/,
     "cash": "0.10" /*现金支付数量*/
   },
+  "express_name": "顺丰" /*物流公司*/,
+  "express_number": "T12312312312" /*物流单号*/,
+  "express_status": 0 /*物流状态 0-待发货 1-已发货 注:  青铜礼包无需发货 level 为 bronze*/,
   "created_at": "2020-01-15 16:06:58",
   "updated_at": "2020-01-15 16:10:33",
   /*购买的会员信息*/
@@ -908,5 +911,33 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
     "created_at": "2019-08-21 11:22:11",
     "updated_at": "2020-01-16 09:54:13"
   }
+}
+```
+
+## 处理礼品发货
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/admin/tbk/members/logs/{id}/express`
+
+**参数**
+| 名称 | 类型 | 必须 | 说明 |
+| :----: | :--: | :--: | :--------------------------------------------------: |
+| express_name | string | 是 | 物流公司 |
+| express_number | string | 是 | 物流单号 |
+
+**响应**
+
+`Status code 201`
+
+**响应参数**
+
+```json
+{
+  "message": "发货成功"
 }
 ```
