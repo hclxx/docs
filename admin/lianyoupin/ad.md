@@ -107,7 +107,7 @@
 |   sort    |  int   |  是  |               排序                |
 |   time    |  int   |  否  |          广告时间 单位秒          |
 |   link    | string |  否  |             跳转链接              |
-| link_type | string |  否  | 跳转类型:inside-外部 outside-内部 |
+| link_type | string |  否  | 跳转类型:inside-外部 outside-内部 tbk-淘宝客链接 |
 
 **SUCCESS 状态码**
 

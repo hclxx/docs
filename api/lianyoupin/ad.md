@@ -82,7 +82,7 @@
       "image": "http://p59l6s1jm.bkt.clouddn.com/09e626788bc7cfec71d64fdbe36ea0e4.jpeg" /*广告图*/,
       "time": 0 /*时间单位秒,0-无限制*/,
       "link": "http://p59l6s1jm.bkt.clouddn.com/09e626788bc7cfec71d64fdbe36ea0e4.jpeg" /*跳转地址,null-无跳转*/,
-      "link_type": "outside" /*outside-外部跳转, inside-内部跳转*/
+      "link_type": "outside" /*outside-外部跳转, inside-内部跳转, tbk-淘宝客链接*/
     }
   ]
 }
