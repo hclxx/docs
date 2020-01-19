@@ -436,7 +436,7 @@
       "tb_paid_time": "2019-12-26 14:05:46" /*商品下单时间*/,
       "item_num": 1 /*购买数量*/,
       "trade_id": "782606306800805316" /*订单号*/,
-      "item_price": "10" /*商品单价，总价 item_num * item_price*/,
+      "alipay_total_price": "10" /*用户支付订单总价*/,
       "item_img": "//img.alicdn.com/bao/uploaded/i4/2201050586712/O1CN01jEjRFQ1zS8wWIanI4_!!0-item_pic.jpg" /*商品图地址*/,
       "id": 1 /*订单id*/
     }
