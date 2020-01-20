@@ -209,6 +209,8 @@
 | :-------: | :----: | :--: | :-------------------------------------: |
 |  client   | string |  是  | 推广位客户端类型: android-安卓 ios-苹果 |
 |  para     |  string|  是  | 各种关键字/淘口令/链接等参数            |
+|  sort     |  string|  否  | 商品排序规则 默认：total_sales_des 如不需要排序规则传 '' 空字符串            |
+|  coupon     |  int|  否  | 当coupon=0时，默认搜索包含无券产品，当传coupon=1时则搜索有券产品           |
 |  page_no     |  int|  是  |  页码           |
 |  page_size     |  int|  是  | 每页条数            |
 
