@@ -8,7 +8,7 @@
 
 - direct:bronze:reward，direct:gold:reward，direct:platinum:reward，direct:diamond:reward 需要填写 z_rate(直接购买奖励比例 整型), z_elc_rate(新增:直接购买奖励 elc 比例 整型) 和 m_zrate(混合购买奖励比例 整型)
 
-- direct:reward 需要填写 rate(新增:一级推荐奖励比例 整型)
+- direct:reward 需要填写 rate(新增:一级推荐推荐购物奖励比例 整型)
 
 **方式**
 
@@ -697,7 +697,7 @@
 
 - direct:bronze:reward，direct:gold:reward，direct:platinum:reward，direct:diamond:reward 需要填写 z_rate(直接购买奖励比例 整型), z_elc_rate(新增:直接购买奖励 elc 比例 整型) 和 m_zrate(混合购买奖励比例 整型)
 
-- direct:reward 需要填写 rate(新增:一级推荐奖励比例 整型)
+- direct:reward 需要填写 rate(新增:一级推荐推荐购物奖励比例 整型)
 
 ```json
 {
