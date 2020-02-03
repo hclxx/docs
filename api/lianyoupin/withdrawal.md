@@ -56,6 +56,8 @@
 |    amount    | integer |  是  | 提现金额（整数） |
 |   pay_pass   | string  |  是  |     支付密码     |
 | account_info | object  |  是  |     账户信息     |
+| allowable_deductions   | string  |  否  |     EOC可抵扣金额     |
+| eoc_num | string  |  否  |     EOC抵扣数量     |
 
 **account_info**
 
@@ -182,5 +184,30 @@
     "created_at": "2020-01-09 11:13:11",
     "updated_at": "2020-01-09 11:13:11"
   }
+}
+```
+
+
+## 获取EOC可抵扣金额
+
+`api/v1/taobaoke/withdrawal/eoc`
+
+**请求方法**
+
+`GET`
+
+**参数**
+| amount | string  |  是  | 提现金额 |
+
+**返回体**
+
+```json
+{
+    "msg": "获取成功",
+    "code": 0,
+    "data": {
+        "allowableDeductions": "11",/*允许抵扣金额*/
+        "eocNum": "366.66666666",/*EOC抵扣数量*/
+    }
 }
 ```
