@@ -2,16 +2,13 @@
 
 ## 会员权益信息
 
-```
-keys 说明:
+### keys 说明:
 
-platform:services 需要填写 rate(提现收取手续费比例 整型),
-direct:bronze:reward，
-direct:gold:reward，
-direct:platinum:reward，
-direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m_zrate(混合购买奖励比例 整型)
+- platform:services 需要填写 rate(提现收取手续费比例 整型),
 
-```
+- direct:bronze:reward，direct:gold:reward，direct:platinum:reward，direct:diamond:reward 需要填写 z_rate(直接购买奖励比例 整型), z_elc_rate(新增:直接购买奖励 elc 比例 整型) 和 m_zrate(混合购买奖励比例 整型)
+
+- direct:reward 需要填写 rate(新增:一级推荐奖励比例 整型)
 
 **方式**
 
@@ -61,6 +58,11 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
           "key": "coupons",
           "desc": "海量优惠卷",
           "value": null
+        },
+        {
+          "key": "direct:reward",
+          "desc": "一级推荐奖励10%",
+          "rate": "20"
         }
       ],
       "created_at": "2020-01-11 14:29:10",
@@ -122,7 +124,7 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
         {
           "key": "direct:reward",
           "desc": "一级推荐奖励10%",
-          "value": null
+          "rate": "20"
         },
         {
           "key": "direct:bronze:reward",
@@ -689,16 +691,13 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
 
 **参数**
 
-```
-keys 说明:
+### keys 说明:
 
-platform:services 需要填写 rate(提现收取手续费比例 整型),
-direct:bronze:reward，
-direct:gold:reward，
-direct:platinum:reward，
-direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m_zrate(混合购买奖励比例 整型)
+- platform:services 需要填写 rate(提现收取手续费比例 整型),
 
-```
+- direct:bronze:reward，direct:gold:reward，direct:platinum:reward，direct:diamond:reward 需要填写 z_rate(直接购买奖励比例 整型), z_elc_rate(新增:直接购买奖励 elc 比例 整型) 和 m_zrate(混合购买奖励比例 整型)
+
+- direct:reward 需要填写 rate(新增:一级推荐奖励比例 整型)
 
 ```json
 {
@@ -713,7 +712,7 @@ direct:diamond:reward 需要填写 z_rate(直接购买奖励比列 整型) 和 m
       "rate": null /*当key为 platform:services 需要提交 rate 参数，当 direct:bronze:reward，
 direct:gold:reward，
 direct:platinum:reward，
-direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
+direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     }
   ],
   /*礼包信息 注意普通会员无礼包，青铜和青铜以上存在礼品*/
@@ -873,7 +872,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
   "status": 1,
   /*当 mode 为 indirect extend 为 null*/
   "extend": {
-    "pay_type":"wxpay",/*支付渠道 wxpay-微信支付 alipay-支付宝支付  注(之前的老数据无此字段)*/
+    "pay_type": "wxpay" /*支付渠道 wxpay-微信支付 alipay-支付宝支付  注(之前的老数据无此字段)*/,
     "eoc": "500" /*eoc支付数量*/,
     "cash": "0.10" /*现金支付数量*/
   },
