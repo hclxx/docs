@@ -828,6 +828,10 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
 | level | string | 否 | 购买会员等级筛选,可选(bronze-青铜 gold-黄金 platina-白金 platinum-铂金 diamond-钻石) |
 | user_id | int | 否 | 用户 id |
 | express_status | int | 否 | 快递发货状态 (物流状态 0-待发货 1-已发货)|
+| start_time | string | 否 | 开始时间 |
+| end_time | string | 否 | 结束时间 |
+| pay_mode | string | 否 | 购买(升级)方式 (cash-纯现金支付 direct-间接升级 mixed-混合支付)|
+| pay_type | string | 否 | 支付渠道 (wxpay-微信支付 alipay-支付宝支付 )|
 
 **响应**
 
@@ -869,6 +873,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate奖励比例*/
   "status": 1,
   /*当 mode 为 indirect extend 为 null*/
   "extend": {
+    "pay_type":"wxpay",/*支付渠道 wxpay-微信支付 alipay-支付宝支付  注(之前的老数据无此字段)*/
     "eoc": "500" /*eoc支付数量*/,
     "cash": "0.10" /*现金支付数量*/
   },
