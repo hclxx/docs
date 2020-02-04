@@ -76,7 +76,9 @@
     "wait_amount": "100.00",/*带入账金额*/
     "success_amount": "0.00",/*成功金额*/
     "fail_amount": "0.00",/*失败金额*/
-    "today_amount": "100.00"/*今天提现金额*/
+    "today_amount": "100.00",/*今天提现金额*/
+    "eoc_num":"2.00",/*EOC抵扣总数量*/
+    "service_charge":"30.00"/*服务费总金额*/
 }
 ```
 
