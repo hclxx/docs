@@ -77,7 +77,8 @@
       "condition": {
         "direct": {
           "limit": "100",
-          "price": "99"
+          "price": "99",
+          "cost_price": "0.01" /*新增 成本价格*/
         },
         "indirect": null
       },
@@ -171,7 +172,8 @@
         /*直接升级*/
         "direct": {
           "limit": "500" /*可使用 eoc 抵扣数量上限*/,
-          "price": "888" /*直接购买金额单位元*/
+          "price": "888" /*直接购买金额单位元*/,
+          "cost_price": "0.01" /*新增 成本价格*/
         },
         /*间接升级条件*/
         "indirect": {
@@ -265,7 +267,8 @@
       "condition": {
         "direct": {
           "limit": "1000",
-          "price": "3499"
+          "price": "3499",
+          "cost_price": "0.01" /*新增 成本价格*/
         },
         "indirect": {
           "num": 100,
@@ -357,7 +360,8 @@
       "condition": {
         "direct": {
           "limit": "1500",
-          "price": "19999"
+          "price": "19999",
+          "cost_price": "0.01" /*新增 成本价格*/
         },
         "indirect": {
           "num": 30,
@@ -454,7 +458,8 @@
       "condition": {
         "direct": {
           "limit": "2000",
-          "price": "39999"
+          "price": "39999",
+          "cost_price": "0.01" /*新增 成本价格*/
         },
         "indirect": {
           "num": 20,
@@ -731,7 +736,8 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     /*直接条件*/
     "direct": {
       "price": "3499" /*会员(RMB)价格单位元*/,
-      "limit": "2000" /*混合支付可以抵扣 eoc 数量上限值*/
+      "limit": "2000" /*混合支付可以抵扣 eoc 数量上限值*/,
+      "cost_price": "0.01" /*新增 成本价格*/
     },
     /*间接条件 注青铜会员无间接升级条件*/
     "indirect": {
@@ -890,7 +896,8 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     "condition": {
       "direct": {
         "limit": "500",
-        "price": "495.1"
+        "price": "495.1",
+        "cost_price": "0.01" /*新增 成本价格*/
       },
       "indirect": {
         "num": 100,
