@@ -84,7 +84,8 @@ function getLypinAppSider(title, introduction) {
         "withdrawal",
         "tbk-wallet",
         "tbk-member",
-        "tbk-performance"
+        "tbk-performance",
+        "weiyi"
       ]
     }
   ];
