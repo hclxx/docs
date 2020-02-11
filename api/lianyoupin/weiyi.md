@@ -546,3 +546,55 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
     }
 }
 ```
+
+## 淘抢购--新增
+
+`api/v1/taobaoke/tqg`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+|  名称  | 类型 | 必须 |                         说明                         |
+| :----: | :--: | :--: | :--------------------------------------------------: |
+| start_time  | string  |  是  |如：2020-02-12 12:00:00     开始抢购时间           |
+| end_time  | string  |  是  | 如：2020-02-12 14:00:00      抢购结束时间           |
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "category_name": "数码电器", //类目名称
+            "click_url": "https://s.click.taobao.com/t?e=m%3k%21bf2",//商品链接
+            "end_time": "2020-02-12 23:59:59", //结束时间
+            "num_iid": 612394675742, //商品ID
+            "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i2/O1CN01fbHCr41Vj9Ct7yGVL_!!2-juitemmedia.png",//商品主图
+            "reserve_price": "118.00", //商品原价
+            "sold_num": 0,  //已抢购数量
+            "start_time": "2020-02-12 12:00:00", //开团时间
+            "title": "无线蓝牙耳机",   //商品标题
+            "total_amount": 10,      //总库存
+            "zk_final_price": "2"   //淘抢购活动价
+        },
+        {
+            "category_name": "数码电器",
+            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DWgEu%2BmFYTHIcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMUCVgEK9%2F%2FOBxq3IhSJN6GR53auEe5GkJSJBvFbH6biTKKSuu9Jm8SpvBkdSxIgC0Sj%2BnQ986zxVIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0m74pls8anFHYOc%2FB%2BEcH0q9Aw7PEaTBS2olD96butl7aHr7qYCcv5%2BiBT%2B0GzqBTomfkDJRs%2BhU%3D&union_lens=lensId:0b01eea0_0d67_170331b08e8_dbf3",
+            "end_time": "2020-02-12 23:59:59",
+            "num_iid": 611984198751,
+            "pic_url": "http://img4.tbcdn.cn/tfscom///gju2.alicdn.com/tps/i2/2206614523620/O1CN01ZSUOSg1cc0LJwDJmf_!!0-item_pic.jpg",
+            "reserve_price": "129.00",
+            "sold_num": 0,
+            "start_time": "2020-02-12 12:00:00",
+            "title": "蓝牙耳机无线运动入",
+            "total_amount": 6,
+            "zk_final_price": "2"
+        }
+    ]
+}
+```
