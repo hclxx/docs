@@ -133,7 +133,8 @@ function getLypAdminSider(title, introduction) {
         "token",
         "tbk-favorites",
         "tbk-member",
-        "cash-withdrawal"
+        "cash-withdrawal",
+        "tbk-wallet"
       ]
     }
   ];
