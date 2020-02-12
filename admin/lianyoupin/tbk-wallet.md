@@ -70,7 +70,7 @@
 }
 ```
 
-## 钱包列表
+## 钱包流水记录
 
 `/admin/tbk/wallet/logs`
 
