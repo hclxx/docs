@@ -60,7 +60,11 @@
           "direct": {
             "price": "99"
           },
-          "indirect": null
+          /*间接升级条件*/
+          "indirect": {
+            "user": 50, /*需邀请用户个数*/,
+            "order": 5 /*邀请用户中下单(首单)人数*/
+          }
         },
         "gift_info": {
           "name": "礼品一",
