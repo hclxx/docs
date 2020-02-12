@@ -21,7 +21,8 @@
 ```json
 {
   "rece_day": 10, //发货10天后确认收货
-  "return_goods": 3 //确认收货后单位天不能维权
+  "return_goods": 3, //确认收货后单位天不能维权
+  "refund_day": 5,//自动退款单位天
 }
 ```
 
@@ -41,6 +42,7 @@
 | :----------: | :--: | :--: | :--: | :----------------: |
 |   rece_day   | int  |  无  |  是  |    确认收货时间    |
 | return_goods | int  |  无  |  是  | 确认收货可维权时间 |
+| refund_day | int  |  无  |  是  | 自动退款单位时间 |
 
 **响应**
 
@@ -50,8 +52,9 @@
 {
   "message": "修改成功",
   "data": {
-    "rece_day": "14",
-    "return_goods": "2"
+    "rece_day": 14,
+    "return_goods": 2,
+    "refund_day":5
   }
 }
 ```
