@@ -16,7 +16,7 @@
 |     goods_name     | string |  无  |  否  |                                  商品名称                          |
 |     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
 |     merchant_name     | string |  无  |  否  |                         商家姓名                                |
-| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 |
+| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 7-商户订单退款中 8-商户订单已退款 |
 |   order_no   | string |  无  |  否  |                                 订单号                                  |
 |  start_time  | string |  无  |  否  |                                开始时间                                 |
 |   end_time   | string |  无  |  否  |                                结束时间                                 |
@@ -58,7 +58,7 @@
       "express_no": "运单号" /*运单号*/,
       "delivery_time": null /*发货时间*/,
       "receipt_time": null /*收货时间*/,
-      "order_status": 1 /*订单状态: 0-等待付款 1-等待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已作废*/,
+      "order_status": 1 /*订单状态: 0-等待付款 1-等待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已作废 7-商户订单退款中 8-商户订单已退款*/,
       "pay_type": "支付宝" /*支付类型*/,
       "currency": "comc" /*货币名称*/,
       "name": "T" /*用户名称*/,
