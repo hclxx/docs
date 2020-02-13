@@ -23,12 +23,11 @@
     "code": 0,
     "data": [
         {
-            "item_id": "588164073345",  //产品ID
+            "num_iid": "588164073345",  //产品ID
             "title": "南京同仁堂菊花决明子茶枸杞金银花茶组合小包装胎菊桂花茶叶茶包",
             "pict_url": "http://img.alicdn.com/bao/uploaded/i1/4251273531/O1CN01ff1u691bxF54Egfv0_!!0-item_pic.jpg",
             "seller_id": "4251273531",//卖家ID
             "user_type": "1", //1表示天猫，0表示淘宝产品
-            "small_images": "https://img.alicdn.com/i3/4251273531/O1CN01TeU7rR1bxF4e1IZDq_!!4251273531.jpg|https://img.alicdn.com/i4/4251273531/O1CN018v5CLk1bxF4e1LBKt_!!4251273531.jpg|https://img.alicdn.com/i1/4251273531/O1CN01T88J9U1bxF4hngIuz_!!4251273531.jpg|https://img.alicdn.com/i2/4251273531/O1CN01xX4sW51bxF4ZKSSS8_!!4251273531.jpg",
             "volume": "16503", //30天销量
             "item_description": "买2发3 买3发5",
             "zk_final_price": "59.90",  //折后价，注意不是券后价
@@ -42,12 +41,11 @@
             "shop_title": "乐家老铺逸优专卖店"
         },
         {
-            "item_id": "543574320825",
+            "num_iid": "543574320825",
             "title": "荷叶茶冬瓜荷叶茶叶纯干玫瑰花茶袋泡花草茶包组合天然决明正品子",
             "pict_url": "http://img.alicdn.com/bao/uploaded/i4/2112920217/O1CN01MwV3ev1DTQWoN286A_!!0-item_pic.jpg",
             "seller_id": "2112920217",
             "user_type": "1",
-            "small_images": "https://img.alicdn.com/i4/2112920217/O1CN01jatIpi1DTQTojfKbZ_!!2112920217.jpg|https://img.alicdn.com/i1/2112920217/TB2XXutx2iSBuNkSnhJXXbDcpXa_!!2112920217.jpg|https://img.alicdn.com/i2/2112920217/TB2TU07lFkoBKNjSZFEXXbrEVXa_!!2112920217.jpg|https://img.alicdn.com/i4/2112920217/TB2hosEer_I8KJjy1XaXXbsxpXa_!!2112920217.jpg",
             "volume": "26177",
             "item_description": "品质花草茶 冬瓜荷叶茶",
             "zk_final_price": "29.90",
