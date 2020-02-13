@@ -11,6 +11,7 @@
 **参数**
 | 名称 | 类型 | 必须 | 说明 |
 | :----: | :--: | :--: | :--------------------------------------------------: |
+| sort | string | 否 | 排序 默认为 total_sales_des 销量倒序 |
 | page | int | 否 | 页码 默认为 1 |
 | pagesize | int | 否 | 每页条数 默认 20 |
 
@@ -22,22 +23,22 @@
     "code": 0,
     "data": [
         {
-            "item_id": "588164073345",
+            "item_id": "588164073345",  //产品ID
             "title": "南京同仁堂菊花决明子茶枸杞金银花茶组合小包装胎菊桂花茶叶茶包",
             "pict_url": "http://img.alicdn.com/bao/uploaded/i1/4251273531/O1CN01ff1u691bxF54Egfv0_!!0-item_pic.jpg",
-            "seller_id": "4251273531",
-            "user_type": "1",
+            "seller_id": "4251273531",//卖家ID
+            "user_type": "1", //1表示天猫，0表示淘宝产品
             "small_images": "https://img.alicdn.com/i3/4251273531/O1CN01TeU7rR1bxF4e1IZDq_!!4251273531.jpg|https://img.alicdn.com/i4/4251273531/O1CN018v5CLk1bxF4e1LBKt_!!4251273531.jpg|https://img.alicdn.com/i1/4251273531/O1CN01T88J9U1bxF4hngIuz_!!4251273531.jpg|https://img.alicdn.com/i2/4251273531/O1CN01xX4sW51bxF4ZKSSS8_!!4251273531.jpg",
-            "volume": "16503",
+            "volume": "16503", //30天销量
             "item_description": "买2发3 买3发5",
-            "zk_final_price": "59.90",
-            "commission_rate": "60.00",
-            "coupon_amount": "20.00",
-            "coupon_start_fee": "59.00",
-            "coupon_total_count": "100000",
-            "coupon_remain_count": "96000",
-            "coupon_start_time": "1580400000",
-            "coupon_end_time": "1581436799",
+            "zk_final_price": "59.90",  //折后价，注意不是券后价
+            "commission_rate": "60.00", //佣金率
+            "coupon_amount": "20.00",  //优惠券面额
+            "coupon_start_fee": "59.00", //优惠券起用门槛，满X元可用
+            "coupon_total_count": "100000",  //券总量
+            "coupon_remain_count": "96000",  //优惠券剩余量
+            "coupon_start_time": "1580400000", //优惠券开始时间
+            "coupon_end_time": "1581436799",   //结束时间
             "shop_title": "乐家老铺逸优专卖店"
         },
         {
