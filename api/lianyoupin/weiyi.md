@@ -519,9 +519,9 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
 }
 ```
 
-## 官方活动转链
+## 官方活动转链 --新增
 
-`api/v1/weiyi/activity`
+`api/v1/taobaoke/activity`
 
 **请求方法**
 
@@ -531,6 +531,7 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
 
 |  名称  | 类型 | 必须 |                         说明                         |
 | :----: | :--: | :--: | :--------------------------------------------------: |
+| text  | string  |  否  |     如果需要生成淘口令则必传            |
 | activityId  | string  |  是  |     官方活动ID            |
 | client  | string  |  是  |     客户端标识 ：android ，ios            |
 
@@ -541,7 +542,8 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
     "msg": "ok",
     "code": 0,
     "data": {
-        "activity_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DVhNdS1CtyTkcQipKwQzePCperVdZeJviyK8Cckff7TVRAdhuF14FMb%2BcrKyx2iI7xq3IhSJN6GR53auEe5GkJQlI5bsQ2wDUBuNI3BmizRcDkcA2rWPwyGkn4rd2JjTlpXXbv1mizeOdzyyO9CIkVU0PUbK0m8lKotYzDcQ4SzIk3ajAyOG5%2FNZAcBtK7CKQwmwBo7yXhWJmHJLC6FpInCzFyapdkDnSjPobR%2B9Wl%2BoDZZ8w6LKUEUtRIy3Y8lGD8HTPyqWu%2F6PwMt9dWfmoAJJcxXijM%2Bwnlqcl7XHxbCq%2Br0KkMB%2Fc8nKhArxj0XL1OHzmmticWbu%2FMqT4SeHHMMPTJcc0AHXTq3%2Fq%2BU1TTLdi6%2FKCtV55YueWClVZqtTxWBIX83bU20jGDF1NzTQoPw%3D%3D&pvid=25016850&union_lens=lensId:0b01c1f1_0c0a_1702419ede1_46af"
+        "activity_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DUkiRe%2FTknxocQipKwQzePCperVdZeJviyK8Cckff7TVRAdhuF14FMe5qNEOZA2KrRitN3%2FurF3x53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyFT9joDf1z2jpXXbv1mizeOdzyyO9CIkVU0PUbK0m8lKotYzDcQ4SzIk3ajAyOG5%2FNZAcBtK7CKQwmwBo7yXhWKQP%2BulRGOOGpzge4FrvI6xdwQkW3la4fi061ft5ITKG1o4%2B8EUxzZMQBRB1XJCO2%2BfzWaXUI0sbtb4BU1T8%2FDjwFMQSe0DLrysHnz8fCEMFX0gewtr2p%2FDi5n%2BmMCIkPrZmgUuzRsKR0L1xOnjqJ0WzaOtPaM31zJp42ZWmOI1a0eaFvW8qblFrtFL0D0vpJh59mlsNMqux4BFKwVS6AOM1qrynWG9ZwwEHilGZvm%2BbJYFiSndE1ZpF4rBy1RNA1iiZ%2BQMlGz6FQ%3D%3D&pvid=25016850&union_lens=lensId:0b0f79e2_0c8b_1705364d198_11ed",
+        "tbk_pwd": "￥bNua14fCd45￥"
     }
 }
 ```
@@ -593,6 +595,109 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
             "title": "蓝牙耳机无线运动入",
             "total_amount": 6,
             "zk_final_price": "2"
+        }
+    ]
+}
+```
+## 官方活动转链 --新增
+
+`api/v1/taobaoke/activity`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+|  名称  | 类型 | 必须 |                         说明                         |
+| :----: | :--: | :--: | :--------------------------------------------------: |
+| page  | int  |  是  |     页码            |
+| page_size  | int  |  是  |     每页条数            |
+| client  | string  |  是  |     客户端标识 ：android ，ios            |
+| material_id  | string  |  是  |     官方的物料Id            |
+| device_type  | string  |  否  |     智能匹配-设备号类型：IMEI，或者IDFA，或者UTDID（UTDID不支持MD5加密），或者OAID            |
+| device_value  | string  |  否  |     智能匹配-设备号加密后的值（MD5加密需32位小写），类型为OAID时传原始OAID值            |
+| device_encrypt  | string  |  否  |    智能匹配-设备号加密类型：MD5，类型为OAID时不传           |
+| item_id  | string  |  否  |    商品ID，用于相似商品推荐          |
+
+**功能说明**
+
+（1）相似商品推荐(猜你喜欢功能)：传参 ：item_id ，material_id:13256
+
+（2）为你推荐：传参 ：device_type ，device_value，device_encrypt，material_id:6708
+
+
+**返回体**
+`small_images 不使用可不用理会`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "category_id": 50010895,
+            "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DJ93u7GE%2FMmFw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0BVqPHFJKm%2BnUNu%2BCzTYRawWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs6bOd%2Fjtr8j%2FKj2xS1%2Bcfd2ySbHmSI7wOtef%2FroYqRldXH5t%2B8W%2BDyUDn8QllYXJvy5rk%2FlRKr9bff1DNXX2LsRxKmPmpIKZsA%3D%3D&scm=1007.15348.115058.0_28026&pvid=804bf314-71d1-4171-8d17-f8d867f16602&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;originalFloorId:28026;pvid:804bf314-71d1-4171-8d17-f8d867f16602;app_pvid:59590_11.20.214.184_160928_1581948140053&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_612439699690%401",
+            "commission_rate": "30.01",
+            "coupon_amount": 10,//优惠劵 金额
+            "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=GeIxanlRCvQNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u717dqRPr76UqiZD10syj%2FEjpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqybAQh4dfYrowDjNrynJS7yI6wK9lo54Y95SXMIunBP4Z5M0kZg5qGOw%3D&&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;app_pvid:59590_11.20.214.184_160928_1581948140053;tpp_pvid:804bf314-71d1-4171-8d17-f8d867f16602&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_612439699690%401",
+            "coupon_end_time": "1582041599000",
+            "coupon_remain_count": 97000,
+            "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=GeIxanlRCvQNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u717dqRPr76UqiZD10syj%2FEjpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqybAQh4dfYrowDjNrynJS7yI6wK9lo54Y95SXMIunBP4Z5M0kZg5qGOw%3D&&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;app_pvid:59590_11.20.214.184_160928_1581948140053;tpp_pvid:804bf314-71d1-4171-8d17-f8d867f16602&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_612439699690%401",
+            "coupon_start_fee": "39.0",
+            "coupon_start_time": "1581868800000",
+            "coupon_total_count": 100000,
+            "item_description": "75%酒精消毒湿巾",
+            "item_id": 612439699690,
+            "level_one_category_id": 50025705,
+            "level_one_category_name": "洗护清洁剂/卫生巾/纸/香薰",
+            "nick": "嘉士利家居旗舰店", // 店铺名称
+            "pict_url": "//img.alicdn.com/bao/uploaded/i4/2206774947383/O1CN01290kd424PSjpZsUa4_!!0-item_pic.jpg",
+            "seller_id": 2206774947383,
+            "small_images": {
+                "string": [
+                    "//img.alicdn.com/i3/2206774947383/O1CN014gfsaa24PSjq5jWOT_!!2206774947383.jpg",
+                    "//img.alicdn.com/i1/2206774947383/O1CN01znpsBO24PSjqI9chs_!!2206774947383.jpg",
+                    "//img.alicdn.com/i4/2206774947383/O1CN01UuXjta24PSjq5jirw_!!2206774947383.jpg",
+                    "//img.alicdn.com/i1/2206774947383/O1CN01LcjlBR24PSjoaVAu1_!!2206774947383.jpg"
+                ]
+            },
+            "title": "嘉士利75%消毒湿巾酒精湿纸巾杀菌擦手除菌便携式一次性40片X5包",
+            "user_type": 1,
+            "volume": 17366,
+            "zk_final_price": "39.9"
+        },
+        {
+            "category_id": 350201,
+            "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DEgm%2BTre2w71w4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0BVqPHFJKm%2BnUNu%2BCzTYRawWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs6CjNNBBcJcxh05s9HGrFF79Umq014SDk7ICKXNVhWYiK9e1j7Yt%2FyuOAW1SOq72%2FDHjv1rJI%2Ful5lSEYYGSCwLGDF1NzTQoPw%3D%3D&scm=1007.15348.115058.0_28026&pvid=804bf314-71d1-4171-8d17-f8d867f16602&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;originalFloorId:28026;pvid:804bf314-71d1-4171-8d17-f8d867f16602;app_pvid:59590_11.20.214.184_160928_1581948140053&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_598934566708%401",
+            "commission_rate": "1.8",
+            "coupon_amount": 30,
+            "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=yJSOtztKlBQNfLV8niU3R5TgU2jJNKOfU1BGIDN741Ez0BKd%2F02MBtYUXgYx689dSptd1aXrTrJa4rBpq3tSHSF5JSxmj91A%2BfhfSTmzBHqWxb%2F4IJHyB391Ao%2BVKPIafN1bjh3fMKhNLi0lBPiBHcURCvQwngvrE5xa8xF8TZNZCbLr7cFuWd%2B%2Fb%2B55Rxf2GsG23kNeAb%2F429ybkD5Jyr9XLrxNgIACSB9Oxyt7%2BcB%2BOHfs5nLQGA%3D%3D&&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;app_pvid:59590_11.20.214.184_160928_1581948140053;tpp_pvid:804bf314-71d1-4171-8d17-f8d867f16602&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_598934566708%401",
+            "coupon_end_time": "1582041599000",
+            "coupon_remain_count": 100000,
+            "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=yJSOtztKlBQNfLV8niU3R5TgU2jJNKOfU1BGIDN741Ez0BKd%2F02MBtYUXgYx689dSptd1aXrTrJa4rBpq3tSHSF5JSxmj91A%2BfhfSTmzBHqWxb%2F4IJHyB391Ao%2BVKPIafN1bjh3fMKhNLi0lBPiBHcURCvQwngvrE5xa8xF8TZNZCbLr7cFuWd%2B%2Fb%2B55Rxf2GsG23kNeAb%2F429ybkD5Jyr9XLrxNgIACSB9Oxyt7%2BcB%2BOHfs5nLQGA%3D%3D&&app_pvid=59590_11.20.214.184_160928_1581948140053&ptl=floorId:28026;app_pvid:59590_11.20.214.184_160928_1581948140053;tpp_pvid:804bf314-71d1-4171-8d17-f8d867f16602&union_lens=lensId%3AMAPI%401581948140%40804bf314-71d1-4171-8d17-f8d867f16602_598934566708%401",
+            "coupon_start_fee": "299.0",
+            "coupon_start_time": "1581868800000",
+            "coupon_total_count": 100000,
+            "item_description": "【薇娅推荐】立省140，到手159",
+            "item_id": 598934566708,
+            "level_one_category_id": 50002768,
+            "level_one_category_name": "个人护理/保健/按摩器材",
+            "nick": "飞利浦百诚网络专卖店",
+            "pict_url": "//img.alicdn.com/bao/uploaded/i2/654143820/O1CN01j7IWRb1e5bYUdeGqU_!!0-item_pic.jpg",
+            "seller_id": 654143820,
+            "small_images": {
+                "string": [
+                    "//img.alicdn.com/i4/654143820/O1CN016qRHyI1e5bXbkiotP_!!0-item_pic.jpg",
+                    "//img.alicdn.com/i1/654143820/O1CN01gpiJVl1e5bXmsslOQ_!!654143820.jpg",
+                    "//img.alicdn.com/i1/654143820/O1CN01h4zXXI1e5bXM7yvnv_!!654143820.jpg",
+                    "//img.alicdn.com/i3/654143820/O1CN01qhFXnl1e5bYUPHGoD_!!654143820.jpg"
+                ]
+            },
+            "title": "【薇娅推荐】飞利浦剃须刀电动充电式官方旗舰店刮胡刀男士胡须刀",
+            "user_type": 1,
+            "volume": 32332,
+            "zk_final_price": "299"
         }
     ]
 }
