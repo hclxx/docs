@@ -839,7 +839,7 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
 | express_status | int | 否 | 快递发货状态 (物流状态 0-待发货 1-已发货)|
 | start_time | string | 否 | 开始时间 |
 | end_time | string | 否 | 结束时间 |
-| pay_mode | string | 否 | 购买(升级)方式 (cash-纯现金支付 direct-间接升级 mixed-混合支付)|
+| pay_mode | string | 否 | 购买(升级)方式 (cash-纯现金支付 direct-间接升级 mixed-混合支付 admin-管理员设置)|
 | pay_type | string | 否 | 支付渠道 (wxpay-微信支付 alipay-支付宝支付 )|
 
 **响应**
@@ -877,10 +877,10 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     ],
     "receive": null
   },
-  "mode": "mixed" /*购买方式:mixed-混合支付(eoc+现金) direct-现金购买 indirect-间接晋升*/,
+  "mode": "mixed" /*购买方式:mixed-混合支付(eoc+现金) direct-现金购买 indirect-间接晋升 admin-管理员设置*/,
   "order_no": "M91331579075618970",
   "status": 1,
-  /*当 mode 为 indirect extend 为 null*/
+  /*当 mode 为 indirect extend 为 null 当 mode 为 admin 为 管理员信息{"admin": {"id": 1, "name": "超级管理员"}}*/
   "extend": {
     "pay_type": "wxpay" /*支付渠道 wxpay-微信支付 alipay-支付宝支付  注(之前的老数据无此字段)*/,
     "eoc": "500" /*eoc支付数量*/,
@@ -956,5 +956,36 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
 ```json
 {
   "message": "发货成功"
+}
+```
+
+## 设置用户会员等级
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/admin/tbk/members/user/{user}/level`
+
+**参数**
+| 名称 | 类型 | 必须 | 说明 |
+| :----: | :--: | :--: | :--------------------------------------------------: |
+| member_id | int | 是 | 会员等级id |
+
+### 权限:
+
+- set:member:level   建议设置在用户管理菜单下,
+
+**响应**
+
+`Status code 201`
+
+**响应参数**
+
+```json
+{
+  "message": "设置成功"
 }
 ```
