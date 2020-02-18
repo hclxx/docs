@@ -63,7 +63,7 @@
       "title": "佣金奖励" /*标题*/,
       "amount": "0.00" /*金额*/,
       "target_user_id": 3,
-      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-购买会员 bonus-分红*/,
+      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-会员礼包 bonus-分红*/,
       "action": 1 /*收支状态: 1-收入 2-支出*/,
       "data": null /*扩展字段*/,
       "status": 0 /*状态:0-等待 1-成功 2-失败*/,
