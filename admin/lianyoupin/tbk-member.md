@@ -989,3 +989,63 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
   "message": "设置成功"
 }
 ```
+
+## (简短)会员列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/tbk/members/short`
+
+**参数**
+无
+
+**响应**
+
+`Status code 200`
+
+**响应参数**
+
+```json
+[
+    {
+        "id": 1,/*会员id*/
+        "name": "普通会员",/*会员名称*/
+        "icon": null,/*会员图标*/
+        "level": "common"/*会员等级*/
+    },
+    {
+        "id": 2,
+        "name": "青铜会员",
+        "icon": null,
+        "level": "bronze"
+    },
+    {
+        "id": 3,
+        "name": "黄金会员",
+        "icon": null,
+        "level": "gold"
+    },
+    {
+        "id": 4,
+        "name": "白金会员",
+        "icon": null,
+        "level": "platina"
+    },
+    {
+        "id": 5,
+        "name": "铂金会员",
+        "icon": null,
+        "level": "platinum"
+    },
+    {
+        "id": 6,
+        "name": "钻石会员",
+        "icon": null,
+        "level": "diamond"
+    }
+]
+```
