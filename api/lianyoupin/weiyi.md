@@ -599,9 +599,9 @@ data 中 key 为 parent_cid ，顶级分类的 parent_cid 为 0.
     ]
 }
 ```
-## 官方活动转链 --新增
+## 淘宝客-推广者-物料精选 --新增
 
-`api/v1/taobaoke/activity`
+`api/v1/taobaoke/material`
 
 **请求方法**
 
