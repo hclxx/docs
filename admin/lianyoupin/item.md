@@ -253,8 +253,8 @@
   "skus": [
     // sku
     {
-      "price": 1000, // 购买现金价格
-      "token_price": 1000, // 【新增】integer EOC 抵扣上限
+      "price": 1000, // 必填 购买现金价格
+      "token_price": 1000, // 【新增】非必填 integer EOC 抵扣上限
       "sale_price": 100.21, // 销售价
       "stock_num": "111", // 库存
       "specs_properties": [
@@ -318,8 +318,8 @@
   "skus": [
     // sku
     {
-      "price": 1000, // 兑换价
-      "token_price": 1000, // 【新增】integer EOC 抵扣上限
+      "price": 1000, // 必填 购买现金价格
+      "token_price": 1000, // 【新增】 非必填 integer EOC 抵扣上限
       "sale_price": 100.21, // 销售价
       "stock_num": "111", // 库存
       "specs_properties": [
