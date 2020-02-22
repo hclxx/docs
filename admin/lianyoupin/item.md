@@ -220,16 +220,16 @@
       "target_id": 12
     }
   ],
-    /* 当商品为电子卡券时，返回卡券分类信息 */
-   "coupon_category": {
-          "id": 1,
-          "title": "樊登阅读卡11",
-          "used_item_id": 76
-      }
+  /* 当商品为电子卡券时，返回卡券分类信息 */
+  "coupon_category": {
+    "id": 1,
+    "title": "樊登阅读卡11",
+    "used_item_id": 76
+  }
 }
 ```
 
-## 创建
+## 创建【修改】
 
 `admin/items`
 
@@ -241,7 +241,7 @@
 
 ```json
 {
-  "currency": "comc", // 专区名称
+  "currency": "eoc:cny:deduction", // 新增 eoc:cny:deduction-EOC现金抵扣专区
   "goods_id": 1, // 商品ID
   "spec_type": 2, // 规格分类 1-单规格 2-多规格
   "image": "http://baidu.com", // 商品名称
@@ -253,7 +253,8 @@
   "skus": [
     // sku
     {
-      "price": 1000, // 兑换价
+      "price": 1000, // 购买现金价格
+      "token_price": 1000, // 【新增】integer EOC 抵扣上限
       "sale_price": 100.21, // 销售价
       "stock_num": "111", // 库存
       "specs_properties": [
@@ -306,7 +307,7 @@
 
 ```json
 {
-  "currency": "comc", // 专区名称
+  "currency": "eoc:cny:deduction", // 新增 eoc:cny:deduction-EOC现金抵扣专区
   "goods_id": 1, // 商品ID
   "spec_type": 2, // 规格分类 1-单规格 2-多规格
   "image": "http://baidu.com", // 商品名称
@@ -318,6 +319,7 @@
     // sku
     {
       "price": 1000, // 兑换价
+      "token_price": 1000, // 【新增】integer EOC 抵扣上限
       "sale_price": 100.21, // 销售价
       "stock_num": "111", // 库存
       "specs_properties": [
@@ -423,10 +425,10 @@
 
 **请求方法**
 
-| 名称 | 类型 | 默认 | 必须 |     说明      |
-| :--: | :--: | :--: | :--: | :-----------: |
-| type | string  |  0   |  是  | 限制类型: number-数量 time-时间 |
-| limit | string  |  0   |  是  | 如 type 为 number, limit 必须是整数,type 为time, limit 是时间|
+| 名称  |  类型  | 默认 | 必须 |                              说明                              |
+| :---: | :----: | :--: | :--: | :------------------------------------------------------------: |
+| type  | string |  0   |  是  |                限制类型: number-数量 time-时间                 |
+| limit | string |  0   |  是  | 如 type 为 number, limit 必须是整数,type 为 time, limit 是时间 |
 
 **返回体**
 
