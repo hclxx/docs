@@ -44,14 +44,14 @@
 
 **参数**
 
-|    名称     |  类型  | 必须 |                                 说明                                 |
-| :---------: | :----: | :--: | :------------------------------------------------------------------: |
-|    limit    |  int   |  是  |                            条目数 默认 10                            |
-|   offset    |  int   |  是  |                           偏移量 默认为 0                            |
-|  currency   | string |  是  | 货币类型: comc-comc,ore-矿石,cny-现金 mix-混合(token+cny) token-通证 |
-| merchant_id |  int   |  否  |                               商户 id                                |
-|  order_by   | string |  否  |      排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序       |
-|    name     | string |  否  |                          名称筛选,模糊搜索                           |
+|    名称     |  类型  | 必须 |                                                说明                                                 |
+| :---------: | :----: | :--: | :-------------------------------------------------------------------------------------------------: |
+|    limit    |  int   |  是  |                                           条目数 默认 10                                            |
+|   offset    |  int   |  是  |                                           偏移量 默认为 0                                           |
+|  currency   | string |  是  | 货币类型: comc-comc,ore-矿石,cny-现金 mix-混合(token+cny) token-通证 eoc:cny:deduction-ECO 抵扣专区 |
+| merchant_id |  int   |  否  |                                               商户 id                                               |
+|  order_by   | string |  否  |                      排序：id_desc-最新 price_asc-价格升序 price_desc-价格降序                      |
+|    name     | string |  否  |                                          名称筛选,模糊搜索                                          |
 
 **响应**
 
@@ -65,15 +65,16 @@
     {
       "id": 9,
       "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL" /*商品名称*/,
-      "currency": "ore" /*【新增】 货币类型: cny-现金 token-通证支付 mix-混合支付(cny+token)*/,
+      "currency": "ore" /*【新增】 货币类型: cny-现金 token-通证支付 mix-混合支付(cny+token) eoc:cny:deduction-EOC抵扣专区*/,
       "category_id": 1 /*分类id*/,
       "price": "30.00000000" /*价格*/,
-      "token_price": "0.00000000" /*【新增】通证价格，注意当支付类型为mix或token时该才存在有效价格*/,
+      "token_price": "0.00000000" /*【新增】通证价格，注意当支付类型为mix或token时该才存在有效价格，如果 currency 为 eoc:cny:deduction 该为 EOC 抵扣上限值 */,
       "power": 0 /*【新增】矿力奖励*/,
       "stock_num": 0 /*总库存:  0-售罄*/,
       "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
       "surplu_second": -76694 /*限购结束秒数*/,
+      "deduction_price": "70" /*【新增】 最省价格*/,
       "token": {
         "id": 4,
         "name": "以太坊" /*【新增】通证名称*/,
@@ -144,6 +145,7 @@
     "stock_num": 898,
     "end_second": null,
     "share_url": "https://api.igoods.io/share/quick/register/O1L8K5",
+    "deduction_price": "70" /*【新增】 最省价格*/,
     "token": {
       "id": 4,
       "name": "以太坊" /*【新增】通证名称*/,
@@ -235,8 +237,9 @@
         "sale_price": "0.00",
         "image": null,
         "properties": "46",
-        "power": 1 /*【新增】矿力奖励*/,
-        "token_price": "123123" /*【新增】通证价格*/,
+        "power": 1 /*【新增】矿力奖励 */,
+        "token_price": "123123" /*【新增】通证价格，如果 currency 为 eoc:cny:deduction 该为 EOC 抵扣上限值*/,
+        "deduction_price": "70" /*【新增】最省价格*/,
         "specs_properties": [
           {
             "p_id": 46,

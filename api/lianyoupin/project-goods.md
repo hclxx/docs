@@ -83,12 +83,13 @@
 
 **参数**
 
-|     名称     |  类型  | 默认 | 必须 |                       说明                        |
-| :----------: | :----: | :--: | :--: | :-----------------------------------------------: |
-|    sku_id    |  int   |  无  |  是  |                    商品 sku_id                    |
-|   pay_type   | string |  无  |  是  | 支付类型: wxpay-微信 alipay-支付宝 token-通证支付 |
-| consignee_id |  int   |  无  |  是  |                    收获地址 id                    |
-|     num      |  int   |  无  |  是  |                     购买数量                      |
+|        名称        |  类型  | 默认 | 必须 |                       说明                        |
+| :----------------: | :----: | :--: | :--: | :-----------------------------------------------: |
+|       sku_id       |  int   |  无  |  是  |                    商品 sku_id                    |
+|      pay_type      | string |  无  |  是  | 支付类型: wxpay-微信 alipay-支付宝 token-通证支付 |
+|    consignee_id    |  int   |  无  |  是  |                    收获地址 id                    |
+|        num         |  int   |  无  |  是  |                     购买数量                      |
+| eduction_token_num |  int   |  无  |  否  |  抵扣 EOC 数量，当专区位是 EOC 专区才会使用该值   |
 
 **响应**
 
@@ -146,9 +147,9 @@
         "file_url": "https://img.yzcdn.cn/upload_files/2018/11/13/FsXOQvXwWsvvG1GBWbdBI4FIAHvH.jpg" /*通证图标*/
       },
       "symbol": "btc" /*通证符号*/,
-      "balance": "10.00000000", /*通证余额*/
-      "power": "0",/*矿力*/
-      "waited_total": "10.0000000",/*未结算*/
+      "balance": "10.00000000" /*通证余额*/,
+      "power": "0" /*矿力*/,
+      "waited_total": "10.0000000" /*未结算*/
     }
   ]
 }
