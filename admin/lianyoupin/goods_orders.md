@@ -10,18 +10,20 @@
 
 **请求参数**
 
-|     名称     |  类型  | 默认 | 必须 |                                     说明                                     |
-| :----------: | :----: | :--: | :--: | :--------------------------------------------------------------------------: |
-|    limit     |  int   |  15  |  否  |                                每页条数                                 |
-|     goods_name     | string |  无  |  否  |                                  商品名称                          |
-|     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
-|     merchant_name     | string |  无  |  否  |                         商家姓名                                |
-| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 7-商户订单退款中 8-商户订单已退款 |
-|   order_no   | string |  无  |  否  |                                 订单号                                  |
-|  start_time  | string |  无  |  否  |                                开始时间                                 |
-|   end_time   | string |  无  |  否  |                                结束时间                                 |
-|   currency   | string | comc |  否  |                            货币类型 comc,ore                             |
-|   order_nos   | string |  无  |  否  |                                 订单号号(批量)                           |
+`新增：currency增加eoc:cny:deduction EOC专区订单筛选`
+
+|      名称       |  类型  | 默认 | 必须 |                                                   说明                                                    |
+| :-------------: | :----: | :--: | :--: | :-------------------------------------------------------------------------------------------------------: |
+|      limit      |  int   |  15  |  否  |                                                 每页条数                                                  |
+|   goods_name    | string |  无  |  否  |                                                 商品名称                                                  |
+| user_name_phone | string |  无  |  否  |                                             买家的姓名或电话                                              |
+|  merchant_name  | string |  无  |  否  |                                                 商家姓名                                                  |
+|  order_status   |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 7-商户订单退款中 8-商户订单已退款 |
+|    order_no     | string |  无  |  否  |                                                  订单号                                                   |
+|   start_time    | string |  无  |  否  |                                                 开始时间                                                  |
+|    end_time     | string |  无  |  否  |                                                 结束时间                                                  |
+|    currency     | string | comc |  否  |                      专区类型:comc-COMC 专区,ore-ORE 专区,eoc:cny:deduction-EOC 专区                      |
+|    order_nos    | string |  无  |  否  |                                              订单号号(批量)                                               |
 
 **SUCCESS 状态码**
 
@@ -63,15 +65,29 @@
       "currency": "comc" /*货币名称*/,
       "name": "T" /*用户名称*/,
       "phone": "18728624682" /*用户手机号*/,
-     "consignee_name": null,
-     "consignee_phone": null,
-     "consignee_tag": null,
-     "consignee_other": null,
-     "consignee_area": null,
-     "consignee_detail": null,
-     "merchant_name": "商家",/*商家名称*/
-     "merchant_phone": "18781601158",/*商家电话*/
-     "merchant_avatar": "http://szl.qingchuanren.com/cacd83a7ac4ac6a2e173c0b5adf24c8e.png"/*商家头像*/
+      "consignee_name": null /*收货人名字*/,
+      "consignee_phone": null /*收货人手机*/,
+      "consignee_tag": null /*收货标签*/,
+      "consignee_other": null /*收货其他信息*/,
+      "consignee_area": null /*收货区域*/,
+      "consignee_detail": null /*收货详情地址*/,
+      "apply_refund_status": 1, // 申请退款状态 0-未申请 1-已申请 2-已驳回 3-已撤销 4-已完成
+      "apply_refund_reason": {
+        // 申请退款原因
+        "desc": "123", // 申请退款描述
+        "reason": "不想要了", // 申请退款原因
+        "express_no": "2344", // 快递单号
+        "express_code": "jindong", // 快递公司编号
+        "express_name": "京东", // 快递公司名称
+        "refund_image": [], // 退款凭证
+        "express_image": [] // 快递凭证
+      },
+      "apply_refund_time": "2019-11-29 16:04:51", // 申请退款时间
+      "reject_refund_reason": null, // 驳回退款原因
+      "handle_refund_time": "2019-12-02 10:50:13", // 驳回退款时间
+      "merchant_name": "商家" /*商家名称*/,
+      "merchant_phone": "18781601158" /*商家电话*/,
+      "merchant_avatar": "http://szl.qingchuanren.com/cacd83a7ac4ac6a2e173c0b5adf24c8e.png" /*商家头像*/
     }
   ],
   "first_page_url": "http://comc.com/admin/order?page=1",
@@ -132,11 +148,11 @@
 
 **请求参数**
 
-|    名称    |  类型  | 默认 | 必须 |  说明   |
-| :--------: | :----: | :--: | :--: | :-----: |
-| express_name |  string   |  无  |  是  | 快递名称 |
-| express_code |  string   |  无  |  是  | 快递编号 |
-| express_no | string |  是  |  是  | 运单号  |
+|     名称     |  类型  | 默认 | 必须 |   说明   |
+| :----------: | :----: | :--: | :--: | :------: |
+| express_name | string |  无  |  是  | 快递名称 |
+| express_code | string |  无  |  是  | 快递编号 |
+|  express_no  | string |  是  |  是  |  运单号  |
 
 **SUCCESS 状态码**
 
@@ -215,9 +231,9 @@
 
 **请求参数**
 
-|    名称    |  类型  | 默认 | 必须 |  说明   |
-| :--------: | :----: | :--: | :--: | :-----: |
-| reason |  string   |  无  |  是  | 取消原因 |
+|  名称  |  类型  | 默认 | 必须 |   说明   |
+| :----: | :----: | :--: | :--: | :------: |
+| reason | string |  无  |  是  | 取消原因 |
 
 **SUCCESS 状态码**
 
@@ -241,18 +257,18 @@
 
 **请求参数**
 
-|     名称     |  类型  | 默认 | 必须 |                                     说明                                     |
-| :----------: | :----: | :--: | :--: | :--------------------------------------------------------------------------: |
-|    limit     |  int   |  15  |  否  |                                每页条数                                 |
-|     goods_name     | string |  无  |  否  |                                  商品名称                          |
-|     user_name_phone     | string |  无  |  否  |                         买家的姓名或电话                       |
-|     merchant_name     | string |  无  |  否  |                         商家姓名                                |
-| order_status |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 7-商户订单退款中 8-商户订单已退款|
-|   order_no   | string |  无  |  否  |                                 订单号                                  |
-|  start_time  | string |  无  |  否  |                                开始时间                                 |
-|   end_time   | string |  无  |  否  |                                结束时间                                 |
-|   currency   | string | comc |  否  |                            货币类型 comc,ore                             |
-|   order_nos   | string |  无  |  否  |                                 订单号号(批量)                           |
+|      名称       |  类型  | 默认 | 必须 |                                                   说明                                                    |
+| :-------------: | :----: | :--: | :--: | :-------------------------------------------------------------------------------------------------------: |
+|      limit      |  int   |  15  |  否  |                                                 每页条数                                                  |
+|   goods_name    | string |  无  |  否  |                                                 商品名称                                                  |
+| user_name_phone | string |  无  |  否  |                                             买家的姓名或电话                                              |
+|  merchant_name  | string |  无  |  否  |                                                 商家姓名                                                  |
+|  order_status   |  int   |  -1  |  否  | 订单状态:0-待付款 1-待发货 2-已发货 3-已完成 4-已退款 5-已退货 6-已关闭 7-商户订单退款中 8-商户订单已退款 |
+|    order_no     | string |  无  |  否  |                                                  订单号                                                   |
+|   start_time    | string |  无  |  否  |                                                 开始时间                                                  |
+|    end_time     | string |  无  |  否  |                                                 结束时间                                                  |
+|    currency     | string | comc |  否  |                                             货币类型 comc,ore                                             |
+|    order_nos    | string |  无  |  否  |                                              订单号号(批量)                                               |
 
 **SUCCESS 状态码**
 
@@ -262,6 +278,54 @@
 
 ```json
 {
-    "download_url": "http://comc.com/storage/2019-04-29-现金区订单导出.xlsx"
+  "download_url": "http://comc.com/storage/2019-04-29-现金区订单导出.xlsx"
+}
+```
+
+## 驳回退货
+
+`admin/order/{orderId}/agree/refund`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|  名称  |  类型  | 默认 | 必须 |   说明   |
+| :----: | :----: | :--: | :--: | :------: |
+| reason | string |  无  |  是  | 驳回原因 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "驳回成功"
+}
+```
+
+## 同意退货
+
+`admin/order/{orderId}/reject/refund`
+
+**请求方式**
+
+`POST`
+
+无
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "message": "操作成功"
 }
 ```
