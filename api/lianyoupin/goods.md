@@ -76,6 +76,7 @@
       "surplu_second": -76694 /*限购结束秒数*/,
       "deduction_price": "70" /*【新增】 最省价格*/,
       "line_price": "100" /*划线价格*/,
+      "eoc_price": "0.3" /*eoc单价*/,
       "token": {
         "id": 4,
         "name": "以太坊" /*【新增】通证名称*/,
@@ -88,21 +89,6 @@
       "token_award": {
         "token_award": "50" /*奖励的通证数量*/,
         "token_symbol": "btc" /*奖励的通证符*/
-      }
-    },
-    {
-      "id": 10,
-      "name": "花花公子 高领毛衣 2018秋季新款 毛衣男修身打底针织衫学生翻领毛线衣 XL17630 深蓝 XL",
-      "currency": "ore",
-      "category_id": 1,
-      "price": "30.00000000",
-      "stock_num": 0 /*总库存:  0-售罄*/,
-      "image": "http://p59l6s1jm.bkt.clouddn.com/7b0c24fd90024a6dcf666bdd3f03524e.jpeg",
-      "limit_time": null,
-      "surplu_second": null,
-      "token_award": {
-        "token_award": "50",
-        "token_symbol": "btc"
       }
     }
   ]
@@ -148,6 +134,7 @@
     "share_url": "https://api.igoods.io/share/quick/register/O1L8K5",
     "deduction_price": "70" /*【新增】 最省价格*/,
     "line_price": "100" /*划线价格*/,
+    "eoc_price": "0.3" /*eoc单价*/,
     "token": {
       "id": 4,
       "name": "以太坊" /*【新增】通证名称*/,
