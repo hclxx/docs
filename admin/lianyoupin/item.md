@@ -10,13 +10,18 @@
 
 **请求参数**
 
-|    名称     |  类型  | 默认 | 必须 |                 说明                 |
-| :---------: | :----: | :--: | :--: | :----------------------------------: |
-|    limit    |  int   |  15  |  否  |               每页条数               |
-|    name     | string |  无  |  否  |               商品名称               |
-|  currency   | string |  无  |  是  | 专区类型 comc-comc 专区 ore-矿石专区 |
-| special_id  |  int   |  无  |  否  |               专栏 ID                |
-| category_id |  int   |  无  |  否  |               分类 ID                |
+`
+currency 新增 eoc:cny:deduction 标示获取 EOC 专区商品
+
+`
+
+|    名称     |  类型  | 默认 | 必须 |                                说明                                 |
+| :---------: | :----: | :--: | :--: | :-----------------------------------------------------------------: |
+|    limit    |  int   |  15  |  否  |                              每页条数                               |
+|    name     | string |  无  |  否  |                              商品名称                               |
+|  currency   | string |  无  |  是  | 专区类型 comc-comc 专区 ore-矿石专区 eoc:cny:deduction-EOC 专区商品 |
+| special_id  |  int   |  无  |  否  |                               专栏 ID                               |
+| category_id |  int   |  无  |  否  |                               分类 ID                               |
 
 **返回参数**
 
@@ -73,9 +78,11 @@
   "currency": "comc", // 专区
   "limit_time": null,
   "limit_num": 0,
+  "line_price": "0.0", // 【新增】number 划线价格
   "stock_num": 4000, // 总库存
   "sales_num": 0, // 销量
   "cost_price": 100, // 成本价
+  "token_price": "11", // 【新增】integer EOC抵扣数量
   "created_at": "2019-03-04 19:17:45",
   "updated_at": "2019-03-04 19:17:45",
   "is_delete": 0,
@@ -127,6 +134,7 @@
       "sale_price": "10000.00", // 销售价
       "image": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg", // sku图片
       "properties": "5-7", // 组合属性ID
+      "token_price": "11", // 【新增】integer EOC抵扣上限数量
       "specs_properties": [
         {
           "p_id": 5,
@@ -229,7 +237,7 @@
 }
 ```
 
-## 创建【修改】
+## 添加商品到专区
 
 `admin/items`
 
@@ -238,6 +246,8 @@
 `POST`
 
 **请求参数**
+
+`新增请求参数: line_price 划线价格 精确到分 如 0.02 非必填写、skus.*.token_price 抵扣的EOC的上限 整型 非必填`
 
 ```json
 {
@@ -248,6 +258,7 @@
   "limit_num": 0, // 限量
   "limit_time": null, // 限时
   "price": 200, // 兑换价
+  "line_price": "0.0", // 【新增】number 划线价格
   "power": "0", // 矿力奖励(整数)
   "ore": "0", // 矿石奖励(小数后两位)
   "line_price": 200.11 /*新增 非必填*/,
@@ -255,7 +266,7 @@
     // sku
     {
       "price": 1000, // 必填 购买现金价格
-      "token_price": 1000, // 【新增】非必填 integer EOC 抵扣上限
+      "token_price": "11", // 【新增】integer EOC抵扣上限数量
       "sale_price": 100.21, // 销售价
       "stock_num": "111", // 库存
       "specs_properties": [
