@@ -75,6 +75,7 @@
       "limit_time": "2019-01-21 16:30:24" /*限购截止时间*/,
       "surplu_second": -76694 /*限购结束秒数*/,
       "deduction_price": "70" /*【新增】 最省价格*/,
+      "line_price": "100" /*划线价格*/,
       "token": {
         "id": 4,
         "name": "以太坊" /*【新增】通证名称*/,
@@ -146,6 +147,7 @@
     "end_second": null,
     "share_url": "https://api.igoods.io/share/quick/register/O1L8K5",
     "deduction_price": "70" /*【新增】 最省价格*/,
+    "line_price": "100" /*划线价格*/,
     "token": {
       "id": 4,
       "name": "以太坊" /*【新增】通证名称*/,
