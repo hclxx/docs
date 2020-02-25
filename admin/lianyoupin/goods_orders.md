@@ -72,16 +72,16 @@
       "consignee_area": null /*收货区域*/,
       "consignee_detail": null /*收货详情地址*/,
       "apply_refund_status": 1, // 申请退款状态 0-未申请 1-已申请 2-已驳回 3-已撤销 4-已完成
-      "apply_refund_reason": {
+      "apply_refund_reason": "{
         // 申请退款原因
-        "desc": "123", // 申请退款描述
-        "reason": "不想要了", // 申请退款原因
-        "express_no": "2344", // 快递单号
-        "express_code": "jindong", // 快递公司编号
-        "express_name": "京东", // 快递公司名称
-        "refund_image": [], // 退款凭证
-        "express_image": [] // 快递凭证
-      },
+        'desc': '123', //
+        'reason': '不想要了', // 申请退款原因
+        'express_no': '2344', // 快递单号
+        'express_code': 'jindong', // 快递公司编号
+        'express_name': '京东', // 快递公司名称
+        'refund_image': [], // 退款凭证
+        'express_image': [] // 快递凭证
+      }",
       "apply_refund_time": "2019-11-29 16:04:51", // 申请退款时间
       "reject_refund_reason": null, // 驳回退款原因
       "handle_refund_time": "2019-12-02 10:50:13", // 驳回退款时间
