@@ -269,7 +269,7 @@
 
 **路径**
 
-`/api/v1/orders/{id}/delivery`
+`/api/v1/taobaoke/members/orders/{id}/delivery`
 
 **参数**
 
@@ -286,5 +286,38 @@
   "msg": "确认收货成功",
   "code": 0,
   "data": null
+}
+```
+
+## 查看虚拟礼包领取链接
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/v1/taobaoke/members/orders/{id}/link`
+
+**参数**
+
+`兑换参数说明`
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "member_id": 2,
+        "link_url": "http:\/\/www.baidu.com",/*虚拟礼包领取链接*/
+        "link_code": "GFH345",/*虚拟礼包领取码*/
+    }
 }
 ```

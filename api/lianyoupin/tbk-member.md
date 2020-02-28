@@ -161,28 +161,14 @@
                       "member_id": 2,/*会员id*/
                       "name": "青铜礼包2",/*会员礼包名称*/
                       "cover": "https://www.baidu.com",/*会员礼包封面图*/
-                      "detail": "https://www.baidu.com",/*会员礼包详情*/
                       "price": 100,/*会员礼包价格*/
-                      "eduction_type": "eoc",/*会员礼包抵扣通证类型*/
-                      "eduction_num": 100,/*会员礼包通证抵扣数量*/
-                      "type": 1,/*会员礼包类型 1-实体(需要购买时填写收货地址) 2-虚拟(无需地址)*/
-                      "sort": 1,/*排序*/
-                      "created_at": "2020-02-22 22:29:49",
-                      "updated_at": "2020-02-23 10:51:58"
                   },
                   {
                       "id": 1,
                       "member_id": 2,
                       "name": "青铜礼包1",
                       "cover": "https://www.baidu.com",
-                      "detail": "https://www.baidu.com",
                       "price": 100,
-                      "eduction_type": "eoc",
-                      "eduction_num": 100,
-                      "type": 2,
-                      "sort": 0,
-                      "created_at": "2020-02-22 22:23:38",
-                      "updated_at": "2020-02-22 22:29:14"
                   }
               ]
             },
@@ -664,5 +650,40 @@
     "msg": "ok",
     "code": 0,
     "data": "会员分红规则",/*会员分红规则内容*/
+}
+```
+
+## 获取礼包详情
+
+`api/v1/taobaoke/members/gifts/{id}`
+
+**请求方法**
+
+`GET`
+
+**参数**
+无
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 1,
+        "member_id": 2,/*礼包会员id*/
+        "name": "青铜礼包1",/*礼包名称*/
+        "cover": "https://www.baidu.com",/*礼包封面*/
+        "image": "https://www.baidu.com",/*礼包详情头图*/
+        "detail": "https://www.baidu.com",/*礼包详情*/
+        "price": 100,/*礼包价格*/
+        "eduction_type": "eoc",/*礼包抵扣通证类型*/
+        "eduction_num": 100,/*礼包抵扣通证数量*/
+        "type": 1,/*会员礼包类型 1-实体(需要购买时填写收货地址) 2-虚拟(无需地址)*/
+        "sort": 1,/*排序*/
+        "created_at": "2020-02-22 22:29:14",
+        "updated_at": "2020-02-22 22:29:14"
+    }
 }
 ```
