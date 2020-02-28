@@ -85,7 +85,8 @@ function getLypinAppSider(title, introduction) {
         "tbk-wallet",
         "tbk-member",
         "tbk-performance",
-        "weiyi"
+        "weiyi",
+        "tbk-gift"
       ]
     }
   ];
@@ -135,7 +136,9 @@ function getLypAdminSider(title, introduction) {
         "tbk-member",
         "cash-withdrawal",
         "tbk-wallet",
-        "tbk-cate"
+        "tbk-cate",
+        "tbk-gift",
+        "tbk-gift-order"
       ]
     }
   ];

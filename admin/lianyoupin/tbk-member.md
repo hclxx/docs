@@ -24,667 +24,468 @@
 
 ```json
 {
-  "members": [
-    {
-      "id": 1,
-      "name": "普通会员",
-      "icon": null,
-      "level": "common",
-      "cover": " ",
-      "condition": null,
-      "gift_info": null,
-      "equities": [
+    "members": [
         {
-          "key": "return:commission",
-          "desc": "购物返佣100%",
-          "value": null
+            "id": 1,
+            "name": "普通会员",
+            "icon": null,
+            "level": "common",
+            "cover": " ",
+            "condition": null,
+            "gift_info": null,
+            "equities": [
+                {
+                    "key": "return:commission",
+                    "desc": "购物返佣100%"
+                },
+                {
+                    "key": "platform:services",
+                    "desc": "平台服务费35%",
+                    "rate": "35"
+                },
+                {
+                    "key": "direct:reward",
+                    "desc": "推广购物佣金10%",
+                    "rate": "10"
+                },
+                {
+                    "key": "eoc:reward",
+                    "desc": "EOC活跃奖励"
+                },
+                {
+                    "key": "coupons",
+                    "desc": "海量优惠卷"
+                }
+            ],
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         },
         {
-          "key": "platform:services",
-          "desc": "平台服务费35%",
-          "rate": "35"
+            "id": 2,
+            "name": "青铜创客",/*会员名称*/
+            "icon": null,
+            "level": "bronze",/*会员等级标示*/
+            "cover": " ",/*会员封面*/
+            /*条件*/
+            "condition": {
+              /*分红条件*/
+              "bonus": [
+                  {
+                    "key": "become:level",/*标识*/
+                    "desc": "晋升青铜创客",/*描述*/
+                    "value": 2/*晋升会员等级对应的id数值*/
+                  },
+                  {
+                    "key": "first:order",
+                    "desc": "完成首单购物10人",
+                    "value": 10/*描述对应的数值*/
+                  }
+              ],
+              "indirect": [
+                  {
+                    "key": "invite:user",
+                    "desc": "直接推荐注册创客50人",
+                    "value": 50
+                  },
+                  {
+                    "key": "first:order",
+                    "desc": "完成首单购物5人",
+                    "value": 5
+                  }
+              ]
+            },
+            "gift_info": null,/*原礼包字段 现已废弃*/
+            "equities": [
+                {
+                    "key": "return:commission",/*权益 key*/
+                    "desc": "购物返佣100%",/*权益描述*/
+                },
+                {
+                    "key": "platform:services",
+                    "desc": "平台服务费22%",
+                    "rate": "22",/*比列整数*/
+                },
+                {
+                    "key": "direct:reward",
+                    "desc": "推广购物佣金15%",
+                    "rate": "15"
+                },
+                {
+                    "key": "eoc:reward",
+                    "desc": "EOC活跃奖励"
+                },
+                {
+                    "key": "coupons",
+                    "desc": "海量优惠卷"
+                },
+                {
+                    "key": "member:gift",
+                    "desc": "会员礼包"
+                },
+                {
+                    "key": "merchant:reward",
+                    "desc": "推荐商家奖励10%"
+                },
+                {
+                    "key": "elc:experience",
+                    "desc": "ECL体验金"
+                },
+                {
+                    "key": "direct:bronze:reward",
+                    "desc": "青铜礼包奖励40%",
+                    "m_rate": "40",/*混合支付 eoc+rmb 购买奖励比列*/
+                    "z_rate": "40",/*直接购买奖励比列*/
+                    "z_elc_rate": "20",/* elc 体验金奖励比例*/
+                },
+                {
+                    "key": "direct:gold:reward",
+                    "desc": "达人礼包奖励40%",
+                    "m_rate": "40",
+                    "z_rate": "40",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "direct:platina:reward",
+                    "desc": "守护礼包奖励40%",
+                    "m_rate": "40",
+                    "z_rate": "40",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "platform:month:bonus",
+                    "desc": "享平台月度分红"
+                }
+            ],
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         },
         {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
+            "id": 3,
+            "name": "达人创客",
+            "icon": null,
+            "level": "gold",
+            "cover": " ",
+            /*条件*/
+            "condition": {
+              /*分红资格条件*/
+                "bonus": [
+                    {
+                        "key": "become:level",
+                        "desc": "晋升达人创客",
+                        "value": 3
+                    },
+                    {
+                        "key": "first:order",
+                        "desc": "完成首单购物20人",
+                        "value": 20
+                    },
+                    {
+                        "key": "bronze",
+                        "desc": "直接推荐青铜创客10人",
+                        "value": 10
+                    }
+                ],
+                /*间接升级条件*/
+                "indirect": [
+                    {
+                        "key": "bronze",
+                        "desc": "直接推荐青铜创客50人",
+                        "value": 50
+                    }
+                ]
+            },
+            "gift_info": null,
+            "equities": [
+                {
+                    "key": "return:commission",
+                    "desc": "购物返佣100%"
+                },
+                {
+                    "key": "platform:services",
+                    "desc": "平台服务费18%",
+                    "rate": "18"
+                },
+                {
+                    "key": "direct:reward",
+                    "desc": "推广购物佣金18%",
+                    "rate": "18"
+                },
+                {
+                    "key": "eoc:reward",
+                    "desc": "EOC活跃奖励"
+                },
+                {
+                    "key": "coupons",
+                    "desc": "海量优惠卷"
+                },
+                {
+                    "key": "member:gift",
+                    "desc": "会员礼包"
+                },
+                {
+                    "key": "merchant:reward",
+                    "desc": "推荐商家奖励10%"
+                },
+                {
+                    "key": "elc:experience",
+                    "desc": "ECL体验金"
+                },
+                {
+                    "key": "direct:bronze:reward",
+                    "desc": "青铜礼包奖励50%",
+                    "m_rate": "50",
+                    "z_rate": "50"
+                },
+                {
+                    "key": "direct:gold:reward",
+                    "desc": "达人礼包奖励50%",
+                    "m_rate": "50",
+                    "z_rate": "50",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "direct:platina:reward",
+                    "desc": "守护礼包奖励50%",
+                    "m_rate": "50",
+                    "z_rate": "50",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "platform:month:bonus",
+                    "desc": "享平台月度分红"
+                }
+            ],
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         },
         {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "rate": "20"
+            "id": 4,
+            "name": "守护创客",
+            "icon": null,
+            "level": "platina",
+            "cover": " ",
+            "condition": {
+                "bonus": [
+                    {
+                        "key": "become:level",
+                        "desc": "晋升守护创客",
+                        "value": 4
+                    },
+                    {
+                        "key": "first:order",
+                        "desc": "完成首单购物20人",
+                        "value": 20
+                    },
+                    {
+                        "key": "bronze",
+                        "desc": "直接推荐青铜创客10人",
+                        "value": 10
+                    }
+                ],
+                "indirect": [
+                    {
+                        "key": "gold",
+                        "desc": "直接推荐达人创客30人",
+                        "value": 30
+                    }
+                ]
+            },
+            "gift_info": null,
+            "equities": [
+                {
+                    "key": "return:commission",
+                    "desc": "购物返佣100%"
+                },
+                {
+                    "key": "platform:services",
+                    "desc": "平台服务费15%",
+                    "rate": "15"
+                },
+                {
+                    "key": "direct:reward",
+                    "desc": "推广购物佣金20%",
+                    "rate": "20"
+                },
+                {
+                    "key": "eoc:reward",
+                    "desc": "EOC活跃奖励"
+                },
+                {
+                    "key": "coupons",
+                    "desc": "海量优惠卷"
+                },
+                {
+                    "key": "member:gift",
+                    "desc": "会员礼包"
+                },
+                {
+                    "key": "merchant:reward",
+                    "desc": "推荐商家奖励10%"
+                },
+                {
+                    "key": "elc:experience",
+                    "desc": "ECL体验金"
+                },
+                {
+                    "key": "direct:bronze:reward",
+                    "desc": "青铜礼包奖励60%",
+                    "m_rate": "60",
+                    "z_rate": "60",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "direct:gold:reward",
+                    "desc": "达人礼包奖励60%",
+                    "m_rate": "60",
+                    "z_rate": "60",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "direct:platina:reward",
+                    "desc": "守护礼包奖励60%",
+                    "m_rate": "60",
+                    "z_rate": "60",
+                    "z_elc_rate": "20"
+                },
+                {
+                    "key": "platform:month:bonus",
+                    "desc": "享平台月度分红"
+                }
+            ],
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 2,
-      "name": "青铜会员",
-      "icon": null,
-      "level": "bronze",
-      "cover": " ",
-      "condition": {
-        "direct": {
-          "limit": "100",
-          "price": "99",
-          "cost_price": "0.01" /*新增 成本价格*/
+    ],
+    "equities": [
+        {
+            "id": 1,
+            /*符合使用条件的图标*/
+            "use_icon": "http://szl.qingchuanren.com/e950ca9626b4e276288cb58c71ccadd9.png",
+            /*不符合使用条件的图标*/
+            "unused_icon": "http://szl.qingchuanren.com/0e4ad3003b8a08ec7804b40e0d77ba05.png",
+            "desc": "购物返佣100%",/*权益描述*/
+            "key": "return:commission",/*权益标识*/
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         },
-         /*间接升级条件*/
-        "indirect": {
-          "user": 50, /*需邀请用户个数*/,
-          "order": 5 /*邀请用户中下单(首单)人数*/
+        {
+            "id": 2,
+            "use_icon": "http://szl.qingchuanren.com/0842d7280b899e5c3c067b39b4b647e0.png",
+            "unused_icon": "http://szl.qingchuanren.com/1ca670d8acbf4f7a88b354a1bee9d978.png",
+            "desc": "平台服务费用",
+            "key": "platform:services",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 3,
+            "use_icon": "http://szl.qingchuanren.com/9ce9ee026e9985c0bcf43080ca98bc6d.png",
+            "unused_icon": "http://szl.qingchuanren.com/c4578f77f9afb8e6c626db02c01b2dbe.png",
+            "desc": "推广购物佣金",
+            "key": "direct:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 4,
+            "use_icon": "",
+            "unused_icon": "",
+            "desc": "EOC活跃奖励",
+            "key": "eoc:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 5,
+            "use_icon": "http://szl.qingchuanren.com/6dd9a7f2f84688301b306c04fd4f3f18.png",
+            "unused_icon": "http://szl.qingchuanren.com/e758559f6e1d0de0b4f50242a63a9233.png",
+            "desc": "海量优惠卷",
+            "key": "coupons",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 6,
+            "use_icon": "http://szl.qingchuanren.com/5e5a155ba8cb60458f733de5be691ec5.png",
+            "unused_icon": "http://szl.qingchuanren.com/f11930716f3a87d2fbc95892ea9fe9f1.png",
+            "desc": "会员大礼包",
+            "key": "member:gift",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 7,
+            "use_icon": "",
+            "unused_icon": "",
+            "desc": "推荐商家奖励10%",
+            "key": "merchant:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 8,
+            "use_icon": "http://szl.qingchuanren.com/a1af9e265cda664eb593a3536431f9d0.png",
+            "unused_icon": "http://szl.qingchuanren.com/afccf831171ad78b5ce7baf49cc411ca.png",
+            "desc": "ELC体验金",
+            "key": "elc:experience",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 9,
+            "use_icon": "http://szl.qingchuanren.com/390892cc06ed22e0804e7c4c028939a0.png",
+            "unused_icon": "http://szl.qingchuanren.com/883e392285c9adea4dd5436f9ec8a90c.png",
+            "desc": "青铜礼包奖励",
+            "key": "direct:bronze:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 10,
+            "use_icon": "http://szl.qingchuanren.com/3946c1bbe490e423b1bc99ac1f032e2d.png",
+            "unused_icon": "http://szl.qingchuanren.com/1041cbf31ef67448014d2386ee3bdec6.png",
+            "desc": "达人礼包奖励",
+            "key": "direct:gold:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 11,
+            "use_icon": "http://szl.qingchuanren.com/6c7c6f8b5c8ecd42a2b0d5e084528746.png",
+            "unused_icon": "http://szl.qingchuanren.com/783ca6677561513a3e216b2ec1bf58eb.png",
+            "desc": "守护礼包奖励",
+            "key": "direct:platina:reward",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 12,
+            "use_icon": "http://szl.qingchuanren.com/c249d3059465f34e8fa036273196ea51.png",
+            "unused_icon": "http://szl.qingchuanren.com/fb9d49e9c2ba69a7fbe64076df55af36.png",
+            "desc": "享平台月度分红",
+            "key": "platform:month:bonus",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 13,
+            "use_icon": "http://szl.qingchuanren.com/7b73675b480bbbf077e3347e2b6d0105.png",
+            "unused_icon": "http://szl.qingchuanren.com/07c16ede12f6bc576e14f748d0d48e30.png",
+            "desc": "享平台季度分红",
+            "key": "platform:quarter:bonus",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
+        },
+        {
+            "id": 14,
+            "use_icon": "http://szl.qingchuanren.com/7fd3cc9c37edec233324522af1391db9.png",
+            "unused_icon": "http://szl.qingchuanren.com/02d8a8e22cc6156466a28d7d06faf40f.png",
+            "desc": "享平台年度分红",
+            "key": "platform:year:bonus",
+            "created_at": "2020-02-22 17:35:13",
+            "updated_at": "2020-02-22 17:35:13"
         }
-      },
-      "gift_info": {
-        "name": "礼品一",
-        "cover": "",
-        "content": ["礼包1", "礼包二"],
-        "receive": {
-          "url": "",
-          "code": ""
-        }
-      },
-      "equities": [
-        {
-          "key": "return:commission",
-          "desc": "购物返佣100%",
-          "value": null
-        },
-        {
-          "key": "platform:services",
-          "desc": "平台服务费22%",
-          "rate": "22"
-        },
-        {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
-        },
-        {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "member:gift",
-          "desc": "会员礼包",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "rate": "20"
-        },
-        {
-          "key": "direct:bronze:reward",
-          "desc": "推荐青铜会员奖40%",
-          "m_rate": "40",
-          "z_rate": "40"
-        },
-        {
-          "key": "direct:gold:reward",
-          "desc": "推荐黄金会员奖40%",
-          "m_rate": "40",
-          "z_rate": "40"
-        },
-        {
-          "key": "direct:platina:reward",
-          "desc": "推荐白金会员奖40%",
-          "m_rate": "40",
-          "z_rate": "40"
-        },
-        {
-          "key": "direct:platinum:reward",
-          "desc": "推荐铂金会员奖40%",
-          "m_rate": "40",
-          "z_rate": "40"
-        },
-        {
-          "key": "direct:diamond:reward",
-          "desc": "推荐钻石会员奖40%",
-          "m_rate": "40",
-          "z_rate": "40"
-        }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 3,
-      "name": "黄金会员" /*会员名称*/,
-      "icon": null,
-      "level": "gold" /*会员等级标示*/,
-      "cover": " " /*会员风 main*/,
-      /*晋升条件*/
-      "condition": {
-        /*直接升级*/
-        "direct": {
-          "limit": "500" /*可使用 eoc 抵扣数量上限*/,
-          "price": "888" /*直接购买金额单位元*/,
-          "cost_price": "0.01" /*新增 成本价格*/
-        },
-        /*间接升级条件*/
-        "indirect": {
-          "num": 100 /*需邀请个数*/,
-          "level": "bronze" /*需邀请100个青铜*/
-        }
-      },
-      /*礼包信息*/
-      "gift_info": {
-        "name": "礼品一" /*礼包名称*/,
-        "cover": "" /*礼包封面*/,
-        "content": ["礼包1", "礼包二"] /*礼包集合*/,
-        "receive": null /*仅青铜会员才为 null，对象格式 {"url": "领取链接","code": "领取码"}*/
-      },
-      "equities": [
-        {
-          "key": "return:commission" /*权益 key*/,
-          "desc": "购物返佣100%" /*权益描述*/,
-          "value": null /*权益值*/
-        },
-        {
-          "key": "platform:services",
-          "desc": "平台服务费18%",
-          "rate": "18" /*比列整数*/
-        },
-        {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
-        },
-        {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "member:gift",
-          "desc": "会员礼包",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "value": null
-        },
-        {
-          "key": "direct:bronze:reward",
-          "desc": "推荐青铜会员奖50%",
-          "m_rate": "50",
-          "z_rate": "50"
-        },
-        {
-          "key": "direct:gold:reward",
-          "desc": "推荐黄金会员奖50%",
-          "m_rate": "50" /*直接购买奖励比列*/,
-          "z_rate": "50" /*混合支付 eoc+rmb 购买奖励比列*/
-        },
-        {
-          "key": "direct:platina:reward",
-          "desc": "推荐白金会员奖50%",
-          "m_rate": "50",
-          "z_rate": "50"
-        },
-        {
-          "key": "direct:platinum:reward",
-          "desc": "推荐铂金会员奖50%",
-          "m_rate": "50",
-          "z_rate": "50"
-        },
-        {
-          "key": "direct:diamond:reward",
-          "desc": "推荐钻石会员奖50%",
-          "m_rate": "50",
-          "z_rate": "50"
-        }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 4,
-      "name": "白金会员",
-      "icon": null,
-      "level": "platina",
-      "cover": " ",
-      "condition": {
-        "direct": {
-          "limit": "1000",
-          "price": "3499",
-          "cost_price": "0.01" /*新增 成本价格*/
-        },
-        "indirect": {
-          "num": 100,
-          "level": "gold"
-        }
-      },
-      "gift_info": {
-        "name": "礼品一",
-        "cover": "",
-        "content": ["礼包1", "礼包二"],
-        "receive": null
-      },
-      "equities": [
-        {
-          "key": "return:commission",
-          "desc": "购物返佣100%",
-          "value": null
-        },
-        {
-          "key": "platform:services",
-          "desc": "平台服务费15%",
-          "rate": "15"
-        },
-        {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
-        },
-        {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "member:gift",
-          "desc": "会员礼包",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "value": null
-        },
-        {
-          "key": "direct:bronze:reward",
-          "desc": "推荐青铜会员奖60%",
-          "m_rate": "60",
-          "z_rate": "60"
-        },
-        {
-          "key": "direct:gold:reward",
-          "desc": "推荐黄金会员奖60%",
-          "m_rate": "60",
-          "z_rate": "60"
-        },
-        {
-          "key": "direct:platina:reward",
-          "desc": "推荐白金会员奖60%",
-          "m_rate": "60",
-          "z_rate": "60"
-        },
-        {
-          "key": "direct:platinum:reward",
-          "desc": "推荐铂金会员奖40%",
-          "m_rate": "60",
-          "z_rate": "60"
-        },
-        {
-          "key": "direct:diamond:reward",
-          "desc": "推荐钻石会员奖60%",
-          "m_rate": "60",
-          "z_rate": "60"
-        }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 5,
-      "name": "铂金会员",
-      "icon": null,
-      "level": "platinum",
-      "cover": " ",
-      "condition": {
-        "direct": {
-          "limit": "1500",
-          "price": "19999",
-          "cost_price": "0.01" /*新增 成本价格*/
-        },
-        "indirect": {
-          "num": 30,
-          "level": "platina"
-        }
-      },
-      "gift_info": {
-        "name": "礼品一",
-        "cover": "",
-        "content": ["礼包1", "礼包二"],
-        "receive": null
-      },
-      "equities": [
-        {
-          "key": "return:commission",
-          "desc": "购物返佣100%",
-          "value": null
-        },
-        {
-          "key": "platform:services",
-          "desc": "平台服务费10%",
-          "rate": "10"
-        },
-        {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
-        },
-        {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "member:gift",
-          "desc": "会员礼包",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "value": null
-        },
-        {
-          "key": "direct:bronze:reward",
-          "desc": "推荐青铜会员奖70%",
-          "m_rate": "70",
-          "z_rate": "70"
-        },
-        {
-          "key": "direct:gold:reward",
-          "desc": "推荐黄金会员奖70%",
-          "m_rate": "70",
-          "z_rate": "70"
-        },
-        {
-          "key": "direct:platina:reward",
-          "desc": "推荐白金会员奖70%",
-          "m_rate": "70",
-          "z_rate": "70"
-        },
-        {
-          "key": "direct:platinum:reward",
-          "desc": "推荐铂金会员奖70%",
-          "m_rate": "70",
-          "z_rate": "70"
-        },
-        {
-          "key": "direct:diamond:reward",
-          "desc": "推荐钻石会员奖70%",
-          "m_rate": "70",
-          "z_rate": "70"
-        },
-        {
-          "key": "platform:once:bonus",
-          "desc": "享平台一次分红",
-          "value": null
-        }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 6,
-      "name": "钻石会员",
-      "icon": null,
-      "level": "diamond",
-      "cover": " ",
-      "condition": {
-        "direct": {
-          "limit": "2000",
-          "price": "39999",
-          "cost_price": "0.01" /*新增 成本价格*/
-        },
-        "indirect": {
-          "num": 20,
-          "level": "platinum"
-        }
-      },
-      "gift_info": {
-        "name": "礼品一",
-        "cover": "",
-        "content": ["礼包1", "礼包二"],
-        "receive": null
-      },
-      "equities": [
-        {
-          "key": "return:commission",
-          "desc": "购物返佣100%",
-          "value": null
-        },
-        {
-          "key": "platform:services",
-          "desc": "平台服务费5%",
-          "rate": "5"
-        },
-        {
-          "key": "elc:amount",
-          "desc": "ECL发车额度",
-          "value": null
-        },
-        {
-          "key": "elc:experience",
-          "desc": "ECL发车体验金",
-          "value": null
-        },
-        {
-          "key": "coupons",
-          "desc": "海量优惠卷",
-          "value": null
-        },
-        {
-          "key": "member:gift",
-          "desc": "会员礼包",
-          "value": null
-        },
-        {
-          "key": "direct:reward",
-          "desc": "一级推荐奖励10%",
-          "value": null
-        },
-        {
-          "key": "direct:bronze:reward",
-          "desc": "推荐青铜会员奖80%",
-          "m_rate": "80",
-          "z_rate": "80"
-        },
-        {
-          "key": "direct:gold:reward",
-          "desc": "推荐黄金会员奖80%",
-          "m_rate": "80",
-          "z_rate": "80"
-        },
-        {
-          "key": "direct:platina:reward",
-          "desc": "推荐白金会员奖80%",
-          "m_rate": "80",
-          "z_rate": "80"
-        },
-        {
-          "key": "direct:platinum:reward",
-          "desc": "推荐铂金会员奖80%",
-          "m_rate": "80",
-          "z_rate": "80"
-        },
-        {
-          "key": "direct:diamond:reward",
-          "desc": "推荐钻石会员奖80%",
-          "m_rate": "80",
-          "z_rate": "80"
-        },
-        {
-          "key": "platform:once:bonus",
-          "desc": "享平台一次分红",
-          "value": null
-        },
-        {
-          "key": "platform:twice:bonus",
-          "desc": "享平台二次分红",
-          "value": null
-        }
-      ],
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    }
-  ],
-  "equities": [
-    {
-      "id": 1,
-      "desc": "购物返佣100%",
-      "key": "return:commission",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 2,
-      "desc": "平台服务",
-      "key": "platform:services",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 3,
-      "desc": "ELC发车额度",
-      "key": "elc:amount",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 4,
-      "desc": "ELC发车体验金",
-      "key": "elc:experience",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 5,
-      "desc": "海量优惠卷",
-      "key": "coupons",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 6,
-      "desc": "会员大礼包",
-      "key": "member:gift",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 7,
-      "desc": "一级推荐奖",
-      "key": "direct:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 8,
-      "desc": "推青铜会员奖励",
-      "key": "direct:bronze:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 9,
-      "desc": "推黄金会员奖励",
-      "key": "direct:gold:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 10,
-      "desc": "推白金会员奖励",
-      "key": "direct:platina:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 11,
-      "desc": "推白铂金员奖励",
-      "key": "direct:platinum:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 12,
-      "desc": "推白钻石员奖励",
-      "key": "direct:diamond:reward",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 13,
-      "desc": "享平台一次分红",
-      "key": "platform:once:bonus",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    },
-    {
-      "id": 14,
-      "desc": "享平台二次分红",
-      "key": "platform:twice:bonus",
-      "use_icon": null,
-      "unused_icon": null,
-      "created_at": "2020-01-11 14:29:10",
-      "updated_at": "2020-01-11 14:29:10"
-    }
-  ]
+    ]
 }
 ```
 
@@ -706,47 +507,47 @@
 
 - direct:bronze:reward，direct:gold:reward，direct:platinum:reward，direct:diamond:reward 需要填写 z_rate(直接购买奖励比例 整型), z_elc_rate(新增:直接购买奖励 elc 比例 整型) 和 m_zrate(混合购买奖励比例 整型)
 
-- direct:reward 需要填写 rate(新增:一级推荐推荐购物奖励比例 整型)
+- direct:reward 需要填写 rate(新增:推广购物佣金奖励比例 整型)
 
 ```json
 {
-  "name": "青铜会员" /*会员名称 string*/,
-  "cover": "http://www.baidu.com/" /*封面 url*/,
-  "icon": "http://www.baidu.com/" /*图标 url*/,
+  "name": "青铜会员", /*会员名称 string*/
+  "cover": "http://www.baidu.com/", /*封面 url*/
+  "icon": "http://www.baidu.com/", /*图标 url*/
   /*权益集合*/
   "equities": [
     {
-      "key": "return:commission" /*权益key*/,
-      "desc": "权益描述" /*权益描述*/,
-      "rate": null /*当key为 platform:services 需要提交 rate 参数，当 direct:bronze:reward，
+      "key": "return:commission", /*权益key*/
+      "desc": "权益描述", /*权益描述*/
+      "rate": null, /*当key为 platform:services  direct:reward 需要提交 rate 参数，当 direct:bronze:reward，
 direct:gold:reward，
 direct:platinum:reward，
 direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     }
   ],
-  /*礼包信息 注意普通会员无礼包，青铜和青铜以上存在礼品*/
-  "gift_info": {
-    "name": "测试礼包" /*礼包名称 必须*/,
-    "cover": "礼包封面" /*礼包封面 必须*/,
-    "content": ["课程一", "课程二", "课程三"] /*奖品集合 必须*/,
-    /*青铜会员才会存在该字段 其他不存在 receive 必须*/
-    "receive": {
-      "url": "http://wwww.receive.com/sadas",
-      "code": "领取码"
-    }
-  },
-  /**普通会员此字为null，升级到该会员的条件**/
+  /**普通会员此字为null，间接升级/分红资格条件**/
   "condition": {
-    /*直接条件*/
-    "direct": {
-      "price": "3499" /*会员(RMB)价格单位元*/,
-      "limit": "2000" /*混合支付可以抵扣 eoc 数量上限值*/,
-      "cost_price": "0.01" /*新增 成本价格*/
-    },
-    /*间接条件 注青铜会员无间接升级条件*/
+    /*青铜会员*/
+    /*分红资格条件*/
+    "bonus": {
+          "order": 10,/*邀请用户下单(首单)数量*/
+      },
+    /*间接条件*/
     "indirect": {
-      "num": 20 /*需邀请会员数量*/,
-      "level": "platinum" /*需要邀请会员等级*/
+      "user": 20,/*需邀注册用户数*/
+      "order": 10,/*邀请用户下单(首单)*/
+    },
+    /*除青铜会员以外的会员*/
+    /*分红资格条件*/
+    "bonus": {
+          "order": 10,/*邀请用户下单(首单)数量*/
+          "num": 20,/*邀请会员人数*/
+          "level": "bronze", /*需要邀请会员等级*/
+     },
+    /*间接条件*/
+    "indirect": {
+      "num": 20,/*需邀请会员数量*/
+      "level": "bronze", /*需要邀请会员等级*/
     }
   }
 }
@@ -764,20 +565,15 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     "level": "bronze",
     "cover": "http://www.baidu.com/",
     "condition": {
-      "direct": {
-        "price": "99"
+      "bonus": {
+          "order": 10,
       },
-      "indirect": null
-    },
-    "gift_info": {
-      "name": "测试礼包",
-      "cover": "礼包封面",
-      "content": ["课程一", "课程二", "课程三"],
-      "receive": {
-        "url": "http://wwww.receive.com/sadas",
-        "code": "领取码"
+      "indirect": {
+        "user":50,
+        "order":10
       }
     },
+    "gift_info": null,
     "equities": [
       {
         "key": "return:commission",
