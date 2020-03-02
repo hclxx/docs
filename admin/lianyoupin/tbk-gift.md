@@ -84,8 +84,8 @@
 | eduction_num | int  |  无  |  是  |         礼包抵扣货币数量上限        |
 | type | int  |  无  |  是  |         礼包类型 1-实体 2-虚拟         |
 |   sort   | int |  无  |  否  | 权重数值，数值越大排序越靠前 |
-|   link_url   | string |  无  |  否  | 虚拟礼包领取链接 |
-|   link_code   | string |  无  |  否  | 虚拟礼包领取码 |
+|   link_url   | string |  无  |  否  | 虚拟礼包领取链接(虚拟礼包必填) |
+|   link_code   | string |  无  |  否  | 虚拟礼包领取码(虚拟礼包必填) |
 
 
 **SUCCESS 状态码**

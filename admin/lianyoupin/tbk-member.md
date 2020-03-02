@@ -527,29 +527,33 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
   ],
   /**普通会员此字为null，间接升级/分红资格条件**/
   "condition": {
-    /*青铜会员*/
-    /*分红资格条件*/
-    "bonus": {
-          "order": 10,/*邀请用户下单(首单)数量*/
-      },
-    /*间接条件*/
-    "indirect": {
-      "user": 20,/*需邀注册用户数*/
-      "order": 10,/*邀请用户下单(首单)*/
+      /*分红条件*/
+      "bonus": [
+          {
+            "key": "become:level",/*标识*/
+            "desc": "晋升青铜创客",/*描述*/
+            "value": 2/*晋升会员等级对应的id数值*/
+          },
+          {
+            "key": "first:order",
+            "desc": "完成首单购物10人",
+            "value": 10/*描述对应的数值*/
+          }
+      ],
+      /*间接条件*/
+      "indirect": [
+          {
+            "key": "invite:user",
+            "desc": "直接推荐注册创客50人",
+            "value": 50
+          },
+          {
+            "key": "first:order",
+            "desc": "完成首单购物5人",
+            "value": 5
+          }
+      ]
     },
-    /*除青铜会员以外的会员*/
-    /*分红资格条件*/
-    "bonus": {
-          "order": 10,/*邀请用户下单(首单)数量*/
-          "num": 20,/*邀请会员人数*/
-          "level": "bronze", /*需要邀请会员等级*/
-     },
-    /*间接条件*/
-    "indirect": {
-      "num": 20,/*需邀请会员数量*/
-      "level": "bronze", /*需要邀请会员等级*/
-    }
-  }
 }
 ```
 
@@ -565,13 +569,30 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     "level": "bronze",
     "cover": "http://www.baidu.com/",
     "condition": {
-      "bonus": {
-          "order": 10,
-      },
-      "indirect": {
-        "user":50,
-        "order":10
-      }
+      "bonus": [
+          {
+            "key": "become:level",
+            "desc": "晋升青铜创客",
+            "value": 2
+          },
+          {
+            "key": "first:order",
+            "desc": "完成首单购物10人",
+            "value": 10
+          }
+      ],
+      "indirect": [
+          {
+            "key": "invite:user",
+            "desc": "直接推荐注册创客50人",
+            "value": 50
+          },
+          {
+            "key": "first:order",
+            "desc": "完成首单购物5人",
+            "value": 5
+          }
+      ]
     },
     "gift_info": null,
     "equities": [
@@ -727,32 +748,6 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
 }
 ```
 
-## 处理礼品发货
-
-**方式**
-
-`POST`
-
-**路径**
-
-`/admin/tbk/members/logs/{id}/express`
-
-**参数**
-| 名称 | 类型 | 必须 | 说明 |
-| :----: | :--: | :--: | :--------------------------------------------------: |
-| express_name | string | 是 | 物流公司 |
-| express_number | string | 是 | 物流单号 |
-
-**响应**
-
-`Status code 201`
-
-**响应参数**
-
-```json
-{
-  "message": "发货成功"
-}
 ```
 
 ## 设置用户会员等级
@@ -815,33 +810,21 @@ direct:diamond:reward 需要提交 m_rate和z_rate、z_elc_rate 奖励比例*/
     },
     {
         "id": 2,
-        "name": "青铜会员",
+        "name": "青铜创客",
         "icon": null,
         "level": "bronze"
     },
     {
         "id": 3,
-        "name": "黄金会员",
+        "name": "黄金创客",
         "icon": null,
         "level": "gold"
     },
     {
         "id": 4,
-        "name": "白金会员",
+        "name": "守护创客",
         "icon": null,
         "level": "platina"
     },
-    {
-        "id": 5,
-        "name": "铂金会员",
-        "icon": null,
-        "level": "platinum"
-    },
-    {
-        "id": 6,
-        "name": "钻石会员",
-        "icon": null,
-        "level": "diamond"
-    }
 ]
 ```
