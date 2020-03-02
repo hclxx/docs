@@ -316,6 +316,7 @@
     "data": {
         "id": 1,
         "member_id": 2,
+        "name":"青铜礼包1",/*礼包名称*/
         "link_url": "http:\/\/www.baidu.com",/*虚拟礼包领取链接*/
         "link_code": "GFH345",/*虚拟礼包领取码*/
     }
