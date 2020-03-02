@@ -505,7 +505,9 @@
       "app_id": ""
     },
     /*订单号*/
-    "order_no": "19818"
+    "order_no": "19818",
+    /*订单id*/
+    "order_id":1190
   }
 }
 ```
@@ -529,7 +531,8 @@
     "alipay": {
       "order_info": ""
     },
-    "order_no": "63"
+    "order_no": "63",
+    "order_id":1190
   }
 }
 ```
