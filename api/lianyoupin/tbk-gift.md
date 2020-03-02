@@ -321,3 +321,31 @@
     }
 }
 ```
+
+## 删除已完成礼包订单
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/v1/taobaoke/members/orders/{id}`
+
+**参数**
+
+`兑换参数说明`
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "删除订单成功",
+    "code": 0,
+    "data": null
+}
+```
