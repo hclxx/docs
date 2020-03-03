@@ -14,7 +14,19 @@
 | :------: | :-----: | :--: | :--: | :--------------------------: |
 |    limit    |  int   |  是  |   条目数 默认 10       |
 |   offset    |  int   |  是  |        偏移量 默认为 0   |
+|   gift_name    |  string   |  否  |      礼包名称（支持模糊查询）   |
+|   order_no    |  string   |  否  |        订单编号   |
+|   user_name_phone    |  string   |  否  |        用户名或者用户电话（用户名支持模糊查询）   |
+|   start_time    |  string   |  否  |        订单开始时间   |
+|   end_time    |  string   |  否  |        订单结束时间   |
 | order_status | int  |  无  |  否  |    订单状态 0-待付款 1-待发货 2-待收货 -3已完成 4-已关闭（获取全部订单该字段为''） |
+
+|   order_nos    |  array   |  否  |        订单编号数组 (与其余查询条件互斥)  |
+
+### 参数 说明:
+
+- order_nos 为选中所有订单，当传递该参数时，其余查询条件均不生效。
+
 
 **SUCCESS 状态码**
 
@@ -256,4 +268,43 @@
     "context": "货物已交付京东物流"
   }
 ]
+```
+
+## 导出礼包订单
+
+`admin/tbk/members/orders/export`
+
+**请求方式**
+
+`POST`
+
+**请求参数**
+
+|   名称   |  类型   | 默认 | 必须 |             说明             |
+| :------: | :-----: | :--: | :--: | :--------------------------: |
+|   gift_name    |  string   |  否  |      礼包名称（支持模糊查询）   |
+|   order_no    |  string   |  否  |        订单编号   |
+|   user_name_phone    |  string   |  否  |        用户名或者用户电话（用户名支持模糊查询）   |
+|   start_time    |  string   |  否  |        订单开始时间   |
+|   end_time    |  string   |  否  |        订单结束时间   |
+| order_status | int  |  无  |  否  |    订单状态 0-待付款 1-待发货 2-待收货 -3已完成 4-已关闭（获取全部订单该字段为''） |
+
+|   order_nos    |  array   |  否  |        订单编号数组 (与其余查询条件互斥)  |
+
+### 参数 说明:
+
+- order_nos 为选中所有订单，当传递该参数时，其余查询条件均不生效。
+
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+
+```json
+{
+    "download_url": "http://mall-admin.name/storage/app/public/(2020-03-03)-订单导出.xlsx"
+}
 ```
