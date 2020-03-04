@@ -194,8 +194,8 @@
                           "result": false
                       },
                       {
-                          "key": "bronze",
-                          "desc": "直接推荐青铜创客10人",
+                          "key": "bronze:bonus",
+                          "desc": "直接推荐分红青铜创客10人",
                           "value": 10,
                           "result_num": 1,
                           "result": false
@@ -298,8 +298,8 @@
                           "result": false
                       },
                       {
-                          "key": "bronze",
-                          "desc": "直接推荐青铜创客10人",
+                          "key": "gold:bonus",
+                          "desc": "直接推荐分红达人创客10人",
                           "value": 10,
                           "result_num": 1,
                           "result": false
