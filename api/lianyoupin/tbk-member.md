@@ -162,6 +162,8 @@
                       "name": "青铜礼包2",/*会员礼包名称*/
                       "cover": "https://www.baidu.com",/*会员礼包封面图*/
                       "price": 100,/*会员礼包价格*/
+                      "eduction_type": "eoc",/*抵扣通证类型*/
+                      "eduction_num": "100",/*抵扣通证数量*/
                   },
                   {
                       "id": 1,
@@ -169,6 +171,8 @@
                       "name": "青铜礼包1",
                       "cover": "https://www.baidu.com",
                       "price": 100,
+                      "eduction_type": "eoc",
+                      "eduction_num": "100"
                   }
               ]
             },
