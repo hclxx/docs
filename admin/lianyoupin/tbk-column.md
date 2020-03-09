@@ -228,12 +228,9 @@
 | pid | int  |  无  |  否  |         栏目父级 0-顶级        |
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |         所关联的广告:多个以","分割(1,2,3)        |
-| is_recommend | int  |  无  |  否  |         是否被推荐 0-否 1-是        |
-| recommend_cover | string  |  无  |  否  |         被推荐活动封面图        |
 | type | string  |  无  |  是  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  是  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
-| status | int |  无  |  是  | 状态:0-关闭 1-开启 |
 
 
 **SUCCESS 状态码**
@@ -267,13 +264,9 @@
 | pid | int  |  无  |  否  |         栏目父级 0-顶级        |
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |         所关联的广告:多个以","分割(1,2,3)        |
-| is_recommend | int  |  无  |  否  |         是否被推荐 0-否 1-是        |
-| recommend_cover | string  |  无  |  否  |         被推荐活动封面图        |
 | type | string  |  无  |  否  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  否  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
-| status | int |  无  |  否  | 状态:0-关闭 1-开启 |
-
 
 **SUCCESS 状态码**
 
