@@ -1216,7 +1216,7 @@
 }
 ```
 
-## 获取tbk抢购时间段
+## 修改tbk抢购时间段
 
 `/admin/system/buying/time`
 
