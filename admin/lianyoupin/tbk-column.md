@@ -267,14 +267,11 @@
 | bg_color | string  |  无  |  否  |         栏目背景颜色        |
 | pid | int  |  无  |  否  |         栏目父级 0-顶级        |
 | target_id | int  |  无  |  否  |         所属目标ID        |
-| ad_ids | string  |  无  |  否  |         所关联的广告:多个以","分割(1,2,3)        |
+| ad_ids | string  |  无  |  否  |  所关联的广告:多个以","分割(1,2,3)  需要通过原广告列表获取  "space=`app:bomb:any`"        |
 | type | string  |  无  |  否  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  否  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
 
-### keys 说明:
-
-- ad_ids 需要通过原广告列表获取  "space=`app:bomb:any`"
 
 **SUCCESS 状态码**
 
