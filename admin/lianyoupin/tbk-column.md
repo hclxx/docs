@@ -274,7 +274,7 @@
 
 ### keys 说明:
 
-- ad_ids 需要通过原广告列表获取  space="app:bomb:any"
+- ad_ids 需要通过原广告列表获取  "space=`app:bomb:any`"
 
 **SUCCESS 状态码**
 
