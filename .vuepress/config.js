@@ -138,7 +138,8 @@ function getLypAdminSider(title, introduction) {
         "tbk-wallet",
         "tbk-cate",
         "tbk-gift",
-        "tbk-gift-order"
+        "tbk-gift-order",
+        "tbk-column"
       ]
     }
   ];
