@@ -232,6 +232,10 @@
 | cate | string |  无  |  是  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
 
+### keys 说明:
+
+- ad_ids 需要通过原广告列表获取  space=app:bomb:any
+
 
 **SUCCESS 状态码**
 
@@ -267,6 +271,10 @@
 | type | string  |  无  |  否  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  否  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
+
+### keys 说明:
+
+- ad_ids 需要通过原广告列表获取  space=app:bomb:any
 
 **SUCCESS 状态码**
 
