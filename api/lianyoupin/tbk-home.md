@@ -15,7 +15,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        /*栏目集合 columns-为订单栏目 activities-活动集合 coupons-淘客卷 specials-专区 snapup-抢购 */
+        /*栏目集合 columns-栏目 activities-活动 coupons-淘客劵 specials-特色专区 snapup-抢购 */
         "columns": [
             {
                 "id": 1,
@@ -749,147 +749,230 @@
                     }
                 ]
             }
-        ],
-        "snapup": {
-            "curr_timestamp": 1583822564,
-            "time_interval": [
-                {
-                    "type": 1,
-                    "time": 1583820000,
-                    "goods": [
-                        {
-                            "category_name": "居家百货",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3D9%2BrLIhrml7scQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0kMtTqoJhIvnD2fV4uwthA%2Bbgz7fsdD1Y9sBMd5pHrbVAMlll2Z0L9apCu4yUVx94omfkDJRs%2BhU%3D&union_lens=lensId:0b5a5068_0cdc_170c32e6a1d_e80d",
-                            "end_time": "2020-03-11 14:59:59",
-                            "num_iid": 603538218470,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju3.alicdn.com/tps/i3/O1CN01j5Fyyi25NScoDAWx8_!!0-juitemmedia.jpg",
-                            "reserve_price": "11.96",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 15:00:00",
-                            "title": "袖珍水果刀迷你小菜刀手工小刀",
-                            "total_amount": 5500,
-                            "zk_final_price": "5.6"
-                        },
-                        {
-                            "category_name": "家纺家居",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DmA%2FOCcTDpIwcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ01CnuhACAb5C%2FfCOmbuOARBYEOKFN6ZL7zUmqq4y2ZbfmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b5a5068_0cdc_170c32e6a1d_e80e",
-                            "end_time": "2020-03-11 14:59:59",
-                            "num_iid": 577723419668,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju2.alicdn.com/tps/i3/3420618994/O1CN01S74Qkh2GJIhtgtSow_!!0-item_pic.jpg",
-                            "reserve_price": "29.90",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 15:00:00",
-                            "title": "条纹拖鞋女夏浴室家居家用洗澡",
-                            "total_amount": 9000,
-                            "zk_final_price": "7.9"
-                        },
-                        {
-                            "category_name": "手表配饰",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DURBt9E1ZdzQcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0hTKBVE9qGIMN67EPYX36s8TFj%2BSRweKFwfGepD1tchuTgBnj0AkzWSGFCzYOOqAQ&union_lens=lensId:0b5a5068_0cdc_170c32e6a1d_e80f",
-                            "end_time": "2020-03-11 14:59:59",
-                            "num_iid": 598260741035,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju2.alicdn.com/tps/TB1IcfYsKbviK0jSZFNXXaApXXa.jpg",
-                            "reserve_price": "10.60",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 15:00:00",
-                            "title": "PU皮暗黑哥特风项圈链条奴隶牵",
-                            "total_amount": 7000,
-                            "zk_final_price": "8.52"
-                        }
-                    ]
-                },
-                {
-                    "type": 1,
-                    "time": 1583827200,
-                    "goods": [
-                        {
-                            "category_name": "车品旅行",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DAspfbyEFVGocQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0L0NjKrsj1pXJrRlMlJD5c7SjVgulyAIBoQG5CWgOjyB9%2FUM1dfYuxHEqY%2Bakgpmw&union_lens=lensId:0b152649_15fd_170c32e6a96_c817",
-                            "end_time": "2020-03-11 16:59:59",
-                            "num_iid": 604545768910,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i3/O1CN01ctGEu91bgkpqfcbWi_!!0-juitemmedia.jpg",
-                            "reserve_price": "4.60",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 17:00:00",
-                            "title": "卓贴 五星红旗地图反光车贴",
-                            "total_amount": 11000,
-                            "zk_final_price": "3.4"
-                        },
-                        {
-                            "category_name": "个护家清",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DJbBKjk9hJvMcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0wKT0JcmkwZnFsa9RJcoOr6otWBRIEFq1Q7rUKVxFl%2FDmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b152649_15fd_170c32e6a96_c818",
-                            "end_time": "2020-03-11 16:59:59",
-                            "num_iid": 541448190617,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i4/O1CN01f0qVqh1f0OfWoljb5_!!0-juitemmedia.jpg",
-                            "reserve_price": "11.90",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 17:00:00",
-                            "title": "买5送1 腰酸腿疼颈肩暖宫艾叶",
-                            "total_amount": 6500,
-                            "zk_final_price": "7.9"
-                        },
-                        {
-                            "category_name": "数码电器",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3Dr%2Bw%2F0wJMTy0cQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMVQlLb6j45ASt4hWD5k2kjN53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0YwOmtzV%2FoRaMi76zt6QHuTVzkvZrQcI%2FiOyfeET3tuDmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b152649_15fd_170c32e6a97_c819",
-                            "end_time": "2020-03-11 16:59:59",
-                            "num_iid": 607666867272,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i3/O1CN01PembuE2LCxOKcCjpY_!!0-juitemmedia.jpg",
-                            "reserve_price": "28.00",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 17:00:00",
-                            "title": "玉桂狗手机壳iphonexs 5S硅胶",
-                            "total_amount": 5000,
-                            "zk_final_price": "10.8"
-                        }
-                    ]
-                },
-                {
-                    "type": 1,
-                    "time": 1583834400,
-                    "goods": [
-                        {
-                            "category_name": "数码电器",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DMgKNvMk70F0cQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMVQlLb6j45ASxq3IhSJN6GR53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0bp1xlgyYoAFC0%2FhhnS8LgyTyNG2cPYGDaDyeDihGVLNAMlll2Z0L9apCu4yUVx94omfkDJRs%2BhU%3D&union_lens=lensId:0b0fe8ba_0e00_170c32e6b29_b9ba",
-                            "end_time": "2020-03-11 18:59:59",
-                            "num_iid": 607592469406,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju4.alicdn.com/tps/i2/O1CN01UmuYK91GINpWIrZHY_!!2-juitemmedia.png",
-                            "reserve_price": "6.90",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 19:00:00",
-                            "title": "A5笔记本子B5软面抄日记本",
-                            "total_amount": 5092,
-                            "zk_final_price": "2.81"
-                        },
-                        {
-                            "category_name": "母婴童装",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3D6PAw3fwWsIkcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMVQlLb6j45ASxq3IhSJN6GR53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0XAn8%2Bz0yVQ4GmbQx6Rftvc0pRCIOv%2BzH3U2U1%2BUjFILmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b0fe8ba_0e00_170c32e6b29_b9bb",
-                            "end_time": "2020-03-11 18:59:59",
-                            "num_iid": 566471942684,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju4.alicdn.com/tps/i4/O1CN01qXusvH1fm1rJUNfR9_!!0-juitemmedia.jpg",
-                            "reserve_price": "19.80",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 19:00:00",
-                            "title": "智力儿童大号七巧板 小学生一",
-                            "total_amount": 5000,
-                            "zk_final_price": "7.9"
-                        },
-                        {
-                            "category_name": "居家百货",
-                            "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DZ2PBoU9U2xgcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMVQlLb6j45ASxq3IhSJN6GR53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0DflzBnNbjj31tQb9F5oV5hxALpJ33R6WhTaBq7i4om59%2FUM1dfYuxHEqY%2Bakgpmw&union_lens=lensId:0b0fe8ba_0e00_170c32e6b29_b9bc",
-                            "end_time": "2020-03-11 18:59:59",
-                            "num_iid": 586695442880,
-                            "pic_url": "http://img4.tbcdn.cn/tfscom///gju3.alicdn.com/tps/TB1amj9O7zoK1RjSZFlSuui4VXa.jpg",
-                            "reserve_price": "15.80",
-                            "sold_num": 0,
-                            "start_time": "2020-03-10 19:00:00",
-                            "title": "洋桔梗花种籽子室内洋桔梗种子",
-                            "total_amount": 1400,
-                            "zk_final_price": "7.9"
-                        }
-                    ]
-                }
-            ]
-        }
+        ]
+    }
+}
+```
+
+## 首页抢购
+
+`api/v1/taobaoke/home/snapuptime`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "curr_timestamp": 1583826798,/*当前时间戳*/
+        "time_interval": [
+            {
+                "type": 1,/*1-今日 2-明日*/
+                "time": 1583820000,
+                "goods": [
+                    {
+                        "category_name": "居家百货",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3Dej7V6dikSuEcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0kMtTqoJhIvnD2fV4uwthA%2Bbgz7fsdD1Y9sBMd5pHrbVAMlll2Z0L9apCu4yUVx94omfkDJRs%2BhU%3D&union_lens=lensId:0b835ffa_0d8d_170c36f0829_9467",
+                        "end_time": "2020-03-11 14:59:59",
+                        "num_iid": 603538218470,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju3.alicdn.com/tps/i3/O1CN01j5Fyyi25NScoDAWx8_!!0-juitemmedia.jpg",
+                        "reserve_price": "11.96",
+                        "sold_num": 69,
+                        "start_time": "2020-03-10 15:00:00",
+                        "title": "袖珍水果刀迷你小菜刀手工小刀",
+                        "total_amount": 5500,
+                        "zk_final_price": "5.6"
+                    },
+                    {
+                        "category_name": "家纺家居",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DzXmwpCcE0AkcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ01CnuhACAb5C%2FfCOmbuOARBYEOKFN6ZL7zUmqq4y2ZbfmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b835ffa_0d8d_170c36f0829_9468",
+                        "end_time": "2020-03-11 14:59:59",
+                        "num_iid": 577723419668,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju2.alicdn.com/tps/i3/3420618994/O1CN01S74Qkh2GJIhtgtSow_!!0-item_pic.jpg",
+                        "reserve_price": "29.90",
+                        "sold_num": 276,
+                        "start_time": "2020-03-10 15:00:00",
+                        "title": "条纹拖鞋女夏浴室家居家用洗澡",
+                        "total_amount": 9000,
+                        "zk_final_price": "7.9"
+                    },
+                    {
+                        "category_name": "手表配饰",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DC4gsJt8QOKUcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0hTKBVE9qGIMN67EPYX36s8TFj%2BSRweKFwfGepD1tchuTgBnj0AkzWSGFCzYOOqAQ&union_lens=lensId:0b835ffa_0d8d_170c36f0829_9469",
+                        "end_time": "2020-03-11 14:59:59",
+                        "num_iid": 598260741035,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju2.alicdn.com/tps/TB1IcfYsKbviK0jSZFNXXaApXXa.jpg",
+                        "reserve_price": "10.60",
+                        "sold_num": 20,
+                        "start_time": "2020-03-10 15:00:00",
+                        "title": "PU皮暗黑哥特风项圈链条奴隶牵",
+                        "total_amount": 7000,
+                        "zk_final_price": "8.52"
+                    }
+                ]
+            },
+            {
+                "type": 1,
+                "time": 1583827200,
+                "goods": [
+                    {
+                        "category_name": "车品旅行",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DRFGkUdtiB2gcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0L0NjKrsj1pXJrRlMlJD5c7SjVgulyAIBoQG5CWgOjyB9%2FUM1dfYuxHEqY%2Bakgpmw&union_lens=lensId:0b1af702_0cd6_170c36f08ca_e1d8",
+                        "end_time": "2020-03-11 16:59:59",
+                        "num_iid": 604545768910,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i3/O1CN01ctGEu91bgkpqfcbWi_!!0-juitemmedia.jpg",
+                        "reserve_price": "4.60",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 17:00:00",
+                        "title": "卓贴 五星红旗地图反光车贴",
+                        "total_amount": 11000,
+                        "zk_final_price": "3.4"
+                    },
+                    {
+                        "category_name": "个护家清",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DoLRt0XZhMJMcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0wKT0JcmkwZnFsa9RJcoOr6otWBRIEFq1Q7rUKVxFl%2FDmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b1af702_0cd6_170c36f08ca_e1d9",
+                        "end_time": "2020-03-11 16:59:59",
+                        "num_iid": 541448190617,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i4/O1CN01f0qVqh1f0OfWoljb5_!!0-juitemmedia.jpg",
+                        "reserve_price": "11.90",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 17:00:00",
+                        "title": "买5送1 腰酸腿疼颈肩暖宫艾叶",
+                        "total_amount": 6500,
+                        "zk_final_price": "7.9"
+                    },
+                    {
+                        "category_name": "数码电器",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DIy3dE%2FGJzyYcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0YwOmtzV%2FoRaMi76zt6QHuTVzkvZrQcI%2FiOyfeET3tuDmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b1af702_0cd6_170c36f08ca_e1da",
+                        "end_time": "2020-03-11 16:59:59",
+                        "num_iid": 607666867272,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju1.alicdn.com/tps/i3/O1CN01PembuE2LCxOKcCjpY_!!0-juitemmedia.jpg",
+                        "reserve_price": "28.00",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 17:00:00",
+                        "title": "玉桂狗手机壳iphonexs 5S硅胶",
+                        "total_amount": 5000,
+                        "zk_final_price": "10.8"
+                    }
+                ]
+            },
+            {
+                "type": 1,
+                "time": 1583834400,
+                "goods": [
+                    {
+                        "category_name": "数码电器",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DI9WC0XdA85EcQipKwQzePOeEDrYVVa64yK8Cckff7TVRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0bp1xlgyYoAFC0%2FhhnS8LgyTyNG2cPYGDaDyeDihGVLNAMlll2Z0L9apCu4yUVx94omfkDJRs%2BhU%3D&union_lens=lensId:0b152649_15fd_170c36f0971_7f13",
+                        "end_time": "2020-03-11 18:59:59",
+                        "num_iid": 607592469406,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju4.alicdn.com/tps/i2/O1CN01UmuYK91GINpWIrZHY_!!2-juitemmedia.png",
+                        "reserve_price": "6.90",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 19:00:00",
+                        "title": "A5笔记本子B5软面抄日记本",
+                        "total_amount": 5092,
+                        "zk_final_price": "2.81"
+                    },
+                    {
+                        "category_name": "母婴童装",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3DT2caf%2BUhMJEcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0XAn8%2Bz0yVQ4GmbQx6Rftvc0pRCIOv%2BzH3U2U1%2BUjFILmVIRhgZILAsYMXU3NNCg%2F&union_lens=lensId:0b152649_15fd_170c36f0971_7f14",
+                        "end_time": "2020-03-11 18:59:59",
+                        "num_iid": 566471942684,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju4.alicdn.com/tps/i4/O1CN01qXusvH1fm1rJUNfR9_!!0-juitemmedia.jpg",
+                        "reserve_price": "19.80",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 19:00:00",
+                        "title": "智力儿童大号七巧板 小学生一",
+                        "total_amount": 5000,
+                        "zk_final_price": "7.9"
+                    },
+                    {
+                        "category_name": "居家百货",
+                        "click_url": "https://s.click.taobao.com/t?e=m%3D2%26s%3D9jkCFXAkRvkcQipKwQzePOeEDrYVVa64XoO8tOebS%2BdRAdhuF14FMTpI5DOSX02HMMgx22UI05Z53auEe5GkJYTrbiGTNDL0P%2Fgx%2F7tULLPhg9p%2F%2BToRyHe4n7TGWcUBIWLb4DzFlElvJrMBQHqrMC5iLofPfeZ0DflzBnNbjj31tQb9F5oV5hxALpJ33R6WhTaBq7i4om59%2FUM1dfYuxHEqY%2Bakgpmw&union_lens=lensId:0b152649_15fd_170c36f0971_7f15",
+                        "end_time": "2020-03-11 18:59:59",
+                        "num_iid": 586695442880,
+                        "pic_url": "http://img4.tbcdn.cn/tfscom///gju3.alicdn.com/tps/TB1amj9O7zoK1RjSZFlSuui4VXa.jpg",
+                        "reserve_price": "15.80",
+                        "sold_num": 0,
+                        "start_time": "2020-03-10 19:00:00",
+                        "title": "洋桔梗花种籽子室内洋桔梗种子",
+                        "total_amount": 1400,
+                        "zk_final_price": "7.9"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
+## 抢购详情
+
+`api/v1/taobaoke/snapuptime`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "curr_timestamp": 1583827086,/*当前时间戳*/
+        "time_interval": [
+            {
+                "type": 1,/*1-今日 2-明日*/
+                "time": 1583805600/*当前时段时间戳*/
+            },
+            {
+                "type": 1,
+                "time": 1583812800
+            },
+            {
+                "type": 1,
+                "time": 1583820000
+            },
+            {
+                "type": 1,
+                "time": 1583827200
+            },
+            {
+                "type": 1,
+                "time": 1583834400
+            },
+            {
+                "type": 1,
+                "time": 1583841600
+            },
+            {
+                "type": 1,
+                "time": 1583848800
+            },
+            {
+                "type": 2,
+                "time": 1583892000
+            },
+            {
+                "type": 2,
+                "time": 1583899200
+            },
+            {
+                "type": 2,
+                "time": 1583906400
+            },
+            {
+                "type": 2,
+                "time": 1583913600
+            }
+        ]
     }
 }
 ```
