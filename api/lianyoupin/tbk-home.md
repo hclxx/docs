@@ -976,3 +976,37 @@
     }
 }
 ```
+
+## 获取推荐活动
+
+`api/v1/taobaoke/recommend/activities`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 12,
+            "name": "健康好物速享 春季防护指南",
+            "icon": null,
+            "bg_img": "http://file.chainonedapp.com/65f9510bc5076c504af62aa882b584dc.png",/*活动中转背景*/
+            "bg_color": null,
+            "pid": 11,
+            "target_id": "1580723222945",/*活动id*/
+            "ad_ids": null,
+            "recommend_cover": "http://file.chainonedapp.com/65f9510bc5076c504af62aa882b584dc.png",/*推荐图地址*/
+            "type": "activity",
+            "desc": "活动描述",/*活动描述*/
+            "cate": "activity",
+            "sort": 10
+        }
+    ]
+}
+```
