@@ -239,6 +239,11 @@
 
 - ad_ids 需要通过原广告列表获取  "space=`app:bomb:any`"
 
+- 除name、type、cate必传字段以外，
+- 当cate=column 顶级栏目icon必传 子集栏目icon非必传 type=material/activity target_id必传
+- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id必传
+- 当cate=coupon 顶级栏目bg_img必传 子集栏目 bg_img/bg_color/target_id/ad_ids必传
+- 当cate=special bg_img/target_id/ad_ids必传
 
 **SUCCESS 状态码**
 
@@ -279,6 +284,12 @@
 ### keys 说明:
 
 - ad_ids 需要通过原广告列表获取  "space=`app:bomb:any`"
+
+- 除name、type、cate必传字段以外，
+- 当cate=column 顶级栏目icon必传 子集栏目icon非必传 type=material/activity target_id必传
+- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id必传
+- 当cate=coupon 顶级栏目bg_img必传 子集栏目 bg_img/bg_color/target_id/ad_ids必传
+- 当cate=special bg_img/target_id/ad_ids必传
 
 **SUCCESS 状态码**
 
@@ -324,6 +335,7 @@
 
 |   名称   |  类型   | 默认 | 必须 |             说明             |
 | :------: | :-----: | :--: | :--: | :--------------------------: |
+| recommend_status | int  |  无  |  是  |      推荐活动状态 0-取消推荐 1-推荐  |
 | recommend_cover | string  |  无  |  否  |      推荐活动封面图(当设置为推荐状态时必传 取消推荐不传)  |
 
 
