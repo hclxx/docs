@@ -241,7 +241,7 @@
 
 - 除name、type、cate必传字段以外，
 - 当cate=column 顶级栏目icon必传 子集栏目icon非必传 type=material/activity target_id必传
-- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id必传
+- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id/bg_color必传
 - 当cate=coupon 顶级栏目bg_img必传 子集栏目 bg_img/bg_color/target_id/ad_ids必传
 - 当cate=special bg_img/target_id/ad_ids必传
 
@@ -287,7 +287,7 @@
 
 - 除name、type、cate必传字段以外，
 - 当cate=column 顶级栏目icon必传 子集栏目icon非必传 type=material/activity target_id必传
-- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id必传
+- 当cate=activity 顶级栏目bg_img/bg_color必传 子集栏目icon(首页图标)/bg_img(中转页面背景图)/desc(中转界面活动描述)/target_id/bg_color必传
 - 当cate=coupon 顶级栏目bg_img必传 子集栏目 bg_img/bg_color/target_id/ad_ids必传
 - 当cate=special bg_img/target_id/ad_ids必传
 
