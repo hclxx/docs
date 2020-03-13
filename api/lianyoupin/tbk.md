@@ -1,6 +1,6 @@
 # 淘宝客
 
-## 根据ID获取分组详情
+## 根据 ID 获取分组详情
 
 **方式**
 
@@ -20,22 +20,22 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 4,                                    /*记录ID*/
-        "favorites_id": 20086185,                   /*选品库id*/
-        "favorites_title": "女装",                   /*选品库名称*/
-        "type": 1,                               /*类型 1：爆品 2：优选*/
-        "status": 1,                         /*状态：1-开启 0-关闭*/
-        "sort": 5,                         /*排序：数字越大越靠前*/
-        "position": 1,                    /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/
-        "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
-        "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
-        "label": "女装大佬",            /*标签*/
-        "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
-        "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 4 /*记录ID*/,
+    "favorites_id": 20086185 /*选品库id*/,
+    "favorites_title": "女装" /*选品库名称*/,
+    "type": 1 /*类型 1：爆品 2：优选*/,
+    "status": 1 /*状态：1-开启 0-关闭*/,
+    "sort": 5 /*排序：数字越大越靠前*/,
+    "position": 1 /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/,
+    "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318" /*图标地址*/,
+    "attribute": "hot" /*属性：normal:正常列表  special:专题  hot:热销榜*/,
+    "label": "女装大佬" /*标签*/,
+    "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453" /*背景图:属性为专题需要上传背景图*/,
+    "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
+  }
 }
 ```
 
@@ -59,18 +59,18 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 7,
-        "name": "如何充值提现COMC？",
-        "image": "http://szl.qingchuanren.com/7bc8b9371efccc057ed5047c05b2c1ba.png",
-        "content": "<p><img src=\"http://szl.qingchuanren.com/08ecd16b3ffa9154d2fc0687239abe3e.png\" title=\"\" alt=\"\"/></p>",
-        "type": 1,
-        "sort": 4,
-        "created_at": null,
-        "updated_at": null
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 7,
+    "name": "如何充值提现COMC？",
+    "image": "http://szl.qingchuanren.com/7bc8b9371efccc057ed5047c05b2c1ba.png",
+    "content": "<p><img src=\"http://szl.qingchuanren.com/08ecd16b3ffa9154d2fc0687239abe3e.png\" title=\"\" alt=\"\"/></p>",
+    "type": 1,
+    "sort": 4,
+    "created_at": null,
+    "updated_at": null
+  }
 }
 ```
 
@@ -82,9 +82,9 @@
 
 **参数**
 
-|  名称  |  类型  | 必须 |                  说明                   |
-| :----: | :----: | :--: | :-------------------------------------: |
-| type | int |  是  | 类型 1：爆品 2：优选 默认为：1|
+| 名称 | 类型 | 必须 |              说明              |
+| :--: | :--: | :--: | :----------------------------: |
+| type | int  |  是  | 类型 1：爆品 2：优选 默认为：1 |
 
 **路径**
 
@@ -96,38 +96,38 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 3,                                    /*记录ID*/
-                   "favorites_id": 20086185,                   /*选品库id*/
-                   "favorites_title": "女装",                   /*选品库名称*/
-                   "type": 1,                               /*类型 1：爆品 2：优选*/
-                   "status": 1,                         /*状态：1-开启 0-关闭*/
-                   "sort": 5,                         /*排序：数字越大越靠前*/
-                   "position": 1,                    /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/
-                   "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
-                   "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
-                   "label": "女装大佬",            /*标签*/
-                   "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
-                   "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
-        },
-        {
-             "id": 4,                                    /*记录ID*/
-                    "favorites_id": 20086185,                   /*选品库id*/
-                    "favorites_title": "女装",                   /*选品库名称*/
-                    "type": 1,                               /*类型 1：爆品 2：优选*/
-                    "status": 1,                         /*状态：1-开启 0-关闭*/
-                    "sort": 5,                         /*排序：数字越大越靠前*/
-                    "position": 1,                    /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/
-                    "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318",/*图标地址*/
-                    "attribute": "hot",             /*属性：normal:正常列表  special:专题  hot:热销榜*/
-                    "label": "女装大佬",            /*标签*/
-                    "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453",/*背景图:属性为专题需要上传背景图*/
-                    "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
-        }
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 3 /*记录ID*/,
+      "favorites_id": 20086185 /*选品库id*/,
+      "favorites_title": "女装" /*选品库名称*/,
+      "type": 1 /*类型 1：爆品 2：优选*/,
+      "status": 1 /*状态：1-开启 0-关闭*/,
+      "sort": 5 /*排序：数字越大越靠前*/,
+      "position": 1 /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/,
+      "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318" /*图标地址*/,
+      "attribute": "hot" /*属性：normal:正常列表  special:专题  hot:热销榜*/,
+      "label": "女装大佬" /*标签*/,
+      "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453" /*背景图:属性为专题需要上传背景图*/,
+      "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
+    },
+    {
+      "id": 4 /*记录ID*/,
+      "favorites_id": 20086185 /*选品库id*/,
+      "favorites_title": "女装" /*选品库名称*/,
+      "type": 1 /*类型 1：爆品 2：优选*/,
+      "status": 1 /*状态：1-开启 0-关闭*/,
+      "sort": 5 /*排序：数字越大越靠前*/,
+      "position": 1 /*位置：0:top 1:mid 2:bottom *bottom暂不显示，用于配置banner显示**/,
+      "icon": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562379390318" /*图标地址*/,
+      "attribute": "hot" /*属性：normal:正常列表  special:专题  hot:热销榜*/,
+      "label": "女装大佬" /*标签*/,
+      "bgurl": "http://resource.immeet.com/005QqQtujw8fd3ql7sl28j30ku0kujsb.jpg_1562394023453" /*背景图:属性为专题需要上传背景图*/,
+      "bgcolour": "#123456" /*背景色:属性为专题需要上传背景色。为rgb值*/
+    }
+  ]
 }
 ```
 
@@ -205,14 +205,14 @@
 
 **参数**
 
-|   名称    |  类型  | 必须 |                  说明                   |
-| :-------: | :----: | :--: | :-------------------------------------: |
-|  client   | string |  是  | 推广位客户端类型: android-安卓 ios-苹果 |
-|  para     |  string|  是  | 各种关键字/淘口令/链接等参数            |
-|  sort     |  string|  否  | 商品排序规则 默认：total_sales_des 如不需要排序规则传 '' 空字符串            |
-|  coupon     |  int|  否  | 当coupon=0时，默认搜索包含无券产品，当传coupon=1时则搜索有券产品           |
-|  page_no     |  int|  是  |  页码           |
-|  page_size     |  int|  是  | 每页条数            |
+|   名称    |  类型  | 必须 |                                 说明                                 |
+| :-------: | :----: | :--: | :------------------------------------------------------------------: |
+|  client   | string |  是  |               推广位客户端类型: android-安卓 ios-苹果                |
+|   para    | string |  是  |                     各种关键字/淘口令/链接等参数                     |
+|   sort    | string |  否  |  商品排序规则 默认：total_sales_des 如不需要排序规则传 '' 空字符串   |
+|  coupon   |  int   |  否  | 当 coupon=0 时，默认搜索包含无券产品，当传 coupon=1 时则搜索有券产品 |
+|  page_no  |  int   |  是  |                                 页码                                 |
+| page_size |  int   |  是  |                               每页条数                               |
 
 **响应**
 
@@ -287,7 +287,7 @@
 |   名称   |  类型  | 必须 |               说明               |
 | :------: | :----: | :--: | :------------------------------: |
 |   para   | string |  是  | 商品 ID，商品列表中的 `num_iid`  |
-| shoptype | string |  是  | 店铺类型:B-天猫 C-淘宝，必须大写 |
+| shoptype | string |  否  | 店铺类型:B-天猫 C-淘宝，必须大写 |
 
 **shoptype 说明**
 
@@ -492,6 +492,7 @@
   }
 }
 ```
+
 ## 检查授权状态
 
 **方式**
@@ -508,18 +509,20 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "status": true
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "status": true
+  }
 }
 ```
+
 **授权失败返回**
+
 ```json
 {
-    "code": 422,
-    "msg": "授权绑定失败",
-    "errors": null
+  "code": 422,
+  "msg": "授权绑定失败",
+  "errors": null
 }
 ```
