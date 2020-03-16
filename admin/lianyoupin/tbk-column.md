@@ -230,7 +230,7 @@
 | pid | int  |  无  |  否  |         栏目父级 0-顶级        |
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |         所关联的广告:多个以","分割(1,2,3)        |
-| activity_desc | string  |  无  |  否  |      活动描述       |
+| desc | string  |  无  |  否  |      活动描述       |
 | type | string  |  无  |  是  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  是  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
@@ -276,7 +276,7 @@
 | pid | int  |  无  |  否  |         栏目父级 0-顶级        |
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |  所关联的广告:多个以","分割(1,2,3)  需要通过原广告列表获取  "space=`app:bomb:any`"        |
-| activity_desc | string  |  无  |  否  |      活动描述       |
+| desc | string  |  无  |  否  |      活动描述       |
 | type | string  |  无  |  否  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动  |
 | cate | string |  无  |  否  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
