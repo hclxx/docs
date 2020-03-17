@@ -172,6 +172,38 @@
                 "cate": "column",
                 "sort": 0,
                 "children": []
+            },
+            {
+                "id": 39,
+                "name": "一键加油",
+                "icon": "http://file.chainonedapp.com/4938d31b0132534f960087436d2763ff.png",
+                "bg_img": null,
+                "bg_color": null,
+                "pid": 0,
+                "target_id": null,
+                "ad_ids": null,
+                "recommend_cover": null,
+                "desc": null,
+                "type": "gas",
+                "cate": "column",
+                "sort": 1,
+                "children": []
+            },
+            {
+                "id": 40,
+                "name": "365淘券",
+                "icon": "http://file.chainonedapp.com/4f84d382133865349dca7dd9e528b956.png",
+                "bg_img": null,
+                "bg_color": null,
+                "pid": 0,
+                "target_id": null,
+                "ad_ids": null,
+                "recommend_cover": null,
+                "desc": null,
+                "type": "365panning",
+                "cate": "column",
+                "sort": 1,
+                "children": []
             }
         ],
         /*活动集合*/
