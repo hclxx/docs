@@ -1295,6 +1295,10 @@
 
 `/api/v1/taobaoke/talent/article`
 
+###  特别说明:
+
+- 达人文章内的商品格式需引入css文件渲染  下载地址：`https://pan.baidu.com/s/1RVGlM3Hijpg7BWt0m1HsZA#list/path=%2F`
+
 **响应**
 
 `Status code 200`
