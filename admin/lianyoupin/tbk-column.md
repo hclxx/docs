@@ -60,7 +60,7 @@
             "is_recommend": 0,/*是否被推荐 0-否 1-是*/
             "recommend_cover": null,/*推荐活动封面图*/
             "activity_desc":null,/*活动描述*/
-            "type": "material",/*栏目类型:library-选品库,material-物料,time-限时,activity-活动*/
+            "type": "material",/*栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券,low:price-特价,free:shipping-包邮,brand-大牌,talent:show-达人说,discover-发现,list-榜单*/
             "cate": "coupon",/*栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区*/
             "sort": 10,/*排序*/
             "status": 1,/*状态:0-关闭 1-开启*/
@@ -231,7 +231,7 @@
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |         所关联的广告:多个以","分割(1,2,3)        |
 | desc | string  |  无  |  否  |      活动描述       |
-| type | string  |  无  |  是  | 栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券  |
+| type | string  |  无  |  是  | 栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券,low:price-特价,free:shipping-包邮,brand-大牌,talent:show-达人说,discover-发现,list-榜单  |
 | cate | string |  无  |  是  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
 
@@ -277,7 +277,7 @@
 | target_id | int  |  无  |  否  |         所属目标ID        |
 | ad_ids | string  |  无  |  否  |  所关联的广告:多个以","分割(1,2,3)  需要通过原广告列表获取  "space=`app:bomb:any`"        |
 | desc | string  |  无  |  否  |      活动描述       |
-| type | string  |  无  |  否  |      栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券  |
+| type | string  |  无  |  否  |   栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券,low:price-特价,free:shipping-包邮,brand-大牌,talent:show-达人说,discover-发现,list-榜单 |
 | cate | string |  无  |  否  | 栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区 |
 | sort | int |  无  |  否  | 排序数值越大排序越靠前 |
 

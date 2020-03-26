@@ -15,7 +15,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        /*栏目集合 columns-栏目 activities-活动 coupons-淘客劵 specials-特色专区 snapup-抢购 */
+        /*栏目集合 columns-栏目 activities-活动 coupons-淘客劵 specials-特色专区 snapup-抢购 trill-抖音好货 */
         "columns": [
             {
                 "id": 1,
@@ -28,7 +28,7 @@
                 "ad_ids": null,
                 "recommend_cover": null,
                 "desc": null,/*描述*/
-                "type": "library",/*栏目类型:library-选品库,material-物料,time-限时,activity-活动*/
+                "type": "library",/*栏目类型:library-选品库,material-物料,time-限时,activity-活动,gas-一键加油,365panning-365淘券,low:price-特价,free:shipping-包邮,brand-大牌,talent:show-达人说,discover-发现,list-榜单*/
                 "cate": "column",/*栏目分类:activity-活动,coupon-淘客券,column-栏目,special-专区*/
                 "sort": 0,
                 "children": []/*子栏目*/
@@ -392,102 +392,6 @@
                             "//img.alicdn.com/i1/655156018/TB2MF3FXsaCJuJjy1zcXXXPgFXa_!!655156018.jpg",
                             "//img.alicdn.com/i3/655156018/TB2hmiclInI8KJjSspeXXcwIpXa_!!655156018.jpg"
                         ]
-                    },
-                    {
-                        "category_id": 1629,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3D2jcYAX%2FTucZw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs3dEVTrjB0GUEsI43RfmcHH9Umq014SDkwvzM5HMQuXQ93y8W7A2h%2FZfnm3%2FHYQV8kAyWWXZnQv1qkK7jJRXH3iiZ%2BQMlGz6FQ%3D%3D&scm=1007.19011.107453.0_4092&pvid=4f114722-19cf-438c-bc63-28acb66f29fc&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;originalFloorId:4092;pvid:4f114722-19cf-438c-bc63-28acb66f29fc;app_pvid:59590_11.88.143.75_726_1583822564234&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a75%4001",
-                        "commission_rate": "0.10",
-                        "coupon_amount": 30,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=XcIJC4I2lTENfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7401cZlGaWzFl7aqxxX%2B%2BkPpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyaw59oZEUuOsQrorRQgzrsjj%2FljXQL3fk0A965ShR8Uk2yyKL%2FuyTAI%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a75%4001",
-                        "coupon_end_time": "1586707199000",
-                        "coupon_remain_count": 950,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=XcIJC4I2lTENfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7401cZlGaWzFl7aqxxX%2B%2BkPpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyaw59oZEUuOsQrorRQgzrsjj%2FljXQL3fk0A965ShR8Uk2yyKL%2FuyTAI%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a75%4001",
-                        "coupon_start_fee": "198.0",
-                        "coupon_start_time": "1582992000000",
-                        "coupon_total_count": 1000,
-                        "item_description": "",
-                        "item_id": 591397751806,
-                        "level_one_category_id": 16,
-                        "level_one_category_name": "女装/女士精品",
-                        "nick": "宝宝宜mm",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/540036312/O1CN01cOyv301wUwTprzNxF_!!540036312.jpg",
-                        "seller_id": 540036312,
-                        "shop_title": "纤颜大码女装",
-                        "title": "洋气连衣裙大码女装胖妹妹mm春夏装韩版雪纺印花显瘦仙女度假长裙",
-                        "user_type": 0,
-                        "volume": "17",
-                        "white_image": "https://img.alicdn.com/imgextra/i3/540036312/O1CN01OZahjf1wUwV17fGVC_!!540036312.jpg",
-                        "zk_final_price": "198",
-                        "pict_list": [
-                            "//img.alicdn.com/i1/540036312/O1CN01XWg5FH1wUwTkEVHp0_!!540036312.jpg",
-                            "//img.alicdn.com/i3/540036312/O1CN01tIq5j41wUwTrKPFI9_!!540036312.jpg",
-                            "//img.alicdn.com/i4/540036312/O1CN01E3N7HG1wUwTsJJujK_!!540036312.jpg",
-                            "//img.alicdn.com/i3/540036312/O1CN01OZahjf1wUwV17fGVC_!!540036312.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50012960,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DCyCQMLNG4QNw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs5qPMURQNA57n8o1yb1iUumMHuv7RoNv0cDr3R%2F7QRWeYZk%2FfpE8sgtWKoIwZ4H8TH2tmL8opKjEqp44rer%2FIlrGJe8N%2FwNpGw%3D%3D&scm=1007.19011.107453.0_4092&pvid=4f114722-19cf-438c-bc63-28acb66f29fc&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;originalFloorId:4092;pvid:4f114722-19cf-438c-bc63-28acb66f29fc;app_pvid:59590_11.88.143.75_726_1583822564234&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a76%4001",
-                        "commission_rate": "0.03",
-                        "coupon_amount": 30,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=W8QJsY8SdX8NfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7wRhGa84Oan7UaTEaNogzFTpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyflgKldjstw9giue2ylHVQsOSTZD3VW1kbsd25R1tHDXZQUWDPdEFUc%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a76%4001",
-                        "coupon_end_time": "1585670399000",
-                        "coupon_remain_count": 9915,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=W8QJsY8SdX8NfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7wRhGa84Oan7UaTEaNogzFTpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyflgKldjstw9giue2ylHVQsOSTZD3VW1kbsd25R1tHDXZQUWDPdEFUc%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a76%4001",
-                        "coupon_start_fee": "138.0",
-                        "coupon_start_time": "1583337600000",
-                        "coupon_total_count": 10000,
-                        "item_description": "智能恒温 整机冲洗 美国涂层 收藏送礼包",
-                        "item_id": 602459691687,
-                        "level_one_category_id": 50012082,
-                        "level_one_category_name": "厨房电器",
-                        "nick": "欧汇旗舰店",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/2978642515/O1CN01lXZc9h1URuezESAtt_!!0-item_pic.jpg",
-                        "seller_id": 2978642515,
-                        "shop_title": "欧汇旗舰店",
-                        "title": "欧汇宿舍锅学生锅电煮锅小火锅锅多功能锅家用电炒蒸煮一体电炒锅",
-                        "user_type": 1,
-                        "volume": "117",
-                        "white_image": "https://img.alicdn.com/imgextra/TB1JTXMprY1gK0jSZTEXXXDQVXa.png",
-                        "zk_final_price": "149",
-                        "pict_list": [
-                            "//img.alicdn.com/i2/2978642515/O1CN01tWc5Ch1URugMO5MEV_!!2978642515.jpg",
-                            "//img.alicdn.com/i2/2978642515/O1CN011oXcoD1URuf6hoKfC_!!2978642515.jpg",
-                            "//img.alicdn.com/i2/2978642515/O1CN01KVrYqq1URuf4eYI0r_!!2978642515.jpg",
-                            "//img.alicdn.com/i1/2978642515/O1CN01wIQuls1URuf3nxpom_!!2978642515.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50012032,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3Ddvkhnxv42ONw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs%2FohxpUwGqzUPsU5I8XltDvlTBm6mOhvTy%2FeXe5PtN%2B1%2Bv5GjHJRsEyRNYwK0uht%2F6fb4BXMHv9Uff1DNXX2LsRxKmPmpIKZsA%3D%3D&scm=1007.19011.107453.0_4092&pvid=4f114722-19cf-438c-bc63-28acb66f29fc&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;originalFloorId:4092;pvid:4f114722-19cf-438c-bc63-28acb66f29fc;app_pvid:59590_11.88.143.75_726_1583822564234&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a77%4001",
-                        "commission_rate": "0.03",
-                        "coupon_amount": 30,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=I6aYq7Sw8kANfLV8niU3R5TgU2jJNKOfU1BGIDN741Ez0BKd%2F02MBtYUXgYx689dSptd1aXrTrJa4rBpq3tSHYOFQt%2F3puQ7PiGj9K29yKVgcK6iYH005391Ao%2BVKPIafN1bjh3fMKhNLi0lBPiBHcURCvQwngvrE5xa8xF8TZNZCbLr7cFuWaDMcCTQGbCRA4sfsHSs2SBS2QXoMOn9se7IEmTbFGhJ1g6l2AT3YQMZao0HO%2FvX0w%3D%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a77%4001",
-                        "coupon_end_time": "1583855999000",
-                        "coupon_remain_count": 35000,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=I6aYq7Sw8kANfLV8niU3R5TgU2jJNKOfU1BGIDN741Ez0BKd%2F02MBtYUXgYx689dSptd1aXrTrJa4rBpq3tSHYOFQt%2F3puQ7PiGj9K29yKVgcK6iYH005391Ao%2BVKPIafN1bjh3fMKhNLi0lBPiBHcURCvQwngvrE5xa8xF8TZNZCbLr7cFuWaDMcCTQGbCRA4sfsHSs2SBS2QXoMOn9se7IEmTbFGhJ1g6l2AT3YQMZao0HO%2FvX0w%3D%3D&&app_pvid=59590_11.88.143.75_726_1583822564234&ptl=floorId:4092;app_pvid:59590_11.88.143.75_726_1583822564234;tpp_pvid:4f114722-19cf-438c-bc63-28acb66f29fc&union_lens=lensId%3AMAPI%401583822564%400b588f4b_0e41_170c32e6c0f_9a77%4001",
-                        "coupon_start_fee": "138.0",
-                        "coupon_start_time": "1583683200000",
-                        "coupon_total_count": 70000,
-                        "item_description": "",
-                        "item_id": 587442961474,
-                        "level_one_category_id": 50006843,
-                        "level_one_category_name": "女鞋",
-                        "nick": "cindy506",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/67285531/O1CN01WpwifI1qjF8okUZbd_!!67285531.jpg",
-                        "seller_id": 67285531,
-                        "shop_title": "妙侣MIAOLV",
-                        "title": "妙侣平底绑带罗马鞋女韩版2019新款低跟包头凉鞋女夏百搭仙女的鞋",
-                        "user_type": 0,
-                        "volume": "19",
-                        "white_image": "https://img.alicdn.com/imgextra/i2/67285531/O1CN01hdsEXN1qjF8g0xmtI_!!67285531.jpg",
-                        "zk_final_price": "158",
-                        "pict_list": [
-                            "//img.alicdn.com/i2/67285531/O1CN01M6qmDK1qjF9HsMrLg_!!67285531.jpg",
-                            "//img.alicdn.com/i1/67285531/O1CN01NWCsGR1qjF94COYBu_!!67285531.jpg",
-                            "//img.alicdn.com/i4/67285531/O1CN01iny7oN1qjF96hm1x1_!!67285531.jpg",
-                            "//img.alicdn.com/i2/67285531/O1CN01hdsEXN1qjF8g0xmtI_!!67285531.jpg"
-                        ]
                     }
                 ]
             },
@@ -536,102 +440,6 @@
                             "//img.alicdn.com/i1/TB1tPIZbgjN8KJjSZFkYXGboXXa_M2.SS2",
                             "//img.alicdn.com/i4/TB1L.gEazgy_uJjSZLeYXGPlFXa_M2.SS2",
                             "//img.alicdn.com/i1/2244590022/O1CN01gP896Z1C27GzKDD2k_!!2244590022.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50010850,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DJ4ROGgGZBIZw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs%2FtfnbtFRD%2BuFqsn%2BB03apL9Umq014SDk46%2BSOeTfXnPs9rrIbHAOhTsSn8IBR1ju%2FEQ%2FeISnZnlz2TFFEd9SqY%3D&scm=1007.19011.107457.0_4093&pvid=3648d177-6c35-458f-ab0a-49c0690af071&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;originalFloorId:4093;pvid:3648d177-6c35-458f-ab0a-49c0690af071;app_pvid:59590_11.11.34.86_40691_1583822564458&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e1%4001",
-                        "commission_rate": "0.05",
-                        "coupon_amount": 50,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=5QQv67Q9efYNfLV8niU3R5TgU2jJNKOfU1BGIDN741GUV%2BXZNWcI1Qj60xte5hGEuG1ZaNECU%2FRQvqYFIWu0JZ4o2nHA0JTu1MTAISfI%2BZAWzzg19WtoVP4Zf1P%2FTuxDcQeZ%2F3KAdon%2BGKlKvQqZlmzaMjRBe9ygIh%2BELkS1JfEE%2BdAb1JoOOt3tMbtUO%2FRd2glJhRWSEkrh0wv1jNC302uFqp8TFaHMa6FwRT%2BqM%2Fg%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e1%4001",
-                        "coupon_end_time": "1583855999000",
-                        "coupon_remain_count": 9000,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=5QQv67Q9efYNfLV8niU3R5TgU2jJNKOfU1BGIDN741GUV%2BXZNWcI1Qj60xte5hGEuG1ZaNECU%2FRQvqYFIWu0JZ4o2nHA0JTu1MTAISfI%2BZAWzzg19WtoVP4Zf1P%2FTuxDcQeZ%2F3KAdon%2BGKlKvQqZlmzaMjRBe9ygIh%2BELkS1JfEE%2BdAb1JoOOt3tMbtUO%2FRd2glJhRWSEkrh0wv1jNC302uFqp8TFaHMa6FwRT%2BqM%2Fg%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e1%4001",
-                        "coupon_start_fee": "51.0",
-                        "coupon_start_time": "1583596800000",
-                        "coupon_total_count": 10000,
-                        "item_description": "",
-                        "item_id": 601013522394,
-                        "level_one_category_id": 16,
-                        "level_one_category_name": "女装/女士精品",
-                        "nick": "xuhaidongshang",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/194667887/O1CN01dgg896288IK77eB4B_!!194667887.jpg",
-                        "seller_id": 194667887,
-                        "shop_title": "第五季名品馆",
-                        "title": "短袖宽松大码连衣裙2019秋季新款女装韩版拼接显瘦打底针织中长裙",
-                        "user_type": 0,
-                        "volume": "32",
-                        "white_image": "https://img.alicdn.com/imgextra/i3/194667887/O1CN01GTZagV288IK9f85Ug_!!194667887.jpg",
-                        "zk_final_price": "299",
-                        "pict_list": [
-                            "//img.alicdn.com/i3/194667887/O1CN01vEBfND288IK7UaIPV_!!194667887.jpg",
-                            "//img.alicdn.com/i4/194667887/O1CN01ZjFEIM288IKiCLq8b_!!194667887.jpg",
-                            "//img.alicdn.com/i4/194667887/O1CN01jq5P1z288IKdYPb7q_!!194667887.jpg",
-                            "//img.alicdn.com/i3/194667887/O1CN01GTZagV288IK9f85Ug_!!194667887.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 162116,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DY6dMsRXKbk5w4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs%2FtfnbtFRD%2BuFqsn%2BB03apL9Umq014SDk46%2BSOeTfXnPBcf4VEfIUOzRqiWvTDYT2PEQ%2FeISnZnlz2TFFEd9SqY%3D&scm=1007.19011.107457.0_4093&pvid=3648d177-6c35-458f-ab0a-49c0690af071&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;originalFloorId:4093;pvid:3648d177-6c35-458f-ab0a-49c0690af071;app_pvid:59590_11.11.34.86_40691_1583822564458&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e2%4001",
-                        "commission_rate": "0.05",
-                        "coupon_amount": 50,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=1c%2F2yVSAPV0NfLV8niU3R5TgU2jJNKOfU1BGIDN741GUV%2BXZNWcI1Qj60xte5hGEuG1ZaNECU%2FS17G1sopgmK4cM2njCDUMcxC%2B4M8ItoHcWzzg19WtoVP4Zf1P%2FTuxDcQeZ%2F3KAdon%2BGKlKvQqZlmzaMjRBe9ygIh%2BELkS1JfEGQASttHIRqV%2FW1w85PFJ5KXTLkNzLI9Th0wv1jNC302uFqp8TFaHMa6FwRT%2BqM%2Fg%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e2%4001",
-                        "coupon_end_time": "1583855999000",
-                        "coupon_remain_count": 9000,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=1c%2F2yVSAPV0NfLV8niU3R5TgU2jJNKOfU1BGIDN741GUV%2BXZNWcI1Qj60xte5hGEuG1ZaNECU%2FS17G1sopgmK4cM2njCDUMcxC%2B4M8ItoHcWzzg19WtoVP4Zf1P%2FTuxDcQeZ%2F3KAdon%2BGKlKvQqZlmzaMjRBe9ygIh%2BELkS1JfEGQASttHIRqV%2FW1w85PFJ5KXTLkNzLI9Th0wv1jNC302uFqp8TFaHMa6FwRT%2BqM%2Fg%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e2%4001",
-                        "coupon_start_fee": "51.0",
-                        "coupon_start_time": "1583596800000",
-                        "coupon_total_count": 10000,
-                        "item_description": "",
-                        "item_id": 579050291185,
-                        "level_one_category_id": 16,
-                        "level_one_category_name": "女装/女士精品",
-                        "nick": "xuhaidongshang",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i3/194667887/O1CN01288IEVLUnp4gSi9_!!194667887.jpg",
-                        "seller_id": 194667887,
-                        "shop_title": "第五季名品馆",
-                        "title": "圆领中长款打底衫女长袖2019新款秋冬时尚百搭网纱拼接镶钻上衣",
-                        "user_type": 0,
-                        "volume": "10",
-                        "white_image": "https://img.alicdn.com/imgextra/i2/194667887/O1CN018XVP8A288IF9PYQvG_!!194667887.jpg",
-                        "zk_final_price": "239",
-                        "pict_list": [
-                            "//img.alicdn.com/i1/194667887/O1CN01288IEVLTOY49rZ7_!!194667887.jpg",
-                            "//img.alicdn.com/i2/194667887/O1CN01288IEd82lOquFy5_!!194667887.jpg",
-                            "//img.alicdn.com/i3/194667887/O1CN01288IEa3dGEUX5kS_!!194667887.jpg",
-                            "//img.alicdn.com/i2/194667887/O1CN018XVP8A288IF9PYQvG_!!194667887.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50013878,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3DvJTTEiwnB8Fw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs9uUPQwgfyLfYmUXiBFPCsyMHuv7RoNv0cDr3R%2F7QRWe6gg%2BPxOn9CfaEpBkKlioF32tmL8opKjEqp44rer%2FIlrGJe8N%2FwNpGw%3D%3D&scm=1007.19011.107457.0_4093&pvid=3648d177-6c35-458f-ab0a-49c0690af071&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;originalFloorId:4093;pvid:3648d177-6c35-458f-ab0a-49c0690af071;app_pvid:59590_11.11.34.86_40691_1583822564458&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e3%4001",
-                        "commission_rate": "0.20",
-                        "coupon_amount": 3,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=XvyTsVSU0wUNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u76Jht2mXoB82cTQe%2BOiJrKfpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyax1SZXNJGhcJxytjSfEaQSjdmzoDxp2zqop%2FtflKRJiGWqNBzv719M%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e3%4001",
-                        "coupon_end_time": "1584287999000",
-                        "coupon_remain_count": 100000,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=XvyTsVSU0wUNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u76Jht2mXoB82cTQe%2BOiJrKfpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyax1SZXNJGhcJxytjSfEaQSjdmzoDxp2zqop%2FtflKRJiGWqNBzv719M%3D&&app_pvid=59590_11.11.34.86_40691_1583822564458&ptl=floorId:4093;app_pvid:59590_11.11.34.86_40691_1583822564458;tpp_pvid:3648d177-6c35-458f-ab0a-49c0690af071&union_lens=lensId%3AMAPI%401583822564%400b0b2256_0e98_170c32e6c8b_e2e3%4001",
-                        "coupon_start_fee": "15.0",
-                        "coupon_start_time": "1583683200000",
-                        "coupon_total_count": 100000,
-                        "item_description": "",
-                        "item_id": 608099484654,
-                        "level_one_category_id": 50013864,
-                        "level_one_category_name": "饰品/流行首饰/时尚饰品新",
-                        "nick": "小花sarang",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/2244590022/O1CN01QVnkO81C27HqXvDMB_!!2244590022.jpg",
-                        "seller_id": 2244590022,
-                        "shop_title": "GUKUA  LI 小姐设计品牌",
-                        "title": "GUKUA LI小姐原创手工珍珠流苏抓夹气质优雅发饰夹子发夹网红头饰",
-                        "user_type": 0,
-                        "volume": "77",
-                        "white_image": "",
-                        "zk_final_price": "17.99",
-                        "pict_list": [
-                            "//img.alicdn.com/i2/2244590022/O1CN01halALK1C27HqPBZJw_!!2244590022.jpg",
-                            "//img.alicdn.com/i1/2244590022/O1CN01D3pNSl1C27HrpwBY2_!!2244590022.jpg",
-                            "//img.alicdn.com/i1/2244590022/O1CN01FDR45v1C27HsPdkCJ_!!2244590022.jpg",
-                            "//img.alicdn.com/i3/2244590022/O1CN01omQAw91C27Hovnfu0_!!2244590022.jpg"
                         ]
                     }
                 ]
@@ -682,104 +490,109 @@
                             "//img.alicdn.com/i2/2200737287731/O1CN01Ljxmjq26yqYFns672_!!2200737287731.jpg",
                             "//img.alicdn.com/i3/2200737287731/O1CN012hWgds26yqYK3bJap_!!2200737287731.jpg"
                         ]
-                    },
-                    {
-                        "category_id": 50008881,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3D%2BVaRNBhbFkZw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs4WPNpYpXCTwwmx78MEHgLv9Umq014SDkwvzM5HMQuXQvHmRFupI9j3J40hEh3beT0AyWWXZnQv1qkK7jJRXH3iiZ%2BQMlGz6FQ%3D%3D&scm=1007.19011.107455.0_4094&pvid=707bd803-e78c-40d7-848a-733a8d31f3ee&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;originalFloorId:4094;pvid:707bd803-e78c-40d7-848a-733a8d31f3ee;app_pvid:59590_11.186.137.142_635_1583822564595&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678e%4001",
-                        "commission_rate": "0.15",
-                        "coupon_amount": 30,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=5GniqEP7oqoNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7wYtGQQVzA5plU9jWzKK603pIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyRe3edoBQQCAWWY6nriCM1yU6mDw7HaDTHLoWjIFR8c6VW6yqqeGJ%2FI%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678e%4001",
-                        "coupon_end_time": "1585670399000",
-                        "coupon_remain_count": 97331,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=5GniqEP7oqoNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u7wYtGQQVzA5plU9jWzKK603pIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyRe3edoBQQCAWWY6nriCM1yU6mDw7HaDTHLoWjIFR8c6VW6yqqeGJ%2FI%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678e%4001",
-                        "coupon_start_fee": "50.0",
-                        "coupon_start_time": "1582473600000",
-                        "coupon_total_count": 100000,
-                        "item_description": "",
-                        "item_id": 600734659257,
-                        "level_one_category_id": 1625,
-                        "level_one_category_name": "女士内衣/男士内衣/家居服",
-                        "nick": "新客旗舰店",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i4/679559267/O1CN01xaz6Ga2IKKvezi7oV_!!679559267.jpg",
-                        "seller_id": 679559267,
-                        "shop_title": "新客旗舰店",
-                        "title": "【原创设计】1/2半罩杯聚拢内衣女无钢圈调整型小胸平胸专用文胸",
-                        "user_type": 1,
-                        "volume": "67",
-                        "white_image": "https://img.alicdn.com/imgextra/TB1oKKzdq61gK0jSZFlXXXDKFXa.png",
-                        "zk_final_price": "75",
-                        "pict_list": [
-                            "//img.alicdn.com/i2/679559267/O1CN01b2qquP2IKKtOE8abh_!!679559267.jpg",
-                            "//img.alicdn.com/i1/679559267/O1CN010rnbIY2IKKtRQdIH2_!!679559267.jpg",
-                            "//img.alicdn.com/i4/679559267/O1CN01gk9RcR2IKKtPiHoak_!!679559267.jpg",
-                            "//img.alicdn.com/i4/679559267/O1CN01bmiiFf2IKKtQ9lHAu_!!679559267.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50023320,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3D8%2B%2FDcoYVYIVw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUszW3NfAyGqRFCs9jLpx71EmMHuv7RoNv0cDr3R%2F7QRWe7cqOGmoUWQoM5qc8MKfoWX2tmL8opKjEqp44rer%2FIlrGJe8N%2FwNpGw%3D%3D&scm=1007.19011.107455.0_4094&pvid=707bd803-e78c-40d7-848a-733a8d31f3ee&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;originalFloorId:4094;pvid:707bd803-e78c-40d7-848a-733a8d31f3ee;app_pvid:59590_11.186.137.142_635_1583822564595&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678f%4001",
-                        "commission_rate": "0.20",
-                        "coupon_amount": 10,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=yHQrf5K%2Fzp4NfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u74qYiRcT9gdC7GLOQsc%2BpCTpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyWBMKcu5f6ivowRE5YooXMV%2BKW9WMVUMPcz6LjV7dULPZQUWDPdEFUc%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678f%4001",
-                        "coupon_end_time": "1584201599000",
-                        "coupon_remain_count": 98425,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=yHQrf5K%2Fzp4NfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u74qYiRcT9gdC7GLOQsc%2BpCTpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyWBMKcu5f6ivowRE5YooXMV%2BKW9WMVUMPcz6LjV7dULPZQUWDPdEFUc%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_678f%4001",
-                        "coupon_start_fee": "22.0",
-                        "coupon_start_time": "1583596800000",
-                        "coupon_total_count": 100000,
-                        "item_description": "测量精准 自动夜光 可坐可挂 闹钟 1年换新",
-                        "item_id": 574002770166,
-                        "level_one_category_id": 50020485,
-                        "level_one_category_name": "五金/工具",
-                        "nick": "凯然居家日用旗舰店",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i1/2962721078/O1CN01fs7wg71JplXPSQiV4_!!0-item_pic.jpg",
-                        "seller_id": 2962721078,
-                        "shop_title": "凯然居家日用旗舰店",
-                        "title": "室内温度计家用精准高精度室温表干湿婴儿房温湿度计电子时钟夜光",
-                        "user_type": 1,
-                        "volume": "713",
-                        "white_image": "https://img.alicdn.com/imgextra/TB14lXGqNv1gK0jSZFFXXb0sXXa.png",
-                        "zk_final_price": "25",
-                        "pict_list": [
-                            "//img.alicdn.com/i1/2962721078/TB2aOwRahnaK1RjSZFBXXcW7VXa_!!2962721078.jpg",
-                            "//img.alicdn.com/i1/2962721078/O1CN01aMb8gK1JplUNQDXQZ_!!0-item_pic.jpg",
-                            "//img.alicdn.com/i4/2962721078/TB2zuyrlBsmBKNjSZFsXXaXSVXa_!!2962721078.jpg",
-                            "//img.alicdn.com/i2/2962721078/O1CN01OdVoZl1JplVHwvDZD_!!2962721078.jpg"
-                        ]
-                    },
-                    {
-                        "category_id": 50008881,
-                        "click_url": "//s.click.taobao.com/t?e=m%3D2%26s%3D9n4GdRqn%2FEpw4vFB6t2Z2ueEDrYVVa64Dne87AjQPk9yINtkUhsv0AvMSDNbmQpCa93HoE%2BR6GcWMAcoALkyVsOZ8P1IJEEm7ZMdQjZNT6tYeIHQMasnH7KGcA73gIqugvUNyyJS1KL3%2BWMkG3VUs4WPNpYpXCTwwmx78MEHgLv9Umq014SDkwvzM5HMQuXQ8SN4isNOZQ4wS6aCGT0n30AyWWXZnQv1qkK7jJRXH3iiZ%2BQMlGz6FQ%3D%3D&scm=1007.19011.107455.0_4094&pvid=707bd803-e78c-40d7-848a-733a8d31f3ee&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;originalFloorId:4094;pvid:707bd803-e78c-40d7-848a-733a8d31f3ee;app_pvid:59590_11.186.137.142_635_1583822564595&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_6790%4001",
-                        "commission_rate": "0.15",
-                        "coupon_amount": 30,
-                        "coupon_click_url": "//uland.taobao.com/coupon/edetail?e=NB%2Fj%2BWIkDyUNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u76ddCcAZaDH8Zj7zYd3LNsvpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyYrtudc0cByOtoMp7ITBgnuU6mDw7HaDTHLoWjIFR8c6VW6yqqeGJ%2FI%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_6790%4001",
-                        "coupon_end_time": "1585670399000",
-                        "coupon_remain_count": 97331,
-                        "coupon_share_url": "//uland.taobao.com/coupon/edetail?e=NB%2Fj%2BWIkDyUNfLV8niU3R5TgU2jJNKOfU1BGIDN741G0%2Bc5Gzwi6geKSfLX1rbqQLGbJes29FQq2QeBl4W2u76ddCcAZaDH8Zj7zYd3LNsvpIdv7ItN3cCKiXjxNZP4527DxdZgG9t3k0iMxS7ZepkgM2heCjyWJY946QEMvwnojPB6wO%2BEqyYrtudc0cByOtoMp7ITBgnuU6mDw7HaDTHLoWjIFR8c6VW6yqqeGJ%2FI%3D&&app_pvid=59590_11.186.137.142_635_1583822564595&ptl=floorId:4094;app_pvid:59590_11.186.137.142_635_1583822564595;tpp_pvid:707bd803-e78c-40d7-848a-733a8d31f3ee&union_lens=lensId%3AMAPI%401583822564%400bba898e_0e66_170c32e6d12_6790%4001",
-                        "coupon_start_fee": "50.0",
-                        "coupon_start_time": "1582473600000",
-                        "coupon_total_count": 100000,
-                        "item_description": "",
-                        "item_id": 606177403987,
-                        "level_one_category_id": 1625,
-                        "level_one_category_name": "女士内衣/男士内衣/家居服",
-                        "nick": "新客旗舰店",
-                        "pict_url": "//gw.alicdn.com/bao/uploaded/i2/679559267/O1CN01Qvn5NO2IKKvfONjAo_!!679559267.jpg",
-                        "seller_id": 679559267,
-                        "shop_title": "新客旗舰店",
-                        "title": "【原创设计】红色内衣女小胸聚拢性感本命年结婚无钢圈文胸套装",
-                        "user_type": 1,
-                        "volume": "55",
-                        "white_image": "https://img.alicdn.com/imgextra/TB1JF9Jllv0gK0jSZKbXXbK2FXa.png",
-                        "zk_final_price": "76",
-                        "pict_list": [
-                            "//img.alicdn.com/i2/679559267/O1CN01BiVkE52IKKuYVGn7z_!!679559267.jpg",
-                            "//img.alicdn.com/i4/679559267/O1CN01hTmPlx2IKKuPeUEIF_!!679559267.jpg",
-                            "//img.alicdn.com/i3/679559267/O1CN01MirX5Y2IKKuS1wY40_!!679559267.jpg",
-                            "//img.alicdn.com/i1/679559267/O1CN01CuEQvZ2IKKuNiUGBb_!!679559267.jpg"
-                        ]
                     }
                 ]
+            }
+        ],
+        /*抖音好货*/
+        "trill": [
+            {
+                "product_id": "16185242",/*产品ID*/
+                "itemid": "585930208380",/*宝贝ID*/
+                "seller_id": "0",/*放单人ID*/
+                "itemtitle": "眼镜布擦眼镜纸湿巾一次性手机屏幕擦镜纸镜头清洁眼睛酒精擦拭纸",/*宝贝标题*/
+                "itemshorttitle": "手机屏幕显微镜擦镜纸眼睛镜头清洁",/*宝贝短标题*/
+                "itemsale": "2014",/*宝贝月销量*/
+                "itemsale2": "0",/*宝贝近2小时跑单*/
+                "itemprice": "16.80",/*在售价*/
+                "itemdesc": "【亚美嘉】，亚美嘉专业擦眼镜纸，纸质柔软细腻，单片独立包装，安全卫生，方便携带，擦完干净透亮不留痕迹，贴心呵护您的镜片！",/*宝贝推荐语*/
+                "itempic_copy": "0_585930208380_1574144161.jpg",/*推广长图（带http://img.haodanku.com/0_553757100845_1509175123.jpg-600进行访问）*/
+                "shoptype": "B",/*店铺类型：天猫（B）淘宝店（C）*/
+                "is_foreshow": "0",/**/
+                "videoid": "0",/*商品视频ID（id大于0的为有视频单，视频拼接地址http://cloud.video.taobao.com/play/u/1/p/1/e/6/t/1/+videoid+.mp4）*/
+                "activityid": "619cf997c30a44d983b9f321272534b7",/**/
+                "activity_type": "普通活动",/*活动类型： 普通活动 聚划算 淘抢购*/
+                "fqcat": "5",/*商品类目：1女装，2男装，3内衣，4美妆，5配饰，6鞋品，7箱包，8儿童，9母婴，10居家，11美食，12数码，13家电，14其他，15车品，16文体，17宠物*/
+                "shopid": "195233274",/**/
+                "userid": "2200639561294",/*店主的userid*/
+                "shopname": "亚美嘉旗舰店",/*店铺名*/
+                "tkrates": "20.00",/*佣金比例*/
+                "tkmoney": "2.96",/*预计可得（宝贝价格 * 佣金比例 / 100）*/
+                "couponurl": "https://uland.taobao.com/quan/detail?sellerId=2200639561294&activityId=619cf997c30a44d983b9f321272534b7",/*优惠券链接*/
+                "couponmoney": "2",/*优惠券金额*/
+                "couponsurplus": "5000",/*优惠券剩余量*/
+                "couponreceive": "0",/*优惠券领取量*/
+                "couponnum": "5000",/*优惠券总数量*/
+                "couponstarttime": "1584979200",/*优惠券开始时间*/
+                "itemendprice": "14.80",/*宝贝券后价*/
+                "couponendtime": "1585497600",/*优惠券结束时间*/
+                "general_index": "153",/*好单指数*/
+                "grade_avg": "0.00",/**/
+                "rate_total": "0",/**/
+                "todaysale": "0",/*当天销量（选择昨日爆单榜没有该字段）*/
+                "stock": "0",/**/
+                "itempic": "http://img.alicdn.com/imgextra/i3/2200639561294/O1CN01hFTp9n1LQh0Fmy9e7_!!2200639561294.jpg",/*宝贝主图原始图像（由于图片原图过大影响加载速度，建议加上后缀_310x310.jpg，如https://img.alicdn.com/imgextra/i2/3412518427/TB26gs7bb7U5uJjSZFFXXaYHpXa_!!3412518427.jpg_310x310.jpg）*/
+                "discount": "8.80",/*折扣力度*/
+                "seller_name": "",/*放单人名号*/
+                "report_status": "0",/**/
+                "down_type": "0",/**/
+                "activity_plan": "0",/**/
+                "dy_trill_id": "607237",/*抖音商品ID*/
+                "dy_video_url": "http://video.haodanku.com/37251d4ce441f5a479b975be09552883.mp4?attname=1585034750.mp4",/*抖音视频地址*/
+                "dy_video_like_count": "45",/*抖音视频点赞数*/
+                "dy_video_share_count": "0",/*抖音视频分享量*/
+                "dy_video_title": "再也不用担心擦掉镜片上的镀膜了@抖音小助手",/*抖音视频标题*/
+                "first_frame": "https://p9-dy.byteimg.com/img/tos-cn-p-0015/7c61ee6f07a348608705c8a34c2bf342~c5_300x400.jpeg",/*视频第一帧图片地址*/
+                "dynamic_image": "http://video.haodanku.com/95b802125eac22b7f0fc0abcc6914fa0.gif",/*视频缩略图（动态）*/
+            },
+            {
+                "product_id": "16221388",
+                "itemid": "597195332564",
+                "seller_id": "31092",
+                "itemtitle": "然萃多喝沙棘320ml*6瓶装 沙棘汁饮品果味果汁饮料",
+                "itemshorttitle": "补充维C沙棘果汁饮料*6瓶",
+                "itemsale": "1775",
+                "itemsale2": "0",
+                "itemprice": "59.90",
+                "itemdesc": "【抗病毒就要多补充VC】维生素C满满，甘肃特产野生沙棘果汁饮料，马云尝过说好喝的沙棘汁！酸酸甜甜，果汁很浓，补VC增强肌体防御能力，限时优惠速抢！",
+                "itempic_copy": "0_597195332564_1573528096.jpg",
+                "shoptype": "B",
+                "is_foreshow": "0",
+                "videoid": "0",
+                "activityid": "e3ef7b28af69438dbef647ae944299ce",
+                "activity_type": "普通活动",
+                "fqcat": "11",
+                "shopid": "576305801",
+                "userid": "2201546683533",
+                "shopname": "然萃食品旗舰店",
+                "tkrates": "20.00",
+                "tkmoney": "6.98",
+                "couponurl": "https:\/\/uland.taobao.com\/quan\/detail?sellerId=2201546683533&activityId=e3ef7b28af69438dbef647ae944299ce",
+                "couponmoney": "25",
+                "couponsurplus": "100000",
+                "couponreceive": "0",
+                "couponnum": "100000",
+                "couponstarttime": "1585152000",
+                "itemendprice": "34.90",
+                "couponendtime": "1585843199",
+                "general_index": "176",
+                "grade_avg": "4.90",
+                "rate_total": "4799",
+                "todaysale": "0",
+                "stock": "8024",
+                "itempic": "http:\/\/img.haodanku.com\/oimg_597195332564_1570067024.jpg",
+                "discount": "5.80",
+                "seller_name": "穿越联盟-火线军团",
+                "report_status": "0",
+                "down_type": "0",
+                "activity_plan": "-1",
+                "dy_trill_id": "2470644",
+                "dy_video_url": "http:\/\/video.haodanku.com\/7087c044d3094a9f6ff12f9d081fb2af.mp4?attname=1585191472.mp4",
+                "dy_video_like_count": "58",
+                "dy_video_share_count": "0",
+                "dy_video_title": "一口气喝了三瓶，我赌你没喝过??#好物推荐 #上热门 #美到颤抖",
+                "first_frame": "https:\/\/p3-dy.byteimg.com\/img\/tos-cn-p-0015\/3751c6948c1a4a48bff7ada5623c96c6~c5_300x400.jpeg",
+                "dynamic_image": "http:\/\/video.haodanku.com\/a09b791968244d5b03bc302fb4b2bd7d.gif"
             }
         ]
     }
