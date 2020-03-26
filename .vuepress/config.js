@@ -141,7 +141,8 @@ function getLypAdminSider(title, introduction) {
         "tbk-cate",
         "tbk-gift",
         "tbk-gift-order",
-        "tbk-column"
+        "tbk-column",
+        "duomai"
       ]
     }
   ];
