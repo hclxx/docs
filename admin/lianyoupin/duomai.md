@@ -75,7 +75,7 @@
 | receipt_time_explain | string |  0   |  是  |             结账时间周期说明             |
 |   special_explain    | string |  0   |  是  |              退货无返利说明              |
 |        remark        | string |  0   |  是  |                 注意事项                 |
-|         sort         |  int   |  0   |  是  |                 排序 ID                  |
+|         sort         |  int   |  0   |  是  |                 排序权值                 |
 |         hot          |  int   |  0   |  是  |           热门推荐：0-否 1-是            |
 |        status        |  int   |  0   |  是  |           状态: 0-隐藏 1-显示            |
 
@@ -114,7 +114,7 @@
 | receipt_time_explain | string |  无  |  否  |             结账时间周期说明             |
 |   special_explain    | string |  无  |  否  |              退货无返利说明              |
 |        remark        | string |  无  |  否  |                 注意事项                 |
-|         sort         |  int   |  无  |  否  |                 排序 ID                  |
+|         sort         |  int   |  无  |  否  |                 排序权值                 |
 |         hot          |  int   |  无  |  否  |           热门推荐：0-否 1-是            |
 |        status        |  int   |  无  |  否  |           状态: 0-隐藏 1-显示            |
 
