@@ -88,7 +88,8 @@ function getLypinAppSider(title, introduction) {
         "weiyi",
         "tbk-gift",
         "tbk-home",
-        "hdk"
+        "hdk",
+        "duomai"
       ]
     }
   ];
