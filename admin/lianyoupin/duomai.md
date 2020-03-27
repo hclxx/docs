@@ -38,6 +38,9 @@
         "icon": "http://static.app.com/adasdsadasd.png" /*栏目图标*/,
         "explain": "京东商城说明" /*栏目说明*/,
         "pid": 1 /*栏目ID，0-顶级栏目 pid > 0为二级栏目*/,
+        "target_type": "common" /*目标类型:common-通用 jd-京东 pdd-拼多多*/,
+        "target_link": 1 /*目标链接*/,
+        "pid": 1 /*栏目ID，0-顶级栏目 pid > 0为二级栏目*/,
         "ratio_explain": "最高返0.6%" /*返利比例说明*/,
         "order_time_explain": "10分钟" /*生成订单时间说明*/,
         "receipt_time_explain": "2个月" /*结账时间周期说明*/,
@@ -70,6 +73,8 @@
 |         icon         | string |  无  |  是  |                 栏目图标                 |
 |       explain        | string |  0   |  是  |                 栏目说明                 |
 |         pid          |  int   |  0   |  是  | 栏目父 ID，0-顶级栏目 pid > 0 为二级栏目 |
+|     target_type      | string |  0   |  是  | 目标类型:common-通用 jd-京东 pdd-拼多多  |
+|     target_link      | string |  0   |  是  |                 目标链接                 |
 |    ratio_explain     | string |  0   |  是  |               返利比例说明               |
 |  order_time_explain  | string |  0   |  是  |             生成订单时间说明             |
 | receipt_time_explain | string |  0   |  是  |             结账时间周期说明             |
@@ -109,6 +114,8 @@
 |         icon         | string |  无  |  否  |                 栏目图标                 |
 |       explain        | string |  无  |  否  |                 栏目说明                 |
 |         pid          |  int   |  无  |  否  | 栏目父 ID，0-顶级栏目 pid > 0 为二级栏目 |
+|     target_type      | string |  无  |  否  | 目标类型:common-通用 jd-京东 pdd-拼多多  |
+|     target_link      | string |  无  |  否  |                 目标链接                 |
 |    ratio_explain     | string |  无  |  否  |               返利比例说明               |
 |  order_time_explain  | string |  无  |  否  |             生成订单时间说明             |
 | receipt_time_explain | string |  无  |  否  |             结账时间周期说明             |
