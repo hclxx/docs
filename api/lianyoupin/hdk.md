@@ -1379,7 +1379,7 @@
 
 **路径**
 
-`/api/v1/taobaoke/talent/article`
+`/api/v1/taobaoke/selected/item`
 
 **响应**
 
