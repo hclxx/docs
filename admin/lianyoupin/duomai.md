@@ -14,6 +14,8 @@
 
 **SUCCESS 返回体**
 
+**该集合为排序的好的集合**
+
 ```json
 [
   {
@@ -38,6 +40,7 @@
         "icon": "http://static.app.com/adasdsadasd.png" /*栏目图标*/,
         "explain": "京东商城说明" /*栏目说明*/,
         "pid": 1 /*栏目ID，0-顶级栏目 pid > 0为二级栏目*/,
+        "aid": "13213" /*多麦推荐计划ID*/,
         "target_type": "common" /*目标类型:common-通用 jd-京东 pdd-拼多多*/,
         "target_link": 1 /*目标链接*/,
         "pid": 1 /*栏目ID，0-顶级栏目 pid > 0为二级栏目*/,
@@ -71,18 +74,19 @@
 | :------------------: | :----: | :--: | :--: | :--------------------------------------: |
 |         name         | string |  无  |  是  |                 栏目名称                 |
 |         icon         | string |  无  |  是  |                 栏目图标                 |
-|       explain        | string |  0   |  是  |                 栏目说明                 |
-|         pid          |  int   |  0   |  是  | 栏目父 ID，0-顶级栏目 pid > 0 为二级栏目 |
-|     target_type      | string |  0   |  是  | 目标类型:common-通用 jd-京东 pdd-拼多多  |
-|     target_link      | string |  0   |  是  |                 目标链接                 |
-|    ratio_explain     | string |  0   |  是  |               返利比例说明               |
-|  order_time_explain  | string |  0   |  是  |             生成订单时间说明             |
-| receipt_time_explain | string |  0   |  是  |             结账时间周期说明             |
-|   special_explain    | string |  0   |  是  |              退货无返利说明              |
-|        remark        | string |  0   |  是  |                 注意事项                 |
-|         sort         |  int   |  0   |  是  |                 排序权值                 |
-|         hot          |  int   |  0   |  是  |           热门推荐：0-否 1-是            |
-|        status        |  int   |  0   |  是  |           状态: 0-隐藏 1-显示            |
+|       explain        | string |  无  |  是  |                 栏目说明                 |
+|         pid          |  int   |  无  |  是  | 栏目父 ID，0-顶级栏目 pid > 0 为二级栏目 |
+|         aid          | string |  无  | 可选 |               多麦推广 ID                |
+|     target_type      | string |  无  |  是  | 目标类型:common-通用 jd-京东 pdd-拼多多  |
+|     target_link      | string |  无  |  是  |                 目标链接                 |
+|    ratio_explain     | string |  无  |  是  |               返利比例说明               |
+|  order_time_explain  | string |  无  |  是  |             生成订单时间说明             |
+| receipt_time_explain | string |  无  |  是  |             结账时间周期说明             |
+|   special_explain    | string |  无  |  是  |              退货无返利说明              |
+|        remark        | string |  无  |  是  |                 注意事项                 |
+|         sort         |  int   |  无  |  是  |                 排序权值                 |
+|         hot          |  int   |  无  |  是  |           热门推荐：0-否 1-是            |
+|        status        |  int   |  无  |  是  |           状态: 0-隐藏 1-显示            |
 
 **SUCCESS 状态码**
 
@@ -114,6 +118,7 @@
 |         icon         | string |  无  |  否  |                 栏目图标                 |
 |       explain        | string |  无  |  否  |                 栏目说明                 |
 |         pid          |  int   |  无  |  否  | 栏目父 ID，0-顶级栏目 pid > 0 为二级栏目 |
+|         aid          | string |  无  |  否  |               多麦推广 ID                |
 |     target_type      | string |  无  |  否  | 目标类型:common-通用 jd-京东 pdd-拼多多  |
 |     target_link      | string |  无  |  否  |                 目标链接                 |
 |    ratio_explain     | string |  无  |  否  |               返利比例说明               |
