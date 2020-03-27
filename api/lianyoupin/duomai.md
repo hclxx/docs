@@ -66,3 +66,44 @@
   ]
 }
 ```
+
+## 获取推广链接
+
+`/api/v1/duomai/url`
+
+**请求方法**
+
+`POST`
+
+**请求参数**
+
+|  名称   |  类型  | 默认 | 必须 |          说明          |
+| :-----: | :----: | :--: | :--: | :--------------------: |
+| cate_id |  int   |  无  |  是  |        栏目 ID         |
+| client  | string |  无  |  是  | 客户端:`[ios,android]` |
+
+**SUCCESS 状态码**
+
+`200`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "url": "https://xxxx.xxxx.xxx" /*跳转链接*/
+  }
+}
+```
+
+**ERROR 返回体**
+
+```json
+{
+  "msg": "解析失败",
+  "code": 422,
+  "data": null
+}
+```
