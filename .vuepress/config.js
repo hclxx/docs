@@ -24,7 +24,7 @@ module.exports = {
       // Imeet
       "/api/imeet/": getImeetAppSider("移动端", "规范"),
       "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
-      //AChat
+      // AChat
       "/api/achat/": getAchatAppSider("移动端", "规范"),
       "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
     }
