@@ -23,7 +23,9 @@ module.exports = {
       "/merchant/": getLypMerchantSider("商户管理", "说明"),
       // Imeet
       "/api/imeet/": getImeetAppSider("移动端", "规范"),
-      "/admin/imeet/": getImeetAdminSider("后台管理", "说明")
+      "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
+      //AChat
+      "/api/achat/": getAchatAppSider("移动端", "规范"),
     }
   },
   plugins: [
@@ -249,6 +251,19 @@ function getImeetAdminSider(title, introduction) {
         "role",
         "version",
         "config"
+      ]
+    }
+  ];
+}
+// Achat APP接口文档
+function getAchatAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "certification"
       ]
     }
   ];

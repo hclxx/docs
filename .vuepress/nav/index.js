@@ -13,5 +13,12 @@ module.exports = [
       { text: "移动端", link: "/api/imeet/" },
       { text: "后台管理", link: "/admin/imeet/" },
     ]
+  },
+  {
+    text: "链聊",
+    items: [
+      { text: "移动端", link: "/api/achat/" },
+      { text: "后台管理", link: "/admin/achat/" },
+    ]
   }
 ];
