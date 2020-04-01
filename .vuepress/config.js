@@ -26,6 +26,7 @@ module.exports = {
       "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
       //AChat
       "/api/achat/": getAchatAppSider("移动端", "规范"),
+      "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
     }
   },
   plugins: [
@@ -257,6 +258,19 @@ function getImeetAdminSider(title, introduction) {
 }
 // Achat APP接口文档
 function getAchatAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "certification"
+      ]
+    }
+  ];
+}
+// Achat admin接口文档
+function getAchatAdminSider(title, introduction) {
   return [
     {
       title,
