@@ -264,7 +264,8 @@ function getAchatAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "certification"
+        "certification",
+        "code"
       ]
     }
   ];
