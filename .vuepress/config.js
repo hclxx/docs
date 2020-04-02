@@ -265,7 +265,8 @@ function getAchatAppSider(title, introduction) {
       children: [
         ["", introduction],
         "certification",
-        "code"
+        "code",
+        "ore"
       ]
     }
   ];
