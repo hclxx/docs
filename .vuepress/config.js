@@ -272,7 +272,7 @@ function getAchatAdminSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "certification", "group"]
+      children: [["", introduction], "certification"]
     }
   ];
 }
