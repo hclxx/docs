@@ -262,7 +262,15 @@ function getAchatAppSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "certification", "code", "ore", "group","withdrawal"]
+      children: [
+        ["", introduction],
+        "certification",
+        "code",
+        "ore",
+        "group",
+        "withdrawal",
+        "config"
+      ]
     }
   ];
 }
@@ -272,7 +280,7 @@ function getAchatAdminSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "certification", "withdrawal"]
+      children: [["", introduction], "certification", "withdrawal", "config"]
     }
   ];
 }
