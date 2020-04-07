@@ -169,6 +169,8 @@
 |  status     |  int   |  无  |  否  |       状态:0-待审核 1-已通过 2-已驳回      |
 |  start      |  datetime   |  无  |  否  |            开始时间                |
 |  end      |  datetime   |  无  |  否  |            结束时间                |
+|  ids      |  array   |  无  |  否  |            批量勾选的记录数组（该字段与其他查询条件互斥）                |
+
 
 **SUCCESS 返回体**
 
