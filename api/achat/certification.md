@@ -158,7 +158,6 @@
 | address | string |  是  |  充值钱包地址  |
 | txid | string |  是  | 交易hash |
 | num | string |  是  |  充值数量  |
-| status | int |  是  | 交易状态：0：待确认，1：确认完成，2：失败 |
 | sign | string |  是  | 签名字符串 |
 | timestamp | int |  是  | 当前时间戳 |
 
@@ -172,7 +171,7 @@
 2.将升序排序后的参数按照“参数名=参数值&”的格式进行拼接
 3.将SecretKey拼接到字符串尾部
 4.对拼接SecretKey的字符串进行md5加密，最后的值即为sign值
-MD5("address=864804031618796&num=12&status=2&timestamp=1524801032&txid=12322"  + "c37e5e4685bee3564f" )
+MD5("address=864804031618796&num=12&timestamp=1524801032&txid=12322"  + "c37e5e4685bee3564f" )
 
 **响应**
 
