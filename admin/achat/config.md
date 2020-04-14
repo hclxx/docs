@@ -123,3 +123,107 @@
   "data": null
 }
 ```
+
+## 获取铉算配置
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/config/xuansuan`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 39,
+        "key": "xuansuan",
+        "value": {
+            "intro": "这是铉算说明",/*铉算说明*/
+            "lock_cabin": {/*锁仓配置*/
+                "min": "1000",/*首次锁仓最低个数*/
+                "intro": "这是锁仓说明"/*锁仓说明*/
+            },
+            "withdrawal": {/*提现配置*/
+                "service_charge": "11"/*提现AGM手续费(单位个)*/
+            },
+            "unlock_cabin": {/*解仓配置*/
+                "intro": "这是解仓说明"/*解仓说明*/
+            }
+        },
+        "created_at": "2020-04-14 16:13:28",
+        "updated_at": "2020-04-14 16:22:19"
+    }
+}
+```
+
+## 更新社群绑定说明
+
+**方式**
+
+`PUT`
+
+**参数**
+
+|  名称   |  类型  | 必须 | 说明 |
+| :-----: | :----: | :--: | :--: |
+| xuansuan | array |  是  | 铉算配置参数   |
+
+**xuansuan**
+
+```json
+{
+    "intro": "这是铉算说明",/*铉算说明*/
+    "lock_cabin": {/*锁仓配置*/
+        "min": "1000",/*首次锁仓最低个数*/
+        "intro": "这是锁仓说明"/*锁仓说明*/
+    },
+    "withdrawal": {/*提现配置*/
+        "service_charge": "11"/*提现AGM手续费(单位个)*/
+    },
+    "unlock_cabin": {/*解仓配置*/
+        "intro": "这是解仓说明"/*解仓说明*/
+    }
+}
+```
+
+**路径**
+
+`/admin/config/xuansuan`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": {
+        "id": 39,
+        "key": "xuansuan",
+        "value": {
+           "intro": "这是铉算说明",/*铉算说明*/
+            "lock_cabin": {/*锁仓配置*/
+                "min": "1000",/*首次锁仓最低个数*/
+                "intro": "这是锁仓说明"/*锁仓说明*/
+            },
+            "withdrawal": {/*提现配置*/
+                "service_charge": "11"/*提现AGM手续费(单位个)*/
+            },
+            "unlock_cabin": {/*解仓配置*/
+                "intro": "这是解仓说明"/*解仓说明*/
+            }
+        },
+        "created_at": "2020-04-14 16:13:28",
+        "updated_at": "2020-04-14 16:26:07"
+    }
+}
+```
