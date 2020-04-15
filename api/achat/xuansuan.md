@@ -1,5 +1,36 @@
 # 铉算接口
 
+## 铉算首页
+
+`api/xuansuan/index`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "static_num": "1.02000000" /*昨日价格增长分发量*/,
+    "dynamic_num": "1.02000000" /*昨日矿池增长分发量*/,
+    "up_num": "0.00" /*昨日矿池新增数量*/,
+    "pool_total": "0" /*矿池总数*/,
+    "pool_rate": "0" /*矿池增率*/,
+    "static_reward": "12313" /*昨日参与奖励*/,
+    "dynamic_reward": "12313" /*昨日加权奖励*/,
+    "performance": "55.00000000" /*昨日业绩合*/,
+    "price_rate": "0.01642819" /*24小时价格行情*/,
+    "reward_total": "0.00000000" /*累计奖励*/,
+    "lock_num": "0.00" /*锁仓量*/,
+    "total_balance": "0.00" /*总资产*/
+  }
+}
+```
+
 ## 锁仓详情
 
 `api/xuansuan/lockcabin/detail`
