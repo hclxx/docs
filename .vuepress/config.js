@@ -269,7 +269,8 @@ function getAchatAppSider(title, introduction) {
         "ore",
         "group",
         "withdrawal",
-        "config"
+        "config",
+        "xuansuan"
       ]
     }
   ];

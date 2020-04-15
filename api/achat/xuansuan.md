@@ -2,7 +2,56 @@
 
 ## 余额锁仓
 
-`api/withdrawals/config`
+`api/xuansuan/lockcabin`
+
+**请求方法**
+
+`POST`
+
+**参数**
+
+|   名称   |  类型  | 必须 |   说明   |
+| :------: | :----: | :--: | :------: |
+|   num    | number |  是  | 锁仓数量 |
+| pay_pass | string |  是  | 支付密码 |
+
+**返回体**
+
+```json
+{
+  "msg": "锁仓成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 解除锁仓
+
+`api/xuansuan/unlockcabin`
+
+**请求方法**
+
+`POST`
+
+**参数**
+
+| 名称 |  类型  | 必须 |  说明   |
+| :--: | :----: | :--: | :-----: |
+|  id  | number |  是  | 锁仓 ID |
+
+**返回体**
+
+```json
+{
+  "msg": "解除成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 矿池详情
+
+`api/xuansuan/pool/detail`
 
 **请求方法**
 
@@ -12,13 +61,74 @@
 
 ```json
 {
-  "msg": "获取成功",
+  "msg": "ok",
   "code": 0,
   "data": {
-    "ratio": "0.001" /*ct和rmb之间比列 ct * ratio = rmb  单位(元)*/,
-    "user_min": "200" /*最低提现额度 单位(元)*/,
-    "user_day_limit": "2000" /*用户每日限额 单位(元)*/,
-    "platform_day_limit": "200000" /*平台限额 单位(元)*/
+    "p_count": "0" /*矿池总量*/,
+    "d_count": "3.06000000" /*累计分发*/,
+    "y_count": "2.04" /*昨日分发*/
   }
+}
+```
+
+## 矿池详情列表
+
+`api/xuansuan/pool/detail/list`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+|  名称  | 类型 | 必须 |       说明       |
+| :----: | :--: | :--: | :--------------: |
+| limit  | int  |  是  | 条目数量 默认 20 |
+| offset | int  |  是  |  偏移量 默认 0   |
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "static_num": "1.02000000" /*价格增长分发量*/,
+      "dynamic_num": "1.02000000" /*矿池增长分发量*/,
+      "created_at": "2020-04-13 23:59:59" /*时间*/
+    }
+  ]
+}
+```
+
+## 用户业绩列表
+
+`api/xuansuan/performances`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+|  名称  | 类型 | 必须 |       说明       |
+| :----: | :--: | :--: | :--------------: |
+| limit  | int  |  是  | 条目数量 默认 20 |
+| offset | int  |  是  |  偏移量 默认 0   |
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "name": "zhangsan",
+      "avatar": "avatar.png",
+      "amount": "33.00000000"
+    }
+  ]
 }
 ```
