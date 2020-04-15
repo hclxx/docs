@@ -147,9 +147,50 @@
   "code": 0,
   "data": [
     {
-      "name": "zhangsan",
-      "avatar": "avatar.png",
-      "amount": "33.00000000"
+      "name": "zhangsan" /*用户名称*/,
+      "avatar": "avatar.png" /*用户头像*/,
+      "amount": "33.00000000" /*业绩*/
+    }
+  ]
+}
+```
+
+# 流水列表
+
+`api/xuansuan/wallet/logs`
+
+**请求方法**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 |                                      说明                                       |
+| :----: | :----: | :--: | :-----------------------------------------------------------------------------: |
+| limit  |  int   |  是  |                                条目数量 默认 20                                 |
+| offset |  int   |  是  |                                  偏移量 默认 0                                  |
+|  type  | string |  是  | lockcabin-锁仓 reward-奖励 unlockcabin-解仓 withdrawal-提现 all-全部， 默认全部 |
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "title": "解仓" /*流水标题*/,
+      "user_id": 4,
+      "target_id": 0,
+      "target_type": "unlock:cabin",
+      "amount": "300" /*金额*/,
+      "type": "unlock:cabin" /*类型: withdrawal-提现*/,
+      "extend": null,
+      "status": 0 /*状态:0-待处理1-成功2-失败*/,
+      "action": 1 /*动作:1-收入2-支出*/,
+      "created_at": "2020-04-13 23:59:59" /*时间*/,
+      "updated_at": "2020-04-13 23:59:59"
     }
   ]
 }
