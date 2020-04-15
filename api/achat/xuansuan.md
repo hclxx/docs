@@ -49,7 +49,8 @@
     "price_rate": "0.01642819" /*24小时价格行情*/,
     "reward_total": "0.00000000" /*累计奖励*/,
     "lock_num": "0.00" /*锁仓量*/,
-    "total_balance": "0.00" /*总资产*/
+    "total_balance": "0.00" /*总资产*/,
+    "reward_balance": "0.00" /*奖励余额*/
   }
 }
 ```
