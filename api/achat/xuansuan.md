@@ -1,5 +1,28 @@
 # 铉算接口
 
+## 检查结算时间
+
+`api/checktime`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "status": false /*true-是 false-否*/,
+    "stime": "2020-04-15 00:00:00",
+    "etime": "2020-04-15 02:00:00",
+    "ntime": "2020-04-15 19:23:59"
+  }
+}
+```
+
 ## 铉算首页
 
 `api/xuansuan/index`
