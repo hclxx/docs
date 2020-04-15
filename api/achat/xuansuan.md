@@ -1,5 +1,27 @@
 # 铉算接口
 
+## 锁仓详情
+
+`api/xuansuan/lockcabin/detail`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "explain": "说明说明说明" /*锁仓说明*/,
+    "address": "adasdasdasdasdasdasdas" /*钱包地址*/,
+    "need_num": "0" /*激活需要的数量 等于0不做呈现 大于0做呈现*/
+  }
+}
+```
+
 ## 余额锁仓
 
 `api/xuansuan/lockcabin`
