@@ -285,7 +285,8 @@ function getAchatAdminSider(title, introduction) {
         "certification",
         "withdrawal",
         "config",
-        "xianyu"
+        "xianyu",
+        "xuansuan"
       ]
     }
   ];
