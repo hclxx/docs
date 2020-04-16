@@ -227,7 +227,7 @@
                 "title": "铉算静态奖励",/*流水标题*/
                 "user_id": 1,/*用户id*/
                 "target_id": 1,/*目标id*/
-                "target_type": "lock:cabin",/*目标类型*/
+                "target_type": "lockcabin",/*目标类型*/
                 "amount": "10.00000000",/*数量*/
                 "type": "static",/*流水类型*/
                 "extend": null,
@@ -346,6 +346,67 @@
         "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
         "next_page_url": null,
         "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances",
+        "per_page": 20,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}
+```
+
+## 动态奖励列表
+
+`admin/xuansuan/dynamic/rewards`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+|  名称  |  类型  | 默认 | 必须 |         说明         |
+| :----: | :----: | :--: | :--: | :------------------: |
+|  limit      |  int   |  20  |  是  |             每页条数                     |
+|  date      |  date   |  无  |  否  |             查询日期                     |
+
+
+
+**SUCCESS 返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 9,
+                "title": "铉算动态奖励",/*流水标题*/
+                "user_id": 1,/*用户id*/
+                "target_id": 1,/*目标id*/
+                "target_type": "lockcabin",/*目标类型*/
+                "amount": "10.00000000",/*数量*/
+                "type": "dynamic",/*流水类型*/
+                "extend": null,
+                "status": 1,/*状态:0-等待 1-成功 2-失败*/
+                "action": 1,/*1-收入 2-支出*/
+                "created_at": "2020-04-15 15:19:57",
+                "updated_at": "2020-04-15 15:19:57",
+                "user": {/*用户信息*/
+                    "id": 1,
+                    "name": "yanfan",
+                    "avatar": null,
+                    "grade": null
+                }
+            }
+        ],
+        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "next_page_url": null,
+        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
