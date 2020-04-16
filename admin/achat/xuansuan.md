@@ -38,10 +38,10 @@
                         "type": "unlock",/*提现类型 reward-奖励提现 unlock-解仓提现*/
                         "to_address": "111111",/*提现到钱包地址*/
                         "from_address": "111111",/*提现出钱包地址*/
-                        "lock_cabin_id":1,/*锁仓记录id*/
-                        "progress":0,/*当前提取次数*/
-                        "total_progress":15,/*总共需要提取次数*/
-                        "sc_num":500,/*总共提取数量*/
+                        "lock_cabin_id":"1",/*锁仓记录id*/
+                        "progress":"0",/*当前提取次数*/
+                        "total_progress":"15",/*总共需要提取次数*/
+                        "sc_num":"500",/*总共提取数量*/
                     },
                     "coin": "agm",/*提现币种*/
                     "handler_id": 1,/*操作人ID*/
@@ -118,10 +118,10 @@
             "type": "unlock",/*提现类型 reward-奖励提现 unlock-解仓提现*/
             "to_address": "111111",/*提现到钱包地址*/
             "from_address": "111111",/*提现出钱包地址*/
-            "lock_cabin_id":1,/*锁仓记录id*/
-            "progress":0,/*当前提取次数*/
-            "total_progress":15,/*总共需要提取次数*/
-            "sc_num":500,/*总共提取数量*/
+            "lock_cabin_id":"1",/*锁仓记录id*/
+            "progress":"0",/*当前提取次数*/
+            "total_progress":"15",/*总共需要提取次数*/
+            "sc_num":"500",/*总共提取数量*/
         },
         "coin": "agm",/*提现币种*/
         "handler_id": 1,/*操作人ID*/
