@@ -238,6 +238,30 @@
       "extend": null,
       "status": 0 /*状态:0-待处理1-成功2-失败*/,
       "action": 1 /*动作:1-收入2-支出*/,
+      /*当 type 为reward:withdrawal、unlock:withdrawal才会存在该对象*/
+      "withdrawal": {
+        "status": 0 /*状态:0-等待 1-成功 2-失败*/,
+        "reason": null /*驳回原因*/,
+        "handler_id": 0 /*审核人id*/,
+        "amount": 0,
+        "user_id": 1 /*用户id*/,
+        "coin": "amg" /*提币类型*/,
+        "ratio": 0,
+        "num": "10" /*提币数量*/,
+        "account_type": "exchange" /*账户类型：exchange-交易所*/,
+        "account_info": {
+          /*账户信息*/
+          "to_address": "123456" /*提现到的地址*/,
+          "fee": "11" /*手续费*/,
+          "type": "reward" /*提现类型：reward-奖励提现 unlock-解仓提现*/,
+          "from_address": "123446" /*提现出的地址*/,
+          "progress": 1 /*当前提现进度,type 为 unlock 才使用*/,
+          "total_progress": 15 /*提现总进度，type 为 unlock 才使用*/
+        },
+        "updated_at": "2020-04-15 13:57:29",
+        "created_at": "2020-04-15 13:57:29",
+        "id": 3
+      },
       "created_at": "2020-04-13 23:59:59" /*时间*/,
       "updated_at": "2020-04-13 23:59:59"
     }
