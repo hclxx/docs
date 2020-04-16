@@ -260,7 +260,8 @@
           "type": "reward" /*提现类型：reward-奖励提现 unlock-解仓提现*/,
           "from_address": "123446" /*提现出的地址*/,
           "progress": 1 /*当前提现进度,type 为 unlock 才使用*/,
-          "total_progress": 15 /*提现总进度，type 为 unlock 才使用*/
+          "total_progress": 15 /*提现总进度，type 为 unlock 才使用*/,
+          "sc_num":500/*总锁仓量*/,
         },
         "updated_at": "2020-04-15 13:57:29",
         "created_at": "2020-04-15 13:57:29",
