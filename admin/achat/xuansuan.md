@@ -420,3 +420,50 @@
     }
 }
 ```
+
+## 用户直推业绩列表
+
+`admin/xuansuan/user/performances`
+
+**请求方式**
+
+`GET`
+
+**请求参数**
+
+|  名称  |  类型  | 默认 | 必须 |         说明         |
+| :----: | :----: | :--: | :--: | :------------------: |
+|  limit      |  int   |  20  |  是  |             每页条数                     |
+|  date      |  date   |  无  |  是  |   查询日期(年月日: 2020-04-15)  注: 最新一条记录为昨日   |
+|  user_id      |  int   |  无  |  是  |             父级用户id                 |
+
+
+**SUCCESS 返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "user_id": 1,/*用户id*/
+                "total_sales": "150.00000000",/*总业绩数量*/
+                "avatar": null,/*用户头像*/
+                "name": "yanfan"/*用户名*/
+            }
+        ],
+        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "next_page_url": null,
+        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances",
+        "per_page": 20,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}
+```
