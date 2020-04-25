@@ -63,12 +63,12 @@
                     }
                 }
             ],
-            "first_page_url": "http:\/\/imeet-php.name\/admin\/withdrawals?page=1",
+            "first_page_url": "http://imeet-php.name/admin/withdrawals?page=1",
             "from": 1,
             "last_page": 1,
-            "last_page_url": "http:\/\/imeet-php.name\/admin\/withdrawals?page=1",
+            "last_page_url": "http://imeet-php.name/admin/withdrawals?page=1",
             "next_page_url": null,
-            "path": "http:\/\/imeet-php.name\/admin\/withdrawals",
+            "path": "http://imeet-php.name/admin/withdrawals",
             "per_page": 20,
             "prev_page_url": null,
             "to": 2,
@@ -190,12 +190,12 @@
                 }
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins",
+        "path": "http://imeet-php.name/admin/xuansuan/lock/cabins",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -249,12 +249,12 @@
                 }
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards",
+        "path": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -300,12 +300,12 @@
                 "updated_at": null
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/total\/rewards?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/total/rewards?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/total\/rewards?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/total/rewards?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/total\/rewards",
+        "path": "http://imeet-php.name/admin/xuansuan/total/rewards",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -328,6 +328,7 @@
 | :----: | :----: | :--: | :--: | :------------------: |
 |  limit      |  int   |  20  |  是  |             每页条数                     |
 |  date      |  date   |  无  |  是  |   查询日期(年月日: 2020-04-15)  注: 最新一条记录为昨日   |
+|  user      |  string   |  无  |  否  |             用户id 或者 电话号码 精确查询             |
 
 
 **SUCCESS 返回体**
@@ -343,15 +344,16 @@
                 "user_id": 1,/*用户id*/
                 "total_sales": "150.00000000",/*总业绩数量*/
                 "avatar": null,/*用户头像*/
-                "name": "yanfan"/*用户名*/
+                "name": "yanfan",/*用户名*/
+                "tel":"18781711111",/*用户电话*/
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/team/performances?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/team/performances?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances",
+        "path": "http://imeet-php.name/admin/xuansuan/team/performances",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -374,6 +376,7 @@
 | :----: | :----: | :--: | :--: | :------------------: |
 |  limit      |  int   |  20  |  是  |             每页条数                     |
 |  date      |  date   |  无  |  否  |             查询日期                     |
+|  user      |  string   |  无  |  否  |             用户id 或者 电话号码 精确查询             |
 
 
 
@@ -403,16 +406,17 @@
                     "id": 1,
                     "name": "yanfan",
                     "avatar": null,
-                    "grade": null
+                    "grade": null,
+                    "tel":"18781571111"
                 }
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/lock\/cabins\/1\/rewards",
+        "path": "http://imeet-php.name/admin/xuansuan/lock/cabins/1/rewards",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -454,12 +458,12 @@
                 "name": "yanfan"/*用户名*/
             }
         ],
-        "first_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "first_page_url": "http://imeet-php.name/admin/xuansuan/team/performances?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances?page=1",
+        "last_page_url": "http://imeet-php.name/admin/xuansuan/team/performances?page=1",
         "next_page_url": null,
-        "path": "http:\/\/imeet-php.name\/admin\/xuansuan\/team\/performances",
+        "path": "http://imeet-php.name/admin/xuansuan/team/performances",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
