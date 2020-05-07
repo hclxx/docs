@@ -302,6 +302,7 @@ function getSchainAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "conifg",
         "user",
         "code",
         "task",
