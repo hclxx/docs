@@ -12,7 +12,7 @@
 
 **路径**
 
-`/api/verification-code`
+`/api/verification-codes`
 
 **参数**
 
@@ -40,7 +40,7 @@
 
 **路径**
 
-`/api/verification-code/check`
+`/api/verification-codes/check`
 
 **参数**
 
