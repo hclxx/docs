@@ -36,7 +36,7 @@
 
 **方式**
 
-`POST`
+`GET`
 
 **路径**
 
@@ -61,35 +61,4 @@
     "data": {
         "status": false,/*false-通过 true-失败*/
     }
-```
-
-## 短信验证码检测[需认证登录]
-
-**方式**
-
-`POST`
-
-**路径**
-
-`/api/verification-code/check`
-
-**参数**
-
-| 名称  |  类型  | 必须 |   说明   |
-| :---: | :----: | :--: | :------: |
-| scene | string |  是  | 发送场景 |
-| code  | string |  是  |  验证码  |
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "发送成功",
-  "code": 0,
-  "data": {
-    "status": false /*false-通过 true-失败*/
-  }
-}
 ```
