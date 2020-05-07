@@ -23,6 +23,6 @@ module.exports = [
   },
   {
     text: "存链",
-    items: [{ text: "移动端", link: "/api/achat/" }]
+    items: [{ text: "移动端", link: "/api/schain/" }]
   }
 ];
