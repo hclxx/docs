@@ -300,7 +300,7 @@ function getSchainAppSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "readme", "user"]
+      children: [["", introduction], "common", "user"]
     }
   ];
 }
