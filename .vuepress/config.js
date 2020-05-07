@@ -26,7 +26,8 @@ module.exports = {
       "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
       // AChat
       "/api/achat/": getAchatAppSider("移动端", "规范"),
-      "/admin/achat/": getAchatAdminSider("后台管理", "说明")
+      "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
+      "api/schain/": getSchainAppSider("移动端", "规范")
     }
   },
   plugins: [
@@ -289,6 +290,16 @@ function getAchatAdminSider(title, introduction) {
         "xianyu",
         "xuansuan"
       ]
+    }
+  ];
+}
+// 存链科技APP
+function getSchainAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "readme", "user"]
     }
   ];
 }
