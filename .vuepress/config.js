@@ -27,7 +27,7 @@ module.exports = {
       // AChat
       "/api/achat/": getAchatAppSider("移动端", "规范"),
       "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
-      "api/schain/": getSchainAppSider("移动端", "规范")
+      "/api/schain/": getSchainAppSider("移动端", "规范")
     }
   },
   plugins: [
