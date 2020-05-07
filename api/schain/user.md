@@ -266,7 +266,7 @@
 
 **路径**
 
-`/api/user/paypassword`
+`/api/user`
 
 **响应**
 
