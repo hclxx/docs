@@ -307,7 +307,8 @@ function getSchainAppSider(title, introduction) {
         "task",
         "cer",
         "assets",
-        "goods"
+        "goods",
+        "order"
       ]
     }
   ];
