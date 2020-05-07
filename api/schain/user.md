@@ -91,3 +91,39 @@
   "data": null
 }
 ```
+
+## 用户信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/user`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "name": "胡昊" /*用户呢称*/,
+    "avatar": "acasdasd.png" /*头像*/,
+    "gender": 1 /*性别: 0-未知/1-男/2女*/,
+    "phone": "183****4309" /*手机*/,
+    "code": "SS788A" /*邀请码*/,
+    "power": 1 /*矿力数量*/,
+    "cllection_time": null,
+    "market_id": 0
+  }
+}
+```
