@@ -197,11 +197,10 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |      说明      |
-| :------: | :----: | :--: | :------------: |
-|  scene   | string |  是  | 短信验证码场景 |
-|   code   | string |  是  |     验证码     |
-| password | string |  是  |    支付密码    |
+|   名称   |  类型  | 必须 |   说明   |
+| :------: | :----: | :--: | :------: |
+|   code   | string |  是  |  验证码  |
+| password | string |  是  | 支付密码 |
 
 **路径**
 
@@ -216,6 +215,38 @@
   "msg": "设置成功",
   "code": 0,
   "data": null
+}
+```
+
+## 忘记密码
+
+**方式**
+
+`POST`
+
+**参数**
+
+|         名称          |  类型  | 必须 |   说明   |
+| :-------------------: | :----: | :--: | :------: |
+|         code          | string |  是  |  验证码  |
+|       password        | string |  是  |  新密码  |
+| password_confirmation | string |  是  | 确认密码 |
+
+**路径**
+
+`/api/user/forget-password`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "设置成功",
+  "code": 0,
+  "data": {
+    "token": "xxxxxxxxxx..."
+  }
 }
 ```
 
