@@ -27,7 +27,16 @@
       "power": "100" /*邀请奖励*/
     },
     "cl:to:cny": "1" /*单个CL的现金价格单位元*/,
-    "cdn_domain": "http://xxxx.sss.com" /*CDN_DOMAIN*/
+    "cdn_domain": "http://xxxx.sss.com" /*CDN_DOMAIN*/,
+    "withdrawal": {
+      "user_min": "100" /*用户最低提现额度 单位(元)*/,
+      "user_day_limit": "1000" /*用户提现日上限 单位(元)*/,
+      "user_day_num": "1" /*用户提现次数日上限*/,
+      "platform_day_limit": "100000" /*平台用户提现日上限额度 单位(元)*/,
+      "instr": "提现说明" /*提现说明*/,
+      "switch": "on" /*提现开关 on-开启 off-关闭*/,
+      "service_charge": "1" /*提现服务费（百分比） 1 / 100*/
+    }
   }
 }
 ```
