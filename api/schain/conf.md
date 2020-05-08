@@ -26,7 +26,8 @@
       "rule": "邀请说明" /*邀请说明*/,
       "power": "100" /*邀请奖励*/
     },
-    "cl:to:cny": "1" /*单个CL的现金价格单位元*/
+    "cl:to:cny": "1" /*单个CL的现金价格单位元*/,
+    "cdn_domain": "http://xxxx.sss.com" /*CDN_DOMAIN*/
   }
 }
 ```
