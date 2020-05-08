@@ -123,7 +123,9 @@
     "code": "SS788A" /*邀请码*/,
     "power": 1 /*矿力数量*/,
     "cllection_time": null,
-    "market_id": 0
+    "market_id": 0,
+    "cer_status": false /*是否认证:true-认证false-认证*/,
+    "paypass_status": false /*是否设置支付密码:true-设置false-否*/
   }
 }
 ```

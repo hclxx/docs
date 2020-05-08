@@ -36,6 +36,12 @@
       "instr": "提现说明" /*提现说明*/,
       "switch": "on" /*提现开关 on-开启 off-关闭*/,
       "service_charge": "1" /*提现服务费（百分比） 1 / 100*/
+    },
+    "account:receivable": {
+      "bank": "中国工商银行" /*开户行*/,
+      "code_desc": "这是附言码说明" /*附言码说明*/,
+      "account_name": "陕西存链科技数据有限公司" /*开户名*/,
+      "account_number": "3700xxxxxxx" /*开户号*/
     }
   }
 }
