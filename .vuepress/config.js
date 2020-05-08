@@ -311,7 +311,8 @@ function getSchainAppSider(title, introduction) {
         "assets",
         "goods",
         "order",
-        "market"
+        "market",
+        "msg"
       ]
     }
   ];
