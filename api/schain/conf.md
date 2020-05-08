@@ -42,7 +42,9 @@
       "code_desc": "这是附言码说明" /*附言码说明*/,
       "account_name": "陕西存链科技数据有限公司" /*开户名*/,
       "account_number": "3700xxxxxxx" /*开户号*/
-    }
+    },
+    "purchase_protocol": "http://localhost/purchase/protocol" /*矿机购买协议*/,
+    "hosting_protocol": "http://localhost/hosting/protocol" /*矿机托管协议*/
   }
 }
 ```
