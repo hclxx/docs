@@ -127,3 +127,49 @@
   }
 }
 ```
+
+## 收益提现
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/wallet/withdrawal`
+
+**参数**
+
+|     名称     |  类型  | 必须 |    说明    |
+| :----------: | :----: | :--: | :--------: |
+|    amount    | string |  是  |  转账数量  |
+| pay_password | string |  是  |  支付密码  |
+|    number    | string |  是  | 支付宝账号 |
+|     name     | string |  是  |  真实姓名  |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "申请成功",
+  "code": 0,
+  "data": {
+    "status": 0,
+    "reason": null,
+    "handler_id": 0,
+    "amount": "100" /*金额*/,
+    "service_charge": 1,
+    "user_id": 1,
+    "account_type": "alipay",
+    "account_info": {
+      "number": "alipay@test.com" /*账号*/,
+      "name": "张三" /*姓名*/
+    },
+    "updated_at": "2020-05-08 14:31:38",
+    "created_at": "2020-05-08 14:31:38" /*申请时间*/,
+    "id": 5
+  }
+}
+```
