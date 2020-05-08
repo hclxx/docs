@@ -303,6 +303,7 @@ function getSchainAppSider(title, introduction) {
       children: [
         ["", introduction],
         "conifg",
+        "upload",
         "user",
         "code",
         "task",

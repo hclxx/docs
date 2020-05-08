@@ -221,3 +221,28 @@
   }
 }
 ```
+
+## 订单统计
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/orders/count`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "wait_pay": 4 /*待支付*/,
+    "wait_confirm": 1 /*待确认*/
+  }
+}
+```
