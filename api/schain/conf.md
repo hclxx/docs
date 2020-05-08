@@ -43,8 +43,9 @@
       "account_name": "陕西存链科技数据有限公司" /*开户名*/,
       "account_number": "3700xxxxxxx" /*开户号*/
     },
-    "purchase_protocol": "http://localhost/purchase/protocol" /*矿机购买协议*/,
-    "hosting_protocol": "http://localhost/hosting/protocol" /*矿机托管协议*/
+    "purchase_protocol": "http://localhost/purchase/protocol" /*矿机购买协议地址*/,
+    "hosting_protocol": "http://localhost/hosting/protocol" /*矿机托管协议地址*/,
+    "register_protocol": "http://localhost/hosting/protocol" /*注册协议地址*/
   }
 }
 ```
