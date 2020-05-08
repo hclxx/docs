@@ -19,6 +19,7 @@
   "msg": "ok",
   "code": 0,
   "data": {
+    "market_icon": "asdsad.png" /*市场等级图标 普通用户为该字段值为NULL*/,
     "market_total": 0 /*市场业绩总和*/,
     "custoday_income": "0" /*托管收益*/,
     "agency_income": "0.0000" /*代理提成单位元*/
