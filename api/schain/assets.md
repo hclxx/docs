@@ -74,7 +74,7 @@
       "amount": "1.0000" /*金额*/,
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
-      "type": "transfer:expend" /*类型:transfer:expend-转账交易支出/transfer:income-转账交易收入/goods:deduct-商品抵扣*/,
+      "type": "transfer:expend" /*类型:goods:deduct-订单商品抵扣/return:deduct-退还订单商品抵扣/sale:commission-销售提成/agent:reward-代理商培育奖励/cny:withdrawal-现金提现/dig:ore-挖矿/transfer:income-转账收益/transfer:expend-转账支出*/,
       "currency": "cl" /*cny-现金/cl-矿石cl*/,
       "extend": null,
       "created_at": "2020-05-03 14:46:49",
