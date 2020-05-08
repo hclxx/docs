@@ -246,3 +246,25 @@
   }
 }
 ```
+
+## 订单取消
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/orders/{order_no}/cancel`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "取消成功",
+  "code": 0,
+  "data": null
+}
+```
