@@ -126,7 +126,13 @@
     "market_id": 0,
     "cer_status": false /*是否认证:true-认证false-认证*/,
     "paypass_status": false /*是否设置支付密码:true-设置false-否*/,
-    "market_icon": "sdsadasd.pn" /*市场等级信息 可能为 NULl*/
+    "market_icon": "sdsadasd.pn" /*市场等级信息 可能为 NULl*/,
+    /*邀请人信息*/
+    "inviter": {
+      "id": 3,
+      "name": "里斯",
+      "avatar": null
+    }
   }
 }
 ```
