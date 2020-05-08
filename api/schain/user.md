@@ -125,7 +125,13 @@
     "cllection_time": null,
     "market_id": 0,
     "cer_status": false /*是否认证:true-认证false-认证*/,
-    "paypass_status": false /*是否设置支付密码:true-设置false-否*/
+    "paypass_status": false /*是否设置支付密码:true-设置false-否*/,
+    /*市场等级信息 可能为 NULl*/
+    "market": {
+      "name": "1" /*等级名称*/,
+      "icon": "asdas" /*等级图标*/,
+      "id": 1
+    }
   }
 }
 ```
