@@ -335,12 +335,14 @@ function getSchainAdminSider(title, introduction) {
         "login",
         "authority",
         "role",
-        "certifications",
+        "certification",
         "ore",
         "config",
         "feedback",
         "verification-code",
-        "message"
+        "message",
+        "task",
+        "user",
       ]
     }
   ];
