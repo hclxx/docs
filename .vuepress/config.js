@@ -313,7 +313,8 @@ function getSchainAppSider(title, introduction) {
         "goods",
         "order",
         "market",
-        "msg"
+        "msg",
+        "ore"
       ]
     }
   ];
@@ -332,7 +333,7 @@ function getSchainAdminSider(title, introduction) {
         "admin",
         "login",
         "authority",
-        "role",
+        "role"
       ]
     }
   ];

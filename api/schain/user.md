@@ -282,6 +282,7 @@
 |         名称          |  类型  | 必须 |   说明   |
 | :-------------------: | :----: | :--: | :------: |
 |         code          | string |  是  |  验证码  |
+|         phone         | string |  是  |  手机号  |
 |       password        | string |  是  |  新密码  |
 | password_confirmation | string |  是  | 确认密码 |
 
@@ -297,9 +298,7 @@
 {
   "msg": "设置成功",
   "code": 0,
-  "data": {
-    "token": "xxxxxxxxxx..."
-  }
+  "data": null
 }
 ```
 
