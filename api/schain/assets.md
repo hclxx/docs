@@ -55,6 +55,7 @@
 |  action  | string |  否  | 收支动作: income-收入 expend-支出 |
 |  limit   |  int   |  是  |         条目数量 默认 20          |
 |  offset  |  int   |  是  |           偏移量 默认 0           |
+|  types   | string |  否  |      流失类型: 多个用","分割      |
 
 **响应**
 
