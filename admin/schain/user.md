@@ -216,11 +216,22 @@
                     "id": 5,
                     "name": "yanfan1",
                     "phone": "18781601154",
-                    "avatar": null
+                    "avatar": null,
+                    "market_performance": {/*市场业绩(当子集无也业绩时,该字段为null)*/
+                        "id": 5,
+                        "user_id": 5,
+                        "parent_id": 1,
+                        "self_num": 0,/*自身销售量*/
+                        "direct_num": 0,/*直推销售量*/
+                        "team_num": 300,/*市场销售量*/
+                        "max": 1,/*是否为市场大区 0-否 1-是*/
+                        "created_at": "2020-05-08 02:42:21",
+                        "updated_at": "2020-05-08 03:17:39"
+                    }
                 }
             ]
         },
-        "count": 1,/*直接邀请人数（*/
+        "count": 1,/*直接邀请人数*/
         "total_count": 5,/*团队人数*/
     }
 }
