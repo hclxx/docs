@@ -343,6 +343,7 @@ function getSchainAdminSider(title, introduction) {
         "message",
         "task",
         "user",
+        "one-key",
       ]
     }
   ];
