@@ -329,6 +329,10 @@ function getSchainAdminSider(title, introduction) {
         "goods",
         "order",
         "wallet",
+        "admin",
+        "login",
+        "authority",
+        "role",
       ]
     }
   ];
