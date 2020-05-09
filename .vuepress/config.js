@@ -29,6 +29,7 @@ module.exports = {
       "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
       // Schain
       "/api/schain/": getSchainAppSider("移动端", "规范")
+      "/admin/schain/": getSchainAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -313,6 +314,21 @@ function getSchainAppSider(title, introduction) {
         "order",
         "market",
         "msg"
+      ]
+    }
+  ];
+}
+// 存链科技Admin
+function getSchainAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "goods",
+        "order",
+        "wallet",
       ]
     }
   ];
