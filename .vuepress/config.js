@@ -344,7 +344,7 @@ function getSchainAdminSider(title, introduction) {
         "task",
         "user",
         "one-key",
-        "withdrawal",
+        "withdraw",
         "agency",
         "version"
       ]
