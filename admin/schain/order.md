@@ -73,6 +73,113 @@
 }
 ```
 
+## 订单统计
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/orders/count`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "goods_id": 2,
+            "price": "196.00",/*单个商品售出总价*/
+            "deduct_num": "4",/*单个商品总抵扣CL数量*/
+            "buy_num": "2",/*单个商品售出总量*/
+            "specs": "40",/*单个商品售出总规格(T)*/
+            "goods": {/**/
+                "id": 2,/**/
+                "name": "商品2"/*商品名称*/
+            }
+        },
+        {
+            "goods_id": 3,
+            "price": "198.00",
+            "deduct_num": "2",
+            "buy_num": "2",
+            "specs": "60",
+            "goods": {
+                "id": 3,
+                "name": "商品3"
+            }
+        },
+        {
+            "goods_id": 4,
+            "price": "196.00",
+            "deduct_num": "4",
+            "buy_num": "2",
+            "specs": "80",
+            "goods": {
+                "id": 4,
+                "name": "商品4"
+            }
+        }
+    ]
+}
+```
+
+## 订单奖励详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/orders/{order}/reward`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "title": "销售提成奖励",/*流水标题*/
+            "user_id": 8,/*用户id*/
+            "target_id": 3,/*订单id*/
+            "amount": "8.0000",/*奖励金额*/
+            "created_at": "2020-05-08 02:42:22",
+            "updated_at": "2020-05-08 02:42:22",
+            "user": {
+                "id": 8,
+                "name": "yanfan4",/*用户姓名*/
+                "avatar": null,/*用户头像*/
+            }
+        },
+        {
+            "id": 13,
+            "title": "代理商培育奖励",
+            "user_id": 6,
+            "target_id": 3,
+            "amount": "2.0000",
+            "created_at": "2020-05-08 03:17:40",
+            "updated_at": "2020-05-08 03:17:40",
+            "user": {
+                "id": 6,
+                "name": "yanfan2",
+                "avatar": null
+            }
+        }
+    ]
+}
+```
+
 ## 确认订单
 
 **方式**
