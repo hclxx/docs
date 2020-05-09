@@ -72,7 +72,7 @@
       "name": "胡昊",
       "avatar": "张三",
       "power": 13,
-      "sex": null,
+      "gender": 0,
       "rank": 1
     }
   }
