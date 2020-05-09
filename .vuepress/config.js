@@ -339,7 +339,8 @@ function getSchainAdminSider(title, introduction) {
         "ore",
         "config",
         "feedback",
-        "verification-code"
+        "verification-code",
+        "message"
       ]
     }
   ];
