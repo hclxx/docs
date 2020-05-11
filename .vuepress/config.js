@@ -315,7 +315,8 @@ function getSchainAppSider(title, introduction) {
         "market",
         "msg",
         "ore",
-        "power"
+        "power",
+        "version"
       ]
     }
   ];
