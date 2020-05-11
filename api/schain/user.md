@@ -332,7 +332,7 @@
 }
 ```
 
-## 用户邀请列表
+## 邀请列表
 
 **方式**
 
@@ -372,5 +372,30 @@
       "reward_num": 10 /*奖励个数*/
     }
   ]
+}
+```
+
+## 邀请统计
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/invite/count`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "directCount": 0,
+    "indirectCount": 1
+  }
 }
 ```
