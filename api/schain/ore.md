@@ -158,7 +158,7 @@
 
 ## 现金购买一键收矿特权
 
-`/api/cash-collection`
+`/api/ores/cash-collection`
 
 **请求方式**
 
