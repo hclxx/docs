@@ -82,7 +82,7 @@
 
 ## 设置版本控制状态
 
-`admin/configs/status`
+`admin/configs/version`
 
 **请求方式**
 
@@ -106,7 +106,7 @@
 
 ## 获取版本控制状态
 
-`admin/configs/status`
+`admin/configs/version`
 
 **请求方法**
 
