@@ -39,6 +39,11 @@
                 "reason": null,/*审核失败原因*/
                 "created_at": "2020-05-08 03:00:18",
                 "updated_at": "2020-05-08 03:54:05",
+                "user": {
+                    "id": 1,
+                    "name": "yanfan",
+                    "avatar": null
+                },
                 "admin": {
                     "id": 1,
                     "name": "超级管理员"
