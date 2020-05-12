@@ -1,57 +1,5 @@
 # 配置管理
 
-## 获取APP下载链接
-
-`admin/configs/download`
-
-**请求方式**
-
-`GET`
-
-**SUCCESS 返回体**
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 16,
-        "key": "download:url",
-        "value": {
-            "ios": "http:\/\/www.baidu.com",/*ios下载链接*/
-            "android": "http:\/\/www.sina.com",/*安卓下载链接*/
-        },
-        "created_at": "2020-05-12 13:51:16",
-        "updated_at": "2020-05-12 13:52:43"
-    }
-}
-```
-
-## 修改APP下载链接
-
-`admin/configs/download`
-
-**请求方式**
-
-`PUT`
-
-**请求参数**
-
-|   名称   |  类型  | 默认 | 必须 |                说明                 |
-| :------: | :----: | :--: | :--: | :---------------------------------: |
-|   ios   | string |  无  |  是  |             ios 下载链接                   |
-|   android  | string |  无  |  是  |          安卓 下载链接              |
-
-**SUCCESS 返回体**
-
-```json
-{
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
-}
-```
-
 ## 获取邀请配置
 
 `admin/configs/invite`
