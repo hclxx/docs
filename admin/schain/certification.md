@@ -42,7 +42,8 @@
                 "user": {
                     "id": 1,
                     "name": "yanfan",
-                    "avatar": null
+                    "avatar": null,
+                    "phone":"134****8901"
                 },
                 "admin": {
                     "id": 1,

@@ -145,6 +145,7 @@
 |    name    | string |  无  |  否  |        昵称         |
 | avatar | string |  无  |  否  |        头像         |
 |   market_id   |  int   |  无  |  否  | 市场代理等级id  |
+|  power  | int |  无  |  否  | 用户能量值 |
 |  password  | string |  无  |  否  | 密码 长度在 6-20 位 |
 
 **SUCCESS 状态码**
