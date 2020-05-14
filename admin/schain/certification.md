@@ -43,7 +43,7 @@
                     "id": 1,
                     "name": "yanfan",
                     "avatar": null,
-                    "phone":"134****8901"
+                    "tel":"13411118901"
                 },
                 "admin": {
                     "id": 1,

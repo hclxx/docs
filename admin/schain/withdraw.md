@@ -45,7 +45,7 @@
                     "user": {
                         "id": 4,
                         "name": "NPA6RI",
-                        "avatar": null
+                        "tel": "18180540897"
                     },
                     "handler": null
                 },
