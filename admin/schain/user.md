@@ -213,9 +213,9 @@
     "code": 0,
     "data": {
         "items": {
-            "pid": 0,
-            "pname": "",
-            "avatar": "",
+            "pid": 0,/*父级uid*/
+            "pname": "",/*父级昵称*/
+            "avatar": "",/*父级头像*/
             "child": [
                 {
                     "id": 5,
@@ -234,7 +234,18 @@
                         "updated_at": "2020-05-08 03:17:39"
                     }
                 }
-            ]
+            ],
+            "self_market": {/*自身市场业绩*/
+                "id": 3,
+                "user_id": 1,
+                "parent_id": 0,
+                "self_num": 0,
+                "direct_num": 120,
+                "team_num": 304,
+                "max": 0,
+                "created_at": "2020-05-12 13:51:10",
+                "updated_at": "2020-05-13 18:23:53"
+            }
         },
         "count": 1,/*直接邀请人数*/
         "total_count": 5,/*团队人数*/
