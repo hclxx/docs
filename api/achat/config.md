@@ -42,7 +42,8 @@
       "group_num_limit": "100",
       "user_daily_limit": "10000"
     },
-    "bind_explain": "asdsadsadasd" /*绑定说明*/
+    "bind_explain": "asdsadsadasd" /*绑定说明*/,
+    "xs_close_status": fasle /*旋算应用是否开启:true-开启 false-关闭*/
   }
 }
 ```
