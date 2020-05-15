@@ -50,7 +50,9 @@
     "reward_total": "0.00000000" /*累计奖励*/,
     "lock_num": "0.00" /*锁仓量*/,
     "total_balance": "0.00" /*总资产*/,
-    "reward_balance": "0.00" /*奖励余额*/
+    "reward_balance": "0.00" /*奖励余额*/,
+    "fixed_num": "0.00" /*新增 日固定分发量*/,
+    "day_dynamic_min_num": "50000.00" /*当日动态分发最低增长量*/
   }
 }
 ```
@@ -261,7 +263,7 @@
           "from_address": "123446" /*提现出的地址*/,
           "progress": 1 /*当前提现进度,type 为 unlock 才使用*/,
           "total_progress": 15 /*提现总进度，type 为 unlock 才使用*/,
-          "sc_num":500/*总锁仓量*/,
+          "sc_num": 500 /*总锁仓量*/
         },
         "updated_at": "2020-04-15 13:57:29",
         "created_at": "2020-04-15 13:57:29",
