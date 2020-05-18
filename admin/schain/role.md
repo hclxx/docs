@@ -125,7 +125,7 @@
 | :------: | :----: | :--: | :--: | :---------------------------------: |
 |       name        | string |  无  |  否  |                角色名称                 |
 |       alias       | string |  无  |  否  |               角色别名                 |
-|  permission_ids   | array |  无  |  否  |               权限Ids                 |
+|  permission   | array |  无  |  否  |               权限Ids                 |
 
 **SUCCESS 返回体**
 
