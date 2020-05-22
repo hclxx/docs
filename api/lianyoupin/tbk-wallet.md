@@ -27,7 +27,9 @@
     "incomes": {
       "order": "0.00" /*订单收益*/,
       "fans": "0.00" /*粉丝收益*/,
-      "bonus": "0.00" /*分红收益*/
+      "bonus": "0.00" /*分红收益*/,
+      "member": "0.00" /*礼包收益*/,
+      "train": "0.00" /*培养收益*/
     },
     "created_at": "2020-01-09 11:13:11",
     "updated_at": "2020-01-09 11:13:11"
@@ -49,7 +51,7 @@
 | :----: | :--: | :--: | :--------------------------------------------------: |
 | limit  | int  |  是  |                    条目数 默认 20                    |
 | offset | int  |  是  |                    偏移量 默认 0                     |
-|  type  | int  |  是  | 钱包日志类型： fans-粉丝收益 bonus-分红收益 all-全部 |
+|  type  | int  |  是  | 钱包日志类型： fans-粉丝收益 bonus-分红收益 member-礼包收益 train-培养收益 all-全部 |
 
 **返回体**
 
@@ -63,7 +65,7 @@
       "title": "佣金奖励" /*标题*/,
       "amount": "0.00" /*金额*/,
       "target_user_id": 3,
-      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-会员礼包 bonus-分红*/,
+      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-会员礼包 bonus-分红 member:train-培养收益*/,
       "action": 1 /*收支状态: 1-收入 2-支出*/,
       "data": null /*扩展字段*/,
       "status": 0 /*状态:0-等待 1-成功 2-失败*/,

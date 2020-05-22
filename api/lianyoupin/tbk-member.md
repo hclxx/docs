@@ -16,41 +16,41 @@
     "code": 0,
     "data": {
         "members": [
-            {
-              "id": 1,
-              "name": "普通会员",
-              "icon": null,
-              "level": "common",
-              "cover": " ",
-              "condition": null,
-              "gift_info": null,
-              "equities": [
-                  {
-                      "key": "return:commission",
-                      "desc": "购物返佣100%"
-                  },
-                  {
-                      "key": "platform:services",
-                      "desc": "平台服务费35%",
-                      "rate": "35"
-                  },
-                  {
-                      "key": "direct:reward",
-                      "desc": "推广购物佣金10%",
-                      "rate": "10"
-                  },
-                  {
-                      "key": "eoc:reward",
-                      "desc": "EOC活跃奖励"
-                  },
-                  {
-                      "key": "coupons",
-                      "desc": "海量优惠卷"
-                  }
-              ],
-              "owned": true,
-              "days": 13,
-              "gifts": []
+             {
+               "id": 1,
+               "name": "普通会员",
+               "icon": null,
+               "level": "common",
+               "cover": " ",
+               "condition": null,
+               "gift_info": null,
+               "equities": [
+                   {
+                       "key": "return:commission",
+                       "desc": "购物返佣100%"
+                   },
+                   {
+                       "key": "platform:services",
+                       "desc": "平台服务费35%",
+                       "rate": "35"
+                   },
+                   {
+                       "key": "direct:reward",
+                       "desc": "推广购物佣金48%",
+                       "rate": "48"
+                   },
+                   {
+                       "key": "eoc:reward",
+                       "desc": "EOC活跃奖励"
+                   },
+                   {
+                       "key": "coupons",
+                       "desc": "海量优惠卷"
+                   }
+               ],
+               "owned": true,
+               "days": 402,
+               "gifts": []
             },
             {
               "id": 2,
@@ -58,100 +58,50 @@
               "icon": null,/*会员标志图*/
               "level": "bronze",/*会员等级*/
               "cover": " ",/*会员封面图*/
-              "condition": {
-                  "bonus": [/*会员分红资格条件*/
-                      {
-                          "key": "become:level",/*标识*/
-                          "desc": "晋升青铜创客",/*描述 (展示可用)*/
-                          "value": 2,/*条件 member_id*/
-                          "result": false/*是否已满足此项条件 布尔值*/
-                      },
-                      {
-                          "key": "first:order",
-                          "desc": "完成首单购物10人",
-                          "value": 10,/*条件总数量*/
-                          "result_num": 0,/*已完成的数量*/
-                          "result": false
-                      }
-                  ],
-                  "indirect": [
-                      {
-                          "key": "invite:user",
-                          "desc": "直接推荐注册创客50人",
-                          "value": 50,
-                          "result_num": 0,
-                          "result": false
-                      },
-                      {
-                          "key": "first:order",
-                          "desc": "完成首单购物5人",
-                          "value": 5,
-                          "result_num": 0,
-                          "result": false
-                      }
-                  ]
-              },
+              "condition": null,
               "gift_info": null,
               "equities": [/*该会员等级拥有的权益*/
-                  {
-                      "key": "return:commission",
-                      "desc": "购物返佣100%"
-                  },
-                  {
-                      "key": "platform:services",
-                      "desc": "平台服务费22%",
-                      "rate": "22"
-                  },
-                  {
-                      "key": "direct:reward",
-                      "desc": "推广购物佣金15%",
-                      "rate": "15"
-                  },
-                  {
-                      "key": "eoc:reward",
-                      "desc": "EOC活跃奖励"
-                  },
-                  {
-                      "key": "coupons",
-                      "desc": "海量优惠卷"
-                  },
-                  {
-                      "key": "member:gift",
-                      "desc": "会员礼包"
-                  },
-                  {
-                      "key": "merchant:reward",
-                      "desc": "推荐商家奖励10%"
-                  },
-                  {
-                      "key": "elc:experience",
-                      "desc": "ECL体验金"
-                  },
-                  {
-                      "key": "direct:bronze:reward",
-                      "desc": "青铜礼包奖励40%",
-                      "m_rate": "40",
-                      "z_rate": "40",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "direct:gold:reward",
-                      "desc": "达人礼包奖励40%",
-                      "m_rate": "40",
-                      "z_rate": "40",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "direct:platina:reward",
-                      "desc": "守护礼包奖励40%",
-                      "m_rate": "40",
-                      "z_rate": "40",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "platform:month:bonus",
-                      "desc": "享平台月度分红"
-                  }
+                 {
+                     "key": "return:commission",
+                     "desc": "购物返佣100%"
+                 },
+                 {
+                     "key": "platform:services",
+                     "desc": "平台服务费22%",
+                     "rate": "22"
+                 },
+                 {
+                     "key": "direct:reward",
+                     "desc": "购物佣金75%",
+                     "rate": "75"
+                 },
+                 {
+                     "key": "eoc:reward",
+                     "desc": "EOC活跃奖励"
+                 },
+                 {
+                     "key": "coupons",
+                     "desc": "海量优惠卷"
+                 },
+                 {
+                     "key": "member:gift",
+                     "desc": "产品购买大礼包"
+                 },
+                 {
+                     "key": "direct:bronze:reward",
+                     "desc": "推VIP礼包奖励",
+                     "sale_bronze": "140"
+                 },
+                 {
+                     "key": "direct:gold:reward",
+                     "desc": "推达人礼包奖励",
+                     "sale_gold": "300"
+                 },
+                 {
+                     "key": "direct:platina:reward",
+                     "desc": "推守护礼包奖励",
+                     "sale_platina": "1200"
+                 }
               ],
               "owned": false,/*是否拥有该等级 布尔值*/
               "days": 0,/*加入会员的天数*/
@@ -182,35 +132,13 @@
               "icon": null,
               "level": "gold",
               "cover": " ",
-              "condition": {
-                  "bonus": [
-                      {
-                          "key": "become:level",
-                          "desc": "晋升达人创客",
-                          "value": 3,
-                          "result": false
-                      },
-                      {
-                          "key": "first:order",
-                          "desc": "完成首单购物20人",
-                          "value": 20,
-                          "result_num": 0,
-                          "result": false
-                      },
-                      {
-                          "key": "bronze:bonus",
-                          "desc": "直接推荐分红青铜创客10人",
-                          "value": 10,
-                          "result_num": 1,
-                          "result": false
-                      }
-                  ],
-                  "indirect": [
+              "condition": {  
+                  "indirect": [ /*晋升条件*/
                       {
                           "key": "bronze",
-                          "desc": "直接推荐青铜创客50人",
+                          "desc": "直接推荐VIP会员50人",
                           "value": 50,
-                          "result_num": 1,
+                          "result_num": 0,
                           "result": false
                       }
                   ]
@@ -228,8 +156,8 @@
                   },
                   {
                       "key": "direct:reward",
-                      "desc": "推广购物佣金18%",
-                      "rate": "18"
+                      "desc": "推广购物佣金81%",
+                      "rate": "81"
                   },
                   {
                       "key": "eoc:reward",
@@ -241,39 +169,25 @@
                   },
                   {
                       "key": "member:gift",
-                      "desc": "会员礼包"
-                  },
-                  {
-                      "key": "merchant:reward",
-                      "desc": "推荐商家奖励10%"
-                  },
-                  {
-                      "key": "elc:experience",
-                      "desc": "ECL体验金"
+                      "desc": "产品购买大礼包"
                   },
                   {
                       "key": "direct:bronze:reward",
-                      "desc": "青铜礼包奖励50%",
-                      "m_rate": "50",
-                      "z_rate": "50"
+                      "desc": "推VIP礼包奖励",
+                      "sale_bronze": "170",
+                      "train_bronze": "15"
                   },
                   {
                       "key": "direct:gold:reward",
-                      "desc": "达人礼包奖励50%",
-                      "m_rate": "50",
-                      "z_rate": "50",
-                      "z_elc_rate": "20"
+                      "desc": "推达人礼包奖励",
+                      "sale_gold": "500",
+                      "train_gold": "100"
                   },
                   {
                       "key": "direct:platina:reward",
-                      "desc": "守护礼包奖励50%",
-                      "m_rate": "50",
-                      "z_rate": "50",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "platform:month:bonus",
-                      "desc": "享平台月度分红"
+                      "desc": "推守护礼包奖励",
+                      "sale_platina": "2000",
+                      "train_platina": "200"
                   }
               ],
               "owned": false,
@@ -281,195 +195,128 @@
               "gifts": []
             },
             {
-              "id": 4,
-              "name": "守护创客",
-              "icon": null,
-              "level": "platina",
-              "cover": " ",
-              "condition": {
-                  "bonus": [
-                      {
-                          "key": "become:level",
-                          "desc": "晋升守护创客",
-                          "value": 4,
-                          "result": false
-                      },
-                      {
-                          "key": "first:order",
-                          "desc": "完成首单购物20人",
-                          "value": 20,
-                          "result_num": 0,
-                          "result": false
-                      },
-                      {
-                          "key": "gold:bonus",
-                          "desc": "直接推荐分红达人创客10人",
-                          "value": 10,
-                          "result_num": 1,
-                          "result": false
-                      }
-                  ],
-                  "indirect": [
-                      {
-                          "key": "gold",
-                          "desc": "直接推荐达人创客30人",
-                          "value": 30,
-                          "result_num": 0,
-                          "result": false
-                      }
-                  ]
-              },
-              "gift_info": null,
-              "equities": [
-                  {
-                      "key": "return:commission",
-                      "desc": "购物返佣100%"
-                  },
-                  {
-                      "key": "platform:services",
-                      "desc": "平台服务费15%",
-                      "rate": "15"
-                  },
-                  {
-                      "key": "direct:reward",
-                      "desc": "推广购物佣金20%",
-                      "rate": "20"
-                  },
-                  {
-                      "key": "eoc:reward",
-                      "desc": "EOC活跃奖励"
-                  },
-                  {
-                      "key": "coupons",
-                      "desc": "海量优惠卷"
-                  },
-                  {
-                      "key": "member:gift",
-                      "desc": "会员礼包"
-                  },
-                  {
-                      "key": "merchant:reward",
-                      "desc": "推荐商家奖励10%"
-                  },
-                  {
-                      "key": "elc:experience",
-                      "desc": "ECL体验金"
-                  },
-                  {
-                      "key": "direct:bronze:reward",
-                      "desc": "青铜礼包奖励60%",
-                      "m_rate": "60",
-                      "z_rate": "60",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "direct:gold:reward",
-                      "desc": "达人礼包奖励60%",
-                      "m_rate": "60",
-                      "z_rate": "60",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "direct:platina:reward",
-                      "desc": "守护礼包奖励60%",
-                      "m_rate": "60",
-                      "z_rate": "60",
-                      "z_elc_rate": "20"
-                  },
-                  {
-                      "key": "platform:month:bonus",
-                      "desc": "享平台月度分红"
-                  }
-              ],
-              "owned": false,
-              "days": 0,
-              "gifts": []
+                "id": 4,
+                "name": "守护创客",
+                "icon": null,
+                "level": "platina",
+                "cover": " ",
+                "condition": {
+                    "indirect": [
+                        {
+                            "key": "gold",
+                            "desc": "直接推荐达人创客30人",
+                            "value": 30,
+                            "result_num": 0,
+                            "result": false
+                        }
+                    ]
+                },
+                "gift_info": null,
+                "equities": [
+                    {
+                        "key": "return:commission",
+                        "desc": "购物返佣100%"
+                    },
+                    {
+                        "key": "platform:services",
+                        "desc": "平台服务费15%",
+                        "rate": "15"
+                    },
+                    {
+                        "key": "direct:reward",
+                        "desc": "推广购物佣金85%",
+                        "rate": "85"
+                    },
+                    {
+                        "key": "eoc:reward",
+                        "desc": "EOC活跃奖励"
+                    },
+                    {
+                        "key": "coupons",
+                        "desc": "海量优惠卷"
+                    },
+                    {
+                        "key": "member:gift",
+                        "desc": "产品购买大礼包"
+                    },
+                    {
+                        "key": "direct:bronze:reward",
+                        "desc": "推VIP礼包奖励",
+                        "sale_bronze": "220",
+                        "train_bronze": "20"
+                    },
+                    {
+                        "key": "direct:gold:reward",
+                        "desc": "推达人礼包奖励",
+                        "sale_gold": "700",
+                        "train_gold": "150"
+                    },
+                    {
+                        "key": "direct:platina:reward",
+                        "desc": "推守护礼包奖励",
+                        "sale_platina": "5000",
+                        "train_platina": "300"
+                    }
+                ],
+                "owned": false,
+                "days": 0,
+                "gifts": []
             }
         ],
-        "equities": [/*所有会员权益列表*/
+        "equities": [ /*所有会员权益列表*/
             {
                 "desc": "购物返佣100%",
                 "key": "return:commission",
-                "use_icon": "http://szl.qingchuanren.com/e950ca9626b4e276288cb58c71ccadd9.png",
-                "unused_icon": "http://szl.qingchuanren.com/0e4ad3003b8a08ec7804b40e0d77ba05.png"
+                "use_icon": "http://file.chainonedapp.com/f97b17552e0b2316778d8e6bf228f6d8.png",
+                "unused_icon": "http://file.chainonedapp.com/09dee02620db3b066de0627ea7749318.png"
             },
             {
                 "desc": "平台服务费用",
                 "key": "platform:services",
-                "use_icon": "http://szl.qingchuanren.com/0842d7280b899e5c3c067b39b4b647e0.png",
-                "unused_icon": "http://szl.qingchuanren.com/1ca670d8acbf4f7a88b354a1bee9d978.png"
+                "use_icon": "http://file.chainonedapp.com/ab03f09e6cd0cd6024f595dfb4a20ea7.png",
+                "unused_icon": "http://file.chainonedapp.com/a573f5e151d261d925d5abf6c763ac5e.png"
             },
             {
                 "desc": "推广购物佣金",
                 "key": "direct:reward",
-                "use_icon": "http://szl.qingchuanren.com/9ce9ee026e9985c0bcf43080ca98bc6d.png",
-                "unused_icon": "http://szl.qingchuanren.com/c4578f77f9afb8e6c626db02c01b2dbe.png"
+                "use_icon": "http://file.chainonedapp.com/08a55c897d03c80c9a1dc1bb104df772.png",
+                "unused_icon": "http://file.chainonedapp.com/419373a661675602e743b332e364be04.png"
             },
             {
                 "desc": "EOC活跃奖励",
                 "key": "eoc:reward",
-                "use_icon": "",
-                "unused_icon": ""
+                "use_icon": "http://file.chainonedapp.com/83b5507da6c715ef40e69151d722d629.png",
+                "unused_icon": "http://file.chainonedapp.com/2129e41a279062420dbce171f613d306.png"
             },
             {
                 "desc": "海量优惠卷",
                 "key": "coupons",
-                "use_icon": "http://szl.qingchuanren.com/6dd9a7f2f84688301b306c04fd4f3f18.png",
-                "unused_icon": "http://szl.qingchuanren.com/e758559f6e1d0de0b4f50242a63a9233.png"
+                "use_icon": "http://file.chainonedapp.com/465dee6328ec6c0675d763eea93c8710.png",
+                "unused_icon": "http://file.chainonedapp.com/7188e484fda7941baa4c6aa3c29dae10.png"
             },
             {
-                "desc": "会员大礼包",
+                "desc": "产品购买大礼包",
                 "key": "member:gift",
-                "use_icon": "http://szl.qingchuanren.com/5e5a155ba8cb60458f733de5be691ec5.png",
-                "unused_icon": "http://szl.qingchuanren.com/f11930716f3a87d2fbc95892ea9fe9f1.png"
+                "use_icon": "http://file.chainonedapp.com/7da4c8281d857d7c9c7f233f5e91f6d6.png",
+                "unused_icon": "http://file.chainonedapp.com/137a0bb0502c538504c820424fd07cd5.png"
             },
             {
-                "desc": "推荐商家奖励10%",
-                "key": "merchant:reward",
-                "use_icon": "",
-                "unused_icon": ""
-            },
-            {
-                "desc": "ELC体验金",
-                "key": "elc:experience",
-                "use_icon": "http://szl.qingchuanren.com/a1af9e265cda664eb593a3536431f9d0.png",
-                "unused_icon": "http://szl.qingchuanren.com/afccf831171ad78b5ce7baf49cc411ca.png"
-            },
-            {
-                "desc": "青铜礼包奖励",
+                "desc": "推VIP礼包奖励",
                 "key": "direct:bronze:reward",
-                "use_icon": "http://szl.qingchuanren.com/390892cc06ed22e0804e7c4c028939a0.png",
-                "unused_icon": "http://szl.qingchuanren.com/883e392285c9adea4dd5436f9ec8a90c.png"
+                "use_icon": "http://file.chainonedapp.com/83499137ab000479320e16bd76261444.png",
+                "unused_icon": "http://file.chainonedapp.com/25b5835f9befc252eeb9a437db887941.png"
             },
             {
-                "desc": "达人礼包奖励",
+                "desc": "推达人礼包奖励",
                 "key": "direct:gold:reward",
-                "use_icon": "http://szl.qingchuanren.com/3946c1bbe490e423b1bc99ac1f032e2d.png",
-                "unused_icon": "http://szl.qingchuanren.com/1041cbf31ef67448014d2386ee3bdec6.png"
+                "use_icon": "http://file.chainonedapp.com/666e06a47ce3204c037281c092a911bc.png",
+                "unused_icon": "http://file.chainonedapp.com/f7830dee9a5762f25bf65eaec782c6e1.png"
             },
             {
-                "desc": "守护礼包奖励",
+                "desc": "推守护礼包奖励",
                 "key": "direct:platina:reward",
-                "use_icon": "http://szl.qingchuanren.com/6c7c6f8b5c8ecd42a2b0d5e084528746.png",
-                "unused_icon": "http://szl.qingchuanren.com/783ca6677561513a3e216b2ec1bf58eb.png"
-            },
-            {
-                "desc": "享平台月度分红",
-                "key": "platform:month:bonus",
-                "use_icon": "http://szl.qingchuanren.com/c249d3059465f34e8fa036273196ea51.png",
-                "unused_icon": "http://szl.qingchuanren.com/fb9d49e9c2ba69a7fbe64076df55af36.png"
-            },
-            {
-                "desc": "享平台季度分红",
-                "key": "platform:quarter:bonus",
-                "use_icon": "http://szl.qingchuanren.com/7b73675b480bbbf077e3347e2b6d0105.png",
-                "unused_icon": "http://szl.qingchuanren.com/07c16ede12f6bc576e14f748d0d48e30.png"
-            },
-            {
-                "desc": "享平台年度分红",
-                "key": "platform:year:bonus",
-                "use_icon": "http://szl.qingchuanren.com/7fd3cc9c37edec233324522af1391db9.png",
-                "unused_icon": "http://szl.qingchuanren.com/02d8a8e22cc6156466a28d7d06faf40f.png"
+                "use_icon": "http://file.chainonedapp.com/e549c8a946b7dad1c1ef5cf52118f40b.png",
+                "unused_icon": "http://file.chainonedapp.com/775f620d44261c71324e1a696f53a7dd.png"
             }
         ]
     }
@@ -555,7 +402,7 @@
 | :----: | :--: | :--: | :--------------------------------------------------: |
 | limit  | int  |  是  |                    条目数 默认 20                    |
 | offset | int  |  是  |                    偏移量 默认 0                     |
-|  type  | int  |  是  | 钱包日志类型： fans-粉丝收益 bonus-分红收益 all-全部 |
+|  type  | int  |  是  | 钱包日志类型： fans-粉丝收益 bonus-分红收益 member-礼包收益 train-培养收益 all-全部 |
 
 **返回体**
 
@@ -569,7 +416,7 @@
       "title": "佣金奖励" /*标题*/,
       "amount": "0.00" /*金额*/,
       "target_user_id": 3,
-      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-购买会员 bonus-分红*/,
+      "target_type": "fans:order" /*日志类型:fans:order-粉丝下单 buy:member-会员礼包 bonus-分红 member:train-培养收益*/,
       "action": 1 /*收支状态: 1-收入 2-支出*/,
       "data": null /*扩展字段*/,
       "status": 0 /*状态:0-等待 1-成功 2-失败*/,
