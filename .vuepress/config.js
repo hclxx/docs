@@ -31,7 +31,7 @@ module.exports = {
       "/api/schain/": getSchainAppSider("移动端", "规范"),
       "/admin/schain/": getSchainAdminSider("后台管理", "说明"),
       // 科创链
-      "/api/kcstore": getKcStoreAppSider("移动端", "规范")
+      "/api/kcstore/": getKcStoreAppSider("移动端", "规范")
     }
   },
   plugins: [

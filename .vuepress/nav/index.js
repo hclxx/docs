@@ -29,7 +29,7 @@ module.exports = [
     ]
   },
   {
-    text: "科创",
+    text: "科创商城",
     items: [{ text: "移动端", link: "/api/kcstore/" }]
   }
 ];
