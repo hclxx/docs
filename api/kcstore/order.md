@@ -1,5 +1,31 @@
 # 订单
 
+## 订单统计
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/order-counts`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "wait_pay": 5 /*int 待支付*/,
+    "wait_send": 0 /*int 待发货*/,
+    "wait_receipt": 0 /*int 待收货*/
+  }
+}
+```
+
 ## 订单列表
 
 **方式**
@@ -28,46 +54,71 @@
   "code": 0,
   "data": [
     {
-      "id": 4,
-      "order_no": "91717302" /*订单号/附言号*/,
-      "total_price": "10000.00" /*订单总金额*/,
-      "pay_price": "10000.00" /*实际支付金额*/,
-      "deduct_num": 0 /*抵扣的CL数量*/,
-      "buy_num": 1 /*购买数量*/,
-      "specs": 20 /*T量单位为T*/,
-      "order_status": 0 /*0-待付款 1-待确认 2-已完成/托管中 3-交易关闭*/,
+      "id": 2,
+      "order_no": "11351590054018403" /*订单号*/,
       "user_id": 1,
-      "goods_id": 1,
-      "payment_voucher": "xxxxx.png" /*凭证图*/,
-      "accounts_receivable": {
-        "bank": "中国工商银行",
-        "account_name": "陕西存链科技数据有限公司",
-        "account_number": "3700xxxxxxx"
-      } /*收款账户信息*/,
-      "is_delete": 0,
-      "close_reason": "关闭原因" /*关闭原因*/,
-      "pay_time": "2020-05-07 15:32:40" /*付款时间*/,
-      "remark": "订单备注" /*订单备注*/,
-      "created_at": "2020-05-07 15:32:40" /*订单创建时间*/,
-      "updated_at": "2020-05-07 15:32:40",
-      "close_seconds": 222 /*过期秒数*/,
-      /*商品信息*/
-      "goods": {
-        "id": 1,
-        "name": "CTL-10矿机",
-        "intro": "介绍",
-        "deduct_num": 20,
-        "price": "10000.00",
-        "images": ["a.png", "b.png"],
-        "detail": "html 详情说明",
-        "sales_num": 1,
-        "reward_power": 0,
-        "reward_cl": 0,
-        "sort": 0,
-        "specs": 20,
-        "is_delete": 0,
-        "created_at": null,
-        "updated_at": null
+      "merchant_id": 0,
+      "total_price": "100.00" /*总金额*/,
+      "pay_price": "100.00" /*实际金额*/,
+      "token": "0.00" /*SCCB奖励个数*/,
+      "paid_at": null /*支付时间*/,
+      "pay_type": "alipay" /*支付方式*/,
+      /*收货信息*/
+      "receiving_address": {
+        "area": "四川省成都市区" /*配送区域*/,
+        "name": "胡昊" /*收货人名称*/,
+        "phone": "18382274309" /*收货人手机*/,
+        "address": "环球中心" /*收货具体地址*/
+      },
+      "remark": "备注" /*备注*/,
+      "refund_status": 0 /*退款状态:0-未申请/1-申请中/2-退款成功/3-退款失败*/,
+      "refund_at": null /*退货申请时间*/,
+      /*退货信息*/
+      "refund_info": {
+        "reason": "退货理由",
+        "remark": "退货备注",
+        "vouchers": ["asdasd.png", "sas.png"]
+      },
+      "logistics": null,
+      "send_at": "2020-05-21 17:40:18" /*发货时间*/,
+      "receipt_at": "2020-05-21 17:40:18" /*收货时间*/,
+      "express_code": "jd" /*物流编码*/,
+      "express_name": "京东" /*物流名称*/,
+      "express_no": "asdasdasdasd" /*物流运单号*/,
+      "status": 0 /*订单状态:0-待付款/1-已付款/2-已发货/3-已完成/4-已关闭*/,
+      "extra": null,
+      "reason": null /*订单关闭原因*/,
+      "created_at": "2020-05-21 17:40:18",
+      "updated_at": "2020-05-21 17:40:18",
+      "close_seconds": 0 /*待支付订单关闭秒数*/,
+      /*订单购买的商品信息*/
+      "spu_order": {
+        "id": 2,
+        "spu_id": 4,
+        "sku_id": 1 /*SKU ID*/,
+        "order_id": 2 /*Order Id*/,
+        "spu_name": "iphone12" /*商品名称*/,
+        "spu_pic": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg" /*商品图*/,
+        "zone": "1" /*区域*/,
+        "attrs": [
+          {
+            "n_id": 1,
+            "name": "颜色",
+            "v_id": 2,
+            "value": "红色"
+          },
+          {
+            "n_id": 2,
+            "name": "内存大小",
+            "v_id": 4,
+            "value": "64G"
+          }
+        ],
+        "num": 1 /*购买数量*/,
+        "price": "1000.00" /*单价*/,
+        "token": "0.00" /*单个商品奖励SCCB数量*/,
+        "created_at": "2020-05-21 17:40:18",
+        "updated_at": "2020-05-21 17:40:18"
       }
     }
   ]
@@ -82,7 +133,7 @@
 
 **路径**
 
-`/api/orders/{order_no}`
+`/api/orders/{id}`
 
 **响应**
 
@@ -90,86 +141,80 @@
 
 ```json
 {
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "id": 4,
-    "order_no": "91717302",
-    "total_price": "10000.00",
-    "pay_price": "10000.00",
-    "deduct_num": 0,
-    "buy_num": 1,
-    "specs": 20,
-    "order_status": 0,
-    "user_id": 1,
-    "goods_id": 1,
-    "payment_voucher": "adasdasd.png",
-    "accounts_receivable": {
-      "bank": "中国工商银行",
-      "account_name": "陕西存链科技数据有限公司",
-      "account_number": "3700xxxxxxx"
-    },
-    "is_delete": 0,
-    "close_reason": "关闭原因",
-    "pay_time": "2020-05-07 15:32:40",
-    "remark": "备注",
-    "created_at": "2020-05-07 15:32:40",
-    "updated_at": "2020-05-07 15:32:40",
-    "close_seconds": 222 /*过期秒数*/,
-    "goods": {
-      "id": 1,
-      "name": "CTL-10矿机",
-      "intro": "介绍",
-      "deduct_num": 20,
-      "price": "10000.00",
-      "images": ["a.png", "b.png"],
-      "detail": "html 详情说明",
-      "sales_num": 1,
-      "reward_power": 0,
-      "reward_cl": 0,
-      "sort": 0,
-      "specs": 20,
-      "is_delete": 0,
-      "created_at": null,
-      "updated_at": null
-    }
+  "id": 2,
+  "order_no": "11351590054018403" /*订单号*/,
+  "user_id": 1,
+  "merchant_id": 0,
+  "total_price": "100.00" /*总金额*/,
+  "pay_price": "100.00" /*实际金额*/,
+  "token": "0.00" /*SCCB奖励个数*/,
+  "paid_at": null /*支付时间*/,
+  "pay_type": "alipay" /*支付方式*/,
+  /*收货信息*/
+  "receiving_address": {
+    "area": "四川省成都市区" /*配送区域*/,
+    "name": "胡昊" /*收货人名称*/,
+    "phone": "18382274309" /*收货人手机*/,
+    "address": "环球中心" /*收货具体地址*/
+  },
+  "remark": "备注" /*备注*/,
+  "refund_status": 0 /*退款状态:0-未申请/1-申请中/2-退款成功/3-退款失败*/,
+  "refund_at": null /*退货申请时间*/,
+  /*退货信息*/
+  "refund_info": {
+    "reason": "退货理由",
+    "remark": "退货备注",
+    "vouchers": ["asdasd.png", "sas.png"]
+  },
+  "logistics": null,
+  "send_at": "2020-05-21 17:40:18" /*发货时间*/,
+  "receipt_at": "2020-05-21 17:40:18" /*收货时间*/,
+  "express_code": "jd" /*物流编码*/,
+  "express_name": "京东" /*物流名称*/,
+  "express_no": "asdasdasdasd" /*物流运单号*/,
+  "status": 0 /*订单状态:0-待付款/1-已付款/2-已发货/3-已完成/4-已关闭*/,
+  "extra": null,
+  "reason": null /*订单关闭原因*/,
+  "created_at": "2020-05-21 17:40:18",
+  "updated_at": "2020-05-21 17:40:18",
+  "close_seconds": 0 /*待支付订单关闭秒数*/,
+  /*订单购买的商品信息*/
+  "spu_order": {
+    "id": 2,
+    "spu_id": 4,
+    "sku_id": 1 /*SKU ID*/,
+    "order_id": 2 /*Order Id*/,
+    "spu_name": "iphone12" /*商品名称*/,
+    "spu_pic": "http://p59l6s1jm.bkt.clouddn.com/16ddf9eef740c6585a219908dbb2b791.jpeg" /*商品图*/,
+    "zone": "1" /*区域*/,
+    "attrs": [
+      {
+        "n_id": 1,
+        "name": "颜色",
+        "v_id": 2,
+        "value": "红色"
+      },
+      {
+        "n_id": 2,
+        "name": "内存大小",
+        "v_id": 4,
+        "value": "64G"
+      }
+    ],
+    "num": 1 /*购买数量*/,
+    "price": "1000.00" /*单价*/,
+    "token": "0.00" /*单个商品奖励SCCB数量*/,
+    "created_at": "2020-05-21 17:40:18",
+    "updated_at": "2020-05-21 17:40:18"
   }
 }
 ```
 
-## 提交凭证
-
-::: tip
-只有待支付状态下才能进行提交凭证
-:::
-
-**方式**
-
-`PATCH`
-
-**参数**
-
-|  名称   |  类型  | 必须 | 说明 |
-| :-----: | :----: | :--: | :--: |
-| voucher | string |  是  | 凭证 |
-
-**路径**
-
-`/api/orders/{order_no}`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": null
-}
-```
-
 ## 删除订单
+
+<!-- ::: tip
+只有待支付状态下才能进行提交凭证
+::: -->
 
 **方式**
 
@@ -177,7 +222,7 @@
 
 **路径**
 
-`/api/orders/{order_no}`
+`/api/orders/{id}`
 
 **响应**
 
@@ -191,77 +236,15 @@
 }
 ```
 
-## 创建订单
+## 取消订单
 
 **方式**
 
-`POST`
-
-**参数**
-
-|    名称    |  类型  | 必须 |                     说明                      |
-| :--------: | :----: | :--: | :-------------------------------------------: |
-|  goods_id  |  int   |  是  |                    商品 ID                    |
-|    num     |  int   |  是  |                   购买数量                    |
-| deduct_num |  int   |  否  | CL 抵扣数量.不进行抵扣或者抵扣为 0 不传此参数 |
-|   remark   | string |  否  |                   备注信息                    |
+`PUT`
 
 **路径**
 
-`/api/orders`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "order_no": "32523393" /*附言码/订单号*/
-  }
-}
-```
-
-## 订单统计
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/api/orders/count`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "wait_pay": 4 /*待支付*/,
-    "wait_confirm": 1 /*待确认*/
-  }
-}
-```
-
-## 订单取消
-
-::: tip
-只有待支付订单才能取消操作
-:::
-
-**方式**
-
-`DELETE`
-
-**路径**
-
-`/api/orders/{order_no}/cancel`
+`/api/orders/{id}/cancel`
 
 **响应**
 
@@ -270,6 +253,100 @@
 ```json
 {
   "msg": "取消成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 确认收货
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/orders/{id}/receipt`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "确认收货成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 申请退款/换货
+
+**方式**
+
+`POST`
+
+|   名称   |  类型  | 必须 |               说明                |
+| :------: | :----: | :--: | :-------------------------------: |
+|  reason  | string |  是  |               必填                |
+|  remark  |  int   |  是  |               备注                |
+| vouchers | array  |  是  | 凭证图片集合,["01.png", "02.png"] |
+
+**路径**
+
+`/api/orders/{id}/refund`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "提交成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 撤销退款/换货
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/orders/{id}/refund`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "撤销成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 查看物流信息
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/orders/{id}/refund`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "撤销成功",
   "code": 0,
   "data": null
 }
