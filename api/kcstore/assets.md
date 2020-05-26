@@ -8,7 +8,7 @@
 
 **路径**
 
-`/api/wallet/asstes`
+`/api/wallets`
 
 **参数**
 
@@ -45,7 +45,7 @@
 
 **路径**
 
-`/api/wallet/logs`
+`/api/wallets/logs`
 
 **参数**
 
