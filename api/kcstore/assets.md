@@ -31,7 +31,7 @@
     "income": "0.0000" /*总收益*/,
     "expend": "2.0000" /*总支出*/,
     "wait": "0.0000" /*待反还*/,
-    "currency": "cl",
+    "currency": "sccb",
     "power": 3 /*能量值*/
   }
 }
@@ -76,7 +76,7 @@
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
       "type": "transfer:expend" /*类型*/,
-      "currency": "cl" /*cny-现金/cl-矿石cl*/,
+      "currency": "sccb" /*cny-现金/sccb-矿石sccb*/,
       "extend": null,
       "created_at": "2020-05-03 14:46:49",
       "updated_at": "2020-05-03 14:46:49",
