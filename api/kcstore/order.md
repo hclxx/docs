@@ -460,3 +460,27 @@ order.status == 2
   }
 }
 ```
+
+## 获取支付状态
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/orders/{id}/status`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "撤销成功",
+  "code": 0,
+  "data": {
+    "status": true /*状态:true or false*/
+  }
+}
+```
