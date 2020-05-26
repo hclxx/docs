@@ -21,31 +21,22 @@
   "data": {
     /*邀请配置*/
     "invite": {
-      "url": "http://resource.immeet.com/链存/register.html" /*邀请地址*/,
+      "url": "http://asdasd.asdasd.asdas/adasd/register.html" /*邀请地址*/,
       "mode": "邀请方式" /*邀请方式*/,
       "rule": "邀请说明" /*邀请说明*/,
       "power": "100" /*邀请奖励*/
     },
-    "cl:to:cny": "1" /*单个CL的现金价格单位元*/,
-    "cdn_domain": "http://xxxx.sss.com" /*CDN_DOMAIN*/,
-    "withdrawal": {
-      "user_min": "100" /*用户最低提现额度 单位(元)*/,
-      "user_day_limit": "1000" /*用户提现日上限 单位(元)*/,
-      "user_day_num": "1" /*用户提现次数日上限*/,
-      "platform_day_limit": "100000" /*平台用户提现日上限额度 单位(元)*/,
-      "instr": "提现说明" /*提现说明*/,
-      "switch": "on" /*提现开关 on-开启 off-关闭*/,
-      "service_charge": "1" /*提现服务费（百分比） 1 / 100*/
+    "shopping": {
+      /*体验店*/
+      "tyd": {
+        "shop": "20",
+        "user": "20" /*体验店用户SCCB提成比例，需要除以100计算*/
+      },
+      "yxd": {
+        "user": "10" /*优选店店用户SCCB提成比例，需要除以100计算*/
+      }
     },
-    "account:receivable": {
-      "bank": "中国工商银行" /*开户行*/,
-      "code_desc": "这是附言码说明" /*附言码说明*/,
-      "account_name": "陕西存链科技数据有限公司" /*开户名*/,
-      "account_number": "3700xxxxxxx" /*开户号*/
-    },
-    "purchase_protocol": "http://localhost/purchase/protocol" /*矿机购买协议地址*/,
-    "hosting_protocol": "http://localhost/hosting/protocol" /*矿机托管协议地址*/,
-    "register_protocol": "http://localhost/hosting/protocol" /*注册协议地址*/
+    "cdn_domain": "http://asdasd.asdasd.com" /*七牛域名*/
   }
 }
 ```
