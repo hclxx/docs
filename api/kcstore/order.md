@@ -382,6 +382,16 @@ order.refund_status == 1
 
 ## 物流信息
 
+::: tip
+
+只有已发货的订单才能查看物流
+
+判断逻辑:
+
+order.status == 2
+
+:::
+
 **方式**
 
 `GET`
