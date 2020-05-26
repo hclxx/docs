@@ -29,7 +29,9 @@ module.exports = {
       "/admin/achat/": getAchatAdminSider("后台管理", "说明"),
       // Schain
       "/api/schain/": getSchainAppSider("移动端", "规范"),
-      "/admin/schain/": getSchainAdminSider("后台管理", "说明")
+      "/admin/schain/": getSchainAdminSider("后台管理", "说明"),
+      // 科创链
+      "/api/kcstore": getKcStoreAppSider("移动端", "规范")
     }
   },
   plugins: [
@@ -347,6 +349,33 @@ function getSchainAdminSider(title, introduction) {
         "one-key",
         "withdraw",
         "agency",
+        "version"
+      ]
+    }
+  ];
+}
+
+// 科创科技APP
+function getKcStoreAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "conf",
+        "upload",
+        "user",
+        "code",
+        "task",
+        "cer",
+        "assets",
+        "goods",
+        "order",
+        "market",
+        "msg",
+        "ore",
+        "power",
         "version"
       ]
     }

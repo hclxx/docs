@@ -24,8 +24,12 @@ module.exports = [
   {
     text: "存链",
     items: [
-    { text: "移动端", link: "/api/schain/" },
-    { text: "后台管理", link: "/admin/schain/" }
+      { text: "移动端", link: "/api/schain/" },
+      { text: "后台管理", link: "/admin/schain/" }
     ]
+  },
+  {
+    text: "科创",
+    items: [{ text: "移动端", link: "/api/kcstore/" }]
   }
 ];
