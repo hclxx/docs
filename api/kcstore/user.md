@@ -50,7 +50,7 @@
 |    phone    | string |  是  | 手机号 |
 |    code     | string |  是  | 验证码 |
 |  password   | string |  是  |  密码  |
-| invite_code | string |  是  | 邀请码 |
+| invite_code | string |  否  | 邀请码 |
 
 **响应**
 
