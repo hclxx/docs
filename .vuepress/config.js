@@ -368,6 +368,7 @@ function getKcStoreAppSider(title, introduction) {
         "user",
         "code",
         "task",
+        "shop",
         "cer",
         "assets",
         "goods",
