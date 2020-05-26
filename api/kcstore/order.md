@@ -416,3 +416,47 @@ order.status == 2
   ]
 }
 ```
+
+## 商品下单
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/orders`
+
+**参数**
+
+|     名称     |  类型  | 必须 |                      说明                       |
+| :----------: | :----: | :--: | :---------------------------------------------: |
+|     num      |  int   |  是  |                    购买数量                     |
+|    sku_id    |  int   |  是  |                     SKU ID                      |
+|   pay_type   | string |  是  | 支付类型:alipay-支付宝/wxpay-微信支付/sccb-sccb |
+| pay_password | string |  否  |    支付密码 ，仅当 `pay_type` 为 `sccb` 必须    |
+|    remark    | string |  否  |                      备注                       |
+|  address_id  |  int   |  是  |                    收货地址                     |
+| merchant_id  |  int   |  否  |           体验店商品，必须选择店铺 ID           |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": {
+    /*支付宝订单信息*/
+    "alipay_result": {
+      "order_info": "alipay_sdk=alipay-sdk-php-20180705&app_id=123123&biz_content=%7B%22timeout_express%22%3A%225m%22%2C%22out_trade_no%22%3A%22W19818%22%2C%22subject%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu6536%5Cu53d6%5Cu77ff%5Cu77f3%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22total_amount%22%3A%220.01%22%2C%22body%22%3A%22%5Cu8d2d%5Cu4e70%5Cu4e00%5Cu952e%5Cu16536%5Cu53d6%5Cu77ff%5Cu77f3%5Cu7279%5Cu67431%5Cu4e2a%5Cu6708%22%7D&charset=UTF-8&format=json&method=alipay.trade.app.pay&sign_type=RSA2&timestamp=2019-04-29+13%3A39%3A38&version=1.0&sign=NGWBZUzLq%2BA60WEFoxET8lKnLIQGelz%2FBYX7u8dj%2BsYgvQzvSsDK2jPlu6IAR0bYRBrziaisLebst5DLBCsjkNZofEjyBopUfPIVA7FHHXpUQ5qPAcTC6Q5n0fNWC6%2BEJpG8Ly1tJhaMOl6Z3H8nwoITH%2BPah3%2Bh%2F5Mm26XOwU0jhC60ogUKgtWFrDsuIhspcAVmv6Xf%2FHO%2Ftxu4lCet6zJGBgcOUw3Obtiq1uTBWIziWecH1FW%2BGpCSWCrbDU2AEaAGjbMMYmaMIBNyGzxFqr8tkhe3Q47nzkWOrmYYzkgMBRBzc2FuJ%2BwWH5cezI6L3nrJJVFOPLclM2KJ1BQHww%3D%3D"
+    },
+    /*微信订单信息*/
+    "wxpay_result": {
+      "app_id": ""
+    },
+    "order_no": "SJ123213213"
+  }
+}
+```
