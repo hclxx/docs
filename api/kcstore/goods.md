@@ -37,12 +37,14 @@
 
 `/api/spus`
 
-|  名称   |  类型  | 必须 |                                  说明                                  |
-| :-----: | :----: | :--: | :--------------------------------------------------------------------: |
-|  limit  |  int   |  是  |                            条目数量 默认 20                            |
-| offset  |  int   |  是  |                             偏移量 默认 0                              |
-| cate_id |  int   |  否  |                          分类 ID，火爆区必填                           |
-|  zone   | string |  是  | 区域: hot-火爆区、experience-体验店、quality-优质、preferential-特惠区 |
+|   名称   |  类型  | 必须 |                                  说明                                  |
+| :------: | :----: | :--: | :--------------------------------------------------------------------: |
+|  limit   |  int   |  是  |                            条目数量 默认 20                            |
+|  offset  |  int   |  是  |                             偏移量 默认 0                              |
+| cate_id  |  int   |  否  |                          分类 ID，火爆区必填                           |
+|   zone   | string |  是  | 区域: hot-火爆区、experience-体验店、quality-优质、preferential-特惠区 |
+| order_by | string |  否  |                 排序属性:price-价格/sales_volume-销量                  |
+|   sort   | string |  否  |                      排序方式:asc-降序/desc-升序                       |
 
 **响应**
 
