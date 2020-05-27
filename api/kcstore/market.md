@@ -1,33 +1,6 @@
 # 市场
 
-## 我的市场详情
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/api/market/details`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "market_icon": "asdsad.png" /*市场等级图标 普通用户为该字段值为NULL*/,
-    "market_total": 0 /*市场业绩总和*/,
-    "custoday_income": "0" /*托管收益*/,
-    "agency_income": "0.0000" /*代理提成单位元*/
-  }
-}
-```
-
-## 市场业绩列表
+## 市场业绩
 
 **方式**
 
@@ -42,7 +15,7 @@
 
 **路径**
 
-`/api/market/achievements`
+`/api/performances`
 
 **响应**
 
@@ -50,16 +23,28 @@
 
 ```json
 {
-  "msg": "ok",
-  "code": 0,
-  "data": [
-    {
-      "id": 3,
-      "name": "里斯" /*用户名称*/,
-      "avatar": null /*头像*/,
-      "team_num": 2000 /*市场业绩*/,
-      "user_id": 3
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "self": {
+            "user_id": 1,
+            "preferred": "200",/*自身优选店业绩*/
+            "experience": "200",/*自身体验店业绩*/
+        },
+        "children": [/*直接推广人*/
+            {
+                "id": 2,
+                "name": "李四",/*名称*/
+                "avatar": "2020/05/26/01c7b2dd2d5771bfafc9834682dd3dca.png",/*头像*/
+                "market": 200,/*市场业绩额*/
+            },
+            {
+                "id": 3,
+                "name": "0CGLAU",
+                "avatar": "20200526151508000.png",
+                "market": 200
+            }
+        ]
     }
-  ]
 }
 ```
