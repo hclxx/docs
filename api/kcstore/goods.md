@@ -46,6 +46,7 @@
 |  order_by   | string |  否  |                 排序属性:price-价格/sales_volume-销量                  |
 |    sort     | string |  否  |                      排序方式:asc-降序/desc-升序                       |
 | merchant_id |  int   |  否  |                                店铺 ID                                 |
+|  keywords   |  int   |  否  |                             商品搜索关键词                             |
 
 **响应**
 
