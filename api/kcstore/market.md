@@ -19,8 +19,6 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "id": 3,
-        "user_id": 1,
         "preferred": "200",/*优选店业绩*/
         "experience": "200"/*体验店业绩*/
     }
