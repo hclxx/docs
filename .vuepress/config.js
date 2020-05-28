@@ -378,7 +378,8 @@ function getKcStoreAppSider(title, introduction) {
         "msg",
         "ore",
         "power",
-        "version"
+        "version",
+        "ad"
       ]
     }
   ];
