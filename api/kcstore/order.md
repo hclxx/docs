@@ -449,14 +449,12 @@ order.status == 2
   "code": 0,
   "data": {
     /*支付宝订单信息*/
-    "alipay_result": {
-      "order_info": "123123213123"
-    },
+    "alipay_result": "123123213123",
     /*微信订单信息*/
     "wxpay_result": {
       "app_id": ""
     },
-    "order_no": "SJ123213213"
+    "order_id": 1
   }
 }
 ```
@@ -465,7 +463,7 @@ order.status == 2
 
 **方式**
 
-`DELETE`
+`GET`
 
 **路径**
 
@@ -477,7 +475,7 @@ order.status == 2
 
 ```json
 {
-  "msg": "撤销成功",
+  "msg": "获取订单状态",
   "code": 0,
   "data": {
     "status": true /*状态:true or false*/
