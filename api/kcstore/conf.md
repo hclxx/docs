@@ -36,7 +36,15 @@
         "user": "10" /*优选店店用户SCCB提成比例，需要除以100计算*/
       }
     },
-    "cdn_domain": "http://asdasd.asdasd.com" /*七牛域名*/
+    "cdn_domain": "http://asdasd.asdasd.com" /*七牛域名*/,
+    /*退货原因*/
+    "refund:reason": [
+      "尺寸不符",
+      "颜色与商品不符",
+      "做工粗糙/有瑕疵",
+      "质量问题",
+      "少发/漏发"
+    ]
   }
 }
 ```
