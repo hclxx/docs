@@ -166,6 +166,7 @@
     "remark": "退货备注",
     "vouchers": ["凭证.png", "凭证.png"],
     "reject_reason": "驳回理由",
+    "reject_at": "2020-05-21 17:40:18",
     "express_no": "物流单号",
     "express_code": "物流编码",
     "express_name": "物流方式",
