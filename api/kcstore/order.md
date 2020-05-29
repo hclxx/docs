@@ -164,7 +164,11 @@
   "refund_info": {
     "reason": "退货理由",
     "remark": "退货备注",
-    "vouchers": ["asdasd.png", "sas.png"]
+    "vouchers": ["asdasd.png", "sas.png"],
+    "reject_reason": "驳回理由",
+    "express_no": "物流单号",
+    "express_code": "物流编码",
+    "express_name": "物流方式"
   },
   "logistics": null,
   "send_at": "2020-05-21 17:40:18" /*发货时间*/,
@@ -319,7 +323,7 @@ order.status == 2
 判断逻辑:
 
 order.status == 1 || order.status == 3
-
+q
 :::
 
 **方式**
