@@ -76,8 +76,10 @@
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
       "type": "transfer:expend" /*类型*/,
-      "currency": "sccb" /*cny-现金/sccb-矿石sccb*/,
-      "extend": null,
+      "currency": "sccb" /*挖矿收入-dig:ore/兑换商品-sccb:shopping/shopping:reward-购物奖励*/,
+      "extend": {
+        "spu_pic": "你要的商品图片.png" /*商品图*/
+      },
       "created_at": "2020-05-03 14:46:49",
       "updated_at": "2020-05-03 14:46:49",
       /*目标用户信息*/
