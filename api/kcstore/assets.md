@@ -68,15 +68,15 @@
   "data": [
     {
       "id": 2,
-      "title": "转账交易" /*标题*/,
+      "title": "挖矿" /*标题*/,
       "user_id": 1,
       "target_user_id": 2,
       "target_id": 0,
       "amount": "1.0000" /*金额*/,
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
-      "type": "transfer:expend" /*类型*/,
-      "currency": "sccb" /*挖矿收入-dig:ore/兑换商品-sccb:shopping/shopping:reward-购物奖励*/,
+      "type": "dig:ore" /*挖矿收入-dig:ore/sccb:shopping-兑换商品/shopping:reward-购物奖励*/,
+      "currency": "sccb" /*cny-现金，scc-sccb*/,
       "extend": {
         "spu_pic": "你要的商品图片.png" /*商品图*/
       },
