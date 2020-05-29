@@ -330,11 +330,15 @@ q
 
 `POST`
 
-|   名称   |  类型  | 必须 |               说明                |
-| :------: | :----: | :--: | :-------------------------------: |
-|  reason  | string |  是  |               必填                |
-|  remark  |  int   |  是  |               备注                |
-| vouchers | array  |  是  | 凭证图片集合,["01.png", "02.png"] |
+|       名称       |  类型  | 必须 |               说明                |
+| :--------------: | :----: | :--: | :-------------------------------: |
+|      reason      | string |  是  |               必填                |
+|      remark      |  int   |  是  |               备注                |
+|     vouchers     | array  |  是  | 凭证图片集合,["01.png", "02.png"] |
+|   express_code   | string |  是  |           物流公司编码            |
+|   express_name   | string |  是  |           物流公司名称            |
+|    express_no    | string |  是  |            物流运单号             |
+| express_vouchers | string |  是  |             物流凭证              |
 
 **路径**
 
