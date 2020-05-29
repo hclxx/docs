@@ -338,7 +338,7 @@ q
 |   express_code   | string |  是  |           物流公司编码            |
 |   express_name   | string |  是  |           物流公司名称            |
 |    express_no    | string |  是  |            物流运单号             |
-| express_vouchers | string |  是  |             物流凭证              |
+| express_vouchers | array  |  是  |             物流凭证              |
 
 **路径**
 
