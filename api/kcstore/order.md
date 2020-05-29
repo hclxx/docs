@@ -507,7 +507,7 @@ order.status == 2
 
 **路径**
 
-`/api/orders/{id}/status`
+`/api/consignees`
 
 **响应**
 
