@@ -437,7 +437,6 @@ function getKcStoreMerchantSider(title, introduction) {
                 "code",
                 "address",
                 "order",
-                "login",
                 "goods"
             ]
         }
