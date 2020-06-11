@@ -35,5 +35,12 @@ module.exports = [
             {text: "后台管理", link: "/admin/kcstore/"},
             {text: "商户管理", link: "/merchant/kcstore/"}
         ]
+    },
+    {
+        text: "火推",
+        items: [
+            {text: "移动端", link: "/api/ht/"},
+            {text: "后台管理", link: "/admin/ht/"},
+        ]
     }
 ];

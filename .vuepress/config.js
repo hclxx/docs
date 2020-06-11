@@ -33,7 +33,10 @@ module.exports = {
             // 科创链
             "/api/kcstore/": getKcStoreAppSider("移动端", "规范"),
             "/admin/kcstore/": getKcStoreAdminSider("后台管理", "规范"),
-            "/merchant/kcstore/": getKcStoreMerchantSider("商户管理", "规范")
+            "/merchant/kcstore/": getKcStoreMerchantSider("商户管理", "规范"),
+            // 火推
+            "/api/ht/": getHtAppSider("移动端", "规范"),
+            "/admin/ht/": getHtAdminSider("后台管理", "说明"),
         }
     },
     plugins: [
@@ -426,6 +429,39 @@ function getKcStoreAdminSider(title, introduction) {
 
 // 科创商城merchant
 function getKcStoreMerchantSider(title, introduction) {
+    return [
+        {
+            title,
+            collapsable: false,
+            children: [
+                ["", introduction],
+                "login",
+                "account",
+                "code",
+                "address",
+                "order",
+                "goods"
+            ]
+        }
+    ];
+}
+
+// 火推 api
+function getHtAppSider(title, introduction) {
+    return [
+        {
+            title,
+            collapsable: false,
+            children: [
+                ["", introduction],
+
+            ]
+        }
+    ];
+}
+
+// 火推 Admin
+function getHtAdminSider(title, introduction) {
     return [
         {
             title,
