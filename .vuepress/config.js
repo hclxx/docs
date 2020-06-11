@@ -497,7 +497,9 @@ function getHtAdminSider(title, introduction) {
                 "version",
                 "activity",
                 "user",
-                "video"
+                "video",
+                "topic",
+                "reward-item"
             ]
         }
     ];
