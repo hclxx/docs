@@ -4,6 +4,10 @@
 
 `Http Status code 200`
 
+## url
+
+`www.zytc360.cn/admin`
+
 ### 错误
 
 #### 参数说明
