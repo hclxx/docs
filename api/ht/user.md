@@ -115,44 +115,36 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 1,
-    "name": "胡昊" /*用户呢称*/,
-    "avatar": "acasdasd.png" /*头像*/,
-    "gender": 1 /*性别: 0-未知/1-男/2女*/,
-    "phone": "183****4309" /*手机*/,
-    "code": "SS788A" /*邀请码*/,
-    "power": 1 /*矿力数量*/,
-    "cllection_time": null,
-    "market_id": 0,
-    "cer_status": false /*是否认证:true-认证false-认证*/,
-    "paypass_status": false /*是否设置支付密码:true-设置false-否*/,
-    "market_icon": "sdsadasd.pn" /*市场等级信息 可能为 NULl*/,
-    /*邀请人信息*/
-    "inviter": {
-      "id": 3,
-      "name": "里斯",
-      "avatar": null
-    },
-    "agent_level": -1 /*用户代理等级:-1-无等级/0-省级/1-市级/2-门店*/
+    "id": 3,
+    "name": "0CGLAS" /*用户呢称*/,
+    "avatar": "nnnn.ong" /*头像*/,
+    "phone": "183****4309" /*手机号*/,
+    "gender": 0 /*性别：0-未知/1-男/2-女*/,
+    "code": "0CGLAS" /*邀请码*/,
+    "number": "49123453" /*火推号码*/,
+    "sign": "个性签名" /*签名*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
+    "invite_num": 0 /*邀请数量*/,
+    "state": 0,
+    "created_at": "2020-06-11 10:13:26",
+    "updated_at": "2020-06-11 10:13:26",
+    "inviter": null
   }
 }
 ```
 
-## 根据手机号获取用户信息
+## 获取单个用户信息
 
 **方式**
 
 `GET`
 
-**参数**
-
-| 名称  |  类型  | 必须 |  说明  |
-| :---: | :----: | :--: | :----: |
-| phone | string |  是  | 手机号 |
-
 **路径**
 
-`/api/user/info`
+`/api/users/:id`
 
 **参数**
 
@@ -167,17 +159,71 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 1,
-    "name": "胡昊",
-    "avatar": "张三",
-    "gender": 1,
-    "phone": "183****4309",
-    "code": "",
-    "power": 13,
-    "cllection_time": null,
-    "market_id": 1,
-    "created_at": "2020-05-04 11:02:22",
-    "updated_at": "2020-05-08 10:48:48"
+    "id": 3,
+    "name": "0CGLAS" /*用户呢称*/,
+    "avatar": "nnnn.ong" /*头像*/,
+    "phone": "183****4309" /*手机号*/,
+    "gender": 0 /*性别：0-未知/1-男/2-女*/,
+    "code": "0CGLAS" /*邀请码*/,
+    "number": "49123453" /*火推号码*/,
+    "sign": "个性签名" /*签名*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
+    "invite_num": 0 /*邀请数量*/,
+    "is_follow": true /*是否关注*/,
+    "state": 0,
+    "created_at": "2020-06-11 10:13:26",
+    "updated_at": "2020-06-11 10:13:26",
+    "inviter": null
+  }
+}
+```
+
+## 获取单个用户信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/users`
+
+**参数**
+
+|   名称   |  类型  | 必须 |     说明     |
+| :------: | :----: | :--: | :----------: |
+| username | string |  是  | 用户呢称检索 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 3,
+    "name": "0CGLAS" /*用户呢称*/,
+    "avatar": "nnnn.ong" /*头像*/,
+    "phone": "183****4309" /*手机号*/,
+    "gender": 0 /*性别：0-未知/1-男/2-女*/,
+    "code": "0CGLAS" /*邀请码*/,
+    "number": "49123453" /*火推号码*/,
+    "sign": "个性签名" /*签名*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
+    "invite_num": 0 /*邀请数量*/,
+    "is_follow": true /*是否关注*/,
+    "state": 0,
+    "created_at": "2020-06-11 10:13:26",
+    "updated_at": "2020-06-11 10:13:26",
+    "inviter": null
   }
 }
 ```
