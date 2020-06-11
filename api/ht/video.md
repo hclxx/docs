@@ -318,3 +318,119 @@
   }
 }
 ```
+
+## 回复列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/replies`
+
+**参数**
+
+|    名称    | 类型 | 必须 |       说明        |
+| :--------: | :--: | :--: | :---------------: |
+| comment_id | int  |  是  |      评论 ID      |
+|   after    | int  |  是  | 列表最后节点的 ID |
+|   limit    | int  |  是  |     条目数量      |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 2,
+      "content": "视频很好" /*评论内容*/,
+      "user_id": 3,
+      "video_id": 1,
+      "praise_num": 0 /*点赞数量*/,
+      "created_at": "2020-06-11 14:13:17" /*评论时间*/,
+      "is_liked": false /*是否点赞*/,
+      "replies": null,
+      /*用户信息*/
+      "user": {
+        "id": 3,
+        "name": "0CGLAS",
+        "avatar": null,
+        "number": "49123453",
+        "gender": 0
+      }
+    }
+  ]
+}
+```
+
+## 评论回复
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/replies`
+
+**参数**
+
+|      名称      |  类型  | 必须 |                               说明                               |
+| :------------: | :----: | :--: | :--------------------------------------------------------------: |
+|   comment_id   |  int   |  是  |                             评论 ID                              |
+| target_user_id |  int   |  是  | 回复人 ID,回复评论则是评论的 user_id，回复回复则是回复的 user_id |
+|    content     | string |  是  |                             回复内容                             |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "回复成功",
+  "code": 0,
+  "data": {
+    "praise_num": 0,
+    "user_id": 3,
+    "content": 0,
+    "comment_id": 1,
+    "target_user_id": 1,
+    "updated_at": "2020-06-11 14:50:07",
+    "created_at": "2020-06-11 14:50:07",
+    "id": 5,
+    "user": {
+      "id": 3,
+      "name": "0CGLAS",
+      "avatar": null,
+      "gender": 0
+    }
+  }
+}
+```
+
+## 删除回复
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/replies/:id`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "评论成功",
+  "code": 0,
+  "data": null
+}
+```

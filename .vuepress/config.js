@@ -473,7 +473,8 @@ function getHtAppSider(title, introduction) {
         "assets",
         "msg",
         "version",
-        "video"
+        "video",
+        "like"
       ]
     }
   ];
