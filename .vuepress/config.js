@@ -499,7 +499,8 @@ function getHtAdminSider(title, introduction) {
                 "user",
                 "video",
                 "topic",
-                "reward-item"
+                "reward-item",
+                "withdrawal"
             ]
         }
     ];
