@@ -361,16 +361,13 @@
   "code": 0,
   "data": [
     {
-      "id": 3,
-      "name": "里斯" /*名称*/,
-      "avatar": "asdas.png" /*头像*/,
-      "phone": "183****4307" /*手机*/,
-      "ori_phone": "18311224307" /*原始手机号:null-点击呈现不做呈现*/,
-      "user_id": 3,
-      "parent_id": 1,
-      "pparent_id": 1,
-      "created_at": "2020-05-07 17:13:04" /*时间*/,
-      "reward_num": 10 /*奖励个数*/
+      "id": 1,
+      "name": "里斯" /*用户呢称*/,
+      "avatar": "头像.png" /*头像*/,
+      "number": "49123452" /*账号*/,
+      "user_id": 1,
+      "created_at": "2020-06-08 12:07:54" /*时间*/,
+      "amount": "40.0000" /*火豆奖励*/
     }
   ]
 }
@@ -395,8 +392,8 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "directCount": 0,
-    "indirectCount": 1
+    "direct_count": 0 /*二级*/,
+    "indirect_count": 1 /*一级*/
   }
 }
 ```
