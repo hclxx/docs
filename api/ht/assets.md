@@ -14,7 +14,7 @@
 
 |   名称   |  类型  | 必须 |             说明             |
 | :------: | :----: | :--: | :--------------------------: |
-| currency | string |  是  | 资产类型: cny-现金 sccb-sccb |
+| currency | string |  是  | 资产类型: hd-火豆，dstt-dstt |
 
 **响应**
 
@@ -25,14 +25,10 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 1,
-    "user_id": 1,
-    "balance": "998.0000" /*资产余额*/,
-    "income": "0.0000" /*总收益*/,
-    "expend": "2.0000" /*总支出*/,
-    "wait": "0.0000" /*待反还*/,
-    "currency": "sccb",
-    "power": 3 /*能量值*/
+    "id": 4,
+    "user_id": 3,
+    "balance": "0.0000",
+    "currency": "hd" /*dstt,hd-火豆*/
   }
 }
 ```
@@ -51,7 +47,7 @@
 
 |   名称   |  类型  | 必须 |               说明                |
 | :------: | :----: | :--: | :-------------------------------: |
-| currency | string |  是  |   资产类型: cny-现金 sccb-sccb    |
+| currency | string |  是  |   资产类型: hd-火豆，dstt-dstt    |
 |  action  | string |  否  | 收支动作: income-收入 expend-支出 |
 |  limit   |  int   |  是  |         条目数量 默认 20          |
 |  offset  |  int   |  是  |           偏移量 默认 0           |
@@ -75,7 +71,7 @@
       "amount": "1.0000" /*金额*/,
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
-      "type": "dig:ore" /*挖矿收入-dig:ore/sccb:shopping-兑换商品/shopping:reward-购物奖励*/,
+      "type": "reward" /*打赏-reward,获赏-get:reward,闪兑-ht:to:dstt,新手奖励-rookie:reward,提币-withdrawal，参与活动-activity,一级级邀请-one:invite,二级级邀请-two:invite*/,
       "currency": "sccb" /*cny-现金，scc-sccb*/,
       "extend": {
         "spu_pic": "你要的商品图片.png" /*商品图*/
