@@ -443,3 +443,86 @@
   }
 }
 ```
+
+## 关注用户
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 取消关注
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 粉丝/关注列表
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 |            说明            |
+| :----: | :----: | :--: | :------------------------: |
+|  type  | string |  是  | 类型:fans-粉丝/follow-关注 |
+| limit  |  int   |  是  |      条目数 默认为 20      |
+| offset |  int   |  是  |      条目数 默认为 0       |
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 2,
+      "name": "张三",
+      "avatar": null,
+      "updated_at": "2020-06-04 17:23:33",
+      "is_fans": false /*她/他是否是我粉丝*/,
+      "is_follow": true /*是否关注他/她*/
+    }
+  ]
+}
+```
