@@ -42,6 +42,7 @@
                     "amount": "100.0000",/*提币金额*/
                     "service_charge": "10.0000",/*服务费*/
                     "address": "aaa",/*提币地址*/
+                    "hash": null,/*交易hash*/
                     "reason": "拒绝",/*拒绝原因*/
                     "status": 2,/*状态:0-待审核/1-通过/2-驳回*/
                     "handle_id": 1,
@@ -63,6 +64,7 @@
                     "amount": "100.0000",
                     "service_charge": "10.0000",
                     "address": "aaa",
+                    "hash": null,
                     "reason": null,
                     "status": 0,
                     "handle_id": 0,
@@ -118,11 +120,12 @@
 | :--------   | :-----  | :-----  | :----  |
 | status     | 1|  必填 | 状态:0-待审核/1-通过/2-驳回 |
 | reason     | 拒绝原因 |  选填 | 驳回时必传 |
+| hash     | 通过后的交易hash |  选填 | 通过时必传 |
 
 #### 成功响应示例
 ```json
 {
-	"msg": "创建成功",
+	"msg": "审核成功",
 	"code": 0,
 	"data": null
 }
