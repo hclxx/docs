@@ -94,3 +94,33 @@
   ]
 }
 ```
+
+## 申请 DSTT 提币
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/withdrawal`
+
+**参数**
+
+|   名称   |  类型  | 必须 |   说明   |
+| :------: | :----: | :--: | :------: |
+| pay_pass | string |  是  | 支付密码 |
+|   num    | string |  是  | 提币数量 |
+| address  | string |  是  | 提笔地址 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
