@@ -51,7 +51,14 @@
                 "status": 1,/*0-未开启/1-进行中/2-完成*/
                 "is_delete": 0,
                 "created_at": "2020-06-11 14:38:36",
-                "updated_at": "2020-06-11 14:38:36"
+                "updated_at": "2020-06-11 14:38:36",
+                "user": {/*中奖用户信息 进行中为null*/   
+                    "id": 1,
+                    "name": "yanfan1111",
+                    "avatar": null,
+                    "phone": "18781611111",
+                    "number": "34821989"
+                }
             }
         ],
         "first_page_url": "http://ht.test/admin/activities?page=1",
