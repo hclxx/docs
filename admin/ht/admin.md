@@ -29,7 +29,8 @@
 		"state": 0,
 		"created_at": "2020-05-15 08:39:34",
 		"updated_at": "2020-05-21 16:02:14",
-		"domain": "http://file.chainonedapp.com"    //  文件域名
+		"domain": "http://file.chainonedapp.com",    //  文件域名
+		"token": "123233" /*上传文件token*/
 	}
 }
 ```
