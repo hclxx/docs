@@ -526,3 +526,60 @@
   ]
 }
 ```
+
+## 新手奖励详情
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 |            说明            |
+| :----: | :----: | :--: | :------------------------: |
+|  type  | string |  是  | 类型:fans-粉丝/follow-关注 |
+| limit  |  int   |  是  |      条目数 默认为 20      |
+| offset |  int   |  是  |      条目数 默认为 0       |
+
+**路径**
+
+`/api/rookie/details`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "receive_number": 0 /*当前领取次数*/,
+    "receive_status": false /*今天领取状态*/,
+    "receive_rule": "rule" /*领取规则*/,
+    "receive_upper": 40 /*领取次数上限*/
+  }
+}
+```
+
+## 新手奖励领取
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/rookie/receive`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
