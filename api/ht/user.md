@@ -583,3 +583,130 @@
   "data": null
 }
 ```
+
+## 一元购详情
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/activities`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "title": "一元购" /*标题*/,
+    "num": 100 /*可购买总数*/,
+    "buy_num": 10 /*已购买数量*/,
+    "max_num": 10 /*购买上限: 0-无限制*/,
+    "price": 100 /*价格*/,
+    "currency": "hd" /*火豆*/,
+    /*奖励信息*/
+    "reward": {
+      "desc": "商品描述" /*商品描述*/,
+      "name": "iphone" /*商品名称*/,
+      "cover": "1.jpg" /*商品封面*/
+    },
+    "rule": "规则" /*规则*/,
+    "code": "SDSDS2" /*中奖码*/,
+    "user_id": 0 /*中奖用户ID*/,
+    "activity_code": {
+      /*用户购买记录*/
+      "id": 1,
+      "user_id": 3,
+      "activity_id": 1,
+      "buy_num": 10,
+      "codes": [
+        "HDZQZLZ",
+        "HDZQZYQ",
+        "HDZQZYA",
+        "HDZQZYP",
+        "HDZQZYI",
+        "HDZQZYJ",
+        "HDZQZYR",
+        "HDZQZYS",
+        "HDZQZYT",
+        "HDZQZZF"
+      ],
+      "created_at": "2020-06-10 14:25:55",
+      "updated_at": "2020-06-10 14:26:19"
+    }
+  }
+}
+```
+
+## 获取用户兑换码列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/activities/codes`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "activity_id": 1,
+      "buy_num": 10 /*购买的次数*/,
+      "codes": ["HDZQZLZ", "HDZQZYQ"] /*参与的兑换码*/,
+      "created_at": "2020-06-10 14:25:55",
+      "updated_at": "2020-06-10 14:26:19",
+      "activity": {
+        "id": 1,
+        "title": "一元购",
+        "code": "HDZQZLZ" /*中奖码*/,
+        "user_id": 0 /*中奖用户ID*/,
+        "status": 1 /*状态:1-进行中/2-已开奖*/
+      }
+    }
+  ]
+}
+```
+
+## 购买一元购
+
+**方式**
+
+`POST`
+
+**参数**
+
+| 名称 |  类型  | 必须 | 说明 |
+| :--: | :----: | :--: | :--: |
+| num  | string |  是  | 数量 |
+
+**路径**
+
+`/api/activities/:id/buy`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
