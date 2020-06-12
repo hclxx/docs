@@ -38,6 +38,7 @@
       "praise_num": 2 /*点赞数*/,
       "comment_num": 0 /*评论数*/,
       "download_num": 0 /*下载数*/,
+      "is_like": true /*是否点赞*/,
       "user": {
         "id": 2,
         "name": "张三" /*用户呢称*/,
