@@ -362,6 +362,7 @@
 | gender |  int   |  否  | 性别:0-未知/1-男/2-女 |
 |  name  | string |  否  |         呢称          |
 | avatar | string |  否  |         头像          |
+|  sgin  | string |  否  |       个性签名        |
 
 **路径**
 

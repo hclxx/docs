@@ -47,6 +47,8 @@
       "rule": "邀请说明",
       "power": 100
     },
+    "about": "关于火推",
+    "rule": "规章制度",
     "cdn_domain": "http://file.zytc360.cn"
   }
 }
