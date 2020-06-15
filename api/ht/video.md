@@ -289,13 +289,6 @@
 
 `/api/comments/{comment}`
 
-**参数**
-
-|   名称   |  类型  | 必须 |   说明   |
-| :------: | :----: | :--: | :------: |
-| video_id |  int   |  是  | 视频 ID  |
-| content  | string |  是  | 评论内容 |
-
 **响应**
 
 `Status code 200`
