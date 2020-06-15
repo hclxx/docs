@@ -502,6 +502,12 @@
 
 `POST`
 
+**参数**
+
+|   名称   |  类型  | 必须 |   说明   |
+| :------: | :----: | :--: | :------: |
+| pay_pass | string |  是  | 支付密码 |
+
 **路径**
 
 `/api/items/:itemId/videos/:videoId`
