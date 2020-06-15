@@ -111,7 +111,65 @@
 | :------: | :----: | :--: | :------: |
 | pay_pass | string |  是  | 支付密码 |
 |   num    | string |  是  | 提币数量 |
-| address  | string |  是  | 提笔地址 |
+| address  | string |  是  | 提币地址 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 闪兑 hd 兑 dstt
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/conversion/dstt`
+
+**参数**
+
+|   名称   |  类型  | 必须 |   说明   |
+| :------: | :----: | :--: | :------: |
+| pay_pass | string |  是  | 支付密码 |
+|   num    | string |  是  | HD 数量  |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 闪兑 dstt 兑 hd
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/conversion/hd`
+
+**参数**
+
+|   名称   |  类型  | 必须 |   说明    |
+| :------: | :----: | :--: | :-------: |
+| pay_pass | string |  是  | 支付密码  |
+|   num    | string |  是  | DSTT 数量 |
 
 **响应**
 
