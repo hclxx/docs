@@ -121,6 +121,32 @@
         "name": "张三",
         "avatar": null
       }
+    },
+    {
+      "id": 1,
+      "user_id": 3,
+      "content": "",
+      "type": "remind",
+      "target_id": 33,
+      "target_type": "wallet",
+      "action": "reward" /*打赏*/,
+      "sender_id": 2,
+      "sender_role": 0,
+      "is_read": 0,
+      "extra": {
+        "video_id": 1,
+        "reward_num": "100.0000" /*打赏金额*/,
+        "video_cover": "http://v29-dy.ixigua.com/e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403",
+        "reward_currency": "hd"
+      },
+      "created_at": "2020-06-11 16:28:50",
+      "updated_at": "2020-06-11 16:28:50",
+      /*打赏者*/
+      "sender": {
+        "id": 2,
+        "name": "张三",
+        "avatar": null
+      }
     }
   ]
 }
@@ -275,6 +301,36 @@
         },
         "created_at": "2020-06-12 10:41:34",
         "updated_at": "2020-06-12 10:41:34",
+        "sender": {
+          "id": 2,
+          "name": "张三",
+          "avatar": null
+        }
+      }
+    },
+    /*打赏*/
+    "reward": {
+      "unread": 2,
+      "newest": {
+        "id": 2,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 35,
+        "target_type": "wallet",
+        "action": "reward",
+        "sender_id": 2,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": {
+          "video_id": 1,
+          "reward_num": "100.0000" /*打赏金额*/,
+          "video_cover": "http://v29-dy.ixigua.com/e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403",
+          "reward_currency": "hd" /*打赏代币*/
+        },
+        "created_at": "2020-06-11 16:29:47",
+        "updated_at": "2020-06-11 16:29:47",
+        /*打赏人*/
         "sender": {
           "id": 2,
           "name": "张三",
