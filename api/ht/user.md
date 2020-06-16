@@ -206,26 +206,17 @@
 {
   "msg": "ok",
   "code": 0,
-  "data": {
-    "id": 3,
-    "name": "0CGLAS" /*用户呢称*/,
-    "avatar": "nnnn.ong" /*头像*/,
-    "phone": "183****4309" /*手机号*/,
-    "gender": 0 /*性别：0-未知/1-男/2-女*/,
-    "code": "0CGLAS" /*邀请码*/,
-    "number": "49123453" /*火推号码*/,
-    "sign": "个性签名" /*签名*/,
-    "fans_num": 0 /*粉丝数量*/,
-    "follow_num": 0 /*关注数量*/,
-    "praise_num": 0 /*获赞数量*/,
-    "reward_num": 0 /*打赏数量*/,
-    "invite_num": 0 /*邀请数量*/,
-    "is_follow": true /*是否关注*/,
-    "state": 0,
-    "created_at": "2020-06-11 10:13:26",
-    "updated_at": "2020-06-11 10:13:26",
-    "inviter": null
-  }
+  "data": [
+    {
+      "id": 3,
+      "name": "墨迹",
+      "avatar": "20200616154645294.jpeg",
+      "number": "38136791",
+      "gender": 1,
+      "is_follow": true,
+      "is_fans": false
+    }
+  ]
 }
 ```
 
