@@ -119,9 +119,20 @@
 
 ```json
 {
-  "msg": "ok",
+  "msg": "申请成功",
   "code": 0,
-  "data": null
+  "data": {
+    "user_id": 3,
+    "amount": 200,
+    "service_charge": 0,
+    "address": "asdasdsad",
+    "reason": null,
+    "status": 0,
+    "handler_id": 0,
+    "updated_at": "2020-06-17 16:11:36",
+    "created_at": "2020-06-17 16:11:36",
+    "id": 19
+  }
 }
 ```
 
