@@ -49,6 +49,9 @@
     },
     "about": "关于火推",
     "rule": "规章制度",
+    "register": "注册协议",
+    "user": "用户协议",
+    "hd:num": ["100", "200", "500", "1000"],
     "cdn_domain": "http://file.zytc360.cn"
   }
 }
