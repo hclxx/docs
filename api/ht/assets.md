@@ -73,9 +73,7 @@
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
       "type": "reward" /*打赏-reward,获赏-get:reward,闪兑-ht:to:dstt,新手奖励-rookie:reward,提币-withdrawal，参与活动-activity,一级级邀请-one:invite,二级级邀请-two:invite*/,
       "currency": "sccb" /*cny-现金，scc-sccb*/,
-      "extend": {
-        "spu_pic": "你要的商品图片.png" /*商品图*/
-      },
+      "extend": null,
       "created_at": "2020-05-03 14:46:49",
       "updated_at": "2020-05-03 14:46:49",
       /*目标用户信息*/
