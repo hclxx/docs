@@ -534,6 +534,7 @@
       "id": 2,
       "name": "张三",
       "avatar": null,
+      "number": "12312321",
       "updated_at": "2020-06-04 17:23:33",
       "is_fans": false /*她/他是否是我粉丝*/,
       "is_follow": true /*是否关注他/她*/
