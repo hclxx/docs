@@ -263,3 +263,56 @@
   }
 }
 ```
+
+
+## 获取agm ustd兑换配置
+
+`admin/config/conversion`
+
+**请求方式**
+
+`GET`
+
+**SUCCESS 返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 24,
+        "key": "conversion",
+        "value": {
+            "agm_to_usdt": "100", /*agm兑换usdt配置*/
+            "usdt_to_agm": "0.2" /*usdt兑换agm配置*/
+        },
+        "created_at": "2020-06-22 05:33:28",
+        "updated_at": "2020-06-22 05:33:45"
+    }
+}
+```
+
+## 修改agm ustd兑换配置
+
+`admin/config/conversion`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|    名称     |  类型  | 默认 | 必须 |                      说明                      |
+| :---------: | :----: | :--: | :--: | :--------------------------------------------: |
+|     agm_to_usdt     | string |  无  |  是  |              agm兑换usdt配置                   |
+|    usdt_to_agm     | string |  无  |  是  |                   usdt兑换agm配置                   |
+
+**SUCCESS 返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
