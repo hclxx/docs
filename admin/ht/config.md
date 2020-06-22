@@ -414,8 +414,8 @@
         "value": {
             "min": "10",/*最低闪兑数量*/
             "tips": "这是温馨提示",/*温馨提示*/
-            "dstt:to:hd": "10",/*dstt转换火豆比例*/
-            "hd:to:dstt": "0.1",/*火豆转换dstt比例*/
+            "dstt_to_hd": "10",/*dstt转换火豆比例*/
+            "hd_to_dstt": "0.1",/*火豆转换dstt比例*/
         },
         "created_at": null,
         "updated_at": null
