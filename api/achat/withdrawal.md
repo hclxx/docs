@@ -338,3 +338,32 @@
   }
 }
 ```
+
+## 获取 USDT 充值信息
+
+`api/xuansuan/usdt/recharge/info`
+
+**请求方法**
+
+`GET`
+
+**account_info**
+
+```json
+{
+  "to_address": "123455666"
+}
+```
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "explain": "USDT充值说明",
+    "address": "12312321"
+  }
+}
+```
