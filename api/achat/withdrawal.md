@@ -171,25 +171,19 @@
   "msg": "申请成功",
   "code": 0,
   "data": {
-    "status": 0 /*状态:0-等待 1-成功 2-失败*/,
-    "reason": null /*驳回原因*/,
-    "handler_id": 0 /*审核人id*/,
-    "amount": 0,
-    "user_id": 1 /*用户id*/,
-    "coin": "amg" /*提币类型*/,
-    "ratio": 0,
-    "num": "10" /*提币数量*/,
-    "account_type": "exchange" /*账户类型：exchange-交易所*/,
-    "account_info": {
-      /*账户信息*/
-      "to_address": "123456" /*提现到的地址*/,
-      "fee": "11" /*手续费*/,
-      "type": "reward" /*提现类型：reward-奖励提现 unlock-解仓提现*/,
-      "from_address": "123446" /*提现出的地址*/
-    },
-    "updated_at": "2020-04-15 13:57:29",
-    "created_at": "2020-04-15 13:57:29",
-    "id": 3
+    "id": 21,
+    "user_id": 198,
+    "sc_num": "1000.00000000" /*总量*/,
+    "jc_num": 66.66,
+    "service_charge": "0.00000000",
+    "js_time": "2020-06-23 11:29:08",
+    "withdrawal_address": null,
+    "reward_time": "2020-06-23 11:28:50",
+    "progress": 1 /*当前进度:1/15*/,
+    "status": 1,
+    "num": "66.66" /*本次提现金额*/,
+    "created_at": "2020-06-23 11:28:50",
+    "updated_at": "2020-06-23 11:47:20" /*提现时间*/
   }
 }
 ```
