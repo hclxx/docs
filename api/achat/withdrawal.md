@@ -347,14 +347,6 @@
 
 `GET`
 
-**account_info**
-
-```json
-{
-  "to_address": "123455666"
-}
-```
-
 **返回体**
 
 ```json
