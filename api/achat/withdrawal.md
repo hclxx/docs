@@ -291,7 +291,7 @@
 }
 ```
 
-## 兑换
+## USDT 提现
 
 `api/xuansuan/withdrawal/usdt`
 
