@@ -236,3 +236,111 @@
   }
 }
 ```
+
+## 获取资产
+
+`api/xuansuan/balance`
+
+**请求方法**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "user_id": 1,
+    "reward_balance": "10090.00000000" /*AGM 余额*/,
+    "usdt_balance": "10100.00000000" /*USDT 余额*/,
+    "reward_income": "0.00000000",
+    "total_balance": "9990.00000000",
+    "address": "12312321" /*提币地址*/,
+    "created_at": null,
+    "updated_at": "2020-06-22 14:50:08"
+  }
+}
+```
+
+## 兑换
+
+`api/xuansuan/exchange`
+
+**请求方法**
+
+`POST`
+
+**参数**
+
+|     名称     |  类型  | 必须 |                                说明                                 |
+| :----------: | :----: | :--: | :-----------------------------------------------------------------: |
+| pay_password | string |  是  |                              支付密码                               |
+|     type     | string |  是  |          兑换类型:agm-(usdt 兑换 agm)/usdt-(agm 兑换 usdt)          |
+|     num      |  int   |  是  | 兑换数量，如 type 为 agm，num 为需兑换的 usdt 数量，反之为 agm 数量 |
+
+**返回体**
+
+```json
+{
+  "msg": "兑换成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 兑换
+
+`api/xuansuan/withdrawal/usdt`
+
+**请求方法**
+
+`POST`
+
+**参数**
+
+|     名称     |  类型  | 必须 |   说明   |
+| :----------: | :----: | :--: | :------: |
+|     num      | number |  是  | 提现数量 |
+|   pay_pass   | string |  是  | 支付密码 |
+| account_info | object |  是  | 提现地址 |
+
+**account_info**
+
+```json
+{
+  "to_address": "123455666"
+}
+```
+
+**返回体**
+
+```json
+{
+  "msg": "申请成功",
+  "code": 0,
+  "data": {
+    "status": 0 /*状态:0-等待 1-成功 2-失败*/,
+    "reason": null /*驳回原因*/,
+    "handler_id": 0 /*审核人id*/,
+    "amount": 0,
+    "user_id": 1 /*用户id*/,
+    "coin": "usdt" /*提币类型*/,
+    "ratio": 0,
+    "num": "10" /*提币数量*/,
+    "account_type": "exchange" /*账户类型：exchange-交易所*/,
+    "account_info": {
+      /*账户信息*/
+      "to_address": "123456" /*提现到的地址*/,
+      "fee": "11" /*手续费*/,
+      "type": "usdt" /*提现类型：reward-奖励提现 unlock-解仓提现 usdt-提现*/,
+      "from_address": "123446" /*提现出的地址*/
+    },
+    "updated_at": "2020-04-15 13:57:29",
+    "created_at": "2020-04-15 13:57:29",
+    "id": 3
+  }
+}
+```
