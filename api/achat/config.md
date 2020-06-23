@@ -43,7 +43,11 @@
       "user_daily_limit": "10000"
     },
     "bind_explain": "asdsadsadasd" /*绑定说明*/,
-    "xs_close_status": false /*旋算应用是否开启:true-开启 false-关闭*/
+    "xs_close_status": false /*旋算应用是否开启:true-开启 false-关闭*/,
+    "conversion": {/*炫算 agm usdt兑换配置*/
+        "agm_to_usdt": "10",
+        "usdt_to_agm": "0.1"
+      }
   }
 }
 ```
