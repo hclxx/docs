@@ -225,6 +225,7 @@
 | :----: | :----: | :--: | :--------------------------------------------------------------------------------------------: |
 | limit  |  int   |  是  |                                        条目数量 默认 20                                        |
 | offset |  int   |  是  |                                         偏移量 默认 0                                          |
+| offset | action |  否  |                                收支类型:income-收入/expend-支出                                |
 |  type  | string |  是  | lockcabin-锁仓 reward-奖励 unlockcabin-解仓 withdrawal-提现,usdt-usdt 流水 all-全部， 默认全部 |
 
 **返回体**
