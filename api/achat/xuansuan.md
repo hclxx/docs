@@ -242,7 +242,7 @@
       "target_id": 0,
       "target_type": "unlock:cabin",
       "amount": "300" /*金额*/,
-      "type": "unlock:cabin" /*类型: withdrawal-提现 usdt:recharge-usdt充值/usdt:withdrawal-usdt提现/usdt:to:agm:exepnd-兑换卖出/usdt:to:agm:income-兑换买入*/,
+      "type": "unlock:cabin" /*类型: withdrawal-提现 usdt:recharge-usdt充值/usdt:withdrawal-usdt提现/usdt:to:agm:exepnd-兑换卖出/agm:to:usdt:income-兑换买入*/,
       "extend": null,
       "status": 0 /*状态:0-待处理1-成功2-失败*/,
       "action": 1 /*动作:1-收入2-支出*/,
