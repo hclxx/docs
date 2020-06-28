@@ -474,7 +474,8 @@ function getHtAppSider(title, introduction) {
                 "msg",
                 "version",
                 "video",
-                "like"
+                "like",
+                "ad"
             ]
         }
     ];
@@ -500,7 +501,8 @@ function getHtAdminSider(title, introduction) {
                 "video",
                 "topic",
                 "reward-item",
-                "withdrawal"
+                "withdrawal",
+                "ad"
             ]
         }
     ];
