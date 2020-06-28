@@ -36,6 +36,8 @@
       "intro": "这是动态" /*动态描述*/,
       "url": "xxxx.mp4" /*视频路径*/,
       "cover": "xxxx.png" /*视频封面*/,
+      "width": "1080" /*视频宽度*/,
+      "height": "1080" /*视频高度*/,
       "topics": "哈哈,嘿嘿" /*视频话题*/,
       "reward_num": 0 /*打赏数*/,
       "praise_num": 2 /*点赞数*/,
@@ -70,6 +72,8 @@
 | :----: | :----: | :--: | :--------------------: |
 |  url   | string |  是  |          地址          |
 | cover  | string |  是  |          封面          |
+| width  | string |  是  |          视频宽度          |
+| height  | string |  是  |          视频高度          |
 | topics | string |  否  | 话题,多个使用“,”号分割 |
 | intro  | string |  是  |          描述          |
 
