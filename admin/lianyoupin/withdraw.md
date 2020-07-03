@@ -297,6 +297,7 @@
 | username | string |  无  |  否  |            用户呢称检索             |
 |  phone   | string |  无  |  否  |             手机称检索              |
 |   page   |  int   |  无  |  是  |                页码                 |
+|   type   | string |  35  |  否  |        类型:35-提现/34-收款         |
 
 **返回体**
 
