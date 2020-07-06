@@ -49,6 +49,8 @@
                 "reward_num": 0,/*获赏数*/
                 "invite_num": 0,/*邀请数*/
                 "state": 0,/*状态:0-正常/1-禁用*/
+                "withdraw_address":"0xfjsdklfgjdlk",/*提现地址*/
+                "withdraw_address_qr":"aaa", /*提现二维码*/
                 "created_at": "2020-06-11 11:49:48",
                 "updated_at": "2020-06-11 11:49:48"
             }
@@ -94,6 +96,8 @@
 | password_confirmation     | 111111 |  必填 | 确认密码 |
 | sign     | 个性签名 |  选填 | 个性签名 |
 | gender     | 0 |  必填 | 用户性别:0-未知 1-男 2-女 |
+| withdraw_address     | 0xfddfjksd |  选填 | 提现地址 |
+| withdraw_address_qr     | 111 |  选填 | 提现二维码 |
 
 #### 成功响应示例
 ```json
@@ -130,6 +134,8 @@
 | sign     | 个性签名 |  选填 | 个性签名 |
 | gender     | 0 |  选填 | 用户性别:0-未知 1-男 2-女 |
 | state     | 0 |  选填 | 状态:0-正常/1-禁用 |
+| withdraw_address     | 0xfddfjksd |  选填 | 提现地址 |
+| withdraw_address_qr     | 111 |  选填 | 提现二维码 |
 
 #### 成功响应示例
 ```json
