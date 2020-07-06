@@ -129,6 +129,8 @@
     "reward_num": 0 /*打赏数量*/,
     "invite_num": 0 /*邀请数量*/,
     "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
+    "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
+    "withdraw_address": "qr.png" /*提币二维码*/,
     "state": 0,
     "created_at": "2020-06-11 10:13:26",
     "updated_at": "2020-06-11 10:13:26",
@@ -174,6 +176,8 @@
     "reward_num": 0 /*打赏数量*/,
     "invite_num": 0 /*邀请数量*/,
     "is_follow": true /*是否关注*/,
+    "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
+    "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
     "state": 0,
     "created_at": "2020-06-11 10:13:26",
     "updated_at": "2020-06-11 10:13:26",
@@ -732,5 +736,55 @@
   "msg": "ok",
   "code": 0,
   "data": null
+}
+```
+
+## 绑定提币地址
+
+**方式**
+
+`PATCH`
+
+**参数**
+
+|    名称     |  类型  | 必须 |      说明      |
+| :---------: | :----: | :--: | :------------: |
+|  adddress   | string |  是  |    提币地址    |
+| adddress_qr | string |  是  | 提币地址二维码 |
+
+**路径**
+
+`/api/user/withdraw-address`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 3,
+    "name": "0CGLAS" /*用户呢称*/,
+    "avatar": "nnnn.ong" /*头像*/,
+    "phone": "183****4309" /*手机号*/,
+    "gender": 0 /*性别：0-未知/1-男/2-女*/,
+    "code": "0CGLAS" /*邀请码*/,
+    "number": "49123453" /*火推号码*/,
+    "sign": "个性签名" /*签名*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
+    "invite_num": 0 /*邀请数量*/,
+    "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
+    "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
+    "withdraw_address": "qr.png" /*提币二维码*/,
+    "state": 0,
+    "created_at": "2020-06-11 10:13:26",
+    "updated_at": "2020-06-11 10:13:26",
+    "inviter": null
+  }
 }
 ```
