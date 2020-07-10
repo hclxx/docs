@@ -240,3 +240,31 @@
   "data": null
 }
 ```
+
+## 获取市场提成方案
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/admin/configs/commission-scheme`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "scheme": "2"
+  }
+}
+```
