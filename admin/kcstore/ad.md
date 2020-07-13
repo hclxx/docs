@@ -87,50 +87,34 @@
 #### 成功响应示例
 ```json
 {
-	"msg": "ok",
-	"code": 0,
-	"data": [
-		{
-			"id": 1,
-			"name": "APP-广场广告",/*广告位名称*/
-			"alias": "app:plaza:top",/*广告位标识*/
-			"size": "702px * 320px",/*广告位尺寸*/
-			"created_at": "2020-05-18 16:25:08",
-			"updated_at": "2020-05-18 16:25:08"
-		},
-		{
-			"id": 2,
-			"name": "APP-推荐广告",
-			"alias": "app:recommend:top",
-			"size": "702px * 320px",
-			"created_at": "2020-05-18 16:25:08",
-			"updated_at": "2020-05-18 16:25:08"
-		},
-		{
-			"id": 3,
-			"name": "APP-广场任务广告",
-			"alias": "app:plaza:task:top",
-			"size": "702px * 320px",
-			"created_at": "2020-05-18 16:25:08",
-			"updated_at": "2020-05-18 16:25:08"
-		},
-		{
-			"id": 4,
-			"name": "APP-星球顶部广告",
-			"alias": "app:star:top",
-			"size": "702px * 320px",
-			"created_at": "2020-05-18 16:25:08",
-			"updated_at": "2020-05-18 16:25:08"
-		},
-		{
-			"id": 5,
-			"name": "APP-启动页广告",
-			"alias": "app:start",
-			"size": "702px * 320px",
-			"created_at": "2020-05-18 16:25:08",
-			"updated_at": "2020-05-18 16:25:08"
-		}
-	]
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "name": "APP-爆品广告",/*广告位名称*/
+            "alias": "app:hot",/*广告位标识*/
+            "size": "702px * 320px",/*广告位尺寸*/
+            "created_at": "2020-07-13 14:24:34",
+            "updated_at": "2020-07-13 14:24:34"
+        },
+        {
+            "id": 2,
+            "name": "APP-体验店广告",
+            "alias": "app:experience",
+            "size": "702px * 320px",
+            "created_at": "2020-07-13 14:24:34",
+            "updated_at": "2020-07-13 14:24:34"
+        },
+        {
+            "id": 3,
+            "name": "APP-优选店广告",
+            "alias": "app:quality",
+            "size": "702px * 320px",
+            "created_at": "2020-07-13 14:24:34",
+            "updated_at": "2020-07-13 14:24:34"
+        }
+    ]
 }
 ```
 
