@@ -14,7 +14,7 @@
 
 |   名称   |  类型  | 必须 |           说明           |
 | :------: | :----: | :--: | :----------------------: |
-| currency | string |  是  | 资产类型: cny-现金 cl-cl |
+| currency | string |  是  | 资产类型: cny-现金 my-my |
 
 **响应**
 
@@ -31,7 +31,7 @@
     "income": "0.0000" /*总收益*/,
     "expend": "2.0000" /*总支出*/,
     "wait": "0.0000" /*待反还*/,
-    "currency": "cl",
+    "currency": "my",
     "power": 3 /*能量值*/
   }
 }
@@ -51,7 +51,7 @@
 
 |   名称   |  类型  | 必须 |               说明                |
 | :------: | :----: | :--: | :-------------------------------: |
-| currency | string |  是  |     资产类型: cny-现金 cl-cl      |
+| currency | string |  是  |     资产类型: cny-现金 my-my      |
 |  action  | string |  否  | 收支动作: income-收入 expend-支出 |
 |  limit   |  int   |  是  |         条目数量 默认 20          |
 |  offset  |  int   |  是  |           偏移量 默认 0           |
@@ -76,7 +76,7 @@
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
       "type": "transfer:expend" /*类型:goods:deduct-订单商品抵扣/return:deduct-退还订单商品抵扣/sale:commission-销售提成/agent:reward-代理商培育奖励/cny:withdrawal-现金提现/dig:ore-挖矿/transfer:income-转账收益/transfer:expend-转账支出*/,
-      "currency": "cl" /*cny-现金/cl-矿石cl*/,
+      "currency": "my" /*cny-现金/my-矿石*/,
       "extend": null,
       "created_at": "2020-05-03 14:46:49",
       "updated_at": "2020-05-03 14:46:49",

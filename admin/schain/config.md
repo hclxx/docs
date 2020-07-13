@@ -12,20 +12,20 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 3,
-        "key": "invite",
-        "value": {
-            "mode": "1.  点击“复制邀请链接",/*邀请方式*/
-            "url": "https://tapi.igoods.io/share/quick/register/",/*邀请链接*/
-            "rule": "1.【矿力奖励】分享自己的专属二维码给好友",/*邀请规则说明*/
-            "power": "5",/*二级邀请奖励 */
-        },
-        "created_at": "2019-05-30 07:42:54",
-        "updated_at": "2019-05-30 07:46:03"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 3,
+    "key": "invite",
+    "value": {
+      "mode": "1.  点击“复制邀请链接" /*邀请方式*/,
+      "url": "https://tapi.igoods.io/share/quick/register/" /*邀请链接*/,
+      "rule": "1.【矿力奖励】分享自己的专属二维码给好友" /*邀请规则说明*/,
+      "power": "5" /*二级邀请奖励 */
+    },
+    "created_at": "2019-05-30 07:42:54",
+    "updated_at": "2019-05-30 07:46:03"
+  }
 }
 ```
 
@@ -39,20 +39,20 @@
 
 **请求参数**
 
-|   名称   |  类型  | 默认 | 必须 |                说明                 |
-| :------: | :----: | :--: | :--: | :---------------------------------: |
-|   url   | string |  无  |  是  |             邀请链接                   |
-|   rule  | string |  无  |  是  |             邀请规则说明               |
-|   power | string |  无  |  是  |             二级邀请奖励               |
-|   mode  | string |  无  |  是  |              邀请方式                  |
+| 名称  |  类型  | 默认 | 必须 |     说明     |
+| :---: | :----: | :--: | :--: | :----------: |
+|  url  | string |  无  |  是  |   邀请链接   |
+| rule  | string |  无  |  是  | 邀请规则说明 |
+| power | string |  无  |  是  | 二级邀请奖励 |
+| mode  | string |  无  |  是  |   邀请方式   |
 
 **SUCCESS 返回体**
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
@@ -68,22 +68,25 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "month": 1,/*时间*/
-            "price": 3,/*价格*/
-        },
-        {
-            "month": 3,
-            "price": 10
-        },
-        {
-            "month": 6,
-            "price": 20
-        }
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "month": 1 /*时间*/,
+      "price": 3 /*价格*/,
+      "my_price": 30 /*MY价格*/
+    },
+    {
+      "month": 3,
+      "price": 10,
+      "my_price": 30
+    },
+    {
+      "month": 6,
+      "price": 20,
+      "my_price": 30
+    }
+  ]
 }
 ```
 
@@ -97,18 +100,18 @@
 
 **请求参数**
 
-|   名称   |  类型  | 默认 | 必须 |                说明                 |
-| :------: | :----: | :--: | :--: | :---------------------------------: |
-|   money   | array |  无  |  是  |             一键收取价格配置            |
+| 名称  | 类型  | 默认 | 必须 |       说明       |
+| :---: | :---: | :--: | :--: | :--------------: |
+| money | array |  无  |  是  | 一键收取价格配置 |
 
 **money**
 
 ```json
 {
-  "money":[
-    {"month":1,"price":2},
-    {"month":2,"price":4},
-    {"month":3,"price":6}
+  "money": [
+    { "month": 1, "price": 2, "my_price": 20 },
+    { "month": 2, "price": 4, "my_price": 40 },
+    { "month": 3, "price": 6, "my_price": 60 }
   ]
 }
 ```
@@ -117,9 +120,9 @@
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
@@ -135,18 +138,19 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 9,
-        "key": "one:key:switch",
-        "value": {
-            "alipay": "on",/*支付宝开关 on-开 off-关*/
-            "wechat": "on",/*微信开关 on-开 off-关*/
-        },
-        "created_at": "2020-04-30 06:32:06",
-        "updated_at": "2020-04-30 06:32:06"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 9,
+    "key": "one:key:switch",
+    "value": {
+      "alipay": "on" /*支付宝开关 on-开 off-关*/,
+      "wechat": "on" /*微信开关 on-开 off-关*/,
+      "my": "on" /*MY开关 on-开 off-关*/
+    },
+    "created_at": "2020-04-30 06:32:06",
+    "updated_at": "2020-04-30 06:32:06"
+  }
 }
 ```
 
@@ -160,16 +164,15 @@
 
 **请求参数**
 
-|   名称   |  类型  | 默认 | 必须 |                说明                 |
-| :------: | :----: | :--: | :--: | :---------------------------------: |
-|   switch   | array |  无  |  是  |             一键收取支付开关配置            |
+|  名称  | 类型  | 默认 | 必须 |         说明         |
+| :----: | :---: | :--: | :--: | :------------------: |
+| switch | array |  无  |  是  | 一键收取支付开关配置 |
 
 **money**
 
 ```json
 {
-  "switch":{"alipay":"off","wechat":"off"}
-
+  "switch": { "alipay": "off", "wechat": "off", "my": "on" }
 }
 ```
 
@@ -177,9 +180,9 @@
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
@@ -195,19 +198,19 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 10,
-        "key": "cl",
-        "value": {
-            "float": 0.1,/*基数因子*/
-            "ratio": 0.2,/*浮动因子*/
-            "everyday_max": 1,/*挖矿奖励，每天最多上限*/
-        },
-        "created_at": "2020-04-30 06:32:06",
-        "updated_at": "2020-04-30 06:32:06"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 10,
+    "key": "cl",
+    "value": {
+      "float": 0.1 /*基数因子*/,
+      "ratio": 0.2 /*浮动因子*/,
+      "everyday_max": 1 /*挖矿奖励，每天最多上限*/
+    },
+    "created_at": "2020-04-30 06:32:06",
+    "updated_at": "2020-04-30 06:32:06"
+  }
 }
 ```
 
@@ -225,15 +228,15 @@
 | :----------: | :---: | :--: | :--: | :------------------------------: |
 |    ratio     | float |  无  |  是  | 基数因子(保留两位小数, 最大值 1) |
 |    float     | float |  无  |  是  | 浮动因子(保留两位小数, 最大值 1) |
-| everyday_max | float |  无  |  是  |    挖矿奖励，每天最多上限   |
+| everyday_max | float |  无  |  是  |      挖矿奖励，每天最多上限      |
 
 **返回体**
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
@@ -249,23 +252,23 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 13,
-        "key": "withdrawal",
-        "value": {
-            "instr": "提现说明",/*提现说明*/
-            "switch": "on",/*提现开关 on-开启 off-关闭*/
-            "user_min": "100",/*用户最低提现额度 单位(元)*/
-            "user_day_num": "1",/*用户提现次数日上限*/
-            "service_charge": "1",/*提现服务费（百分比）*/
-            "user_day_limit": "0",/*用户提现日上限 单位(元)*/
-            "platform_day_limit": "0",/*平台用户提现日上限额度 单位(元)*/
-        },
-        "created_at": "2020-05-02 06:53:54",
-        "updated_at": "2020-05-02 06:53:54"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 13,
+    "key": "withdrawal",
+    "value": {
+      "instr": "提现说明" /*提现说明*/,
+      "switch": "on" /*提现开关 on-开启 off-关闭*/,
+      "user_min": "100" /*用户最低提现额度 单位(元)*/,
+      "user_day_num": "1" /*用户提现次数日上限*/,
+      "service_charge": "1" /*提现服务费（百分比）*/,
+      "user_day_limit": "0" /*用户提现日上限 单位(元)*/,
+      "platform_day_limit": "0" /*平台用户提现日上限额度 单位(元)*/
+    },
+    "created_at": "2020-05-02 06:53:54",
+    "updated_at": "2020-05-02 06:53:54"
+  }
 }
 ```
 
@@ -279,28 +282,27 @@
 
 **请求参数**
 
-|     名称     | 类型  | 默认 | 必须 |               说明               |
-| :----------: | :---: | :--: | :--: | :------------------------------: |
-|    instr     | string |  无  |  是  | 提现说明 |
-|    switch     | string |  无  |  是  | 提现开关 on-开启 off-关闭 |
-| user_min | string |  无  |  是  |    用户最低提现额度 单位(元)   |
-| user_day_num | string |  无  |  是  |    用户提现次数日上限   |
-| service_charge | string |  无  |  是  |    提现服务费（百分比）   |
-| user_day_limit | string |  无  |  是  |    用户提现日上限 单位(元)  |
-| platform_day_limit | string |  无  |  是  |    平台用户提现日上限额度 单位(元)   |
-
+|        名称        |  类型  | 默认 | 必须 |              说明               |
+| :----------------: | :----: | :--: | :--: | :-----------------------------: |
+|       instr        | string |  无  |  是  |            提现说明             |
+|       switch       | string |  无  |  是  |    提现开关 on-开启 off-关闭    |
+|      user_min      | string |  无  |  是  |    用户最低提现额度 单位(元)    |
+|    user_day_num    | string |  无  |  是  |       用户提现次数日上限        |
+|   service_charge   | string |  无  |  是  |      提现服务费（百分比）       |
+|   user_day_limit   | string |  无  |  是  |     用户提现日上限 单位(元)     |
+| platform_day_limit | string |  无  |  是  | 平台用户提现日上限额度 单位(元) |
 
 **返回体**
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
-## 获取CL兑换RMB单价配置
+## 获取 CL 兑换 RMB 单价配置
 
 `admin/configs/cl/price`
 
@@ -312,19 +314,19 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 14,
-        "key": "cl:to:cny",
-        "value": "1",
-        "created_at": "2020-05-03 09:21:21",
-        "updated_at": "2020-05-03 09:22:05"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 14,
+    "key": "cl:to:cny",
+    "value": "1",
+    "created_at": "2020-05-03 09:21:21",
+    "updated_at": "2020-05-03 09:22:05"
+  }
 }
 ```
 
-## 修改CL兑换RMB单价配置
+## 修改 CL 兑换 RMB 单价配置
 
 `admin/configs/cl/price`
 
@@ -334,17 +336,17 @@
 
 **请求参数**
 
-|     名称     | 类型  | 默认 | 必须 |               说明               |
-| :----------: | :---: | :--: | :--: | :------------------------------: |
-|    price     | string |  无  |  是  | cl兑换cny价格 |
+| 名称  |  类型  | 默认 | 必须 |       说明       |
+| :---: | :----: | :--: | :--: | :--------------: |
+| price | string |  无  |  是  | cl 兑换 cny 价格 |
 
 **返回体**
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
 
@@ -360,20 +362,20 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "id": 15,
-        "key": "account:receivable",
-        "value": {
-            "bank": "中国工商银行11",
-            "code_desc": "这是附言码说明11",
-            "account_name": "陕西存链科技数据有限公司111",
-            "account_number": "8581"
-        },
-        "created_at": "2020-05-07 02:16:44",
-        "updated_at": "2020-05-07 02:30:53"
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 15,
+    "key": "account:receivable",
+    "value": {
+      "bank": "中国工商银行11",
+      "code_desc": "这是附言码说明11",
+      "account_name": "陕西存链科技数据有限公司111",
+      "account_number": "8581"
+    },
+    "created_at": "2020-05-07 02:16:44",
+    "updated_at": "2020-05-07 02:30:53"
+  }
 }
 ```
 
@@ -387,19 +389,19 @@
 
 **请求参数**
 
-|     名称     | 类型  | 默认 | 必须 |               说明               |
-| :----------: | :---: | :--: | :--: | :------------------------------: |
-|    account_name     | string |  无  |  是  | 开户名 |
-|    bank     | string |  无  |  是  | 开户行 |
-|    account_number     | string |  无  |  是  | 开户号 |
-|    code_desc     | string |  无  |  是  | 附言码说明 |
+|      名称      |  类型  | 默认 | 必须 |    说明    |
+| :------------: | :----: | :--: | :--: | :--------: |
+|  account_name  | string |  无  |  是  |   开户名   |
+|      bank      | string |  无  |  是  |   开户行   |
+| account_number | string |  无  |  是  |   开户号   |
+|   code_desc    | string |  无  |  是  | 附言码说明 |
 
 **返回体**
 
 ```json
 {
-    "msg": "修改成功",
-    "code": 0,
-    "data": null
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
 }
 ```
