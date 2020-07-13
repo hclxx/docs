@@ -327,7 +327,8 @@ function getSchainAppSider(title, introduction) {
         "msg",
         "ore",
         "power",
-        "version"
+        "version",
+        "news"
       ]
     }
   ];
