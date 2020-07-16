@@ -153,7 +153,7 @@ none
 
 ## 获取资讯评论列表
 
-`api/commnets`
+`api/comments`
 
 **请求方法**
 
@@ -201,7 +201,7 @@ none
 
 ## 资讯发布评论
 
-`api/commnets`
+`api/comments`
 
 **请求方法**
 
