@@ -151,7 +151,55 @@ none
 }
 ```
 
-## 资讯评论
+## 获取资讯评论列表
+
+`api/commnets`
+
+**请求方法**
+
+`GET`
+
+**请求参数**
+
+|  名称   | 类型 | 默认 | 必须 |   说明   |
+| :-----: | :--: | :--: | :--: | :------: |
+| news_id | int  |  无  |  是  | 咨询 ID  |
+|  limit  | int  |  20  |  是  | 条目数量 |
+| offset  | int  |  0   |  是  | 偏移数量 |
+
+**SUCCESS 状态码**
+
+`201`
+
+**SUCCESS 返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 4,
+      "user_id": 1,
+      "news_id": 1,
+      "content": "1111",
+      "like_num": 0,
+      "is_delete": 0,
+      "created_at": "2020-07-13 10:49:59",
+      "updated_at": "2020-07-13 10:49:59",
+      "is_like": false,
+      "user": {
+        "id": 1,
+        "name": "",
+        "avatar": null,
+        "gender": 0
+      }
+    }
+  ]
+}
+```
+
+## 资讯发布评论
 
 `api/commnets`
 
@@ -195,7 +243,7 @@ none
 }
 ```
 
-## 删除评论
+## 删除咨询评论
 
 `api/comments/{id}`
 
