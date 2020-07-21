@@ -525,3 +525,37 @@ order.status == 2
   }
 }
 ```
+
+## 去支付
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/orders/{id}/pay`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "",
+  "code": 0,
+  "data": {
+    /*支付宝订单信息*/
+    "alipay_result": "123123213123",
+    /*微信订单信息*/
+    "wxpay_result": {
+      "app_id": ""
+    },
+    "order_id": 1
+  }
+}
+```
