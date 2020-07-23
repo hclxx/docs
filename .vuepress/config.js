@@ -393,7 +393,8 @@ function getKcStoreAppSider(title, introduction) {
         "ore",
         "power",
         "version",
-        "ad"
+        "ad",
+        "bind-apps"
       ]
     }
   ];
