@@ -750,3 +750,65 @@
 	"data": null
 }
 ```
+
+## 实名认证配置
+
+#### 接口URL
+> {{url}}/configs/certification
+
+#### 请求方式
+> GET
+
+#### 请求Header参数
+
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+| Authorization     | {{token}} |  必填 | token |
+
+
+#### 成功响应示例
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 12,
+        "key": "certification",
+        "value": {
+            "price": "0.01",/*价格*/
+            "intro": "这是说明",/*说明*/ 
+        },
+        "created_at": null,
+        "updated_at": null
+    }
+}
+```
+
+## 修改实名认证配置
+
+#### 接口URL
+> {{url}}/configs/certification
+
+#### 请求方式
+> PUT
+
+#### 请求Header参数
+
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+| Authorization     | {{token}} |  必填 | token |
+
+#### 请求Body参数
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+| price     | 0.01 |  必填 |价格(string) |
+| intro     | 这是说明 |  必填 | 说明 |
+
+#### 成功响应示例
+```json
+{
+	"msg": "修改成功",
+	"code": 0,
+	"data": null
+}
+```

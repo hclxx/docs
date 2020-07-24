@@ -52,7 +52,11 @@
     "register": "注册协议",
     "user": "用户协议",
     "hd:num": ["100", "200", "500", "1000"],
-    "cdn_domain": "http://file.zytc360.cn"
+    "cdn_domain": "http://file.zytc360.cn",
+    "certification": {
+      "price": "0.01",
+      "intro": "这是实名认证说明"
+    }
   }
 }
 ```
