@@ -816,10 +816,10 @@ none
   "data": {
     /*新手奖励*/
     "novice": {
-      "valid_num": "0" /*无效次数*/,
-      "receive_num": "0" /*领取次数*/,
+      "valid_num": 0 /*无效次数*/,
+      "receive_num": 0 /*领取次数*/,
       "amount": "10.00" /*单次领取金额*/,
-      "total_num": "40" /*总次数*/,
+      "total_num": 40 /*总次数*/,
       "status": 0 /*0-领取/1-已领取/2-已完成*/
     },
     /*推荐奖励*/
@@ -861,6 +861,126 @@ none
   "code": 0,
   "data": {
     "num": "100" /*领取金额*/
+  }
+}
+```
+
+## 实名认证支付
+
+**方式**
+
+`POST`
+
+**参数**
+
+|  名称  |  类型  | 必须 |    说明    |
+| :----: | :----: | :--: | :--------: |
+|  name  | string |  是  | 身份证姓名 |
+| number | string |  是  |  身份证号  |
+
+**路径**
+
+`/api/pay-orders`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "result": "zxcascasd" /*支付宝支付信息*/,
+    "order_id": 8 /*订单ID*/
+  }
+}
+```
+
+## 检查实名认证支付状态
+
+**方式**
+
+`GET`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/pay-orders/{id}/check`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "status": 1 /*1-支付成功，其他支付未成功*/
+  }
+}
+```
+
+## 获取实名认证 token
+
+**方式**
+
+`POST`
+
+**参数**
+
+|   名称   | 类型 | 必须 |  说明   |
+| :------: | :--: | :--: | :-----: |
+| order_id | int  |  是  | 订单 ID |
+
+**路径**
+
+`/api/describe-verify-token`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "verify_token": "xxxadsadasd" /*认证 token*/
+  }
+}
+```
+
+## 检查实名认证结果
+
+**方式**
+
+`POST`
+
+**参数**
+
+|   名称   | 类型 | 必须 |  说明   |
+| :------: | :--: | :--: | :-----: |
+| order_id | int  |  是  | 订单 ID |
+
+**路径**
+
+`/api/describe-verify-result`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "ok": true /*是否成功: false-失败/true-成功*/
   }
 }
 ```
