@@ -933,9 +933,11 @@ none
 
 **参数**
 
-|   名称   | 类型 | 必须 |  说明   |
-| :------: | :--: | :--: | :-----: |
-| order_id | int  |  是  | 订单 ID |
+|   名称   |  类型  | 必须 |  说明   |
+| :------: | :----: | :--: | :-----: |
+| order_id |  int   |  是  | 订单 ID |
+|   name   | string |  是  |  姓名   |
+|  number  | string |  是  | 证件号  |
 
 **路径**
 
@@ -1008,9 +1010,9 @@ none
   "msg": "ok",
   "code": 0,
   "data": {
-    "order_id": 1 /*订单ID*/,
-    "name": "12312" /*姓名*/,
-    "number": "asdasdsad" /*证件号*/
+    "order_id": 1 /*订单ID，为0代表未支付*/,
+    "name": "12312" /*姓名, 未支付为 null*/,
+    "number": "asdasdsad" /*证件号, 未支付为 null*/
   }
 }
 ```
