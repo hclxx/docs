@@ -984,3 +984,33 @@ none
   }
 }
 ```
+
+## 检查实名订单号
+
+**方式**
+
+`GET`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/cer-order-id`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "order_id": 1 /*订单ID*/,
+    "name": "12312" /*姓名*/,
+    "number": "asdasdsad" /*证件号*/
+  }
+}
+```
