@@ -51,8 +51,15 @@
                 "state": 0,/*状态:0-正常/1-禁用*/
                 "withdraw_address":"0xfjsdklfgjdlk",/*提现地址*/
                 "withdraw_address_qr":"aaa", /*提现二维码*/
+                "is_delete": 0,
+                "role_id": 1,
                 "created_at": "2020-06-11 11:49:48",
-                "updated_at": "2020-06-11 11:49:48"
+                "updated_at": "2020-06-11 11:49:48",
+                "role": {/*角色信息*/
+                    "id": 1,
+                    "name": "游客11",/*名称*/
+                    "icon": "123.jpg"/*图标*/
+                }
             }
         ],
         "first_page_url": "http://ht.test/admin/users?page=1",
@@ -98,6 +105,7 @@
 | gender     | 0 |  必填 | 用户性别:0-未知 1-男 2-女 |
 | withdraw_address     | 0xfddfjksd |  选填 | 提现地址 |
 | withdraw_address_qr     | 111 |  选填 | 提现二维码 |
+| role_id     | 1 |  必填 | 用户身份id |
 
 #### 成功响应示例
 ```json
@@ -136,11 +144,41 @@
 | state     | 0 |  选填 | 状态:0-正常/1-禁用 |
 | withdraw_address     | 0xfddfjksd |  选填 | 提现地址 |
 | withdraw_address_qr     | 111 |  选填 | 提现二维码 |
+| role_id     | 1 |  选填 | 用户身份id |
 
 #### 成功响应示例
 ```json
 {
 	"msg": "修改成功",
+	"code": 0,
+	"data": null
+}
+```
+
+## 删除用户
+
+#### 接口URL
+> {{url}}/users/2
+
+#### 请求方式
+> DELETE
+
+#### 请求Header参数
+
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+| Authorization     | {{token}} |  必填 | token |
+
+#### 请求Body参数
+
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+
+
+#### 成功响应示例
+```json
+{
+	"msg": "删除成功",
 	"code": 0,
 	"data": null
 }
