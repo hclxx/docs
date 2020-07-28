@@ -12,14 +12,14 @@
 
 #### 请求 Query 参数
 
-| 参数  | 示例值      | 是否必填 | 参数描述               |
-| :---- | :---------- | :------- | :--------------------- |
-| name  | aa          | 选填     | 用户昵称(支持模糊查询) |
-| phone | 18781601111 | 选填     | 用户手机号             |
-| num   | 18781601111 | 选填     | 火推号查询             |
-| role_id | 1 | 选填 | 用户角色id |
-| page  | 1           | 必填     | 当前页数               |
-| limit | 20          | 必填     | 每页条数               |
+| 参数    | 示例值      | 是否必填 | 参数描述               |
+| :------ | :---------- | :------- | :--------------------- |
+| name    | aa          | 选填     | 用户昵称(支持模糊查询) |
+| phone   | 18781601111 | 选填     | 用户手机号             |
+| num     | 18781601111 | 选填     | 火推号查询             |
+| role_id | 1           | 选填     | 用户角色 id            |
+| page    | 1           | 必填     | 当前页数               |
+| limit   | 20          | 必填     | 每页条数               |
 
 #### 请求 Header 参数
 
@@ -499,13 +499,13 @@
 }
 ```
 
-## 每日新增产生火豆数量
+## 每日数据统计
 
 #### 接口 URL
 
-> {{url}}/admin/reward-counts
+> {{url}}/admin/stats
 
-#### 获取奖励统计
+#### 请求方式
 
 > GET
 
@@ -514,6 +514,8 @@
 | 参数          | 示例值    | 是否必填 | 参数描述 |
 | :------------ | :-------- | :------- | :------- |
 | Authorization | {{token}} | 必填     | token    |
+| page          | 1         | 必填     | 分页     |
+| limit         | 1         | 必填     | 条目数   |
 
 #### 成功响应示例
 
@@ -522,9 +524,36 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "novice": 0 /*今日新手奖励产生火豆数量*/,
-    "invite": 0 /*今日推荐奖励产生火豆数量*/,
-    "total": 0 /*今日产生火豆总数 = 今日新手奖励产生火豆数量+ 今日推荐奖励产生火豆数量*/
+    "data": {
+      "current_page": 1,
+      "data": [
+        {
+          "id": 1,
+          "invite_reward_num": "0" /*今日推荐奖励数值*/,
+          "novice_reward_num": "0" /*今日新手奖励数值*/,
+          "exchange_dstt_num": "0" /*今日兑换DSTT总额统计*/,
+          "exchange_hd_num": "0" /*今日兑换HD总额统计*/,
+          "exchange_hd_dstt_num": "0" /*今日兑换HD DSTT花费*/,
+          "exchange_dstt_hd_num": "0" /*今日兑换DSTT HD花费*/,
+          "date": "2020-07-28" /*今日兑换DSTT HD花费*/,
+          "created_at": "2020-07-28 17:14:17",
+          "updated_at": "2020-07-28 17:14:17"
+        }
+      ],
+      "first_page_url": "http://htapp.test/admin/stats?page=1",
+      "from": 1,
+      "last_page": 1,
+      "last_page_url": "http://htapp.test/admin/stats?page=1",
+      "next_page_url": null,
+      "path": "http://htapp.test/admin/stats",
+      "per_page": 10,
+      "prev_page_url": null,
+      "to": 1,
+      "total": 1
+    },
+    "service": {
+      "hd_service_fee": "529991" /*火豆总手续费*/
+    }
   }
 }
 ```
