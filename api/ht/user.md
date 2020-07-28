@@ -134,12 +134,13 @@
     "state": 0,
     "created_at": "2020-06-11 10:13:26",
     "updated_at": "2020-06-11 10:13:26",
-    "team_num": 1,/*团队邀请数*/
+    "team_num": 1 /*团队邀请数*/,
     "inviter": null,
-    "role": {/*用户角色信息*/
-        "id": 1,
-        "name": "游客",/*名称*/
-        "icon": "123.jpg"/*图标*/
+    "role": {
+      /*用户角色信息*/
+      "id": 1,
+      "name": "游客" /*名称*/,
+      "icon": "123.jpg" /*图标*/
     }
   }
 }
@@ -1046,6 +1047,65 @@ none
     "order_id": 1 /*订单ID，为0代表未支付*/,
     "name": "12312" /*姓名, 未支付为 null*/,
     "number": "asdasdsad" /*证件号, 未支付为 null*/
+  }
+}
+```
+
+## 每日数据统计
+
+#### 接口 URL
+
+> {{url}}/admin/stats
+
+#### 请求方式
+
+> GET
+
+#### 请求 Header 参数
+
+| 参数          | 示例值    | 是否必填 | 参数描述 |
+| :------------ | :-------- | :------- | :------- |
+| Authorization | {{token}} | 必填     | token    |
+| page          | 1         | 必填     | 分页     |
+| limit         | 1         | 必填     | 条目数   |
+
+#### 成功响应示例
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "data": {
+      "current_page": 1,
+      "data": [
+        {
+          "id": 1,
+          "invite_reward_num": "0" /*今日推荐奖励数值*/,
+          "novice_reward_num": "0" /*今日新手奖励数值*/,
+          "exchange_dstt_num": "0" /*今日兑换DSTT总额统计*/,
+          "exchange_hd_num": "0" /*今日兑换HD总额统计*/,
+          "exchange_hd_dstt_num": "0" /*今日兑换HD DSTT花费*/,
+          "exchange_dstt_hd_num": "0" /*今日兑换DSTT HD花费*/,
+          "date": "2020-07-28" /*今日兑换DSTT HD花费*/,
+          "created_at": "2020-07-28 17:14:17",
+          "updated_at": "2020-07-28 17:14:17"
+        }
+      ],
+      "first_page_url": "http://htapp.test/admin/stats?page=1",
+      "from": 1,
+      "last_page": 1,
+      "last_page_url": "http://htapp.test/admin/stats?page=1",
+      "next_page_url": null,
+      "path": "http://htapp.test/admin/stats",
+      "per_page": 10,
+      "prev_page_url": null,
+      "to": 1,
+      "total": 1
+    },
+    "service": {
+      "hd_service_fee": "529991" /*火豆总手续费*/
+    }
   }
 }
 ```
