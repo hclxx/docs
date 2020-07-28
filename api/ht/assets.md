@@ -193,3 +193,31 @@
   "data": null
 }
 ```
+
+## 获取平台手续费
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/service-fee`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "hd_service_fee": "529991"
+  }
+}
+```
