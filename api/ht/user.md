@@ -134,7 +134,13 @@
     "state": 0,
     "created_at": "2020-06-11 10:13:26",
     "updated_at": "2020-06-11 10:13:26",
-    "inviter": null
+    "team_num": 1,/*团队邀请数*/
+    "inviter": null,
+    "role": {/*用户角色信息*/
+        "id": 1,
+        "name": "游客",/*名称*/
+        "icon": "123.jpg"/*图标*/
+    }
   }
 }
 ```
