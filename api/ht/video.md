@@ -35,6 +35,7 @@
       "user_id": 2,
       "intro": "这是动态" /*动态描述*/,
       "url": "xxxx.mp4" /*视频路径*/,
+      "watermark": "watermark" /*水印地址*/,
       "cover": "xxxx.png" /*视频封面*/,
       "width": "1080" /*视频宽度*/,
       "height": "1080" /*视频高度*/,
