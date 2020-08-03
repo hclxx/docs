@@ -416,6 +416,14 @@
             "tips": "这是温馨提示",/*温馨提示*/
             "dstt_to_hd": "10",/*dstt转换火豆比例*/
             "hd_to_dstt": "0.1",/*火豆转换dstt比例*/
+            "hd_to_dstt_fee":"10",/*火豆转换dstt手续费比例*/
+            "dstt_to_hd_fee":"10",/*dstt转换火豆手续费比例*/
+            "hd_to_eth_min" : "100",/*火豆转eth最小数量*/
+            "hd_to_eth": "0.1",/*火豆转eth比例*/
+            "hd_to_eth_fee": "10",/*火豆转eth手续费比例*/
+            "hd_to_usdt_min": "100",/*火豆转usdt最小数量*/
+            "hd_to_usdt": "0.1",/*火豆转usdt比例*/
+            "hd_to_usdt_fee": "10"/*火豆转usdt手续费比例*/
         },
         "created_at": null,
         "updated_at": null
@@ -446,6 +454,14 @@
 | tips     | on |  温馨提示 | 温馨提示 |
 | hd_to_dstt     | 10 |  必填 | dstt购买火豆比例 |
 | dstt_to_hd     | 0.1 |  必填 | 火豆兑换dstt比例 |
+| hd_to_dstt_fee     | 10 |  必填 | 火豆转换dstt手续费比例 |
+| dstt_to_hd_fee     | 0.1 |  必填 | dstt转换火豆手续费比例 |
+| hd_to_eth_min     | 10 |  必填 | 火豆转eth最小数量 |
+| hd_to_eth     | 0.1 |  必填 | 火豆转eth比例 |
+| hd_to_eth_fee     | 10 |  必填 | 火豆转eth手续费比例 |
+| hd_to_usdt_min     | 0.1 |  必填 | 火豆转usdt最小数量 |
+| hd_to_usdt     | 0.1 |  必填 | 火豆转usdt比例 |
+| hd_to_usdt_fee     | 0.1 |  必填 | 火豆转usdt手续费比例 |
 
 #### 成功响应示例
 ```json

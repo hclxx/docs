@@ -93,7 +93,7 @@
 }
 ```
 
-## 申请 DSTT 提币
+## 申请 DSTT/USDT/ETH 提币
 
 **方式**
 
@@ -111,6 +111,7 @@
 |    num     | string |  是  |      提币数量      |
 |  address   | string |  是  |      提币地址      |
 | address_qr | string |  否  | 提币地址二维码截图 |
+| currency | string |  是  | 提币类型：dstt,eth,usdt |
 
 **响应**
 
@@ -126,6 +127,7 @@
     "service_charge": 0,
     "address": "asdasdsad",
     "address_qr": "addressqr.png" /*截图*/,
+    "currency": "dstt",
     "reason": null,
     "status": 0,
     "handler_id": 0,
@@ -136,7 +138,7 @@
 }
 ```
 
-## 闪兑 hd 兑 dstt
+## 闪兑 hd 兑 dstt/usdt/eth
 
 **方式**
 
@@ -152,6 +154,7 @@
 | :------: | :----: | :--: | :------: |
 | pay_pass | string |  是  | 支付密码 |
 |   num    | string |  是  | HD 数量  |
+| currency | string |  是  | 闪兑目标类型：dstt,eth,usdt |
 
 **响应**
 
