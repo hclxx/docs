@@ -480,7 +480,8 @@ function getHtAppSider(title, introduction) {
         "version",
         "video",
         "like",
-        "ad"
+        "ad",
+        "trsfemer"
       ]
     }
   ];
