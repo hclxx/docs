@@ -12,14 +12,14 @@
 
 **参数**
 
-|   名称   | 类型  | 必须 |                                                说明                                                |
-| :------: | :---: | :--: | :------------------------------------------------------------------------------------------------: |
-|  limit   |  int  |  是  |                                          条目数量默认 20                                           |
-|  offset  |  int  |  是  |                                            偏移量默认 0                                            |
+|   名称   |  类型  | 必须 |                                                说明                                                |
+| :------: | :----: | :--: | :------------------------------------------------------------------------------------------------: |
+|  limit   |  int   |  是  |                                          条目数量默认 20                                           |
+|  offset  |  int   |  是  |                                            偏移量默认 0                                            |
 |   type   | string |  否  |                        类型: follow-关注/recommond-推荐/like-用户赞过的视频                        |
 | user_id  | string |  否  | 用户 ID，1、配合 type 为 like 使用(获取用户赞过的视频),2、单独使用获取用户的视频，无需传 type 参数 |
 | keywords | string |  否  |                                              视频检索                                              |
-| video_id | string |  否  |                                              视频ID,根据视频ID检索视频                                             |
+| video_id | string |  否  |                                    视频 ID,根据视频 ID 检索视频                                    |
 
 **响应**
 
@@ -72,8 +72,8 @@
 | :----: | :----: | :--: | :--------------------: |
 |  url   | string |  是  |          地址          |
 | cover  | string |  是  |          封面          |
-| width  | string |  是  |          视频宽度          |
-| height  | string |  是  |          视频高度          |
+| width  | string |  是  |        视频宽度        |
+| height | string |  是  |        视频高度        |
 | topics | string |  否  | 话题,多个使用“,”号分割 |
 | intro  | string |  是  |          描述          |
 
@@ -108,6 +108,44 @@
   "msg": "ok",
   "code": 0,
   "data": null
+}
+```
+
+## 视频详情
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/videos/:id`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 1,
+    "user_id": 2,
+    "intro": "这是动态1",
+    "url": "e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403" /*无水印文件 KEY*/,
+    "watermark": null /*有水印文件 KEY，如为 null 使用无水印文件 KEY  进行下载*/,
+    "cover": "e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403",
+    "reward_num": 0,
+    "praise_num": 2,
+    "comment_num": 6,
+    "download_num": 0,
+    "topics": "哈哈,嘿嘿",
+    "is_delete": 0,
+    "status": 1,
+    "created_at": "2020-06-04 11:11:05",
+    "updated_at": "2020-06-11 14:50:07"
+  }
 }
 ```
 
