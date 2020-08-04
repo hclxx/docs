@@ -1,5 +1,58 @@
 # 资产
 
+
+## 我的钱包列表
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/wallets/all`
+
+**参数**
+
+|   名称   |  类型  | 必须 |             说明             |
+| :------: | :----: | :--: | :--------------------------: |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "balance": "7.0000",
+            "currency": "hd"
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "balance": "0.0000",
+            "currency": "dstt"
+        },
+        {
+            "id": 3,
+            "user_id": 1,
+            "balance": "0.0000",
+            "currency": "eth"
+        },
+        {
+            "id": 4,
+            "user_id": 1,
+            "balance": "0.0000",
+            "currency": "usdt"
+        }
+    ]
+}
+```
+
 ## 我的资产
 
 **方式**
