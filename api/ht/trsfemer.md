@@ -8,7 +8,7 @@
 
 **路径**
 
-`/api/api/transfer-account`
+`/api/transfer-account`
 
 **参数**
 
