@@ -509,7 +509,9 @@ function getHtAdminSider(title, introduction) {
         "reward-item",
         "withdrawal",
         "ad",
-        "user-role"
+        "user-role",
+        "authority",
+        "role"  
       ]
     }
   ];
