@@ -212,3 +212,43 @@
 	"data": null
 }
 ```
+
+## 管理员详情
+
+#### 接口URL
+> {{url}}/admins/2
+
+#### 请求方式
+> GET
+
+#### 请求Header参数
+
+| 参数        | 示例值   | 是否必填   |  参数描述  |
+| :--------   | :-----  | :-----  | :----  |
+| Authorization     | {{token}} |  必填 | token |
+
+
+#### 成功响应示例
+```json
+{
+	"msg": "ok",
+	"code": 0,
+	"data": {
+		"id": 2,
+		"name": "张三",
+		"phone": "18781601112",
+		"email": "1112@qq.com",
+		"admin_token": null,
+		"state": 1,
+		"created_at": "2020-05-15 08:39:34",
+		"updated_at": "2020-05-15 08:46:58",
+		"roles": [
+			{
+				"id": 1,
+				"name": "超级管理员",
+				"alias": "superadmin"
+			}
+		]
+	}
+}
+```
