@@ -1,4 +1,4 @@
-# 火推 Admin 使用介绍
+# 创业8 Admin 使用介绍
 
 ## HTTP 响应状态
 
@@ -6,7 +6,7 @@
 
 ## url
 
-`www.zytc360.cn/admin`
+`https://www.818zs.cn/admin`
 
 ### 错误
 
