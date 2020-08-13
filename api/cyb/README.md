@@ -6,7 +6,7 @@
 
 ## url
 
-`https://www.818zs.cn/admin`
+`https://www.818zs.cn/api`
 
 ### 错误
 

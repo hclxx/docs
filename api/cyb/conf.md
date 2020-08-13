@@ -16,55 +16,48 @@
 
 ```json
 {
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "reward": {
-      "num": 20,
-      "rule": "rule",
-      "upper": "40"
-    },
-    "pay:switch": {
-      "dstt": "on",
-      "alipay": "on",
-      "wechat": "on"
-    },
-    "conversion": {
-      "min": "10",
-      "tips": "这是温馨提示",
-      "dstt_to_hd": "10" /*单个dstt等于10个hd*/,
-      "hd_to_dstt": "0.1" /*单个hd等于0.1个dstt*/,
-      "dstt_to_hd_fee": "10" /*dstt兑换hd手续费比例*/,
-      "hd_to_dstt_fee": "10" /*hd兑换dstt手续费比例*/,
-      "hd_to_eth_min" : "100",/*火豆转eth最小数量*/
-      "hd_to_eth": "0.1",/*火豆转eth比例*/
-      "hd_to_eth_fee": "10",/*火豆转eth手续费比例*/
-      "hd_to_usdt_min": "100",/*火豆转usdt最小数量*/
-      "hd_to_usdt": "0.1",/*火豆转usdt比例*/
-      "hd_to_usdt_fee": "10"/*火豆转usdt手续费比例*/
-    },
-    "withdrawal": {
-      "instr": "提现说明",
-      "switch": "on",
-      "user_min": "100",
-      "user_day_limit": "1000"
-    },
-    "invite": {
-      "url": "http://resource.immeet.com/imeet/register.html",
-      "mode": "邀请方式",
-      "rule": "邀请说明",
-      "power": 100
-    },
-    "about": "关于火推",
-    "rule": "规章制度",
-    "register": "注册协议",
-    "user": "用户协议",
-    "hd:num": ["100", "200", "500", "1000"],
-    "cdn_domain": "http://file.zytc360.cn",
-    "certification": {
-      "price": "0.01",
-      "intro": "这是实名认证说明"
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "pay:switch": {     /*支付开关*/
+            "back": "on",   /*银行卡 on-开启 off-关闭*/
+            "usdt": "on",   /*usdt on-开启 off-关闭*/
+            "alipay": "on"  /*支付宝 on-开启 off-关闭*/
+        },
+        "conversion": {   /*兑换*/
+            "min": "10",  /*最小值*/
+            "tips": "这是温馨提示", /*温馨提示*/
+            "cd_to_usdt": "0.1",  /*创豆兑换usdt比例*/
+            "cd_to_usdt_fee": "10"  /*手续费*/
+        },
+        "withdrawal": {
+            "instr": "提现说明",
+            "switch": "on",
+            "user_min": "100",      /*最低提现*/
+            "user_day_limit": "1000"    /*单日提现上限*/
+        },
+        "invite": {
+            "url": "http://resource.immeet.com/imeet/register.html",
+            "mode": "邀请方式",
+            "rule": "邀请说明",
+            "f_power": 100,
+            "s_power": 100
+        },
+        "version": 0,
+        "about": "关于",    /*关于*/
+        "user": "用户协议", 
+        "cd:limit": "8888", /*最大资产上限*/
+        "equal:bus": {      
+            "tips": "等量发车规则说明",   /*等量发车说明*/
+            "tg_to_cd": "50"      /*糖果 创豆配比*/
+        },
+        "trade": {          /*交易*/
+            "cd_to_cny": "0.05",    /*单个创豆现金价格*/
+            "num_buy_min": "300",   /*最低数量购买数*/
+            "usdt_to_cny": "6.00",    /*单个USDT现金价格*/
+            "price_buy_min": "10"     /*最低价格购买金额*/
+        },
+        "cdn_domain": "http://file.818zs.cn"
     }
-  }
 }
 ```
