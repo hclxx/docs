@@ -1,12 +1,8 @@
-# 创业8 Admin 使用介绍
+# 创业 8 Admin 使用介绍
 
 ## HTTP 响应状态
 
 `Http Status code 200`
-
-## url
-
-`https://www.818zs.cn/admin`
 
 ### 错误
 

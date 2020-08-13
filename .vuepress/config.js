@@ -514,7 +514,7 @@ function getHtAdminSider(title, introduction) {
         "ad",
         "user-role",
         "authority",
-        "role"  
+        "role"
       ]
     }
   ];
@@ -537,7 +537,8 @@ function getCybAppSider(title, introduction) {
         "msg",
         "version",
         "bus",
-        "node"
+        "node",
+        "trade"
       ]
     }
   ];
@@ -561,7 +562,7 @@ function getCybAdminSider(title, introduction) {
         "node",
         "version",
         "user",
-        "withdrawal",
+        "withdrawal"
       ]
     }
   ];

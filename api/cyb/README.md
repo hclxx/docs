@@ -1,12 +1,8 @@
-# 创业8 API 使用介绍
+# 创业 8 API 使用介绍
 
 ## HTTP 响应状态
 
 `Http Status code 200`
-
-## url
-
-`https://www.818zs.cn/api`
 
 ### 错误
 
