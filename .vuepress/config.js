@@ -36,7 +36,10 @@ module.exports = {
       "/merchant/kcstore/": getKcStoreMerchantSider("商户管理", "规范"),
       // 火推
       "/api/ht/": getHtAppSider("移动端", "规范"),
-      "/admin/ht/": getHtAdminSider("后台管理", "说明")
+      "/admin/ht/": getHtAdminSider("后台管理", "说明"),
+      // 创业吧
+      "/api/cyb/": getCybAppSider("移动端", "规范"),
+      "/admin/cyb/": getCybAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -512,6 +515,53 @@ function getHtAdminSider(title, introduction) {
         "user-role",
         "authority",
         "role"  
+      ]
+    }
+  ];
+}
+
+// 创业吧 api
+function getCybAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "conf",
+        "upload",
+        "user",
+        "code",
+        "cer",
+        "assets",
+        "msg",
+        "version",
+        "bus",
+        "node"
+      ]
+    }
+  ];
+}
+
+// 创业吧 Admin
+function getCybAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "admin",
+        "bus",
+        "certification",
+        "code",
+        "config",
+        "feedback",
+        "notify",
+        "node",
+        "version",
+        "user",
+        "withdrawal",
       ]
     }
   ];

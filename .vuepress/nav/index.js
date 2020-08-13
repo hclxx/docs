@@ -42,5 +42,12 @@ module.exports = [
       { text: "移动端", link: "/api/ht/" },
       { text: "后台管理", link: "/admin/ht/" }
     ]
+  },
+  {
+    text: "创业8",
+    items: [
+      { text: "移动端", link: "/api/cyb/" },
+      { text: "后台管理", link: "/admin/cyb/" }
+    ]
   }
 ];
