@@ -12,8 +12,7 @@
 
 | 参数        | 示例值   | 是否必填   |  参数描述  |
 | :--------   | :-----  | :-----  | :----  |
-| user_name     | 张三 | 选填 | 认证用户名 |
-| status     | 1 | 选填 | 状态:0-待审核 1-已通过 2-已驳回 |
+| user_name     | 张三 | 选填 | 用户名或手机号 |
 | page     | 1 | 必填 | 当前页数 |
 | limit     | 20 | 必填 | 每页条数 |
 
@@ -35,21 +34,27 @@
             {
                 "id": 1,
                 "user_id": 1,
-                "idcard_name": "张浩",/*身份证姓名*/
-                "idcard_number": "513823199011016131",/*证件号*/
-                "bankcard_number": "20200508115335796",/*银行卡号*/
-                "bpic": "20200508115348973.jpg",/*证件反面照片*/
-                "data": null,/*附加信息*/
-                "created_at": "2020-05-08 03:00:18",
-                "updated_at": "2020-05-08 03:54:05"
+                "name": "hh",     /*收款名字*/
+                "number": "1324654131",   /*收款账号*/
+                "code_pic": null,     /*收款码图片*/
+                "bank": "建行",     /*银行卡开户行*/
+                "type": 1,          /*支付方式:1-银行卡/2-支付宝/3-usdt*/
+                "created_at": "2020-08-13 14:54:55",
+                "updated_at": "2020-08-13 14:54:55",
+                "user": {
+                    "id": 1,
+                    "name": "aa",
+                    "avatar": "123.jpg",
+                    "tel": "18781600000"
+                }
             }
         ],
-        "first_page_url": "http:\/\/storage.name\/admin\/certifications?page=1",
+        "first_page_url": "http://cyb.test/admin/certifications?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/storage.name\/admin\/certifications?page=1",
+        "last_page_url": "http://cyb.test/admin/certifications?page=1",
         "next_page_url": null,
-        "path": "http:\/\/storage.name\/admin\/certifications",
+        "path": "http://cyb.test/admin/certifications",
         "per_page": 15,
         "prev_page_url": null,
         "to": 1,
