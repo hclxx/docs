@@ -115,21 +115,20 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 3,
-    "name": "0CGLAS" /*用户呢称*/,
-    "avatar": "nnnn.ong" /*头像*/,
-    "phone": "183****4309" /*手机号*/,
-    "gender": 0 /*性别：0-未知/1-男/2-女*/,
-    "code": "0CGLAS" /*邀请码*/,
-    "number": "49123453" /*火推号码*/,
-    "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
-    "paypass_status": true,/*支付密码设置状态*/
-    "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
+    "id": 1,
+    "name": "CAJQCIML" /*名字*/,
+    "avatar": null /*名称*/,
+    "gender": 1 /*1-男 2-女 0-未知*/,
+    "phone": "183****4309" /*手机*/,
+    "code": "CAJQCIML" /*邀请码*/,
+    "withdraw_address": null /*提币地址*/,
     "state": 0,
-    "created_at": "2020-06-11 10:13:26",
-    "updated_at": "2020-06-11 10:13:26",
-    "team_num": 1 /*团队邀请数*/,
-    "inviter": null
+    "is_delete": 0,
+    "created_at": "2020-08-12 16:59:48",
+    "updated_at": "2020-08-12 16:59:48",
+    "inviter": null /*邀请人信息*/,
+    "paypass_status": false,
+    "cer_status": 1
   }
 }
 ```
@@ -358,9 +357,9 @@
 
 **参数**
 
-|    名称    |  类型  | 必须 |      说明      |
-| :--------: | :----: | :--: | :------------: |
-|  address   | string |  是  |    提币地址    |
+|  名称   |  类型  | 必须 |   说明   |
+| :-----: | :----: | :--: | :------: |
+| address | string |  是  | 提币地址 |
 
 **路径**
 
@@ -383,7 +382,7 @@
     "code": "0CGLAS" /*邀请码*/,
     "number": "49123453" /*火推号码*/,
     "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
-    "paypass_status": true,/*支付密码设置状态*/
+    "paypass_status": true /*支付密码设置状态*/,
     "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
     "state": 0,
     "created_at": "2020-06-11 10:13:26",
@@ -394,22 +393,21 @@
 }
 ```
 
-## 实名认证支付
+## 实名认证检查身份证
 
 **方式**
 
 `POST`
 
-**参数**
-
-|  名称  |  类型  | 必须 |    说明    |
-| :----: | :----: | :--: | :--------: |
-|  name  | string |  是  | 身份证姓名 |
-| number | string |  是  |  身份证号  |
-
 **路径**
 
-`/api/pay-orders`
+`/api/certification-check`
+
+**参数**
+
+|     名称      |  类型  | 必须 |    说明    |
+| :-----------: | :----: | :--: | :--------: |
+| idcard_number | string |  是  | 身份证号码 |
 
 **响应**
 
@@ -419,26 +417,24 @@
 {
   "msg": "ok",
   "code": 0,
-  "data": {
-    "result": "zxcascasd" /*支付宝支付信息*/,
-    "order_id": 8 /*订单ID*/
-  }
+  "data": null
 }
 ```
 
-## 检查实名认证支付状态
+## 实名认证银行卡开户行获取
 
 **方式**
 
-`GET`
+`POST`
+**路径**
+
+`/api/bankcard-info`
 
 **参数**
 
-none
-
-**路径**
-
-`/api/pay-orders/{id}/check`
+|      名称       |  类型  | 必须 |    说明    |
+| :-------------: | :----: | :--: | :--------: |
+| bankcard_number | string |  是  | 身份证号码 |
 
 **响应**
 
@@ -449,28 +445,28 @@ none
   "msg": "ok",
   "code": 0,
   "data": {
-    "status": 1 /*1-支付成功，其他支付未成功*/
+    "bank_name": "农业银行" /*查询失败返回空字符串*/
   }
 }
 ```
 
-## 获取实名认证 token
+## 实名认证验证卡号提交
 
 **方式**
 
 `POST`
 
-**参数**
-
-|   名称   |  类型  | 必须 |  说明   |
-| :------: | :----: | :--: | :-----: |
-| order_id |  int   |  是  | 订单 ID |
-|   name   | string |  是  |  姓名   |
-|  number  | string |  是  | 证件号  |
-
 **路径**
 
-`/api/describe-verify-token`
+`/api/certification`
+
+**参数**
+
+|      名称       |  类型  | 必须 |      说明      |
+| :-------------: | :----: | :--: | :------------: |
+|   idcard_name   | string |  是  | 身份证号码名字 |
+|  idcard_number  | string |  是  |   身份证号码   |
+| bankcard_number | string |  是  |    银行卡号    |
 
 **响应**
 
@@ -480,68 +476,6 @@ none
 {
   "msg": "ok",
   "code": 0,
-  "data": {
-    "verify_token": "xxxadsadasd" /*认证 token*/
-  }
-}
-```
-
-## 检查实名认证结果
-
-**方式**
-
-`POST`
-
-**参数**
-
-|   名称   | 类型 | 必须 |  说明   |
-| :------: | :--: | :--: | :-----: |
-| order_id | int  |  是  | 订单 ID |
-
-**路径**
-
-`/api/describe-verify-result`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "ok": true /*是否成功: false-失败/true-成功*/
-  }
-}
-```
-
-## 检查实名订单号
-
-**方式**
-
-`GET`
-
-**参数**
-
-none
-
-**路径**
-
-`/api/cer-order-id`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "order_id": 1 /*订单ID，为0代表未支付*/,
-    "name": "12312" /*姓名, 未支付为 null*/,
-    "number": "asdasdsad" /*证件号, 未支付为 null*/
-  }
+  "data": null
 }
 ```
