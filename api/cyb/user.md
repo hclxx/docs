@@ -126,16 +126,44 @@
     "is_delete": 0,
     "created_at": "2020-08-12 16:59:48",
     "updated_at": "2020-08-12 16:59:48",
-    "inviter": {    /*邀请人信息*/
-        "id": 1,
-        "name": "aaa",
-        "avatar": null,
-        "phone": "139****1111",
-        "created_at": "2020-08-13 15:01:37",
-        "amount": "0.0000"
+    "inviter": {
+      /*邀请人信息*/
+      "id": 1,
+      "name": "aaa",
+      "avatar": null,
+      "phone": "139****1111",
+      "created_at": "2020-08-13 15:01:37",
+      "amount": "0.0000"
     },
     "paypass_status": false,
-    "cer_status": 1
+    "cer_status": 1,
+    /*收款方式*/
+    "payments": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "name": "章三",
+        "number": "642132131231123213",
+        "type": 1 /*收款方式:1-银行卡/2-支付宝/3-usdt地址*/,
+        "bank": "中国银行"
+      },
+      {
+        "id": 2,
+        "user_id": 1,
+        "name": "章三",
+        "number": "alipay@qq.com",
+        "type": 2,
+        "bank": null
+      },
+      {
+        "id": 3,
+        "user_id": 1,
+        "name": null,
+        "number": "0xdcF92CA13226993683Cb878388dA193794677767",
+        "type": 3,
+        "bank": null
+      }
+    ]
   }
 }
 ```
