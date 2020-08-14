@@ -71,7 +71,13 @@ none
       "need_type": 1 /*需求类型:1-买入/2-卖出*/,
       "pay_type": 3 /*支付方式:1-银行卡/2-支付宝/3-usdt*/,
       "platform": null,
-      "receive_payment": null,
+      "receive_payment": {
+        "bank": "中国银行",
+        "name": "张浩",
+        "type": 1,
+        "number": "6123123123213123",
+        "code_pic": null
+      },
       "match_at": null,
       "cancel_at": null,
       "frozen_at": null,
