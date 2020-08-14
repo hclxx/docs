@@ -45,6 +45,7 @@
         },
         "version": 0,
         "about": "关于",    /*关于*/
+        "register": "注册协议", 
         "user": "用户协议", 
         "cd:limit": "8888", /*最大资产上限*/
         "equal:bus": {      
