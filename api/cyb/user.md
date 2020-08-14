@@ -126,7 +126,14 @@
     "is_delete": 0,
     "created_at": "2020-08-12 16:59:48",
     "updated_at": "2020-08-12 16:59:48",
-    "inviter": null /*邀请人信息*/,
+    "inviter": {    /*邀请人信息*/
+        "id": 1,
+        "name": "aaa",
+        "avatar": null,
+        "phone": "139****1111",
+        "created_at": "2020-08-13 15:01:37",
+        "amount": "0.0000"
+    },
     "paypass_status": false,
     "cer_status": 1
   }
