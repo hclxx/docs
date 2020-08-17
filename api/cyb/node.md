@@ -136,9 +136,9 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "static_income": 20,    /*静态总收益*/
-        "dynamic_income": 25,   /*动态总收益*/
-        "num": 600              /*认购总数*/
+        "static_income": "20",    /*静态总收益*/
+        "dynamic_income": "25",   /*动态总收益*/
+        "num": "600"              /*认购总数*/
     }
 }
 ```
