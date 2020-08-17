@@ -326,30 +326,41 @@ none
 
 ```
 待匹配:
+
 status === 0
 
-待我付款
+待我付款：
+
 1.status === 1 && need_type === 1 && voucher === null && publisher === self.id
 2.status === 1 && need_type === 2 && voucher === null && recipient === self.id
+待对方付款：
 
-待卖家确认
+1.status === 1 && need_type === 1 && voucher === null && recipient === self.id
+2.status === 1 && need_type === 2 && voucher === null && publisher === self.id
+
+待卖家确认：
+
 1.status === 1 && need_type === 2 && voucher !== null && publisher === self.id
 2.status === 1 && need_type === 1 && voucher !== null && recipient === self.id
 
+待我确认：
 
-平台介入中
+1.status === 1 && need_type === 2 && voucher !== null && recipient === self.id
+2.status === 1 && need_type === 1 && voucher !== null && publisher === self.id
+
+平台介入中：
+
 status === 4
 
-
-交易完成
+交易完成：
 status === 2
 
+已取消：
 
-已取消
 status === 3
 
+已关闭：
 
-已关闭
 status === 5
 
 ```
