@@ -562,7 +562,8 @@ function getCybAdminSider(title, introduction) {
         "node",
         "version",
         "user",
-        "withdrawal"
+        "withdrawal",
+        "trade"
       ]
     }
   ];

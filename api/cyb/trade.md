@@ -324,6 +324,36 @@ none
 | status    | int    | 否       | 状态:-1-全部/0-待匹配/1-待付款/2-进行中/3-已完成/4-已取消 |
 | need_type | int    | 是       | 需求类型:1-买入/2-卖出                                    |
 
+```
+待匹配:
+status === 0
+
+待我付款
+1.status === 1 && need_type === 1 && voucher === null && publisher === self.id
+2.status === 1 && need_type === 2 && voucher === null && recipient === self.id
+
+待卖家确认
+1.status === 1 && need_type === 2 && voucher !== null && publisher === self.id
+2.status === 1 && need_type === 1 && voucher !== null && recipient === self.id
+
+
+平台介入中
+status === 4
+
+
+交易完成
+status === 2
+
+
+已取消
+status === 3
+
+
+已关闭
+status === 5
+
+```
+
 **响应**
 
 `Status code 200`
