@@ -92,19 +92,22 @@
             "remain_cycle": 90,   /*剩余周期*/
             "status": 1,    /*状态:1-进行中 2-已完成*/
             "type": 1,      /*类型:1-自动续期 2-到期赎回*/
+            "static_income": "10",    /*静态总奖励*/
+            "dynamic_income": "10.5", /*动态总奖励*/
             "data": {
                 "id": 1,
                 "num": "300",   /*认购数量*/
                 "sort": 1,    
-                "cycle": "90",  /*周期*/
+                "cycle": "90",
                 "is_delete": 0,
                 "created_at": "2020-08-13 13:49:07",
                 "updated_at": "2020-08-13 13:49:07",
-                "static_income": "3",   /*静态奖励*/
-                "dynamic_income": "10"  /*动态奖励*/
+                "static_income": "3",  
+                "dynamic_income": "10"
             },
-            "created_at": "2020-08-13 13:56:39",
-            "updated_at": "2020-08-13 13:56:39"
+            "created_at": "2020-08-13 13:56:39",  /*认购日期*/
+            "updated_at": "2020-08-13 13:56:39",
+            "expire_date": "2020-11-11 13:56:39"    /*到期时间*/
         }
     ]
 }
