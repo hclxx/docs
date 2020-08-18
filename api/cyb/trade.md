@@ -333,17 +333,18 @@ status === 0
 
 1.status === 1 && need_type === 1 && voucher === null && publisher === self.id
 2.status === 1 && need_type === 2 && voucher === null && recipient === self.id
+
 待对方付款：
 
 1.status === 1 && need_type === 1 && voucher === null && recipient === self.id
 2.status === 1 && need_type === 2 && voucher === null && publisher === self.id
 
-待卖家确认：
+待我确认：
 
 1.status === 1 && need_type === 2 && voucher !== null && publisher === self.id
 2.status === 1 && need_type === 1 && voucher !== null && recipient === self.id
 
-待我确认：
+待卖家确认：
 
 1.status === 1 && need_type === 2 && voucher !== null && recipient === self.id
 2.status === 1 && need_type === 1 && voucher !== null && publisher === self.id
