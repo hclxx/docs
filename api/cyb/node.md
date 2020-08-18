@@ -236,7 +236,7 @@
 ## 修改认购类型
 
 #### 接口URL
-> {{url}}/nodes/{node}
+> {{url}}/nodes/{order}
 
 #### 请求方式
 > PATCH
