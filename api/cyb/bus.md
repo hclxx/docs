@@ -39,7 +39,9 @@
            "sort": 10,   /*排序*/
            "is_delete": 0,
            "created_at": "2020-08-13 11:27:06",
-           "updated_at": "2020-08-13 11:27:06"
+           "updated_at": "2020-08-13 11:27:06",
+           "is_buy": true /*是否已买票上车*/
+           /*行驶中-status=2&&is_buy=true 已上车-status=1&&is_buy=true 已发车-status=2&&is_buy=false 买票-status=1&&is_buy=false*/
         }
     ]
 }
