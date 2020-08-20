@@ -545,3 +545,29 @@ none
   }
 }
 ```
+
+## 交易冻结
+
+**方式**
+
+`PATCH`
+
+**路径**
+
+`/api/trades/{trade}/frozen`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
