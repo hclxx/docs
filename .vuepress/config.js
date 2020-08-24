@@ -538,7 +538,8 @@ function getCybAppSider(title, introduction) {
         "version",
         "bus",
         "node",
-        "trade"
+        "trade",
+        "like"
       ]
     }
   ];

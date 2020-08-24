@@ -416,6 +416,10 @@
     "gender": 0 /*性别：0-未知/1-男/2-女*/,
     "code": "0CGLAS" /*邀请码*/,
     "number": "49123453" /*火推号码*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
     "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
     "paypass_status": true /*支付密码设置状态*/,
     "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
@@ -582,6 +586,198 @@ none
       "code_pic": "asdasdas.png", /*收款码*/,
       "bank": "中国银行" /*开户行*/,
       "type": 1 /*收款方式:1-银行卡/2-支付宝/3-USDT*/
+    }
+  ]
+}
+```
+
+## 关注用户
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 取消关注
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 移除粉丝
+
+**方式**
+
+`DELETE`
+
+**路径**
+
+`/api/users/:id/fans`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 粉丝/关注列表
+
+**方式**
+
+`GET`
+
+**参数**
+
+|  名称  |  类型  | 必须 |            说明            |
+| :----: | :----: | :--: | :------------------------: |
+|  type  | string |  是  | 类型:fans-粉丝/follow-关注 |
+| limit  |  int   |  是  |      条目数 默认为 20      |
+| offset |  int   |  是  |      条目数 默认为 0       |
+
+**路径**
+
+`/api/users/:id/follows`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 2,
+      "name": "张三",
+      "avatar": null,
+      "number": "12312321",
+      "updated_at": "2020-06-04 17:23:33",
+      "is_fans": false /*她/他是否是我粉丝*/,
+      "is_follow": true /*是否关注他/她*/
+    }
+  ]
+}
+```
+
+## 获取单个用户信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/users/:id`
+
+**参数**
+
+无
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 3,
+    "name": "0CGLAS" /*用户呢称*/,
+    "avatar": "nnnn.ong" /*头像*/,
+    "phone": "183****4309" /*手机号*/,
+    "gender": 0 /*性别：0-未知/1-男/2-女*/,
+    "code": "0CGLAS" /*邀请码*/,
+    "number": "49123453" /*火推号码*/,
+    "sign": "个性签名" /*签名*/,
+    "fans_num": 0 /*粉丝数量*/,
+    "follow_num": 0 /*关注数量*/,
+    "praise_num": 0 /*获赞数量*/,
+    "reward_num": 0 /*打赏数量*/,
+    "invite_num": 0 /*邀请数量*/,
+    "is_follow": true /*是否关注*/,
+    "cer_status": -1 /*是否认证:-1-未认证/0-审核中/1-审核成功/2-审核失败*/,
+    "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
+    "withdraw_address_qr": "qr.png" /*提币二维码*/,
+    "state": 0,
+    "created_at": "2020-06-11 10:13:26",
+    "updated_at": "2020-06-11 10:13:26",
+    "inviter": null
+  }
+}
+```
+
+## 根据名称检索用户
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/users`
+
+**参数**
+
+|   名称   |  类型  | 必须 |     说明     |
+| :------: | :----: | :--: | :----------: |
+| username | string |  是  | 用户呢称检索 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 3,
+      "name": "墨迹",
+      "avatar": "20200616154645294.jpeg",
+      "number": "38136791",
+      "gender": 1,
+      "is_follow": true,
+      "is_fans": false
     }
   ]
 }
