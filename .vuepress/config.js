@@ -563,7 +563,9 @@ function getCybAdminSider(title, introduction) {
         "version",
         "user",
         "withdrawal",
-        "trade"
+        "trade",
+        "video",
+        "reward-item"
       ]
     }
   ];
