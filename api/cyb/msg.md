@@ -200,7 +200,186 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "counts": 0 /*未读数量*/
+    /*点赞*/
+    "like": {
+      "unread": 1, //未读数量
+      "newest": {
+        "id": 3,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 2,
+        "target_type": "video",
+        "action": "like",
+        "sender_id": 2,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": {
+          "video_id": 2 /*视频ID*/,
+          "video_cover": "cover.png" /*视频封面*/
+        },
+        "created_at": "2020-06-12 10:38:36",
+        "updated_at": "2020-06-12 10:38:36",
+        /*点赞人信息*/
+        "sender": {
+          "id": 2,
+          "name": "张三",
+          "avatar": null
+        }
+      }
+    },
+    /*关注*/
+    "follow": {
+      "unread": 1, //未读数量
+      "newest": {
+        "id": 4,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 3,
+        "target_type": "user",
+        "action": "follow" /*关注*/,
+        "sender_id": 3,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": [],
+        "created_at": "2020-06-12 10:38:36",
+        "updated_at": "2020-06-12 10:38:36",
+        "sender": {
+          /*关注人信息*/
+          "id": 3,
+          "name": "0CGLAS",
+          "avatar": null
+        }
+      }
+    },
+    "reward": {
+      "unread": 2, // 未读数量
+      "newest": {
+        "id": 2,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 35,
+        "target_type": "wallet",
+        "action": "reward" /*打赏*/,
+        "sender_id": 2,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": {
+          "video_id": 1 /*视频ID*/,
+          "reward_num": "100.0000" /*打赏金额*/,
+          "video_cover": "http://v29-dy.ixigua.com/e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403" /*视频封面*/,
+          "reward_currency": null
+        },
+        "created_at": "2020-06-11 16:29:47",
+        "updated_at": "2020-06-11 16:29:47",
+        "sender": {
+          "id": 2,
+          "name": "张三",
+          "avatar": null
+        }
+      }
+    },
+    /*系统消息*/
+    "system": {
+      "unread": 1,
+      "newest": {
+        "id": 9,
+        "user_id": 3,
+        "content": "",
+        "type": "announce",
+        "target_id": 8,
+        "target_type": "system",
+        "action": "system",
+        "sender_id": 0,
+        "sender_role": 1,
+        "is_read": 0,
+        "extra": null,
+        "system": {
+          "id": 8,
+          "content": "欢迎来到火推" /*消息内容*/,
+          "extra": null
+        },
+        "created_at": "2020-06-12 10:43:59",
+        "updated_at": "2020-06-12 10:43:59",
+        "sender": null
+      },
+      /*ctc交易*/
+      {
+      "id": 5,
+      "title": "CTC订单签收提醒" /*交易提醒标题*/,
+      "content": "买家「骚军」提醒你确认收款订单" /*交易提醒内容*/,
+      "target_id": 0 /*交易ID*/,
+      "target_type": "ctc" /*交易消息*/,
+      "type": "remind",
+      "action": "1",
+      "sender_id": 0,
+      "extra": null,
+      "created_at": "2020-08-14 17:22:21" /*时间*/,
+      "system": null
+    },
+    /*评论*/
+    "comment": {
+      "unread": 3, // 未读数量
+      "newest": {
+        "id": 7,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 2,
+        "target_type": "video" /*视频*/,
+        "action": "comment" /*存在两种情况:reply-回复(某人回复了你)/comment-评论(某人评论了你)*/,
+        "sender_id": 2,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": {
+          "video_id": 2 /*视频ID*/,
+          "comment_id": 6 /*评论ID*/,
+          "video_cover": "cover.png" /*视频封面*/,
+          "comment_content": "评论内容",
+          "reply_id": 1 /*回复ID*/,
+          "reply_content": "回复内容"
+        },
+        "created_at": "2020-06-12 10:41:34",
+        "updated_at": "2020-06-12 10:41:34",
+        "sender": {
+          "id": 2,
+          "name": "张三",
+          "avatar": null
+        }
+      }
+    },
+    /*打赏*/
+    "reward": {
+      "unread": 2,
+      "newest": {
+        "id": 2,
+        "user_id": 3,
+        "content": "",
+        "type": "remind",
+        "target_id": 35,
+        "target_type": "wallet",
+        "action": "reward",
+        "sender_id": 2,
+        "sender_role": 0,
+        "is_read": 0,
+        "extra": {
+          "video_id": 1,
+          "reward_num": "100.0000" /*打赏金额*/,
+          "video_cover": "http://v29-dy.ixigua.com/e6181b48fe44ccf20cd4d8f6005bbb7f/5ed87403",
+          "reward_currency": "hd" /*打赏代币*/
+        },
+        "created_at": "2020-06-11 16:29:47",
+        "updated_at": "2020-06-11 16:29:47",
+        /*打赏人*/
+        "sender": {
+          "id": 2,
+          "name": "张三",
+          "avatar": null
+        }
+      }
+    }
   }
 }
 ```
