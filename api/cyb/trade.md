@@ -26,7 +26,8 @@ none
     "cd_to_cny": "1" /*内盘创豆现金单价*/,
     "num_buy_min": "300" /*按数量购买最低*/,
     "usdt_to_cny": "6" /*内盘USDT现金单价*/,
-    "price_buy_min": "30" /*按价格购买最低*/
+    "price_buy_min": "30" /*按价格购买最低*/,
+    "service_fee": "10" /*手续费比例*/
   }
 }
 ```
