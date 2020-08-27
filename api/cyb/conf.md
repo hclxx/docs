@@ -33,6 +33,7 @@
         "withdrawal": {
             "instr": "提现说明",
             "switch": "on",
+            "fee": "10",        /*手续费(10代表10%)*/
             "user_min": "100",      /*最低提现*/
             "user_day_limit": "1000"    /*单日提现上限*/
         },
