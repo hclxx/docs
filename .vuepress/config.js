@@ -331,7 +331,8 @@ function getSchainAppSider(title, introduction) {
         "ore",
         "power",
         "version",
-        "news"
+        "news",
+        "share"
       ]
     }
   ];
@@ -366,7 +367,8 @@ function getSchainAdminSider(title, introduction) {
         "version",
         "news",
         "news-cates",
-        "sensitives"
+        "sensitives",
+        "share"
       ]
     }
   ];
