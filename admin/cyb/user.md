@@ -234,7 +234,11 @@
           "id": 5,
           "name": "yanfan1",
           "phone": "18781601154",
-          "avatar": null
+          "avatar": null,
+          "cd_balance": "0.0000", /*创豆余额*/
+          "tg_balance": "0.0000", /*糖果余额*/
+          "usdt_balance": "0.0000", /*usdt余额*/
+          "node_num": 900 /*正在认购中的创豆数*/
         }
       ]
     },
@@ -244,7 +248,7 @@
 }
 ```
 
-## 钱包列表
+## 单个用户钱包列表
 
 #### 接口 URL
 
@@ -348,5 +352,135 @@
       "currency": "tg"
     }
   }
+}
+```
+
+
+## 钱包列表
+
+#### 接口 URL
+
+> {{url}}/wallets
+
+#### 请求方式
+
+> GET
+
+#### 请求 Query 参数
+
+| 参数     | 示例值              | 是否必填 | 参数描述          |
+| :------- | :------------------ | :------- | :---------------- |
+| name    | aa          | 选填     | 用户昵称(支持模糊查询) |
+| phone   | 18781601111 | 选填     | 用户手机号             |
+| currency | hd                  | 选填     | cd-创豆 tg-糖果 usdt |
+| balance | 1000                  | 选填     | 最低余额 |
+| page     | 1                   | 必填     | 当前页数          |
+| limit    | 20                  | 必填     | 每页条数          |
+
+#### 请求 Header 参数
+
+| 参数          | 示例值    | 是否必填 | 参数描述 |
+| :------------ | :-------- | :------- | :------- |
+| Authorization | {{token}} | 必填     | token    |
+
+#### 成功响应示例
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 233,
+                "avatar": null,
+                "tel": "15572268652",
+                "today_cd_income": "0.0000",    /*今日创豆动态收益*/
+                "wallets": [
+                    {
+                        "id": 697,
+                        "user_id": 233,
+                        "balance": "0.0000",
+                        "currency": "usdt"
+                    },
+                    {
+                        "id": 698,
+                        "user_id": 233,
+                        "balance": "1839.2504",
+                        "currency": "tg"
+                    },
+                    {
+                        "id": 699,
+                        "user_id": 233,
+                        "balance": "0.0000",
+                        "currency": "cd"
+                    }
+                ]
+            },
+            {
+                "id": 231,
+                "avatar": null,
+                "tel": "13997868416",
+                "today_cd_income": "0.0000",
+                "wallets": [
+                    {
+                        "id": 691,
+                        "user_id": 231,
+                        "balance": "0.0000",
+                        "currency": "usdt"
+                    },
+                    {
+                        "id": 692,
+                        "user_id": 231,
+                        "balance": "2473.3317",
+                        "currency": "tg"
+                    },
+                    {
+                        "id": 693,
+                        "user_id": 231,
+                        "balance": "0.0000",
+                        "currency": "cd"
+                    }
+                ]
+            },
+            {
+                "id": 227,
+                "avatar": null,
+                "tel": "15872224176",
+                "today_cd_income": "0.0000",
+                "wallets": [
+                    {
+                        "id": 679,
+                        "user_id": 227,
+                        "balance": "0.0000",
+                        "currency": "usdt"
+                    },
+                    {
+                        "id": 680,
+                        "user_id": 227,
+                        "balance": "1760.4800",
+                        "currency": "tg"
+                    },
+                    {
+                        "id": 681,
+                        "user_id": 227,
+                        "balance": "0.0000",
+                        "currency": "cd"
+                    }
+                ]
+            }
+        ],
+        "first_page_url": "http://cyb.test/admin/wallets?page=1",
+        "from": 1,
+        "last_page": 25,
+        "last_page_url": "http://cyb.test/admin/wallets?page=25",
+        "next_page_url": "http://cyb.test/admin/wallets?page=2",
+        "path": "http://cyb.test/admin/wallets",
+        "per_page": "3",
+        "prev_page_url": null,
+        "to": 3,
+        "total": 74
+    }
 }
 ```
