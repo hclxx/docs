@@ -229,7 +229,8 @@
 |   名称   |  类型  | 必须 |   说明   |
 | :------: | :----: | :--: | :------: |
 | pay_pass | string |  是  | 支付密码 |
-|   num    | string |  是  | HD 数量  |
+|   num    | string |  是  | cd 数量  |
+|   type    | string |  是  | trade-交易打赏创豆,node-节点打赏创豆 |
 
 **响应**
 
