@@ -95,6 +95,7 @@
 |   名称   |  类型  | 必须 |               说明                |
 | :------: | :----: | :--: | :-------------------------------: |
 | currency | string |  是  |   资产类型: cd-创豆，usdt, tg-糖果    |
+| balance_type | string |  否  |   资产类型: 当currency == cd 时必传 node-认购资产/trade-交易资产    |
 |  action  | string |  否  | 收支动作: income-收入 expend-支出 |
 |  limit   |  int   |  是  |         条目数量 默认 20          |
 |  offset  |  int   |  是  |           偏移量 默认 0           |
