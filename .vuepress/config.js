@@ -541,7 +541,8 @@ function getCybAppSider(title, introduction) {
         "bus",
         "node",
         "trade",
-        "like"
+        "like",
+        "video"
       ]
     }
   ];
