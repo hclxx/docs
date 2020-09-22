@@ -738,6 +738,7 @@ none
     "withdraw_address": "0xqw3eqweqweqweqweqwdasdasdassad" /*提币地址*/,
     "withdraw_address_qr": "qr.png" /*提币二维码*/,
     "state": 0,
+    "tel": "123123123"/*手机号*/
     "created_at": "2020-06-11 10:13:26",
     "updated_at": "2020-06-11 10:13:26",
     "inviter": null

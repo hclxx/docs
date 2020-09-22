@@ -1,6 +1,5 @@
 # 资产
 
-
 ## 我的钱包列表
 
 **方式**
@@ -13,8 +12,9 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |             说明             |
-| :------: | :----: | :--: | :--------------------------: |
+| 名称 | 类型 | 必须 | 说明 |
+| :--: | :--: | :--: | :--: |
+
 
 **响应**
 
@@ -22,28 +22,28 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        {
-            "id": 1,
-            "user_id": 1,
-            "balance": "7.0000",
-            "currency": "cd"
-        },
-        {
-            "id": 2,
-            "user_id": 1,
-            "balance": "0.0000",
-            "currency": "usdt"
-        },
-        {
-            "id": 3,
-            "user_id": 1,
-            "balance": "0.0000",
-            "currency": "tg"
-        }
-    ]
+  "msg": "ok",
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "balance": "7.0000",
+      "currency": "cd"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "balance": "0.0000",
+      "currency": "usdt"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "balance": "0.0000",
+      "currency": "tg"
+    }
+  ]
 }
 ```
 
@@ -59,8 +59,8 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |             说明             |
-| :------: | :----: | :--: | :--------------------------: |
+|   名称   |  类型  | 必须 |               说明               |
+| :------: | :----: | :--: | :------------------------------: |
 | currency | string |  是  | 资产类型: cd-创豆，usdt, tg-糖果 |
 
 **响应**
@@ -92,14 +92,14 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |               说明                |
-| :------: | :----: | :--: | :-------------------------------: |
-| currency | string |  是  |   资产类型: cd-创豆，usdt, tg-糖果    |
-| balance_type | string |  否  |   资产类型: 当currency == cd 时必传 node-认购资产/trade-交易资产    |
-|  action  | string |  否  | 收支动作: income-收入 expend-支出 |
-|  limit   |  int   |  是  |         条目数量 默认 20          |
-|  offset  |  int   |  是  |           偏移量 默认 0           |
-|  types   | string |  否  |      流水类型: 多个用","分割      |
+|     名称     |  类型  | 必须 |                              说明                               |
+| :----------: | :----: | :--: | :-------------------------------------------------------------: |
+|   currency   | string |  是  |                资产类型: cd-创豆，usdt, tg-糖果                 |
+| balance_type | string |  否  | 资产类型: 当 currency == cd 时必传 node-认购资产/trade-交易资产 |
+|    action    | string |  否  |                收支动作: income-收入 expend-支出                |
+|    limit     |  int   |  是  |                        条目数量 默认 20                         |
+|    offset    |  int   |  是  |                          偏移量 默认 0                          |
+|    types     | string |  否  |                     流水类型: 多个用","分割                     |
 
 **响应**
 
@@ -119,9 +119,9 @@
       "amount": "1.0000" /*金额*/,
       "action": 2 /*收支动作: 1-收入/2-支出*/,
       "status": 1 /*状态:0-待完成/1-成功/2-失败*/,
-      "type": "reward",/*withdrawal-提币 认购节点-buy:node' 静态收益-static:income 动态收益-dynamic:income
+      "type": "reward" /*withdrawal-提币 认购节点-buy:node' 静态收益-static:income 动态收益-dynamic:income
       节点认购到期赎回-return:node 等量发车-equal:bus ctc卖出-ctc:sell ctc 买入-ctc:buy ctc 撤销-ctc:revoke
-      ctc 交易未提交-ctc:unsubmit 清空资产-clear:asset 创豆兑换usdt-conversion*/
+      ctc 交易未提交-ctc:unsubmit 清空资产-clear:asset 创豆兑换usdt-conversion*/,
       "currency": "sccb" /*cd-创豆，usdt, tg-糖果*/,
       "extend": null,
       "created_at": "2020-05-03 14:46:49",
@@ -155,8 +155,9 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |             说明             |
-| :------: | :----: | :--: | :--------------------------: |
+| 名称 | 类型 | 必须 | 说明 |
+| :--: | :--: | :--: | :--: |
+
 
 **响应**
 
@@ -164,12 +165,12 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "yesterday": "0.0000",  /*昨日总收益*/
-        "total": "561.9000"     /*总收益*/
-    }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "yesterday": "0.0000" /*昨日总收益*/,
+    "total": "561.9000" /*总收益*/
+  }
 }
 ```
 
@@ -185,10 +186,10 @@
 
 **参数**
 
-|    名称    |  类型  | 必须 |        说明        |
-| :--------: | :----: | :--: | :----------------: |
-|  pay_pass  | string |  是  |      支付密码      |
-|    num     | string |  是  |      提币数量      |
+|   名称   |  类型  | 必须 |       说明        |
+| :------: | :----: | :--: | :---------------: |
+| pay_pass | string |  是  |     支付密码      |
+|   num    | string |  是  |     提币数量      |
 | currency | string |  是  | 提币类型：cd,usdt |
 
 **响应**
@@ -227,11 +228,43 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |   说明   |
-| :------: | :----: | :--: | :------: |
-| pay_pass | string |  是  | 支付密码 |
-|   num    | string |  是  | cd 数量  |
-|   type    | string |  是  | trade-交易打赏创豆,node-节点打赏创豆 |
+|   名称   |  类型  | 必须 |                 说明                 |
+| :------: | :----: | :--: | :----------------------------------: |
+| pay_pass | string |  是  |               支付密码               |
+|   num    | string |  是  |               cd 数量                |
+|   type   | string |  是  | trade-交易打赏创豆,node-节点打赏创豆 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 转账
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/transfer`
+
+**参数**
+
+|     名称     |  类型  | 必须 |                    说明                     |
+| :----------: | :----: | :--: | :-----------------------------------------: |
+|   currency   | string |  是  |          币种类型:tg-糖果/cd-创豆           |
+| balance_type | string |  是  | 所使用资产类型:trade-交易资产,node-节点资产 |
+| pay_password | string |  是  |                  支付密码                   |
+|    amount    | string |  是  |                  转账金额                   |
+|    phone     | string |  是  |                   手机号                    |
 
 **响应**
 
