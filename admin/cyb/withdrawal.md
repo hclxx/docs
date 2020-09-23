@@ -15,6 +15,7 @@
 | username     | aaa | 选填 | 用户名查询 |
 | status     | 1 | 选填 | 状态:0-待审核/1-通过/2-驳回 |
 | currency     | usdt | 选填 | 提币类型 usdt cd |
+| type     | node | 选填 |  node(糖果/usdt/创豆节点打赏) trade(交易打赏) |
 | start     | 2020-05-18 00:00:00 | 选填 | 开始时间 |
 | end     | 2020-05-19 00:00:00 | 选填 | 结束时间 |
 | page     | 1 | 必填 | 当前页数 |
@@ -57,7 +58,12 @@
                     "handler": {/*操作人信息*/
                         "id": 1,
                         "name": "yanfan1111"
-                    }
+                    },
+                   "log": {
+                       "id": 163,
+                       "target_id": 2,
+                       "balance_type": "trade"
+                   }
                 },
                  {
                     "id": 2,
@@ -76,7 +82,12 @@
                         "name": "yanfan1111",
                         "avatar": null
                     },
-                    "handler": null
+                    "handler": null,
+                    "log": {
+                        "id": 163,
+                        "target_id": 2,
+                        "balance_type": "trade"
+                    }
                   }
             ],
             "first_page_url": "http://ht.test/admin/withdrawals?page=1",

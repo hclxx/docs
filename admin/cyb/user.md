@@ -377,7 +377,8 @@
 | :------- | :------------------ | :------- | :---------------- |
 | name    | aa          | 选填     | 用户昵称(支持模糊查询) |
 | phone   | 18781601111 | 选填     | 用户手机号             |
-| currency | hd                  | 选填     | cd-创豆 tg-糖果 usdt |
+| currency | cd                  | 选填     | cd-创豆 tg-糖果 usdt |
+| type | balance                  | 选填     | balance(糖果/usdt/创豆节点打赏) trade_balance(交易打赏) |
 | balance | 1000                  | 选填     | 最低余额 |
 | page     | 1                   | 必填     | 当前页数          |
 | limit    | 20                  | 必填     | 每页条数          |
