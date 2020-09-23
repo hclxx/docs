@@ -195,6 +195,7 @@
 | pay_pass | string |  是  |     支付密码      |
 |   num    | string |  是  |     提币数量      |
 | currency | string |  是  | 提币类型：cd,usdt |
+| type | string |  否  | 当currency=cd 时必传 trade-交易打赏余额,node-节点打赏余额 |
 
 **响应**
 
