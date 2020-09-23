@@ -262,13 +262,13 @@
 
 **参数**
 
-|     名称     |  类型  | 必须 |                    说明                     |
-| :----------: | :----: | :--: | :-----------------------------------------: |
-|   currency   | string |  是  |          币种类型:tg-糖果/cd-创豆           |
-| balance_type | string |  是  | 所使用资产类型:trade-交易资产,node-节点资产 |
-| pay_password | string |  是  |                  支付密码                   |
-|    amount    | string |  是  |                  转账金额                   |
-|    phone     | string |  是  |                   手机号                    |
+|     名称     |  类型  | 必须 |                             说明                             |
+| :----------: | :----: | :--: | :----------------------------------------------------------: |
+|   currency   | string |  是  |                   币种类型:tg-糖果/cd-创豆                   |
+| balance_type | string |  是  | 资产类型:trade-交易资产,node-节点资产 注: currency 为 tg 非必须 |
+| pay_password | string |  是  |                           支付密码                           |
+|    amount    | string |  是  |                           转账金额                           |
+|    phone     | string |  是  |                            手机号                            |
 
 **响应**
 
