@@ -28,19 +28,22 @@
     {
       "id": 1,
       "user_id": 1,
-      "balance": "7.0000",
+      "balance": "7.0000",/*节点打赏余额*/
+      "trade_balance": "8.0000",/*交易打赏余额*/
       "currency": "cd"
     },
     {
       "id": 2,
       "user_id": 1,
       "balance": "0.0000",
+      "trade_balance": "8.0000",
       "currency": "usdt"
     },
     {
       "id": 3,
       "user_id": 1,
       "balance": "0.0000",
+      "trade_balance": "8.0000",
       "currency": "tg"
     }
   ]
@@ -74,7 +77,8 @@
   "data": {
     "id": 4,
     "user_id": 3,
-    "balance": "0.0000",
+    "balance": "7.0000",/*创豆节点打赏余额*/
+    "trade_balance": "8.0000",/*创豆交易打赏余额*/
     "currency": "cd" /*cd-创豆，usdt, tg-糖果*/
   }
 }

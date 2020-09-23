@@ -236,7 +236,8 @@
           "name": "yanfan1",
           "phone": "18781601154",
           "avatar": null,
-          "cd_balance": "0.0000", /*创豆余额*/
+          "cd_node_balance": "0.0000", /*创豆节点打赏余额*/
+          "cd_trade_balance": "0.0000", /*创豆交易打赏余额*/
           "tg_balance": "0.0000", /*糖果余额*/
           "usdt_balance": "0.0000", /*usdt余额*/
           "node_num": 900 /*正在认购中的创豆数*/
@@ -337,19 +338,22 @@
     "usdt": {
       "id": 1,
       "user_id": 1,
-      "balance": "0.0000", //  可用余额
+      "balance": "7.0000",/*创豆节点打赏余额*/
+      "trade_balance": "8.0000",/*创豆交易打赏余额*/
       "currency": "usdt" //  cd-创豆 tg-糖果 usdt
     },
     "cd": {
       "id": 2,
       "user_id": 1,
       "balance": "0.0000",
+      "trade_balance": "8.0000",
       "currency": "cd"
     },
     "tg": {
       "id": 2,
       "user_id": 1,
       "balance": "0.0000",
+      "trade_balance": "8.0000",
       "currency": "tg"
     }
   }
@@ -403,18 +407,21 @@
                         "id": 697,
                         "user_id": 233,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "usdt"
                     },
                     {
                         "id": 698,
                         "user_id": 233,
                         "balance": "1839.2504",
+                        "trade_balance": "8.0000",
                         "currency": "tg"
                     },
                     {
                         "id": 699,
                         "user_id": 233,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "cd"
                     }
                 ]
@@ -429,18 +436,21 @@
                         "id": 691,
                         "user_id": 231,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "usdt"
                     },
                     {
                         "id": 692,
                         "user_id": 231,
                         "balance": "2473.3317",
+                        "trade_balance": "8.0000",
                         "currency": "tg"
                     },
                     {
                         "id": 693,
                         "user_id": 231,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "cd"
                     }
                 ]
@@ -455,18 +465,21 @@
                         "id": 679,
                         "user_id": 227,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "usdt"
                     },
                     {
                         "id": 680,
                         "user_id": 227,
                         "balance": "1760.4800",
+                        "trade_balance": "8.0000",
                         "currency": "tg"
                     },
                     {
                         "id": 681,
                         "user_id": 227,
                         "balance": "0.0000",
+                        "trade_balance": "8.0000",
                         "currency": "cd"
                     }
                 ]
