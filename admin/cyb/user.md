@@ -267,7 +267,8 @@
 | start    | 2020-05-20 00:00:00 | 选填     | 开始时间          |
 | end      | 2020-05-21 00:00:00 | 选填     | 结束时间          |
 | action   | 1                   | 选填     | 1-支出 2-收入     |
-| currency | hd                  | 选填     | dstt-矿石 hd-火豆 |
+| currency | cd                  | 选填     | cd-创豆 usdt tg-糖果 |
+| type     | node | 选填 |  node(糖果/usdt/创豆节点打赏) trade(交易打赏) |
 | page     | 1                   | 必填     | 当前页数          |
 | limit    | 20                  | 必填     | 每页条数          |
 
