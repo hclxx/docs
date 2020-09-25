@@ -149,3 +149,33 @@ none
   "data": null
 }
 ```
+
+## 交易撤销 [status===0 呈现该按钮]
+
+#### 接口 URL
+
+> {{url}}/trades/{trade}/cancel
+
+#### 请求方式
+
+> POST
+
+#### 请求 Query 参数
+
+none
+
+#### 请求 Header 参数
+
+| 参数          | 示例值    | 是否必填 | 参数描述 |
+| :------------ | :-------- | :------- | :------- |
+| Authorization | {{token}} | 必填     | token    |
+
+#### 成功响应示例
+
+```json
+{
+  "msg": "撤销成功",
+  "code": 0,
+  "data": null
+}
+```
