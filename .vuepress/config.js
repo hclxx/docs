@@ -368,7 +368,8 @@ function getSchainAdminSider(title, introduction) {
         "news",
         "news-cates",
         "sensitives",
-        "share"
+        "share",
+        "form"
       ]
     }
   ];
