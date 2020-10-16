@@ -50,10 +50,10 @@
     "about": "关于" /*关于*/,
     "register": "注册协议",
     "user": "用户协议",
-    "cd:limit":{
-        "rule": "创豆临界值规则",    /*创豆临界值规则*/
-        "node_balance": "88888",    /*节点打赏余额上限*/
-        "trade_balance": "88888"    /*交易打赏余额上限*/
+    "cd:limit": {
+      "rule": "创豆临界值规则" /*创豆临界值规则*/,
+      "node_balance": "88888" /*节点打赏余额上限*/,
+      "trade_balance": "88888" /*交易打赏余额上限*/
     },
     "equal:bus": {
       "tips": "等量发车规则说明" /*等量发车说明*/,
@@ -72,7 +72,9 @@
     /*视频配置*/
     "video": {
       "amount": "100" /*发布视频所需要花费的创豆 >0 需要输入支付密码 <= 不付费*/
-    }
+    },
+    "purchase_protocol": "qwewqe" /*购买协议*/,
+    "hosting_protocol": "qwewqe" /*托管协议*/
   }
 }
 ```
