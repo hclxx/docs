@@ -14,6 +14,7 @@
 | :---: | :----: | :--: | :--: | :------: |
 | name  | string |  无  |  否  |   昵称   |
 | phone | string |  无  |  否  |  手机号  |
+| role |  int   |  否  |                   0-普通用户 1-团队长                     |
 | page  |  int   |  1   |  是  | 当前页数 |
 | limit |  int   |  20  |  是  | 每页条数 |
 
@@ -40,6 +41,8 @@
         "power": 0 /*能量*/,
         "collection_time": null /*一键收矿到期时间*/,
         "market_id": 1 /*市场代理等级*/,
+        "role": 1,/*角色:0-普通/1-团队长*/
+        "belong_to_user": 0,/*团队长的用户id*/
         "created_at": "2020-05-07 08:21:15",
         "updated_at": "2020-05-08 03:12:54",
         "tel": "18781601158" /*电话*/,
@@ -150,6 +153,7 @@
 |   avatar   | string |  无  |  否  |                   头像                   |
 | market_id  |  int   |  无  |  否  |             市场代理等级 id              |
 | permission |  int   |  无  |  否  | 权限等级:0-无任何权限 1-查询被邀请者手机 |
+|   role   |  int   |  无  |  否  | 角色:0-普通/1-团队长  |
 |   power    |  int   |  无  |  否  |                用户能量值                |
 |  password  | string |  无  |  否  |           密码 长度在 6-20 位            |
 

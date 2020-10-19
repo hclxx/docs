@@ -16,6 +16,7 @@
 | page |  int   |  无  |  是  | 当前页数  |
 |   status   | int |  无  |  否  |  手机号  |
 |   username   | string |  无  |  否  |   邮箱   |
+| team_id |  int   |  否  |                   团队长用户id                      |
 
 **返回体**
 
@@ -45,7 +46,18 @@
                     "user": {
                         "id": 4,
                         "name": "NPA6RI",
-                        "tel": "18180540897"
+                        "tel": "18180540897",
+                        "belong_to_user": 19,
+                        "team": {   /*所属团队信息*/
+                            "id": 19,
+                            "name": "0CGLBA",
+                            "tel": "13800138000"
+                        },
+                        "certification": {  /*所属团队实名认证信息*/
+                            "id": 5,
+                            "user_id": 19,
+                            "name": "阿萨德"
+                        }
                     },
                     "handler": null
                 },
@@ -56,8 +68,8 @@
                     "service_charge": "0.10",
                     "account_type": "alipay",
                     "account_info": {
-                        "name": "晏凡",
-                        "number": "18781601153"
+                        "name": "晏小凡",
+                        "number": "18781601111"
                     },
                     "handler_id": 1,
                     "status": 1,

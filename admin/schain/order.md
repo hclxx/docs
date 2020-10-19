@@ -15,6 +15,7 @@
 |     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
 |   start_time    | string |  否  |                   开始时间                   |
 |    end_time     | string |  否  |                   结束时间                   |
+| team_id |  int   |  否  |                   团队长用户id                      |
 |      page       |  int   |  1   |                      是                      | 当前页数 |
 |      limit      |  int   |  20  |                      是                      | 每页条数 |
 
@@ -62,7 +63,17 @@
       "user": {
         "id": 9,
         "name": "yanfan5" /*用户名称*/,
-        "tel": "13929574741" /*用户电话*/
+        "tel": "13929574741" /*用户电话*/,
+        "belong_to_user": 19,
+        "team": { /*团队长信息*/
+            "id": 19,
+            "name": "0CGLBA",
+            "tel": "13800138000",
+            "certification": {  /*团队长实名信息*/
+                "id": 5,
+                "user_id": 19,
+                "name": "奥德赛"
+            }
       },
       "admin": {
         "id": 1,
