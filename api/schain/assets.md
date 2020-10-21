@@ -51,7 +51,7 @@
 
 |   名称   |  类型  | 必须 |               说明                |
 | :------: | :----: | :--: | :-------------------------------: |
-| currency | string |  是  |     资产类型: cny-现金 my-my      |
+| currency | string |  是  |     资产类型: cny-现金 my-my fil-fil     |
 |  action  | string |  否  | 收支动作: income-收入 expend-支出 |
 |  limit   |  int   |  是  |         条目数量 默认 20          |
 |  offset  |  int   |  是  |           偏移量 默认 0           |
