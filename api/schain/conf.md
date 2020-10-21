@@ -45,7 +45,16 @@
     },
     "purchase_protocol": "http://localhost/purchase/protocol" /*矿机购买协议地址*/,
     "hosting_protocol": "http://localhost/hosting/protocol" /*矿机托管协议地址*/,
-    "register_protocol": "http://localhost/hosting/protocol" /*注册协议地址*/
+    "register_protocol": "http://localhost/hosting/protocol" /*注册协议地址*/,
+    "fil:issue": {
+       "lock": "10",   /*锁仓金额比例*/
+       "pawn": "20",   /*抵押金额比例*/
+       "security": "30", /*保障金额比例*/
+       "total_lock": "300",  /*总锁仓金额*/
+       "total_pawn": "100",  /*总抵押金额*/
+       "total_enable": "200",  /*总可用金额*/
+       "withdrawable": "40"    /*提现金额比例*/
+    }
   }
 }
 ```
