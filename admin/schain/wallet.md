@@ -15,7 +15,7 @@
 |  start   | string |  无  |  否  |        开始时间        |
 |   end    | string |  无  |  否  |        结束时间        |
 |  action  |  int   |  无  |  否  | 收支动作:1-支出 2-收入 |
-| currency | string |  无  |  否  |    cl-矿石 cny-现金    |
+| currency | string |  无  |  否  |    my-my cny-现金 fil-fil    |
 |   page   |  int   |  1   |  是  |        当前页数        |
 |  limit   |  int   |  20  |  是  |        每页条数        |
 
@@ -98,6 +98,19 @@
       "expend": "100.0000" /*支出*/,
       "currency": "cny" /*类型*/,
       "wait": "0.0000"
+    },
+     "fil": {
+        "id": 1,
+        "user_id": 2,
+        "income": "120.0000",   /*累计收入*/
+        "security": "30.0000",  /*保障金额*/
+        "withdrawable": "30.0000",  /*可提现金额*/
+        "withdraw_ing": "0.0000", /*提现中金额*/
+        "withdraw_finish": "0.0000",  /*已提现金额*/
+        "lock": "30.0000",  /*锁仓金额*/
+        "pawn": "30.0000",  /*抵押金额*/
+        "created_at": "2020-10-21 16:13:30",
+        "updated_at": "2020-10-21 16:13:30"
     }
   }
 }
