@@ -579,7 +579,8 @@ function getCybAdminSider(title, introduction) {
         "form",
         "agency",
         "goods",
-        "task"
+        "task",
+        "sensitives"
       ]
     }
   ];
