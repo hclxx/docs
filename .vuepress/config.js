@@ -545,7 +545,8 @@ function getCybAppSider(title, introduction) {
         "trade",
         "like",
         "video",
-        "market"
+        "market",
+        "task"
       ]
     }
   ];
@@ -577,7 +578,8 @@ function getCybAdminSider(title, introduction) {
         "goods",
         "form",
         "agency",
-        "goods"
+        "goods",
+        "task"
       ]
     }
   ];
