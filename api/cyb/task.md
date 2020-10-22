@@ -83,6 +83,8 @@ none
 {
   "msg": "ok",
   "code": 0,
-  "data": null
+  "data": {
+    "reward": "1.0000"
+  }
 }
 ```
