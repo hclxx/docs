@@ -28,8 +28,8 @@
     {
       "id": 1,
       "user_id": 1,
-      "balance": "7.0000",/*节点打赏余额*/
-      "trade_balance": "8.0000",/*交易打赏余额*/
+      "balance": "7.0000" /*节点打赏余额*/,
+      "trade_balance": "8.0000" /*交易打赏余额*/,
       "currency": "cd"
     },
     {
@@ -77,8 +77,8 @@
   "data": {
     "id": 4,
     "user_id": 3,
-    "balance": "7.0000",/*创豆节点打赏余额*/
-    "trade_balance": "8.0000",/*创豆交易打赏余额*/
+    "balance": "7.0000" /*创豆节点打赏余额*/,
+    "trade_balance": "8.0000" /*创豆交易打赏余额, 如currency 为 tag 该字段为零撸糖果*/,
     "currency": "cd" /*cd-创豆，usdt, tg-糖果*/
   }
 }
@@ -190,12 +190,12 @@
 
 **参数**
 
-|   名称   |  类型  | 必须 |       说明        |
-| :------: | :----: | :--: | :---------------: |
-| pay_pass | string |  是  |     支付密码      |
-|   num    | string |  是  |     提币数量      |
-| currency | string |  是  | 提币类型：cd,usdt |
-| type | string |  否  | 当currency=cd 时必传 trade-交易打赏余额,node-节点打赏余额 |
+|   名称   |  类型  | 必须 |                            说明                            |
+| :------: | :----: | :--: | :--------------------------------------------------------: |
+| pay_pass | string |  是  |                          支付密码                          |
+|   num    | string |  是  |                          提币数量                          |
+| currency | string |  是  |                     提币类型：cd,usdt                      |
+|   type   | string |  否  | 当 currency=cd 时必传 trade-交易打赏余额,node-节点打赏余额 |
 
 **响应**
 
@@ -263,13 +263,13 @@
 
 **参数**
 
-|     名称     |  类型  | 必须 |                             说明                             |
-| :----------: | :----: | :--: | :----------------------------------------------------------: |
-|   currency   | string |  是  |                   币种类型:tg-糖果/cd-创豆                   |
+|     名称     |  类型  | 必须 |                              说明                               |
+| :----------: | :----: | :--: | :-------------------------------------------------------------: |
+|   currency   | string |  是  |                    币种类型:tg-糖果/cd-创豆                     |
 | balance_type | string |  是  | 资产类型:trade-交易资产,node-节点资产 注: currency 为 tg 非必须 |
-| pay_password | string |  是  |                           支付密码                           |
-|    amount    | string |  是  |                           转账金额                           |
-|    phone     | string |  是  |                            手机号                            |
+| pay_password | string |  是  |                            支付密码                             |
+|    amount    | string |  是  |                            转账金额                             |
+|    phone     | string |  是  |                             手机号                              |
 
 **响应**
 
