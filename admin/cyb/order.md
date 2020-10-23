@@ -15,8 +15,9 @@
 |     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
 |   start_time    | string |  否  |                   开始时间                   |
 |    end_time     | string |  否  |                   结束时间                   |
-|      page       |  int   |  1   |                      是                      | 当前页数 |
-|      limit      |  int   |  20  |                      是                      | 每页条数 |
+|      page       |  int   |  1   |                      是                      |
+|      limit      |  int   |  20  |                      是                      |
+|    is_admin     |  int   |  否  |            是否后台导入:1-是/0-否            |
 
 **路径**
 
@@ -82,6 +83,7 @@
 |     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
 |   start_time    | string |  否  |                   开始时间                   |
 |    end_time     | string |  否  |                   结束时间                   |
+|    is_admin     |  int   |  否  |            是否后台导入:1-是/0-否            |
 
 **路径**
 
@@ -218,6 +220,36 @@
 **路径**
 
 `/admin/orders/{order}/confirm`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "确认订单成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 导入订单
+
+**方式**
+
+`POST`
+
+**参数**
+
+|   名称   |  类型  | 必须 |        说明        |
+| :------: | :----: | :--: | :----------------: |
+|  phone   | string | Yes  |       订单号       |
+| goods_id |  int   | Yes  | 用户姓名或电话号码 |
+|   num    |  int   | Yes  |        数量        |
+
+**路径**
+
+`/admin/orders/import`
 
 **响应**
 
