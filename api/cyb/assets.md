@@ -45,6 +45,13 @@
       "balance": "0.0000",
       "trade_balance": "8.0000",
       "currency": "tg"
+    },
+    {
+        "id": 1,
+        "user_id": 1,
+        "balance": "0.0000",
+        "trade_balance": "0.0000",
+        "currency": "fil"
     }
   ]
 }

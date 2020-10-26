@@ -332,7 +332,8 @@ function getSchainAppSider(title, introduction) {
         "power",
         "version",
         "news",
-        "share"
+        "share",
+        "fil-wallet"
       ]
     }
   ];
@@ -546,7 +547,8 @@ function getCybAppSider(title, introduction) {
         "like",
         "video",
         "market",
-        "task"
+        "task",
+        "fil-wallet"
       ]
     }
   ];
@@ -580,7 +582,8 @@ function getCybAdminSider(title, introduction) {
         "agency",
         "goods",
         "task",
-        "sensitives"
+        "sensitives",
+        "fil-issue"
       ]
     }
   ];
