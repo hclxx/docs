@@ -321,3 +321,36 @@
   "data": null
 }
 ```
+
+## 导入订单
+
+> 权限节点 importOrder
+
+**方式**
+
+`POST`
+
+**参数**
+
+|   名称   |  类型  | 必须 |                 说明                  |
+| :------: | :----: | :--: | :-----------------------------------: |
+|  phone   | string | Yes  |                手机号                 |
+| goods_id |  int   | Yes  |                商品 ID                |
+|   num    |  int   | Yes  |                 数量                  |
+|   time   | string |  No  | 时间,非必须，格式:2012-12-12 12:11:11 |
+
+**路径**
+
+`/admin/import/order`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "确认订单成功",
+  "code": 0,
+  "data": null
+}
+```
