@@ -15,7 +15,7 @@
 |     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
 |   start_time    | string |  否  |                   开始时间                   |
 |    end_time     | string |  否  |                   结束时间                   |
-| team_id |  int   |  否  |                   团队长用户id                      |
+|     team_id     |  int   |  否  |                团队长用户 id                 |
 |      page       |  int   |  1   |                      是                      | 当前页数 |
 |      limit      |  int   |  20  |                      是                      | 每页条数 |
 
@@ -285,6 +285,30 @@
 **路径**
 
 `/admin/orders/{order}/close/status`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "操作订单成功",
+  "code": 0,
+  "data": null
+}
+```
+
+## 修改成功订单状态
+
+> status === 2 呈现该按钮
+
+**方式**
+
+`PUT`
+
+**路径**
+
+`/admin/orders/{order}/success/status`
 
 **响应**
 
