@@ -8,7 +8,7 @@
 
 **路径**
 
-`/admin/fil/issue`
+`/admin/filwithdrawals`
 
 **参数**
 
