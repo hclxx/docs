@@ -371,7 +371,8 @@ function getSchainAdminSider(title, introduction) {
         "sensitives",
         "share",
         "form",
-        "fil-issue"
+        "fil-issue",
+        "fil-with"
       ]
     }
   ];
