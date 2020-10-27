@@ -107,3 +107,36 @@
   }
 }
 ```
+
+## 提现配置信息
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/api/fil/withdrawal-configs`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "fee": "10",/*手续费*/
+        "min": "30",/*单次最低提币数量*/
+        "limit": "1000",/*每日提现上限*/
+        "bind_explain": "",/*绑定地址说明*/
+        "drawal_explain": ""/*提现说明*/
+    }
+}
+```
