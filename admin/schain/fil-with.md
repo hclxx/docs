@@ -120,7 +120,7 @@ none
 
 ## 提现驳回
 
-`/admin/filwithdrawals/{filWithdrawal}/agree`
+`/admin/filwithdrawals/{filWithdrawal}/reject`
 
 **请求方式**
 
