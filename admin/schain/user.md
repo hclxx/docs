@@ -10,13 +10,13 @@
 
 **请求参数**
 
-| 名称  |  类型  | 默认 | 必须 |   说明   |
-| :---: | :----: | :--: | :--: | :------: |
-| name  | string |  无  |  否  |   昵称   |
-| phone | string |  无  |  否  |  手机号  |
-| role |  int   |  否  |                   0-普通用户 1-团队长                     |
-| page  |  int   |  1   |  是  | 当前页数 |
-| limit |  int   |  20  |  是  | 每页条数 |
+| 名称  |  类型  | 默认 |        必须         |   说明   |
+| :---: | :----: | :--: | :-----------------: | :------: |
+| name  | string |  无  |         否          |   昵称   |
+| phone | string |  无  |         否          |  手机号  |
+| role  |  int   |  否  | 0-普通用户 1-团队长 |
+| page  |  int   |  1   |         是          | 当前页数 |
+| limit |  int   |  20  |         是          | 每页条数 |
 
 **SUCCESS 状态码**
 
@@ -41,8 +41,8 @@
         "power": 0 /*能量*/,
         "collection_time": null /*一键收矿到期时间*/,
         "market_id": 1 /*市场代理等级*/,
-        "role": 1,/*角色:0-普通/1-团队长*/
-        "belong_to_user": 0,/*团队长的用户id*/
+        "role": 1 /*角色:0-普通/1-团队长*/,
+        "belong_to_user": 0 /*团队长的用户id*/,
         "created_at": "2020-05-07 08:21:15",
         "updated_at": "2020-05-08 03:12:54",
         "tel": "18781601158" /*电话*/,
@@ -52,46 +52,23 @@
           "id": 1,
           "name": "零售商" /*市场代理名称*/,
           "icon": "http://" /*市场代理图标*/
-        }
-      },
-      {
-        "id": 8,
-        "name": "yanfan4",
-        "avatar": null,
-        "gender": 1,
-        "phone": "187****1157",
-        "code": "L9BAKV",
-        "power": 0,
-        "collection_time": null,
-        "market_id": 1,
-        "created_at": "2020-05-07 08:20:53",
-        "updated_at": "2020-05-07 08:20:53",
-        "tel": "18781601157",
-        "permission": 0,
-        "market": {
+        },
+        /*该字段可能为 NULL */
+        "fil_wallets": {
           "id": 1,
-          "name": "零售商",
-          "icon": "http://"
-        }
-      },
-      {
-        "id": 7,
-        "name": "yanfan3",
-        "avatar": null,
-        "gender": 1,
-        "phone": "187****1156",
-        "code": "E8D8FP",
-        "power": 0,
-        "collection_time": null,
-        "market_id": 3,
-        "created_at": "2020-05-07 08:20:38",
-        "updated_at": "2020-05-07 08:53:40",
-        "tel": "18781601156",
-        "permission": 0,
-        "market": {
-          "id": 3,
-          "name": "运营中心",
-          "icon": "http://xxx"
+          "user_id": 1,
+          "income": "0.0000",
+          "security": "0.0000",
+          "withdrawable": "600.0000",
+          "withdraw_ing": "400.0000",
+          "withdraw_finish": "0.0000",
+          "lock": "0.0000",
+          "pawn": "0.0000",
+          "withdrawal_address": "f1qcypeqpaoechla2ibb7savs6tagnawnsb2vnjlq" /*提币地址*/,
+          "created_at": "2020-10-27 10:29:58",
+          "updated_at": "2020-10-27 11:21:08",
+          "address": "f1qcypeqpaoechla2ibb7savs6tagnawnsb2vnjlq",
+          "secret": "941ce59183794e09b73622f7889e9694"
         }
       }
     ],
@@ -153,7 +130,7 @@
 |   avatar   | string |  无  |  否  |                   头像                   |
 | market_id  |  int   |  无  |  否  |             市场代理等级 id              |
 | permission |  int   |  无  |  否  | 权限等级:0-无任何权限 1-查询被邀请者手机 |
-|   role   |  int   |  无  |  否  | 角色:0-普通/1-团队长  |
+|    role    |  int   |  无  |  否  |           角色:0-普通/1-团队长           |
 |   power    |  int   |  无  |  否  |                用户能量值                |
 |  password  | string |  无  |  否  |           密码 长度在 6-20 位            |
 
@@ -286,6 +263,31 @@
     },
     "count": 1 /*直接邀请人数*/,
     "total_count": 5 /*团队人数*/
+  }
+}
+```
+
+## 更新用户 Fil 提币地址
+
+`/admin/users/{user}/subset`
+
+**请求方法**
+
+`PUT`
+
+**请求参数**
+
+|  名称   |  类型  | 默认 | 必须 |     说明     |
+| :-----: | :----: | :--: | :--: | :----------: |
+| address | string |  无  |  是  | Fil 提币地址 |
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
   }
 }
 ```
