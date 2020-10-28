@@ -269,7 +269,7 @@
 
 ## 更新用户 Fil 提币地址
 
-`/admin/users/{user}/subset`
+`/admin/users/{user}/filwallet-address`
 
 **请求方法**
 
