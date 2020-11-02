@@ -13,6 +13,7 @@
 |    order_no     | string |  否  |                    订单号                    |
 | user_name_phone | string |  否  |              用户姓名或电话号码              |
 |     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
+|     level      |  int   |  否  | fil期数 |
 |   start_time    | string |  否  |                   开始时间                   |
 |    end_time     | string |  否  |                   结束时间                   |
 |      page       |  int   |  1   |                      是                      |
@@ -46,6 +47,7 @@
       "is_delete": 0,
       "close_reason": "关闭原因" /*关闭原因*/,
       "pay_time": "2020-05-07 15:32:40" /*付款时间*/,
+      "fil_level": "1" /*fil期数*/,
       "remark": "订单备注" /*订单备注*/,
       "created_at": "2020-05-07 15:32:40" /*订单创建时间*/,
       "updated_at": "2020-05-07 15:32:40",
