@@ -907,6 +907,50 @@
 }
 ```
 
+## 获取 Fil 提现配置
+
+`/admin/configs/fil/withdrawal`
+
+**请求方式**
+
+`GET`
+
+**返回体**
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "fee": "10" /*手续费 int*/,
+    "min": "30" /*单词最低提现数额 int*/,
+    "limit": "1000" /*单日可申请提现次数 int*/,
+    "bind_explain": "" /*绑定地址说明 string*/,
+    "drawal_explain": "" /*提现说明 string*/
+  }
+}
+```
+
+## 修改 Fil 提现配置
+
+`/admin/configs/fil/withdrawal`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+```json
+{
+  "fee": "10" /*手续费 int*/,
+  "min": "30" /*单词最低提现数额 int*/,
+  "limit": "1000" /*单日可申请提现次数 int*/,
+  "bind_explain": "" /*绑定地址说明 string*/,
+  "drawal_explain": "" /*提现说明 string*/
+}
+```
+
 ## 获取 Fil 订单期数配置
 
 `/admin/configs/fil/order/level`
