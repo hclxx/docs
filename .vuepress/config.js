@@ -584,7 +584,8 @@ function getCybAdminSider(title, introduction) {
         "goods",
         "task",
         "sensitives",
-        "fil-issue"
+        "fil-issue",
+        "fil-with"
       ]
     }
   ];

@@ -906,3 +906,65 @@
   "data": null
 }
 ```
+
+## 获取 Fil 订单期数配置
+
+`/admin/configs/fil/order/level`
+
+**请求方式**
+
+`GET`
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": [
+        {
+            "name": "第一期",
+            "level": "1"
+        },
+        {
+            "name": "第二期",
+            "level": "2"
+        }
+    ]
+}
+```
+
+## 修改  Fil 订单期数配置
+
+`/admin/configs/fil/order/level`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+```json
+{
+    "level": [
+        {
+            "level": "11",
+            "name": "第一1期"
+        },
+        {
+            "level": "22",
+            "name": "第二2期"
+        }
+    ]
+}
+```
+
+**返回体**
+
+```json
+{
+  "msg": "修改成功",
+  "code": 0,
+  "data": null
+}
+```
