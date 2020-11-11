@@ -39,7 +39,9 @@ module.exports = {
       "/admin/ht/": getHtAdminSider("后台管理", "说明"),
       // 创业吧
       "/api/cyb/": getCybAppSider("移动端", "规范"),
-      "/admin/cyb/": getCybAdminSider("后台管理", "说明")
+      "/admin/cyb/": getCybAdminSider("后台管理", "说明"),
+      // 创业吧
+      "/api/mt/": getMtAppSider("移动端", "规范")
     }
   },
   plugins: [
@@ -587,6 +589,17 @@ function getCybAdminSider(title, introduction) {
         "fil-issue",
         "fil-with"
       ]
+    }
+  ];
+}
+
+// 创业吧 api
+function getMtAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "user", "invite"]
     }
   ];
 }
