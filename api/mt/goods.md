@@ -16,7 +16,7 @@
 
 **路径**
 
-`/api/invite/records`
+`/api/goods`
 
 **响应**
 
