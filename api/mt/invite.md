@@ -1,5 +1,3 @@
-
-
 # 邀请
 
 ## 邀请列表
@@ -29,16 +27,16 @@
   "msg": "ok",
   "code": 0,
   "data": [
-     {
-            "id": 7,
-            "name": "0CGLAX",
-            "avatar": null,
-            "phone": "138****2306",
-            "user_id": 7,
-            "parent_id": 1,
-            "pparent_id": 0,
-            "created_at": "2020-11-10 16:55:08",/*绑定时间*/
-            "self_usdt": "0.0000"/*贡献USDT数量*/
+    {
+      "id": 7,
+      "name": "0CGLAX",
+      "avatar": null,
+      "phone": "138****2306",
+      "user_id": 7,
+      "parent_id": 1,
+      "pparent_id": 0,
+      "created_at": "2020-11-10 16:55:08" /*绑定时间*/,
+      "self_usdt": "0.0000" /*贡献USDT数量*/
     }
   ]
 }
@@ -63,9 +61,9 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "directCount": 0,/*直推数量*/
-    "indirectCount": 1,/*二级推荐数量*/
-    "usdtTotal": "100"/*USDT 收益数量*/
+    "directCount": 0 /*直推数量*/,
+    "indirectCount": 1 /*二级推荐数量*/,
+    "usdtTotal": "100" /*USDT 收益数量*/
   }
 }
 ```
@@ -86,25 +84,24 @@
 
 ```json
 {
-    "msg": "ok",
-    "code": 0,
-    "data": {
-        "list": [
-            {
-                "id": 5,
-                "name": "0CGLAM",/**/
-                "avatar": null,/*头像*/
-                "direct_usdt": "2000.0000",/*USDT数量*/
-                "rank": 1/*名次*/
-            }
-        ],
-        "self": {
-            "id": 7,
-            "name": "0CGLAX",
-            "rank": 0,/*0-无排名呈现(-)*/
-            "avatar": null
-        }
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "id": 5,
+        "name": "0CGLAM" /**/,
+        "avatar": null /*头像*/,
+        "direct_usdt": "2000.0000" /*USDT数量*/,
+        "rank": 1 /*名次*/
+      }
+    ],
+    "self": {
+      "id": 7,
+      "name": "0CGLAX",
+      "rank": 0 /*0-无排名呈现(-)*/,
+      "avatar": null
     }
+  }
 }
 ```
-
