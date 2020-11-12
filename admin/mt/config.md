@@ -313,29 +313,33 @@
   "msg": "ok",
   "code": 0,
   "data": {
+    /*优惠卷*/
     "coupon": {
-      "brief": "200元电费优惠卷",
-      "cny_amount": "200",
-      "expire_days": "180",
-      "usdt_amount_scale": "1",
-      "usdt_deduction_scale": "10"
+      "brief": "200元电费优惠卷" /*电费优惠卷说明*/,
+      "cny_amount": "200" /*电费优惠君啊抵扣金额*/,
+      "expire_days": "180" /*过期时间*/,
+      "usdt_amount_scale": "1" /*USDT优惠卷奖励比列*/,
+      "usdt_deduction_scale": "10" /*USDT抵扣最大比例*/
     },
+    /*新手特供*/
     "novice": {
-      "days": "30",
-      "brief": "特供30天优惠套餐",
-      "goods_id": 1,
-      "income_brief": "理论收益15.75% ~ 16.76"
+      "days": "30" /*挖矿天数*/,
+      "brief": "特供30天优惠套餐" /*说明*/,
+      "goods_id": 1 /*绑定的商品的ID*/,
+      "income_brief": "理论收益15.75% ~ 16.76" /*收益说明*/
     },
+    /*注册赠送矿机*/
     "register": {
-      "days": "30",
-      "brief": "送30天1M ETH算力",
-      "goods_id": 1
+      "days": "30" /*挖矿天数*/,
+      "brief": "送30天1M ETH算力" /*说明*/,
+      "goods_id": 1 /*绑定的商品ID*/
     },
+    /*电费包购买*/
     "electric_discount": {
-      "brief": "1000元即获取220元电费包",
-      "price": "1000",
-      "months": "12",
-      "give_amount": "2000"
+      "brief": "1000元即获取220元电费包" /*说明*/,
+      "price": "1000" /*价格*/,
+      "months": "12" /*赠送个数*/,
+      "give_amount": "2000" /*赠送价格*/
     }
   }
 }
@@ -353,29 +357,33 @@
 
 ```json
 {
+  /*优惠卷*/
   "coupon": {
-    "brief": "200元电费优惠卷",
-    "cny_amount": "200",
-    "expire_days": "180",
-    "usdt_amount_scale": "1",
-    "usdt_deduction_scale": "10"
+    "brief": "200元电费优惠卷" /*电费优惠卷说明*/,
+    "cny_amount": "200" /*电费优惠君啊抵扣金额*/,
+    "expire_days": "180" /*过期时间*/,
+    "usdt_amount_scale": "1" /*USDT优惠卷奖励比列*/,
+    "usdt_deduction_scale": "10" /*USDT抵扣最大比例*/
   },
+  /*新手特供*/
   "novice": {
-    "days": "30",
-    "brief": "特供30天优惠套餐",
-    "goods_id": 1,
-    "income_brief": "理论收益15.75% ~ 16.76"
+    "days": "30" /*挖矿天数*/,
+    "brief": "特供30天优惠套餐" /*说明*/,
+    "goods_id": 1 /*绑定的商品的ID*/,
+    "income_brief": "理论收益15.75% ~ 16.76" /*收益说明*/
   },
+  /*注册赠送矿机*/
   "register": {
-    "days": "30",
-    "brief": "送30天1M ETH算力",
-    "goods_id": 1
+    "days": "30" /*挖矿天数*/,
+    "brief": "送30天1M ETH算力" /*说明*/,
+    "goods_id": 1 /*绑定的商品ID*/
   },
+  /*电费包购买*/
   "electric_discount": {
-    "brief": "1000元即获取220元电费包",
-    "price": "1000",
-    "months": "12",
-    "give_amount": "2000"
+    "brief": "1000元即获取220元电费包" /*说明*/,
+    "price": "1000" /*价格*/,
+    "months": "12" /*赠送个数*/,
+    "give_amount": "2000" /*赠送价格*/
   }
 }
 ```
