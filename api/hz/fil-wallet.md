@@ -34,7 +34,8 @@
     "created_at": "2020-10-21 16:13:30",
     "updated_at": "2020-10-21 16:13:30",
     "withdrawal_address": null /*提币地址:null未绑定*/,
-    "fil_to_cny": "24205.94" /*资产余额FIl折合RMB*/
+    "fil_to_cny": "24205.94", /*资产余额FIl折合RMB*/
+    "total_save_power": "0"   /*总存力*/
   }
 }
 ```
