@@ -54,7 +54,7 @@ module.exports = [
     text: "MT",
     items: [
       { text: "移动端", link: "/api/mt/" },
-      { text: "移动端", link: "/api/admin/" }
+      { text: "后台管理", link: "/admin/mt/" }
     ]
   },
   {
