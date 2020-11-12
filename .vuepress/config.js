@@ -639,7 +639,8 @@ function getMtAppSider(title, introduction) {
         "goods",
         "home",
         "news",
-        "help"
+        "help",
+        "ad"
       ]
     }
   ];
