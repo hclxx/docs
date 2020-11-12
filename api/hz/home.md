@@ -45,27 +45,32 @@
             {
                 "symbol": "FIL",    /*标识*/
                 "price_usd": "30.26", /*usdt价格*/
-                "percent_change_24h": "-1.56" /*涨跌幅*/
+                "percent_change_24h": "-1.56", /*涨跌幅*/
+                "volume_24h_usd": "1348902795"  /*24小时量(需要乘以usdt单价 已亿为单位)*/
             },
             {
                 "symbol": "USDT",
                 "price_usd": "1",
-                "percent_change_24h": "-0.01"
+                "percent_change_24h": "-0.01",
+                "volume_24h_usd": "1348902795"
             },
             {
                 "symbol": "BTC",
                 "price_usd": "15611",
-                "percent_change_24h": "1.37"
+                "percent_change_24h": "1.37",
+                "volume_24h_usd": "1348902795"
             },
             {
                 "symbol": "ETH",
                 "price_usd": "458.35",
-                "percent_change_24h": "-0.76"
+                "percent_change_24h": "-0.76",
+                "volume_24h_usd": "1348902795"
             },
             {
                 "symbol": "EOS",
                 "price_usd": "2.48",
-                "percent_change_24h": "-1.03"
+                "percent_change_24h": "-1.03",
+                "volume_24h_usd": "1348902795"
             }
         ]
     }
