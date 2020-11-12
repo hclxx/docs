@@ -41,7 +41,10 @@ module.exports = {
       "/api/cyb/": getCybAppSider("移动端", "规范"),
       "/admin/cyb/": getCybAdminSider("后台管理", "说明"),
       // 创业吧
-      "/api/mt/": getMtAppSider("移动端", "规范")
+      "/api/mt/": getMtAppSider("移动端", "规范"),
+      // 合众
+        "/api/hz/": getHzAppSider("移动端", "规范"),
+        "/admin/hz/": getHzAdminSider("后台管理", "说明"),
     }
   },
   plugins: [
