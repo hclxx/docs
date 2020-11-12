@@ -1,110 +1,23 @@
-# 订单
+# 订单管理
 
-## 订单列表
+## 列表
 
 **方式**
 
 `GET`
 
-**参数**
-
-|      名称       |  类型  | 必须 |                     说明                     |
-| :-------------: | :----: | :--: | :------------------------------------------: |
-|    order_no     | string |  否  |                    订单号                    |
-| user_name_phone | string |  否  |              用户姓名或电话号码              |
-|     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
-|     level      |  int   |  否  | fil期数 |
-|   start_time    | string |  否  |                   开始时间                   |
-|    end_time     | string |  否  |                   结束时间                   |
-|     team_id     |  int   |  否  |                团队长用户 id                 |
-|      page       |  int   |  1   |                      是                      | 当前页数 |
-|      limit      |  int   |  20  |                      是                      | 每页条数 |
-
 **路径**
 
 `/admin/orders`
 
-**响应**
+**请求参数**
 
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": [
-    {
-      "id": 4,
-      "order_no": "91717302" /*订单号/附言号*/,
-      "total_price": "10000.00" /*订单总金额*/,
-      "pay_price": "10000.00" /*实际支付金额*/,
-      "deduct_num": 0 /*抵扣的CL数量*/,
-      "buy_num": 1 /*购买数量*/,
-      "specs": 20 /*T量单位为T*/,
-      "order_status": 0 /*0-待付款 1-待确认 2-已完成/托管中 3-交易关闭*/,
-      "user_id": 1,
-      "goods_id": 1,
-      "payment_voucher": "xxxxx.png" /*凭证图*/,
-      "accounts_receivable": {
-        "bank": "中国工商银行",
-        "account_name": "陕西存链科技数据有限公司",
-        "account_number": "3700xxxxxxx"
-      } /*收款账户信息*/,
-      "is_delete": 0,
-      "close_reason": "关闭原因" /*关闭原因*/,
-      "pay_time": "2020-05-07 15:32:40" /*付款时间*/,
-      "fil_level": "1" /*fil期数*/,
-      "remark": "订单备注" /*订单备注*/,
-      "created_at": "2020-05-07 15:32:40" /*订单创建时间*/,
-      "updated_at": "2020-05-07 15:32:40",
-      /*商品信息*/
-      "goods": {
-        "id": 1,
-        "name": "CTL-10矿机" /*商品名称*/
-      },
-      "user": {
-        "id": 9,
-        "name": "yanfan5" /*用户名称*/,
-        "tel": "13929574741" /*用户电话*/,
-        "belong_to_user": 19,
-        "team": { /*团队长信息*/
-            "id": 19,
-            "name": "0CGLBA",
-            "tel": "13800138000",
-            "certification": {  /*团队长实名信息*/
-                "id": 5,
-                "user_id": 19,
-                "name": "奥德赛"
-            }
-      },
-      "admin": {
-        "id": 1,
-        "name": "超级管理员" /*管理员名称*/
-      }
-    }
-  ]
-}
-```
-
-## 订单列表
-
-**方式**
-
-`POST`
-
-**参数**
-
-|      名称       |  类型  | 必须 |                     说明                     |
-| :-------------: | :----: | :--: | :------------------------------------------: |
-|    order_no     | string |  否  |                    订单号                    |
-| user_name_phone | string |  否  |              用户姓名或电话号码              |
-|     status      |  int   |  否  | 订单状态:0-待付款 1-待确认 2-已确认 3-已关闭 |
-|   start_time    | string |  否  |                   开始时间                   |
-|    end_time     | string |  否  |                   结束时间                   |
-
-**路径**
-
-`/admin/orders/export/excel`
+|   名称    |  类型  | 默认 | 必须 |          说明          |
+| :-------: | :----: | :--: | :--: | :--------------------: |
+| keywords  | string |  无  |  否  | 商品名称(支持模糊查询) |
+| period_id |  int   |  无  |  否  |        期数 ID         |
+|   page    |  int   |  1   |  是  |        当前页数        |
+|   limit   |  int   |  20  |  是  |        每页条数        |
 
 **响应**
 
@@ -115,202 +28,212 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "filename": "20201012订单导出.xlsx"
+    "current_page": 1,
+    "data": [
+      {
+        "id": 7,
+        "order_no": "G55791605149415633" /*订单号*/,
+        "user_id": 7,
+        "num": 1 /*购买矿机数量*/,
+        "pay_price": "1000.0000" /*实际支付金额*/,
+        "total_price": "1000.0000" /*总金额*/,
+        "usdt_price": "6.613715138307155" /*如果是USDT支付为当时usdt单价(元)*/,
+        "coupon_amount": "0.0000" /*使用USDT优惠卷抵扣金额(元)*/,
+        "electric_remnant_days": 30 /*电费包剩余天数*/,
+        "electric_total_days": 30 /*电费包总天数*/,
+        "dig_remnant_days": 365 /*挖矿剩余天数*/,
+        "dig_total_days": 365 /*挖矿总天数*/,
+        "dig_start_time": null /*矿机开始挖矿时间*/,
+        "dig_end_time": null /*矿机挖矿结束时间*/,
+        "total_output": "0" /*总产出数量*/,
+        "yesterday_output": "0" /*昨日产出数量*/,
+        "status": 1 /*0-待支付,1-已支付(待确认)，2-已确认(部署中),3-挖矿中,4-挖矿已结束，5-已关闭*/,
+        "created_at": "2020-11-12 10:50:15" /*订单创建时间*/,
+        "updated_at": "2020-11-12 10:50:15",
+        "electric_order": {
+          "id": 7,
+          "user_id": 7,
+          "order_id": 7,
+          "order_no": "G55791605149415633",
+          "node_order_no": "GN61901605149415641" /*电费包订单编号*/,
+          "code": "5faca2e79c902" /*附言吗*/,
+          "days": 30 /*电费包天数*/,
+          "days_used": 0 /*已使用天数*/,
+          "num": 1 /*数量*/,
+          "pay_type": "usdt" /*支付方式:alipay/usdt/bank*/,
+          "pay_price": "18.0000" /*实际支付(元)*/,
+          "total_price": "18.0000" /*总金额(元)*/,
+          "coupon_amount": "0.0000" /*优惠卷抵扣金额(元)*/,
+          "electric_amount": "0.0000" /*电费包抵扣金额(元)*/,
+          "bank_info": null /*如果是bank支付,则为公司收款账户信息*/,
+          "credential": null /*如果是bank支付，凭证图片*/,
+          "reason": null /*关闭原因*/,
+          "remark": "" /*订单备注*/,
+          "pay_time": "2020-11-12 10:50:15" /*支付时间*/,
+          "confirm_time": null /*确认时间*/,
+          "close_time": null /*关闭时间*/,
+          "status": 1 /*0待支付 1已支付 2待使用 3使用中 4已过期 5已取消*/,
+          "admin_id": 0 /*审核人信息*/,
+          "admin": {
+            "id": 1,
+            "name": "admin"
+          },
+          "first": 1 /*数否首单*/,
+          "created_at": "2020-11-12 10:50:15",
+          "updated_at": "2020-11-12 10:50:15"
+        },
+        "goods_order": {
+          "id": 7,
+          "goods_id": 3,
+          "order_id": 7,
+          "name": "测试矿机1" /*商品信息*/,
+          "price": "1000.0000" /*商品单价*/,
+          "image": "01.png" /*图片集合*/,
+          "zone": "btc" /*专区*/,
+          "spec": 3 /*单台T量*/,
+          "years": 1 /*周期限制(年)*/,
+          "rate": "55%-80%" /*回报率*/,
+          "power": 240 /*矿机算力(MH/S)*/,
+          "daily_output": "0.00001" /*日产出(天/台)个*/,
+          "electric_price": "0.60" /*电费价格*/,
+          "electric_days": 30 /*电费天数*/,
+          "before": 30 /*运营维护费回本前(百分比)*/,
+          "after": 0 /*运营维护费回本后(百分比)*/,
+          "type": "common" /*商品类型:common-普通/register-注册可领/novice-新手特供*/,
+          "period_id": 0 /*期数ID*/,
+          "period":{
+              "id": 1,
+              "name": "20201111"
+          }
+          "created_at": "2020-11-12 10:50:15",
+          "updated_at": "2020-11-12 10:50:15"
+        },
+        /*下单人信息*/
+        "user": {
+          "id": 7,
+          "name": "0CGLAX",
+          "avatar": null,
+          "phone": "13822742306",
+          "code": "0CGLAX",
+          "power": 0,
+          "created_at": "2020-11-10 16:55:08",
+          "updated_at": "2020-11-10 17:18:58"
+        }
+      }
+    ],
+    "first_page_url": "http://mt.test/admin/orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://mt.test/admin/orders?page=1",
+    "next_page_url": null,
+    "path": "http://mt.test/admin/orders",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 6,
+    "total": 6
   }
-}
-```
-
-## 订单统计
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/admin/orders/count`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": [
-    {
-      "goods_id": 2,
-      "price": "196.00" /*单个商品售出总价*/,
-      "deduct_num": "4" /*单个商品总抵扣CL数量*/,
-      "buy_num": "2" /*单个商品售出总量*/,
-      "specs": "40" /*单个商品售出总规格(T)*/,
-      "goods": {
-        /**/
-        "id": 2 /**/,
-        "name": "商品2" /*商品名称*/
-      }
-    },
-    {
-      "goods_id": 3,
-      "price": "198.00",
-      "deduct_num": "2",
-      "buy_num": "2",
-      "specs": "60",
-      "goods": {
-        "id": 3,
-        "name": "商品3"
-      }
-    },
-    {
-      "goods_id": 4,
-      "price": "196.00",
-      "deduct_num": "4",
-      "buy_num": "2",
-      "specs": "80",
-      "goods": {
-        "id": 4,
-        "name": "商品4"
-      }
-    }
-  ]
-}
-```
-
-## 订单奖励详情
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/admin/orders/{order}/reward`
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": [
-    {
-      "id": 1,
-      "title": "销售提成奖励" /*流水标题*/,
-      "user_id": 8 /*用户id*/,
-      "target_id": 3 /*订单id*/,
-      "amount": "8.0000" /*奖励金额*/,
-      "created_at": "2020-05-08 02:42:22",
-      "updated_at": "2020-05-08 02:42:22",
-      "user": {
-        "id": 8,
-        "name": "yanfan4" /*用户姓名*/,
-        "tel": "17311113103" /*用户电话*/
-      }
-    },
-    {
-      "id": 13,
-      "title": "代理商培育奖励",
-      "user_id": 6,
-      "target_id": 3,
-      "amount": "2.0000",
-      "created_at": "2020-05-08 03:17:40",
-      "updated_at": "2020-05-08 03:17:40",
-      "user": {
-        "id": 6,
-        "name": "yanfan2",
-        "avatar": null
-      }
-    }
-  ]
 }
 ```
 
 ## 确认订单
 
-**方式**
+> electric_order.status == 1
 
-`PUT`
+> {electricOrder} 为 electric_order.id
 
-**路径**
+**地址**
 
-`/admin/orders/{order}/confirm`
+`admin/orders/{electricOrder}/confirm`
 
-**响应**
+**请求方式**
 
-`Status code 200`
+`PATCH`
+
+**请求参数**
+
+none
+
+**SUCCESS 返回体**
 
 ```json
 {
-  "msg": "确认订单成功",
+  "msg": "ok",
   "code": 0,
   "data": null
 }
 ```
 
-## 关闭订单
+## 设置挖矿
 
-**方式**
+> order.status == 2
 
-`PUT`
+> {electricOrder} 为 electric_order.id
 
-**路径**
+**地址**
 
-`/admin/orders/{order}/close`
+`admin/orders/{electricOrder}/complete`
 
-**参数**
+**请求方式**
 
-|  名称  |  类型  | 必须 |     说明     |
-| :----: | :----: | :--: | :----------: |
-| reason | string |  是  | 关闭订单原因 |
+`PATCH`
 
-**响应**
+**请求参数**
 
-`Status code 200`
+none
+
+**SUCCESS 返回体**
 
 ```json
 {
-  "msg": "关闭订单成功",
+  "msg": "ok",
   "code": 0,
   "data": null
 }
 ```
 
-## 修改关闭订单状态
+## 关闭
 
-**方式**
+> electric_order.pay_type == 'bank' && electric_order.status == 1
 
-`PUT`
+> {electricOrder} 为 electric_order.id
 
-**路径**
+**地址**
 
-`/admin/orders/{order}/close/status`
+`admin/orders/{electricOrder}/close`
 
-**响应**
+**请求方式**
 
-`Status code 200`
+`PATCH`
+
+**请求参数**
+
+|  名称  |  类型  | 默认 | 必须 | 说明 |
+| :----: | :----: | :--: | :--: | :--: |
+| reason | string |  无  |  是  | 原因 |
+
+**SUCCESS 返回体**
 
 ```json
 {
-  "msg": "操作订单成功",
+  "msg": "ok",
   "code": 0,
   "data": null
 }
 ```
 
-## 关闭成功订单
-
-> status === 2 呈现该按钮
+## 矿机下电费订单
 
 **方式**
 
-`PUT`
+`GET`
 
 **路径**
 
-`/admin/orders/{order}/success/status`
+`/admin/orders/{order}/electrics`
+
+**请求参数**
+
+none
 
 **响应**
 
@@ -318,70 +241,82 @@
 
 ```json
 {
-  "msg": "操作订单成功",
+  "msg": "ok",
   "code": 0,
-  "data": null
+  "data": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 7,
+        "user_id": 7,
+        "order_id": 7,
+        "order_no": "G55791605149415633",
+        "node_order_no": "GN61901605149415641" /*电费包订单编号*/,
+        "code": "5faca2e79c902" /*附言吗*/,
+        "days": 30 /*电费包天数*/,
+        "days_used": 0 /*已使用天数*/,
+        "num": 1 /*数量*/,
+        "pay_type": "usdt" /*支付方式:alipay/usdt/bank*/,
+        "pay_price": "18.0000" /*实际支付(元)*/,
+        "total_price": "18.0000" /*总金额(元)*/,
+        "coupon_amount": "0.0000" /*优惠卷抵扣金额(元)*/,
+        "electric_amount": "0.0000" /*电费包抵扣金额(元)*/,
+        "bank_info": null /*如果是bank支付,则为公司收款账户信息*/,
+        "credential": null /*如果是bank支付，凭证图片*/,
+        "reason": null /*关闭原因*/,
+        "remark": "" /*订单备注*/,
+        "pay_time": "2020-11-12 10:50:15" /*支付时间*/,
+        "confirm_time": null /*确认时间*/,
+        "close_time": null /*关闭时间*/,
+        "status": 1 /*0 待支付 1已支付(需要审核操作关闭/确认) 2待使用 3使用中 4已过期 5已取消*/,
+        "admin_id": 0 /*审核人信息*/,
+        "admin": {
+          "id": 1,
+          "name": "admin"
+        },
+        "first": 1 /*数否首单*/,
+        "created_at": "2020-11-12 10:50:15",
+        "updated_at": "2020-11-12 10:50:15"
+      }
+    ],
+    "first_page_url": "http://mt.test/admin/orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://mt.test/admin/orders?page=1",
+    "next_page_url": null,
+    "path": "http://mt.test/admin/orders",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 6,
+    "total": 6
+  }
 }
 ```
 
-## 导入订单
+## 订单期数 T 量统计
 
-> 权限节点 importOrder
+**地址**
 
-**方式**
+`admin/orders/count/spec`
 
-`POST`
+**请求方式**
 
-**参数**
+`PATCH`
 
-|   名称   |  类型  | 必须 |                 说明                  |
-| :------: | :----: | :--: | :-----------------------------------: |
-|  phone   | string | Yes  |                手机号                 |
-| goods_id |  int   | Yes  |                商品 ID                |
-|   num    |  int   | Yes  |                 数量                  |
-|   time   | string |  No  | 时间,非必须，格式:2012-12-12 12:11:11 |
+**请求参数**
 
-**路径**
+|   名称    | 类型 | 默认 | 必须 |  说明   |
+| :-------: | :--: | :--: | :--: | :-----: |
+| period_id | int  |  无  |  是  | 期数 ID |
 
-`/admin/import/order`
-
-**响应**
-
-`Status code 200`
+**SUCCESS 返回体**
 
 ```json
 {
-  "msg": "确认订单成功",
+  "msg": "ok",
   "code": 0,
-  "data": null
-}
-```
-
-## 设置订单期数
-
-**方式**
-
-`PUT`
-
-**路径**
-
-`/admin/orders/fil/level`
-
-**参数**
-
-|  名称  |  类型  | 必须 |     说明     |
-| :----: | :----: | :--: | :----------: |
-| ids | array |  是  | 订单id |
-| level | int |  是  | 订单期数(等级) |
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "设置成功",
-  "code": 0,
-  "data": null
+  "data": {
+    "total": 12312
+  }
 }
 ```
