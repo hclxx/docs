@@ -41,28 +41,33 @@
             "mining_income_str_one_day": "0.1935",  /*24小时平均挖矿收益(T)*/
             "pledge_collateral": "9158288.0884" /*总质压*/
         },
-        "real_time": {    /*实时行情*/
-            "FIL": {
-                "price_usd": "30.07",   /*usdt单价*/
-                "percent_change_24h": "-1.92" /*涨跌幅*/
+        "real_time": [
+            {
+                "symbol": "FIL",    /*标识*/
+                "price_usd": "30.26", /*usdt价格*/
+                "percent_change_24h": "-1.56" /*涨跌幅*/
             },
-            "USDT": {
+            {
+                "symbol": "USDT",
                 "price_usd": "1",
-                "percent_change_24h": "-0.05"
+                "percent_change_24h": "-0.01"
             },
-            "BTC": {
-                "price_usd": "15608",
-                "percent_change_24h": "1.01"
+            {
+                "symbol": "BTC",
+                "price_usd": "15611",
+                "percent_change_24h": "1.37"
             },
-            "ETH": {
-                "price_usd": "457.13",
-                "percent_change_24h": "-1.13"
+            {
+                "symbol": "ETH",
+                "price_usd": "458.35",
+                "percent_change_24h": "-0.76"
             },
-            "EOS": {
+            {
+                "symbol": "EOS",
                 "price_usd": "2.48",
-                "percent_change_24h": "-1.48"
+                "percent_change_24h": "-1.03"
             }
-        }
+        ]
     }
 }
 ```
