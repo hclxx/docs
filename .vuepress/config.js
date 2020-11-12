@@ -42,9 +42,10 @@ module.exports = {
       "/admin/cyb/": getCybAdminSider("后台管理", "说明"),
       // 创业吧
       "/api/mt/": getMtAppSider("移动端", "规范"),
+      "/admin/mt/": getMtAdminSider("后台管理", "规范"),
       // 合众
-        "/api/hz/": getHzAppSider("移动端", "规范"),
-        "/admin/hz/": getHzAdminSider("后台管理", "说明"),
+      "/api/hz/": getHzAppSider("移动端", "规范"),
+      "/admin/hz/": getHzAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -598,35 +599,31 @@ function getCybAdminSider(title, introduction) {
 
 // 合众 api
 function getHzAppSider(title, introduction) {
-    return [
-        {
-            title,
-            collapsable: false,
-            children: [
-                ["", introduction],
-                "home",
-                "ad",
-                "fil-wallet",
-                "wallet",
-                "order"
-            ]
-        }
-    ];
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "home",
+        "ad",
+        "fil-wallet",
+        "wallet",
+        "order"
+      ]
+    }
+  ];
 }
 
 // 合众 Admin
 function getHzAdminSider(title, introduction) {
-    return [
-        {
-            title,
-            collapsable: false,
-            children: [
-                ["", introduction],
-                "config",
-                "ad"
-            ]
-        }
-    ];
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config", "ad"]
+    }
+  ];
 }
 
 // 创业吧 api
@@ -636,6 +633,38 @@ function getMtAppSider(title, introduction) {
       title,
       collapsable: false,
       children: [["", introduction], "user", "invite", "goods", "home"]
+    }
+  ];
+}
+
+// mt admin
+function getMtAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "goods",
+        "order",
+        "wallet",
+        "admin",
+        "login",
+        "authority",
+        "role",
+        "config",
+        "feedback",
+        "verification-code",
+        "message",
+        "user",
+        "withdraw",
+        "agency",
+        "version",
+        "news",
+        "news-cates",
+        "sensitives",
+        "share"
+      ]
     }
   ];
 }

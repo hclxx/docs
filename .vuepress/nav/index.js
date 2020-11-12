@@ -52,7 +52,10 @@ module.exports = [
   },
   {
     text: "MT",
-    items: [{ text: "移动端", link: "/api/mt/" }]
+    items: [
+      { text: "移动端", link: "/api/mt/" },
+      { text: "移动端", link: "/api/admin/" }
+    ]
   },
   {
     text: "合众",
