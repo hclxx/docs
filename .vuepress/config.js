@@ -632,7 +632,7 @@ function getMtAppSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "user", "invite", "goods", "home"]
+      children: [["", introduction], "user", "invite", "goods", "home", "news"]
     }
   ];
 }
