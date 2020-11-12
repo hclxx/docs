@@ -664,7 +664,8 @@ function getMtAdminSider(title, introduction) {
         "news-cates",
         "sensitives",
         "share",
-        "electric-recharges"
+        "electric-recharges",
+        "period"
       ]
     }
   ];
