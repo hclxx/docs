@@ -56,79 +56,9 @@
 }
 ```
 
-## 获取一键收取价格配置
+## 支付开关配置
 
-`admin/configs/collection`
-
-**请求方式**
-
-`GET`
-
-**SUCCESS 返回体**
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": [
-    {
-      "month": 1 /*时间*/,
-      "price": 3 /*价格*/,
-      "my_price": 30 /*MY价格*/
-    },
-    {
-      "month": 3,
-      "price": 10,
-      "my_price": 30
-    },
-    {
-      "month": 6,
-      "price": 20,
-      "my_price": 30
-    }
-  ]
-}
-```
-
-## 修改一键收取价格配置
-
-`admin/configs/collection`
-
-**请求方式**
-
-`PUT`
-
-**请求参数**
-
-| 名称  | 类型  | 默认 | 必须 |       说明       |
-| :---: | :---: | :--: | :--: | :--------------: |
-| money | array |  无  |  是  | 一键收取价格配置 |
-
-**money**
-
-```json
-{
-  "money": [
-    { "month": 1, "price": 2, "my_price": 20 },
-    { "month": 2, "price": 4, "my_price": 40 },
-    { "month": 3, "price": 6, "my_price": 60 }
-  ]
-}
-```
-
-**SUCCESS 返回体**
-
-```json
-{
-  "msg": "修改成功",
-  "code": 0,
-  "data": null
-}
-```
-
-## 获取一键收取支付方式开关配置
-
-`admin/configs/collection/switch`
+`admin/configs/pay/switch`
 
 **请求方式**
 
@@ -141,22 +71,22 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 9,
-    "key": "one:key:switch",
+    "id": 2,
+    "key": "pay:switch",
     "value": {
-      "alipay": "on" /*支付宝开关 on-开 off-关*/,
-      "wechat": "on" /*微信开关 on-开 off-关*/,
-      "my": "on" /*MY开关 on-开 off-关*/
+      "bank": "on" /*银行支付开关*/,
+      "usdt": "on" /*USDT支付开关*/,
+      "alipay": "on" /*USDT支付开关, on-开启,off-关闭*/
     },
-    "created_at": "2020-04-30 06:32:06",
-    "updated_at": "2020-04-30 06:32:06"
+    "created_at": "2020-11-03 10:44:01",
+    "updated_at": "2020-11-03 10:44:01"
   }
 }
 ```
 
 ## 修改一键收取支付方式开关配置
 
-`admin/configs/collection/switch`
+`admin/configs/pay/switch`
 
 **请求方式**
 
@@ -177,60 +107,6 @@
 ```
 
 **SUCCESS 返回体**
-
-```json
-{
-  "msg": "修改成功",
-  "code": 0,
-  "data": null
-}
-```
-
-## 获取挖矿配置
-
-`admin/configs/ore`
-
-**请求方式**
-
-`GET`
-
-**返回体**
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "id": 10,
-    "key": "cl",
-    "value": {
-      "float": 0.1 /*基数因子*/,
-      "ratio": 0.2 /*浮动因子*/,
-      "everyday_max": 1 /*挖矿奖励，每天最多上限*/
-    },
-    "created_at": "2020-04-30 06:32:06",
-    "updated_at": "2020-04-30 06:32:06"
-  }
-}
-```
-
-## 设置挖矿配置
-
-`admin/configs/ore`
-
-**请求方式**
-
-`PUT`
-
-**请求参数**
-
-|     名称     | 类型  | 默认 | 必须 |               说明               |
-| :----------: | :---: | :--: | :--: | :------------------------------: |
-|    ratio     | float |  无  |  是  | 基数因子(保留两位小数, 最大值 1) |
-|    float     | float |  无  |  是  | 浮动因子(保留两位小数, 最大值 1) |
-| everyday_max | float |  无  |  是  |      挖矿奖励，每天最多上限      |
-
-**返回体**
 
 ```json
 {
@@ -302,9 +178,9 @@
 }
 ```
 
-## 获取 CL 兑换 RMB 单价配置
+## 获取兑换配置
 
-`admin/configs/cl/price`
+`admin/conversion`
 
 **请求方式**
 
@@ -317,18 +193,26 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 14,
-    "key": "cl:to:cny",
-    "value": "1",
-    "created_at": "2020-05-03 09:21:21",
-    "updated_at": "2020-05-03 09:22:05"
+    "id": 4,
+    "key": "conversion",
+    "value": {
+      "tips": "tips" /*温馨提示*/,
+      "eth_min": "10" /* eth最低兑换数量*/,
+      "fil_min": "10" /* fil最低兑换数量*/,
+      "eth_to_usdt": "0.1" /* eth 转 usdt 的比例*/,
+      "fil_to_usdt": "0.1" /* fil 转 usdt 的比例*/,
+      "eth_to_usdt_fee": "10" /* eth 转 usdt 的手续费比例*/,
+      "fil_to_usdt_fee": "10" /* fil 转 usdt 的手续费比例*/
+    },
+    "created_at": "2020-11-03 10:44:01",
+    "updated_at": "2020-11-03 10:44:01"
   }
 }
 ```
 
-## 修改 CL 兑换 RMB 单价配置
+## 修改兑换配置
 
-`admin/configs/cl/price`
+`admin/conversion`
 
 **请求方式**
 
@@ -336,9 +220,17 @@
 
 **请求参数**
 
-| 名称  |  类型  | 默认 | 必须 |       说明       |
-| :---: | :----: | :--: | :--: | :--------------: |
-| price | string |  无  |  是  | cl 兑换 cny 价格 |
+```json
+{
+  "tips": "tips",
+  "eth_min": "10",
+  "fil_min": "10",
+  "eth_to_usdt": "0.1",
+  "fil_to_usdt": "0.1",
+  "eth_to_usdt_fee": "10",
+  "fil_to_usdt_fee": "10"
+}
+```
 
 **返回体**
 
@@ -406,9 +298,9 @@
 }
 ```
 
-## 获取 Fil 钱包分发比例配置
+## 获取新手特惠数据
 
-`admin/configs/fil/issue`
+`admin/configs/novice-benefits`
 
 **请求方式**
 
@@ -421,27 +313,37 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 12,
-    "key": "fil:issue",
-    "value": {
-      "tips": "温馨提示",
-      "lock": "10" /*锁仓金额比例*/,
-      "pawn": "20" /*抵押金额比例*/,
-      "security": "30" /*保障金额比例*/,
-      "total_lock": "300" /*总锁仓金额*/,
-      "total_pawn": "100" /*总抵押金额*/,
-      "total_enable": "200" /*总可用金额*/,
-      "withdrawable": "40" /*提现金额比例*/
+    "coupon": {
+      "brief": "200元电费优惠卷",
+      "cny_amount": "200",
+      "expire_days": "180",
+      "usdt_amount_scale": "1",
+      "usdt_deduction_scale": "10"
     },
-    "created_at": "2020-10-21 15:38:44",
-    "updated_at": "2020-10-21 16:21:15"
+    "novice": {
+      "days": "30",
+      "brief": "特供30天优惠套餐",
+      "goods_id": 1,
+      "income_brief": "理论收益15.75% ~ 16.76"
+    },
+    "register": {
+      "days": "30",
+      "brief": "送30天1M ETH算力",
+      "goods_id": 1
+    },
+    "electric_discount": {
+      "brief": "1000元即获取220元电费包",
+      "price": "1000",
+      "months": "12",
+      "give_amount": "2000"
+    }
   }
 }
 ```
 
-## 修改 Fil 钱包分发比例配置
+## 修改新手福利
 
-`admin/configs/fil/issue`
+`admin/configs/novice-benefits`
 
 **请求方式**
 
@@ -449,116 +351,32 @@
 
 **请求参数**
 
-|     名称     |  类型  | 默认 | 必须 |     说明     |
-| :----------: | :----: | :--: | :--: | :----------: |
-|     tips     | string |  无  |  是  | 温馨提示 |
-|     lock     | string |  无  |  是  | 锁仓金额比例 |
-|     pawn     | string |  无  |  是  | 抵押金额比例 |
-|   security   | string |  无  |  是  | 保障金额比例 |
-| withdrawable | string |  无  |  是  | 提现金额比例 |
-|  total_lock  | string |  无  |  是  |  总锁仓金额  |
-|  total_pawn  | string |  无  |  是  |  总抵押金额  |
-| total_enable | string |  无  |  是  |  总可用金额  |
-
-**返回体**
-
 ```json
 {
-  "msg": "修改成功",
-  "code": 0,
-  "data": null
-}
-```
-
-## 获取 Fil 提现配置
-
-`/admin/configs/fil/withdrawal`
-
-**请求方式**
-
-`GET`
-
-**返回体**
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "fee": "10" /*手续费 int*/,
-    "min": "30" /*单词最低提现数额 int*/,
-    "limit": "1000" /*单日可申请提现次数 int*/,
-    "bind_explain": "" /*绑定地址说明 string*/,
-    "drawal_explain": "" /*提现说明 string*/
+  "coupon": {
+    "brief": "200元电费优惠卷",
+    "cny_amount": "200",
+    "expire_days": "180",
+    "usdt_amount_scale": "1",
+    "usdt_deduction_scale": "10"
+  },
+  "novice": {
+    "days": "30",
+    "brief": "特供30天优惠套餐",
+    "goods_id": 1,
+    "income_brief": "理论收益15.75% ~ 16.76"
+  },
+  "register": {
+    "days": "30",
+    "brief": "送30天1M ETH算力",
+    "goods_id": 1
+  },
+  "electric_discount": {
+    "brief": "1000元即获取220元电费包",
+    "price": "1000",
+    "months": "12",
+    "give_amount": "2000"
   }
-}
-```
-
-## 修改 Fil 提现配置
-
-`/admin/configs/fil/withdrawal`
-
-**请求方式**
-
-`PUT`
-
-**请求参数**
-
-```json
-{
-  "fee": "10" /*手续费 int*/,
-  "min": "30" /*单词最低提现数额 int*/,
-  "limit": "1000" /*单日可申请提现次数 int*/,
-  "bind_explain": "" /*绑定地址说明 string*/,
-  "drawal_explain": "" /*提现说明 string*/
-}
-```
-
-**返回体**
-
-```json
-{
-  "msg": "修改成功",
-  "code": 0,
-  "data": null
-}
-```
-
-## 获取 Fil 订单期数配置
-
-`/admin/configs/fil/order/level`
-
-**请求方式**
-
-`GET`
-
-**返回体**
-
-```json
-{
-    "msg": "ok",
-    "code": 0,
-    "data": [
-        "1",
-        "2",
-        "3"
-    ]
-}
-```
-
-## 修改  Fil 订单期数配置
-
-`/admin/configs/fil/order/level`
-
-**请求方式**
-
-`PUT`
-
-**请求参数**
-
-```json
-{
-    "level": ["2", "3"]
 }
 ```
 
