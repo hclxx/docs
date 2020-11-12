@@ -85,7 +85,9 @@
 }
 ```
 
-## 通过(status=1 才存在驳回和通过按钮)
+## 通过
+
+> (status=1 才存在驳回和通过按钮)
 
 `admin/electric-recharges/{id}/pass`
 
@@ -107,7 +109,9 @@ none
 }
 ```
 
-## 驳回(status=1 才存在驳回和通过按钮)
+## 驳回
+
+> (status=1 才存在驳回和通过按钮)
 
 `admin/electric-recharges/{id}/reject`
 
