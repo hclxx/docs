@@ -119,7 +119,7 @@
 
 **路径**
 
-`/api/fil/withdrawal`
+`/api/erc/withdrawal`
 
 **参数**
 
