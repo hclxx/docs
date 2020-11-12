@@ -53,5 +53,12 @@ module.exports = [
   {
     text: "MT",
     items: [{ text: "移动端", link: "/api/mt/" }]
+  },
+  {
+    text: "合众",
+    items: [
+      { text: "移动端", link: "/api/hz/" },
+      { text: "后台管理", link: "/admin/hz/" }
+    ]
   }
 ];

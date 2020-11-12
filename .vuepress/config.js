@@ -593,6 +593,39 @@ function getCybAdminSider(title, introduction) {
   ];
 }
 
+// 合众 api
+function getHzAppSider(title, introduction) {
+    return [
+        {
+            title,
+            collapsable: false,
+            children: [
+                ["", introduction],
+                "home",
+                "ad",
+                "fil-wallet",
+                "wallet",
+                "order"
+            ]
+        }
+    ];
+}
+
+// 合众 Admin
+function getHzAdminSider(title, introduction) {
+    return [
+        {
+            title,
+            collapsable: false,
+            children: [
+                ["", introduction],
+                "config",
+                "ad"
+            ]
+        }
+    ];
+}
+
 // 创业吧 api
 function getMtAppSider(title, introduction) {
   return [
