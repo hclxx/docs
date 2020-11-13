@@ -674,7 +674,8 @@ function getMtAdminSider(title, introduction) {
         "sensitives",
         "share",
         "electric-recharges",
-        "period"
+        "period",
+        "helpCenter"
       ]
     }
   ];
