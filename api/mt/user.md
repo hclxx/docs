@@ -2,8 +2,6 @@
 
 ## 用户登录
 
-
-
 **方式**
 
 `POST`
@@ -169,16 +167,9 @@
   "code": 0,
   "data": {
     "id": 1,
-    "name": "胡昊",
-    "avatar": "张三",
-    "gender": 1,
-    "phone": "183****4309",
-    "code": "",
-    "power": 13,
-    "cllection_time": null,
-    "market_id": 1,
-    "created_at": "2020-05-04 11:02:22",
-    "updated_at": "2020-05-08 10:48:48"
+    "name": "12321",
+    "avatar": "sadsa.png",
+    "phone": "183****4309"
   }
 }
 ```
@@ -333,5 +324,3 @@
   "data": null
 }
 ```
-
-
