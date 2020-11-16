@@ -284,3 +284,34 @@ none
   }
 }
 ```
+
+## 订单统计
+
+**方式**
+
+`POST`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/orders-count`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "closed": 0 /*已关闭*/,
+    "wait_pay": 3 /*待支付*/,
+    "completed": 1 /*已完成*/,
+    "wait_confirm": 2 /*待确认*/
+  }
+}
+```
