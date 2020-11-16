@@ -12,7 +12,7 @@ none
 
 **路径**
 
-`/api/goods`
+`/api/novices`
 
 **响应**
 
