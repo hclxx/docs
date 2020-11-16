@@ -141,6 +141,10 @@ none
     "ipfs": {
       "price": "100",
       "increase": "0.19"
+    },
+    "usdt": {
+      "price": "100",
+      "increase": "0.19"
     }
   }
 }
