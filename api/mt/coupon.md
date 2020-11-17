@@ -81,3 +81,33 @@
   "data": null
 }
 ```
+
+## 优惠卷统计
+
+**方式**
+
+`POST`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/coupon-counts`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "unused": 1 /*待使用*/,
+    "used": 0 /*已使用*/,
+    "expired": 0 /*已过期*/
+  }
+}
+```
