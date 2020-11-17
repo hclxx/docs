@@ -68,7 +68,7 @@
 
 **路径**
 
-`/api/coupons/transfer`
+`/api/coupons/{coupon}/transfer`
 
 **响应**
 
