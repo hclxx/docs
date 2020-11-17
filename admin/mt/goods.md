@@ -107,6 +107,8 @@
 |        before        | string |  无  |  否  |                运营维护费回本前(百分比)                |
 |        after         | string |  无  |  否  |                运营维护费回本后(百分比)                |
 |    electric_price    | string |  无  |  否  |                      电价(元/度)                       |
+|   electric_degree    | string |  无  |  否  |                 单台矿机耗电(度数/天)                  |  |
+|     custody_rate     | string |  无  |  否  |                        托管费率                        |  |
 |   risk_description   | string |  无  |  是  |                        风险说明                        |
 | business_description | string |  无  |  是  |                        业务说明                        |
 |      period_id       |  int   |  无  |  是  |                        期数 ID                         |
@@ -155,6 +157,9 @@
 |        before        | string |  无  |  否  |                运营维护费回本前(百分比)                |
 |        after         | string |  无  |  否  |                运营维护费回本后(百分比)                |
 |    electric_price    | string |  无  |  否  |                      电价(元/度)                       |
+|    electric_price    | string |  无  |  否  |                      电价(元/度)                       |
+|   electric_degree    | string |  无  |  否  |                 单台矿机耗电(度数/天)                  |  |
+|     custody_rate     | string |  无  |  否  |                        托管费率                        |  |
 |   risk_description   | string |  无  |  是  |                        风险说明                        |
 | business_description | string |  无  |  是  |                        业务说明                        |
 |      period_id       |  int   |  无  |  是  |                        期数 ID                         |
