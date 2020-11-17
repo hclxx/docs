@@ -12,7 +12,7 @@
 | :----: | :----: | :--: | :-------------------------: |
 | limit  |  int   |  是  |      条目数 默认为 20       |
 | offset |  int   |  是  |       条目数 默认为 0       |
-|  type  | string |  是  | 专区:time-限时/btc/eth/ipfs |
+|  zone  | string |  是  | 专区:time-限时/btc/eth/ipfs |
 
 **路径**
 
