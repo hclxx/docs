@@ -643,7 +643,8 @@ function getMtAppSider(title, introduction) {
         "ad",
         "coupon",
         "order",
-        "wallet"
+        "wallet",
+        "agency"
       ]
     }
   ];
