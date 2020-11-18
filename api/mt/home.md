@@ -138,7 +138,7 @@ none
       "price": "100",
       "increase": "0.19"
     },
-    "ipfs": {
+    "fil": {
       "price": "100",
       "increase": "0.19"
     },
