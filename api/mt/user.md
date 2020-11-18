@@ -115,23 +115,23 @@
   "msg": "ok",
   "code": 0,
   "data": {
-    "id": 1,
-    "name": "胡昊" /*用户呢称*/,
-    "avatar": "acasdasd.png" /*头像*/,
-    "gender": 1 /*性别: 0-未知/1-男/2女*/,
-    "phone": "183****4309" /*手机*/,
-    "code": "SS788A" /*邀请码*/,
-    "power": 1 /*矿力数量*/,
-    "cllection_time": null,
-    "market_id": 0,
-    "cer_status": false /*是否认证:true-认证false-认证*/,
-    "paypass_status": false /*是否设置支付密码:true-设置false-否*/,
-    "market_icon": "sdsadasd.pn" /*市场等级信息 可能为 NULl*/,
-    /*邀请人信息*/
+    "id": 7,
+    "name": "0CGLAX",
+    "avatar": null,
+    "phone": "13822742306",
+    "code": "0CGLAX",
+    "agency_id": 0,
+    "performance": "0.00" /*业绩*/,
+    "self_usdt": "0.0000" /*自身贡献USDt数量*/,
+    "direct_usdt": "0.0000" /*直推贡献USDT数量*/,
+    "created_at": "2020-11-10 16:55:08",
+    "updated_at": "2020-11-10 17:18:58",
+    "paypass_status": false,
     "inviter": {
-      "id": 3,
-      "name": "里斯",
-      "avatar": null
+      "id": 1,
+      "name": "张测试",
+      "avatar": null,
+      "created_at": "2020-11-09 16:03:15"
     }
   }
 }
