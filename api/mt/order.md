@@ -325,3 +325,89 @@ none
   }
 }
 ```
+
+## 提交凭证
+
+> 仅限银行卡支付的方式
+
+**方式**
+
+`POST`
+
+**参数**
+
+|    名称    |  类型  | 必须 |   说明   |
+| :--------: | :----: | :--: | :------: |
+| credential | string |  是  | 提交凭证 |
+
+**路径**
+
+`/api/electric-orders/{electricOrder}/credential`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 关闭订单
+
+> electricOrder.status == 0 可关闭
+
+**方式**
+
+`POST`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/electric-orders/{electricOrder}/close`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
+
+## 继续支付
+
+> electricOrder.status == 0 && pay_type === alipay
+
+**方式**
+
+`POST`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/electric-orders/{electricOrder}/pay`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": null
+}
+```
