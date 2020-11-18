@@ -328,7 +328,7 @@ none
 
 ## 提交凭证
 
-> 仅限银行卡支付的方式
+> 仅限银行卡支付的方式 electricOrder.pay_type == bank && electricOrder.status = 0
 
 **方式**
 
