@@ -159,7 +159,7 @@
 
 **路径**
 
-`/api/orders`
+`/api/electric-orders`
 
 **响应**
 
