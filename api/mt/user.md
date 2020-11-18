@@ -124,6 +124,8 @@
     "performance": "0.00" /*业绩*/,
     "self_usdt": "0.0000" /*自身贡献USDt数量*/,
     "direct_usdt": "0.0000" /*直推贡献USDT数量*/,
+    "self_kj_num": 0 /*自身购买矿机台数*/,
+    "sale_kj_num": 0 /*销售矿机台数*/,
     "created_at": "2020-11-10 16:55:08",
     "updated_at": "2020-11-10 17:18:58",
     "paypass_status": false,
