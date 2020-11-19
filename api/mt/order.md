@@ -413,3 +413,106 @@ none
   "data": null
 }
 ```
+
+## 订单详情
+
+**方式**
+
+`GET`
+
+**参数**
+
+none
+
+**路径**
+
+`/api/electric-orders/{electricOrder}`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "id": 16,
+    "user_id": 6,
+    "order_id": 16,
+    "order_no": "G94771605774963261",
+    "node_order_no": "GN34921605774963261",
+    "code": "5fb62e733fd42",
+    "days": 30,
+    "days_used": 0,
+    "num": 2,
+    "pay_type": "usdt",
+    "pay_price": "518.0400",
+    "total_price": "518.0400",
+    "usdt_price": "6.5922",
+    "electric_price": "0.6",
+    "coupon_amount": "0.0000",
+    "electric_amount": "0.0000",
+    "bank_info": null,
+    "credential": null,
+    "reason": null,
+    "remark": "",
+    "pay_time": "2020-11-19 16:36:03",
+    "confirm_time": null,
+    "close_time": null,
+    "status": 1,
+    "admin_id": 0,
+    "first": 1,
+    "created_at": "2020-11-19 16:36:03",
+    "updated_at": "2020-11-19 16:36:03",
+    "admin": null,
+    "goods_order": {
+      "id": 14,
+      "goods_id": 2,
+      "order_id": 16,
+      "user_id": 6,
+      "name": "测试商品",
+      "price": "20000.0000",
+      "image": "20201116145538844.jpeg",
+      "zone": "eth",
+      "spec": 100,
+      "years": 3,
+      "rate": "50-100%",
+      "power": 0,
+      "daily_output": "0.1111",
+      "electric_price": "0.6",
+      "electric_degree": "14.39",
+      "electric_days": 30,
+      "custody_rate": "5",
+      "before": 0,
+      "after": 30,
+      "period_id": 0,
+      "type": "common",
+      "created_at": "2020-11-19 16:36:03",
+      "updated_at": "2020-11-19 16:36:03",
+      "period": null
+    },
+    "order": {
+      "id": 16,
+      "order_no": "G94771605774963261",
+      "user_id": 6,
+      "num": 2,
+      "pay_price": "40000.0000",
+      "total_price": "40000.0000",
+      "usdt_price": "6.5922",
+      "coupon_amount": "0.0000",
+      "electric_remnant_days": 60,
+      "electric_total_days": 60,
+      "dig_remnant_days": 1095,
+      "dig_total_days": 1095,
+      "dig_start_time": null,
+      "dig_end_time": null,
+      "total_output": "0",
+      "yesterday_output": "0",
+      "status": 1,
+      "created_at": "2020-11-19 16:36:03",
+      "updated_at": "2020-11-19 16:36:03"
+    }
+  }
+}
+```
