@@ -644,7 +644,8 @@ function getMtAppSider(title, introduction) {
         "coupon",
         "order",
         "wallet",
-        "agency"
+        "agency",
+        "electricRecharge"
       ]
     }
   ];
