@@ -19,10 +19,11 @@
 |  pay_password   | string |  是  | pay_type 为 USDT 支付必须 |
 |   coupon_ids    | string |  是  |        优惠卷 IDs         |
 | electric_amount | string |  是  |      使用电费包抵扣       |
+| electric_amount | string |  是  |      使用电费包抵扣       |
 
 **路径**
 
-`/api/goods`
+`/api/orders`
 
 **响应**
 
