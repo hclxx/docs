@@ -99,6 +99,7 @@
         "daily_output": "0.00001" /*日产出*/,
         "electric_price": "0.60" /*电费金额(度/元)*/,
         "electric_days": 30 /*电费包天数*/,
+        "electric_degree": "20" /*单台矿机消耗电费度/天*/,
         "before": 30 /*营维护费回本前(%)*/,
         "after": 0 /*运营维护费回本后(%)*/,
         "type": "common" /*商品类型:common-普通/register-注册可领/novice-新手特供*/,
