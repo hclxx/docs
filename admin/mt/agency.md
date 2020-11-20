@@ -2,13 +2,45 @@
 
 ## 市场代理级别列表
 
+> level 说明
+
+```
+novice  新手
+bronze  青铜
+city    市级
+region  大区
+node    节点
+```
+
+> condition.key 说明
+
+```
+buy:sale           自购或销售 value 台以上矿机
+total:performance  总业绩达到 value W以上
+train:region       培养 value 个以上的大区代理
+```
+
+> equities.key 说明
+
+```
+direct:coupon    直享受推荐好友购买订单奖励(value)%USDT抵扣券
+eth:reward       ETH团队奖励(value)%
+btc:reward       BTC团队奖励(value)%
+fil:reward       FIL团队奖励(value)%
+fil:dividend     FIL矿池分红(value)%
+eth:dividend     ETH矿池分红(value)%
+btc:dividend     BTC矿池分红(value)%
+eth:electricity  ETH电费补贴(value)%
+btc:electricity  BTC电费补贴(value)%
+```
+
 **方式**
 
 `GET`
 
 **路径**
 
-`/admin/markets/agency`
+`/admin/agencies`
 
 **参数**
 
@@ -25,89 +57,221 @@
   "data": [
     {
       "id": 1,
-      "name": "零售商" /*代理商级别名称*/,
-      "mark": "dealer" /*代理商级别标识*/,
-      "icon": "http://" /*代理商级别图标*/,
-      "condition": {
-        /*晋升条件*/
-        "desc": "个人购买或销售任意一台存储器" /*条件描述*/,
-        "self": "1" /*自身销售最小值*/,
-        "direct": "1" /*直推最小是*/,
-        "market": "0" /*市场最小值*/
-      },
-      "sales_commission": "8" /*销售提成*/,
-      "custody_reward": "0" /*托管费奖励*/,
-      "agent_reward": "0" /*市场培育奖励*/,
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:54:20"
+      "name": "新手旷工",
+      "level": "novice",
+      "condition": [
+        {
+          "key": "buy:sale",
+          "value": "3"
+        },
+        {
+          "key": "total:performance",
+          "value": "100000"
+        }
+      ],
+      "equities": [
+        {
+          "key": "direct:coupon",
+          "rate": "1"
+        }
+      ],
+      "created_at": "2020-11-19 16:49:46",
+      "updated_at": "2020-11-19 16:49:46"
     },
     {
       "id": 2,
-      "name": "代理商",
-      "mark": "agent",
-      "icon": "http://xxx",
-      "condition": {
-        "desc": "个人购买+直接销售20T,市场销售了50T",
-        "self": "1",
-        "direct": "20",
-        "market": "50"
-      },
-      "sales_commission": "12",
-      "custody_reward": "0",
-      "agent_reward": "0",
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:37:29"
+      "name": "青铜旷工",
+      "level": "bronze",
+      "condition": [
+        {
+          "key": "buy:sale",
+          "value": "10"
+        },
+        {
+          "key": "total:performance",
+          "value": "500000"
+        }
+      ],
+      "equities": [
+        {
+          "key": "direct:coupon",
+          "rate": "1"
+        },
+        {
+          "key": "eth:reward",
+          "rate": "1"
+        },
+        {
+          "key": "btc:reward",
+          "rate": "1"
+        },
+        {
+          "key": "fil:reward",
+          "rate": "15"
+        },
+        {
+          "key": "eth:dividend",
+          "rate": "2"
+        },
+        {
+          "key": "btc:dividend",
+          "rate": "2"
+        }
+      ],
+      "created_at": "2020-11-19 16:49:46",
+      "updated_at": "2020-11-19 16:49:46"
     },
     {
       "id": 3,
-      "name": "运营中心",
-      "mark": "center",
-      "icon": "http://xxx",
-      "condition": {
-        "desc": "去掉最大市场,其他市场销售了200T",
-        "self": "0",
-        "direct": "0",
-        "market": "200"
-      },
-      "sales_commission": "16",
-      "custody_reward": "3",
-      "agent_reward": "2",
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:37:29"
+      "name": "市级代理",
+      "level": "city",
+      "condition": [
+        {
+          "key": "buy:sale",
+          "value": "50"
+        },
+        {
+          "key": "total:performance",
+          "value": "1000000"
+        }
+      ],
+      "equities": [
+        {
+          "key": "direct:coupon",
+          "rate": "1"
+        },
+        {
+          "key": "eth:reward",
+          "rate": "3"
+        },
+        {
+          "key": "btc:reward",
+          "rate": "3"
+        },
+        {
+          "key": "fil:reward",
+          "rate": "20"
+        },
+        {
+          "key": "eth:dividend",
+          "rate": "5"
+        },
+        {
+          "key": "btc:dividend",
+          "rate": "5"
+        },
+        {
+          "key": "eth:electricity",
+          "rate": "1"
+        },
+        {
+          "key": "btc:electricity",
+          "rate": "2"
+        }
+      ],
+      "created_at": "2020-11-19 16:49:46",
+      "updated_at": "2020-11-19 16:49:46"
     },
     {
       "id": 4,
-      "name": "分公司",
-      "mark": "branch",
-      "icon": "http://xxx",
-      "condition": {
-        "desc": "去掉最大市场,其他市场销售了500T",
-        "self": "0",
-        "direct": "0",
-        "market": "500"
-      },
-      "sales_commission": "21",
-      "custody_reward": "4",
-      "agent_reward": "2",
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:37:29"
+      "name": "大区代理",
+      "level": "region",
+      "condition": [
+        {
+          "key": "train:region",
+          "value": "2"
+        },
+        {
+          "key": "total:performance",
+          "value": "3000000"
+        }
+      ],
+      "equities": [
+        {
+          "key": "direct:coupon",
+          "rate": "1"
+        },
+        {
+          "key": "eth:reward",
+          "rate": "6"
+        },
+        {
+          "key": "btc:reward",
+          "rate": "6"
+        },
+        {
+          "key": "fil:reward",
+          "rate": "30"
+        },
+        {
+          "key": "eth:dividend",
+          "rate": "13"
+        },
+        {
+          "key": "btc:dividend",
+          "rate": "13"
+        },
+        {
+          "key": "fil:dividend",
+          "rate": "2"
+        },
+        {
+          "key": "eth:electricity",
+          "rate": "3"
+        },
+        {
+          "key": "btc:electricity",
+          "rate": "3"
+        }
+      ],
+      "created_at": "2020-11-19 16:49:46",
+      "updated_at": "2020-11-19 16:49:46"
     },
     {
       "id": 5,
-      "name": "运营大区",
-      "mark": "region",
-      "icon": "http://xxx",
-      "condition": {
-        "desc": "去掉最大市场,其他市场销售了1000T",
-        "self": "0",
-        "direct": "0",
-        "market": "1000"
-      },
-      "sales_commission": "25",
-      "custody_reward": "5",
-      "agent_reward": "2",
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:37:29"
+      "name": "节点合伙人",
+      "level": "node",
+      "condition": [],
+      "equities": [
+        {
+          "key": "direct:coupon",
+          "rate": "1"
+        },
+        {
+          "key": "eth:reward",
+          "rate": "6"
+        },
+        {
+          "key": "btc:reward",
+          "rate": "6"
+        },
+        {
+          "key": "fil:reward",
+          "rate": "30"
+        },
+        {
+          "key": "fil:dividend",
+          "rate": "13"
+        },
+        {
+          "key": "eth:dividend",
+          "rate": "13"
+        },
+        {
+          "key": "btc:dividend",
+          "rate": "13"
+        },
+        {
+          "key": "eth:electricity",
+          "rate": "3"
+        },
+        {
+          "key": "btc:electricity",
+          "rate": "3"
+        }
+      ],
+      "created_at": "2020-11-19 16:49:46",
+      "updated_at": "2020-11-19 16:49:46"
     }
   ]
 }
@@ -121,150 +285,46 @@
 
 **路径**
 
-`/admin/markets/agency/{agency}`
+`/admin/agencies/{agency}`
 
 **参数**
 
-|       名称       |  类型  | 必须 |      说明      |
-| :--------------: | :----: | :--: | :------------: |
-|       name       | string |  是  | 代理商级别名称 |
-|       mark       | string |  是  | 代理商级别标识 |
-|       icon       | string |  是  | 代理商级别名称 |
-|    condition     | array  |  是  |    晋升条件    |
-| sales_commission |  int   |  是  |    销售提成    |
-|  custody_reward  |  int   |  是  |   托管费奖励   |
-|   agent_reward   |  int   |  是  | 代理商培育奖励 |
+|   名称    | 类型  | 必须 |   说明   |
+| :-------: | :---: | :--: | :------: |
+| condition | array |  是  | 晋升条件 |
+| equities  | array |  是  | 拥有权益 |
 
-**condition**
+**格式**
 
 ```json
 {
-  "desc": "个人购买或销售任意一台存储器" /*条件描述*/,
-  "self": "1" /*自身销售最小值*/,
-  "direct": "1" /*直推最小是*/,
-  "market": "0" /*市场最小值*/
-}
-```
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "更新成功",
-  "code": 0,
-  "data": null
-}
-```
-
-## 市场代理级别 2 列表
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/admin/markets/agency2`
-
-**参数**
-
-无
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": [
+  "condition": [
     {
-      "id": 1,
-      "name": "零售商" /*代理商级别名称*/,
-      "mark": "dealer" /*代理商级别标识*/,
-      "icon": "http://" /*代理商级别图标*/,
-      "condition": {
-        /*晋升条件*/
-        "self_num": "1" /*自身购买单位T*/,
-        "direct_num": "1" /*直推购买单位T*/
-      },
-      "sales_commission": "8" /*销售提成*/,
-      "created_at": "2020-05-06 09:37:29",
-      "updated_at": "2020-05-06 09:54:20"
+      "key": "buy:sale",
+      "value": "3"
+    },
+    {
+      "key": "total:performance",
+      "value": "100000"
+    }
+  ],
+  "equities": [
+    {
+      "key": "direct:coupon",
+      "rate": "1"
     }
   ]
 }
 ```
 
-## 修改市场代理 2 级别
-
-**方式**
-
-`PUT`
-
-**路径**
-
-`/admin/markets/agency2/{agency}`
-
-**参数**
-
-|       名称       |  类型  | 必须 |      说明      |
-| :--------------: | :----: | :--: | :------------: |
-|       name       | string |  是  | 代理商级别名称 |
-|       mark       | string |  是  | 代理商级别标识 |
-|       icon       | string |  是  | 代理商级别名称 |
-|    condition     | array  |  是  |    晋升条件    |
-| sales_commission |  int   |  是  |    销售提成    |
-
-**condition**
-
-```json
-{
-  /*晋升条件*/
-  "self_num": "1" /*自身购买单位T*/,
-  "direct_num": "1" /*直推购买单位T*/
-}
-```
-
 **响应**
 
 `Status code 200`
 
 ```json
 {
-  "msg": "更新成功",
+  "msg": "修改成功",
   "code": 0,
   "data": null
-}
-```
-
-## 获取市场提成方案
-
-**方式**
-
-`GET`
-
-**路径**
-
-`/admin/configs/commission-scheme`
-
-**参数**
-
-none
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "ok",
-  "code": 0,
-  "data": {
-    "scheme": "2"
-  }
 }
 ```
