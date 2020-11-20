@@ -57,3 +57,31 @@
   "data": null
 }
 ```
+
+## 获取电费包释放月数
+
+**方式**
+
+`GET`
+
+**路径**
+
+`/api/dfb/release/days`
+
+**参数**
+
+none
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "months": 8
+  }
+}
+```

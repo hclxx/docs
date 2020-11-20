@@ -126,6 +126,8 @@
     "direct_usdt": "0.0000" /*直推贡献USDT数量*/,
     "self_kj_num": 0 /*自身购买矿机台数*/,
     "sale_kj_num": 0 /*销售矿机台数*/,
+    "fil_address": "asds" /*fil提币地址未设置未null*/,
+    "erc_address": "asds" /*erc提币地址未设置未null*/,
     "created_at": "2020-11-10 16:55:08",
     "updated_at": "2020-11-10 17:18:58",
     "paypass_status": false,
@@ -335,13 +337,14 @@
 
 **参数**
 
-|  名称   |  类型  | 必须 | 说明 |
-| :-----: | :----: | :--: | :--: |
-| address | string |  是  | 地址 |
+|  名称   |  类型  | 必须 |  说明   |
+| :-----: | :----: | :--: | :-----: |
+| address | string |  是  |  地址   |
+|  type   | string |  是  | fil/erc |
 
 **路径**
 
-`/api/withdrawal/address`
+`/api/coin/address`
 
 **响应**
 
