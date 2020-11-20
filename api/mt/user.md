@@ -326,3 +326,31 @@
   "data": null
 }
 ```
+
+## 绑定提币地址
+
+**方式**
+
+`POST`
+
+**参数**
+
+|  名称   |  类型  | 必须 | 说明 |
+| :-----: | :----: | :--: | :--: |
+| address | string |  是  | 地址 |
+
+**路径**
+
+`/api/withdrawal/address`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "更新成功",
+  "code": 0,
+  "data": null
+}
+```
