@@ -634,6 +634,7 @@ function getMtAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "config",
         "user",
         "invite",
         "goods",
