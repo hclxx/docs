@@ -43,7 +43,8 @@ none
       "daily_output": "0.00" /*日产量*/,
       "dig_remnant_days": 0 /*剩余挖矿天数*/,
       "dig_total_days": 0 /*总挖矿天数*/,
-      "status": false /*是否购买*/
+      "status": false /*是否购买*/,
+      "order_id": 0 /*订单ID*/
     },
     "register": {
       "days": "30" /*赠送天数*/,
@@ -52,7 +53,8 @@ none
       "daily_output": "0.00001" /*日产量*/,
       "dig_remnant_days": 30 /*挖矿总天数*/,
       "dig_total_days": 0 /*挖矿剩余天数*/,
-      "status": true /*是否领取*/
+      "status": true /*是否领取*/,
+      "order_id": 0 /*订单ID*/
     },
     "electric_discount": {
       "brief": "1000元即获取220元电费包" /*描述*/,
