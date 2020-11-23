@@ -201,7 +201,7 @@
 | :---------: | :----: | :--: | :-----------: |
 |   amount    | string |  是  |   分发数量    |
 |  period_id  | string |  是  |    期数 ID    |
-| order_count | string |  是  | 订单 T 量综合 |
+| order_count | string |  是  | 订单 T 量总和 |
 
 **响应**
 
