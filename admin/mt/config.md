@@ -203,10 +203,13 @@
       "tips": "tips" /*温馨提示*/,
       "eth_min": "10" /* eth最低兑换数量*/,
       "fil_min": "10" /* fil最低兑换数量*/,
+      "btc_min": "10" /* btc最低兑换数量*/,
       "eth_to_usdt": "0.1" /* eth 转 usdt 的比例*/,
       "fil_to_usdt": "0.1" /* fil 转 usdt 的比例*/,
+      "btc_to_usdt": "0.1" /* btc 转 usdt 的比例*/,
       "eth_to_usdt_fee": "10" /* eth 转 usdt 的手续费比例*/,
-      "fil_to_usdt_fee": "10" /* fil 转 usdt 的手续费比例*/
+      "fil_to_usdt_fee": "10" /* fil 转 usdt 的手续费比例*/,
+      "btc_to_usdt_fee": "10" /* btc 转 usdt 的手续费比例*/
     },
     "created_at": "2020-11-03 10:44:01",
     "updated_at": "2020-11-03 10:44:01"
@@ -229,10 +232,13 @@
   "tips": "tips",
   "eth_min": "10",
   "fil_min": "10",
+  "btc_min": "10",
   "eth_to_usdt": "0.1",
   "fil_to_usdt": "0.1",
+  "btc_to_usdt": "0.1",
   "eth_to_usdt_fee": "10",
-  "fil_to_usdt_fee": "10"
+  "fil_to_usdt_fee": "10",
+  "btc_to_usdt_fee": "10"
 }
 ```
 
