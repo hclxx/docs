@@ -59,9 +59,14 @@
       "eth_to_usdt_fee": "10",
       "fil_to_usdt_fee": "10"
     },
+
     "cdn_domain": "http://file.mtclouds.top",
     "purchase_protocol": "http://localhost/purchase/protocol",
-    "hosting_protocol": "http://localhost/hosting/protocol"
+    "hosting_protocol": "http://localhost/hosting/protocol",
+    "contact": {
+      "qq": "qq111",
+      "wechat": "wechat"
+    }
   }
 }
 ```
