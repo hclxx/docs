@@ -97,3 +97,44 @@
   ]
 }
 ```
+
+## 提币
+
+**方式**
+
+`POST`
+
+**路径**
+
+`/api/withdrawal`
+
+**参数**
+
+|     名称     |  类型   | 必须 |            说明            |
+| :----------: | :-----: | :--: | :------------------------: |
+|   currency   | string  |  是  | 资产类型: usdt/eth/btc/fil |
+|     num      | numeric |  是  |          提现数量          |
+| pay_password | string  |  是  |          支付密码          |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "申请成功",
+  "code": 0,
+  "data": {
+    "user_id": 1,
+    "amount": "100",
+    "service_charge": "10.0000" /*手续费*/,
+    "address": "0x1111111111111111111111111111111111111111",
+    "currency": "usdt",
+    "status": 0,
+    "handler_id": 0,
+    "updated_at": "2020-11-23 14:27:03" /*时间*/,
+    "created_at": "2020-11-23 14:27:03",
+    "id": 1
+  }
+}
+```
