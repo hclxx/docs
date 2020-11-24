@@ -63,7 +63,8 @@
   "data": {
     "directCount": 0 /*直推数量*/,
     "indirectCount": 1 /*二级推荐数量*/,
-    "usdtTotal": "100" /*USDT 收益数量*/
+    "usdtTotal": "100" /*USDT 收益数量*/,
+    "dealFriendsCount": 1 /*成交用户量*/
   }
 }
 ```
