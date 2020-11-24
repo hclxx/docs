@@ -647,7 +647,8 @@ function getMtAppSider(title, introduction) {
         "wallet",
         "agency",
         "electricRecharge",
-        "pool"
+        "pool",
+        "message"
       ]
     }
   ];
