@@ -151,11 +151,11 @@
 
 **参数**
 
-|     名称     |  类型   | 必须 |            说明            |
-| :----------: | :-----: | :--: | :------------------------: |
-|   currency   | string  |  是  | 资产类型: usdt/eth/btc/fil |
-|     num      | numeric |  是  |          兑换数量          |
-| pay_password | string  |  是  |          支付密码          |
+|     名称     |  类型   | 必须 |         说明          |
+| :----------: | :-----: | :--: | :-------------------: |
+|   currency   | string  |  是  | 资产类型: eth/btc/fil |
+|     num      | numeric |  是  |       兑换数量        |
+| pay_password | string  |  是  |       支付密码        |
 
 **响应**
 
