@@ -32,7 +32,9 @@
       "income": "0.0000" /*已释放*/,
       "expend": "0.0000",
       "wait": "0.0000" /*待释放*/,
-      "currency": "fil"
+      "currency": "fil",
+      "secret": "asdasdsa" /**/,
+      "address": "asdsadas" /*冲币地址*/
     }
   ]
 }
@@ -126,15 +128,17 @@
   "code": 0,
   "data": {
     "user_id": 1,
-    "amount": "100",
-    "service_charge": "10.0000" /*手续费*/,
-    "address": "0x1111111111111111111111111111111111111111",
+    "pid": "e8afa8a23c943b09ed526060b7149e82",
+    "num": "100",
+    "fee": "10.0000",
+    "from_address": null,
+    "to_address": "0x1111111111111111111111111111111111111111",
     "currency": "usdt",
     "status": 0,
     "handler_id": 0,
-    "updated_at": "2020-11-23 14:27:03" /*时间*/,
-    "created_at": "2020-11-23 14:27:03",
-    "id": 1
+    "updated_at": "2020-11-24 14:36:20",
+    "created_at": "2020-11-24 14:36:20",
+    "id": 2
   }
 }
 ```
