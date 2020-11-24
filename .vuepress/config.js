@@ -45,7 +45,10 @@ module.exports = {
       "/admin/mt/": getMtAdminSider("后台管理", "规范"),
       // 合众
       "/api/hz/": getHzAppSider("移动端", "规范"),
-      "/admin/hz/": getHzAdminSider("后台管理", "说明")
+      "/admin/hz/": getHzAdminSider("后台管理", "说明"),
+      // 新生态
+      "/api/xst/": getXstAppSider("移动端", "规范"),
+      "/admin/xst/": getXstAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -70,7 +73,31 @@ module.exports = {
     ["@vuepress/notification", true]
   ]
 };
-
+// 新生态
+function getXstAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "fil-wallet",
+        "wallet",
+        "order"
+      ]
+    }
+  ];
+}
+// 新生态 Admin
+function getXstAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config"]
+    }
+  ];
+}
 // 链优品APP接口文档
 function getLypinAppSider(title, introduction) {
   return [
