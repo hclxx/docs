@@ -63,5 +63,12 @@ module.exports = [
       { text: "移动端", link: "/api/hz/" },
       { text: "后台管理", link: "/admin/hz/" }
     ]
+  },
+  {
+    text: "新生态",
+    items: [
+      { text: "移动端", link: "/api/xst/" },
+      { text: "后台管理", link: "/admin/xst/" }
+    ]
   }
 ];
