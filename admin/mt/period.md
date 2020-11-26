@@ -143,6 +143,7 @@
 | page | int | 1 | 是 | 当前页数 |
 | limit | int | 20 | 是 | 每页条数 |
 | period_id | int | 20 | 否 | 期数 ID |
+| currency | string | 20 | 否 | 币种类型 |
 
 **响应**
 
@@ -159,6 +160,7 @@
         "id": 1,
         "period_id": 1,
         "order_count": 6 /*T量统计*/,
+        "currency": "fil" /*T量统计*/,
         "amount": "36.0000" /*分发总量*/,
         "created_at": "2020-11-09 14:49:15",
         "updated_at": "2020-11-09 14:49:15",
@@ -202,6 +204,7 @@
 |   amount    | string |  是  |   分发数量    |
 |  period_id  | string |  是  |    期数 ID    |
 | order_count | string |  是  | 订单 T 量总和 |
+|  currency   | string |  是  | [btc/eth/fil] |
 
 **响应**
 
