@@ -66,3 +66,37 @@
   }
 }
 ```
+
+## 统计
+
+**方式**
+
+`GET`
+
+|   名称   |  类型  | 默认 | 必须 |  说明   |
+| :------: | :----: | :--: | :--: | :-----: |
+| currency | string | eth  |  是  | eth/btc |
+
+**路径**
+
+`/api/pool/counts`
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+  "msg": "ok",
+  "code": 0,
+  "data": {
+    "usdtPutIn": "0.0000" /*USDT 投入*/,
+    "usdtToCnyPutIn": "0.0000" /*USDT投入转cny金额*/,
+    "rmbPutIn": "0" /*RMB投入*/,
+    "toBeOutput": "0" /*预计待产出*/,
+    "produced": "0.0000" /*累计产出/总产出*/,
+    "spec": "0" /*T量/算力*/,
+    "numberOfMiners": "0" /*矿工数量*/
+  }
+}
+```
