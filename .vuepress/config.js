@@ -73,31 +73,6 @@ module.exports = {
     ["@vuepress/notification", true]
   ]
 };
-// 新生态
-function getXstAppSider(title, introduction) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        ["", introduction],
-        "fil-wallet",
-        "wallet",
-        "order"
-      ]
-    }
-  ];
-}
-// 新生态 Admin
-function getXstAdminSider(title, introduction) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [["", introduction], "config"]
-    }
-  ];
-}
 // 链优品APP接口文档
 function getLypinAppSider(title, introduction) {
   return [
@@ -712,6 +687,31 @@ function getMtAdminSider(title, introduction) {
         "period",
         "helpCenter"
       ]
+    }
+  ];
+}
+// 新生态
+function getXstAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "fil-wallet",
+        "wallet",
+        "order"
+      ]
+    }
+  ];
+}
+// 新生态 Admin
+function getXstAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config"]
     }
   ];
 }

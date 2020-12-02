@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-yarn build
+yarn build --max_old_space_size=4096
 
 # 拷贝 .circleci/ 文件夹至 .vuepress/dist
 cp -r .circleci/ .vuepress/dist
