@@ -7,8 +7,8 @@
   "author": "jsonleex <jsonleex@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node --max_old_space_size=8192 ./node_modules/vuepress/vuepress.js dev .",
-    "build": "node --max_old_space_size=8192 ./node_modules/vuepress/vuepress.js build .",
+    "dev": "node --max_old_space_size=4096 ./node_modules/vuepress/vuepress.js dev .",
+    "build": "node --max_old_space_size=4096 ./node_modules/vuepress/vuepress.js build .",
     "deploy": "bash ./deploy.sh"
   },
   "devDependencies": {
